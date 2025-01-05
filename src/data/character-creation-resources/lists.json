@@ -90,22 +90,6 @@
       ]
     },
     {
-      "name": "Cecaelia",
-      "traits": [
-        {
-          "name": "Amphibious",
-          "description": "You can breathe water as well as air, and have a swimming speed equal to your walking speed.",
-          "granted": [
-            {
-              "type": "speed",
-              "speed": "swim",
-              "amount": -1
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "Bronze Dragonborn",
       "traits": [
         {
@@ -11964,6 +11948,26 @@
       }
     },
     {
+      "name": "Totem of the Rockslide",
+      "prereqLevel": 9,
+      "description": "You bind a spirit of elemental destruction to crush your foes. Whenever you use Totemic Assault, you can force the target to make a Strength saving throw in place of Charisma. On a failed save, the target suffers the normal damage of Totemic Assault and is knocked prone.",
+      "prereq": {
+        "type": "choice",
+        "id": "936C2192-64E5-4D43-8482-DF57D53E50A2",
+        "value": "Body"
+      }
+    },
+    {
+      "name": "Totem of Bedrock",
+      "prereqLevel": 15,
+      "description": "You bind an ancient spirit of earth which infuses your body with its resilience. Whenever you take damage that is not force or psychic damage, you reduce it by an amount equal to your spellcasting ability modifier (minimum of 1).",
+      "prereq": {
+        "type": "choice",
+        "id": "936C2192-64E5-4D43-8482-DF57D53E50A2",
+        "value": "Body"
+      }
+    },
+    {
       "name": "Totem of the Crossroads",
       "description": " You bind a minor Fey spirit that allows you to converse with wild creatures in your own tongue. You are always under the effect of Speak With Animals while you are conscious.  When you reach 5th level in this class, you are also always under the effect of Speak With Plants while you are conscious. ",
       "prereq": {
@@ -11983,6 +11987,27 @@
       },
       "uses": {
         "id": "FB05E3E2-4432-424D-B247-5B50AF2F9CA5",
+        "type": "fixed",
+        "amount": 1,
+        "reset": 2
+      }
+    },
+    {
+      "name": "Totem of Serenity",
+      "prereqLevel": 9,
+      "description": "You bind a spirit of serenity to still your inner self. Whenever you are forced make a saving throw to resist being Charmed or Frightened, or to resist the effects of an enchantment spell, you have advantage on your roll.",
+      "prereq": {
+        "type": "choice",
+        "id": "936C2192-64E5-4D43-8482-DF57D53E50A2",
+        "value": "Heart"
+      }
+    },
+    {
+      "name": "Totem of Majesty",
+      "prereqLevel": 15,
+      "description": "You bind an ancient fey spirit of royalty that you can unleash to humble your enemies. As an action, you force creatures of your choice within 30 feet that can see or hear you to make a Wisdom saving throw. On a failure, they instantly fall prone. Creatures immune to the charmed condition have advantage on this Wisdom saving throw.</p><p>Once you use this feature, you must finish a long rest before you can do so again. ",
+      "uses": {
+        "id": "A7F4D79F-BB77-4F79-A1DC-94701DD21502",
         "type": "fixed",
         "amount": 1,
         "reset": 2
@@ -12018,6 +12043,26 @@
         "type": "fixed",
         "amount": 1,
         "reset": 1
+      }
+    },
+    {
+      "name": "Totem of Dread",
+      "prereqLevel": 9,
+      "description": "You bind a sinister spirit of fear to unleash upon your foes. When you use Totemic Assault, you can force the creature to make an Intelligence saving throw in place of Charisma. On a failure, you can reduce the damage by 2d8 to cause the target to be frightened of you until the start of your next turn.",
+      "prereq": {
+        "type": "choice",
+        "id": "936C2192-64E5-4D43-8482-DF57D53E50A2",
+        "value": "Mind"
+      }
+    },
+    {
+      "name": "Totem of Awakening",
+      "prereqLevel": 15,
+      "description": "You bind an ancient spirit of ascended consciousness. You can sense the presence of any creature within 120 feet of you so long as it has an Intelligence of 4 or higher. You can also communicate telepathically with these creatures.",
+      "prereq": {
+        "type": "choice",
+        "id": "936C2192-64E5-4D43-8482-DF57D53E50A2",
+        "value": "Mind"
       }
     },
     {
@@ -12063,6 +12108,26 @@
         "type": "fixed",
         "amount": 1,
         "reset": 1
+      }
+    },
+    {
+      "name": "Totem of Harmony",
+      "prereqLevel": 9,
+      "description": "You bind a spirit of friendship which calms your foes. When a creature fails its saving throw against Totemic Assault, you can choose to deal no damage and instead cause the target to become indifferent about creatures of your choice that it is hostile toward until the start of your next turn. This indifference ends if the target is attacked or harmed by a spell or if it witnesses any of its friends being harmed. When the effect ends, the creature becomes hostile again, unless the DM rules otherwise.",
+      "prereq": {
+        "type": "choice",
+        "id": "936C2192-64E5-4D43-8482-DF57D53E50A2",
+        "value": "Soul"
+      }
+    },
+    {
+      "name": "Totem of Peace",
+      "prereqLevel": 15,
+      "description": "You bind an ancient spirit of life which deters your enemies. At the end of each short or long rest, you gain the benefits of the Sanctuary spell, which last until the end of your next short or long rest, or until you break the spell as normal.",
+      "prereq": {
+        "type": "choice",
+        "id": "936C2192-64E5-4D43-8482-DF57D53E50A2",
+        "value": "Soul"
       }
     }
   ],

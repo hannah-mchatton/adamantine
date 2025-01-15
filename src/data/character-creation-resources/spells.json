@@ -18209,6 +18209,39 @@
     "ritual": 0
   },
   {
+    "name": "Summon Mote",
+    "school": "Conjuration",
+    "level": 0,
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You call forth a mote of magical energy. It manifests in an unoccupied space that you can see within range. This corporeal form uses the Arcane Mote stat block. The creature resembles a tiny glowing wisp of energy. The creature disappears when it drops to 0 hit points or when the spell ends.",
+      "The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its move to avoid danger.<table><tr><th colspan=6>Arcane Mote</th></tr><tr><td colspan=6><em>Diminutive elemental</em></td></tr><tr><td colspan=6><strong>Armor Class:</strong> 10 (natural armor)</td></tr><tr><td colspan=6><strong>Hit Points:</strong> 5</td></tr><tr><td colspan=6><strong>Speed:</strong> fly 30 feet (hover)</td></tr><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr><tr><td>2 (-4)</td><td>12 (+1)</td><td>10 (0)</td><td>6 (-2)</td><td>6 (-2)</td><td>6 (-2)</td></tr><tr><td colspan=6><strong>Condition Immunities:</strong> grappled, prone, restrained</td></tr><tr><td colspan=6><strong>Senses:</strong> passive Perception 8</td></tr><tr><td colspan=6><strong>Languages:</strong> understands the languages you speak</td></tr><tr><td colspan=6><strong>Challenge:</strong> &#8212</td></tr><tr><td colspan=6><strong>Proficiency Bonus:</strong> equals your bonus</td></tr><tr><th colspan=6>Actions</th></tr><tr><td colspan=6><strong><em>Jolt.</em></strong> <em>Ranged Spell Attack:</em> your spell attack modifier to hit, range 60 feet, one target. <em>Hit:</em> 1d4 + 1 force damage.</td></tr><tr><td colspan=6><strong><em>Charge.</em></strong> The mote charges you with magical energy. For each damage die you roll for a spell before the end of your next turn, any roll of less than half of the die's size is increased to half of the die's size.</td></tr></table>"
+    ],
+    "higherLevels": [
+      "When you reach 5th level, and again at 11th and 17th levels, the mote's Armor Class increases by 2, its hit points increase by 10, and the damage of its Jolt action increases by 1d4."
+    ],
+    "lists": ["Arcane", "Occult", "Primal"],
+    "ritual": 0
+  },
+  {
+    "name": "Perfect Reflection",
+    "school": "Illusion",
+    "level": 9,
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S, M (a crystal mirror worth at least 5000 gp)",
+    "duration": "Concentration, up to 10 minutes",
+    "description": [
+      "You create a duplicate of a creature within range that is similar to the target in every way at the time of casting. An unwilling creature can make a Charisma saving throw to resist the effect. You can communicate with your duplicate telepathically, and it obeys all of your commands. The duplicate has all of the same abilities, equipment, spells, and features that the target does.",
+      "The duplicate disappears when it drops to 0 hit points or the spell ends."
+    ],
+    "lists": ["Arcane", "Occult", "Melodic", "Psionic"],
+    "ritual": 0
+  },
+  {
     "name": "Summon Fiend",
     "school": "Conjuration",
     "level": 6,

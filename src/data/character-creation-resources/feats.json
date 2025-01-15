@@ -1,5 +1,259 @@
 [
   {
+    "name": "Magical Savant",
+    "type": "magic",
+    "repeatable": true,
+    "prereq": [
+      {
+        "spellcasting": true
+      }
+    ],
+    "description": "You specialize your magical skills into a certain school of magic, gaining benefits based on the school you choose.  Additionally, your choice grants you a cantrip, for which Intelligence, Wisdom, or Charisma (your choice) is your spellcasting ability.  You can take this feat multiple times, and must choose a different school each time.",
+    "choices": [
+      {
+        "id": "D6AD79E3-9794-4FD2-A66F-2CE5CC5247F0",
+        "type": "text",
+        "options": ["int", "wis", "cha"]
+      },
+      {
+        "id": "D905A059-641F-46CC-AF6C-0A8FA9E65BBD",
+        "type": "trait",
+        "options": [
+          {
+            "name": "Abjuration",
+            "traits": [
+              {
+                "name": "Bonus Cantrip",
+                "description": "You learn the Blade Ward cantrip.",
+                "granted": [
+                  {
+                    "type": "spell",
+                    "options": ["Blade Ward"],
+                    "ability": "D6AD79E3-9794-4FD2-A66F-2CE5CC5247F0"
+                  }
+                ]
+              },
+              {
+                "name": "Durable Abjurations",
+                "description": "When you cast an abjuration spell that requires concentration, you can't lose concentration on it as a result of taking damage."
+              }
+            ]
+          },
+          {
+            "name": "Conjuration",
+            "traits": [
+              {
+                "name": "Bonus Cantrip",
+                "description": "You learn the Summon Mote cantrip.",
+                "granted": [
+                  {
+                    "type": "spell",
+                    "options": ["Summon Mote"],
+                    "ability": "D6AD79E3-9794-4FD2-A66F-2CE5CC5247F0"
+                  }
+                ]
+              },
+              {
+                "name": "Minor Conjuration",
+                "description": "You can use your action to conjure up an inanimate object in your hand or on the ground in an unoccupied space that you can see within 10 feet of you. This object can be no larger than 3 feet on a side and weigh no more than 10 pounds, and its form must be that of a nonmagical object that you have seen. The object is visibly magical, radiating dim light out to 5 feet.</p><p>The object disappears after 1 hour, when you use this feature again, or if it takes or deals any damage."
+              }
+            ]
+          },
+          {
+            "name": "Divination",
+            "traits": [
+              {
+                "name": "Bonus Cantrip",
+                "description": "You learn the Guidance cantrip.",
+                "granted": [
+                  {
+                    "type": "spell",
+                    "options": ["Guidance"],
+                    "ability": "D6AD79E3-9794-4FD2-A66F-2CE5CC5247F0"
+                  }
+                ]
+              },
+              {
+                "name": "Clear Divination",
+                "description": "When you cast a divination spell of 1st-level or higher, you can roll a d20 and record the number rolled. You can replace any attack roll, saving throw, or ability check made by you or a creature that you can see with this foretelling roll. You can choose to do so after you know the roll, but before you know if the roll succeeded or failed. If you finish a long rest without expending your foretelling roll, you lose it.</p><p>You can use this feature once, and regain the ability to do so when you finish a long rest.",
+                "uses": [
+                  {
+                    "id": "474C34CB-4382-48DB-8295-BE2C20B92411",
+                    "type": "fixed",
+                    "amount": 1,
+                    "reset": 2
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Enchantment",
+            "traits": [
+              {
+                "name": "Bonus Cantrip",
+                "description": "You learn the Friends cantrip.",
+                "granted": [
+                  {
+                    "type": "spell",
+                    "options": ["Friends"],
+                    "ability": "D6AD79E3-9794-4FD2-A66F-2CE5CC5247F0"
+                  }
+                ]
+              },
+              {
+                "name": "Convincing Enchantment",
+                "description": "When the effects of an enchantment spell you cast end on a creature, instead of knowing that you enchanted them instantly, they must succeed on a saving throw against the spell to gain that knowledge.  If the spell doesn't normally involve a saving throw, they make a Wisdom saving throw."
+              }
+            ]
+          },
+          {
+            "name": "Evocation",
+            "traits": [
+              {
+                "name": "Bonus Cantrip",
+                "description": "You learn an evocation cantrip of your choice.",
+                "choices": [
+                  {
+                    "id": "013B5323-A4F3-4B89-A466-F7154ECE4301",
+                    "type": "spell",
+                    "school": "Evocation",
+                    "level": 0,
+                    "ability": "D6AD79E3-9794-4FD2-A66F-2CE5CC5247F0"
+                  }
+                ]
+              },
+              {
+                "name": "Potent Evocation",
+                "description": "When an evocation cantrip you cast requires its target(s) to make a saving throw, creatures take half damage on a successful save, but do not suffer any additional effects, other than damage, imposed by the cantrip."
+              }
+            ]
+          },
+          {
+            "name": "Illusion",
+            "traits": [
+              {
+                "name": "Bonus Cantrip",
+                "description": "You learn the Minor Illusion cantrip.  You can create both a sound and an image with a single casting of Minor Illusion.",
+                "granted": [
+                  {
+                    "type": "spell",
+                    "options": ["Minor Illusion"],
+                    "ability": "D6AD79E3-9794-4FD2-A66F-2CE5CC5247F0"
+                  }
+                ]
+              },
+              {
+                "name": "Subtle Illusions",
+                "description": "You can cast illusion spells without providing verbal components."
+              }
+            ]
+          },
+          {
+            "name": "Necromancy",
+            "traits": [
+              {
+                "name": "Bonus Cantrip",
+                "description": "You learn the Chill Touch cantrip.",
+                "granted": [
+                  {
+                    "type": "spell",
+                    "options": ["Chill Touch"],
+                    "ability": "D6AD79E3-9794-4FD2-A66F-2CE5CC5247F0"
+                  }
+                ]
+              },
+              {
+                "name": "Corrupting Necromancy",
+                "description": "When you deal damage to a creature with a necromancy spell, the target can't regain hit points until the start of your next turn by means of lesser than or equal power to the triggering spell."
+              }
+            ]
+          },
+          {
+            "name": "Restoration",
+            "traits": [
+              {
+                "name": "Bonus Cantrip",
+                "description": "You learn the Pacify cantrip.",
+                "granted": [
+                  {
+                    "type": "spell",
+                    "options": ["Pacify"],
+                    "ability": "D6AD79E3-9794-4FD2-A66F-2CE5CC5247F0"
+                  }
+                ]
+              },
+              {
+                "name": "Soothing Restoration",
+                "description": "When you cast a restoration spell that restores hit points, you can roll any dice you roll as part of the spell twice, and take the higher result."
+              }
+            ]
+          },
+          {
+            "name": "Sangromancy",
+            "traits": [
+              {
+                "name": "Bonus Cantrip",
+                "description": "You learn the Blood Siphon cantrip.",
+                "granted": [
+                  {
+                    "type": "spell",
+                    "options": ["Blood Siphon"],
+                    "ability": "D6AD79E3-9794-4FD2-A66F-2CE5CC5247F0"
+                  }
+                ]
+              },
+              {
+                "name": "Bloody Sangromancy",
+                "description": "When you cast a sangromancy spell that requires you to roll hit dice, you can roll them twice and take either total."
+              }
+            ]
+          },
+          {
+            "name": "Transmutation",
+            "traits": [
+              {
+                "name": "Bonus Cantrip",
+                "description": "You learn the Prestidigitation cantrip.",
+                "granted": [
+                  {
+                    "type": "spell",
+                    "options": ["Prestidigitation"],
+                    "ability": "D6AD79E3-9794-4FD2-A66F-2CE5CC5247F0"
+                  }
+                ]
+              },
+              {
+                "name": "Minor Transmutation",
+                "description": "You can temporarily alter the physical properties of one nonmagical object, changing it from one substance into another. You perform a special alchemical procedure on one object composed entirely of wood, stone (but not a gemstone), iron, copper, or silver, transforming it into a different one of those materials.</p><p>For each 10 minutes you spend performing the procedure, you can transform up to 1 cubic foot of material. After 1 hour, or until you lose your concentration (as if you were concentrating on a spell), the material reverts to its original substance."
+              }
+            ]
+          },
+          {
+            "name": "Transposition",
+            "traits": [
+              {
+                "name": "Bonus Cantrip",
+                "description": "You learn the Mage Hand cantrip. The spectral hand is invisible when you cast it.",
+                "granted": [
+                  {
+                    "type": "spell",
+                    "options": ["Mage Hand"],
+                    "ability": "D6AD79E3-9794-4FD2-A66F-2CE5CC5247F0"
+                  }
+                ]
+              },
+              {
+                "name": "Distant Transposition",
+                "description": "The range of your transposition spells, and the distance they can move targets, doubles. If a spell has a range of Touch, it gains a range of 30 feet."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "Aberrant Dragonmark",
     "type": "magic",
     "repeatable": true,

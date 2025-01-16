@@ -5726,6 +5726,62 @@
       "description": "When you make an ability check that uses a skill or tool that you are proficient with, or a check that adds an Exploit Die to the result, you treat a roll of 9 or lower on the d20 as a 10."
     },
     {
+      "name": "Wellspring of Magic",
+      "prereqLevel": 11,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Talisman"
+      },
+      "description": "Your talisman can briefly become a river of pure magic. As an action, the wearer of your pact talisman can recover one or multiple expended spell slots. The regained spell slots must have a combined total equal to or less than the level of one of your Pact Magic spell slots.</p><p>Once this invocation is used, it cannot be used again until you finish a long rest.  As an action while touching your pact talisman, you can expend a Pact Magic spell slot to recharge it and regain the use of this feature.",
+      "uses": [
+        {
+          "id": "C6E41FFD-8065-427B-9BE4-DE3481C7AC03",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 2
+        }
+      ]
+    },
+    {
+      "name": "Elemental Eye",
+      "prereqLevel": 13,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Talisman"
+      },
+      "description": "The talisman of your patron hungers for elemental essence. As a reaction to taking acid, cold, fire, lightning, poison, or thunder damage, the wearer of your pact talisman can gain resistance to the triggering damage type. This resistance lasts for 1 hour, or until the wearer uses this reaction again."
+    },
+    {
+      "name": "Spark of Yore",
+      "prereqLevel": 15,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Talisman"
+      },
+      "description": "Your pact talisman has captured a mote of the power which existed before creation. If the wearer of your talisman rolls a 7 or lower on a d20, treat the result as if they rolled an 8 on the die.</p><p>Futhermore, you can knot the threads of fate in their favor. When the wearer of the talisman rolls a 1 on a d20 roll, you can choose turn that roll into a success. Once this feature of the invocation is used, it can't be used again until you finish a long rest.",
+      "uses": [
+        {
+          "id": "E4BA7CA5-40BD-4492-A24C-4B7095A237CC",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 2
+        }
+      ]
+    },
+    {
+      "name": "Eldritch Phylactery",
+      "prereqLevel": 17,
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Talisman"
+      },
+      "description": "Your pact talisman binds itself to the bearer's very soul, rescuing them in the event of their demise.  If the wearer of your talisman is reduced to 0 hit points or killed outright, they can use their reaction to instead be restored to maximum hit points.  This effect closes all wounds, neutralizes any poison, cures all diseases, and lifts any curses affecting the creature when it died. The effect replaces damaged or missing organs and limbs. The effect can even provide a new body if the original no longer exists.</p><p>Upon taking this reaction, the talisman shatters and must be re-created during a long rest."
+    },
+    {
       "name": "Occult Scholar",
       "prereqLevel": 11,
       "prereq": {

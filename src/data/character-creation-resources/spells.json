@@ -23,6 +23,28 @@
     ]
   },
   {
+    "name": "Ironfrost Plague",
+    "school": "Transmutation",
+    "level": 7,
+    "castingTime": "1 action",
+    "range": "Sight (100-foot radius)",
+    "components": "V, S, M (an acorn killed by frost)",
+    "duration": "1 hour",
+    "description": [
+      "An unnatural cold spreads in a 100-foot radius from a point you can see, causing the following effects in the area 1 hour:",
+      "<ul><li>The ground in the area becomes difficult terrain and can't be burowed through.</li><li>Potions and other liquids in the area freeze solid and can't be drunk.</li><li>Corpses in the area can't be returned to life.</li><li>When a creature in the area takes any cold damage, it takes 2d8 additional cold damage.</li></ul>"
+    ],
+    "higherLevels": [
+      "If you cast this spell using a spell slot of 9th level, it lasts until dispelled."
+    ],
+    "upcastDuration": {
+      "8": "1 hour",
+      "9": "Until dispelled"
+    },
+    "lists": ["Primal", "Occult"],
+    "ritual": 0
+  },
+  {
     "name": "Absolute Zero",
     "school": "Evocation",
     "level": 9,

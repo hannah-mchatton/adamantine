@@ -5852,7 +5852,7 @@
         "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
         "value": "Pact of the Tome"
       },
-      "description": "A final page appears in your Tome, written in the primordial language of creation. It contains the Wish spell. You can cast Wish once per long rest without expending a spell slot.",
+      "description": "A final page appears in your Tome, written in Supernal, the primordial language of creation. It contains the Wish spell. You can cast Wish once per long rest without expending a spell slot.",
       "uses": [
         {
           "id": "DCB6BE7C-11B6-4BF2-B66C-C298760FF723",

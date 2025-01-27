@@ -5871,6 +5871,441 @@
       ]
     }
   ],
+  "mask-power": [
+    {
+      "name": "Agile",
+      "description": "When you are prone, standing up uses only 5 feet of your movement. In addition, mounting or dismounting a creature costs you only 5 feet of movement."
+    },
+    {
+      "name": "Aquadynamic",
+      "description": "You gain a swimming speed equal to your walking speed, and you can jump out of water as if you were standing on solid ground.",
+      "granted": [
+        {
+          "type": "speed",
+          "speed": "swim",
+          "amount": -1
+        }
+      ]
+    },
+    {
+      "name": "Aquatic Hunter",
+      "description": "While swimming, Wisdom (Perception) checks made to see you have disadvantage, and you have advantage on Dexterity (Stealth) checks made to hide."
+    },
+    {
+      "name": "Blood Scent",
+      "description": "You can take a minute to focus your senses on the scent of blood, detecting the direction of the nearest creature within 1,000 feet of you that does not have all of its hit points. If the creature is moving, you learn the direction of its movement."
+    },
+    {
+      "name": "Breath Weapon",
+      "description": "When you select this feature, choose a damage type. As an action, you can breathe forth energy of the chosen type in a 15-foot cone.</p><p>Each creature in that area must make a Dexterity saving throw against your exploit save DC, taking 3d6 damage of the chosen type on a failed save, or half as much damage on a success.</p><p>You can use this feature a number of times equal to your Charisma modifier (minimum of once), and regain all expended uses when you finish a long rest.",
+      "uses": [
+        {
+          "id": "447E5076-EA2F-4C54-9590-8BF98363B23A",
+          "type": "derived",
+          "source": "score",
+          "score": "cha",
+          "reset": 2
+        }
+      ]
+    },
+    {
+      "name": "Camouflage",
+      "description": "You can attempt to hide without cover while you are pressed against a solid surface that is at least as tall and wide as you are."
+    },
+    {
+      "name": "Carapce",
+      "description": "When you take the Dodge action, your Armor Class becomes 19 until the start of your next turn, unless it was already higher."
+    },
+    {
+      "name": "Charge",
+      "description": "If you hit a creature with an attack immediately after moving at least 20 feet directly toward it, your attack deals additional damage equal to a roll of your Exploit Die."
+    },
+    {
+      "name": "Clownish",
+      "description": "Creatures that are charmed by you are also frightened by you, and vice versa."
+    },
+    {
+      "name": "Cocoon",
+      "description": "Whenever you spend one or more hit dice to heal during a short rest, you can envelop yourself in a tight covering for the duration. If you do, you regain extra hit points equal to your Charisma modifier (minimum of +1)."
+    },
+    {
+      "name": "Crow",
+      "description": "As an action, you can call out a mighty scream, which thunders forth in a 60-foot cone.</p><p>Each sleeping creature in the area awakens. Each creature in the area that is concentrating must succeed on a Constitution saving throw against your exploit save DC or lose concentration."
+    },
+    {
+      "name": "Death Roll",
+      "description": "While you are underwater, creatures grappled by you take bludgeoning damage equal to a roll of your Exploit Die at the beginning of each of their turns."
+    },
+    {
+      "name": "Distracting",
+      "description": "Creatures of your choice within 5 feet of you have disadvantage on saving throws to maintain concentration."
+    },
+    {
+      "name": "Express Checkup",
+      "description": "While you have a creature grappled, you can use your bonus action to examine it for weaknesses, making a DC 15 Wisdom (Medicine) check.</p><p>On a success, you learn which among its Strength, Dexterity, and Constitution saving throw scores is the lowest."
+    },
+    {
+      "name": "Feign Injury",
+      "description": "When you take damage and do not have a creature grappled, you can use your reaction to fall prone and feign a crippling injury.</p><p>Until the start of your next turn, a creature that attempts to attack you must first succeed on a Wisdom saving throw against your exploit save DC or be forced to choose a different target or lose the attack.</p><p>You can use this feature a number of times equal to your Charisma modifier (minimum of once), and regain all expended uses when you finish a long rest.",
+      "uses": [
+        {
+          "id": "CE89678A-F6F6-45BD-A875-A8EEF2F2262B",
+          "type": "derived",
+          "source": "score",
+          "score": "cha",
+          "reset": 2
+        }
+      ]
+    },
+    {
+      "name": "Food Fight",
+      "description": "You can treat any food item as an improvised weapon with the Light and Finesse properties that is destroyed after a single attack.</p><p>When you hit a creature with a food weapon, it gains disadvantage on attacks that target creatures other than you until the end of its next turn."
+    },
+    {
+      "name": "Gallop",
+      "description": "Your speed increases by 10 feet.",
+      "granted": [
+        {
+          "type": "speed-bonus",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "name": "Glide",
+      "description": "As a reaction you can take when falling while you aren't prone or wearing heavy armor, you can glide, slowing your rate of descent to 20 feet per round. While gliding, you can as part of your movement move up to 40 feet in any horizontal direction, or dive straight down. When you land, you take no falling damage and can land on your feet. You can also start gliding by expending at least 10 feet of movement as part of a high jump."
+    },
+    {
+      "name": "Hard-Headed",
+      "description": "You have advantage on saving throws to resist being dazed or stunned, and you gain resistance to psychic damage.",
+      "granted": [
+        {
+          "type": "condition-advantage",
+          "options": ["Dazed", "Stunned"]
+        },
+        {
+          "type": "damage-resistance",
+          "options": ["Psychic"]
+        }
+      ]
+    },
+    {
+      "name": "Harmless Joke",
+      "description": "As a bonus action, you make yourself appear conspicuously nonthreatening, forcing one creature within 15 feet that can see you to succeed on a Wisdom saving throw against your exploit save DC or be charmed by you for one minute, or until you take any hostile action against it.</p><p>The creature can repeat this saving throw at the end of each of their turns, ending the effect and becoming immune to it for 24 hours on a success.</p><p>You can use this feature a number of times equal to your Charisma modifier (minimum of once), and regain all expended uses when you finish a long rest.",
+      "uses": [
+        {
+          "id": "128722E0-519A-49B6-B5F8-6ED0B09F2064",
+          "type": "derived",
+          "source": "score",
+          "score": "cha",
+          "reset": 2
+        }
+      ]
+    },
+    {
+      "name": "Invisible Lasso",
+      "description": "As an action, you pretend to lasso a creature within 20 feet, then mime dragging it toward you, forcing the creature to make a Wisdom saving throw against your exploit save DC. On a failure, the target must use its reaction, if available, to move half its speed directly toward you."
+    },
+    {
+      "name": "Invisible Wall",
+      "description": "As an action, you pretend to build or otherwise interact with an invisible wall. The invisible wall is 10 feet wide, 10 feet tall, and a quarter-inch thick.</p><p>Until the start of your next turn, attacks and spells that pass through the wall treat it as half cover, and when a creature attempts to move through the wall you can force it to make a Wisdom saving throw against your exploit save DC.</p><p>On a failure, the creature treats the wall as real until the start of your next turn and is unable to pass through it."
+    },
+    {
+      "name": "Irresistable Treats",
+      "description": "As part of a short or long rest, you can cook a special treat, provided you have ingredients and cook's utensils on hand. As an action, you can offer this treat to a creature with an Intelligence score of 5 or lower, forcing it to make a Wisdom saving throw against your spell save DC. On a failure, the creature is Charmed by you for 24 hours, or until you take any hostile action against it."
+    },
+    {
+      "name": "Iron Stomach",
+      "description": "You can treat any organic material as an equal quantity of rations."
+    },
+    {
+      "name": "Juggernaut Roll",
+      "description": "As an action, you move up to your speed in a straight line then fall prone. You can freely move through the space of any creature of your size or smaller with this movement, and any creature whose space you enter in this way must succeed on a Dexterity saving throw against your spell save DC or fall prone."
+    },
+    {
+      "name": "Keen Senses",
+      "description": "You have Advantage on Wisdom (Perception) checks that rely on senses other than sight."
+    },
+    {
+      "name": "Lucha's Prayer",
+      "description": "As a bonus action, you can speak a hurried prayer. The first time in the next minute that you make an attack roll or saving throw, you add a roll of your Exploit Die to the roll's result.</p><p>You can use this feature a number of times equal to your Charisma modifier (minimum of once), and regain all expended uses when you finish a long rest.",
+      "uses": [
+        {
+          "id": "3315CF4E-0E9C-42BD-ACAB-EF3C2E6DE167",
+          "type": "derived",
+          "source": "score",
+          "score": "cha",
+          "reset": 2
+        }
+      ]
+    },
+    {
+      "name": "Marsupial Pouch",
+      "description": "You gain a small opening in your body or clothing to an extradimensional space that can hold up to 50 pounds."
+    },
+    {
+      "name": "Mimic",
+      "description": "When you see a creature within 30 feet of you cast a cantrip, you can use your action on your following turn to cast the same cantrip, using that creature's spell attack bonus and spell save DC."
+    },
+    {
+      "name": "Musk",
+      "description": "As an action, you can exude a pungent musk in a 5 foot radius, forcing each other creature in the area to make a Constitution saving throw against your exploit save DC.</p><p>On a failure, the creature is poisoned until the start of your next turn, and creatures have advantage on checks made to detect them for the next hour or until they bathe.</p><p>You can use this feature a number of times equal to your Charisma modifier (minimum of once), and regain all expended uses when you finish a long rest.",
+      "uses": [
+        {
+          "id": "AD331BA9-5D8C-4DEB-90E0-4618B5320075",
+          "type": "derived",
+          "source": "score",
+          "score": "cha",
+          "reset": 2
+        }
+      ]
+    },
+    {
+      "name": "Mystic",
+      "description": "You learn the Prestidigitation cantrip. Charisma is your spellcasting ability for it. Whenever you make an brawler attack, you can cast it as part of the attack, adding a cosmetic magical effect to the attack. If you do, the attack counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks or damage.",
+      "granted": [
+        {
+          "type": "spell",
+          "options": ["Prestidigitation"],
+          "ability": "cha"
+        }
+      ]
+    },
+    {
+      "name": "Nosy",
+      "description": "Your hands function as thieves' tools and you are considered proficient with them.",
+      "granted": [
+        {
+          "type": "tool",
+          "options": ["Thieves' Tools"],
+          "level": 1
+        }
+      ]
+    },
+    {
+      "name": "Perch",
+      "description": "When you land on a creature your size or larger that isn't prone, you can choose to grapple it."
+    },
+    {
+      "name": "Pinch Grip",
+      "description": "Your brawler attacks can deal piercing damage."
+    },
+    {
+      "name": "Powerful Build",
+      "description": "You count as one size larger when determining your carrying capacity and the weight you can push, drag, and lift."
+    },
+    {
+      "name": "Quick Squeeze",
+      "description": "You can move through any space larger than your skull without squeezing."
+    },
+    {
+      "name": "Rabid",
+      "description": "You have advantage on Charisma (Deception) checks made to appear friendly."
+    },
+    {
+      "name": "Righteous Grip",
+      "description": "When a fiend or undead starts its turn grappled by you, you can force it to make a Wisdom saving throw against your exploit save DC. On a failure, the creature must use its action to attempt to escape your grapple."
+    },
+    {
+      "name": "Roar",
+      "description": "As a bonus action, you can let out a menacing roar in a 10-foot radius. Each creature of your choice in the area must succeed on a Wisdom saving throw against your exploit save DC or be frightened until the end of your next turn.</p><p>You can use this feature a number of times equal to your Charisma modifier (minimum of once), and regain all expended uses when you finish a long rest.",
+      "uses": [
+        {
+          "id": "00363738-629B-4FF6-B460-20B828BE9ED5",
+          "type": "derived",
+          "source": "score",
+          "score": "cha",
+          "reset": 2
+        }
+      ]
+    },
+    {
+      "name": "Roughrider",
+      "description": "You count as one size larger for the purposes of mounting, and your anatomy counts as appropriate for mounting.</p><p>When you roll initiative, any creature mounted on you can choose to use your initiative roll, instead of its own."
+    },
+    {
+      "name": "Scent Trail",
+      "description": "You can always precisely trace back any route you have traveled before."
+    },
+    {
+      "name": "Sick",
+      "description": "As an action, you can cough in the face of a creature grappled by you, forcing it to succeed on a Constitution saving throw against your exploit save DC or contract Lucha Fever.</p><p>A creature infected with Lucha Fever has disadvantage on saving throws while its face is uncovered.</p><p>You can use this feature a number of times equal to your Charisma modifier (minimum of once), and regain all expended uses when you finish a long rest.",
+      "uses": [
+        {
+          "id": "7DF732C2-7B50-4A2D-AFBF-5D0097E5FE3A",
+          "type": "derived",
+          "source": "score",
+          "score": "cha",
+          "reset": 2
+        }
+      ]
+    },
+    {
+      "name": "Sinister Aspect",
+      "description": "You have advantage on Charisma checks made to appear more dangerous than you are."
+    },
+    {
+      "name": "Spiky",
+      "description": "A creature grapples you for the first time on a turn or that starts its turn grappling you takes piercing damage equal to a roll of your Exploit Die."
+    },
+    {
+      "name": "Stable",
+      "description": "You have advantage on ability checks and saving throws made to resist being forcefully moved."
+    },
+    {
+      "name": "Startle",
+      "description": "As an action, you can attempt to scare a creature within 30 feet that can see you. The creature must succeed on a Wisdom saving throw against your exploit save DC or be frightened until the end of your next turn.</p><p>If the target has not yet taken a turn this combat, it has disadvantage on this saving throw."
+    },
+    {
+      "name": "Stinger",
+      "description": "Your critical hits deal an additional set of damage dice.  This additional damage is poison damage."
+    },
+    {
+      "name": "Stubborn",
+      "description": "When a creature you are grappling escapes your grapple, you can use your reaction to attempt to grapple them again."
+    },
+    {
+      "name": "Telekinetic",
+      "description": "You can make shove creatures from up to 30 feet away."
+    },
+    {
+      "name": "Telepathic",
+      "description": "You can speak telepathically to any creature you can see within 60 feet of you.</p><p>Your telepathic utterances are in a language you know, and the creature understands you only if it knows that language. Your communication doesn't give the creature the ability to respond to you telepathically."
+    },
+    {
+      "name": "Thief",
+      "description": "You have advantage on checks made to steal from creatures that are grappled by you."
+    },
+    {
+      "name": "Trample",
+      "description": "You can move through the spaces of prone creatures without spending additional movement.</p><p>The first time you do so each turn, you can deal bludgeoning damage equal to a roll of your Exploit Die to the creature."
+    },
+    {
+      "name": "Tumble",
+      "description": "When you would take damage from falling, you can use your reaction to reduce that damage by an amount equal to twice your Brawler level."
+    },
+    {
+      "name": "Venemous",
+      "description": "When you hit a creature with an brawler attack, you can use your bonus action to force it to make a Constitution saving throw against your exploit save DC.</p><p>On a failure, the creature is poisoned for 1 minute. The creature can repeat this saving throw at the end of each of its turns, ending the effect on a success.</p><p>You can use this feature a number of times equal to your Charisma modifier (minimum of once), and regain all expended uses when you finish a long rest.",
+      "uses": [
+        {
+          "id": "ABB63DC1-B233-4712-BC88-8784A9B3F751",
+          "type": "derived",
+          "source": "score",
+          "score": "cha",
+          "reset": 2
+        }
+      ]
+    },
+    {
+      "name": "Vicious Claws",
+      "description": "Your brawler attacks can deal slashing damage."
+    },
+    {
+      "name": "Wall Climber",
+      "description": "You gain a climbing speed equal to your walking speed. You can climb difficult surfaces, including upside down on ceilings."
+    },
+    {
+      "name": "Web",
+      "description": "When you restrain a creature with a net, rope, or similar object, the save DC to escape it is equal to your exploit save DC."
+    },
+    {
+      "name": "Blinding Spray",
+      "prereqLevel": 10,
+      "description": "As a bonus action, you can spray stinging fluid in a 20-foot cone, forcing each creature in the area to make a Constitution saving throw against your exploit save DC.</p><p>On a failure, a creature is blinded until the end of your next turn.</p><p>You can use this feature a number of times equal to your Charisma modifier (minimum of once), and regain all expended uses when you finish a long rest.",
+      "uses": [
+        {
+          "id": "F1FCB32A-E2A3-41B7-8D4D-9AE5135776901",
+          "type": "derived",
+          "source": "score",
+          "score": "cha",
+          "reset": 2
+        }
+      ]
+    },
+    {
+      "name": "Devotion's Reward",
+      "prereqLevel": 10,
+      "description": "When you roll a natural 20 on a saving throw, you gain a number of temporary hit points equal to your Brawler level. These temporary hit points can be added to any temporary hit points you already have. While you have any of these temporary hit points, your Brawler attacks deal additional radiant damage equal to two rolls of your Exploit Die."
+    },
+    {
+      "name": "Double Jump",
+      "prereqLevel": 10,
+      "description": "Whenever you make a jump with a running start, you can leap up to your remaining speed."
+    },
+    {
+      "name": "Fearless",
+      "prereqLevel": 10,
+      "description": "You are immune to being frightened.",
+      "granted": [
+        {
+          "type": "condition-immunity",
+          "options": ["Frightened"]
+        }
+      ]
+    },
+    {
+      "name": "Illegal Hypnosis",
+      "prereqLevel": 10,
+      "description": "As an action, you entrance onlookers with hypnotic gyrations, forcing up to six creatures of your choice within 15 feet of you to make a Wisdom saving throw against your exploit save DC.</p><p>On a failure, the creature is charmed by you, incapacitated, and its speed becomes 0 until the end of your next turn, or until it takes any damage. On each of your subsequent turns for the next minute, you can repeat this action.</p><p>On a successful saving throw, the effect ends for the creature and the creature becomes Immune to it for 24 hours.</p><p>You can use this feature a number of times equal to your Charisma modifier (minimum of once), and regain all expended uses when you finish a long rest.",
+      "uses": [
+        {
+          "id": "80649E3A-1359-4CDE-AFC2-1C1034F7EF9E",
+          "type": "derived",
+          "source": "score",
+          "score": "cha",
+          "reset": 2
+        }
+      ]
+    },
+    {
+      "name": "Lucha's Curse",
+      "prereqLevel": 10,
+      "description": "As a bonus action, you can whisper a terrible imprecation in the ear of a creature grappled by you, forcing it to succeed on a Charisma saving throw against your exploit save DC or suffer the Lucha Curse.</p><p>Whenever a creature cursed in this way makes an attack, it must immediately leap 10 feet directly from its target, or fall prone if it can't.</p><p>You can use this feature a number of times equal to your Charisma modifier (minimum of once), and regain all expended uses when you finish a long rest.",
+      "uses": [
+        {
+          "id": "9C02B1EF-80D2-47C3-A2DC-6C5EE68E12B7",
+          "type": "derived",
+          "source": "score",
+          "score": "cha",
+          "reset": 2
+        }
+      ]
+    },
+    {
+      "name": "Nine Lives",
+      "prereqLevel": 10,
+      "description": "When you would be reduced to 0 hit points or killed outright, you can fall to 1 hit point instead.  You can use this feature once, and regain the ability to do so when you finish a long rest.",
+      "uses": [
+        {
+          "id": "606B5550-99C2-4374-ADFF-580F606975D1",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 2
+        }
+      ]
+    },
+    {
+      "name": "Regenerating Limbs",
+      "prereqLevel": 10,
+      "description": "When you attempt to escape a grapple or other form of restraint, you can tear one of your limbs off to escape automatically. If you do, you lose half your current hit points.</p><p>Whenever you complete a long rest, you can regrow any limbs you are missing."
+    },
+    {
+      "name": "Scuttle",
+      "prereqLevel": 10,
+      "description": "When you make a Dexterity saving throw, you may use your reaction to move up to half your speed. If that moves you out of the affected area, you gain advantage on your saving throw against it."
+    },
+    {
+      "name": "Super Strength",
+      "prereqLevel": 10,
+      "description": "You can grapple, shove, and trip creatures of any size."
+    },
+    {
+      "name": "Swoop",
+      "prereqLevel": 10,
+      "description": "Grappling creatures does not impede your ability to move or jump."
+    }
+  ],
   "enhancement": [
     {
       "name": "Mobility Enhancement",

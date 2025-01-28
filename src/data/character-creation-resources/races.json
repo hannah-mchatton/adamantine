@@ -8155,9 +8155,14 @@
           },
           {
             "name": "Tinker",
-            "description": "You have proficiency with tinker's tools. Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time. When you create a device, choose an item of Adventuring Equipment that costs 20 gp or less. The device replicates the function of that piece of equipment.",
+            "description": "You know the Mending and Prestidigitation cantrips. Intelligence is your spellcating ability for them.</p><p>In addition, you can spend 10 minutes casting Prestidigitation to create a Tiny clockwork device (AC 5, 1 HP), such as a toy, fire starter, or music box. When you create the device, you determine its function by choosing one effect from Prestidigitation; the device produces that effect whenever you or another creature takes a bonus action to activate it with a touch. If the chosen effect has options within it, you choose one of those options for the device when you create it. You can have three such devices in existence at a time, and each falls apart 8 hours after its creation or when you dismantle it with a touch as a Utilize action.</p><p>Finally, you gain proficiency with tinker's tools.",
             "granted": [
-              { "type": "tool", "options": ["Tinker's Tools"], "level": 1 }
+              { "type": "tool", "options": ["Tinker's Tools"], "level": 1 },
+              {
+                "type": "spell",
+                "options": ["Mending", "Prestidigitation"],
+                "ability": "int"
+              }
             ]
           }
         ]

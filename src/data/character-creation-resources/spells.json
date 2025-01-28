@@ -2872,6 +2872,31 @@
     "upcastMultiplier": 1
   },
   {
+    "name": "Electric Judgement",
+    "school": "Evocation",
+    "level": 9,
+    "castingTime": "1 action",
+    "range": "300 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You create a massive bolt of electricity that lances toward a target of your choice that you can see within range. Five bolts then leap from that target to as many as five other targets, each of which must be within 60 feet of the first target. Each of these five bolts also produce an additional two bolts each, which follow the same rules. A target can be a creature or an object and can be targeted by only one of the bolts.",
+      "A target must make a Dexterity saving throw. The target takes 10d6 lightning damage on a failed save, or half as much on a successful one. If a creature fails its saving throw by 5 or more, it is additional stunned for 1 minute. An affected creature can repeat its saving throw at the end of each of its turns, ending the effect on itself on a success."
+    ],
+    "lists": ["Arcane"],
+    "ritual": 0,
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 10,
+        "die": 6,
+        "type": "lightning"
+      }
+    ],
+    "multiplier": 16
+  },
+  {
     "name": "Chalice of the Night",
     "school": "Sangromancy",
     "level": 8,
@@ -14406,7 +14431,7 @@
   },
   {
     "name": "Power Word: Glory",
-    "school": "Enchantment",
+    "school": "Restoration",
     "level": 8,
     "castingTime": "1 action",
     "range": "60 feet",
@@ -16075,7 +16100,7 @@
   },
   {
     "name": "Scornful Mantle of the Undaunted",
-    "school": "Abjuration",
+    "school": "Restoration",
     "level": 8,
     "castingTime": "1 minute",
     "range": "Touch",

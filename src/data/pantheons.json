@@ -3037,5 +3037,227 @@
         "domains": ["Nature", "Travel"]
       }
     ]
+  },
+  {
+    "name": "Hammerspace Pantheon",
+    "gods": [
+      {
+        "name": "Cegorach",
+        "gender": "Male",
+        "alignment": "CN",
+        "symbol": "Black rose",
+        "portfolio": "Art, Creativity, Trickery",
+        "domains": [
+          "Arts",
+          "Beauty",
+          "Forge",
+          "Knowledge",
+          "Light",
+          "Luck",
+          "Madness",
+          "Shadow",
+          "Story",
+          "Trickery",
+          "Twilight",
+          "Wealth"
+        ]
+      },
+      {
+        "name": "God-Emperor / Sigmar",
+        "gender": "Male",
+        "alignment": "LE",
+        "symbol": "Golden throne",
+        "portfolio": "Conquest, Humanity",
+        "domains": [
+          "Arcana",
+          "Inquisition",
+          "Judgement",
+          "Knowledge",
+          "Order",
+          "Strength",
+          "War",
+          "Wealth"
+        ]
+      },
+      {
+        "name": "Gork",
+        "gender": "Male",
+        "alignment": "CE",
+        "symbol": "Flaming skull",
+        "portfolio": "Brutality, Orks",
+        "domains": ["Flame", "Forge", "Steel", "Strength", "Tempest", "War"]
+      },
+      {
+        "name": "Horned Rat",
+        "gender": "Male",
+        "alignment": "CE",
+        "symbol": "Rat head with four horns",
+        "portfolio": "Ambition, Hunger, Rats",
+        "domains": [
+          "Death",
+          "Nature",
+          "Plague",
+          "Shadow",
+          "Strength",
+          "Trickery",
+          "Twilight",
+          "War",
+          "Wealth"
+        ]
+      },
+      {
+        "name": "Isha",
+        "gender": "Female",
+        "alignment": "NG",
+        "symbol": "Teary eye",
+        "portfolio": "Fertility, Harvest, Suffering",
+        "domains": [
+          "Beauty",
+          "Hearth",
+          "Hope",
+          "Life",
+          "Nature",
+          "Pain",
+          "Peace",
+          "Protection",
+          "Sorrow"
+        ]
+      },
+      {
+        "name": "Khaine",
+        "gender": "Male",
+        "alignment": "CE",
+        "symbol": "Hand covered in blood",
+        "portfolio": "Eldar, Murder, War",
+        "domains": ["Death", "Flame", "Forge", "Strength", "War"]
+      },
+      {
+        "name": "Khorne",
+        "gender": "Agender (Masculine)",
+        "alignment": "CE",
+        "symbol": "Eight-pointed star and a skull",
+        "portfolio": "Murder, Rage, War",
+        "domains": [
+          "Apocalypse",
+          "Eldritch",
+          "Flame",
+          "Madness",
+          "Steel",
+          "Strength",
+          "War"
+        ]
+      },
+      {
+        "name": "Mork",
+        "gender": "Male",
+        "alignment": "CE",
+        "symbol": "Frozen skull",
+        "portfolio": "Cunning, Orks",
+        "domains": [
+          "Knowledge",
+          "Steel",
+          "Strength",
+          "Trickery",
+          "War",
+          "Winter"
+        ]
+      },
+      {
+        "name": "Nagash",
+        "gender": "Male",
+        "alignment": "CE",
+        "symbol": "Crowned skull",
+        "portfolio": "Betrayal, Undeath",
+        "domains": [
+          "Arcana",
+          "Death",
+          "Grave",
+          "Knowledge",
+          "Plague",
+          "Shadow",
+          "Trickery"
+        ]
+      },
+      {
+        "name": "Nurgle",
+        "gender": "Agender (Masculine)",
+        "alignment": "NE",
+        "symbol": "Three green arrows and three green circles",
+        "portfolio": "Death, Disease, Decay",
+        "domains": [
+          "Death",
+          "Eldritch",
+          "Grave",
+          "Madness",
+          "Nature",
+          "Pain",
+          "Plague",
+          "Sorrow"
+        ]
+      },
+      {
+        "name": "Slaanesh",
+        "gender": "Genderfluid",
+        "alignment": "CE",
+        "symbol": "A combination of the male and female gender icons",
+        "portfolio": "Excess, Desire, Pleasure",
+        "domains": [
+          "Arts",
+          "Beauty",
+          "Eldritch",
+          "Forge",
+          "Hearth",
+          "Light",
+          "Luck",
+          "Madness",
+          "Pain",
+          "Story",
+          "Trickery",
+          "Twilight",
+          "Wealth"
+        ]
+      },
+      {
+        "name": "Tzeentch",
+        "gender": "Agender (Masculine)",
+        "alignment": "CN",
+        "symbol": "An eye and a blue flame",
+        "portfolio": "Change, Hope, Magic",
+        "domains": [
+          "Arcana",
+          "Arts",
+          "Beauty",
+          "Eldritch",
+          "Flame",
+          "Hearth",
+          "Hope",
+          "Knowledge",
+          "Luck",
+          "Madness",
+          "Peace",
+          "Time",
+          "Travel",
+          "Trickery"
+        ]
+      },
+      {
+        "name": "Ynnead",
+        "gender": "Male",
+        "alignment": "LN",
+        "symbol": "A complex aeldari rune",
+        "portfolio": "Death, Hope",
+        "domains": [
+          "Death",
+          "Eldritch",
+          "Grave",
+          "Hope",
+          "Knowledge",
+          "Pain",
+          "Peace",
+          "Sorrow",
+          "War"
+        ]
+      }
+    ]
   }
 ]

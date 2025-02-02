@@ -7368,11 +7368,11 @@
     },
     {
       "name": "Gift of Unfettered Glory",
-      "description": "When you hit a creature with a melee attack or melee spell attack, you can add your Charisma modifier to the damage dealt."
+      "description": "When you hit a creature with a melee attack, you can add your Charisma modifier to the damage dealt."
     },
     {
       "name": "Gift of Unsurpassed Fortune",
-      "description": "Whenever a creature makes an attack roll, skill check, or saving throw within 20 feet, after the GM has rolled but before they have determined the result, you can use your reaction to roll a d20. If you roll a 10 or higher, the attack roll, saving throw, or skill check immediately fails.</p><p>You cannot do this again until you complete a long rest.",
+      "description": "Whenever a creature makes an attack roll, skill check, or saving throw within 20 feet, after the GM has rolled but before they have determined the result, you can use your reaction to roll a d20. If you roll a 10 or higher, the attack roll, saving throw, or skill check automatically fails.</p><p>You can use this feature once, and can't do so again until you finish a long rest.",
       "uses": {
         "id": "01B743A8-9E0A-487F-9F5F-E4530F3AA584",
         "type": "fixed",
@@ -7383,7 +7383,7 @@
     {
       "name": "Gift of Liberating Freedom",
       "prereqLevel": 2,
-      "description": "As a bonus action, you can manifest a pair of leathery wings. You gain a fly speed equal to your current speed. These wings recede if you dismiss them as a bonus action on your turn, or if you are knocked unconscious. You cannot manifest your wings while wearing heavy armour. You can manifest your wings while wearing medium or light armour if it is made to accommodate them.",
+      "description": "As a bonus action, you can manifest a pair of leathery wings. You gain a flying speed equal to your current speed. These wings recede if you dismiss them as a bonus action on your turn, or if you are knocked unconscious.",
       "granted": [
         {
           "type": "speed",
@@ -7412,7 +7412,7 @@
     {
       "name": "Gift of Unconditional Love",
       "prereqLevel": 3,
-      "description": "Whenever a creature fails a Charisma saving throw due to a spell or magical ability you control, you can use your reaction to gain temporary hit points equal to 1d10 + your character level."
+      "description": "Whenever a creature fails a Charisma saving throw for a spell you cast, you can use your reaction to gain temporary hit points equal to 1d10 + your level."
     },
     {
       "name": "Gift of Second Chances",
@@ -7428,7 +7428,7 @@
     {
       "name": "Gift of Expansive Knowledge",
       "prereqLevel": 4,
-      "description": "When you complete this contract for the first time, you learn additional spells from any spell list equal to your Charisma modifier. You must have a spell slot level equal to or greater than each of these spells.</p><p>While you have the effects of this contract, you know these spells in addition to your total Spells Known.",
+      "description": "You learn additional spells from any spell list equal to your Charisma modifier for which you have a spell slot of a level equal to or greater than the level of the spell.",
       "listed": {
         "id": "7283C897-72EE-46AD-B23A-6227BB0E8CB6",
         "type": "spell",
@@ -7442,7 +7442,7 @@
     {
       "name": "Gift of Unbridled Power",
       "prereqLevel": 4,
-      "description": "Upon completing a short rest, you can spend 1 Hit Die and regain any number of spell slots whose total is equal to or less than the result of the Hit Dice. If you do, you take psychic damage equal to the number of spell slot levels you regained.",
+      "description": "Upon completing a short rest, you can spend 1 Hit Die and regain any number of spell slots whose total level is equal to or less than the result of the Hit Dice. If you do, you take psychic damage equal to the number of spell slot levels you regained.",
       "uses": {
         "id": "4B5A313B-BC73-4B62-8BFE-028947498453",
         "type": "fixed",

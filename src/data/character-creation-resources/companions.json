@@ -282,6 +282,54 @@
     }
   },
   {
+    "key": "fey-sprite",
+    "stats": {
+      "0": {
+        "any": {
+          "name": "Fey Sprite",
+          "size": "Fine",
+          "type": { "fey": {} },
+          "ac": [{ "ac": 13, "from": ["natural armor"] }],
+          "hp": { "base": 1 },
+          "speed": { "hover": 40 },
+          "str": 4,
+          "dex": 14,
+          "con": 4,
+          "int": 10,
+          "wis": 10,
+          "cha": 10,
+          "conditionImmune": ["prone"],
+          "languages": [
+            "understands the languages you speak",
+            "telepathy 1 mile"
+          ],
+          "trait": [
+            {
+              "name": "Fully Ethereal",
+              "entries": [
+                "The sprite cannot be attacked, targeted with spells, or affected in any way by other creatures."
+              ]
+            },
+            {
+              "name": "Fey Light",
+              "entries": [
+                "The sprite sheds bright light in a 20 foot radius and dim light 20 feet beyond that."
+              ]
+            }
+          ],
+          "action": [
+            {
+              "name": "Invisibility",
+              "entries": [
+                "The sprite magically turns invisible or becomes visible again."
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
     "key": "homonculus",
     "stats": {
       "0": {

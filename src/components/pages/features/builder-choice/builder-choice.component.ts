@@ -47,6 +47,7 @@ export class BuilderChoiceComponent implements OnInit {
   @Input() characterLevel = 21;
 
   @Input() characterId: string;
+  @Input() classLevel = 0;
 
   public genericListKeys: string[] = [];
   public choiceOptions: any[] = [];

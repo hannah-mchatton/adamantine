@@ -1,11 +1,19 @@
 <ng-container *ngIf="subclass">
-    <p [innerHTML]="subclass.description"></p>
+  <p [innerHTML]="subclass.description"></p>
 
-    <app-class-table *ngIf="subclass.extraCols" [class]="subclass" [subclass]="true" [startLevel]="getSubclassStartLevel()"></app-class-table>
+  <app-class-table
+    *ngIf="subclass.extraCols"
+    [class]="subclass"
+    [subclass]="true"
+    [startLevel]="getSubclassStartLevel()"
+  ></app-class-table>
 
-    <ng-container *ngFor="let level of levelKeys(subclass.features)">
-        <ng-container *ngFor="let feature of subclass.features[level]">
-            <app-display-feature [feature]="feature"></app-display-feature>
-        </ng-container>
+  <ng-container *ngFor="let level of levelKeys(subclass.features)">
+    <ng-container *ngFor="let feature of subclass.features[level]">
+      <app-display-feature
+        [feature]="feature"
+        [classLevel]="level"
+      ></app-display-feature>
     </ng-container>
+  </ng-container>
 </ng-container>

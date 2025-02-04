@@ -15,6 +15,7 @@ export class SheetListedComponent {
 
   @Input() characterLevel = 21;
   @Input() characterId;
+  @Input() classLevel = 0;
 
   public genericKeys: string[] = [];
   public choiceValue: any;

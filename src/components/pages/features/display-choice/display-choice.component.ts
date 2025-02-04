@@ -11,6 +11,7 @@ export class DisplayChoiceComponent {
   @Input() subChoice = false;
 
   @Input() level = 0;
+  @Input() classLevel = 0;
 
   constructor(private dataService: DataService) {}
 

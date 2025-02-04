@@ -1,61 +1,66 @@
 <ng-container *ngIf="classData">
-    <app-class-table [class]="classData"></app-class-table>
+  <app-class-table [class]="classData"></app-class-table>
 
+  <div>
+    <h5>Hit Points</h5>
     <div>
-        <h5>Hit Points</h5>
-        <div>
-            <div>
-                <strong>Hit Dice:</strong> 
-                1d{{ classData.hitDie }} per {{ classData.name }} level
-            </div>
-            <div>
-                <strong>Hit Points at 1st Level:</strong> 
-                {{ classData.hitDie }} + your Constitution modifier
-            </div>
-            <div>
-                <strong>Hit Points at Higher Levels:</strong> 
-                1d{{ classData.hitDie }} (or {{ classData.hitDie / 2 + 1 }}) + 
-                    your Constitution modifier per {{ classData.name }} level after 1st
-            </div>
-        </div>
+      <div>
+        <strong>Hit Dice:</strong>
+        1d{{ classData.hitDie }} per {{ classData.name }} level
+      </div>
+      <div>
+        <strong>Hit Points at 1st Level:</strong>
+        {{ classData.hitDie }} + your Constitution modifier
+      </div>
+      <div>
+        <strong>Hit Points at Higher Levels:</strong>
+        1d{{ classData.hitDie }} (or {{ classData.hitDie / 2 + 1 }}) + your
+        Constitution modifier per {{ classData.name }} level after 1st
+      </div>
     </div>
+  </div>
+  <div>
+    <h5>Proficiencies</h5>
     <div>
-        <h5>Proficiencies</h5>
-        <div>
-            <div>
-                <strong>Armor:</strong>
-                {{ classData.proficiencies.armor.join(', ') }}
-            </div>
-            <div>
-                <strong>Weapons:</strong>
-                {{ classData.proficiencies.weapons.join(', ') }}
-            </div>
-            <div *ngIf="classData.proficiencies.toolsDB">
-                <strong>Tools:</strong>
-                {{ classData.proficiencies.toolsDB }}
-            </div>
-            <div>
-                <strong>Saving Throws:</strong>
-                {{ classData.proficiencies.savingThrows.join(', ') }}
-            </div>
-            <div>
-                <strong>Skills:</strong>
-                <ng-container *ngIf="classData.proficiencies.skillChoices?.length; else allSkills">
-                    Choose {{ numbers(classData.proficiencies.numSkills) }} 
-                        from {{ classData.proficiencies.skillChoices.join(', ') }}
-                </ng-container>
-                <ng-template #allSkills>
-                    Choose any {{ numbers(classData.proficiencies.numSkills) }}
-                </ng-template>
-            </div>
-        </div>
-    </div>
-
-    <ng-container *ngFor="let level of levelKeys(classData.features)">
-        <ng-container *ngIf="level <= (classData.maxLevel ?? 20)">
-            <ng-container *ngFor="let feature of classData.features[level]">
-                <app-display-feature [feature]="feature"></app-display-feature>
-            </ng-container>
+      <div>
+        <strong>Armor:</strong>
+        {{ classData.proficiencies.armor.join(", ") }}
+      </div>
+      <div>
+        <strong>Weapons:</strong>
+        {{ classData.proficiencies.weapons.join(", ") }}
+      </div>
+      <div *ngIf="classData.proficiencies.toolsDB">
+        <strong>Tools:</strong>
+        {{ classData.proficiencies.toolsDB }}
+      </div>
+      <div>
+        <strong>Saving Throws:</strong>
+        {{ classData.proficiencies.savingThrows.join(", ") }}
+      </div>
+      <div>
+        <strong>Skills:</strong>
+        <ng-container
+          *ngIf="classData.proficiencies.skillChoices?.length; else allSkills"
+        >
+          Choose {{ numbers(classData.proficiencies.numSkills) }} from
+          {{ classData.proficiencies.skillChoices.join(", ") }}
         </ng-container>
+        <ng-template #allSkills>
+          Choose any {{ numbers(classData.proficiencies.numSkills) }}
+        </ng-template>
+      </div>
+    </div>
+  </div>
+
+  <ng-container *ngFor="let level of levelKeys(classData.features)">
+    <ng-container *ngIf="level <= (classData.maxLevel ?? 20)">
+      <ng-container *ngFor="let feature of classData.features[level]">
+        <app-display-feature
+          [feature]="feature"
+          [classLevel]="level"
+        ></app-display-feature>
+      </ng-container>
     </ng-container>
+  </ng-container>
 </ng-container>

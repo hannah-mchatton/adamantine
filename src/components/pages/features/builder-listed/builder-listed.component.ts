@@ -23,6 +23,7 @@ export class BuilderListedComponent implements OnInit {
   @Input() characterLevel = 21;
 
   @Input() characterId: string;
+  @Input() classLevel = 0;
 
   public options: any[] = [];
   public displayOptions: any[] = [];

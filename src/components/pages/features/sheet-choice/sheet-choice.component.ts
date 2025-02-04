@@ -16,6 +16,8 @@ export class SheetChoiceComponent implements OnInit {
   @Input() characterLevel = 21;
   @Input() characterId;
 
+  @Input() classLevel = 0;
+
   public genericKeys: string[] = [];
   public choiceValue: any;
 

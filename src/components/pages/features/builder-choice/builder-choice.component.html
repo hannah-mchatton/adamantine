@@ -52,6 +52,7 @@
       [characterLevel]="characterLevel"
       [sourceId]="choice?.id"
       [sourceValue]="choiceValue"
+      [classLevel]="classLevel"
     ></app-builder-feature>
     <div *ngIf="choice?.type === 'trait'">
       <app-builder-feature
@@ -64,6 +65,7 @@
         [characterLevel]="characterLevel"
         [sourceId]="choice?.id"
         [sourceValue]="choiceValue"
+        [classLevel]="classLevel"
       ></app-builder-feature>
     </div>
   </ng-container>

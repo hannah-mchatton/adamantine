@@ -15,6 +15,22 @@ export class SheetFeatureComponent implements OnInit {
   @Input() characterLevel = 21;
   @Input() characterId;
 
+  @Input() classLevel = 0;
+  public alwaysAvailable;
+
+  public numberThConverter(num: string) {
+    switch (num) {
+      case '1':
+        return '1st';
+      case '2':
+        return '2nd';
+      case '3':
+        return '3rd';
+      default:
+        return num + 'th';
+    }
+  }
+
   public featureUses;
 
   public ngOnInit(): void {
@@ -29,6 +45,20 @@ export class SheetFeatureComponent implements OnInit {
         );
       });
     }
+
+    if (this.feature?.subclassSpellsFeature) {
+      if (this.feature.preparedCaster) {
+        this.alwaysAvailable =
+          "These spells are always prepared and don't count against your number of prepared spells.";
+      } else {
+        this.alwaysAvailable =
+          "These spells don't count against your number of spells known.";
+      }
+    }
+  }
+
+  public nameUrlEncode(name: string): string {
+    return name?.replace(/[ '"\(\)!\/:,]/g, '-')?.toLowerCase() ?? '';
   }
 
   public isArray(array: any): boolean {

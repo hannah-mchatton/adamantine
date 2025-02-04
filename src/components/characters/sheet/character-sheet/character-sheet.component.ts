@@ -696,32 +696,29 @@ export class CharacterSheetComponent extends BaseComponent implements OnInit {
     )?.traits;
   }
 
-  public getClassFeatures(c: any): any[] {
-    const featureObj = this.dataService.getClass(c.name).features;
-    const features = [];
-
-    for (let level = 1; level <= c.level; level++) {
-      if (featureObj[level]) {
-        features.push(...featureObj[level]);
-      }
+  public getClassFeatures(c: any): any {
+    const featureObj = this.dataService.getClass(c.name).features as any;
+    for (let i = 20; i > c.level; i--) {
+      delete featureObj[i];
     }
 
-    return features;
+    return featureObj;
   }
-  public getSubclassFeatures(c: any): any[] {
-    const featureObj = this.dataService.getSubclass(
-      c.name,
-      c.subclass
-    ).features;
-    const features = [];
-
-    for (let level = 1; level <= c.level; level++) {
-      if (featureObj[level]) {
-        features.push(...featureObj[level]);
-      }
+  public getSubclassFeatures(c: any): any {
+    const featureObj = this.dataService.getSubclass(c.name, c.subclass)
+      .features as any;
+    for (let i = 20; i > c.level; i--) {
+      delete featureObj[i];
     }
 
-    return features;
+    console.log(featureObj);
+    return featureObj;
+  }
+  public levelKeys(object: any): string[] {
+    return Object.keys(object)
+      .map((l) => parseInt(l))
+      .sort((a, b) => a - b)
+      .map((l) => l.toString());
   }
 
   public saveIsProficient(score: string): boolean {

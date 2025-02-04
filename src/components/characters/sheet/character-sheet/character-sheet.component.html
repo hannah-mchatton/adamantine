@@ -949,27 +949,45 @@
               <h5>Class Features</h5>
               <div *ngFor="let c of character.classes">
                 <h6>{{ getClassName(c.name) }} Features</h6>
-                <div *ngFor="let feature of getClassFeatures(c)">
-                  <app-sheet-feature
-                    [characterId]="characterId"
-                    [characterObj]="c"
-                    [feature]="feature"
-                    [characterLevel]="c.level"
-                  ></app-sheet-feature>
-                </div>
+                <ng-container
+                  *ngFor="let level of levelKeys(getClassFeatures(c))"
+                >
+                  <ng-container
+                    *ngFor="let feature of getClassFeatures(c)[level]"
+                  >
+                    <app-sheet-feature
+                      *ngIf="feature"
+                      [characterId]="characterId"
+                      [characterObj]="c"
+                      [feature]="feature"
+                      [classLevel]="level"
+                      [characterLevel]="c.level"
+                    ></app-sheet-feature>
+                  </ng-container>
+                </ng-container>
 
                 <ng-container *ngIf="c.subclass">
                   <div class="subclass-header">
                     <strong>{{ c.subclass }} Features</strong>
                   </div>
-                  <div *ngFor="let feature of getSubclassFeatures(c)">
-                    <app-sheet-feature
-                      [characterId]="characterId"
-                      [characterObj]="c"
-                      [feature]="feature"
-                      [characterLevel]="c.level"
-                    ></app-sheet-feature>
-                  </div>
+                  <ng-container
+                    *ngFor="let level of levelKeys(getSubclassFeatures(c))"
+                  >
+                    <ng-container
+                      *ngFor="
+                        let subclassFeature of getSubclassFeatures(c)[level]
+                      "
+                    >
+                      <app-sheet-feature
+                        *ngIf="subclassFeature"
+                        [characterId]="characterId"
+                        [characterObj]="c"
+                        [feature]="subclassFeature"
+                        [characterLevel]="c.level"
+                        [classLevel]="level"
+                      ></app-sheet-feature>
+                    </ng-container>
+                  </ng-container>
                 </ng-container>
               </div>
             </ng-container>

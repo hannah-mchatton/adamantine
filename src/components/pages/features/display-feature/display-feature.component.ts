@@ -9,16 +9,31 @@ interface GenericDictionary {
   templateUrl: './display-feature.component.html',
   styleUrls: ['./display-feature.component.scss'],
 })
-export class DisplayFeatureComponent {
+export class DisplayFeatureComponent implements OnInit {
   @Input() feature: any;
 
   @Input() subFeature = false;
   @Input() choiceFeature = false;
 
   @Input() level = 0;
+  @Input() classLevel = 0;
 
   @Input() showPrereqLevel: boolean = true;
   @Input() displayHeader: boolean = true;
+
+  public alwaysAvailable;
+
+  public ngOnInit(): void {
+    if (this.feature.subclassSpellsFeature) {
+      if (this.feature.preparedCaster) {
+        this.alwaysAvailable =
+          "These spells are always prepared and don't count against your number of prepared spells.";
+      } else {
+        this.alwaysAvailable =
+          "These spells don't count against your number of spells known.";
+      }
+    }
+  }
 
   public isArray(array: any): boolean {
     return Array.isArray(array);
@@ -68,5 +83,22 @@ export class DisplayFeatureComponent {
     }
 
     return prereqString;
+  }
+
+  public numberThConverter(num: string) {
+    switch (num) {
+      case '1':
+        return '1st';
+      case '2':
+        return '2nd';
+      case '3':
+        return '3rd';
+      default:
+        return num + 'th';
+    }
+  }
+
+  public nameUrlEncode(name: string): string {
+    return name?.replace(/[ '"\(\)!\/:,]/g, '-')?.toLowerCase() ?? '';
   }
 }

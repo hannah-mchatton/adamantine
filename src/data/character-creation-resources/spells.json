@@ -24323,10 +24323,11 @@
       "One creature you can see within range is suffused in an aura of pure rapturous delight for the next minute, losing the ability to take reactions.",
       "At the beginning of each of the creature's turns, it must succeed on a Wisdom saving throw or voluntarily fail all other saving throws until the beginning of its next turn. On a success, the effect ends."
     ],
-    "lists": ["Melodic", "Occult", "Psionic"],
+    "lists": [],
     "ritual": 0,
     "type": "save",
-    "save": "wis"
+    "save": "wis",
+    "unique": "This spell was developed by the demon lord Graz'zt."
   },
   {
     "name": "Gift of Writhing Pain",
@@ -24343,7 +24344,7 @@
     "higherLevels": [
       "When you cast this spell using a spell slot of 6th level or higher, you can target one additional creature for each slot level above 5th."
     ],
-    "lists": ["Melodic", "Occult", "Psionic"],
+    "lists": [],
     "ritual": 0,
     "type": "save",
     "save": "con",
@@ -24354,7 +24355,8 @@
         "type": "psychic"
       }
     ],
-    "upcastMultiplier": 1
+    "upcastMultiplier": 1,
+    "unique": "This spell was developed by the demon lord Graz'zt."
   },
   {
     "name": "Glyph of Light's Bane",
@@ -29924,5 +29926,125 @@
       "Psionic"
     ],
     "element": "Light"
+  },
+  {
+    "name": "Dark One's Ways",
+    "school": "Transposition",
+    "level": 5,
+    "castingTime": "1 bonus action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "Choose an unoccupied space within range, teleporting either yourself or a willing creature within 500 feet of you to that space."
+    ],
+    "ritual": 0,
+    "lists": ["Occult", "Arcane"]
+  },
+  {
+    "name": "Glacier Surge",
+    "school": "Evocation",
+    "level": 8,
+    "castingTime": "1 action",
+    "range": "Self (100-foot line)",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "A mountain of ice bursts from the earth, tearing ahead with terrifying speed in a 100-foot line that is 20 feet wide extending from you.",
+      "Each creature in the area is pushed up to 30 feet away and must succeed on a Constitution saving throw or take 4d10 + 40 Cold damage, or half as much on a success.",
+      "Objects automatically fail their saving throws against this spell and take twice the amount of damage."
+    ],
+    "ritual": 0,
+    "lists": ["Primal", "Arcane", "Occult"],
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "type": "cold",
+        "dice": 4,
+        "die": 10,
+        "amount": 40
+      }
+    ]
+  },
+  {
+    "name": "Hellfire Baptism",
+    "school": "Evocation",
+    "level": 9,
+    "castingTime": "1 action",
+    "range": "150 feet (30-foot sphere)",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You call the secrets of hellfire to scour your foes and reforge your allies. Each creature in a 30-foot radius sphere within range takes 80 fire damage.",
+      "Each creature reduced to 0 hit points by this damage can make a Constitution saving throw. On a success, the creature regains 8d8 hit points and has advantage on attack rolls and saving throws until the end of its next turn."
+    ],
+    "ritual": 0,
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "type": "fire",
+        "amount": 80
+      }
+    ],
+    "unique": "This spell was developed by the archdevil Mephistopheles."
+  },
+  {
+    "name": "Hellfire Cascade",
+    "school": "Evocation",
+    "level": 7,
+    "castingTime": "1 action",
+    "range": "500 feet (30-foot cylinder)",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "Hellfire boils from the sky, raining down in great clinging droplets. Each creature in a 30-foot radius, 500-foot high cylinder within range must make a Dexterity saving throw. On a failure, a creature takes 8d10 fire damage, or half as much damage on a success.",
+      "A creature that fails this saving throw by 5 or more additionally begins burning (2d10)."
+    ],
+    "ritual": 0,
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 8,
+        "die": 10,
+        "type": "fire"
+      }
+    ],
+    "unique": "This spell was developed by the archdevil Mephistopheles."
+  },
+  {
+    "name": "Litany of Smoldering Cinders",
+    "school": "Transmutation",
+    "level": 1,
+    "castingTime": "1 bonus action",
+    "range": "Self (30-foot radius)",
+    "components": "V, S, M (a burn-scarred hand)",
+    "duration": "Instantaneous",
+    "description": [
+      "A cinder wind rushes forth from you in a 30-foot radius. Each creature in the area that is burning has its burning value increase by 1d10.",
+      "Each creature in the area that was burning in the last minute begins burning (1d10)."
+    ],
+    "ritual": 0,
+    "lists": ["Occult", "Arcane", "Primal", "Elemental"],
+    "element": "Fire"
+  },
+  {
+    "name": "Mage's Blind",
+    "school": "Abjuration",
+    "level": 3,
+    "castingTime": "1 bonus action",
+    "range": "Self",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You secretly choose a school of magic. The first time in the next minute that a creature within 60 feet casts a spell of that school, you can force it to make an Intelligence saving throw. On a failure, you gain control of the creature's spell and can choose new targets for it."
+    ],
+    "ritual": 0,
+    "lists": ["Occult", "Arcane", "Elemental"],
+    "element": "Aether",
+    "type": "save",
+    "save": "int"
   }
 ]

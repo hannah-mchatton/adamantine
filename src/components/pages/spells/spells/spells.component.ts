@@ -32,7 +32,7 @@ export class SpellsComponent extends BaseComponent {
   }
 
   public spellLists(spell: any) {
-    if (spell.lists?.length) {
+    if (spell?.lists?.length) {
       return spell.lists
         .sort()
         .map((l) => {

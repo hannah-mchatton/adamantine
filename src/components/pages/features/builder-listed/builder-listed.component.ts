@@ -201,6 +201,9 @@ export class BuilderListedComponent implements OnInit {
           ...(this.characterObj.subclass === 'Verdant Soul'
             ? this.dataService.getSpellsByListUnsplit('primal')
             : []),
+          ...(this.characterObj.subclass === 'Clockwork Soul'
+            ? this.dataService.getSpellsByListUnsplit('invention')
+            : []),
           ...(this.characterObj.subclass === 'Eldritch Soul'
             ? this.dataService.getSpellsByListUnsplit('occult')
             : []),
@@ -308,6 +311,9 @@ export class BuilderListedComponent implements OnInit {
             : []),
           ...(this.characterObj.subclass === 'Verdant Soul'
             ? this.dataService.getSpellsByListUnsplit('primal')
+            : []),
+          ...(this.characterObj.subclass === 'Clockwork Soul'
+            ? this.dataService.getSpellsByListUnsplit('invention')
             : []),
           ...(this.characterObj.subclass === 'Eldritch Soul'
             ? this.dataService.getSpellsByListUnsplit('occult')

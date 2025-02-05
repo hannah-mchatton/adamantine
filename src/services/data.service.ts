@@ -332,7 +332,7 @@ export class DataService {
     } else {
       if (this.spellLists.includes(list)) {
         filteredSpells = spells.filter((s: any) =>
-          s.lists.map((l: string) => l.toLowerCase()).includes(list)
+          s.lists?.map((l: string) => l.toLowerCase())?.includes(list)
         );
       } else {
         filteredSpells = spells.filter(
@@ -396,7 +396,7 @@ export class DataService {
     } else {
       if (this.spellLists.includes(list)) {
         filteredSpells = spells.filter((s: any) =>
-          s.lists.map((l: string) => l.toLowerCase()).includes(list)
+          s.lists?.map((l: string) => l.toLowerCase())?.includes(list)
         );
       } else {
         filteredSpells = spells.filter(

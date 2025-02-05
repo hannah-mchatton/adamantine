@@ -229,6 +229,8 @@ export class BuilderChoiceComponent implements OnInit {
                       s.lists.includes('Occult')) ||
                     (this.characterObj.subclass === 'Aberrant Soul' &&
                       s.lists.includes('Psionic')) ||
+                    (this.characterObj.subclass === 'Clockwork Soul' &&
+                      s.lists.includes('Invention')) ||
                     (this.characterObj.subclass === 'Musical Soul' &&
                       s.lists.includes('Melodic')))
               );

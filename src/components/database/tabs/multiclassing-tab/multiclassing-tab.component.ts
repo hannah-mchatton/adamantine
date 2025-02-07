@@ -75,7 +75,10 @@ export class MulticlassingTabComponent extends BaseComponent implements OnInit {
     }
 
     if (special) {
-      requirements += `<hr><div>${special}</div>`;
+      if (scores.length != 0) {
+        requirements += '<hr>';
+      }
+      requirements += `<div>${special}</div>`;
     }
 
     return requirements;

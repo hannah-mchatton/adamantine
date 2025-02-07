@@ -325,6 +325,21 @@ export class DataService {
     return surge;
   }
 
+  public getMulticlassingData(): any[] {
+    return classes.map((c) => {
+      return {
+        name: c.name,
+        scores: c.multiclassScores,
+        special: c.multiclassSpecial,
+
+        armor: c.proficiencies.multiclassArmor,
+        weapons: c.proficiencies.multiclassWeapons,
+        tools: c.proficiencies.multiclassTools,
+        skills: c.proficiencies.multiclassSkills,
+      };
+    });
+  }
+
   public getSpellsByList(list: string): any[] {
     let filteredSpells: any[] = [];
     if (list === 'all') {

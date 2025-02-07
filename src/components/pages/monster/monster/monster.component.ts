@@ -261,7 +261,7 @@ export class MonsterComponent extends BaseComponent implements OnInit {
     return crString;
   }
 
-  private titleCase(str) {
+  public override titleCase(str) {
     str = str.toLowerCase().split(' ');
     for (var i = 0; i < str.length; i++) {
       if (str[i] !== 'of') {

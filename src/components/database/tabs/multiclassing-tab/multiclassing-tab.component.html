@@ -7,314 +7,46 @@
   <thead>
     <tr>
       <th>Class</th>
-      <th>Ability Scores</th>
+      <th>Requirements</th>
       <th>Proficiencies</th>
-      <th>Details</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>Artificer</td>
-      <td>Intelligence 13</td>
+    <tr *ngFor="let c of multiclassingData">
       <td>
-        Light armor, medium armor, shields, simple weapons, firearms, tinker's
-        tools
+        {{ c.name }}
       </td>
-      <td>Can't multiclass with Inventor</td>
-    </tr>
-    <tr>
-      <td>Atavist</td>
-      <td>Constitution 13</td>
+      <td [innerHTML]="getRequirementsString(c.scores, c.special)"></td>
       <td>
-        Light armor, medium armor, shields, simple weapons, martial weapons
+        <div
+          *ngIf="
+            c.armor.length || c.weapons.length || c.skills || c.tools.length;
+            else noProfs
+          "
+        >
+          <div *ngIf="c.armor.length">
+            <strong>Armor:</strong> {{ c.armor.join(", ") }}
+          </div>
+          <div *ngIf="c.weapons.length">
+            <strong>Weapons:</strong> {{ getWeaponString(c.weapons) }}
+          </div>
+          <hr
+            *ngIf="
+              (c.armor.length || c.weapons.length) &&
+              (c.skills || c.tools.length)
+            "
+          />
+          <div *ngIf="c.tools.length">
+            <strong>Tools:</strong> {{ getToolString(c.tools) }}
+          </div>
+          <div *ngIf="c.skills"><strong>One class skill</strong></div>
+        </div>
+        <ng-template #noProfs>
+          <div>
+            <strong>No proficiencies gained</strong>
+          </div>
+        </ng-template>
       </td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Barbarian</td>
-      <td>
-        Strength 13
-        <hr />
-        Constitution 13
-      </td>
-      <td>
-        Light armor, medium armor, shields, simple weapons, martial weapons
-      </td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Bard</td>
-      <td>Wisdom or Charisma 13</td>
-      <td>Light armor, one instrument, one class skill</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Blood Hunter</td>
-      <td>
-        Strength or Dexterity 13
-        <hr />
-        Constitution 13
-      </td>
-      <td>
-        Light armor, medium armor, simple weapons, martial weapons, alchemist's
-        supplies, one class skill
-      </td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Brawler</td>
-      <td>
-        Strength or Dexterity 13
-        <hr />
-        Constitution 13
-      </td>
-      <td>
-        Light armor, medium armor, shields, simple weapons, improvised weapons
-      </td>
-      <td>Can't multiclass with Monk</td>
-    </tr>
-    <tr>
-      <td>Cleric</td>
-      <td>Intelligence, Wisdom, or Charisma 13</td>
-      <td>Light armor, medium armor, shields</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Commoner</td>
-      <td>-</td>
-      <td>-</td>
-      <td>Can't multiclass into</td>
-    </tr>
-    <tr>
-      <td>Demi-Dragon</td>
-      <td>Strength 13</td>
-      <td>-</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Dragon Knight</td>
-      <td>
-        Strength or Dexterity 13
-        <hr />
-        Wisdom or Charisma 13
-      </td>
-      <td>
-        Light armor, medium armor, shields, simple weapons, martial weapons,
-        herbalism kit
-      </td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Druid</td>
-      <td>Intelligence or Wisdom 13</td>
-      <td>Light armor, medium armor, shields, simple weapons</td>
-      <td>Can't multiclass with Harbinger</td>
-    </tr>
-    <tr>
-      <td>Empowered</td>
-      <td>
-        Strength or Dexterity 13
-        <hr />
-        Constitution 13
-      </td>
-      <td>Light armor, simple weapons</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Fighter</td>
-      <td>Strength or Dexterity 13</td>
-      <td>
-        Light armor, medium armor, shields, simple weapons, martial weapons
-      </td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Gunslinger</td>
-      <td>Dexterity 13</td>
-      <td>
-        Light armor, medium armor, shields, simple weapons, martial weapons,
-        firearms, tinker's tools
-      </td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Harbinger</td>
-      <td>Intelligence or Wisdom 13</td>
-      <td>Light armor, simple weapons</td>
-      <td>Can't multiclass with Druid</td>
-    </tr>
-    <tr>
-      <td>Inventor</td>
-      <td>Intelligence 13</td>
-      <td>
-        Light armor, medium armor, shields, simple weapons, firearms, tinker's
-        tools
-      </td>
-      <td>Can't multiclass with Artificer</td>
-    </tr>
-    <tr>
-      <td>Juggernaut</td>
-      <td>Strength or Constitution 13</td>
-      <td>
-        Light armor, medium armor, shields, simple weapons, martial weapons,
-        tower shields (as weapons), blacksmith's tools
-      </td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Magus</td>
-      <td>
-        Strength or Dexterity 13
-        <hr />
-        Intelligence or Wisdom 13
-      </td>
-      <td>
-        Light armor, medium armor, shields, simple weapons, martial weapons
-      </td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Monk</td>
-      <td>
-        Strength or Dexterity 13
-        <hr />
-        Wisdom 13
-      </td>
-      <td>Simple weapons, one class skill</td>
-      <td>Can't multiclass with Brawler</td>
-    </tr>
-    <tr>
-      <td>Mystic</td>
-      <td>Intelligence or Wisdom 13</td>
-      <td>Simple weapons, one class skill</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Nomad</td>
-      <td>
-        Strength or Dexterity 13
-        <hr />
-        Wisdom 13
-      </td>
-      <td>
-        Light armor, medium armor, shields, simple weapons, martial weapons,
-        herbalism kit, one class skill
-      </td>
-      <td>Can't multiclass with Ranger</td>
-    </tr>
-    <tr>
-      <td>Paladin</td>
-      <td>
-        Strength or Dexterity 13
-        <hr />
-        Wisdom or Charisma 13
-      </td>
-      <td>
-        Light armor, medium armor, shields, simple weapons, martial weapons
-      </td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Pale Master</td>
-      <td>Intelligence or Wisdom 13</td>
-      <td>-</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Ranger</td>
-      <td>
-        Strength or Dexterity 13
-        <hr />
-        Wisdom 13
-      </td>
-      <td>
-        Light armor, medium armor, shields, simple weapons, martial weapons,
-        herbalism kit, one class skill
-      </td>
-      <td>Can't multiclass with Nomad</td>
-    </tr>
-    <tr>
-      <td>Rogue</td>
-      <td>Dexterity 13</td>
-      <td>
-        Light armor, simple weapons, martial weapons, thieves' tools, one skill
-      </td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Savant</td>
-      <td>Intelligence 13</td>
-      <td>Light armor, simple weapons, one tool, one skill</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Shaman</td>
-      <td>Intelligence or Wisdom 13</td>
-      <td>Light armor, shields, simple weapons</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Sorcerer</td>
-      <td>Constitution, Wisdom, or Charisma 13</td>
-      <td>-</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Summoner</td>
-      <td>Wisdom 13</td>
-      <td>
-        Light armor, medium armor, shields, simple weapons, one class skill
-      </td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Troubadour</td>
-      <td>
-        Strength or Dexterity 13
-        <hr />
-        Wisdom or Charisma 13
-      </td>
-      <td>
-        Light armor, simple weapons, martial weapons, one instrument, one skill
-      </td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Vessel</td>
-      <td>Charisma 13</td>
-      <td>Light armor, simple weapons</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Warlock</td>
-      <td>Intelligence, Wisdom, or Charisma 13</td>
-      <td>Light armor, simple weapons</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Warlord</td>
-      <td>
-        Strength or Dexterity 13
-        <hr />
-        Intelligence, Wisdom, or Charisma 13
-      </td>
-      <td>
-        Light armor, medium armor, shields, simple weapons, martial weapons, one
-        gaming set, one class skill
-      </td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Witch</td>
-      <td>Wisdom or Charisma 13</td>
-      <td>Light armor, herbalism kit</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Wizard</td>
-      <td>Intelligence or Wisdom 13</td>
-      <td>Calligrapher's supplies</td>
-      <td></td>
     </tr>
   </tbody>
 </nz-table>

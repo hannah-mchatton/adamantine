@@ -780,475 +780,567 @@
     "description": "You master large weapons. You gain the following benefits when using a melee weapon with the Massive property:<ul><li>You gain a +1 bonus to attack rolls you make with the weapon.</li><li>Whenever you have advantage on a melee attack roll you make with the weapon and hit, you can also knock the target prone if the lower of the two d20 rolls would also hit the target.</li><li>Whenever you have disadvantage on a melee attack roll you make with the weapon, the target takes bludgeoning damage equal to your Strength modifier (minimum of 0) if the attack misses but the higher of the two d20 rolls would have hit.</li><li>If you use the Help action to aid an ally's melee attack while you're wielding the weapon, you knock the target's shield aside momentarily. In addition to the ally gaining advantage on the attack roll, the ally gains a +2 bonus to the roll if the target is using a shield</li></ul>"
   },
   {
-    "name": "Fey-Touched",
-    "type": "magic",
+    "name": "Plane-Touched",
     "repeatable": true,
-    "description": "Your exposure to the Feywild's magic has changed you, granting you the following benefits:<ul><li>Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li>    <li>You learn the Misty Step spell and one 1st-level spell of your choice. The 1st-level spell must be from the Divination or Enchantment school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.</li></ul>",
+    "description": "You have been exposed to the innate magic of one of the planes.  Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p><p>Additionally, choose one of the following planes.  You can take this feat multiple times, and must choose a different plane each time.",
     "choices": [
       {
-        "id": "5D1ADD4B-41F0-4639-8702-257A73FCC4AF",
-        "type": "asi",
-        "amount": 1,
-        "options": ["int", "wis", "cha"]
-      },
-      {
-        "id": "575A8579-AF0D-4223-BCD1-0F182640D57A",
-        "type": "spell",
-        "level": 1,
-        "list": ["Divination", "Enchantment"],
-        "ability": "5D1ADD4B-41F0-4639-8702-257A73FCC4AF"
-      }
-    ],
-    "granted": [
-      {
-        "type": "spell",
-        "options": ["Misty Step"],
-        "ignoreMaxLevel": true,
-        "ability": "5D1ADD4B-41F0-4639-8702-257A73FCC4AF"
-      }
-    ],
-    "uses": [
-      {
-        "id": "C7651AA1-31EA-4591-B494-764E3E6C6F59",
-        "type": "fixed",
-        "amount": 1,
-        "reset": 2
-      },
-      {
-        "id": "6FDE84AB-3EF1-49ED-910D-0FCDBA4AAB59",
-        "type": "fixed",
-        "amount": 1,
-        "reset": 2
-      }
-    ]
-  },
-  {
-    "name": "Wind-Touched",
-    "type": "magic",
-    "repeatable": true,
-    "description": "Your exposure to the Plane of Air's magic has changed you, granting you the following benefits:<ul><li>Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li>    <li>You learn the Levitate spell and one 1st-level spell of your choice. The 1st-level spell must be from the Evocation or Transposition school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.</li></ul>",
-    "choices": [
-      {
-        "id": "55CC996C-8C7B-45BD-9687-4260B0E3C387",
-        "type": "asi",
-        "amount": 1,
-        "options": ["int", "wis", "cha"]
-      },
-      {
-        "id": "8AD8709C-0A06-4E3F-A9E5-CBA242D2E219",
-        "type": "spell",
-        "level": 1,
-        "list": ["Evocation", "Transposition"],
-        "ability": "55CC996C-8C7B-45BD-9687-4260B0E3C387"
-      }
-    ],
-    "granted": [
-      {
-        "type": "spell",
-        "options": ["Levitate"],
-        "ignoreMaxLevel": true,
-        "ability": "55CC996C-8C7B-45BD-9687-4260B0E3C387"
-      }
-    ],
-    "uses": [
-      {
-        "id": "6D0238B8-BD4E-421D-A5F7-EE37A1074068",
-        "type": "fixed",
-        "amount": 1,
-        "reset": 2
-      },
-      {
-        "id": "2EE26584-0B44-426D-9829-DE5F7205DFB3",
-        "type": "fixed",
-        "amount": 1,
-        "reset": 2
-      }
-    ]
-  },
-  {
-    "name": "Stone-Touched",
-    "type": "magic",
-    "repeatable": true,
-    "description": "Your exposure to the Plane of Earth's magic has changed you, granting you the following benefits:<ul><li>Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li>    <li>You learn the Earth Ripple spell and one 1st-level spell of your choice. The 1st-level spell must be from the Evocation or Transmutation school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.</li></ul>",
-    "choices": [
-      {
-        "id": "983BF34B-F956-4FD0-8AF1-43B9A1F02F1E",
-        "type": "asi",
-        "amount": 1,
-        "options": ["int", "wis", "cha"]
-      },
-      {
-        "id": "B385A68B-6D43-4C6E-8551-DFCF913A065E",
-        "type": "spell",
-        "level": 1,
-        "list": ["Evocation", "Transmutation"],
-        "ability": "983BF34B-F956-4FD0-8AF1-43B9A1F02F1E"
-      }
-    ],
-    "granted": [
-      {
-        "type": "spell",
-        "options": ["Earth Ripple"],
-        "ignoreMaxLevel": true,
-        "ability": "983BF34B-F956-4FD0-8AF1-43B9A1F02F1E"
-      }
-    ],
-    "uses": [
-      {
-        "id": "A3A5034E-BF32-4BDD-80D3-EACD0095160A",
-        "type": "fixed",
-        "amount": 1,
-        "reset": 2
-      },
-      {
-        "id": "F42A88F7-629F-4A41-8655-563CAE206794",
-        "type": "fixed",
-        "amount": 1,
-        "reset": 2
-      }
-    ]
-  },
-  {
-    "name": "Flame-Touched",
-    "type": "magic",
-    "repeatable": true,
-    "description": "Your exposure to the Plane of Fire's magic has changed you, granting you the following benefits:<ul><li>Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li>    <li>You learn the Scorching Ray spell and one 1st-level spell of your choice. The 1st-level spell must be from the Evocation or Illusion school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.</li></ul>",
-    "choices": [
-      {
-        "id": "B3334CC9-73A5-436E-80CC-99BC1F840CA3",
-        "type": "asi",
-        "amount": 1,
-        "options": ["int", "wis", "cha"]
-      },
-      {
-        "id": "3FEF069A-2907-4ADB-BC79-06D858271265",
-        "type": "spell",
-        "level": 1,
-        "list": ["Evocation", "Illusion"],
-        "ability": "B3334CC9-73A5-436E-80CC-99BC1F840CA3"
-      }
-    ],
-    "granted": [
-      {
-        "type": "spell",
-        "options": ["Scorching Ray"],
-        "ignoreMaxLevel": true,
-        "ability": "B3334CC9-73A5-436E-80CC-99BC1F840CA3"
-      }
-    ],
-    "uses": [
-      {
-        "id": "4F5E2F7E-F0C5-47F3-8C28-9ECFDD388278",
-        "type": "fixed",
-        "amount": 1,
-        "reset": 2
-      },
-      {
-        "id": "2A087B16-C641-46FD-ADC9-9B7D904E3F0B",
-        "type": "fixed",
-        "amount": 1,
-        "reset": 2
-      }
-    ]
-  },
-  {
-    "name": "Wave-Touched",
-    "type": "magic",
-    "repeatable": true,
-    "description": "Your exposure to the Plane of Water's magic has changed you, granting you the following benefits:<ul><li>Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li>    <li>You learn the Dancing Step spell and one 1st-level spell of your choice. The 1st-level spell must be from the Evocation or Restoration school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.</li></ul>",
-    "choices": [
-      {
-        "id": "60B9800D-A105-44C7-8D29-A9BF00AEC360",
-        "type": "asi",
-        "amount": 1,
-        "options": ["int", "wis", "cha"]
-      },
-      {
-        "id": "575A8579-AF0D-4223-BCD1-0F182640D57A",
-        "type": "spell",
-        "level": 1,
-        "list": ["Evocation", "Restoration"],
-        "ability": "60B9800D-A105-44C7-8D29-A9BF00AEC360"
-      }
-    ],
-    "granted": [
-      {
-        "type": "spell",
-        "options": ["Dancing Wave"],
-        "ignoreMaxLevel": true,
-        "ability": "60B9800D-A105-44C7-8D29-A9BF00AEC360"
-      }
-    ],
-    "uses": [
-      {
-        "id": "D340FD64-9AA8-43AE-B3A9-06269673BCFF",
-        "type": "fixed",
-        "amount": 1,
-        "reset": 2
-      },
-      {
-        "id": "4EFA07CC-6B11-43D0-AFEE-8EC609E72561",
-        "type": "fixed",
-        "amount": 1,
-        "reset": 2
-      }
-    ]
-  },
-  {
-    "name": "Light-Touched",
-    "type": "magic",
-    "repeatable": true,
-    "description": "Your exposure to an Upper Plane's magic has changed you, granting you the following benefits:<ul><li>Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li>    <li>You learn the Radiant Barrage spell and one 1st-level spell of your choice. The 1st-level spell must be from the Evocation or Restoration school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.</li></ul>",
-    "choices": [
-      {
-        "id": "C16A5AF3-8414-4F5D-8DC2-5D22E01ACB29",
-        "type": "asi",
-        "amount": 1,
-        "options": ["int", "wis", "cha"]
-      },
-      {
-        "id": "24F25530-CEB6-4EA9-8F76-1DFEC0551C9C",
-        "type": "spell",
-        "level": 1,
-        "list": ["Evocation", "Restoration"],
-        "ability": "C16A5AF3-8414-4F5D-8DC2-5D22E01ACB29"
-      }
-    ],
-    "granted": [
-      {
-        "type": "spell",
-        "options": ["Radiant Barrage"],
-        "ignoreMaxLevel": true,
-        "ability": "C16A5AF3-8414-4F5D-8DC2-5D22E01ACB29"
-      }
-    ],
-    "uses": [
-      {
-        "id": "CF1618FA-1F17-456A-B505-3948B8FA43C9",
-        "type": "fixed",
-        "amount": 1,
-        "reset": 2
-      },
-      {
-        "id": "ABEF9753-5395-428C-B377-180DD8B571CE",
-        "type": "fixed",
-        "amount": 1,
-        "reset": 2
-      }
-    ]
-  },
-  {
-    "name": "Dark-Touched",
-    "type": "magic",
-    "repeatable": true,
-    "description": "Your exposure to a Lower Plane's magic has changed you, granting you the following benefits:<ul><li>Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li>    <li>You learn the Darkness spell and one 1st-level spell of your choice. The 1st-level spell must be from the Enchantment or Necromancy school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.</li></ul>",
-    "choices": [
-      {
-        "id": "4CAABEDF-8A56-46DD-9F42-01CCC2112FB0",
-        "type": "asi",
-        "amount": 1,
-        "options": ["int", "wis", "cha"]
-      },
-      {
-        "id": "placeholder",
-        "type": "spell",
-        "level": 1,
-        "list": ["Enchantment", "Necromancy"],
-        "ability": "4CAABEDF-8A56-46DD-9F42-01CCC2112FB0"
-      }
-    ],
-    "granted": [
-      {
-        "type": "spell",
-        "options": ["Darkness"],
-        "ignoreMaxLevel": true,
-        "ability": "4CAABEDF-8A56-46DD-9F42-01CCC2112FB0"
-      }
-    ],
-    "uses": [
-      {
-        "id": "293C4BAA-C7CF-4C11-BCA1-18AFF866F54D",
-        "type": "fixed",
-        "amount": 1,
-        "reset": 2
-      },
-      {
-        "id": "A648676E-1031-45CF-8846-5754E00D989A",
-        "type": "fixed",
-        "amount": 1,
-        "reset": 2
-      }
-    ]
-  },
-  {
-    "name": "Law-Touched",
-    "type": "magic",
-    "repeatable": true,
-    "description": "Your exposure to Mechanus' magic has changed you, granting you the following benefits:<ul><li>Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li>    <li>You learn the Zone of Truth spell and one 1st-level spell of your choice. The 1st-level spell must be from the Abjuration or Divination school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.</li></ul>",
-    "choices": [
-      {
-        "id": "B1FEBB88-1E41-437A-9A57-721C6E36FB03",
-        "type": "asi",
-        "amount": 1,
-        "options": ["int", "wis", "cha"]
-      },
-      {
-        "id": "8F501D1A-7F50-41D9-83F4-8D0CBA4A6E59",
-        "type": "spell",
-        "level": 1,
-        "list": ["Abjuration", "Divination"],
-        "ability": "B1FEBB88-1E41-437A-9A57-721C6E36FB03"
-      }
-    ],
-    "granted": [
-      {
-        "type": "spell",
-        "options": ["Zone of Truth"],
-        "ignoreMaxLevel": true,
-        "ability": "B1FEBB88-1E41-437A-9A57-721C6E36FB03"
-      }
-    ],
-    "uses": [
-      {
-        "id": "77E407F4-B254-4EBE-A02A-C7514F9D7DB9",
-        "type": "fixed",
-        "amount": 1,
-        "reset": 2
-      },
-      {
-        "id": "A4CB489D-4216-4E71-A168-AC08F37B0FD3",
-        "type": "fixed",
-        "amount": 1,
-        "reset": 2
-      }
-    ]
-  },
-  {
-    "name": "Chaos-Touched",
-    "type": "magic",
-    "repeatable": true,
-    "description": "Your exposure to Limbo's magic has changed you, granting you the following benefits:<ul><li>Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li>    <li>You learn the Elemental Anguish spell and one 1st-level spell of your choice. The 1st-level spell must be from the Evocation or Transmutation school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.</li></ul>",
-    "choices": [
-      {
-        "id": "8E455427-9A8C-408E-A0EB-53AD4833F59D",
-        "type": "asi",
-        "amount": 1,
-        "options": ["int", "wis", "cha"]
-      },
-      {
-        "id": "35E5E998-4629-4252-99F9-52A0A1F4D005",
-        "type": "spell",
-        "level": 1,
-        "list": ["Evocation", "Transmutation"],
-        "ability": "8E455427-9A8C-408E-A0EB-53AD4833F59D"
-      }
-    ],
-    "granted": [
-      {
-        "type": "spell",
-        "options": ["Elemental Anguish"],
-        "ignoreMaxLevel": true,
-        "ability": "8E455427-9A8C-408E-A0EB-53AD4833F59D"
-      }
-    ],
-    "uses": [
-      {
-        "id": "8D566AD4-730B-4195-A9A4-7FC68914262F",
-        "type": "fixed",
-        "amount": 1,
-        "reset": 2
-      },
-      {
-        "id": "13C1C202-A26F-457B-8717-5BD181A3A354",
-        "type": "fixed",
-        "amount": 1,
-        "reset": 2
-      }
-    ]
-  },
-  {
-    "name": "Outer-Touched",
-    "type": "magic",
-    "repeatable": true,
-    "description": "Your exposure to the Outlands' magic has changed you, granting you the following benefits:<ul><li>Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li>    <li>You learn the Warding Bond spell and one 1st-level spell of your choice. The 1st-level spell must be from the Abjuration or Transposition school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.</li></ul>",
-    "choices": [
-      {
-        "id": "3262C937-6102-42EC-9C91-7FBC89214736",
-        "type": "asi",
-        "amount": 1,
-        "options": ["int", "wis", "cha"]
-      },
-      {
-        "id": "98621C64-5F5F-4822-B0D5-B02E28FDF464",
-        "type": "spell",
-        "level": 1,
-        "list": ["Abjuration", "Transposition"],
-        "ability": "3262C937-6102-42EC-9C91-7FBC89214736"
-      }
-    ],
-    "granted": [
-      {
-        "type": "spell",
-        "options": ["Warding Bond"],
-        "ignoreMaxLevel": true,
-        "ability": "3262C937-6102-42EC-9C91-7FBC89214736"
-      }
-    ],
-    "uses": [
-      {
-        "id": "A8C8E539-1AF5-4A53-87FA-3621FA458864",
-        "type": "fixed",
-        "amount": 1,
-        "reset": 2
-      },
-      {
-        "id": "D29E4BD0-8BE5-496A-8065-54A6847E6378",
-        "type": "fixed",
-        "amount": 1,
-        "reset": 2
-      }
-    ]
-  },
-  {
-    "name": "Astral-Touched",
-    "type": "magic",
-    "repeatable": true,
-    "description": "Your exposure to the Astral Plane's magic has changed you, granting you the following benefits:<ul><li>Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li>    <li>You learn the Star Dust spell and one 1st-level spell of your choice. The 1st-level spell must be from the Divination or Evocation school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.</li></ul>",
-    "choices": [
-      {
-        "id": "7E167C25-4341-4B47-AA31-060B29241697",
-        "type": "asi",
-        "amount": 1,
-        "options": ["int", "wis", "cha"]
-      },
-      {
-        "id": "B28E4221-4805-41CD-89C2-35B6E7746FFF",
-        "type": "spell",
-        "level": 1,
-        "list": ["Divination", "Evocation"],
-        "ability": "7E167C25-4341-4B47-AA31-060B29241697"
-      }
-    ],
-    "granted": [
-      {
-        "type": "spell",
-        "options": ["Star Dust"],
-        "ignoreMaxLevel": true,
-        "ability": "7E167C25-4341-4B47-AA31-060B29241697"
-      }
-    ],
-    "uses": [
-      {
-        "id": "F7C0167A-84F9-4CA8-9375-D3DD298157F0",
-        "type": "fixed",
-        "amount": 1,
-        "reset": 2
-      },
-      {
-        "id": "EDDA2A04-21F9-4667-BDC5-7C9076232AB7",
-        "type": "fixed",
-        "amount": 1,
-        "reset": 2
+        "id": "5698BD9A-D7FD-4385-B28C-DC3BF56BC090",
+        "type": "trait",
+        "options": [
+          {
+            "name": "Astral Plane",
+            "traits": [
+              {
+                "name": "Astral-Touched",
+                "description": "You learn the Star Dust spell and one 1st-level spell of your choice. The 1st-level spell must be from the Divination or Evocation school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.",
+                "choices": [
+                  {
+                    "id": "32410D12-0E20-4579-801E-A09F9FF08F60",
+                    "type": "asi",
+                    "amount": 1,
+                    "options": ["int", "wis", "cha"]
+                  },
+                  {
+                    "id": "DC06D928-880C-48D3-B909-4B3C7E33B0A4",
+                    "type": "spell",
+                    "level": 1,
+                    "list": ["Divination", "Evocation"],
+                    "ability": "32410D12-0E20-4579-801E-A09F9FF08F60"
+                  }
+                ],
+                "granted": [
+                  {
+                    "type": "spell",
+                    "options": ["Star Dust"],
+                    "ignoreMaxLevel": true,
+                    "ability": "32410D12-0E20-4579-801E-A09F9FF08F60"
+                  }
+                ],
+                "uses": [
+                  {
+                    "id": "1F4498F3-7434-4835-9F4C-A9145A2C38A3",
+                    "type": "fixed",
+                    "amount": 1,
+                    "reset": 2
+                  },
+                  {
+                    "id": "BF2E9796-5AA6-4597-9FC4-CB800867D701",
+                    "type": "fixed",
+                    "amount": 1,
+                    "reset": 2
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Elemental Plane of Air",
+            "traits": [
+              {
+                "name": "Wind-Touched",
+                "description": "You learn the Gust of Wind spell and one 1st-level spell of your choice. The 1st-level spell must be from the Evocation or Transposition school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.",
+                "choices": [
+                  {
+                    "id": "A2C79223-4975-42F9-A5B2-9CDF231D403D",
+                    "type": "asi",
+                    "amount": 1,
+                    "options": ["int", "wis", "cha"]
+                  },
+                  {
+                    "id": "B4C457C1-EE10-49DA-A0F6-DE4806904CE6",
+                    "type": "spell",
+                    "level": 1,
+                    "list": ["Evocation", "Transposition"],
+                    "ability": "A2C79223-4975-42F9-A5B2-9CDF231D403D"
+                  }
+                ],
+                "granted": [
+                  {
+                    "type": "spell",
+                    "options": ["Gust of Wind"],
+                    "ignoreMaxLevel": true,
+                    "ability": "A2C79223-4975-42F9-A5B2-9CDF231D403D"
+                  }
+                ],
+                "uses": [
+                  {
+                    "id": "D566AAD2-D8D8-4945-B5F3-0B5107C41B8B",
+                    "type": "fixed",
+                    "amount": 1,
+                    "reset": 2
+                  },
+                  {
+                    "id": "473FCE0B-8B88-47CC-94C0-3CC570AED2BB",
+                    "type": "fixed",
+                    "amount": 1,
+                    "reset": 2
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Elemental Plane of Earth",
+            "traits": [
+              {
+                "name": "Stone-Touched",
+                "description": "You learn the Earth Ripple spell and one 1st-level spell of your choice. The 1st-level spell must be from the Evocation or Transmutation school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.",
+                "choices": [
+                  {
+                    "id": "3379BA51-E67F-4C4E-8D70-D06D1BA40F25",
+                    "type": "asi",
+                    "amount": 1,
+                    "options": ["int", "wis", "cha"]
+                  },
+                  {
+                    "id": "4F3A8A7E-9A65-4EF8-B789-E3A37CAC4DE7",
+                    "type": "spell",
+                    "level": 1,
+                    "list": ["Divination", "Enchantment"],
+                    "ability": "3379BA51-E67F-4C4E-8D70-D06D1BA40F25"
+                  }
+                ],
+                "granted": [
+                  {
+                    "type": "spell",
+                    "options": ["Earth Ripple"],
+                    "ignoreMaxLevel": true,
+                    "ability": "3379BA51-E67F-4C4E-8D70-D06D1BA40F25"
+                  }
+                ],
+                "uses": [
+                  {
+                    "id": "EF1718BA-50E3-4161-95F4-643277414B6B",
+                    "type": "fixed",
+                    "amount": 1,
+                    "reset": 2
+                  },
+                  {
+                    "id": "9EED648D-C922-4716-9FAB-E4D537276502",
+                    "type": "fixed",
+                    "amount": 1,
+                    "reset": 2
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Elemental Plane of Fire",
+            "traits": [
+              {
+                "name": "Flame-Touched",
+                "description": "You learn the Scorching Ray spell and one 1st-level spell of your choice. The 1st-level spell must be from the Evocation or Illusion school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.",
+                "choices": [
+                  {
+                    "id": "0FF337CF-37B0-4A2F-BCF5-AC183603CD8B",
+                    "type": "asi",
+                    "amount": 1,
+                    "options": ["int", "wis", "cha"]
+                  },
+                  {
+                    "id": "AF0ABE04-1886-456E-9D15-66FF4435E94D",
+                    "type": "spell",
+                    "level": 1,
+                    "list": ["Evocation", "Illusion"],
+                    "ability": "0FF337CF-37B0-4A2F-BCF5-AC183603CD8B"
+                  }
+                ],
+                "granted": [
+                  {
+                    "type": "spell",
+                    "options": ["Scorching Ray"],
+                    "ignoreMaxLevel": true,
+                    "ability": "0FF337CF-37B0-4A2F-BCF5-AC183603CD8B"
+                  }
+                ],
+                "uses": [
+                  {
+                    "id": "FE10A6C0-688B-49B5-BD80-4E1DA6FAE92E",
+                    "type": "fixed",
+                    "amount": 1,
+                    "reset": 2
+                  },
+                  {
+                    "id": "683BCF5C-2303-44F6-ACB7-634725BEC57A",
+                    "type": "fixed",
+                    "amount": 1,
+                    "reset": 2
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Elemental Plane of Water",
+            "traits": [
+              {
+                "name": "Wave-Touched",
+                "description": "You learn the Dancing Wave spell and one 1st-level spell of your choice. The 1st-level spell must be from the Evocation or Restoration school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.",
+                "choices": [
+                  {
+                    "id": "6E39784C-9A07-4AA4-89BF-6A77B25AC996",
+                    "type": "asi",
+                    "amount": 1,
+                    "options": ["int", "wis", "cha"]
+                  },
+                  {
+                    "id": "AFCE5106-65CF-4DE4-8A6C-BC077E1ECA67",
+                    "type": "spell",
+                    "level": 1,
+                    "list": ["Divination", "Enchantment"],
+                    "ability": "6E39784C-9A07-4AA4-89BF-6A77B25AC996"
+                  }
+                ],
+                "granted": [
+                  {
+                    "type": "spell",
+                    "options": ["Dancing Wave"],
+                    "ignoreMaxLevel": true,
+                    "ability": "6E39784C-9A07-4AA4-89BF-6A77B25AC996"
+                  }
+                ],
+                "uses": [
+                  {
+                    "id": "ECF398F2-2038-4493-A59D-569EC941130E",
+                    "type": "fixed",
+                    "amount": 1,
+                    "reset": 2
+                  },
+                  {
+                    "id": "6A81087E-910F-4ED8-AF84-762F61C0F7EC",
+                    "type": "fixed",
+                    "amount": 1,
+                    "reset": 2
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Feywild",
+            "traits": [
+              {
+                "name": "Fey-Touched",
+                "description": "You learn the Misty Step spell and one 1st-level spell of your choice. The 1st-level spell must be from the Enchantment or Illusion school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.",
+                "choices": [
+                  {
+                    "id": "B6D8D201-7764-4986-B309-B220D5CE0128",
+                    "type": "asi",
+                    "amount": 1,
+                    "options": ["int", "wis", "cha"]
+                  },
+                  {
+                    "id": "69E4C8E2-520A-4CE5-93C1-D6A7272D639C",
+                    "type": "spell",
+                    "level": 1,
+                    "list": ["Enchantment", "Illusion"],
+                    "ability": "B6D8D201-7764-4986-B309-B220D5CE0128"
+                  }
+                ],
+                "granted": [
+                  {
+                    "type": "spell",
+                    "options": ["Misty Step"],
+                    "ignoreMaxLevel": true,
+                    "ability": "B6D8D201-7764-4986-B309-B220D5CE0128"
+                  }
+                ],
+                "uses": [
+                  {
+                    "id": "C7651AA1-31EA-4591-B494-764E3E6C6F59",
+                    "type": "fixed",
+                    "amount": 1,
+                    "reset": 2
+                  },
+                  {
+                    "id": "6FDE84AB-3EF1-49ED-910D-0FCDBA4AAB59",
+                    "type": "fixed",
+                    "amount": 1,
+                    "reset": 2
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Limbo",
+            "traits": [
+              {
+                "name": "Chaos-Touched",
+                "description": "You learn the Elemental Anguish spell and one 1st-level spell of your choice. The 1st-level spell must be from the Evocation or Transmutation school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.",
+                "choices": [
+                  {
+                    "id": "547AAB68-447D-49B4-BB05-6771E56B7AED",
+                    "type": "asi",
+                    "amount": 1,
+                    "options": ["int", "wis", "cha"]
+                  },
+                  {
+                    "id": "8480A2E9-40E1-48EC-9256-BE0A88ED8455",
+                    "type": "spell",
+                    "level": 1,
+                    "list": ["Evocation", "Transmutation"],
+                    "ability": "547AAB68-447D-49B4-BB05-6771E56B7AED"
+                  }
+                ],
+                "granted": [
+                  {
+                    "type": "spell",
+                    "options": ["Elemental Anguish"],
+                    "ignoreMaxLevel": true,
+                    "ability": "547AAB68-447D-49B4-BB05-6771E56B7AED"
+                  }
+                ],
+                "uses": [
+                  {
+                    "id": "754D4DFA-786F-4776-8DEB-B4B73B7E52E1",
+                    "type": "fixed",
+                    "amount": 1,
+                    "reset": 2
+                  },
+                  {
+                    "id": "D8B976BF-6A6D-4BCC-BC0F-D1BE820F4CB2",
+                    "type": "fixed",
+                    "amount": 1,
+                    "reset": 2
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Lower Planes",
+            "traits": [
+              {
+                "name": "Dark-Touched",
+                "description": "You learn the Darkness spell and one 1st-level spell of your choice. The 1st-level spell must be from the Enchantment or Necromancy school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.",
+                "choices": [
+                  {
+                    "id": "13B05D0C-2DBD-4B1D-91E1-CF68F0BB12B9",
+                    "type": "asi",
+                    "amount": 1,
+                    "options": ["int", "wis", "cha"]
+                  },
+                  {
+                    "id": "CD68FCE1-D277-4117-972B-1679AF02D342",
+                    "type": "spell",
+                    "level": 1,
+                    "list": ["Enchantment", "Necromancy"],
+                    "ability": "13B05D0C-2DBD-4B1D-91E1-CF68F0BB12B9"
+                  }
+                ],
+                "granted": [
+                  {
+                    "type": "spell",
+                    "options": ["Darkness"],
+                    "ignoreMaxLevel": true,
+                    "ability": "13B05D0C-2DBD-4B1D-91E1-CF68F0BB12B9"
+                  }
+                ],
+                "uses": [
+                  {
+                    "id": "6CC307F9-EBC1-4CF5-82A8-D60C81702ADC",
+                    "type": "fixed",
+                    "amount": 1,
+                    "reset": 2
+                  },
+                  {
+                    "id": "A4BDE3AD-2141-48EC-8AA7-EC541D90C6CC",
+                    "type": "fixed",
+                    "amount": 1,
+                    "reset": 2
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Mechanus",
+            "traits": [
+              {
+                "name": "Law-Touched",
+                "description": "You learn the Zone of Truth spell and one 1st-level spell of your choice. The 1st-level spell must be from the Abjuration or Divination school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.",
+                "choices": [
+                  {
+                    "id": "1F4FF5E5-276C-4EB8-84F4-F0C0123D1889",
+                    "type": "asi",
+                    "amount": 1,
+                    "options": ["int", "wis", "cha"]
+                  },
+                  {
+                    "id": "404FAAFD-0650-4975-A735-EAC737F82EF3",
+                    "type": "spell",
+                    "level": 1,
+                    "list": ["Abjuration", "Divination"],
+                    "ability": "1F4FF5E5-276C-4EB8-84F4-F0C0123D1889"
+                  }
+                ],
+                "granted": [
+                  {
+                    "type": "spell",
+                    "options": ["Zone of Truth"],
+                    "ignoreMaxLevel": true,
+                    "ability": "1F4FF5E5-276C-4EB8-84F4-F0C0123D1889"
+                  }
+                ],
+                "uses": [
+                  {
+                    "id": "0D00D09B-28F9-44E0-8C8A-9B6C8F013AB1",
+                    "type": "fixed",
+                    "amount": 1,
+                    "reset": 2
+                  },
+                  {
+                    "id": "D34B90D7-F93B-46FF-AB55-A7A06BD5AE66",
+                    "type": "fixed",
+                    "amount": 1,
+                    "reset": 2
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Outlands",
+            "traits": [
+              {
+                "name": "Null-Touched",
+                "description": "You learn the Warding Bond spell and one 1st-level spell of your choice. The 1st-level spell must be from the Abjuration or Transposition school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.",
+                "choices": [
+                  {
+                    "id": "17A237AA-97AC-4D83-8D64-808F6E44D643",
+                    "type": "asi",
+                    "amount": 1,
+                    "options": ["int", "wis", "cha"]
+                  },
+                  {
+                    "id": "83B6EFA0-AE0C-4066-916F-62609D196974",
+                    "type": "spell",
+                    "level": 1,
+                    "list": ["Abjuration", "Transposition"],
+                    "ability": "17A237AA-97AC-4D83-8D64-808F6E44D643"
+                  }
+                ],
+                "granted": [
+                  {
+                    "type": "spell",
+                    "options": ["Warding Bond"],
+                    "ignoreMaxLevel": true,
+                    "ability": "17A237AA-97AC-4D83-8D64-808F6E44D643"
+                  }
+                ],
+                "uses": [
+                  {
+                    "id": "A42B2571-5F34-4F88-B630-24C3192903E4",
+                    "type": "fixed",
+                    "amount": 1,
+                    "reset": 2
+                  },
+                  {
+                    "id": "35DF950F-8DF8-437B-A1F6-FD99D2851850",
+                    "type": "fixed",
+                    "amount": 1,
+                    "reset": 2
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Shadowfell",
+            "traits": [
+              {
+                "name": "Shadow-Touched",
+                "description": "You learn the Invisibility spell and one 1st-level spell of your choice. The 1st-level spell must be from the Illusion or Necromancy school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.",
+                "choices": [
+                  {
+                    "id": "5BC7D2E2-93EF-4CF6-ADFD-DAEA7691F4EC",
+                    "type": "asi",
+                    "amount": 1,
+                    "options": ["int", "wis", "cha"]
+                  },
+                  {
+                    "id": "EAB6E768-34F6-49B5-A0BD-5970E85E5597",
+                    "type": "spell",
+                    "level": 1,
+                    "list": ["Illusion", "Necromancy"],
+                    "ability": "5BC7D2E2-93EF-4CF6-ADFD-DAEA7691F4EC"
+                  }
+                ],
+                "granted": [
+                  {
+                    "type": "spell",
+                    "options": ["Invisibility"],
+                    "ignoreMaxLevel": true,
+                    "ability": "5BC7D2E2-93EF-4CF6-ADFD-DAEA7691F4EC"
+                  }
+                ],
+                "uses": [
+                  {
+                    "id": "C6E40DCB-9342-4F7E-AEAA-40B9C8A48279",
+                    "type": "fixed",
+                    "amount": 1,
+                    "reset": 2
+                  },
+                  {
+                    "id": "3423888A-CD0E-49DB-AE37-E8B6DB4BE5C6",
+                    "type": "fixed",
+                    "amount": 1,
+                    "reset": 2
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Upper Planes",
+            "traits": [
+              {
+                "name": "Light-Touched",
+                "description": "You learn the Radiant Barrage spell and one 1st-level spell of your choice. The 1st-level spell must be from the Evocation or Restoration school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.",
+                "choices": [
+                  {
+                    "id": "3EFAB459-4BE7-40A2-BAC6-F3ACD324A617",
+                    "type": "asi",
+                    "amount": 1,
+                    "options": ["int", "wis", "cha"]
+                  },
+                  {
+                    "id": "1851CC84-FF27-4DA8-A152-080727081F24",
+                    "type": "spell",
+                    "level": 1,
+                    "list": ["Evocation", "Restoration"],
+                    "ability": "3EFAB459-4BE7-40A2-BAC6-F3ACD324A617"
+                  }
+                ],
+                "granted": [
+                  {
+                    "type": "spell",
+                    "options": ["Radiant Barrage"],
+                    "ignoreMaxLevel": true,
+                    "ability": "3EFAB459-4BE7-40A2-BAC6-F3ACD324A617"
+                  }
+                ],
+                "uses": [
+                  {
+                    "id": "86463437-18FA-4217-9790-B23A98DF2235",
+                    "type": "fixed",
+                    "amount": 1,
+                    "reset": 2
+                  },
+                  {
+                    "id": "5D5809E2-1E4E-4D25-8E45-84F88862A36B",
+                    "type": "fixed",
+                    "amount": 1,
+                    "reset": 2
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   },

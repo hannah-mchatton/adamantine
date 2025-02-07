@@ -2987,6 +2987,20 @@
     "save": "wis"
   },
   {
+    "name": "Tear the Weave",
+    "school": "Transmutation",
+    "level": 9,
+    "castingTime": "1 action",
+    "range": "300 feet (30-foot sphere)",
+    "components": "V, S, M (a spell scroll worth at least 1000 gp, which the spell consumes)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You tear the spell scroll used as this spell's material component into shreds, tearing the fabric of the Spellweave along with it.  Choose a point within range, where a sphere of magical chaos spreads.  A creature that casts a spell or activates any other magical effect while within the spell's area causes a Wild Magic surge.  If you can see them and the Wild Magic surge causes them to cast a spell, you can use your reaction to gain control of the spell."
+    ],
+    "lists": ["Arcane"],
+    "ritual": 0
+  },
+  {
     "name": "Charm Monster",
     "school": "Enchantment",
     "level": 4,
@@ -20778,7 +20792,7 @@
       "As part of casting this spell, you must expend two hit dice or the spell automatically fails.",
       "When you hit a creature with a melee weapon attack, blood flows over your weapon then desiccates into black spores falling onto the attack's target, and the attack deals an extra necrotic damage to the target. Roll the hit dice expended to cast this spell, and the total equals the amount of this extra necrotic damage. Additionally, the creature loses all damage resistances it has until the start of your next turn."
     ],
-    "lists": ["Divine", "Occult"],
+    "lists": ["Divine", "Occult", "Primal"],
     "ritual": false
   },
   {
@@ -21641,7 +21655,7 @@
     "higherLevels": [
       "When you cast this spell using a spell slot of 4th level or higher, the poison damage increases by 1d10 for each slot level above 3rd."
     ],
-    "lists": ["Arcane"],
+    "lists": ["Arcane", "Primal"],
     "ritual": 0,
     "type": "save",
     "save": "con",
@@ -25841,8 +25855,9 @@
     "description": [
       "You cast forth a hail of barbed spores infused with toxins cultivated by the demon queen of fungus. Make a ranged spell attack against a creature in range. On a hit, the target takes 4d8 piercing damage and suffers one of the following effects of your choice:<ul><li>The creature loses any resistance or immunity to poison damage or the poisoned condition for the next minute.</li><li>One spell effect of 3rd level or below affecting the creature ends.</li><li>The creature has disadvantage on the next Constitution saving throw it makes in the next minute.</li></ul>"
     ],
-    "lists": ["Primal", "Occult"],
-    "ritual": 0
+    "lists": [],
+    "ritual": 0,
+    "unique": "This spell was developed by the demon lord Zuggtmoy."
   },
   {
     "name": "Murder of Crows",

@@ -8336,7 +8336,7 @@
     "higherLevels": [
       "When you cast this spell using a spell slot of 2nd-level or higher, the damage increases by 1d8 for each slot level above 1st."
     ],
-    "lists": ["Occult"],
+    "lists": ["Occult", "Primal"],
     "ritual": false,
     "type": "save",
     "save": "con",
@@ -14402,6 +14402,23 @@
     "save": "cha"
   },
   {
+    "name": "Dragonform",
+    "school": "Transmutation",
+    "level": 9,
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": "V, S, M (a scale of an ancient dragon worth at least 1000 gp)",
+    "duration": "Concentration, up to 1 hour",
+    "description": [
+      "You take upon the form of an ancient dragon of the same species as the one that the scale used to cast this spell belongs to.  The transformation lasts for the duration, or until you drop to 0 hit points or die. Your game statistics, including mental ability scores, are replaced by the statistics of the dragon. You retains your alignment and personality.",
+      "You assume the hit points of your new form. When you reverts to your normal form, you return to the number of hit points you had before you transformed. If you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. As long as the excess damage doesn't reduce your normal form to 0 hit points, you aren't knocked unconscious.",
+      "You are limited in the actions you can perform by the nature of your new form, and you can't take any action that requires hands.",
+      "Your gear melds into the new form. You can't activate, use, wield, or otherwise benefit from any of your equipment."
+    ],
+    "lists": ["Arcane", "Primal", "Melodic"],
+    "ritual": 0
+  },
+  {
     "name": "Polyphemus' Might",
     "school": "Transmutation",
     "level": 2,
@@ -16186,7 +16203,7 @@
     "components": "V, S",
     "duration": "Instantaneous",
     "description": [
-      "You channel minor spirits, allowing them to work through you so that they may once again affect change in the material world. You create one of the following effects within range:<ul><li>You create an instantaneous, harmless sensory effect, such as a flickering azure flame, an unnaturally chill breeze, rhythmic chanting, or the smell of incense.</li><br><li>A minor spirit briefly appears and fades away.</li><br><li>You instantaneously light or snuff out a candle, a torch, or a small campfire.</li><li>A mote or iridescent light points to the closest place of spiritual power, recent death, or new birth.</li><li>Ley lines within range briefly reveal themselves as they flicker with otherworldly light.</li></ul>"
+      "You channel minor spirits, allowing them to work through you so that they may once again affect change in the material world. You create one of the following effects within range:<ul><li>You create an instantaneous, harmless sensory effect, such as a flickering azure flame, an unnaturally chill breeze, rhythmic chanting, or the smell of incense.</li><li>A minor spirit briefly appears and fades away.</li><li>You instantaneously light or snuff out a candle, a torch, or a small campfire.</li><li>A mote or iridescent light points to the closest place of spiritual power, recent death, or new birth.</li><li>Ley lines within range briefly reveal themselves as they flicker with otherworldly light.</li></ul>"
     ],
     "lists": ["Occult", "Primal"],
     "ritual": false
@@ -19845,7 +19862,7 @@
   },
   {
     "name": "Vampiric Aura",
-    "school": "Necromancy",
+    "school": "Sangromancy",
     "level": 7,
     "castingTime": "1 bonus action",
     "range": "Self (30-foot radius)",
@@ -26338,7 +26355,7 @@
   },
   {
     "name": "Lacerating Rain",
-    "school": "Conjuration",
+    "school": "Sangromancy",
     "level": 5,
     "castingTime": "1 action",
     "range": "120 feet (15-foot radius)",

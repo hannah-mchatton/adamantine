@@ -10351,5 +10351,113 @@
         }
       }
     }
+  },
+  {
+    "key": "spirit-soldier",
+    "stats": {
+      "0": {
+        "any": {
+          "name": "Spirit Soldier",
+          "size": "Medium",
+          "type": { "undead": { "ethereal": { "ghost": {} } } },
+          "ac": [{ "ac": 16, "from": ["ghostly chain mail, shield"] }],
+          "hp": {
+            "base": 3,
+            "levelMod": 3
+          },
+          "speed": { "walk": 30 },
+          "str": 16,
+          "dex": 10,
+          "con": 12,
+          "int": 10,
+          "wis": 10,
+          "cha": 10,
+          "skillProfs": ["athletics", "perception"],
+          "languages": ["speaks the languages you speak"],
+          "trait": [
+            {
+              "name": "Warrior's Skill",
+              "entries": [
+                "The spirit can make use of your exploits in the same way that you can.  You and all of your spirits share exploit dice."
+              ]
+            }
+          ],
+          "action": [
+            {
+              "name": "Ethereal Pike",
+              "entries": [
+                "<em>Melee Weapon Attack.</em> {spl-atk} to hit, reach 10 ft., one target. <em>Hit:</em> 1d8 + 3 + {PB} necrotic damage."
+              ]
+            }
+          ]
+        }
+      },
+      "10": {
+        "any": {
+          "action": [
+            {
+              "name": "Glorious Charge",
+              "entries": [
+                "The spirit moves up to its speed towards a creature and makes an Ethereal Pike attack against it.  On a hit, in addition to the attack's normal effects, the creature is knocked prone."
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "key": "spirit-archer",
+    "stats": {
+      "0": {
+        "any": {
+          "name": "Spirit Archer",
+          "size": "Medium",
+          "type": { "undead": { "ethereal": { "ghost": {} } } },
+          "ac": [{ "ac": 14, "from": ["ghostly leather"] }],
+          "hp": {
+            "base": 2,
+            "levelMod": 2
+          },
+          "speed": { "walk": 35 },
+          "str": 10,
+          "dex": 16,
+          "con": 12,
+          "int": 10,
+          "wis": 12,
+          "cha": 10,
+          "skillProfs": ["perception", "stealth"],
+          "languages": ["speaks the languages you speak"],
+          "trait": [
+            {
+              "name": "Warrior's Skill",
+              "entries": [
+                "The spirit can make use of your exploits in the same way that you can.  You and all of your spirits share exploit dice."
+              ]
+            }
+          ],
+          "action": [
+            {
+              "name": "Ethereal Bow",
+              "entries": [
+                "<em>Ranged Weapon Attack.</em> {spl-atk} to hit, range 60/240 ft., one target. <em>Hit:</em> 1d6 + 3 + {PB} necrotic damage."
+              ]
+            }
+          ]
+        }
+      },
+      "10": {
+        "any": {
+          "action": [
+            {
+              "name": "Spirit Shackle",
+              "entries": [
+                "<em>Ranged Weapon Attack.</em> {spl-atk} to hit, range 60/240 ft., one target. <em>Hit:</em> 1d6 + 3 + {PB} necrotic damage and the target can't willingly move further than 60 feet away from the spirit for 1 minute or until the spirit is destroyed."
+              ]
+            }
+          ]
+        }
+      }
+    }
   }
 ]

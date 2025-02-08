@@ -408,6 +408,22 @@ export class BuilderChoiceComponent implements OnInit {
               }
               return false;
             });
+        } else if (choice?.type === 'companion') {
+          choiceOptions = this.dataService.getCompanionChoices(
+            choice.maxCr,
+            choice.creatureType.map((t) => {
+              if (t.includes('-')) {
+                return (
+                  this.characterObj?.choices
+                    .find((c) => c.id == t)
+                    ?.value.toLowerCase() ?? ''
+                );
+              } else {
+                return t.toLowerCase();
+              }
+            }),
+            this.characterLevel
+          );
         }
       } else {
         choiceOptions = choice.options;

@@ -24,89 +24,6 @@ export class MonsterComponent implements OnInit {
     skeleton: null,
     zombie: null,
   };
-  private undeadMods = {
-    ghost: {
-      resist: [
-        'acid',
-        'fire',
-        'lightning',
-        'thunder',
-        'bludgeoning, piercing, and slashing damage from nonmagical attacks',
-      ],
-      immune: ['cold', 'necrotic', 'poison'],
-      conditionImmune: [
-        'charmed',
-        'exhaustion',
-        'frightened',
-        'grappled',
-        'paralyzed',
-        'petrified',
-        'poisoned',
-        'prone',
-        'restrained',
-      ],
-      trait: [
-        {
-          name: 'Ethereal Sight',
-          entries: [
-            'The ghost can see 60 feet into the Ethereal Plane when it is on the Material Plane, and vice versa.',
-          ],
-        },
-        {
-          name: 'Incorporeal Movement',
-          entries: [
-            'The ghost can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.',
-          ],
-        },
-      ],
-      action: [
-        {
-          name: 'Etherealness',
-          entries: [
-            "The ghost enters the Ethereal Plane from the Material Plane, or vice versa. It is visible on the Material Plane while it is in the Border Ethereal, and vice versa, yet it can't affect or be affected by anything on the other plane.",
-          ],
-        },
-      ],
-    },
-    mummy: {
-      vulnerable: ['fire'],
-      resist: [
-        'bludgeoning, piercing, and slashing damage from nonmagical attacks',
-      ],
-      immune: ['necrotic', 'poison'],
-      conditionImmune: [
-        'charmed',
-        'exhaustion',
-        'frightened',
-        'paralyzed',
-        'poisoned',
-      ],
-      trait: [
-        {
-          name: 'Mummy Rot',
-          entries: [
-            "Whenever the mummy hits a creature with a melee attack, the target must succeed on a DC 13 Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the remove curse spell or other magic.",
-          ],
-        },
-      ],
-    },
-    skeleton: {
-      vulnerable: ['bludgeoning'],
-      immune: ['poison'],
-      conditionImmune: ['exhaustion', 'poisoned'],
-    },
-    zombie: {
-      conditionImmune: ['exhaustion', 'poisoned'],
-      trait: [
-        {
-          name: 'Undead Fortitude',
-          entries: [
-            'If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead.',
-          ],
-        },
-      ],
-    },
-  };
 
   public acString: string = '';
   public hpString: string = '';
@@ -140,6 +57,10 @@ export class MonsterComponent implements OnInit {
     'Colossal',
     'Kaiju',
   ];
+
+  public capitalize(str: string): string {
+    return str.charAt(0).toUpperCase() + str.substring(1);
+  }
 
   public ngOnInit(): void {
     this.acString = this.monster.ac
@@ -365,477 +286,63 @@ export class MonsterComponent implements OnInit {
       : array.join(', ');
   }
 
-  // public updateDireBeast() {
-  //   this.undead = undefined;
+  public getMonsterTypesString(types: any, swarm: boolean = false): string {
+    let typesData = [];
 
-  //   let currentUrl = window.location.href;
-  //   currentUrl = currentUrl.split('?')[0];
+    for (let [type, subTypes] of Object.entries(types).sort((a, b) =>
+      a[0].localeCompare(b[0])
+    )) {
+      const formattedType = swarm ? type + 's' : type;
 
-  //   window.history.replaceState(
-  //     {},
-  //     '',
-  //     currentUrl + `?dire=${this.direBeast ? '1' : '0'}&undead=${this.undead}`
-  //   );
+      if (Object.keys(subTypes).length > 0) {
+        typesData.push(`${formattedType} (${this.getSubTypes(subTypes)})`);
+      } else {
+        typesData.push(formattedType);
+      }
+    }
 
-  //   if (this.direBeast) {
-  //     if (this.direMonster) {
-  //       this.monster = this.direMonster;
-  //     } else {
-  //       this.direMonster = JSON.parse(JSON.stringify(this.monster));
+    return typesData.join(' ');
+  }
+  public getSubTypes(subTypes: any): string {
+    let subTypesData = [];
+    for (let [subType, subSubTypes] of Object.entries(subTypes)) {
+      subType = subType.replace(/([a-z])([A-Z])/g, '$1 $2').toLowerCase();
 
-  //       this.direMonster.name = `Dire ${this.direMonster.name}`;
+      if (Object.keys(subSubTypes).length > 0) {
+        subTypesData.push(`${subType} (${this.getSubTypes(subSubTypes)})`);
+      } else {
+        subTypesData.push(subType);
+      }
+    }
 
-  //       this.direMonster.ac.forEach((ac) => {
-  //         if (ac.ac) {
-  //           ac.ac += 1;
-  //         } else {
-  //           ac += 1;
-  //         }
-  //       });
+    return subTypesData.join(', ');
+  }
 
-  //       this.direMonster.str = Math.max(12, this.direMonster.str + 2);
-  //       this.direMonster.con += 2;
+  public getLegendaryActionsHeader() {
+    let legendaryActions = 'three legendary actions';
+    if (this.monster.mythic) {
+      if (this.monster.cr >= 15) {
+        legendaryActions = 'five legendary actions';
+      }
+    } else if (this.monster.cr <= 20 && this.monster.cr >= 10) {
+      legendaryActions = 'two legendary actions';
+    } else if (this.monster.cr < 10) {
+      legendaryActions = 'one legendary action';
+    }
 
-  //       const hitDice = parseInt(this.monster.hp.formula.split('d')[0].trim());
-  //       const hitDie = parseInt(
-  //         this.monster.hp.formula.split('d')[1].split('+')[0].trim()
-  //       );
-  //       const conMod = Math.floor((this.monster.con - 10) / 2);
-
-  //       if (this.direMonster.action) {
-  //         this.direMonster.action = this.direMonster.action.map((action) => {
-  //           action.entries = action.entries.map((entry) => {
-  //             if (entry.includes('Attack')) {
-  //               entry = entry.replace(
-  //                 /(?<=\+)([0-9]+)(?= to hit)/,
-  //                 function ($0, $1) {
-  //                   return parseInt($1) + 1;
-  //                 }
-  //               );
-  //               entry = entry.replace(
-  //                 /(?<=\()([0-9]+)d([0-9]+)/g,
-  //                 function ($0, $1, $2) {
-  //                   return (
-  //                     parseInt($1) +
-  //                     1 +
-  //                     'd' +
-  //                     Math.min(parseInt($2) + 2, 12).toString()
-  //                   );
-  //                 }
-  //               );
-  //               entry = entry.replace(
-  //                 /(?<=\+ )([0-9]+)(?=\))/g,
-  //                 function ($0, $1) {
-  //                   return parseInt($1) + 2;
-  //                 }
-  //               );
-  //               entry = entry.replace(/\- ([0-9]+)(?=\))/g, function ($0, $1) {
-  //                 const mod = parseInt($1) * -1 + 2;
-  //                 if (mod < 0) {
-  //                   return `- ${Math.abs(mod)}`;
-  //                 } else if (mod > 0) {
-  //                   return `+ ${mod}`;
-  //                 }
-  //               });
-
-  //               entry = entry.replace(
-  //                 /([0-9]+)( \([0-9]+d[0-9]+(?: \+ [0-9]+)?)/g,
-  //                 function ($0, $1, $2) {
-  //                   const dice = parseInt(
-  //                     $2
-  //                       .split('d')[0]
-  //                       .replace(/[\(\)]/, '')
-  //                       .trim()
-  //                   );
-  //                   const die = parseInt(
-  //                     $2
-  //                       .split('d')[1]
-  //                       .split('+')[0]
-  //                       .replace(/[\(\)]/, '')
-  //                       .trim()
-  //                   );
-
-  //                   let mod = 0;
-  //                   if ($2.includes('+')) {
-  //                     mod = parseInt(
-  //                       $2
-  //                         .split('+')[1]
-  //                         .replace(/[\(\)]/, '')
-  //                         .trim()
-  //                     );
-  //                   }
-
-  //                   return `${(die / 2 + 1) * dice + mod}${$2}`;
-  //                 }
-  //               );
-
-  //               entry = entry.replace(
-  //                 '<em>Hit:</em> 1 ',
-  //                 '<em>Hit:</em> 5 (1d4 + 2) '
-  //               );
-  //             }
-
-  //             if (entry.includes('DC')) {
-  //               entry = entry.replace(/(?<=DC )[0-9]+/g, function ($0) {
-  //                 return parseInt($0) + 1;
-  //               });
-  //             }
-
-  //             return entry;
-  //           });
-
-  //           return action;
-  //         });
-  //       }
-
-  //       this.direMonster.hp.formula = `${hitDice + 3}d${hitDie + 2} + ${
-  //         conMod * hitDice
-  //       }`;
-
-  //       this.direMonster.cr = Math.round(this.direMonster.cr + 2);
-
-  //       for (let speed of Object.keys(this.direMonster.speed)) {
-  //         if (this.direMonster.speed[speed] !== 0) {
-  //           this.direMonster.speed[speed] += 10;
-  //         }
-  //       }
-  //       if (this.direMonster.skill) {
-  //         if (this.direMonster.skill['Athletics']) {
-  //           const prof =
-  //             parseInt(this.direMonster.skill['Athletics'].replace('+', '')) -
-  //             Math.floor((this.monster.str - 10) / 2);
-  //           this.direMonster.skill['Athletics'] = `+${
-  //             prof + Math.floor((this.direMonster.str - 10) / 2)
-  //           }`;
-  //         }
-  //         if (this.direMonster.skill['con']) {
-  //           this.direMonster.save['Endurance'] =
-  //             '+' +
-  //             parseInt(this.direMonster.skill['Endurance'].replace('+', '')) +
-  //             1;
-  //         }
-  //       }
-  //       if (this.direMonster.save) {
-  //         if (this.direMonster.save['str']) {
-  //           const prof =
-  //             parseInt(this.direMonster.save['str'].replace('+', '')) -
-  //             Math.floor((this.monster.str - 10) / 2);
-  //           this.direMonster.save['str'] = `+${
-  //             prof + Math.floor((this.direMonster.str - 10) / 2)
-  //           }`;
-  //         }
-  //         if (this.direMonster.save['con']) {
-  //           this.direMonster.save['con'] =
-  //             '+' +
-  //             (parseInt(this.direMonster.save['con'].replace('+', '')) + 1);
-  //         }
-  //       }
-
-  //       if (this.direMonster.swarmSize) {
-  //         this.direMonster.size =
-  //           this.sizes[
-  //             this.sizes.findIndex((s) => s === this.direMonster.size) + 2
-  //           ];
-  //         this.direMonster.swarmSize =
-  //           this.sizes[
-  //             this.sizes.findIndex((s) => s === this.direMonster.swarmSize) + 1
-  //           ];
-  //       } else {
-  //         this.direMonster.size =
-  //           this.sizes[
-  //             this.sizes.findIndex((s) => s === this.direMonster.size) + 1
-  //           ];
-  //       }
-
-  //       if (this.direMonster.trait) {
-  //         this.direMonster.trait = [
-  //           {
-  //             name: 'Dire Rage',
-  //             entries: [
-  //               `The ${this.direMonster.name.toLowerCase()} can make an additional attack with one of its natural weapons whenever it takes the Attack action.`,
-  //             ],
-  //           },
-  //           ...this.direMonster.trait,
-  //         ];
-  //       } else {
-  //         this.direMonster.trait = [
-  //           {
-  //             name: 'Dire Rage',
-  //             entries: [
-  //               `The ${this.direMonster.name.toLowerCase()} can make an additional attack with one of its natural weapons whenever it takes the Attack action.`,
-  //             ],
-  //           },
-  //         ];
-  //       }
-
-  //       this.monster = this.direMonster;
-  //     }
-  //   } else {
-  //     this.monster = this.data;
-  //   }
-
-  //   this.acString = this.monster.ac
-  //     .map((ac: any) => {
-  //       if (ac.from && ac.condition) {
-  //         return `${ac.ac} (${ac.from}, ${ac.condition})`;
-  //       } else if (ac.from) {
-  //         return `${ac.ac} (${ac.from})`;
-  //       } else if (ac.condition) {
-  //         return `${ac.ac} (${ac.condition})`;
-  //       } else {
-  //         return ac.toString();
-  //       }
-  //     })
-  //     .join(', ');
-
-  //   const hitDice = parseInt(this.monster.hp.formula.split('d')[0].trim()) + 3;
-  //   const hitDie =
-  //     parseInt(this.monster.hp.formula.split('d')[1].split('+')[0].trim()) + 2;
-  //   const conMod = Math.floor((this.monster.con - 10) / 2);
-
-  //   this.hpString = `${
-  //     (hitDie / 2 + conMod) * hitDice
-  //   } (${hitDice}d${hitDie} + ${conMod})`;
-
-  //   let speed = [];
-
-  //   if (this.monster.speed.walk) {
-  //     let speedString;
-
-  //     if (this.monster.speed.walk.condition) {
-  //       speedString = `${this.monster.speed.walk.number} ft. ${this.monster.speed.walk.condition}`;
-  //     } else {
-  //       speedString = `${this.monster.speed.walk} ft.`;
-  //     }
-  //     speed.push(speedString);
-  //   } else {
-  //     speed.push(`0 ft.`);
-  //   }
-
-  //   for (let [key, v] of Object.entries(this.monster.speed)) {
-  //     const value: any = v;
-
-  //     if (key !== 'walk' && key !== 'hover') {
-  //       if (this.monster.speed.walk.condition) {
-  //         speed.push(`${key} ${value.number} ft. ${value.condition}`);
-  //       } else {
-  //         speed.push(`${key} ${value} ft.`);
-  //       }
-  //     } else if (key === 'hover') {
-  //       speed.push(`fly ${value} ft. (hover)`);
-  //     }
-  //   }
-
-  //   this.speedString = speed.join(', ');
-
-  //   if (this.monster.skill) {
-  //     this.skillString = Object.entries(this.monster.skill)
-  //       .map(([k, v]: any) => `${this.titleCase(k)} ${v}`)
-  //       .join(', ');
-  //   }
-  //   if (this.monster.save) {
-  //     this.saveString = Object.entries(this.monster.save)
-  //       .map(([k, v]: any) => `${this.scoreKey[k]} ${v}`)
-  //       .join(', ');
-  //   }
-  // }
-
-  // public updateUndead(): void {
-  //   if (this.undead !== 'undefined') {
-  //     this.direBeast = false;
-  //   }
-
-  //   let currentUrl = window.location.href;
-  //   currentUrl = currentUrl.split('?')[0];
-
-  //   window.history.replaceState(
-  //     {},
-  //     '',
-  //     currentUrl + `?dire=${this.direBeast ? '1' : '0'}&undead=${this.undead}`
-  //   );
-
-  //   if (['ghost', 'mummy', 'skeleton', 'zombie'].includes(this.undead)) {
-  //     if (this.undeadMonster[this.undead]) {
-  //       this.monster = this.undeadMonster[this.undead];
-  //     } else {
-  //       const undeadMonster = JSON.parse(JSON.stringify(this.data));
-  //       const mods = this.undeadMods[this.undead];
-
-  //       switch (this.undead) {
-  //         case 'ghost':
-  //           undeadMonster.name = `Ghost ${undeadMonster.name}`;
-  //           break;
-  //         case 'mummy':
-  //           undeadMonster.name = `Mummified ${undeadMonster.name}`;
-  //           break;
-  //         case 'skeleton':
-  //           undeadMonster.name = `${undeadMonster.name} Skeleton`;
-  //           if (undeadMonster.spellcasting) {
-  //             delete undeadMonster.spellcasting;
-  //           }
-  //           undeadMonster.int = Math.min(undeadMonster.int, 6);
-  //           undeadMonster.wis = Math.min(undeadMonster.wis, 8);
-  //           undeadMonster.cha = Math.min(undeadMonster.cha, 5);
-
-  //           if (undeadMonster.languages) {
-  //             undeadMonster.languages = [
-  //               "understands all languages it spoke in life but can't speak",
-  //             ];
-  //           }
-
-  //           break;
-  //         case 'zombie':
-  //           undeadMonster.name = `${undeadMonster.name} Zombie`;
-  //           if (undeadMonster.spellcasting) {
-  //             delete undeadMonster.spellcasting;
-  //           }
-  //           undeadMonster.int = Math.min(undeadMonster.int, 3);
-  //           undeadMonster.wis = Math.min(undeadMonster.wis, 6);
-  //           undeadMonster.cha = Math.min(undeadMonster.cha, 5);
-
-  //           if (undeadMonster.languages) {
-  //             undeadMonster.languages = [
-  //               "understands all languages it spoke in life but can't speak",
-  //             ];
-  //           }
-
-  //           break;
-  //       }
-
-  //       if (undeadMonster.type.includes('beast')) {
-  //         undeadMonster.type = undeadMonster.type.replace('humanoid', 'undead');
-  //       } else if (undeadMonster.type.includes('humanoid')) {
-  //         undeadMonster.type = undeadMonster.type.replace('humanoid', 'undead');
-  //       } else {
-  //         undeadMonster.type = `undead ${undeadMonster.type}`;
-  //       }
-
-  //       if (!undeadMonster.tags) {
-  //         undeadMonster.tags = [];
-  //       }
-  //       if (this.undead === 'ghost') {
-  //         undeadMonster.tags.push('ethereal');
-  //       } else {
-  //         undeadMonster.tags.push('corporeal');
-  //       }
-  //       undeadMonster.tags = undeadMonster.tags.sort();
-
-  //       if (mods.resist) {
-  //         undeadMonster.resist = [
-  //           ...new Set([...mods.resist, ...(undeadMonster.resist ?? [])]),
-  //         ].sort((a, b) => {
-  //           if (
-  //             a ===
-  //             'bludgeoning, piercing, and slashing damage from nonmagical attacks'
-  //           ) {
-  //             return 1;
-  //           } else if (
-  //             b ===
-  //             'bludgeoning, piercing, and slashing damage from nonmagical attacks'
-  //           ) {
-  //             return -1;
-  //           } else {
-  //             return a.localeCompare(b);
-  //           }
-  //         });
-
-  //         if (undeadMonster.vulnerable) {
-  //           undeadMonster.vulnerable = undeadMonster.vulnerable.filter(
-  //             (v: string) => !undeadMonster.resist.includes(v)
-  //           );
-  //         }
-  //       }
-  //       if (mods.immune) {
-  //         undeadMonster.immune = [
-  //           ...new Set([...mods.immune, ...(undeadMonster.immune ?? [])]),
-  //         ].sort((a, b) => {
-  //           if (
-  //             a ===
-  //             'bludgeoning, piercing, and slashing damage from nonmagical attacks'
-  //           ) {
-  //             return 1;
-  //           } else if (
-  //             b ===
-  //             'bludgeoning, piercing, and slashing damage from nonmagical attacks'
-  //           ) {
-  //             return -1;
-  //           } else {
-  //             return a.localeCompare(b);
-  //           }
-  //         });
-
-  //         if (undeadMonster.vulnerable) {
-  //           undeadMonster.vulnerable = undeadMonster.vulnerable.filter(
-  //             (v: string) => !undeadMonster.immune.includes(v)
-  //           );
-  //         }
-  //         if (undeadMonster.resist) {
-  //           undeadMonster.resist = undeadMonster.resist.filter(
-  //             (r: string) => !undeadMonster.immune.includes(r)
-  //           );
-  //         }
-  //       }
-  //       if (mods.vulnerable) {
-  //         undeadMonster.vulnerable = [
-  //           ...new Set([
-  //             ...mods.vulnerable,
-  //             ...(undeadMonster.vulnerable ?? []),
-  //           ]),
-  //         ].sort((a, b) => {
-  //           if (
-  //             a ===
-  //             'bludgeoning, piercing, and slashing damage from nonmagical attacks'
-  //           ) {
-  //             return 1;
-  //           } else if (
-  //             b ===
-  //             'bludgeoning, piercing, and slashing damage from nonmagical attacks'
-  //           ) {
-  //             return -1;
-  //           } else {
-  //             return a.localeCompare(b);
-  //           }
-  //         });
-
-  //         if (undeadMonster.resist) {
-  //           undeadMonster.resist = undeadMonster.resist.filter(
-  //             (r: string) => !undeadMonster.vulnerable.includes(r)
-  //           );
-  //         }
-  //         if (undeadMonster.immune) {
-  //           undeadMonster.vulnerable = undeadMonster.vulnerable.filter(
-  //             (v: string) => !undeadMonster.immune.includes(v)
-  //           );
-  //         }
-  //       }
-  //       if (mods.conditionImmune) {
-  //         undeadMonster.conditionImmune = [
-  //           ...new Set([
-  //             ...mods.conditionImmune,
-  //             ...(undeadMonster.conditionImmune ?? []),
-  //           ]),
-  //         ].sort();
-  //       }
-
-  //       if (mods.action) {
-  //         undeadMonster.action = [
-  //           ...mods.action,
-  //           ...(undeadMonster.action ?? []),
-  //         ];
-  //       }
-  //       if (mods.trait) {
-  //         undeadMonster.trait = [...mods.trait, ...(undeadMonster.trait ?? [])];
-  //       }
-
-  //       this.monster = undeadMonster;
-  //       this.undeadMonster[this.undead] = undeadMonster;
-  //     }
-  //   } else {
-  //     if (!this.direBeast) {
-  //       this.monster = this.data;
-  //     } else {
-  //       this.monster = this.direMonster;
-  //     }
-  //   }
-  // }
+    return `${this.capitalize(
+      this.monster.shortName ?? this.monster.name
+    )} can take ${legendaryActions} choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn.  ${this.capitalize(
+      this.monster.shortName ?? this.monster.name
+    )} regains spent legendary actions at the start of ${
+      this.monster.pronouns ? this.monster.pronouns[2] : 'its'
+    } turn.`;
+  }
+  public getMythicActionsHeader() {
+    return `If ${this.monster.shortName ?? this.monster.name} has used ${
+      this.monster.pronouns ? this.monster.pronouns[2] : 'its'
+    } Mythic trait in the last hour, ${
+      this.monster.pronouns ? this.monster.pronouns[0] : 'it'
+    } can use the options below as legendary actions.`;
+  }
 }

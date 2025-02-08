@@ -5308,35 +5308,41 @@ export class CharacterSheetService {
 
     if (Array.isArray(feature.choices)) {
       for (let choice of feature.choices) {
-        companions = [
-          ...companions,
-          ...this.getChoiceItems(
-            choice,
-            choices,
-            this.getFeatureCompanions.bind(this)
-          ),
-        ];
+        companions.push(...this.getChoiceCompanions(choice, choices));
       }
     } else {
-      companions = [
-        ...companions,
-        ...this.getChoiceItems(
-          feature.choices,
-          choices,
-          this.getFeatureCompanions.bind(this)
-        ),
-      ];
+      companions.push(...this.getChoiceCompanions(feature.choices, choices));
     }
 
-    if (feature.listed) {
-      companions = [
-        ...companions,
-        ...this.getListedItems(
-          feature.listed,
-          choices,
-          this.getFeatureCompanions.bind(this)
-        ),
-      ];
+    return companions;
+  }
+  private getChoiceCompanions(choice: any, choices: any[]) {
+    const choiceEntry = choices.find((c: any) => c.id === choice?.id);
+    var companions = [];
+    if (choiceEntry) {
+      if (choice?.type === 'trait') {
+        const traits =
+          choice.options?.find((o: any) => o.name === choiceEntry?.value)
+            ?.traits ?? [];
+        for (let trait of traits) {
+          companions = this.getFeatureCompanions(trait, choices);
+        }
+      } else if (choice?.type === 'feat') {
+        const feat = this.dataService.getFeat(choiceEntry?.value);
+        if (feat) {
+          companions = this.getFeatureCompanions(feat, choices);
+        }
+      } else if (this.dataService.getGenericListKeys().includes(choice?.type)) {
+        const data = this.dataService.getGenericListItem(
+          choice?.type,
+          choiceEntry?.value
+        );
+        if (data) {
+          companions = this.getFeatureCompanions(data, choices);
+        }
+      } else if (choice?.type == 'companion') {
+        companions = [{ key: choiceEntry.value }];
+      }
     }
 
     return companions;

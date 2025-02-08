@@ -933,6 +933,11 @@ export class DataService {
     choices: any[],
     splMod: number
   ) {
+    const monsterData = monsters.find((m) => m.name === companionKey);
+    if (monsterData) {
+      return monsterData;
+    }
+
     const proficiencyBonus = Math.floor(2 + (level - 1) / 4);
     let companionData = companions.find((co) => co.key === companionKey);
 
@@ -1254,5 +1259,23 @@ export class DataService {
     pantheons = pantheons.filter((p) => p.gods?.length);
 
     return pantheons;
+  }
+
+  public getCompanionChoices(
+    maxCr: number[],
+    creatureType: string[],
+    characterLevel: number = 1
+  ): string[] {
+    const maxCrValue = maxCr[characterLevel - 1];
+    return monsters
+      .filter((m) => {
+        return (
+          !m.minion &&
+          m.cr <= maxCrValue &&
+          Object.keys(m.type).some((t) => creatureType.includes(t))
+        );
+      })
+      .sort((a, b) => a.name.localeCompare(b.name))
+      .map((m) => m.name);
   }
 }

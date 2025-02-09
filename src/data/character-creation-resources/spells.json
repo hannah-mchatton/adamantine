@@ -3761,6 +3761,22 @@
     }
   },
   {
+    "name": "Conjure Elder Elemental",
+    "school": "Conjuration",
+    "level": 9,
+    "castingTime": "1 minute",
+    "range": "300 feet",
+    "components": "V, S, M (a bottled storm, phoenix feather, dragon turtle fang, or sea serpent scale, worth at least 1000 gp, which the spell consumes)",
+    "duration": "Concentration, up to 1 hour",
+    "description": [
+      "You call forth an elder elemental from one of the elemental planes. An elder elemental appropriate to the material component you used for this spell appears at a point within range.",
+      "The elemental is friendly to you and your companions for the duration. Roll initiative for the elemental, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to the elemental, it defends itself from hostile creatures but otherwise takes no actions.",
+      "If your concentration is broken, the elemental doesn't disappear. Instead, you lose control of the elemental, it becomes hostile toward you and your companions, and it might attack. An uncontrolled elemental can't be dismissed by you, and it disappears 1 hour after you summoned it. The DM has the elemental's statistics."
+    ],
+    "lists": ["Arcane", "Occult", "Primal"],
+    "ritual": 0
+  },
+  {
     "name": "Conjure Shambling Mound",
     "school": "Conjuration",
     "level": 7,

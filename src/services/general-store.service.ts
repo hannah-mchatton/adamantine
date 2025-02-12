@@ -18,9 +18,6 @@ import pets from '../data/general-store/animals/pets.json';
 import armor from '../data/general-store/armor.json';
 import shields from '../data/general-store/shields.json';
 
-import modifications from '../data/general-store/modifications.json';
-import specialMaterials from '../data/general-store/special-materials.json';
-
 import accomodations from '../data/general-store/other-costs/accommodations.json';
 import construction from '../data/general-store/other-costs/construction.json';
 import lifestyleExpenses from '../data/general-store/other-costs/lifestyle-expenses.json';
@@ -160,21 +157,6 @@ export class GeneralStoreService {
           name: 'Shields',
           type: 'armor',
           data: 'shields',
-        },
-      ],
-    },
-    {
-      name: 'Modifications & Special Materials',
-      children: [
-        {
-          name: 'Modifications',
-          type: 'modification',
-          data: 'modifications',
-        },
-        {
-          name: 'Special Materials',
-          type: 'modification',
-          data: 'specialMaterials',
         },
       ],
     },
@@ -348,9 +330,6 @@ export class GeneralStoreService {
     },
     shields: shields,
 
-    modifications: modifications,
-    specialMaterials: specialMaterials,
-
     accomodations: accomodations,
     construction: construction,
     lifestyleExpenses: lifestyleExpenses,
@@ -403,9 +382,6 @@ export class GeneralStoreService {
 
     armor: armor,
     shields: shields,
-
-    modifications: modifications,
-    specialMaterials: specialMaterials,
 
     accomodations: accomodations,
     construction: construction,

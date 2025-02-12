@@ -188,10 +188,6 @@
       You can add the light property to a weapon without the heavy property,
       reducing its damage dice by one step.
     </li>
-    <li>
-      You can silver the weapon (requires 5 silver scraps for one-handed
-      weapons, 10 for two-handed weapons, and 15 for massive weapons).
-    </li>
   </ul>
 </div>
 <h6>Repair Gear</h6>
@@ -1838,6 +1834,51 @@
     every roll qualified for a Masterwork version.
   </nz-tab>
   <nz-tab nzTitle="Material Modifiers">
+    <h6>Adamantine</h6>
+    <p>
+      Adamantine is an alloy of electrum, mithral, and a brittle, greenish metal
+      called adamant. Adamant is most commonly found in meteorites, and is all
+      but useless for weapon and armor production itself, but when alloyed
+      produces a metal that's indestructible.
+    </p>
+    <h6>Bronze</h6>
+    <p>
+      Bronze is a primitive alloy of copper and tin. It is softer than steel,
+      and so it produces more fragile weapons and armor, but it is also easier
+      to work.
+    </p>
+    <h6>Cold Iron</h6>
+    <p>
+      Cold iron, also called sky-iron, is a metal found only high in mountains
+      and floating islands. It has an oddly low melting point when worked, which
+      makes it difficult to work with without ruining it. Cold iron weapons are
+      particularly effective against creatures that wield light, namely
+      celestials and fey.
+    </p>
+    <h6>Dragonsteel</h6>
+    <p>
+      Dragonsteel is steel produced using a dragon's breath weapon. Depending on
+      the species of dragon, the method which is used to incorporate the breath
+      weapon differs. Fire breath is used as the heat source, or acid breath
+      involves acid-etching the steel, but most breath weapons are applied
+      magically.
+    </p>
+    <h6>Mithral</h6>
+    <p>
+      Mithral is a blueish metal found deep underground, including in the
+      Underdark in Faerun. On top of being useful to alloy into adamantine,
+      mithral has an extremely low density without sacrificing its durability.
+      Mithral is particularly favored as a weapon and armor material by elves
+      and especailly drow.
+    </p>
+    <h6>Silver</h6>
+    <p>
+      Mundane silver is only useful for jewelery. In order to be used to make a
+      weapon, silver must be enchanted into alchemical silver, a metal that
+      burns creatures of the night on contact. Player characters can transform
+      mundane silver into alchemical silver using the Ceremony spell.
+    </p>
+
     <nz-table
       [nzData]="['yo mama']"
       [nzShowPagination]="false"
@@ -1930,6 +1971,15 @@
             is reduced by 4, and it always counts has having 1 common essence of
             any type as part of the craft.
           </td>
+        </tr>
+        <tr>
+          <td>Silver</td>
+          <td>+2</td>
+          <td>
+            The weapon is considered magical when used to attack a fiend,
+            shapechanger, or undead.
+          </td>
+          <td>-</td>
         </tr>
       </tbody>
     </nz-table>

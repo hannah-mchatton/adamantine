@@ -1159,7 +1159,7 @@
     "upcastDuration": {
       "9": "Concentration, up to 1 hour"
     },
-    "unique": "This spell is only known by liches.",
+    "unique": "This spell is known only by liches.",
     "lists": []
   },
   {
@@ -2328,7 +2328,7 @@
     "ritual": 0
   },
   {
-    "name": "Boltblink",
+    "name": "Storm Jump",
     "school": "Transposition",
     "level": 9,
     "castingTime": "1 action",
@@ -3851,7 +3851,7 @@
     "level": 7,
     "castingTime": "1 minute",
     "range": "90 feet",
-    "components": "V, S, M (dragon scales and a jewel worth 10000 gp, both of which the spell consumes)",
+    "components": "V, S, M (dragon scales and a jewel worth 500 gp, both of which the spell consumes)",
     "duration": "Up to 8 hours",
     "description": [
       "You summon a dragon wyrmling of challenge rating 4 or lower, which appears in an unoccupied space that you can see within range. The color of dragon scales used in the casting determines the type of wyrmling summoned. The wyrmling disappears when it drops to 0 hit points or when the spell ends. The wyrmling is friendly to you and your companions for the duration. Roll initiative for the wyrmling, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you), as long as they don't violate its alignment. If you don't issue any commands to the wyrmling, it defends itself from hostile creatures but otherwise takes no actions. The DM has the wyrmling's statistics. You can only have one wyrmling conjured at a time with this spell. Any additional castings of the spell within the duration will cause the prior wyrmling to cease existing or to extend the duration, depending on the scale used."
@@ -23745,6 +23745,63 @@
     "save": "cha"
   },
   {
+    "name": "Curse of Frailty",
+    "school": "Necromancy",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a thin shaving of bitter bark)",
+    "duration": "1 hour",
+    "description": [
+      "You curse a creature you can see within range to weaken its vital force, forcing it to make a Charisma saving throw. On a failure, the target takes 6d6 poison damage and is cursed for the duration. On a successful saving throw, the creature takes half as much poison damage and isn't cursed.",
+      "While cursed in this way, the creature has disadvantage on saving throws against poison damage or the poisoned condition."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d6 for each slot level above 4th."
+    ],
+    "lists": ["Primal", "Occult", "Divine"],
+    "ritual": 0,
+    "type": "save",
+    "save": "cha",
+    "damage": [
+      {
+        "dice": 6,
+        "die": 6,
+        "type": "poison"
+      }
+    ],
+    "upcastDice": 1
+  },
+  {
+    "name": "Widowcraft",
+    "school": "Transmutation",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Concentration, up to 8 hours",
+    "description": [
+      "You transform up to two ordinary spiders within 5 feet of you into Terror Widows, which appear in unoccupied spaces within 15 feet of you.",
+      "The spiders act on your initiative in combat and are under your telepathic control. When the spell ends, the spiders return to their original size and disposition."
+    ],
+    "higherLevels": [
+      "The forms your spiders can take change when cast with higher slot levels. At 5th level or higher, they can become Deathleapers or Molten Spiders. At 6th level or higher, they can become Doomspiders or Feyspitters. At 7th level or higher, they can become Blade Spiders or Harpoon Spiders. At 8th level or higher, they can become Giant Spiders or Deep Spiders. At 9th level, they can become Demonfeed Spiders or Tomb Spiders.",
+      "Additionally, if you cast this spell with a spell slot of 7th level or higher, you can target up to three spiders."
+    ],
+    "unique": "This spell was developed by the spider goddess Lolth.",
+    "ritual": 0,
+    "type": "save",
+    "save": "cha",
+    "damage": [
+      {
+        "dice": 6,
+        "die": 6,
+        "type": "poison"
+      }
+    ],
+    "upcastDice": 1
+  },
+  {
     "name": "Darkfire Abyss",
     "school": "Conjuration",
     "level": 9,
@@ -23768,6 +23825,93 @@
         "type": "fire"
       }
     ]
+  },
+  {
+    "name": "Darkfire Bolt",
+    "school": "Evocation",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S",
+    "duration": "Up to 1 minute",
+    "description": [
+      "Black-violet shadowflame gathers in your hand, then flies off, clinging where it strikes. Make a ranged spell attack against the target. On a hit, the target takes 2d10 fire damage and the target is wreathed in writhing shadows for the duration. These shadows are dispelled early if the target is illuminated by bright light.",
+      "Whenever the wreathed creature is hit with an attack, it takes an additional 1d6 necrotic damage."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d10 for each slot level above 2nd."
+    ],
+    "lists": ["Arcane", "Occult", "Elemental"],
+    "element": "Shadow",
+    "ritual": 0,
+    "type": "attack",
+    "damage": [
+      {
+        "dice": 2,
+        "die": 10,
+        "type": "fire"
+      }
+    ],
+    "upcastDice": 1
+  },
+  {
+    "name": "Darklight Surge",
+    "school": "Evocation",
+    "level": 6,
+    "castingTime": "1 action",
+    "range": "120 feet (20-foot sphere)",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "Invisible light flashes in a 20-foot radius sphere within range, searing unwary eyes. Each creature in the area takes 6d8 radiant damage, then must make a Dexterity saving throw. On a failure, a creature cannot benefit from Darkvision or Truesight for the next hour, or until cured by Lesser Restoration or similar magic that could cure the blinded condition."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 7th level or higher, the damage increases by 2d8 for each slot level above 6th."
+    ],
+    "lists": ["Divine", "Occult"],
+    "ritual": 0,
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 6,
+        "die": 8,
+        "type": "radiant"
+      }
+    ],
+    "upcastDice": 2
+  },
+  {
+    "name": "Dridershape",
+    "school": "Transmutation",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "V, S, M (a knot of spider silk)",
+    "duration": "1 hour",
+    "description": [
+      "You touch a willing creature, twisting their body into a more spider-like form and causing them to gain the following benefits until the spell ends:",
+      "<ul><li>The target gains 30 temporary hit points.</li><li>The target's size category increases by one, and they grow six additional limbs.</li><li>The target gains a climbing speed equal to their walking speed and can move up, down, and across vertical surfaces and upside down along ceilings, while leaving their hands free.</li><li>While in contact with a web, the target knows the exact location of each other creature in contact with the same web.</li></ul>"
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 6th level or higher, the temporary hit points increase by 10 for each slot level above 5th.",
+      "Additionally, if you cast this spell with a spell slot of 9th level, it lasts until dispelled."
+    ],
+    "unique": "This spell was developed by the spider goddess Lolth.",
+    "ritual": 0,
+    "healing": [
+      {
+        "amount": 30,
+        "temporary": true
+      }
+    ],
+    "upcastAmount": 10,
+    "upcastDuration": {
+      "6": "1 hour",
+      "7": "1 hour",
+      "8": "1 hour",
+      "9": "Until dispelled"
+    }
   },
   {
     "name": "Death's Beckon",
@@ -25354,7 +25498,7 @@
       "You weave a portion of the expended magic from a creature's spell into threads of prismatic silk that envelop and bind it.",
       "Any damage dealt by the spell is reduced by half, and the spell's caster must succeed on a Strength saving throw or be restrained until it takes any damage. The escape DC is equal to your save DC."
     ],
-    "lists": ["Occult"],
+    "unique": "This spell was developed by the spider goddess Lolth.",
     "ritual": 0,
     "type": "save",
     "save": "str"
@@ -25382,6 +25526,30 @@
         "type": "necrotic"
       }
     ]
+  },
+  {
+    "name": "Detect Light",
+    "school": "Divination",
+    "level": 1,
+    "castingTime": "1 action",
+    "range": "1000 feet",
+    "components": "V, S, M (a blackened wick)",
+    "duration": "Instantaneous",
+    "description": [
+      "You learn the distance and direction of the nearest source of bright light within range."
+    ],
+    "lists": [
+      "Occult",
+      "Invention",
+      "Melodic",
+      "Psionic",
+      "Arcane",
+      "Divine",
+      "Primal",
+      "Elemental"
+    ],
+    "element": "Light",
+    "ritual": 1
   },
   {
     "name": "Dread Will",
@@ -27428,6 +27596,30 @@
     ],
     "lists": ["Arcane", "Melodic", "Psionic", "Primal", "Invention"],
     "ritual": 0
+  },
+  {
+    "name": "Power Word: Suffer",
+    "school": "Enchantment",
+    "level": 3,
+    "castingTime": "1 bonus action",
+    "range": "30 feet",
+    "components": "V, M (a fresh lily)",
+    "duration": "Instantaneous",
+    "description": [
+      "You speak a word of power, targeting a creature you can see within range. The target takes 25 psychic damage and is dazed until the end of its next turn. This damage can't reduce a creature below 1 hit point."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 10 for each slot level above 3rd."
+    ],
+    "lists": ["Melodic", "Psionic", "Occult"],
+    "ritual": 0,
+    "damage": [
+      {
+        "amount": 25,
+        "type": "psychic"
+      }
+    ],
+    "upcastAmount": 10
   },
   {
     "name": "Quash Magic",

@@ -782,6 +782,7 @@
   {
     "name": "Plane-Touched",
     "repeatable": true,
+    "type": "magic",
     "description": "You have been exposed to the innate magic of one of the planes.  Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p><p>Additionally, choose one of the following planes.  You can take this feat multiple times, and must choose a different plane each time.",
     "choices": [
       {
@@ -2273,49 +2274,6 @@
     "name": "Sentinel",
     "type": "combat",
     "description": "You have mastered techniques to take advantage of every drop in any enemy's guard, gaining the following benefits.<ul><li>When you hit a creature with an opportunity attack, the creature's speed becomes 0 for the rest of the turn.</li><li>Creatures provoke opportunity attacks from you even if they take the Disengage action before leaving your reach.</li><li>When a creature makes an attack against a target other than you (and that target doesn't have this feat), you can use your reaction to make a melee weapon attack against the attacking creature.</li></ul>"
-  },
-  {
-    "name": "Shadow-Touched",
-    "type": "magic",
-    "repeatable": true,
-    "description": "Your exposure to the Shadowfell's magic has changed you, granting you the following benefits:<ul><li>Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li>    <li>You learn the Invisibility spell and one 1st-level spell of your choice. The 1st-level spell must be from the Illusion or Necromancy school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.</li></ul>",
-    "choices": [
-      {
-        "id": "BD68A7F3-CEEE-410C-B7F5-7A2EA37A1EFF",
-        "type": "asi",
-        "amount": 1,
-        "options": ["int", "wis", "cha"]
-      },
-      {
-        "id": "0A617E0B-A697-4E14-A427-BDF4F62AC3C9",
-        "type": "spell",
-        "level": 1,
-        "list": ["Illusion", "Necromancy"],
-        "ability": "BD68A7F3-CEEE-410C-B7F5-7A2EA37A1EFF"
-      }
-    ],
-    "granted": [
-      {
-        "type": "spell",
-        "options": ["Invisibility"],
-        "ignoreMaxLevel": true,
-        "ability": "BD68A7F3-CEEE-410C-B7F5-7A2EA37A1EFF"
-      }
-    ],
-    "uses": [
-      {
-        "id": "B1EDAD60-A042-439A-ADEF-79AADCF2AF04",
-        "type": "fixed",
-        "amount": 1,
-        "reset": 2
-      },
-      {
-        "id": "29D6D558-5422-45D9-B4EF-1D16DC29871B",
-        "type": "fixed",
-        "amount": 1,
-        "reset": 2
-      }
-    ]
   },
   {
     "name": "Shield Master",

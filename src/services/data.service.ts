@@ -285,7 +285,10 @@ export class DataService {
     return name?.replace(/[ '"\(\)!\/:,]/g, '-')?.toLowerCase() ?? '';
   }
   private capitalize(text: string): string {
-    return text.charAt(0).toUpperCase() + text.slice(1);
+    if (text == undefined) {
+      return '';
+    }
+    return text?.charAt(0).toUpperCase() + text.slice(1);
   }
 
   public wildMagicSurge(): string {

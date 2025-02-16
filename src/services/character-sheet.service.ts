@@ -5314,6 +5314,10 @@ export class CharacterSheetService {
       companions.push(...this.getChoiceCompanions(feature.choices, choices));
     }
 
+    if (feature.listed) {
+      companions.push(...this.getListedCompanions(feature.listed, choices));
+    }
+
     return companions;
   }
   private getChoiceCompanions(choice: any, choices: any[]) {
@@ -5342,6 +5346,21 @@ export class CharacterSheetService {
         }
       } else if (choice?.type == 'companion') {
         companions = [{ key: choiceEntry.value }];
+      }
+    }
+
+    return companions;
+  }
+  private getListedCompanions(listed: any, choices: any[]) {
+    var companions = [];
+
+    const choiceEntry = choices.find((c: any) => c.id === listed?.id);
+    if (this.dataService.getGenericListKeys().includes(listed?.type)) {
+      for (let item of choiceEntry?.list ?? []) {
+        const data = this.dataService.getGenericListItem(listed.type, item);
+        if (data) {
+          companions.push(...this.getFeatureCompanions(data, choices));
+        }
       }
     }
 

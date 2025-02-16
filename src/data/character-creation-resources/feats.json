@@ -5527,6 +5527,127 @@
     }
   },
   {
+    "name": "Ghastly Stench",
+    "prereq": [
+      {
+        "race": ["ghoul"]
+      }
+    ],
+    "type": "racial",
+    "description": "You grow in power, transforming from a ghoul into a ghast, and gaining the ability to exude the stench of death. As a bonus action, you can force each creature within 5 feet of you to make a Constitution saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, a creature is poisoned until the start of your next turn."
+  },
+  {
+    "name": "Bestial Countenance",
+    "prereq": [
+      {
+        "race": ["shifter"]
+      }
+    ],
+    "type": "racial",
+    "description": "The beast within gains more power over you, and even begins to seep through while you aren't shifted. You gain the following benefits:<ul><li>Your Constitution or Wisdom score increases by 1, to a maximum of 20.</li><li>You gain one of the following additional features depending on your subrace.</li></ul>",
+    "choices": [
+      {
+        "id": "02286DD2-A046-4931-A1D2-9FB8A08A2616",
+        "type": "asi",
+        "amount": 1,
+        "options": ["con", "wis"]
+      },
+      {
+        "id": "37D6F60F-AC97-43CA-81F2-23FD1D821577",
+        "type": "trait",
+        "options": [
+          {
+            "name": "Beasthide",
+            "traits": [
+              {
+                "name": "Tough Hide",
+                "description": "You reduce all bludgeoning, piercing, and slashing damage you take by an amount equal to your proficiency bonus."
+              }
+            ]
+          },
+          {
+            "name": "Cliffwalk",
+            "traits": [
+              {
+                "name": "",
+                "description": ""
+              }
+            ]
+          },
+          {
+            "name": "Galewind",
+            "traits": [
+              {
+                "name": "Wind Gliding",
+                "description": "As a reaction you can take when falling while you aren't prone or wearing heavy armor, you can spread your skin membranes and glide, slowing your rate of descent to 20 feet per round. While gliding, you can as part of your movement move up to 40 feet in any horizontal direction, or dive straight down. When you land, you take no falling damage and can land on your feet. You can also start gliding by expending at least 10 feet of movement as part of a high jump."
+              }
+            ]
+          },
+          {
+            "name": "Longtooth",
+            "traits": [
+              {
+                "name": "",
+                "description": ""
+              }
+            ]
+          },
+          {
+            "name": "Razorclaw",
+            "traits": [
+              {
+                "name": "Tearing Claws",
+                "description": "Once per turn when you deal piercing or slashing damage, you can cause the target to become bleeding (1d6) for 1 minute.  An affected creature can make a Constitution saving throw (DC = 8 + your Strength or Dexterity modifier + your proficiency bonus), ending the effect on themselves on a successful saving throw."
+              }
+            ]
+          },
+          {
+            "name": "Seabreaker",
+            "traits": [
+              {
+                "name": "",
+                "description": ""
+              }
+            ]
+          },
+          {
+            "name": "Swiftstride",
+            "traits": [
+              {
+                "name": "Slink Away",
+                "description": "You can take the Disengage action as a bonus action."
+              }
+            ]
+          },
+          {
+            "name": "Wildhunt",
+            "traits": [
+              {
+                "name": "Hunter's Eye",
+                "description": "You learn the Hunter's Mark spell. Wisdom is your spellcasting ability for it. You can cast Hunter's Mark without expending a spell slot. Once you do so, you can't again until you finish a long rest. You can also cast this spell using spell slots you have of the appropriate level.</p><p>While you are shifted, you can cast Hunter's Mark at 1st level at will, without expending a spell slot.",
+                "granted": [
+                  {
+                    "type": "spell",
+                    "options": ["Hunter's Mark"],
+                    "ability": "wis"
+                  }
+                ],
+                "uses": [
+                  {
+                    "id": "49D54A3C-3641-49F2-889A-634EE497F4C4",
+                    "type": "fixed",
+                    "amount": 1,
+                    "reset": 2
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "Crab's Resilience",
     "prereq": [
       {

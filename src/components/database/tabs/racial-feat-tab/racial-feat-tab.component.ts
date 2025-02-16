@@ -11,6 +11,7 @@ export class RacialFeatTabComponent extends BaseComponent {
   public dataService: DataService;
 
   public override pageTitle: string = 'Racial Feats';
+  public localhost: boolean = false;
 
   constructor(dataService: DataService) {
     super();
@@ -22,6 +23,10 @@ export class RacialFeatTabComponent extends BaseComponent {
   public override ngOnInit(): void {
     this.feats = this.dataService.getFeatsUnsplit();
     this.races = this.dataService.getRaces();
+
+    if (window.location.href.includes('localhost')) {
+      this.localhost = true;
+    }
 
     super.ngOnInit();
   }

@@ -103,9 +103,18 @@
     "rarity": 1,
     "type": "amulet",
     "attunement": true,
-    "attunementDesc": "by a cleric or paladin",
+    "attunementDesc": "by a cleric",
     "description": "This amulet bears the symbol of a deity inlaid with precious stones or metals. While you wear the holy symbol, you gain a +1 bonus to spell attack rolls and the saving throw DCs of your Divine spells.<br><br>While you wear this amulet, you can use your Channel Divinity feature without expending one of the feature's uses. Once this property is used, it can't be used again until the next dawn.",
     "index": "1amuletofthedevout"
+  },
+  {
+    "name": "+1 Amulet of the Oathbound",
+    "rarity": 1,
+    "type": "amulet",
+    "attunement": true,
+    "attunementDesc": "by a paladin",
+    "description": "This amulet bears the symbol representing your oath inlaid with precious stones or metals. While you wear the holy symbol, you gain a +1 bonus to spell attack rolls and the saving throw DCs of your spells.<br><br>While you wear this amulet, you can use your Smite feature without expending a spell slot, as if you had expended a 1st level spell slot, and you can use your subclass Smite without expending a point of Fervor when you use this property. Once this property is used, it can't be used again until the next dawn.",
+    "index": "1amuletoftheoathbound"
   },
   {
     "name": "+1 Arcane Grimoire",
@@ -266,7 +275,7 @@
     "type": "wondrous item",
     "attunement": true,
     "attunementDesc": "by a harbinger",
-    "description": "This ash from an ancient calamity can be applied to a primal spellcasting focus in order to improve its attunement to the apocalyptic magic of a harbinger.<br><br>While you hold the focus the ash is coating, you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your Primal spells.<br><br>In addition, when you take a short rest, you can choose to not halve your current number of entropy points. Once this property is used, it can't be used again until the next dawn.",
+    "description": "This ash from an ancient calamity can be applied to a primal spellcasting focus in order to improve its attunement to the apocalyptic magic of a harbinger.<br><br>While you hold the focus the ash is coating, you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your Primal spells.<br><br>When you cast a spell of 1st level or higher that deals damage, you can roll a d4 and add the number rolled to the spell's damage.",
     "index": "1primalash"
   },
   {
@@ -436,9 +445,18 @@
     "rarity": 2,
     "type": "wondrous item",
     "attunement": true,
-    "attunementDesc": "by a cleric or paladin",
+    "attunementDesc": "by a cleric",
     "description": "This amulet bears the symbol of a deity inlaid with precious stones or metals. While you wear the holy symbol, you gain a +2 bonus to spell attack rolls and the saving throw DCs of your Divine spells.<br><br>While you wear this amulet, you can use your Channel Divinity feature without expending one of the feature's uses. Once this property is used, it can't be used again until the next dawn.",
     "index": "2amuletofthedevout"
+  },
+  {
+    "name": "+2 Amulet of the Oathbound",
+    "rarity": 2,
+    "type": "amulet",
+    "attunement": true,
+    "attunementDesc": "by a paladin",
+    "description": "This amulet bears the symbol representing your oath inlaid with precious stones or metals. While you wear the holy symbol, you gain a +2 bonus to spell attack rolls and the saving throw DCs of your spells.<br><br>While you wear this amulet, you can use your Smite feature without expending a spell slot, as if you had expended a 2nd level spell slot, and you can use your subclass Smite without expending a point of Fervor when you use this property. Once this property is used, it can't be used again until the next dawn.",
+    "index": "2amuletoftheoathbound"
   },
   {
     "name": "+2 Arcane Grimoire",
@@ -599,7 +617,7 @@
     "type": "wondrous item",
     "attunement": true,
     "attunementDesc": "by a harbinger",
-    "description": "This ash from an ancient calamity can be applied to a primal spellcasting focus in order to improve its attunement to the apocalyptic magic of a harbinger.<br><br>While you hold the focus the ash is coating, you gain a +2 bonus to spell attack rolls and to the saving throw DCs of your Primal spells.<br><br>In addition, when you take a short rest, you can choose to not halve your current number of entropy points. Once this property is used, it can't be used again until the next dawn.",
+    "description": "This ash from an ancient calamity can be applied to a primal spellcasting focus in order to improve its attunement to the apocalyptic magic of a harbinger.<br><br>While you hold the focus the ash is coating, you gain a +2 bonus to spell attack rolls and to the saving throw DCs of your Primal spells.<br><br>When you cast a spell of 1st level or higher that deals damage, you can roll a d4 and add the number rolled to the spell's damage.",
     "index": "2primalash"
   },
   {
@@ -715,9 +733,26 @@
     "rarity": 3,
     "type": "wondrous item",
     "attunement": true,
-    "attunementDesc": "by a cleric or paladin",
+    "attunementDesc": "by a cleric",
     "description": "This amulet bears the symbol of a deity inlaid with precious stones or metals. While you wear the holy symbol, you gain a +3 bonus to spell attack rolls and the saving throw DCs of your Divine spells.<br><br>While you wear this amulet, you can use your Channel Divinity feature without expending one of the feature's uses. Once this property is used, it can't be used again until the next dawn.",
     "index": "3amuletofthedevout"
+  },
+  {
+    "name": "+3 Amulet of the Oathbound",
+    "rarity": 3,
+    "type": "amulet",
+    "attunement": true,
+    "attunementDesc": "by a paladin",
+    "description": "This amulet bears the symbol representing your oath inlaid with precious stones or metals. While you wear the holy symbol, you gain a +3 bonus to spell attack rolls and the saving throw DCs of your spells.<br><br>While you wear this amulet, you can use your Smite feature without expending a spell slot, as if you had expended a 3rd level spell slot, and you can use your subclass Smite without expending a point of Fervor when you use this property. Once this property is used, it can't be used again until the next dawn.",
+    "index": "3amuletoftheoathbound"
+  },
+  {
+    "name": "Null Box",
+    "rarity": 0,
+    "type": "wondrous item",
+    "attunement": false,
+    "description": "This small box can hold up to a cubic foot of material. While the box is closed, the flow of time is halted for any nonliving matter in it, and it does not decay or deteriorate no matter how long it remains in the box.",
+    "index": "nullbox"
   },
   {
     "name": "+3 Arcane Grimoire",
@@ -878,7 +913,7 @@
     "type": "wondrous item",
     "attunement": true,
     "attunementDesc": "by a harbinger",
-    "description": "This ash from an ancient calamity can be applied to a primal spellcasting focus in order to improve its attunement to the apocalyptic magic of a harbinger.<br><br>While you hold the focus the ash is coating, you gain a +3 bonus to spell attack rolls and to the saving throw DCs of your Primal spells.<br><br>In addition, when you take a short rest, you can choose to not halve your current number of entropy points. Once this property is used, it can't be used again until the next dawn.",
+    "description": "This ash from an ancient calamity can be applied to a primal spellcasting focus in order to improve its attunement to the apocalyptic magic of a harbinger.<br><br>While you hold the focus the ash is coating, you gain a +3 bonus to spell attack rolls and to the saving throw DCs of your Primal spells.<br><br>When you cast a spell of 1st level or higher that deals damage, you can roll a d4 and add the number rolled to the spell's damage.",
     "index": "3primalash"
   },
   {

@@ -288,7 +288,7 @@
         "any": {
           "name": "Fey Sprite",
           "size": "Fine",
-          "type": { "fey": {} },
+          "type": { "fey": { "fairy": {} } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "hp": { "base": 1 },
           "speed": { "hover": 40 },
@@ -439,7 +439,7 @@
         "any": {
           "name": "Loyal Livestock",
           "size": "Medium",
-          "type": { "beast": { "mammal": {} } },
+          "type": { "beast": {} },
           "ac": [{ "ac": 10, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 7, "levelMod": 5 },
@@ -651,7 +651,7 @@
         "any": {
           "name": "Loyal Hound",
           "size": "Medium",
-          "type": { "beast": { "mammal": {} } },
+          "type": { "beast": { "mammal": { "canine": {} } } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 5, "levelMod": 5 },
@@ -1501,7 +1501,7 @@
         "any": {
           "name": "Swarm of Vermin",
           "size": "Medium",
-          "type": { "beast": { "mammal": {} } },
+          "type": { "beast": {} },
           "swarmSize": "Dimunitive",
           "ac": [{ "ac": 9, "from": ["natural armor"] }],
           "pbac": true,
@@ -1562,7 +1562,7 @@
         "any": {
           "name": "Bird of Prey",
           "size": "Tiny",
-          "type": { "beast": { "bird": {} } },
+          "type": { "beast": { "bird": { "raptor": {} } } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 4, "levelMod": 5 },
@@ -1661,7 +1661,7 @@
         "any": {
           "name": "Falcon",
           "size": "Tiny",
-          "type": { "beast": { "bird": {} } },
+          "type": { "beast": { "bird": { "raptor": {} } } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 10 },

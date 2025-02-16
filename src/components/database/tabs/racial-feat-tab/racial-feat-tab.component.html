@@ -9,7 +9,14 @@
             routerLinkActive="active"
             ariaCurrentWhenActive="page"
           >
-            {{ feat.name }}
+            <ng-container *ngIf="localhost; else prod">
+              <ng-container *ngIf="feat.prereq[0].race.length == 1">
+                {{ feat.name }}
+              </ng-container>
+            </ng-container>
+            <ng-template #prod>
+              {{ feat.name }}
+            </ng-template>
           </a>
         </div>
       </div>

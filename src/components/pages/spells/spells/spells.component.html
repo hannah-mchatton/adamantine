@@ -19,6 +19,8 @@
   </ng-container>
 </ul>
 <div id="content" class="tab-content">
+  <div *ngIf="description" [innerHtml]="description"></div>
+
   <ng-container *ngFor="let level of spells; let i = index">
     <div
       *ngIf="

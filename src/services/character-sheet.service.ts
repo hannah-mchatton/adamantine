@@ -719,6 +719,27 @@ export class CharacterSheetService {
     let skillList = [];
 
     feature.granted?.forEach((g) => {
+      if (g.type === 'infusion') {
+        for (let infusion of g.options) {
+          const infusionRecord = this.dataService.getGenericListItem(
+            'infusion',
+            infusion
+          );
+          skillList.push(...this.getFeatureSkillProfs(infusionRecord, choices));
+        }
+      }
+      if (g.type === 'ki-technique') {
+        for (let technique of g.options) {
+          const techniqueRecord = this.dataService.getGenericListItem(
+            'ki-technique',
+            technique
+          );
+          skillList.push(
+            ...this.getFeatureSkillProfs(techniqueRecord, choices)
+          );
+        }
+      }
+
       if (g.type === 'skill' && g.options && Array.isArray(g.options)) {
         skillList.push(
           ...g.options.map((o: any) => {
@@ -961,6 +982,25 @@ export class CharacterSheetService {
     const instruments = [...this.dataService.getGeneric('instrument')];
 
     feature.granted?.forEach((g) => {
+      if (g.type === 'infusion') {
+        for (let infusion of g.options) {
+          const infusionRecord = this.dataService.getGenericListItem(
+            'infusion',
+            infusion
+          );
+          skillList.push(...this.getFeatureToolProfs(infusionRecord, choices));
+        }
+      }
+      if (g.type === 'ki-technique') {
+        for (let technique of g.options) {
+          const techniqueRecord = this.dataService.getGenericListItem(
+            'ki-technique',
+            technique
+          );
+          skillList.push(...this.getFeatureToolProfs(techniqueRecord, choices));
+        }
+      }
+
       if (
         ['game', 'instrument', 'tool'].includes(g.type) &&
         g.options &&
@@ -1380,6 +1420,29 @@ export class CharacterSheetService {
     let skillList = [];
 
     feature.granted?.forEach((g) => {
+      if (g.type === 'infusion') {
+        for (let infusion of g.options) {
+          const infusionRecord = this.dataService.getGenericListItem(
+            'infusion',
+            infusion
+          );
+          skillList.push(
+            ...this.getFeatureSkillOverrides(infusionRecord, choices)
+          );
+        }
+      }
+      if (g.type === 'ki-technique') {
+        for (let technique of g.options) {
+          const techniqueRecord = this.dataService.getGenericListItem(
+            'ki-technique',
+            technique
+          );
+          skillList.push(
+            ...this.getFeatureSkillOverrides(techniqueRecord, choices)
+          );
+        }
+      }
+
       if (g.type === 'skill-ability') {
         skillList.push(g);
       }
@@ -1520,6 +1583,29 @@ export class CharacterSheetService {
     let skillList = [];
 
     feature.granted?.forEach((g) => {
+      if (g.type === 'infusion') {
+        for (let infusion of g.options) {
+          const infusionRecord = this.dataService.getGenericListItem(
+            'infusion',
+            infusion
+          );
+          skillList.push(
+            ...this.getFeatureToolOverrides(infusionRecord, choices)
+          );
+        }
+      }
+      if (g.type === 'ki-technique') {
+        for (let technique of g.options) {
+          const techniqueRecord = this.dataService.getGenericListItem(
+            'ki-technique',
+            technique
+          );
+          skillList.push(
+            ...this.getFeatureToolOverrides(techniqueRecord, choices)
+          );
+        }
+      }
+
       if (g.type === 'tool-ability') {
         skillList.push(g);
       }
@@ -1762,6 +1848,41 @@ export class CharacterSheetService {
     }
 
     feature.granted?.forEach((g) => {
+      if (g.type === 'infusion') {
+        for (let infusion of g.options) {
+          const infusionRecord = this.dataService.getGenericListItem(
+            'infusion',
+            infusion
+          );
+          spellList.push(
+            ...this.getFeatureSpells(
+              infusionRecord,
+              choices,
+              characterLevel,
+              spellcasterType,
+              source
+            )
+          );
+        }
+      }
+      if (g.type === 'ki-technique') {
+        for (let technique of g.options) {
+          const techniqueRecord = this.dataService.getGenericListItem(
+            'ki-technique',
+            technique
+          );
+          spellList.push(
+            ...this.getFeatureSpells(
+              techniqueRecord,
+              choices,
+              characterLevel,
+              spellcasterType,
+              source
+            )
+          );
+        }
+      }
+
       if (g.type === 'spell') {
         let ability = g.ability;
         if (ability?.includes('-')) {
@@ -2180,6 +2301,41 @@ export class CharacterSheetService {
     }
 
     feature.granted?.forEach((g) => {
+      if (g.type === 'infusion') {
+        for (let infusion of g.options) {
+          const infusionRecord = this.dataService.getGenericListItem(
+            'infusion',
+            infusion
+          );
+          exploitList.push(
+            ...this.getFeatureExploits(
+              infusionRecord,
+              choices,
+              characterLevel,
+              exploitType,
+              source
+            )
+          );
+        }
+      }
+      if (g.type === 'ki-technique') {
+        for (let technique of g.options) {
+          const techniqueRecord = this.dataService.getGenericListItem(
+            'ki-technique',
+            technique
+          );
+          exploitList.push(
+            ...this.getFeatureExploits(
+              techniqueRecord,
+              choices,
+              characterLevel,
+              exploitType,
+              source
+            )
+          );
+        }
+      }
+
       if (g.type === 'exploit') {
         let ability = g.ability;
         if (ability.includes('-')) {
@@ -2490,6 +2646,25 @@ export class CharacterSheetService {
     let profs = [];
 
     feature.granted?.forEach((g) => {
+      if (g.type === 'infusion') {
+        for (let infusion of g.options) {
+          const infusionRecord = this.dataService.getGenericListItem(
+            'infusion',
+            infusion
+          );
+          profs.push(...this.getFeatureArmorProfs(infusionRecord, choices));
+        }
+      }
+      if (g.type === 'ki-technique') {
+        for (let technique of g.options) {
+          const techniqueRecord = this.dataService.getGenericListItem(
+            'ki-technique',
+            technique
+          );
+          profs.push(...this.getFeatureArmorProfs(techniqueRecord, choices));
+        }
+      }
+
       if (g.type === 'armor') {
         profs = [...profs, ...g.options];
       }
@@ -2641,6 +2816,25 @@ export class CharacterSheetService {
     let profs = [];
 
     feature.granted?.forEach((g) => {
+      if (g.type === 'infusion') {
+        for (let infusion of g.options) {
+          const infusionRecord = this.dataService.getGenericListItem(
+            'infusion',
+            infusion
+          );
+          profs.push(...this.getFeatureLanguageProfs(infusionRecord, choices));
+        }
+      }
+      if (g.type === 'ki-technique') {
+        for (let technique of g.options) {
+          const techniqueRecord = this.dataService.getGenericListItem(
+            'ki-technique',
+            technique
+          );
+          profs.push(...this.getFeatureLanguageProfs(techniqueRecord, choices));
+        }
+      }
+
       if (g.type === 'language') {
         profs = [...profs, ...g.options];
       }
@@ -2806,6 +3000,25 @@ export class CharacterSheetService {
     let profs = [];
 
     feature.granted?.forEach((g) => {
+      if (g.type === 'infusion') {
+        for (let infusion of g.options) {
+          const infusionRecord = this.dataService.getGenericListItem(
+            'infusion',
+            infusion
+          );
+          profs.push(...this.getFeatureWeaponProfs(infusionRecord, choices));
+        }
+      }
+      if (g.type === 'ki-technique') {
+        for (let technique of g.options) {
+          const techniqueRecord = this.dataService.getGenericListItem(
+            'ki-technique',
+            technique
+          );
+          profs.push(...this.getFeatureWeaponProfs(techniqueRecord, choices));
+        }
+      }
+
       if (g.type === 'weapon') {
         profs = [...profs, ...g.options];
       }
@@ -2961,6 +3174,29 @@ export class CharacterSheetService {
     let damageDefenses = [];
 
     feature.granted?.forEach((g) => {
+      if (g.type === 'infusion') {
+        for (let infusion of g.options) {
+          const infusionRecord = this.dataService.getGenericListItem(
+            'infusion',
+            infusion
+          );
+          damageDefenses.push(
+            ...this.getFeatureDamageDefenses(infusionRecord, choices)
+          );
+        }
+      }
+      if (g.type === 'ki-technique') {
+        for (let technique of g.options) {
+          const techniqueRecord = this.dataService.getGenericListItem(
+            'ki-technique',
+            technique
+          );
+          damageDefenses.push(
+            ...this.getFeatureDamageDefenses(techniqueRecord, choices)
+          );
+        }
+      }
+
       if (g.type === 'damage-resistance') {
         for (let o of g.options) {
           damageDefenses.push({
@@ -3186,6 +3422,29 @@ export class CharacterSheetService {
     let conditionDefenses = [];
 
     feature.granted?.forEach((g) => {
+      if (g.type === 'infusion') {
+        for (let infusion of g.options) {
+          const infusionRecord = this.dataService.getGenericListItem(
+            'infusion',
+            infusion
+          );
+          conditionDefenses.push(
+            ...this.getFeatureConditionDefenses(infusionRecord, choices)
+          );
+        }
+      }
+      if (g.type === 'ki-technique') {
+        for (let technique of g.options) {
+          const techniqueRecord = this.dataService.getGenericListItem(
+            'ki-technique',
+            technique
+          );
+          conditionDefenses.push(
+            ...this.getFeatureConditionDefenses(techniqueRecord, choices)
+          );
+        }
+      }
+
       if (g.type === 'condition-advantage') {
         for (let o of g.options) {
           conditionDefenses.push({
@@ -3368,6 +3627,25 @@ export class CharacterSheetService {
     let hpBonus = 0;
 
     feature.granted?.forEach((g) => {
+      if (g.type === 'infusion') {
+        for (let infusion of g.options) {
+          const infusionRecord = this.dataService.getGenericListItem(
+            'infusion',
+            infusion
+          );
+          hpBonus += this.getFeatureHpBonus(infusionRecord, choices);
+        }
+      }
+      if (g.type === 'ki-technique') {
+        for (let technique of g.options) {
+          const techniqueRecord = this.dataService.getGenericListItem(
+            'ki-technique',
+            technique
+          );
+          hpBonus += this.getFeatureHpBonus(techniqueRecord, choices);
+        }
+      }
+
       if (g.type === 'hit-point-level') {
         hpBonus += g.amount;
       }
@@ -3505,6 +3783,25 @@ export class CharacterSheetService {
     let initBonus = 0;
 
     feature.granted?.forEach((g) => {
+      if (g.type === 'infusion') {
+        for (let infusion of g.options) {
+          const infusionRecord = this.dataService.getGenericListItem(
+            'infusion',
+            infusion
+          );
+          initBonus += this.getFeatureInitBonus(infusionRecord, choices);
+        }
+      }
+      if (g.type === 'ki-technique') {
+        for (let technique of g.options) {
+          const techniqueRecord = this.dataService.getGenericListItem(
+            'ki-technique',
+            technique
+          );
+          initBonus += this.getFeatureInitBonus(techniqueRecord, choices);
+        }
+      }
+
       if (g.type === 'initiative-bonus') {
         if (g.amount) {
           initBonus += g.amount;
@@ -3666,6 +3963,33 @@ export class CharacterSheetService {
     saveBonus: any
   ): any {
     feature.granted?.forEach((g) => {
+      if (g.type === 'infusion') {
+        for (let infusion of g.options) {
+          const infusionRecord = this.dataService.getGenericListItem(
+            'infusion',
+            infusion
+          );
+          saveBonus = this.getFeatureSaveBonus(
+            infusionRecord,
+            choices,
+            saveBonus
+          );
+        }
+      }
+      if (g.type === 'ki-technique') {
+        for (let technique of g.options) {
+          const techniqueRecord = this.dataService.getGenericListItem(
+            'ki-technique',
+            technique
+          );
+          saveBonus = this.getFeatureSaveBonus(
+            techniqueRecord,
+            choices,
+            saveBonus
+          );
+        }
+      }
+
       if (g.type === 'save-bonus') {
         let amount = 0;
         // if (g.amount.includes('-')) {
@@ -3820,6 +4144,33 @@ export class CharacterSheetService {
     }
 
     feature.granted?.forEach((g) => {
+      if (g.type === 'infusion') {
+        for (let infusion of g.options) {
+          const infusionRecord = this.dataService.getGenericListItem(
+            'infusion',
+            infusion
+          );
+          telepathy = this.getFeatureTelepathy(
+            infusionRecord,
+            choices,
+            telepathy
+          );
+        }
+      }
+      if (g.type === 'ki-technique') {
+        for (let technique of g.options) {
+          const techniqueRecord = this.dataService.getGenericListItem(
+            'ki-technique',
+            technique
+          );
+          telepathy = this.getFeatureTelepathy(
+            techniqueRecord,
+            choices,
+            telepathy
+          );
+        }
+      }
+
       if (g.type === 'telepathy' && g.range > telepathy) {
         telepathy = g.range;
       }
@@ -3954,6 +4305,33 @@ export class CharacterSheetService {
   }
   public getFeatureInfusions(feature: any, choices: any[], infusions): any[] {
     feature.granted?.forEach((g) => {
+      if (g.type === 'infusion') {
+        for (let infusion of g.options) {
+          const infusionRecord = this.dataService.getGenericListItem(
+            'infusion',
+            infusion
+          );
+          infusions = this.getFeatureInfusions(
+            infusionRecord,
+            choices,
+            infusions
+          );
+        }
+      }
+      if (g.type === 'ki-technique') {
+        for (let technique of g.options) {
+          const techniqueRecord = this.dataService.getGenericListItem(
+            'ki-technique',
+            technique
+          );
+          infusions = this.getFeatureInfusions(
+            techniqueRecord,
+            choices,
+            infusions
+          );
+        }
+      }
+
       if (g.type === 'infusion') {
         for (let i of g.options) {
           const infusionData = this.dataService.getGenericListItem(
@@ -4150,6 +4528,37 @@ export class CharacterSheetService {
     speedBonuses: any
   ): any {
     feature.granted?.forEach((g) => {
+      if (g.type === 'infusion') {
+        for (let infusion of g.options) {
+          const infusionRecord = this.dataService.getGenericListItem(
+            'infusion',
+            infusion
+          );
+          [speeds, speedBonuses] = this.getFeatureSpeeds(
+            infusionRecord,
+            choices,
+            level,
+            speeds,
+            speedBonuses
+          );
+        }
+      }
+      if (g.type === 'ki-technique') {
+        for (let technique of g.options) {
+          const techniqueRecord = this.dataService.getGenericListItem(
+            'ki-technique',
+            technique
+          );
+          [speeds, speedBonuses] = this.getFeatureSpeeds(
+            techniqueRecord,
+            choices,
+            level,
+            speeds,
+            speedBonuses
+          );
+        }
+      }
+
       let amount = 0;
       if (Array.isArray(g.amount)) {
         amount = g.amount[level - 1];
@@ -4377,6 +4786,25 @@ export class CharacterSheetService {
   }
   public getFeatureJumping(feature: any, choices: any[], jump: any): any {
     feature.granted?.forEach((g) => {
+      if (g.type === 'infusion') {
+        for (let infusion of g.options) {
+          const infusionRecord = this.dataService.getGenericListItem(
+            'infusion',
+            infusion
+          );
+          jump = this.getFeatureJumping(infusionRecord, choices, jump);
+        }
+      }
+      if (g.type === 'ki-technique') {
+        for (let technique of g.options) {
+          const techniqueRecord = this.dataService.getGenericListItem(
+            'ki-technique',
+            technique
+          );
+          jump = this.getFeatureJumping(techniqueRecord, choices, jump);
+        }
+      }
+
       if (g.type === 'jump') {
         if (g.multiplier) {
           jump.multiplier += g.multiplier;
@@ -5055,6 +5483,33 @@ export class CharacterSheetService {
     passiveBonuses
   ): number {
     feature.granted?.forEach((g) => {
+      if (g.type === 'infusion') {
+        for (let infusion of g.options) {
+          const infusionRecord = this.dataService.getGenericListItem(
+            'infusion',
+            infusion
+          );
+          passiveBonuses = this.getFeaturePassives(
+            infusionRecord,
+            choices,
+            passiveBonuses
+          );
+        }
+      }
+      if (g.type === 'ki-technique') {
+        for (let technique of g.options) {
+          const techniqueRecord = this.dataService.getGenericListItem(
+            'ki-technique',
+            technique
+          );
+          passiveBonuses = this.getFeaturePassives(
+            techniqueRecord,
+            choices,
+            passiveBonuses
+          );
+        }
+      }
+
       if (g.type === 'passive-skill') {
         for (let skill of g.options) {
           let amount = g.amount;
@@ -5300,6 +5755,28 @@ export class CharacterSheetService {
     feature.granted?.forEach((g) => {
       if (g.type === 'companion') {
         companions.push({ key: g.key });
+      }
+      if (g.type === 'infusion') {
+        for (let infusion of g.options) {
+          const infusionRecord = this.dataService.getGenericListItem(
+            'infusion',
+            infusion
+          );
+          companions.push(
+            ...this.getFeatureCompanions(infusionRecord, choices)
+          );
+        }
+      }
+      if (g.type === 'ki-technique') {
+        for (let technique of g.options) {
+          const techniqueRecord = this.dataService.getGenericListItem(
+            'ki-technique',
+            technique
+          );
+          companions.push(
+            ...this.getFeatureCompanions(techniqueRecord, choices)
+          );
+        }
       }
     });
     feature.subFeatures?.forEach((s) => {

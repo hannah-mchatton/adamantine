@@ -123,7 +123,7 @@
   },
   {
     "name": "Acid Rain",
-    "school": "Evocation",
+    "school": "Conjuration",
     "level": 5,
     "castingTime": "1 action",
     "range": "300 feet (40-foot cylinder)",
@@ -826,7 +826,7 @@
     "save": "wis"
   },
   {
-    "name": "Apocalypse",
+    "name": "Demonic Apocalypse",
     "school": "Evocation",
     "level": 6,
     "castingTime": "1 action",
@@ -839,7 +839,7 @@
     "higherLevels": [
       "When you cast this spell using a spell slot of 7th level or higher, the damage increases by 1d8 for each slot level above 6th."
     ],
-    "lists": ["Arcane", "Divine", "Occult", "Primal"],
+    "lists": ["Arcane", "Occult"],
     "ritual": 0,
     "type": "save",
     "save": "dex",
@@ -1126,6 +1126,23 @@
       "8": "45 feet (6d4 targets)",
       "9": "45 feet (7d4 targets)"
     }
+  },
+  {
+    "name": "Horde of Bones",
+    "school": "Necromancy",
+    "level": 9,
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S",
+    "duration": "Concentration, up to 24 hours",
+    "description": [
+      "Choose piles of bones within range. Your spell imbues the targets with a foul mimicry of life, raising them as undead servants. The servants act immediately after your turn on the initiative order.",
+      "Choose one of the following options for what is created:<ul><li>Two boneclaws, bone swarms, or nightveil wights</li><li>Four skeletal horrors, skeletal knights, or slaughter wights</li><li>Eight barrow wights, blazing bones, or skeleton cannoneers</li><li>Sixteen skeletons</li></ul>",
+      "On each of your turns, you can use a bonus action to mentally command any creatures you made with this spell if the creature is within 60 feet of you (issuing the same command to each one). You decide what action the creatures will take and where they will move during their next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creatures only defend themselves against hostile creatures. Once given an order, the creatures continue to follow it until their task is complete.",
+      "The creatures are under your control for 24 hours, after which point the spell ends and they collapse to the ground, lifeless. If you cast this spell on the same bones with the same arrangement for 30 days, the undead servants are permanently animated and under your control."
+    ],
+    "lists": ["Occult"],
+    "ritual": 0
   },
   {
     "name": "Ascendancy of Vecna",
@@ -3718,9 +3735,9 @@
     "components": "V, S",
     "duration": "10 minutes",
     "description": [
-      "You touch a single computerized device or computer system to conjure a knowbot-a partially sentient piece of software imprinted with vestiges of your own skills and computer abilities. For the duration of the spell, you can use a bonus action to have the knowbot execute a computer related task that would normally require an action. The knowbot makes Intelligence ability checks using your ability score and proficiency bonuses including your proficiency with hacking tools, if applicable.",
-      "You have a limited telepathic bond with the knowbot, out to a range of 500 feet from the device or system where the knowbot was conjured. If you move beyond this range, the knowbot disappears in 2d4 rounds, as if the duration of the spell had expired. Moving within range again immediately reestablishes the bond.",
-      "The knowbot is bound to the system in which it was created, and it stays there until it is dismissed or the spell's duration expires."
+      "You conjure a knowbot - a partially sentient ethereal construct imprinted with vestiges of your own skills and abilities. For the duration of the spell, you can use a bonus action to have the knowbot make a skill check that would normally require an action. The knowbot makes Intelligence ability checks using your ability score and proficiency bonuses including your proficiency with hacking tools, if applicable.",
+      "You have a limited telepathic bond with the knowbot, out to a range of 500 feet from where the knowbot was conjured. If you move beyond this range, the knowbot disappears in 2d4 rounds, as if the duration of the spell had expired. Moving within range again immediately reestablishes the bond.",
+      "The knowbot is bound to the point at which it was created, and it stays there until it is dismissed or the spell's duration expires."
     ],
     "higherLevels": [
       "When you cast this spell using a spell slot of 5th level or higher, the spell's duration increases to 1 hour. Additionally, your telepathic bond with the knowbot is effective out to a range of 1000 feet, and if you leave the range of the bond, the knowbot continues performing its last directed task until the spell expires."
@@ -3774,6 +3791,21 @@
       "If your concentration is broken, the elemental doesn't disappear. Instead, you lose control of the elemental, it becomes hostile toward you and your companions, and it might attack. An uncontrolled elemental can't be dismissed by you, and it disappears 1 hour after you summoned it. The DM has the elemental's statistics."
     ],
     "lists": ["Arcane", "Occult", "Primal"],
+    "ritual": 0
+  },
+  {
+    "name": "Conjure Inevitable",
+    "school": "Conjuration",
+    "level": 9,
+    "castingTime": "1 minute",
+    "range": "300 feet",
+    "components": "V, S, M (a platinum scale, worth at least 1000 gp, which the spell consumes)",
+    "duration": "Concentration, up to 1 hour",
+    "description": [
+      "You call forth an inevitable, a Kolyarut, Marut, Varakhut, or Zelekhut, from Mechanus to impel law on your behalf. The inevitable is friendly to you and your companions for the duration. Roll initiative for the inevitable, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to the inevitable, it defends itself from hostile creatures but otherwise takes no actions.",
+      "If your concentration is broken, the inevitable doesn't disappear. Instead, you lose control of the inevitable, it becomes hostile toward you and your companions, and it might attack if it deems you unlawful. An uncontrolled inevitable can't be dismissed by you, and it disappears 1 hour after you summoned it. The DM has the inevitable's statistics."
+    ],
+    "lists": ["Arcane"],
     "ritual": 0
   },
   {
@@ -4338,36 +4370,6 @@
     "ritual": 1
   },
   {
-    "name": "Create Homonculus",
-    "school": "Transmutation",
-    "level": 6,
-    "castingTime": "1 hour",
-    "range": "Touch",
-    "components": "V, S, M (clay, ash, and mandrake root, all of which the spell consumes, and a jewel-encrusted dagger worth at least 1000 gp)",
-    "duration": "Instantaneous",
-    "description": [
-      "While speaking an intricate incantation, you cut yourself with a jewel-encrusted dagger, taking 2d4 piercing damage that can't be reduced in any way. You then drip your blood on the spell's other components and touch them, transforming them into a special construct called a homunculus. The statistics of the homunculus are in the Monster Manual. It is your faithful companion, and it dies if you die. Whenever you finish a long rest, you can spend up to half your Hit Dice if the homunculus is on the same plane of existence as you. When you do so, roll each die and add your Constitution modifier to it. Your hit point maximum is reduced by the total, and the homunculus's hit point maximum and current hit points are both increased by it. This process can reduce you to no lower than 1 hit point. and the change to your and the homunculus's hit points ends when you finish your next long rest. The reduction to your hit point maximum can't be removed by any means before then, except by the homunculus's death. You can have only one homunculus at a time. If you cast this spell while your homunculus lives, the spell fails."
-    ],
-    "lists": ["Arcane"],
-    "ritual": 0
-  },
-  {
-    "name": "Create Magen",
-    "school": "Transmutation",
-    "level": 7,
-    "castingTime": "1 hour",
-    "range": "Touch",
-    "components": "V, S, M (a vial of quicksilver worth 500 gp and a life-sized human doll, both of which the spell consumes, and an intricate crystal rod worth at least 1500 gp that is not consumed)",
-    "duration": "Instantaneous",
-    "description": [
-      "While casting the spell, you place a vial of quicksilver in the chest of a life-sized human doll stuffed with ash or dust. You then stitch up the doll and drip your blood on it. At the end of the casting, you tap the doll with a crystal rod, transforming it into a magen clothed in whatever the doll was wearing. The type of magen is chosen by you during the casting of the spell.",
-      "When the magen appears, your hit point maximum decreases by an amount equal to the magen's challenge rating (minimum reduction of 1). Only a Wish spell can undo this reduction to your hit point maximum.",
-      "Any magen you create with this spell obeys your commands without question."
-    ],
-    "lists": ["Arcane"],
-    "ritual": 0
-  },
-  {
     "name": "Create Or Destroy Water",
     "school": "Conjuration",
     "level": 1,
@@ -4451,22 +4453,6 @@
       "8": "30 feet (20-foot cube)",
       "9": "30 feet (25-foot cube)"
     }
-  },
-  {
-    "name": "Creeping Crawling Claw",
-    "school": "Necromancy",
-    "level": 1,
-    "castingTime": "1 action",
-    "range": "Touch",
-    "components": "V, S, M (the severed hand of a creature)",
-    "duration": "Concentration, up to 1 hour",
-    "description": [
-      "Choose the hand of a creature that has been severed from its body for longer than 24 hours and grant it sentience. For the duration of the spell, the creeping claw (MM pg.44) is under your control and can be commanded using your bonus action. The claw can only understand simple commands.",
-      "The claw is under your control for 1 hour, after which it stops obeying you. To reassert control for another hour or to assert control over an existing crawling claw, you may cast this spell again.",
-      "If the claw is still alive when the spell ends, it will attempt seek to reunite itself with its rightful owner. If its original owner is dead, the claw will wander off purposelessly."
-    ],
-    "lists": ["Arcane", "Occult"],
-    "ritual": 1
   },
   {
     "name": "Creeping Death",
@@ -5907,7 +5893,7 @@
     "components": "V, S",
     "duration": "Concentration, up to 1 hour",
     "description": [
-      "You touch a quiver containing arrows or bolts. When a target is hit by a ranged weapon attack using a piece of ammunition drawn from the quiver, the target takes an extra 1d8 necrotic damage. The spell's magic ends on the piece of ammunition when it hits or misses, and the spell ends when twelve pieces of ammunition have been drawn from the quiver.",
+      "You touch a quiver or other container containing ammunition. When a target is hit by a ranged weapon attack using a piece of ammunition drawn from the container, the target takes an extra 1d8 necrotic damage. The spell's magic ends on the piece of ammunition when it hits or misses, and the spell ends when twelve pieces of ammunition have been drawn from the container.",
       "If a target dies as a result of your ranged attack while using this ammunition, its flesh melts away and it is raised as a skeleton under your control for 8 hours, after which time it stops obeying your commands and will attack you until destroyed. You may control up to 4 skeletons at a time with this spell. If you attempt to take control of another skeleton with a dusk arrow when 4 are currently under your control, you will lose control of the skeleton that has been under your control the longest, and it will attack you.",
       "On each of your turns, you can use a bonus action to mentally command a skeleton raised by a dusk arrow if it is within 60 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). Undead and constructs killed with dusk arrows to not become skeletons under your control."
     ],
@@ -7301,7 +7287,7 @@
     "components": "V, S",
     "duration": "Concentration, up to 1 hour",
     "description": [
-      "You touch a quiver containing arrows or bolts. When a target is hit by a ranged weapon attack using a piece of ammunition drawn from the quiver, the target takes an extra 1d6 fire damage. The spell's magic ends on the piece of ammunition when it hits or misses."
+      "You touch a quiver or other container containing ammunition. When a target is hit by a ranged weapon attack using a piece of ammunition drawn from the container, the target takes an extra 1d6 fire damage. The spell's magic ends on the piece of ammunition when it hits or misses."
     ],
     "lists": ["Arcane", "Elemental", "Primal", "Invention"],
     "ritual": 0,
@@ -8309,8 +8295,47 @@
     "duration": "10 days",
     "description": [
       "You touch a corpse or other remains. For the duration, the target is protected from decay and can't become undead.",
-      "The spell also effectively extends the time limit on raising the target from the dead, since days spent under the influence of this spell don't count against the time limit of spells such as raise dead."
+      "The spell also effectively extends the time limit on raising the target from the dead, since days spent under the influence of this spell don't count against the time limit of spells such as Revivify or Raise Dead, and prevents the effects of the Restless Repose spell."
     ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 5th level or higher, it lasts until dispelled."
+    ],
+    "upcastDuration": {
+      "3": "10 days",
+      "4": "10 days",
+      "5": "Until dispelled",
+      "6": "Until dispelled",
+      "7": "Until dispelled",
+      "8": "Until dispelled",
+      "9": "Until dispelled"
+    },
+    "lists": ["Arcane", "Divine", "Occult", "Invention"],
+    "ritual": 1
+  },
+  {
+    "name": "Restless Repose",
+    "school": "Necromancy",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "V, S, M (a pinch of powdered silver)",
+    "duration": "10 days",
+    "description": [
+      "You touch a corpse or other remains. For the duration, the corpse counts not as a corpse, but as undead.",
+      "The spell also effectively prevents effects such as Speak With Dead, Gentle Repose, or Raise Dead from working on the target, since they can't affect Undead."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 5th level or higher, it lasts until dispelled."
+    ],
+    "upcastDuration": {
+      "3": "10 days",
+      "4": "10 days",
+      "5": "Until dispelled",
+      "6": "Until dispelled",
+      "7": "Until dispelled",
+      "8": "Until dispelled",
+      "9": "Until dispelled"
+    },
     "lists": ["Arcane", "Divine", "Occult", "Invention"],
     "ritual": 1
   },
@@ -8378,6 +8403,28 @@
     ],
     "lists": ["Arcane", "Divine", "Occult", "Primal", "Elemental", "Invention"],
     "element": "Light",
+    "ritual": true
+  },
+  {
+    "name": "Blood Compass",
+    "school": "Sangromancy",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "100 miles",
+    "components": "V, S, M (a drop of blood, which the spell consumes)",
+    "duration": "1 hour",
+    "description": [
+      "You tug at a creature through the connection of its spilt blood. If the creature whose blood you used as a material component in the casting of this spell is within range, you learn its direction and it learns yours."
+    ],
+    "lists": [
+      "Occult",
+      "Arcane",
+      "Melodic",
+      "Psionic",
+      "Invention",
+      "Elemental"
+    ],
+    "element": "Water",
     "ritual": true
   },
   {
@@ -11534,7 +11581,7 @@
     "description": [
       "You hide a chest, and all its contents, on the Ethereal Plane. You must touch the chest and the miniature replica that serves as a material component for the spell. The chest can contain up to 12 cubic feet of nonliving material (3 feet by 2 feet by 2 feet).",
       "While the chest remains on the Ethereal Plane, you can use an action and touch the replica to recall the chest. It appears in an unoccupied space on the ground within 5 feet of you. You can send the chest back to the Ethereal Plane by using an action and touching both the chest and the replica.",
-      "After 60 days, there is a cumulative 5 percent chance per day that the spell's effect ends. This effect ends if you cast this spell again, if the smaller replica chest is destroyed, or if you choose to end the spell as an action. If the spell ends and the larger chest is on the Ethereal Plane, it is irretrievably lost."
+      "This effect ends if you cast this spell again, if the smaller replica chest is destroyed, or if you choose to end the spell as an action. If the spell ends and the larger chest is on the Ethereal Plane, it is irretrievably lost."
     ],
     "lists": ["Arcane", "Melodic", "Invention"],
     "ritual": 0
@@ -12496,7 +12543,7 @@
     "higherLevels": [
       "When you cast this spell using a spell slot of 6th level or higher, the healing increases by 1d8 for each slot level above 5th."
     ],
-    "lists": ["Arcane", "Divine", "Primal", "Melodic", "Invention"],
+    "lists": ["Divine", "Primal", "Melodic", "Invention"],
     "ritual": 0,
     "multiplier": 6,
     "healing": [
@@ -13114,11 +13161,12 @@
     "components": "V, S",
     "duration": "Concentration, up to 1 minute",
     "description": [
-      "You attempt to reshape another creature's memories. One creature that you can see must make a Wisdom saving throw. If you are fighting the creature, it has advantage on the saving throw. On a failed save, the target becomes charmed by you for the duration. The charmed target is incapacitated and unaware of its surroundings, though it can still hear you. If it takes any damage or is targeted by another spell, this spell ends, and none of the target's memories are modified.",
-      "While this charm lasts, you can affect the target's memory of an event that it experienced within the last 24 hours and that lasted no more than 10 minutes. You can permanently eliminate all memory of the event, allow the target to recall the event with perfect clarity and exacting detail, change its memory of the details of the event, or create a memory of some other event.",
+      "You attempt to reshape another creature's memories. One creature that you can see must make a Wisdom saving throw. If you are fighting the creature, it has advantage on the saving throw. The target can choose to intentionally fail its saving throw. On a failed save, the target becomes charmed by you for the duration. The charmed target is incapacitated and unaware of its surroundings, though it can still hear you. If it takes any damage or is targeted by another spell, this spell ends, and none of the target's memories are modified.",
+      "While this charm lasts, you can affect the target's memory of an event that it experienced within the last 24 hours. You can permanently eliminate all memory of the event, allow the target to recall the event with perfect clarity and exacting detail, change its memory of the details of the event, or create a memory of some other event.",
       "You must speak to the target to describe how its memories are affected, and it must be able to understand your language for the modified memories to take root. Its mind fills in any gaps in the details of your description. If the spell ends before you have finished describing the modified memories, the creature's memory isn't altered. Otherwise, the modified memories take hold when the spell ends.",
       "A modified memory doesn't necessarily affect how a creature behaves, particularly if the memory contradicts the creature's natural inclinations, alignment, or beliefs. An illogical modified memory, such as implanting a memory of how much the creature enjoyed dousing itself in acid, is dismissed, perhaps as a bad dream. The DM might deem a modified memory too nonsensical to affect a creature in a significant manner.",
-      "A Remove Curse or Greater Restoration spell cast on the target restores the creature's true memory."
+      "A Greater Restoration spell cast on the target at the same level as this spell or higher restores the creature's true memory.",
+      "During the casting of the spell, you can specify a condition that will cause the spell to end and return the target's memories to their original state. The condition can be as specific or as elaborate as you choose, but the DM must agree that the condition is reasonable and has a likelihood of coming to pass. The conditions can be based on a creature's name, identity, or deity but otherwise must be based on observable actions or qualities and not based on intangibles such as level, class, or hit points."
     ],
     "higherLevels": [
       "If you cast this spell using a spell slot of 6th level or higher, you can alter the target's memories of an event that took place up to 7 days ago (6th level), 30 days ago (7th level), 1 year ago (8th level), or any time in the creature's past (9th level)."
@@ -15685,12 +15733,12 @@
     "save": "cha"
   },
   {
-    "name": "Reveille",
+    "name": "Sound the Horns of War",
     "school": "Conjuration",
     "level": 7,
     "castingTime": "1 action",
     "range": "60 feet (2d4 + 5 targets)",
-    "components": "V, S, M (a war horn)",
+    "components": "V, S, M (a war horn worth at least 5 sp)",
     "duration": "Concentration, up to 1 hour",
     "description": [
       "You summon warriors to fight for you and your allies with a blast through a war horn that calls them to arms. Choose between a Knight or a Veteran the chosen creature appears within range, as well as a squad of auxiliary warriors composed of 2d4 + 4 Guards or Bandits, respectively.",
@@ -17683,7 +17731,7 @@
   },
   {
     "name": "Spiritual Weapon",
-    "school": "Evocation",
+    "school": "Conjuration",
     "level": 2,
     "castingTime": "1 bonus action",
     "range": "60 feet",
@@ -18024,7 +18072,7 @@
     "components": "V, S, M (a feather)",
     "duration": "Instantaneous",
     "description": [
-      "You chant a minor incantation, brushing the arrows in your quiver with a feather. Upon finishing the casting, spectral duplicates of your arrows appear at a point in the sky you can see with in range, forming a 10-foot radius cylinder up to 40 feet tall. Each creature in the cylinder must make a Dexterity saving throw. A creature takes 3d6 piercing damage on a failed save, or half as much damage on a successful one."
+      "You chant a minor incantation, brushing the ammunition in a container with a feather. Upon finishing the casting, spectral duplicates of the ammunition appear at a point in the sky you can see with in range, forming a 10-foot radius cylinder up to 40 feet tall. Each creature in the cylinder must make a Dexterity saving throw. A creature takes 3d6 piercing damage on a failed save, or half as much damage on a successful one."
     ],
     "higherLevels": [
       "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each spell slot level above 1st."
@@ -18624,8 +18672,8 @@
     "components": "V, S, M (a quiver containing at least one piece of ammunition)",
     "duration": "Concentration, up to 1 minute",
     "description": [
-      "You transmute your quiver so it produces an endless supply of nonmagical ammunition, which seems to leap into your hand when you reach for it.",
-      "On each of your turns until the spell ends, you can use a bonus action to make two attacks with a weapon that uses ammunition from the quiver. Each time you make such a ranged attack, your quiver magically replaces the piece of ammunition you used with a similar piece of nonmagical ammunition. Any pieces of ammunition created by this spell disintegrate when the spell ends. If the quiver leaves your possession, the spell ends."
+      "You transmute your ammunition storage so it produces an endless supply of nonmagical ammunition, which seems to leap into your hand when you reach for it.",
+      "On each of your turns until the spell ends, you can use a bonus action to make two attacks with a weapon that uses ammunition from the container. Each time you make such a ranged attack, your container magically replaces the piece of ammunition you used with a similar piece of nonmagical ammunition. Any pieces of ammunition created by this spell disintegrate when the spell ends. If the container leaves your possession, the spell ends."
     ],
     "lists": ["Primal"],
     "ritual": 0
@@ -19821,29 +19869,30 @@
   {
     "name": "Unseat Hand",
     "school": "Necromancy",
-    "level": 2,
+    "level": 1,
     "castingTime": "1 action",
     "range": "Touch",
     "components": "V, S, M (a pinch of bone dust)",
     "duration": "24 hours",
     "description": [
-      "You sever a hand from your body and grant it sentience. Your hand becomes a crawling claw with the creature's game statistics, except that it gains proficiency in the Sleight of Hand and Stealth skills, and has advantage on checks made with these skills (the DM has the creature's game statistics).",
+      "You hold up the severed hand of a humanoid, or magically and painlessly sever a hand from your own body, granting it sentience. You can use a bonus action to reattach the crawling claw to your body if it was formed from your own hand, returning your hand to normal. The hand becomes a crawling claw with the creature's game statistics, except that it can't attack, it gains proficiency in the Sleight of Hand and Stealth skills, and has advantage on checks made with these skills.",
       "On each of your turns, you can use a bonus action to mentally command it if the crawling claw is within 1 mile of you. You decide what action the crawling claw will take and where it will move during its next turn, or you can issue a general command. If you issue no commands, the crawling claw only defends itself against hostile creatures. Once given an order, the crawling claw continues to follow it until its task is complete.",
-      "You can use a bonus action to reattach the crawl claw to your body, returning your hand to normal. The crawling claw is under your control for 24 hours, after which you must reattach it to your body or it dies. If the crawling claw dies by any means, it cannot be reattached to your body unless by magical means (such as a regenerate spell)."
+      "The crawling claw is under your control for 24 hours, after which it dies. You can only have one instance of this spell active at any time."
     ],
     "higherLevels": [
-      "If you cast this spell using a spell slot of 4th level or higher, the crawling claw is under your control for 10 days. If you use a spell slot of 6th level or higher, the crawling claw is under your control for 90 days. If you use a spell slot of 8th level or higher, the crawling claw is under your control for a year and 1 day."
+      "If you cast this spell using a spell slot of 4th level or higher, the crawling claw is under your control for 10 days. If you use a spell slot of 6th level or higher, the crawling claw is under your control for 90 days. If you use a spell slot of 8th level or higher, the crawling claw is under your control for a year. If you use a spell slot of 9th level, the crawling claw is under your control permanently."
     ],
     "lists": ["Occult"],
     "ritual": 1,
     "upcastDuration": {
+      "2": "1 hour",
       "3": "24 hours",
       "4": "10 days",
       "5": "10 days",
       "6": "90 days",
       "7": "90 days",
       "8": "1 year",
-      "9": "1 year"
+      "9": "Until dispelled"
     }
   },
   {
@@ -20269,7 +20318,7 @@
   },
   {
     "name": "Vortex Warp",
-    "school": "Conjuration",
+    "school": "Transposition",
     "level": 2,
     "castingTime": "1 action",
     "range": "90 feet",
@@ -20457,6 +20506,55 @@
       }
     ],
     "upcastDice": 1
+  },
+  {
+    "name": "Maggot Feast",
+    "school": "Conjuration",
+    "level": 7,
+    "castingTime": "1 action",
+    "range": "Self (60-foot radius)",
+    "components": "V, S, M (a preserved fly)",
+    "duration": "Instantaneous",
+    "description": [
+      "Each creature within 60 feet of you must make a Constitution saving throw. On a failed save, a creature takes 8d10 necrotic damage as maggots infest their wounds, or half as much damage on a success.",
+      "If a creature that is poisoned, diseased, or below half of its maximum hit points fails a saving throw against this effect, it is additionally dazed until the end of its next turn."
+    ],
+    "ritual": 0,
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 8,
+        "die": 10,
+        "type": "necrotic"
+      }
+    ],
+    "unique": "This spell was developed by the archdevil Baalzebul."
+  },
+  {
+    "name": "Heart of Pestilence",
+    "school": "Necromancy",
+    "level": 7,
+    "castingTime": "1 action",
+    "range": "Self (60-foot radius)",
+    "components": "V, S, M (a live maggot)",
+    "duration": "Instantaneous",
+    "description": [
+      "You awaken the lurking death within a creature you can see within range, consuming it from within. The creature must make three Constitution saving throws.",
+      "For each saving throw the creature fails, it suffers one of the following effects of your choice. You can choose the same effect multiple times.",
+      "<ul><li>The target takes 7d10 poison damage and is poisoned until cured by the Lesser Restoration spell or similar magic.</li><li>The target takes 7d10 necrotic damage and is infected with Filth Fever.</li><li>The target loses 7d10 hit points and begins bleeding (2d10).</li></ul>"
+    ],
+    "ritual": 0,
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 8,
+        "die": 10,
+        "type": "necrotic"
+      }
+    ],
+    "unique": "This spell was developed by the archdevil Baalzebul."
   },
   {
     "name": "Wall of Sand",
@@ -21283,7 +21381,7 @@
       "Invention"
     ],
     "ritual": 0,
-    "element": "Earth",
+    "element": "Air",
     "damage": [
       {
         "dice": 1,
@@ -23961,7 +24059,7 @@
   },
   {
     "name": "Dedication of Blood",
-    "school": "Necromancy",
+    "school": "Sangromancy",
     "level": 3,
     "castingTime": "1 attack",
     "range": "Self",
@@ -28020,7 +28118,7 @@
   },
   {
     "name": "Purge Humors",
-    "school": "Abjuration",
+    "school": "Restoration",
     "level": 6,
     "castingTime": "1 action",
     "range": "Touch",

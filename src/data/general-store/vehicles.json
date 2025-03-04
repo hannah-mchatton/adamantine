@@ -1628,6 +1628,47 @@
     ]
   },
   {
+    "index": "mosquito-hawk",
+    "name": "Mosquito Hawk",
+    "cost": 5000,
+    "weight": 0,
+    "minCrew": 1,
+    "maxCrew": 2,
+    "topSpeed": 8,
+    "description": "Mosquito hawks are mosquitos that additionally have a pair of small lightning launchers affixed below the cockpit.",
+    "type": "astral",
+    "cargo": 1,
+    "parts": [
+      {
+        "name": "Hull",
+        "ac": 19,
+        "hp": 100,
+        "dt": 10,
+        "description": "",
+        "type": "",
+        "num": 1
+      },
+      {
+        "name": "Helm",
+        "ac": 16,
+        "hp": 50,
+        "dt": 0,
+        "description": "Move up to 70 ft., with one 90-degree turn. If the helm is destroyed, the ship can't turn.",
+        "type": "Control",
+        "num": 1
+      },
+      {
+        "name": "Lightning Launchers",
+        "ac": 19,
+        "hp": 25,
+        "dt": 0,
+        "description": "<em>Ranged Weapon Attack:</em> +6 to hit, range 120/480 ft., one target. <em>Hit:</em> 11 (2d10) lightning damage.",
+        "type": "Weapon",
+        "num": 1
+      }
+    ]
+  },
+  {
     "index": "scorpion",
     "name": "Scorpion",
     "cost": 25000,

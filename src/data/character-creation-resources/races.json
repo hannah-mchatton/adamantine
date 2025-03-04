@@ -1674,11 +1674,6 @@
         "description": "You have two slightly smaller secondary arms below your primary pair of arms. The secondary arms can manipulate an object, open or close a door or container, pick up or set down a Tiny object, or wield a weapon that has the light property."
       },
       {
-        "name": "Giant Build",
-        "description": "You have proficiency in the Athletics skill.",
-        "granted": [{ "type": "skill", "options": ["Athletics"], "level": 1 }]
-      },
-      {
         "name": "Horn",
         "description": "Your great horn is a natural weapon with which you are proficient.  It deals piercing damage equal to 1d8 + your Strength modifier on a hit.</p><p>In addition, you can grapple a creature up to two sizes larger than you using your horn.  You have advantage on checks made to manipulate the position of a creature grappled in such a way.",
         "actions": [
@@ -1706,6 +1701,11 @@
           {
             "type": "weapon",
             "options": ["Improvised"]
+          },
+          {
+            "type": "skill",
+            "options": ["Athletics"],
+            "level": 1
           }
         ]
       }

@@ -2276,6 +2276,15 @@
     "index": "crystalballoftrueseeing"
   },
   {
+    "name": "Brain in a Jar",
+    "rarity": 2,
+    "type": "wondrous item",
+    "attunement": true,
+    "attunementDesc": "",
+    "description": "<p>This humanoid brain, suspended in enbalming fluid within a magically enhanced crystal jar, has been restored with a semblance of life. While you are concentrating on a spell or magical effect while holding the jar, you can use an action to transfer your concentration to the brain, freeing up your concentration for a different effect.</p><p>The jar has an Armor Class of 10 and is immune to poison damage. If it is forced to make a saving throw, treat each of its ability scores as 10 (+0). If the jar takes any amount of damage, the brain loses concentration on the effect it is concentrating on. If the jar takes bludgeoning or thunder damage from a critical hit, it shatters and is destroyed.</p><p>You can only be attuned to one brain in a jar at a time, and attempting to attune to more than one will fail.</p>",
+    "index": "braininajar"
+  },
+  {
     "name": "Crystal Blade",
     "rarity": 2,
     "type": "weapon (any sword)",

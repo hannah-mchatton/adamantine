@@ -478,6 +478,21 @@
     "value": 2400
   },
   {
+    "name": "Brain in a Jar",
+    "materials": [
+      { "item": "crystal jar worth 100 gp", "quantity": 1 },
+      { "item": "preserved humanoid brain", "quantity": 1 },
+      { "item": "rare occult essence", "quantity": 1 },
+      { "item": "rare psionic essence", "quantity": 1 },
+      { "item": "scroll of clairvoyance", "quantity": 1 }
+    ],
+    "craftingTime": 16,
+    "craftingChecks": 8,
+    "dc": 17,
+    "rarity": 2,
+    "value": 3000
+  },
+  {
     "name": "Brazier of Commanding Fire Elementals",
     "materials": [
       { "item": "brazier worth 200 gp", "quantity": 1 },

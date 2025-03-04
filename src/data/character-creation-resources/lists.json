@@ -7219,6 +7219,191 @@
           "level": 0
         }
       ]
+    },
+    {
+      "name": "Deadeye Warrior",
+      "description": "You learn two Deadeye Exploits of your choice. One of these exploits is a Mastered Exploit, and can be used once per turn without expending an exploit die. Your ability score for these exploits is Strength or Dexterity (your choice).</p><p>Additionally, you can both use your Mastered Exploit a second time on a turn and use the other exploit once each using a d6 as your exploit die, and regain the ability to do so when you finish a short or long rest.",
+      "choices": [
+        {
+          "id": "57567539-427B-4362-88CB-7E87CA5E4C6A",
+          "type": "text",
+          "options": ["str", "dex"]
+        },
+        {
+          "id": "DB4FA474-3F85-4703-BF03-0675F2DD8A9D",
+          "type": "exploit",
+          "list": "Deadeye",
+          "ability": "57567539-427B-4362-88CB-7E87CA5E4C6A"
+        },
+        {
+          "id": "1DE91005-1331-4742-9C5E-23B25D6EF5DE",
+          "type": "exploit",
+          "list": "Deadeye",
+          "ability": "57567539-427B-4362-88CB-7E87CA5E4C6A"
+        }
+      ],
+      "uses": [
+        {
+          "id": "4CBFEBE8-09B0-41B2-BBD1-2832C07B0F30",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 1
+        },
+        {
+          "id": "F477FEC7-22F5-4644-83C6-506B37005D5F",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 1
+        }
+      ]
+    },
+    {
+      "name": "Defiant Warrior",
+      "description": "You learn two Defiant Exploits of your choice. One of these exploits is a Mastered Exploit, and can be used once per turn without expending an exploit die. Your ability score for these exploits is Strength or Dexterity (your choice).</p><p>Additionally, you can both use your Mastered Exploit a second time on a turn and use the other exploit once each using a d6 as your exploit die, and regain the ability to do so when you finish a short or long rest.",
+      "choices": [
+        {
+          "id": "F9F668A9-DD81-43FC-B386-D7E99DAC739E",
+          "type": "text",
+          "options": ["str", "dex"]
+        },
+        {
+          "id": "A8AA5460-551F-421C-86E1-FE35A8982CAC",
+          "type": "exploit",
+          "list": "Defiant",
+          "ability": "F9F668A9-DD81-43FC-B386-D7E99DAC739E"
+        },
+        {
+          "id": "2E078639-573F-498F-899A-C121A30FC986",
+          "type": "exploit",
+          "list": "Defiant",
+          "ability": "F9F668A9-DD81-43FC-B386-D7E99DAC739E"
+        }
+      ],
+      "uses": [
+        {
+          "id": "07B152E7-FB45-47CF-97F4-88BDA2EA9ACD",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 1
+        },
+        {
+          "id": "AF8C9059-3580-4CC3-BDEC-A924D32901EB",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 1
+        }
+      ]
+    },
+    {
+      "name": "Martial Warrior",
+      "description": "You learn two Martial Exploits of your choice. One of these exploits is a Mastered Exploit, and can be used once per turn without expending an exploit die. Your ability score for these exploits is Strength or Dexterity (your choice).</p><p>Additionally, you can both use your Mastered Exploit a second time on a turn and use the other exploit once each using a d6 as your exploit die, and regain the ability to do so when you finish a short or long rest.",
+      "choices": [
+        {
+          "id": "B8836FA5-6063-4139-A4C6-D1EE65E4F3E7",
+          "type": "text",
+          "options": ["str", "dex"]
+        },
+        {
+          "id": "0C176A28-2758-40F6-B53B-ACB0A7703743",
+          "type": "exploit",
+          "list": "Tactical",
+          "ability": "B8836FA5-6063-4139-A4C6-D1EE65E4F3E7"
+        },
+        {
+          "id": "7F7B3425-7D30-4AE3-AB15-89AD85DEBE92",
+          "type": "exploit",
+          "list": "Tactical",
+          "ability": "B8836FA5-6063-4139-A4C6-D1EE65E4F3E7"
+        }
+      ],
+      "uses": [
+        {
+          "id": "6C23FEE9-3FC9-4543-AE1B-596CD1D604B0",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 1
+        },
+        {
+          "id": "B43BA5EF-E069-465A-8F7E-AFA4CCF8DDBC",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 1
+        }
+      ]
+    },
+    {
+      "name": "Tactical Warrior",
+      "description": "You learn two Tactical Exploits of your choice. One of these exploits is a Mastered Exploit, and can be used once per turn without expending an exploit die. Your ability score for these exploits is Strength or Dexterity (your choice).</p><p>Additionally, you can both use your Mastered Exploit a second time on a turn and use the other exploit once each using a d6 as your exploit die, and regain the ability to do so when you finish a short or long rest.",
+      "choices": [
+        {
+          "id": "F6714CCB-8B76-4D64-8074-A812C0A9927E",
+          "type": "text",
+          "options": ["str", "dex"]
+        },
+        {
+          "id": "4BA5542E-6418-4E0E-A807-642CD57B68CB",
+          "type": "exploit",
+          "list": "Tactical",
+          "ability": "F6714CCB-8B76-4D64-8074-A812C0A9927E"
+        },
+        {
+          "id": "5BEA3FBF-6CBB-4DD5-B320-4F3BEF991F2D",
+          "type": "exploit",
+          "list": "Tactical",
+          "ability": "F6714CCB-8B76-4D64-8074-A812C0A9927E"
+        }
+      ],
+      "uses": [
+        {
+          "id": "BC96FBFA-08E3-4FB5-B2BD-270097A9E65E",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 1
+        },
+        {
+          "id": "D7CC6846-3ED7-4D89-A772-6688693EC2D5",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 1
+        }
+      ]
+    },
+    {
+      "name": "Wild Warrior",
+      "description": "You learn two Wild Exploits of your choice. One of these exploits is a Mastered Exploit, and can be used once per turn without expending an exploit die. Your ability score for these exploits is Strength or Dexterity (your choice).</p><p>Additionally, you can both use your Mastered Exploit a second time on a turn and use the other exploit once each using a d6 as your exploit die, and regain the ability to do so when you finish a short or long rest.",
+      "choices": [
+        {
+          "id": "AA13AE04-50AB-4F1A-85CA-E6F6BAF783B0",
+          "type": "text",
+          "options": ["str", "dex"]
+        },
+        {
+          "id": "8D6A4E39-7DC0-4870-8DB7-89975734DC24",
+          "type": "exploit",
+          "list": "Tactical",
+          "ability": "AA13AE04-50AB-4F1A-85CA-E6F6BAF783B0"
+        },
+        {
+          "id": "401F988A-65E6-46CD-8C8A-54218F640AC0",
+          "type": "exploit",
+          "list": "Tactical",
+          "ability": "AA13AE04-50AB-4F1A-85CA-E6F6BAF783B0"
+        }
+      ],
+      "uses": [
+        {
+          "id": "791545AB-BF81-43E3-94B9-4A46E384CF66",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 1
+        },
+        {
+          "id": "5B6E6E97-DDB3-472D-B40B-7F1B956B9267",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 1
+        }
+      ]
     }
   ],
   "grenade": [

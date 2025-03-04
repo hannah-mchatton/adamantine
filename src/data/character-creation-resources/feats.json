@@ -2645,7 +2645,7 @@
       }
     ],
     "type": "racial",
-    "description": "Your strength rivals the giants that roam your homeland. You gain the following benefits:<ul><li>Increase your Strength or Constitution score by 1, to a maximum of 20.</li><li>You gain a climbing speed equal to your walking speed.</li><li>As an action, you can pick up a large boulder or rip a chunk of natural stone out of the ground and make the attack with it. The boulder is a simple melee weapon with the thrown property. It has a normal range of 20 feet and a long range of 60 feet. On a hit, it deals bludgeoning damage equal to 2d6 + your Strength modifier. A creature struck by this boulder must make a Strength saving throw (DC equal to 8 + your proficiency bonus + your Strength modifier) or be knocked prone. You can use this ability a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</li></ul>",
+    "description": "Your strength rivals the giants that roam your homeland. You gain the following benefits:<ul><li>Increase your Strength or Constitution score by 1, to a maximum of 20.</li><li>You gain a climbing speed equal to your walking speed.</li><li>As an action, you can pick up a large boulder or rip a chunk of natural stone out of the ground and make the attack with it. The boulder is a simple melee weapon with the thrown property. It has a normal range of 20 feet and a long range of 60 feet. On a hit, it deals bludgeoning damage equal to 2d6 + your Strength modifier.</li><li>Once per turn, you can force a creature struck by a boulder you throw to make a Strength saving throw (DC equal to 8 + your proficiency bonus + your Strength modifier) or be knocked prone. You can use this ability a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</li></ul>",
     "choices": [
       {
         "id": "A8D43E58-D372-4EDB-BD4B-FA8F9D9D44BE",
@@ -2886,13 +2886,14 @@
   },
   {
     "name": "Draconic Ferocity",
+    "repeatable": true,
     "prereq": [
       {
         "race": ["dragonborn"]
       }
     ],
     "type": "racial",
-    "description": "You take on the ferocious presence of dragons. You gain the following benefits:<ul><li>Increase your Strength, Constitution, or Charisma score by 1, to a maximum of 20.</li><li>Instead of exhaling destructive energy, you can expend a use of your Breath Weapon trait to roar, forcing each creature of your choice within 30 feet of you to make a Wisdom saving throw (DC 8 + your proficiency bonus + your Constitution modifier). A target automatically succeeds on the save if it can't hear or see you. On a failed save, a target becomes frightened for 1 minute. If the frightened target takes any damage, it can repeat the saving throw, ending the effect on itself on a success.</li><li>You gain an additional natural weapon of your choice from your claws, fangs, horns, or tail.</li></ul>",
+    "description": "You take on the ferocious presence of dragons. You gain the following benefits:<ul><li>Increase your Strength, Constitution, or Charisma score by 1, to a maximum of 20.</li><li>Instead of exhaling destructive energy, you can expend a use of your Breath Weapon trait to roar, forcing each creature of your choice within 30 feet of you to make a Wisdom saving throw (DC 8 + your proficiency bonus + your Constitution modifier). A target automatically succeeds on the save if it can't hear or see you. On a failed save, a target becomes frightened for 1 minute. If the frightened target takes any damage, it can repeat the saving throw, ending the effect on itself on a success.</li><li>You gain an additional natural weapon of your choice from your claws, fangs, horns, or tail.</li></ul>You can take this feat multiple times, and must choose a different natural weapon each time. Additionally, for each time you take this feat after the first, the area of effect of your roar increases by 10 feet.",
     "choices": [
       {
         "id": "0591FBDC-C20A-4A8A-BE69-6E745C5C2CFB",

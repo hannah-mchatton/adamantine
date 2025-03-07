@@ -5414,7 +5414,7 @@
     {
       "name": "Minor Arcanum",
       "prereqLevel": 11,
-      "description": "Choose a 6th-level spell from Occult spell list. You can cast the Minor Arcanum spell once at 6th-level, without expending a spell slot. Once you cast the spell in this way, you must complete a long rest before you can cast your Minor Arcanum again.",
+      "description": "Choose a 6th-level spell from Occult spell list. You can cast the Minor Arcanum spell once at 6th-level, without expending a spell slot. Once you cast the spell in this way, you must complete a long rest before you can cast your Minor Arcanum again.</p><p>Alternatively, you can expend a use of this feature to cast a different 6th level spell that you know at its lowest level.",
       "choices": [
         {
           "id": "1FCE3B54-E6F4-4CD5-867C-3A0AE840B313",
@@ -5436,7 +5436,7 @@
     {
       "name": "Greater Arcanum",
       "prereqLevel": 13,
-      "description": "Choose a 7th-level spell from Occult spell list. You can cast the Greater Arcanum spell once at 7th-level, without expending a spell slot. Once you cast the spell in this way, you must complete a long rest before you can cast your Greater Arcanum again.",
+      "description": "Choose a 7th-level spell from Occult spell list. You can cast the Greater Arcanum spell once at 7th-level, without expending a spell slot. Once you cast the spell in this way, you must complete a long rest before you can cast your Greater Arcanum again.</p><p>Alternatively, you can expend a use of this feature to cast a different 7th level spell that you know at its lowest level.",
       "choices": [
         {
           "id": "3277F3B5-7084-439B-84A1-60D1955CFFCA",
@@ -5458,7 +5458,7 @@
     {
       "name": "Mystic Arcanum",
       "prereqLevel": 15,
-      "description": "Choose a 8th-level spell from Occult spell list. You can cast the Mystic Arcanum spell once at 8th-level, without expending a spell slot. Once you cast the spell in this way, you must complete a long rest before you can cast your Mystic Arcanum again.",
+      "description": "Choose a 8th-level spell from Occult spell list. You can cast the Mystic Arcanum spell once at 8th-level, without expending a spell slot. Once you cast the spell in this way, you must complete a long rest before you can cast your Mystic Arcanum again.</p><p>Alternatively, you can expend a use of this feature to cast a different 8th level spell that you know at its lowest level.",
       "choices": [
         {
           "id": "EF047729-957A-4B60-A2FE-C8CA9D2BF505",
@@ -5480,7 +5480,7 @@
     {
       "name": "Ancient Arcanum",
       "prereqLevel": 17,
-      "description": "Choose a 9th-level spell from Occult spell list. You can cast the Ancient Arcanum spell once at 9th-level, without expending a spell slot. Once you cast the spell in this way, you must complete a long rest before you can cast your Ancient Arcanum again.",
+      "description": "Choose a 9th-level spell from Occult spell list. You can cast the Ancient Arcanum spell once at 9th-level, without expending a spell slot. Once you cast the spell in this way, you must complete a long rest before you can cast your Ancient Arcanum again.</p><p>Alternatively, you can expend a use of this feature to cast Manifest Patron, or a different 9th level spell that you know at its lowest level.",
       "choices": [
         {
           "id": "351B4474-7C07-4796-A2FA-077A31927D79",
@@ -5496,6 +5496,19 @@
           "type": "fixed",
           "amount": 1,
           "reset": 1
+        }
+      ]
+    },
+    {
+      "name": "Manifest Patron",
+      "prereqLevel": 17,
+      "description": "As an action on your turn, you can allow your patron to work directly through you, transforming your body into their image until the end of your next turn. While transformed, your game statistics, including mental ability scores, are replaced by those of your patron. You retain your alignment and personality, but your patron communicates directly to your mind in an attempt to influence you into a particular course of action.</p><p>You can use this feature once, and regain the ability to do so when you finish a long rest.",
+      "uses": [
+        {
+          "id": "5EB9649C-525F-43AE-A8DB-2BE37DDFCC81",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 2
         }
       ]
     },
@@ -7685,7 +7698,7 @@
     },
     {
       "name": "Homonculus Servant (Mechanical)",
-      "description": "<strong>Item:</strong> a gem or crystal worth at least 100 gp</p><p>You learn intricate methods for magically creating a special homunculus that serves you. The item you infuse serves as the creature's heart, around which the creature's body instantly forms.</p> <p>You determine the homunculus's appearance. Some artificers prefer mechanical-looking birds, whereas some like winged vials or miniature, animate cauldrons.</p> <p>The homunculus is friendly to you and your companions, and it obeys your commands. See this creature's game statistics in the Homunculus Servant stat block, which uses your proficiency bonus (PB) in several places.</p> <p>In combat, the homunculus shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the homunculus can take any action of its choice, not just Dodge.</p> <p>The homunculus regains 2d6 hit points if the mending spell is cast on it. If you or the homunculus dies, it vanishes, leaving its heart in its space.<table> <tbody> <tr> <th colspan=\"6\">Homunculus Servant</th> </tr> <tr> <td colspan=\"6\"><em>Tiny construct</em></td> </tr> <tr> <td colspan=\"6\"><strong>Armor Class:</strong> 13 (natural armor)</td> </tr> <tr> <td colspan=\"6\"> <strong>Hit Points:</strong> 1 + your Intelligence modifier + your artificer level </td> </tr> <tr> <td colspan=\"6\"><strong>Speed:</strong> 20 ft., fly 30 ft.</td> </tr> <tr> <th>STR</th> <th>DEX</th> <th>CON</th> <th>INT</th> <th>WIS</th> <th>CHA</th> </tr> <tr> <td>4 (-3)</td> <td>15 (+2)</td> <td>12 (+1)</td> <td>10 (+0)</td> <td>10 (+0)</td> <td>7 (?2)</td> </tr> <tr> <td colspan=\"6\"><strong>Saving Throws:</strong> Dex +2 plus PB</td> </tr> <tr> <td colspan=\"6\"><strong>Skills:</strong> Perception +0 plus PB x 2, Stealth +2 plus PB</td> </tr> <tr> <td colspan=\"6\"><strong>Damage Immunities:</strong> poison</td> </tr> <tr> <td colspan=\"6\"><strong>Condition Immunities:</strong> exhaustion, poisoned</td> </tr> <tr> <td colspan=\"6\"><strong>Senses:</strong> darkvision 60 ft., passive Perception 10 + (PB x 2)</td> </tr> <tr> <td colspan=\"6\"><strong>Languages:</strong> understands the languages you speak</td> </tr> <tr> <td colspan=\"6\"><strong>Challenge:</strong> -</td> </tr> <tr> <td colspan=\"6\"><strong>Proficiency Bonus (PB):</strong> equals your bonus</td> </tr> <tr> <td colspan=\"6\"> <strong><em>Evasion.</em></strong> If the homunculus is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails. It can't use this trait if it's incapacitated. </td> </tr> <tr> <th colspan=\"6\">Actions</th> </tr> <tr> <td colspan=\"6\"><strong><em>Force Strike.</em></strong> <em>Ranged Weapon Attack:</em> your spell attack modifier to hit, range 30 ft., one target you can see. <em>Hit:</em> 1d4 + PB force damage. </td> </tr> <tr> <th colspan=\"6\">Reactions</th> </tr> <tr> <td colspan=\"6\"> <strong><em>Channel Magic.</em></strong> The homunculus delivers a spell you cast that has a range of touch. The homunculus must be within 120 feet of you. </td> </tr> </tbody> </table>",
+      "description": "<strong>Item:</strong> a gem or crystal worth at least 100 gp</p><p>You learn intricate methods for magically creating a special homunculus that serves you. The item you infuse serves as the creature's heart, around which the creature's body instantly forms.</p> <p>You determine the homunculus's appearance. Some artificers prefer mechanical-looking birds, whereas some like winged vials or miniature, animate cauldrons.</p> <p>The homunculus is friendly to you and your companions, and it obeys your commands. See this creature's game statistics in the Homunculus Servant stat block, which uses your proficiency bonus (PB) in several places.</p> <p>In combat, the homunculus shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the homunculus can take any action of its choice, not just Dodge.</p> <p>The homunculus regains 2d6 hit points if the mending spell is cast on it. If you or the homunculus dies, it vanishes, leaving its heart in its space.<table> <tbody> <tr> <th colspan=\"6\">Homunculus Servant</th> </tr> <tr> <td colspan=\"6\"><em>Tiny construct</em></td> </tr> <tr> <td colspan=\"6\"><strong>Armor Class:</strong> 13 (natural armor)</td> </tr> <tr> <td colspan=\"6\"> <strong>Hit Points:</strong> 1 + your Intelligence modifier + your artificer level </td> </tr> <tr> <td colspan=\"6\"><strong>Speed:</strong> 20 ft., fly 30 ft.</td> </tr> <tr> <th>STR</th> <th>DEX</th> <th>CON</th> <th>INT</th> <th>WIS</th> <th>CHA</th> </tr> <tr> <td>4 (-3)</td> <td>15 (+2)</td> <td>12 (+1)</td> <td>10 (+0)</td> <td>10 (+0)</td> <td>7 (?2)</td> </tr> <tr> <td colspan=\"6\"><strong>Saving Throws:</strong> Dex +2 plus PB</td> </tr> <tr> <td colspan=\"6\"><strong>Skills:</strong> Perception +0 plus PB x 2, Stealth +2 plus PB</td> </tr> <tr> <td colspan=\"6\"><strong>Damage Immunities:</strong> poison</td> </tr> <tr> <td colspan=\"6\"><strong>Condition Immunities:</strong> exhaustion, poisoned</td> </tr> <tr> <td colspan=\"6\"><strong>Senses:</strong> darkvision 60 ft., passive Perception 10 + (PB x 2)</td> </tr> <tr> <td colspan=\"6\"><strong>Languages:</strong> understands the languages you speak</td> </tr> <tr> <td colspan=\"6\"><strong>Challenge:</strong> -</td> </tr> <tr> <td colspan=\"6\"><strong>Proficiency Bonus (PB):</strong> equals your bonus</td> </tr> <tr> <td colspan=\"6\"> <strong><em>Evasion.</em></strong> If the homunculus is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails. It can't use this trait if it's incapacitated. </td> </tr> <tr> <th colspan=\"6\">Actions</th> </tr> <tr> <td colspan=\"6\"><strong><em>Force Strike.</em></strong> <em>Ranged Weapon Attack:</em> your spell attack modifier to hit, range 30 ft., one target you can see. <em>Hit:</em> 1d4 + PB force damage. </td> </tr> <tr> <th colspan=\"6\">Reactions</th> </tr> <tr> <td colspan=\"6\"> <strong><em>Channel Magic.</em></strong> The homunculus delivers a spell you cast that has a range of touch. The homunculus must be within 120 feet of you. </td> </tr> </tbody> </table>You can only have one homonculus servant at a time.",
       "granted": [
         {
           "type": "companion",
@@ -7695,7 +7708,7 @@
     },
     {
       "name": "Homonculus Servant (Fleshy)",
-      "description": "<strong>Item:</strong> a gem or crystal worth at least 100 gp</p><p>You learn intricate methods for magically creating a special homunculus that serves you. The item you infuse serves as the creature's heart, around which the creature's body instantly forms.</p> <p>You determine the homunculus's appearance. Some artificers prefer mechanical-looking birds, whereas some like winged vials or miniature, animate cauldrons.</p> <p>The homunculus is friendly to you and your companions, and it obeys your commands. See this creature's game statistics in the Homunculus Servant stat block, which uses your proficiency bonus (PB) in several places.</p> <p>In combat, the homunculus shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the homunculus can take any action of its choice, not just Dodge.</p> <p>The homunculus regains 2d6 hit points if the mending spell is cast on it. If you or the homunculus dies, it vanishes, leaving its heart in its space.<table> <tbody> <tr> <th colspan=\"6\">Homunculus Servant</th> </tr> <tr> <td colspan=\"6\"><em>Tiny construct undead (corporeal)</em></td> </tr> <tr> <td colspan=\"6\"><strong>Armor Class:</strong> 13 (natural armor)</td> </tr> <tr> <td colspan=\"6\"> <strong>Hit Points:</strong> 1 + your Intelligence modifier + your artificer level </td> </tr> <tr> <td colspan=\"6\"><strong>Speed:</strong> 20 ft., fly 30 ft.</td> </tr> <tr> <th>STR</th> <th>DEX</th> <th>CON</th> <th>INT</th> <th>WIS</th> <th>CHA</th> </tr> <tr> <td>4 (-3)</td> <td>15 (+2)</td> <td>12 (+1)</td> <td>10 (+0)</td> <td>10 (+0)</td> <td>7 (?2)</td> </tr> <tr> <td colspan=\"6\"><strong>Saving Throws:</strong> Dex +2 plus PB</td> </tr> <tr> <td colspan=\"6\"><strong>Skills:</strong> Perception +0 plus PB x 2, Stealth +2 plus PB</td> </tr> <tr> <td colspan=\"6\"><strong>Damage Immunities:</strong> poison</td> </tr> <tr> <td colspan=\"6\"><strong>Condition Immunities:</strong> exhaustion, poisoned</td> </tr> <tr> <td colspan=\"6\"><strong>Senses:</strong> darkvision 60 ft., passive Perception 10 + (PB x 2)</td> </tr> <tr> <td colspan=\"6\"><strong>Languages:</strong> understands the languages you speak</td> </tr> <tr> <td colspan=\"6\"><strong>Challenge:</strong> -</td> </tr> <tr> <td colspan=\"6\"><strong>Proficiency Bonus (PB):</strong> equals your bonus</td> </tr> <tr> <td colspan=\"6\"> <strong><em>Evasion.</em></strong> If the homunculus is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails. It can't use this trait if it's incapacitated. </td> </tr> <tr> <th colspan=\"6\">Actions</th> </tr> <tr> <td colspan=\"6\"><strong><em>Force Strike.</em></strong> <em>Ranged Weapon Attack:</em> your spell attack modifier to hit, range 30 ft., one target you can see. <em>Hit:</em> 1d4 + PB force damage. </td> </tr> <tr> <th colspan=\"6\">Reactions</th> </tr> <tr> <td colspan=\"6\"> <strong><em>Channel Magic.</em></strong> The homunculus delivers a spell you cast that has a range of touch. The homunculus must be within 120 feet of you. </td> </tr> </tbody> </table>",
+      "description": "<strong>Item:</strong> a gem or crystal worth at least 100 gp</p><p>You learn intricate methods for magically creating a special homunculus that serves you. The item you infuse serves as the creature's heart, around which the creature's body instantly forms.</p> <p>You determine the homunculus's appearance. Some artificers prefer mechanical-looking birds, whereas some like winged vials or miniature, animate cauldrons.</p> <p>The homunculus is friendly to you and your companions, and it obeys your commands. See this creature's game statistics in the Homunculus Servant stat block, which uses your proficiency bonus (PB) in several places.</p> <p>In combat, the homunculus shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the homunculus can take any action of its choice, not just Dodge.</p> <p>The homunculus regains 2d6 hit points if the mending spell is cast on it. If you or the homunculus dies, it vanishes, leaving its heart in its space.<table> <tbody> <tr> <th colspan=\"6\">Homunculus Servant</th> </tr> <tr> <td colspan=\"6\"><em>Tiny construct undead (corporeal)</em></td> </tr> <tr> <td colspan=\"6\"><strong>Armor Class:</strong> 13 (natural armor)</td> </tr> <tr> <td colspan=\"6\"> <strong>Hit Points:</strong> 1 + your Intelligence modifier + your artificer level </td> </tr> <tr> <td colspan=\"6\"><strong>Speed:</strong> 20 ft., fly 30 ft.</td> </tr> <tr> <th>STR</th> <th>DEX</th> <th>CON</th> <th>INT</th> <th>WIS</th> <th>CHA</th> </tr> <tr> <td>4 (-3)</td> <td>15 (+2)</td> <td>12 (+1)</td> <td>10 (+0)</td> <td>10 (+0)</td> <td>7 (?2)</td> </tr> <tr> <td colspan=\"6\"><strong>Saving Throws:</strong> Dex +2 plus PB</td> </tr> <tr> <td colspan=\"6\"><strong>Skills:</strong> Perception +0 plus PB x 2, Stealth +2 plus PB</td> </tr> <tr> <td colspan=\"6\"><strong>Damage Immunities:</strong> poison</td> </tr> <tr> <td colspan=\"6\"><strong>Condition Immunities:</strong> exhaustion, poisoned</td> </tr> <tr> <td colspan=\"6\"><strong>Senses:</strong> darkvision 60 ft., passive Perception 10 + (PB x 2)</td> </tr> <tr> <td colspan=\"6\"><strong>Languages:</strong> understands the languages you speak</td> </tr> <tr> <td colspan=\"6\"><strong>Challenge:</strong> -</td> </tr> <tr> <td colspan=\"6\"><strong>Proficiency Bonus (PB):</strong> equals your bonus</td> </tr> <tr> <td colspan=\"6\"> <strong><em>Evasion.</em></strong> If the homunculus is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails. It can't use this trait if it's incapacitated. </td> </tr> <tr> <th colspan=\"6\">Actions</th> </tr> <tr> <td colspan=\"6\"><strong><em>Force Strike.</em></strong> <em>Ranged Weapon Attack:</em> your spell attack modifier to hit, range 30 ft., one target you can see. <em>Hit:</em> 1d4 + PB force damage. </td> </tr> <tr> <th colspan=\"6\">Reactions</th> </tr> <tr> <td colspan=\"6\"> <strong><em>Channel Magic.</em></strong> The homunculus delivers a spell you cast that has a range of touch. The homunculus must be within 120 feet of you. </td> </tr> </tbody> </table>You can only have one homonculus servant at a time.",
       "granted": [
         {
           "type": "companion",
@@ -7705,7 +7718,7 @@
     },
     {
       "name": "Minor Magic Item",
-      "description": "<strong>Item:</strong> variable</p><p>Choose any common magic item. Your infusion replicates the function of your chosen magic item."
+      "description": "<strong>Item:</strong> variable</p><p>Choose any common magic item. Your infusion replicates the function of your chosen magic item.</p><p>You cannot use this infusion to replicate any of the following magic items:<ul><li>Any magic item that has the sole purpose of replicating a spell, such as a spell scroll or lesser wand</li></ul>"
     },
     {
       "name": "Minor Spellstoring Item",
@@ -7753,9 +7766,14 @@
       "description": "<strong>Item:</strong> a pair of boots (requires attunement)</p><p>These boots have 3 charges. While wearing these boots, the wearer's walking speed increases by 5 feet. The wearer can also expend 1 charge to use the Dash action as a bonus action. The boots regain 1d3 expended charges daily at dawn."
     },
     {
+      "name": "Cloak of Many Things",
+      "prereqLevel": 5,
+      "description": "<strong>Item:</strong> a cape, cloak, mantle, or robe</p><p>This robe is enchanted to be able to store items. Over the course of a minute, you can touch the robe to a Medium or smaller object to convert that object into a patch on the cloak. While wearing the cloak, you can use an action to detach one of the patches, causing it to become the object it represents.</p><p>The cloak can hold up to 50 such objects, and attempting to add an additional object when it is at capacity will fail."
+    },
+    {
       "name": "Greater Magic Item",
       "prereqLevel": 5,
-      "description": "<strong>Item:</strong> varies</p><p>Choose any uncommon magic item. Your infusion replicates the function of your chosen magic item."
+      "description": "<strong>Item:</strong> varies</p><p>Choose any uncommon magic item. Your infusion replicates the function of your chosen magic item.</p><p>You cannot use this infusion to replicate any of the following magic items:<ul><li>Dragon Vessel</li><li>Dragon-Touched Focus</li><li>Dragon's Wrath Weapon</li><li>Infernal Puzzle Box</li><li>Mizzium Apparatus</li><li>Pearl of Power</li><li>Robe of Useful Items</li><li>Scaled Ornament</li><li>Any magic item that has the sole purpose of replicating a spell, such as a spell scroll or lesser wand</li></ul>"
     },
     {
       "name": "Greater Spellstoring Item",
@@ -7855,7 +7873,7 @@
     {
       "name": "Advanced Magic Item",
       "prereqLevel": 9,
-      "description": "<strong>Item:</strong> varies</p><p>Choose any rare magic item. Your infusion replicates the function of your chosen magic item."
+      "description": "<strong>Item:</strong> varies</p><p>Choose any rare magic item. Your infusion replicates the function of your chosen magic item.</p><p>You cannot use this infusion to replicate any of the following magic items:<ul><li>Bag of Beans</li><li>Dragon Vessel</li><li>Dragon-Touched Focus</li><li>Dragon's Wrath Weapon</li><li>Scaled Ornament</li><li>Any magic item that has the sole purpose of replicating a spell, such as a spell scroll or lesser wand</li></ul>"
     },
     {
       "name": "Advanced Spellstoring Item",
@@ -7960,7 +7978,7 @@
     {
       "name": "Superior Magic Item",
       "prereqLevel": 13,
-      "description": "<strong>Item:</strong> varies</p><p>Choose any very rare magic item. Your infusion replicates the function of your chosen magic item."
+      "description": "<strong>Item:</strong> varies</p><p>Choose any very rare magic item. Your infusion replicates the function of your chosen magic item.</p><p>You cannot use this infusion to replicate any of the following magic items:<ul><li>Amethyst Lodestone</li><li>Amulet of the Black Skull</li><li>Bracelets of Rock Magic</li><li>Devastation Orb (any)</li><li>Dragon Vessel</li><li>Dragon-Touched Focus</li><li>Dragon's Wrath Weapon</li><li>Duskcrusher</li><li>Efreeti Bottle</li><li>Helm of Brilliance</li><li>Helm of Devil Command</li><li>Lord's Ensemble</li><li>Manual of Bodily Health</li><li>Manual of Gainful Exercise</li><li>Manual of Golems (any)</li><li>Manual of Quickness of Action</li><li>Scaled Ornament</li><li>Timepiece of Travel</li><li>Tome of Clear Thought</li><li>Tome of Leadership and Influence</li><li>Tome of Understanding</li><li>Voyager Staff</li><li>Wheel of Stars</li><li>Any magic item that has the sole purpose of replicating a spell, such as a spell scroll or lesser wand</li></ul>"
     },
     {
       "name": "Superior Spellstoring Item",

@@ -9366,7 +9366,7 @@
     "save": "str"
   },
   {
-    "name": "Haemorrhaging Rupture",
+    "name": "Hemorrhaging Rupture",
     "school": "Sangromancy",
     "level": 6,
     "castingTime": "1 action",
@@ -24925,21 +24925,6 @@
     ]
   },
   {
-    "name": "Manifest Patron",
-    "school": "Transmutation",
-    "level": 9,
-    "castingTime": "1 action",
-    "range": "Self",
-    "components": "V, S",
-    "duration": "Concentration, up to 1 round",
-    "description": [
-      "You partially transform until the end of your next turn, taking on a rough likeness of your patron.  While transformed, you may take any action, reaction, or legendary action listed on your patron's stat block, and gain its Legendary Actions."
-    ],
-    "ritual": 0,
-    "unique": "This spell is unique to each warlock.  It can be learned by any warlock who can cast 9th-level spells.",
-    "lists": []
-  },
-  {
     "name": "Night's Caress",
     "school": "Enchantment",
     "level": 3,
@@ -28666,7 +28651,7 @@
     "higherLevels": [
       "When you cast this spell using a spell slot of 7th Level or higher, the circle has 10 additional hit points for each level above 6th."
     ],
-    "lists": ["Arcane", "Divine", "Occult", "Melodic", "Invention"],
+    "lists": ["Arcane", "Divine", "Occult", "Melodic"],
     "ritual": 0
   },
   {

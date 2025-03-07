@@ -2164,8 +2164,15 @@
           },
           {
             "name": "Arcane Ascendancy",
-            "description": "You gain a 9th-level spell slot, in addition to any you already have.",
-            "granted": [{ "type": "spell-slots", "level": 9, "amount": 1 }]
+            "description": "Once per long rest, when you cast a spell of 1st level or higher, you can choose to cast it without expending a spell slot.",
+            "uses": [
+              {
+                "id": "4D690A26-090C-4380-8DFE-10FCACAC30EA",
+                "type": "fixed",
+                "amount": 1,
+                "reset": 2
+              }
+            ]
           },
           {
             "name": "Soul Reflection",

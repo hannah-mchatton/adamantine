@@ -12,7 +12,8 @@ export class SpellsComponent extends BaseComponent {
   set list(spellList: string) {
     this.spells = this.dataService.getSpellsByList(spellList);
     this.elemental = spellList === 'elemental';
-    this.showUnique = spellList === 'all';
+    this.invention = spellList === 'invention';
+    this.showUnique = spellList === 'all' || this.schools.includes(spellList);
 
     this.pageTitle = `${this.capitalize(spellList)} Spells`;
 
@@ -23,6 +24,7 @@ export class SpellsComponent extends BaseComponent {
   @Input() maxLevel: number = 10;
   @Input() cantrips: boolean = true;
   public elemental = false;
+  public invention = false;
   public showUnique = false;
   public spells: any[] = [];
 
@@ -40,7 +42,7 @@ export class SpellsComponent extends BaseComponent {
     melodic:
       'Melodic magic is the magic of bards and troubadours. It involves casting through treating the Weave almost like sheet music, the paints on a palette, or a similar such object. Users of this magic see the boundless creative potential of the Weave, and bring it to fruition with their song, dance, or other form of art.',
     invention:
-      "Invention magic is the magic of inventors. It doesn't strictly involve magic, but rather involves crafting devices that mimic the effects of other magic. For some inventors, these devices are creations of magical artifice. For others, they're creations of technology that merely appear magical to an outside observer.",
+      "Invention magic is the magic of artificers. It doesn't strictly involve magic, but rather involves crafting devices that mimic the effects of other magic. For some tinkers, these devices are creations of magical artifice. For others, they're creations of technology that merely appear magical to an outside observer.",
     occult:
       'Occult magic is the magic of atavists, pale masters, vessels, warlocks, and witches. It usually involves communing with some sort of otherworldly being, whether that be spirits, fiends, archfey, or anything else that can be found across the planes. Atavists use the same form of magic, but it is stored within their blood and does not require direct communion with the source like with the others.',
     primal:
@@ -71,6 +73,19 @@ export class SpellsComponent extends BaseComponent {
     transposition:
       'Transposition involves magic used to manipulate the location of objects or creatures. Whether this be through outright teleportation, telekinesis, or altering the speed at which a target moves, all serves to alter where it ends up. Transposers are often extremely curious spellcasters, using their magic to explore and travel the planes in search of endless knowledge. Some transposers also find work for law enforcement, imprisoning criminals in cages of teleportative or telekinetic force.',
   };
+  private schools = [
+    'abjuration',
+    'conjuration',
+    'divination',
+    'enchantment',
+    'evocation',
+    'illusion',
+    'necromancy',
+    'restoration',
+    'sangromancy',
+    'transmutation',
+    'transposition',
+  ];
   public description;
 
   constructor(dataService: DataService) {

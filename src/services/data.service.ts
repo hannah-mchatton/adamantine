@@ -329,7 +329,7 @@ export class DataService {
   }
 
   public getMulticlassingData(): any[] {
-    return classes.map((c) => {
+    return this.getClasses().map((c) => {
       return {
         name: c.name,
         scores: c.multiclassScores,
@@ -587,10 +587,12 @@ export class DataService {
 
   public getClasses(): any {
     let classData = classes;
-    classData = classData.map((c: any) => {
-      c.index = this.nameUrlEncode(c.name);
-      return c;
-    });
+    classData = classData
+      .filter((c) => c.show !== false)
+      .map((c: any) => {
+        c.index = this.nameUrlEncode(c.name);
+        return c;
+      });
 
     return classData;
   }

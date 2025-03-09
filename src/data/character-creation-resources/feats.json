@@ -2380,7 +2380,7 @@
     ],
     "type": "magic",
     "repeatable": true,
-    "description": "You have learned techniques to enhance your attacks with certain kinds of spells, gaining the following benefits:<ul><li>When you cast a spell that requires you to make an attack roll, the spell's range is doubled.</li><li>Your ranged spell attacks ignore half cover and three-quarters cover.</li><li>You learn one cantrip that requires an attack roll. Choose the cantrip from any spell list. Your spellcasting ability for the cantrip is Intelligence, Wisdom, or Charisma (your choice).",
+    "description": "You have learned techniques to enhance your attacks with certain kinds of spells, gaining the following benefits:<ul><li>Your ranged spell attacks ignore half cover and three-quarters cover.</li><li>You learn one cantrip that requires an attack roll. Choose the cantrip from any spell list. Your spellcasting ability for the cantrip is Intelligence, Wisdom, or Charisma (your choice).</li><li>When you cast a spell that requires you to make an attack roll, the spell's range is doubled.</li><li>When you cast a spell that requires you to make an attack roll, you score a critical hit on a roll of 19 or 20 on the d20.</li></ul>",
     "choices": [
       {
         "id": "D1A4DA26-F98C-47AF-9A4A-796593D09A77",

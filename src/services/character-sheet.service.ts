@@ -140,6 +140,13 @@ export class CharacterSheetService {
         'Your Intelligence (Religion) check measures your ability to recall lore about deities, rites and prayers, religious hierarchies, holy symbols, and the practices of secret cults.',
     },
     {
+      name: 'Self-Reflection',
+      score: 'cha',
+      skill: 'Insight',
+      description:
+        'Your Charisma (Insight) check - referred to as your Charisma (Self-Reflection) check - determines your ability to investigate your own thoughts, feelings, and beliefs. The DM may call for a Self-Reflection check when your character is conflicted or trying to determine what they actually want.',
+    },
+    {
       name: 'Sleight of Hand',
       score: 'dex',
       description:

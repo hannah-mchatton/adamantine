@@ -1586,7 +1586,7 @@
     "components": "V, S",
     "duration": "Concentration, up to 24 hours",
     "description": [
-      "You a summon fey spirit, which takes the form of a huge beetle that appears in unoccupied space that you can see within range. The beast is considered fey, and it disappears when it drops to 0 hit points or when the spell ends. The summoned creature is friendly to you and your companions. Roll initiative for the summoned creature, which has its own turns. It obeys any verbal commands that you issue to them (no action required by you). If you don't issue any commands, it will defend itself from hostile creatures, but otherwise take no actions. The DM has the creatures' game statistics (stats as a Mammoth but gains 30 feet fly speed).",
+      "You a summon fey spirit, which takes the form of a Titanshell Beetle that appears in unoccupied space that you can see within range. The beetle is considered fey, and it disappears when it drops to 0 hit points or when the spell ends. The summoned creature is friendly to you and your companions. Roll initiative for the summoned creature, which has its own turns. It obeys any verbal commands that you issue to them (no action required by you). If you don't issue any commands, it will defend itself from hostile creatures, but otherwise take no actions.",
       "Up to 5 creatures of medium size or smaller can mount the beetle at a time, but it only responds to commands given by you."
     ],
     "lists": ["Primal"],
@@ -7106,6 +7106,32 @@
     ]
   },
   {
+    "name": "Water Bubble",
+    "school": "Evocation",
+    "level": 0,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You conjure a bubble of water before hurling it at a target. Make a ranged spell attack against the target. On a hit, the target takes 1d8 bludgeoning damage and if it is Large or smaller must make a Strength saving throw or be knocked prone."
+    ],
+    "higherLevels": [
+      "This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
+    ],
+    "lists": ["Arcane", "Primal", "Invention"],
+    "ritual": 0,
+    "type": ["attack", "save"],
+    "save": "str",
+    "damage": [
+      {
+        "dice": 1,
+        "die": 8,
+        "type": "bludgeoning"
+      }
+    ]
+  },
+  {
     "name": "Fire Shield",
     "school": "Abjuration",
     "level": 4,
@@ -11051,54 +11077,8 @@
     "ritual": 1
   },
   {
-    "name": "Investiture of Flame",
-    "school": "Transmutation",
-    "level": 6,
-    "castingTime": "1 action",
-    "range": "Self",
-    "components": "V, S",
-    "duration": "Concentration, up to 10 minutes",
-    "description": [
-      "Flames race across your body, shedding bright light in a 30-foot radius and dim light for an additional 30 feet for the spell's duration. The flames don't harm you. Until the spell ends, you gain the following benefits:<ul><li>You are immune to fire damage and have resistance to cold damage.</li></ul><ul><li>Any creature that moves within 5 feet of you for the first time on a turn or ends its turn there takes 1d10 fire damage.</li></ul><ul><li>You can use your action to create a line of fire 15 feet long and 5 feet wide extending from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 4d8 fire damage on a failed save, or half as much damage on a successful one.</li></ul>"
-    ],
-    "lists": ["Arcane", "Occult", "Primal"],
-    "ritual": 0,
-    "type": "save",
-    "save": "dex",
-    "damage": [
-      {
-        "dice": 4,
-        "die": 8,
-        "type": "fire"
-      }
-    ]
-  },
-  {
-    "name": "Investiture of Ice",
-    "school": "Transmutation",
-    "level": 6,
-    "castingTime": "1 action",
-    "range": "Self",
-    "components": "V, S",
-    "duration": "Concentration, up to 10 minutes",
-    "description": [
-      "Until the spell ends, ice rimes your body, and you gain the following benefits:<ul><li>You are immune to cold damage and have resistance to fire damage.</li></ul><ul><li>You can move across difficult terrain created by ice or snow without spending extra movement.</li></ul><ul><li>The ground in a 10-foot radius around you is icy and is difficult terrain for creatures other than you. The radius moves with you.</li></ul><ul><li>You can use your action to create a 15-foot cone of freezing wind extending from your outstretched hand in a direction you choose. Each creature in the cone must make a Constitution saving throw. A creature takes 4d6 cold damage on a failed save, or half as much damage on a successful one. A creature that fails its save against this effect has its speed halved until the start of your next turn.</li></ul>"
-    ],
-    "lists": ["Arcane", "Occult", "Primal"],
-    "ritual": 0,
-    "type": "save",
-    "save": "con",
-    "damage": [
-      {
-        "dice": 4,
-        "die": 6,
-        "type": "cold"
-      }
-    ]
-  },
-  {
-    "name": "Investiture of Necrosis",
-    "school": "Transmutation",
+    "name": "Necrotic Infusion",
+    "school": "Necromancy",
     "level": 6,
     "castingTime": "1 action",
     "range": "Self",
@@ -11120,24 +11100,8 @@
     ]
   },
   {
-    "name": "Investiture of Stone",
-    "school": "Transmutation",
-    "level": 6,
-    "castingTime": "1 action",
-    "range": "Self",
-    "components": "V, S",
-    "duration": "Concentration, up to 10 minutes",
-    "description": [
-      "Until the spell ends, bits of rock spread across your body, and you gain the following benefits:<ul><li>You have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons.</li></ul><ul><li>You can use your action to create a small earthquake on the ground in a 15-foot radius centered on you. Other creatures on that ground must succeed on a Dexterity saving throw or be knocked prone.</li></ul><ul><li>You can move across difficult terrain made of earth or stone without spending extra movement. You can move through solid earth or stone as if it was air and without destabilizing it, but you can't end your movement there. If you do so, you are ejected to the nearest unoccupied space, this spell ends, and you are stunned until the end of your next turn.</li></ul>"
-    ],
-    "lists": ["Arcane", "Occult", "Primal"],
-    "ritual": 0,
-    "type": "save",
-    "save": "dex"
-  },
-  {
-    "name": "Investiture of Venom",
-    "school": "Transmutation",
+    "name": "Venomous Blood",
+    "school": "Sangromancy",
     "level": 6,
     "castingTime": "1 action",
     "range": "Self",
@@ -11155,29 +11119,6 @@
         "dice": 4,
         "die": 6,
         "type": "poison"
-      }
-    ]
-  },
-  {
-    "name": "Investiture of Wind",
-    "school": "Transmutation",
-    "level": 6,
-    "castingTime": "1 action",
-    "range": "Self",
-    "components": "V, S",
-    "duration": "Concentration, up to 1 minute",
-    "description": [
-      "Until the spell ends, wind whirls around you, and you gain the following benefits:<ul><li>Ranged weapon attacks made against you have disadvantage on the attack roll.</li></ul><ul><li>You gain a flying speed of 60 feet. If you are still flying when the spell ends, you fall, unless you can somehow prevent it.</li></ul><ul><li>You can use your action to create a 15-foot cube of swirling wind centered on a point you can see within 60 feet of you. Each creature in that area must make a Constitution saving throw. A creature takes 2d10 bludgeoning damage on a failed save, or half as much damage on a successful one. If a Large or smaller creature fails the save, that creature is also pushed up to 10 feet away from the center of the cube.</li></ul>"
-    ],
-    "lists": ["Arcane", "Occult", "Primal"],
-    "ritual": 0,
-    "type": "save",
-    "save": "con",
-    "damage": [
-      {
-        "dice": 2,
-        "die": 10,
-        "type": "bludgeoning"
       }
     ]
   },
@@ -12862,6 +12803,21 @@
       "If any of this spell's area overlaps with an area of light created by a spell of 5th level or lower, the spell that created the light is dispelled."
     ],
     "lists": ["Arcane", "Occult", "Melodic"],
+    "ritual": 0
+  },
+  {
+    "name": "Devour the Sun",
+    "school": "Evocation",
+    "level": 9,
+    "castingTime": "1 action",
+    "range": "Infinite",
+    "components": "V, S, M (a fang of Fenrir, worth at least 500 gp, which the spell consumes)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "Spectral jaws close around the sun, causing magical darkness to cover the current plane of existence. A creature with darkvision can't see through this darkness, and nonmagical light can't illuminate it.",
+      "Creatures on this plane have disadvantage on saving throws against being frightened for the duration."
+    ],
+    "unique": "This spell originates with the devourer of the sun, the great wolf Fenrir.",
     "ritual": 0
   },
   {
@@ -22962,7 +22918,7 @@
   },
   {
     "name": "Blood to Vitriol",
-    "school": "Transmutation",
+    "school": "Sangromancy",
     "level": 6,
     "castingTime": "1 action",
     "range": "60 feet",

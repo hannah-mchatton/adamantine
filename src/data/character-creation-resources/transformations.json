@@ -365,10 +365,10 @@
                     ]
                   },
                   {
-                    "name": "Crystal",
+                    "name": "Diamond",
                     "traits": [
                       {
-                        "name": "Crystal Dragon Legacy",
+                        "name": "Diamond Dragon Legacy",
                         "description": "Your draconic damage type is radiant.",
                         "granted": [
                           {
@@ -817,10 +817,10 @@
                     ]
                   },
                   {
-                    "name": "Crystal",
+                    "name": "Diamond",
                     "traits": [
                       {
-                        "name": "Crystal Elemental Mastery",
+                        "name": "Diamond Elemental Mastery",
                         "description": "Your draconic damage type is radiant.",
                         "granted": [
                           {

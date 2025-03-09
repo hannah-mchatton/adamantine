@@ -2892,7 +2892,7 @@
                             "Red": "fire",
                             "White": "cold",
                             "Amethyst": "force",
-                            "Crystal": "radiant",
+                            "Diamond": "radiant",
                             "Emerald": "psychic",
                             "Moonstone": "radiant",
                             "Obsidian": "fire",
@@ -3177,7 +3177,7 @@
         ]
       },
       {
-        "name": "Crystal",
+        "name": "Diamond",
         "description": "<em>Gem subrace</em>",
         "asis": [],
         "traits": [

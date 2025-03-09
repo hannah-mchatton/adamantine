@@ -443,7 +443,7 @@ export class BuilderChoiceComponent implements OnInit {
               if (o.name.includes('Gem')) {
                 return [
                   'Amethyst',
-                  'Crystal',
+                  'Diamond',
                   'Emerald',
                   'Moonstone',
                   'Obsidian',

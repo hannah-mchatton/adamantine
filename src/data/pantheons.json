@@ -40,7 +40,14 @@
         "alignment": "NE",
         "symbol": "A black cobra",
         "portfolio": "Darkness",
-        "domains": ["Apocalypse", "Death", "Eldritch", "Madness", "Shadow"]
+        "domains": [
+          "Apocalypse",
+          "Death",
+          "Eldritch",
+          "Madness",
+          "Shadow",
+          "Draconic"
+        ]
       },
       {
         "name": "Lady of Pain",
@@ -80,7 +87,8 @@
           "Life",
           "Order",
           "Pain",
-          "Sorrow"
+          "Sorrow",
+          "Draconic"
         ]
       },
       {
@@ -126,7 +134,7 @@
           "Apocalypse",
           "Inquisition",
           "Judgement",
-          "Metallic",
+          "Draconic",
           "Order",
           "Protection",
           "Strength",
@@ -384,7 +392,7 @@
         "alignment": "LE",
         "symbol": "A gnome skull",
         "portfolio": "Kobolds, Trapmaking",
-        "domains": ["Sky", "War", "Mountain"]
+        "domains": ["Sky", "War", "Mountain", "Draconic"]
       },
       {
         "name": "Lathander",
@@ -565,11 +573,11 @@
       },
       {
         "name": "Semuanya",
-        "gender": "Male",
+        "gender": "Genderfluid",
         "alignment": "N",
         "symbol": "Egg",
         "portfolio": "Lizardfolk, Survival",
-        "domains": ["Life", "Protection", "Strength"]
+        "domains": ["Life", "Protection", "Strength", "Draconic"]
       },
       {
         "name": "Shar",
@@ -609,7 +617,7 @@
         "alignment": "CE",
         "symbol": "Coiling snake",
         "portfolio": "Snakes, Yuan-ti",
-        "domains": ["Trickery"]
+        "domains": ["Trickery", "Draconic"]
       },
       {
         "name": "Ssendam",
@@ -679,7 +687,8 @@
           "Protection",
           "Steel",
           "Strength",
-          "War"
+          "War",
+          "Draconic"
         ]
       },
       {
@@ -687,8 +696,8 @@
         "gender": "Female",
         "alignment": "CE",
         "symbol": "Kraken",
-        "portfolio": "Sea",
-        "domains": ["Apocalypse", "Nature", "Tempest", "Sea"]
+        "portfolio": "Krakens, Sea",
+        "domains": ["Apocalypse", "Nature", "Tempest", "Sea", "Draconic"]
       },
       {
         "name": "Valkur",
@@ -756,8 +765,8 @@
         "gender": "Female",
         "alignment": "N",
         "symbol": "Green disk",
-        "portfolio": "Nature",
-        "domains": ["Nature", "Plague"]
+        "portfolio": "Nature, Oerth",
+        "domains": ["Nature", "Plague", "Mountain"]
       },
       {
         "name": "Berei",
@@ -994,7 +1003,6 @@
           "Arcana",
           "Death",
           "Knowledge",
-
           "Shadow",
           "Trickery",
           "Story"
@@ -1153,7 +1161,8 @@
           "Protection",
           "Steel",
           "War",
-          "Wealth"
+          "Wealth",
+          "Draconic"
         ]
       },
       {
@@ -1219,7 +1228,7 @@
         "alignment": "LE",
         "symbol": "Black crescent",
         "portfolio": "Hatred, Night",
-        "domains": ["Death", "Madness", "Shadow", "War"]
+        "domains": ["Death", "Madness", "Shadow", "War", "Draconic"]
       },
       {
         "name": "Zeboim",
@@ -1227,7 +1236,7 @@
         "alignment": "CE",
         "symbol": "Turtle shell",
         "portfolio": "Storms",
-        "domains": ["Apocalypse", "Sky", "Tempest", "Sea"]
+        "domains": ["Apocalypse", "Sky", "Tempest", "Sea", "Draconic"]
       },
       {
         "name": "Zivilyn",
@@ -1312,7 +1321,15 @@
         "alignment": "N",
         "symbol": "A globe",
         "portfolio": "Creation",
-        "domains": ["Forge", "Nature", "Protection", "Sea", "Mountain", "Arts"]
+        "domains": [
+          "Forge",
+          "Nature",
+          "Protection",
+          "Sea",
+          "Mountain",
+          "Arts",
+          "Draconic"
+        ]
       },
       {
         "name": "Fury",
@@ -1336,7 +1353,7 @@
         "alignment": "NE",
         "symbol": "Twisted dragon horns",
         "portfolio": "Delusion",
-        "domains": ["Madness", "Trickery"]
+        "domains": ["Madness", "Trickery", "Draconic"]
       },
       {
         "name": "Kol Korran",
@@ -1384,7 +1401,7 @@
         "alignment": "NG",
         "symbol": "A stone ring",
         "portfolio": "Heavens",
-        "domains": ["Eldritch", "Light", "Twilight"]
+        "domains": ["Eldritch", "Light", "Twilight", "Draconic"]
       },
       {
         "name": "Silver Flame",
@@ -1429,7 +1446,7 @@
         "alignment": "N",
         "symbol": "An iridescent sphere",
         "portfolio": "Creation",
-        "domains": ["Knowledge", "Sea", "Mountain", "Arts"]
+        "domains": ["Knowledge", "Sea", "Mountain", "Arts", "Draconic"]
       },
       {
         "name": "Ashardalon",
@@ -1437,7 +1454,7 @@
         "alignment": "CG",
         "symbol": "A heart-shaped star",
         "portfolio": "Light, Solar Dragons, Travel",
-        "domains": ["Eldritch", "Light", "Travel", "Flame"]
+        "domains": ["Eldritch", "Light", "Travel", "Flame", "Draconic"]
       },
       {
         "name": "Bahamut",
@@ -1445,7 +1462,7 @@
         "alignment": "LG",
         "symbol": "A dragon's head in profile",
         "portfolio": "Good, Metallic Dragons",
-        "domains": ["Metallic", "Steel", "War"]
+        "domains": ["Draconic", "Steel", "War"]
       },
       {
         "name": "Garyx",
@@ -1453,7 +1470,7 @@
         "alignment": "CE",
         "symbol": "A burning dragon's claw",
         "portfolio": "Destruction, Fire, Red Dragons",
-        "domains": ["Apocalypse", "Flame"]
+        "domains": ["Apocalypse", "Flame", "Draconic"]
       },
       {
         "name": "Kereska",
@@ -1461,7 +1478,7 @@
         "alignment": "CN",
         "symbol": "A five-pointed star with the lower two points extended",
         "portfolio": "Magic",
-        "domains": ["Arcana"]
+        "domains": ["Arcana", "Draconic"]
       },
       {
         "name": "Lendys",
@@ -1469,7 +1486,7 @@
         "alignment": "LN",
         "symbol": "A golden sword and a sun",
         "portfolio": "Law",
-        "domains": ["Inquisition", "Judgement", "Metallic", "Order", "Flame"]
+        "domains": ["Inquisition", "Judgement", "Draconic", "Order", "Flame"]
       },
       {
         "name": "Nathair",
@@ -1477,7 +1494,14 @@
         "alignment": "CN",
         "symbol": "An apple pie",
         "portfolio": "Faerie Dragons, Mischief",
-        "domains": ["Beauty", "Hope", "Trickery", "Twilight", "Story"]
+        "domains": [
+          "Beauty",
+          "Hope",
+          "Trickery",
+          "Twilight",
+          "Story",
+          "Draconic"
+        ]
       },
       {
         "name": "Null",
@@ -1485,7 +1509,7 @@
         "alignment": "NE",
         "symbol": "The skull of a dragon",
         "portfolio": "Death, Dracoliches, Shadow Dragons",
-        "domains": ["Death", "Grave", "Shadow", "Plague"]
+        "domains": ["Death", "Grave", "Shadow", "Plague", "Draconic"]
       },
       {
         "name": "Raulothim",
@@ -1493,7 +1517,7 @@
         "alignment": "LN",
         "symbol": "An eye-shaped emerald",
         "portfolio": "Contemplation, Emerald Dragons, Sight",
-        "domains": ["Knowledge", "Light", "Story"]
+        "domains": ["Knowledge", "Light", "Story", "Draconic"]
       },
       {
         "name": "Rime",
@@ -1501,7 +1525,7 @@
         "alignment": "CN",
         "symbol": "A frozen manacle",
         "portfolio": "Pain, Suspicion, White Dragons",
-        "domains": ["Judgement", "Pain", "Sorrow", "Winter"]
+        "domains": ["Judgement", "Pain", "Sorrow", "Winter", "Draconic"]
       },
       {
         "name": "Sardior",
@@ -1509,7 +1533,7 @@
         "alignment": "CN",
         "symbol": "A star-shaped ruby",
         "portfolio": "Gem Dragons, Psionics",
-        "domains": ["Eldritch", "Luck"]
+        "domains": ["Eldritch", "Luck", "Draconic"]
       },
       {
         "name": "Tamara",
@@ -1517,7 +1541,7 @@
         "alignment": "NG",
         "symbol": "A white starburst on black",
         "portfolio": "Life, Mercy",
-        "domains": ["Hope", "Life", "Metallic", "Peace", "Hearth", "Plague"]
+        "domains": ["Hope", "Life", "Draconic", "Peace", "Hearth", "Plague"]
       },
       {
         "name": "Task",
@@ -1525,7 +1549,15 @@
         "alignment": "LE",
         "symbol": "A pile of five coins, each coin stamped with a dragon's head in profile",
         "portfolio": "Greed, Wealth",
-        "domains": ["Beauty", "Forge", "Luck", "Travel", "Mountain", "Wealth"]
+        "domains": [
+          "Beauty",
+          "Forge",
+          "Luck",
+          "Travel",
+          "Mountain",
+          "Wealth",
+          "Draconic"
+        ]
       },
       {
         "name": "Tiamat",
@@ -1533,7 +1565,7 @@
         "alignment": "LE",
         "symbol": "The heads of all five species of chromatic dragons",
         "portfolio": "Chromatic Dragons, Evil, Wyverns",
-        "domains": ["Apocalypse", "Trickery"]
+        "domains": ["Apocalypse", "Trickery", "Draconic"]
       }
     ]
   },
@@ -2289,7 +2321,14 @@
         "alignment": "NE",
         "symbol": "Flaming snake",
         "portfolio": "Evil, Fire, Snakes",
-        "domains": ["Apocalypse", "Eldritch", "Madness", "Trickery", "Flame"]
+        "domains": [
+          "Apocalypse",
+          "Eldritch",
+          "Madness",
+          "Trickery",
+          "Flame",
+          "Draconic"
+        ]
       },
       {
         "name": "Bastet",
@@ -2393,7 +2432,14 @@
         "alignment": "CE",
         "symbol": "Cobra",
         "portfolio": "Darkness, Storms",
-        "domains": ["Death", "Shadow", "Tempest", "Trickery", "Flame"]
+        "domains": [
+          "Death",
+          "Shadow",
+          "Tempest",
+          "Trickery",
+          "Flame",
+          "Draconic"
+        ]
       },
       {
         "name": "Sobek",
@@ -2401,7 +2447,7 @@
         "alignment": "LE",
         "symbol": "Crocodile head",
         "portfolio": "Crocodiles, Water",
-        "domains": ["Nature", "Strength", "Tempest", "War", "Sea"]
+        "domains": ["Nature", "Strength", "Tempest", "War", "Sea", "Draconic"]
       },
       {
         "name": "Taweret",
@@ -2697,7 +2743,7 @@
         "alignment": "CE",
         "symbol": "Hurricane",
         "portfolio": "Destruction",
-        "domains": ["Apocalypse", "Tempest", "Sea", "Flame"]
+        "domains": ["Apocalypse", "Tempest", "Sea", "Flame", "Draconic"]
       },
       {
         "name": "Zeus",

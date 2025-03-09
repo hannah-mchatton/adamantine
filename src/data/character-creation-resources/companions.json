@@ -5201,11 +5201,11 @@
     }
   },
   {
-    "key": "dragon-knight-crystal",
+    "key": "dragon-knight-diamond",
     "stats": {
       "0": {
         "any": {
-          "name": "Crystal Dragon Companion",
+          "name": "Diamond Dragon Companion",
           "size": "Medium",
           "type": { "dragon": { "trueDragon": { "gem": {} } } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],

@@ -1,18 +1,33 @@
 <h3>{{ class.name }}</h3>
 
 <ul id="tabList" class="nav nav-tabs" role="tablist">
-    <li class="nav-item" role="presentation">
-        <button class="nav-link" [ngClass]="{'active': 'class' === tabName}" (click)="changeRoute('class')">Class</button>
-    </li>
-    <li class="nav-item" role="presentation">
-        <button class="nav-link" [ngClass]="{'active': 'subclasses' === tabName}" (click)="changeRoute('subclasses')">Subclasses</button>
-    </li>
-    <li *ngFor="let tab of class.extraTabs" class="nav-item" role="presentation">
-        <button class="nav-link" [ngClass]="{'active': nameUrlEncode(tab.key) === tabName}"
-            (click)="changeRoute(tab.key)">
-            {{ tab.name }}
-        </button>
-    </li>
+  <li class="nav-item" role="presentation">
+    <button
+      class="nav-link"
+      [ngClass]="{ active: 'class' === tabName }"
+      (click)="changeRoute('class')"
+    >
+      Class
+    </button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button
+      class="nav-link"
+      [ngClass]="{ active: 'subclasses' === tabName }"
+      (click)="changeRoute('subclasses')"
+    >
+      {{ class.subclassName }}
+    </button>
+  </li>
+  <li *ngFor="let tab of class.extraTabs" class="nav-item" role="presentation">
+    <button
+      class="nav-link"
+      [ngClass]="{ active: nameUrlEncode(tab.key) === tabName }"
+      (click)="changeRoute(tab.key)"
+    >
+      {{ tab.name }}
+    </button>
+  </li>
 </ul>
 
 <router-outlet></router-outlet>

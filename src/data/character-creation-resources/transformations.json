@@ -1981,7 +1981,7 @@
     "abilityScore": "Intelligence",
     "scoreAmount": 16,
     "prereq": {
-      "mechanical": "You must have the ability to cast 7th-level spells.",
+      "mechanical": "You must have the ability to cast 7th-level spells or gain help from a sufficiently powerful magical being.",
       "roleplay": "You must complete the Ritual of Dread. The process of this ritual is partially described, but left intentionally vague so it can be tailored to your setting and campaign. Discuss with your GM how you can achieve this in-game."
     },
     "milestones": [

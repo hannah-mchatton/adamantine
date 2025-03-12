@@ -341,6 +341,7 @@ export class DataService {
         name: c.name,
         scores: c.multiclassScores,
         special: c.multiclassSpecial,
+        spellcastingLevel: c.spellcastingLevel ?? 0,
 
         armor: c.proficiencies.multiclassArmor,
         weapons: c.proficiencies.multiclassWeapons,

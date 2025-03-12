@@ -15,6 +15,19 @@
     <tr *ngFor="let c of multiclassingData">
       <td>
         {{ c.name }}
+
+        <sup *ngIf="c.spellcastingLevel == 1 || c.name == 'Mystic'">
+          <span class="mdi mdi-magic-staff"></span>
+        </sup>
+        <sup
+          *ngIf="
+            c.spellcastingLevel == 2 ||
+            c.name == 'Artificer' ||
+            c.name == 'Monk'
+          "
+        >
+          <span class="mdi mdi-auto-fix"></span>
+        </sup>
       </td>
       <td [innerHTML]="getRequirementsString(c.scores, c.special)"></td>
       <td>
@@ -50,3 +63,43 @@
     </tr>
   </tbody>
 </nz-table>
+
+<h5>Spellcaster Level</h5>
+<div>
+  <p>
+    Some features and magic items require you to be a certain level of
+    spellcaster. To determine your total spellcaster level, you can use the
+    following formula:
+  </p>
+  <p>
+    <strong>Total Spellcaster Level</strong> = the number of levels you have in
+    full-caster classes + half the number of levels you have in half-caster
+    classes (rounded down) + one-third the number of levels you ahve in
+    third-caster subclasses (rounded down)
+  </p>
+  <p>
+    Classes marked with a <span class="mdi mdi-magic-staff"></span> above are
+    considered full-casters, and classes marked with a
+    <span class="mdi mdi-auto-fix"></span> are considered half-casters. The
+    following subclasses are considered third-casters:
+  </p>
+  <ul>
+    <li>Path of the Battle Mage - <em>Barbarian</em></li>
+    <li>Order of the Profane Soul - <em>Blood Hunter</em></li>
+    <li>Righteous Fist - <em>Brawler</em></li>
+    <li>Embodiment of the Arbiter - <em>Demi-Dragon</em></li>
+    <li>Elemental Practice - <em>Dragon Knight</em></li>
+    <li>Eldritch Knight - <em>Fighter</em></li>
+    <li>Psi Warrior - <em>Fighter</em></li>
+    <li>Witch Knight - <em>Fighter</em></li>
+    <li>Spy Teaching - <em>Gunslinger</em></li>
+    <li>Shepherd Ideal - <em>Juggernaut</em></li>
+    <li>Warden Creed - <em>Nomad</em></li>
+    <li>Arcane Trickster - <em>Rogue</em></li>
+    <li>Divine Agent - <em>Rogue</em></li>
+    <li>Ninja - <em>Rogue</em></li>
+    <li>Soulknife - <em>Rogue</em></li>
+    <li>Occultist Discipline - <em>Savant</em></li>
+    <li>Academy of Skalds - <em>Warlord</em></li>
+  </ul>
+</div>

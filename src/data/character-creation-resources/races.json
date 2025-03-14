@@ -13531,6 +13531,172 @@
     "name": "Plasmoid"
   },
   {
+    "description": "Mimics are strange, amorphous creatures that can take on the appearance of a variety of objects their size. Most mimics are little more than ravenous beasts, but occasionally a mimic is born with a higher degree of intelligence. These special mimics usually just use their heightened intelligence to help their hunt, but a special few find a love for adventuring and take up a new life traveling the world.",
+    "asis": [{ "con": 1 }, { "wis": 1 }],
+    "maturity": 1,
+    "lifespan": 500,
+    "height": [3, 5],
+    "weight": [150, 200],
+    "category": "Uncommon",
+    "type": "Ooze (mimic)",
+    "size": {
+      "id": "037F5B15-BE3A-4B1B-AB00-2C380EB2ECCE",
+      "type": "text",
+      "options": ["Small", "Medium"],
+      "grants": "size"
+    },
+    "speed": 25,
+    "darkvision": 60,
+    "languages": [
+      "Common",
+      { "id": "FC78A721-CBEF-44B1-BED8-26B425881199", "type": "language" }
+    ],
+    "traits": [
+      {
+        "name": "Amorphous",
+        "description": "While in your true form, you can squeeze through a space as narrow as 1 inch wide, provided you are wearing and carrying nothing. You also have advantage on ability checks you make to initiate or escape a grapple."
+      },
+      {
+        "name": "Bite",
+        "description": "In any form, you can choose for a part of your body to become a maw lined with razor-sharp teeth. These teeth are a natural weapon you can use to make unarmed strikes, and you deal piercing damage equal to 1d6 + your Strength modifier on a hit.</p><p>Additionally, you can use your teeth to grapple one creature of your size or smaller. A creature grappled in this way takes 1d4 piercing damage at the start of each of your turns."
+      },
+      {
+        "name": "Natural Resilience",
+        "description": "You have resistance to acid and poison damage, and you have advantage on saving throws against being poisoned.",
+        "granted": [
+          { "type": "damage-resistance", "options": ["Acid", "Poison"] },
+          { "type": "condition-advantage", "options": ["Poisoned"] }
+        ]
+      },
+      {
+        "name": "Object Mimicry",
+        "description": "As an action, you can shapeshift into an object of your size that you have seen before, or you can shapeshift back into your true, amorphous form. While you are in object form and you remain motionless, you are indistinguishable from the object you are mimicing. The specific kind of object that you can shapeshift into is determined by your subrace."
+      },
+      {
+        "name": "Pseudopod",
+        "description": "As a bonus action, you can extrude a pseudopod that is up to 6 inches wide and 10 feet long or reabsorb it into your body. You can use this pseudopod to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour out the contents of a container. The pseudopod can't attack, activate magic items, or carry more than 10 pounds."
+      },
+      {
+        "name": "Sticky Slime",
+        "description": "When you become grappled, you can use your reaction to secrete a sticky, mucus-like substance from your body that adheres your grappler to you. For the next minute, the grapple cannot be broken by either creature.</p><p>Additionally, you have advantage on Strength (Athletics) checks made to maintain a grapple."
+      }
+    ],
+    "subraces": [
+      {
+        "name": "Bottle",
+        "description": "Some mimics can shapeshift into bottles, jugs, carafes, or tankards. When they become adventurers, these mimics usually take an interest in alchemy and brewing.",
+        "asis": [{ "wis": 1 }],
+        "traits": [
+          {
+            "name": "Alchemical Savant",
+            "description": "You have proficiency with alchemist's supplies and brewer's supplies.",
+            "granted": [
+              {
+                "type": "tool",
+                "options": ["Alchemist's Supplies", "Brewer's Supplies"],
+                "level": 1
+              }
+            ]
+          },
+          {
+            "name": "Tip Over",
+            "description": "While you are in bottle form, you can use an action to tip over and pour liquid out of yourself. If you are ever knocked prone, you must also use your reaction to use this action. Roll a d4. On a roll of 6, you pour a liquid of the DM's choice that is useful in the current situation. On any other roll, you pour a random liquid.</p><p>Once you roll a 4, you can't use this feature again until you finish a long rest.",
+            "uses": [
+              {
+                "id": "5286EEE6-CABD-4543-9DEA-F7420380E09B",
+                "type": "fixed",
+                "amount": 1,
+                "reset": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chest",
+        "description": "The most common form a mimic takes is that of a chest, trunk, wardrobe, crate, or other large container.",
+        "asis": [{ "con": 1 }],
+        "traits": [
+          {
+            "name": "Devour",
+            "description": "As an action, you can make a bite attack against a creature of a smaller size than yourself that you are grappling in an attempt to swallow it whole. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside of you, and it takes 2d4 acid damage at the start of each of your turns. You can have only one target swallowed at a time. Your armor class when targeted by an attack made by a creature that is swallowed is 10.</p><p>If you become incapacitated the swallowed creature is no longer restrained and can escape using 5 feet of movement, exiting prone. Otherwise the creature can attempt to escape by using it's action as if attempting to escape a grapple. As an action, you can regurgitate a swallowed creature into an adjacent unoccupied space.</p><p>Once you use this trait, you can't use it again until you finish a long rest.",
+            "uses": {
+              "id": "EE47EF22-1477-40DD-B1DB-F9A64820191F",
+              "type": "fixed",
+              "amount": 1,
+              "reset": 2
+            },
+            "actions": [
+              {
+                "id": "EE47EF22-1477-40DD-B1DB-F9A64820191F",
+                "hasUses": true,
+                "type": "a",
+                "name": "Devour",
+                "description": "You make a bite attack against a creature of a smaller size than yourself that you are grappling in an attempt to swallow it whole. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside of you, and it takes 2d4 acid damage at the start of each of your turns. You can have only one target swallowed at a time. Your armor class when targeted by an attack made by a creature that is swallowed is 10.</p><p>If you become incapacitated the swallowed creature is no longer restrained and can escape using 5 feet of movement, exiting prone. Otherwise the creature can attempt to escape by using it's action as if attempting to escape a grapple. As an action, you can regurgitate a swallowed creature into an adjacent unoccupied space."
+              }
+            ]
+          },
+          {
+            "name": "Store the Hoard",
+            "description": "You can store metallic items in your gut for safe keeping. The space in your gut is equivalent to that of a large burlap sack. "
+          },
+          {
+            "name": "Extradimensional Gullet",
+            "description": "While you are in chest form, you can store items in your extradimensional gullet. The space in your gullet is equivalent to that of a standard chest.</p><p>Additionally, you can allow a creature to use an action to reach into you and try to find an object in your gullet. Roll a d6. On a roll of 6, the creature withdraws an item of the DM's choice that is useful in the current situation. On any other roll, it pulls out a random trinket.</p><p>Once you roll a 6, you can't use this feature again until you finish a long rest.",
+            "uses": [
+              {
+                "id": "01F94A07-EC24-43A2-9B31-ECA9DE923169",
+                "type": "fixed",
+                "amount": 1,
+                "reset": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Creature",
+        "description": "This rare and feared breed of mimic can take on the form of other creatures, rather than objects. This added shape makes them nearly impossible to distinguish until they strike.",
+        "asis": [{ "dex": 1 }],
+        "traits": [
+          {
+            "name": "Creature Shape",
+            "description": "Instead of transforming into an object, when you use your Object Mimicry trait, you transform your appearance and voice into a creature your size that you have seen before. You can make yourself appear as a member of another race, though none of your game statistics change."
+          },
+          {
+            "name": "Masterful Mimicry",
+            "description": "You have advantage on Charisma (Deception) and Charisma (Performance) checks when trying to pass yourself off as a creature you are shapeshifted into."
+          }
+        ]
+      },
+      {
+        "name": "Document",
+        "description": "Certain mimics can shapeshift into books, maps, or other paper objects. These mimics tend to be more intelligent than others, and some wizards even use them as living spellbooks.",
+        "asis": [{ "int": 1 }],
+        "traits": [
+          {
+            "name": "Life Path",
+            "description": "While you are in document form, you can cause a map to appear on your surface showing the path you have traveled in the past ten days. The path shows terrain features and landmarks of where you have been, but doesn't show the names of those places.</p><p>Additionally, you cannot become lost except by magical means."
+          },
+          {
+            "name": "Living Spellbook",
+            "description": "When you transform into your document form for the first time after completing a long rest, you can choose a cantrip from the Arcane spell list. Until the end of your next long rest, you can cast that cantrip while you are in your document form. Intelligence is your spellcasting ability for it.",
+            "choices": [
+              {
+                "id": "BB21848F-DD85-4E76-81E2-F93C719C0C51",
+                "type": "spell",
+                "list": "arcane",
+                "level": 0,
+                "ability": "int"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "name": "Mimic"
+  },
+  {
     "description": "Within rocky coves and coastal inlets, praedaren build their dens. Atop the blood-soaked docks these creatures call home, carcasses of great sea monsters are hoisted by net and harpoon, and the stench of iron and salt permeates the air. Longshoremen work tirelessly to load and unload their vessels, harvest the remains of slain beasts, and repair or dismantle ships that have been salvaged or captured by competing fleets.<br><br>These lands are barren and bleak, and largely inhospitable. As a result, the praedaren repurpose much of that they scavenge into their infrastructure. In this wooden, rusting bricolage, one might find any number of foreign ships repurposed for a home, archways carved from monstrous jawbones, or tattered sails strung up for some protection against the elements.",
     "asis": [{ "str": 2 }],
     "maturity": 18,

@@ -1473,6 +1473,25 @@
         "domains": ["Apocalypse", "Flame", "Draconic"]
       },
       {
+        "name": "Great Maw",
+        "gender": "Agender",
+        "alignment": "CE",
+        "symbol": "Shadowy dragon fangs spread wide",
+        "portfolio": "Hunger",
+        "domains": [
+          "Apocalypse",
+          "Death",
+          "Draconic",
+          "Eldritch",
+          "Grave",
+          "Madness",
+          "Shadow",
+          "Strength",
+          "War",
+          "Wealth"
+        ]
+      },
+      {
         "name": "Kereska",
         "gender": "Female",
         "alignment": "CN",

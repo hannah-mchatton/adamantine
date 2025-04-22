@@ -3034,16 +3034,34 @@
         "gender": "Male",
         "alignment": "NG",
         "symbol": "Gold coin",
-        "portfolio": "Air",
-        "domains": ["Nature", "Sky", "Tempest", "Travel"]
+        "portfolio": "Air, Fishing, Trade",
+        "domains": [
+          "Knowledge",
+          "Hearth",
+          "Nature",
+          "Sea",
+          "Sky",
+          "Tempest",
+          "Travel",
+          "Wealth"
+        ]
       },
       {
-        "name": "Odur",
+        "name": "Odr",
         "gender": "Male",
-        "alignment": "CG",
-        "symbol": "Sun",
-        "portfolio": "Light, Sun",
-        "domains": ["Light", "Flame"]
+        "alignment": "CN",
+        "symbol": "Red eye",
+        "portfolio": "Vengeance",
+        "domains": [
+          "Death",
+          "Judgement",
+          "Pain",
+          "Steel",
+          "Strength",
+          "Sorrow",
+          "Tempest",
+          "War"
+        ]
       },
       {
         "name": "Sif",
@@ -3055,11 +3073,34 @@
       },
       {
         "name": "Skadi",
-        "gender": "Male",
+        "gender": "Female",
         "alignment": "N",
         "symbol": "Mountain",
-        "portfolio": "Earth, Mountains",
-        "domains": ["Nature", "Protection", "Mountain"]
+        "portfolio": "Earth, Hunting, Mountains",
+        "domains": [
+          "Nature",
+          "Protection",
+          "Mountain",
+          "War",
+          "Strength",
+          "Travel"
+        ]
+      },
+      {
+        "name": "Sol",
+        "gender": "Female",
+        "alignment": "CG",
+        "symbol": "Flaming chariot",
+        "portfolio": "Sun",
+        "domains": [
+          "Beauty",
+          "Flame",
+          "Hearth",
+          "Hope",
+          "Light",
+          "Time",
+          "Travel"
+        ]
       },
       {
         "name": "Surtr",
@@ -3092,14 +3133,6 @@
         "symbol": "Sword",
         "portfolio": "Courage, Strategy",
         "domains": ["Knowledge", "Protection", "Steel", "Strength", "War"]
-      },
-      {
-        "name": "Uller",
-        "gender": "Male",
-        "alignment": "CN",
-        "symbol": "Longbow",
-        "portfolio": "Hunting",
-        "domains": ["Nature", "Travel"]
       }
     ]
   },

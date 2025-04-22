@@ -3453,6 +3453,58 @@
       ]
     },
     {
+      "name": "Divine Right",
+      "description": "You can cast Command once without using a spell slot. You can't do so again until you finish a long rest. ",
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Crown"
+      },
+      "granted": [
+        {
+          "type": "spell",
+          "options": ["Command"],
+          "ability": "B85FFA8F-7EE5-4B27-9789-05477333032E"
+        }
+      ],
+      "uses": [
+        {
+          "id": "25B18312-9257-48CD-808B-35F5204E9ED0",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 2
+        }
+      ]
+    },
+    {
+      "name": "Orders of the King",
+      "prereqLevel": 5,
+      "description": "As a bonus action, you can issue a command to a creature that can hear you within 120 feet. The target is not forced to obey, but if it does, it gains a bonus to the next roll it makes that directly involves your command equal to your spellcasting ability modifier.",
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Crown"
+      }
+    },
+    {
+      "name": "Heavy is the Crown",
+      "prereqLevel": 9,
+      "description": "As an action, you can force creatures of your choice within 30 feet of you to make a Charisma saving throw against your spell save DC. On a failed save, a creature is forced to kneel before you, being considered prone while it is kneeling.</p><p>Whenever a kneeling creature tries to stand, as long as it can see you, it must repeat the saving throw before attempting to do so. On a success, this effect ends on that creature.</p><p>You can use this feature once, and must finish a short or long rest before you can do so again.",
+      "prereq": {
+        "type": "choice",
+        "id": "36D01919-30D1-48AA-866B-EFCD084D8E0F",
+        "value": "Pact of the Crown"
+      },
+      "uses": [
+        {
+          "id": "3B43AF37-D7EB-424A-9D4E-158BD23EC41A",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 1
+        }
+      ]
+    },
+    {
       "name": "Iron Grip",
       "description": " While you have your claws manifested, you gain a climbing speed equal to your movement speed, and you can climb difficult surfaces, including scaling walls and upside down on ceilings, without needing to make an ability check.",
       "granted": [
@@ -4632,6 +4684,22 @@
             ]
           },
           {
+            "name": "Pact of the Crown",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your Patron has bestowed upon you a crown that fits your head alone and sheds an aura of charismatic dominance. While you wear the crown, creatures treat you as a noble, and you add double your proficiency bonus to Intimidation, Persuasion, and Society checks.",
+                "granted": [
+                  {
+                    "type": "skill",
+                    "options": ["Intimidation", "Persuasion", "Society"],
+                    "level": 2
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "name": "Pact of the Flesh",
             "traits": [
               {
@@ -4844,6 +4912,22 @@
                     "ignoreMaxLevel": true,
                     "ability": "B85FFA8F-7EE5-4B27-9789-05477333032E",
                     "ritualsOnly": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Crown",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your Patron has bestowed upon you a crown that fits your head alone and sheds an aura of charismatic dominance. While you wear the crown, creatures treat you as a noble, and you add double your proficiency bonus to Intimidation, Persuasion, and Society checks.",
+                "granted": [
+                  {
+                    "type": "skill",
+                    "options": ["Intimidation", "Persuasion", "Society"],
+                    "level": 2
                   }
                 ]
               }
@@ -5068,6 +5152,22 @@
             ]
           },
           {
+            "name": "Pact of the Crown",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your Patron has bestowed upon you a crown that fits your head alone and sheds an aura of charismatic dominance. While you wear the crown, creatures treat you as a noble, and you add double your proficiency bonus to Intimidation, Persuasion, and Society checks.",
+                "granted": [
+                  {
+                    "type": "skill",
+                    "options": ["Intimidation", "Persuasion", "Society"],
+                    "level": 2
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "name": "Pact of the Flesh",
             "traits": [
               {
@@ -5280,6 +5380,22 @@
                     "ignoreMaxLevel": true,
                     "ability": "B85FFA8F-7EE5-4B27-9789-05477333032E",
                     "ritualsOnly": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pact of the Crown",
+            "traits": [
+              {
+                "name": "",
+                "description": "Your Patron has bestowed upon you a crown that fits your head alone and sheds an aura of charismatic dominance. While you wear the crown, creatures treat you as a noble, and you add double your proficiency bonus to Intimidation, Persuasion, and Society checks.",
+                "granted": [
+                  {
+                    "type": "skill",
+                    "options": ["Intimidation", "Persuasion", "Society"],
+                    "level": 2
                   }
                 ]
               }

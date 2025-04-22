@@ -192,6 +192,49 @@
         ]
       },
       {
+        "name": "Gallus",
+        "description": "Gallus aarakocra are a varied folk, resembling various wildfowl such as pheasants, grouse, quail, ducks, turkeys, or chickens. They have dozens of variations of feathers, colors, and patterns, even closely related gallus rarely resemble one another. Gallus live comparatively simple lives to other aarakocra, preferring to keep close to the ground and work the land.",
+        "asis": [{ "wis": 1 }],
+        "traits": [
+          {
+            "name": "Tools of the Common Folk",
+            "description": "You have proficiency with one of the following tools of your choice: Angler's Tools, Brewer's Supplies, Carpenter's Tools, Cobbler's Tools, Cook's Utensils, Gardener's Tools, Mason's Tools, or Weaver's Tools.",
+            "choices": [
+              {
+                "id": "9D572F2C-DF73-45FB-AEC7-5F01C3E17C47",
+                "type": "tool",
+                "limits": [
+                  "Angler's Tools",
+                  "Brewer's Supplies",
+                  "Carpenter's Tools",
+                  "Cobbler's Tools",
+                  "Cook's Utensils",
+                  "Gardener's Tools",
+                  "Mason's Tools",
+                  "Weaver's Tools"
+                ],
+                "level": 1
+              }
+            ]
+          },
+          {
+            "name": "One With the Land",
+            "description": "You can communicate with plants. When you are speaking Druidic, you can communicate with plants as if you were under the effects of a Speak with Plants spell.</p><p>Additionally, you gain proficiency in Nature and you can speak, read, and write Druidic.",
+            "granted": [
+              {
+                "type": "skill",
+                "options": ["Nature"],
+                "level": 1
+              },
+              {
+                "type": "language",
+                "options": ["Druidic"]
+              }
+            ]
+          }
+        ]
+      },
+      {
         "name": "Pingui",
         "description": "Nomadic folk of the far north, the Pingui lead simple lives of fishing and sailing.  Having lost much of their race's need for flight due to the lack of predators, they rarely fly and prefer to swim, which they are exceptionally good at.  They are an isolationist society that prefers to keep to themselves, but is not openly hostile towards strangers.</p><p>Pingui are more rotund than other aarakocra, possessing feathers of black and white and thick layers of blubber to keep them warm in the biting arctic cold.  They are sometimes confused for the Dohwar, a similar race of penguin-like people that inhabit the Astral Sea.",
         "asis": [{ "wis": 1 }],
@@ -452,6 +495,11 @@
         "description": "The great prison of Carceri is not a place one would wish to live in often, but this breed of aasimar have not only survived living as constant wardens; they have flourished. As the foremost level of security, chainwrights are often charged with capture and containment, and they have gotten very good at it over the aeons.",
         "asis": [{ "wis": 1 }],
         "traits": [
+          {
+            "name": "Lawbound",
+            "description": "If playing in a campaign that uses the Honor score, your Honor score increases by 2.",
+            "granted": [{ "type": "asi", "score": "hon", "amount": 2 }]
+          },
           {
             "name": "Arcane Resilience",
             "description": "You have resistance to force damage and you know the Eidolic Chains cantrip.  Charisma is your spellcasting ability for it.",
@@ -798,6 +846,11 @@
         "asis": [{ "str": 1 }],
         "traits": [
           {
+            "name": "Divine Champion",
+            "description": "If playing in a campaign that uses the Honor score, your Honor score increases by 2.",
+            "granted": [{ "type": "asi", "score": "hon", "amount": 2 }]
+          },
+          {
             "name": "Quick Step",
             "description": "Your walking speed increases to 35 feet and you know the Sword Burst cantrip.  Charisma is your spellcasting ability for it.",
             "granted": [
@@ -1037,6 +1090,99 @@
       }
     ],
     "name": "Aetherborn"
+  },
+  {
+    "description": "The disembodied are born of a magical mishap that trapped them between worlds. Some are created when their silver cord is cut while traveling the Astral Plane, others are born when their spirits fall to the Home Song in Wildspace, and some originate from horrible teleportation mishaps. They hold a tenuous grasp on the Material Plane, and seek to regain more connection.",
+    "asis": [
+      { "int": 2 },
+      {
+        "dex": 1
+      }
+    ],
+    "height": [5, 6],
+    "weight": [80, 100],
+    "category": "Artificial",
+    "type": "Humanoid",
+    "size": {
+      "id": "CAD7646F-803E-4F73-8E91-5EBDC0C3CE7F",
+      "type": "text",
+      "options": ["Small", "Medium", "Large"],
+      "grants": "size"
+    },
+    "speed": 30,
+    "darkvision": 60,
+    "lifespan": -1,
+    "languages": [
+      "Common",
+      "Deep Speech",
+      { "id": "CBE8536D-2B26-4E29-BF3D-D5CB3D3C0981", "type": "language" }
+    ],
+    "traits": [
+      {
+        "name": "Arcane Origin",
+        "description": "You have proficiency in the Arcana skill.",
+        "granted": [
+          {
+            "type": "skill",
+            "options": ["Arcana"],
+            "level": 1
+          }
+        ]
+      },
+      {
+        "name": "Fade Away",
+        "description": "As an action on your turn, you can fade from the Material Plane and disappear into the Astral. While you remain faded away, you cannot interact with the Material Plane, and effects on the Material Plant cannot interact with you. You can move and hear as normal, and see everything in shades of gray.</p><p>This effect lasts for 1 minute, or until you use a bonus action to end it. When this effect ends, you reappear on the Material Plane in the closest unoccupied space to where you entered the Astral.</p><p>Once you use this feature, you can't do so again until you finish a long rest.",
+        "uses": [
+          {
+            "id": "28EBAD32-40FE-4D21-B110-991040C9AD1C",
+            "type": "fixed",
+            "amount": 1,
+            "reset": 2
+          }
+        ]
+      },
+      {
+        "name": "Planar Outcast",
+        "description": "You can cast Feather Fall at will, targeting only yourself. Starting at 3rd level, you can cast the Blur spell with this trait, without requiring a material component. Starting at 5th level, you can also cast the Blink spell with this trait, without requiring a material component. Once you cast blur or blink with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.</p><p>Intelligence is your spellcasting ability for these spells when you cast them with this trait.",
+        "granted": [
+          {
+            "type": "spell",
+            "options": ["Feather Fall"],
+            "atWill": true,
+            "ability": "cha"
+          },
+          {
+            "type": "spell",
+            "options": ["Blur"],
+            "prereq": 3,
+            "ability": "int"
+          },
+          {
+            "type": "spell",
+            "options": ["Blink"],
+            "prereq": 5,
+            "ability": "int"
+          }
+        ],
+        "uses": [
+          {
+            "id": "8029ADE8-ED6B-4A5B-A012-7F7AC090A0AB",
+            "type": "fixed",
+            "amount": 1,
+            "prereq": 3,
+            "reset": 2
+          },
+          {
+            "id": "27E3D4B9-DB6B-4A08-9EA4-94DD6F980493",
+            "type": "fixed",
+            "amount": 1,
+            "prereq": 5,
+            "reset": 2
+          }
+        ]
+      }
+    ],
+    "name": "Disembodied"
   },
   {
     "description": "Arachnen resemble elf-like humanoids with the bodies of various arachnids where one would expect their legs to be.  Most are at home in the Underdark or in dry, hot envrionments such as deserts or savannahs.  Shunned at large by most peoples, arachnen have been outcasts for so long that it is difficult for them to accept kindness from anyone.</p><p>Though they are devilish, most arachnen resist the influence of Baator, and eek out what lives they can, far away from other civilization.",
@@ -1287,6 +1433,11 @@
     "languages": ["Common", "Entognatha"],
     "traits": [
       {
+        "name": "Court Culture",
+        "description": "If playing in a campaign that uses the Honor score, your Honor score increases by 2.",
+        "granted": [{ "type": "asi", "score": "hon", "amount": 2 }]
+      },
+      {
         "name": "Antaennae Reception",
         "description": "You are aware of the presence of telepathic creatures within 30 feet of you can hear any telepathy within 5 feet of you."
       },
@@ -1485,7 +1636,8 @@
       },
       {
         "name": "Fierce Loyalty",
-        "description": " When a creature you can see attacks a friendly creature within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll.</p><p>If the attack misses, you can choose to force the attacker to make a Wisdom saving throw (DC = 8 + your Charisma modifier + your proficiency bonus) or become frightened of you until the end of its next turn.</p><p>You can force this saving throw a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.",
+        "description": " When a creature you can see attacks a friendly creature within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll.</p><p>If the attack misses, you can choose to force the attacker to make a Wisdom saving throw (DC = 8 + your Charisma modifier + your proficiency bonus) or become frightened of you until the end of its next turn.</p><p>You can force this saving throw a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.</p><p>Additionally, if playing in a campaign that uses the Honor score, your Honor score increases by 2.",
+        "granted": [{ "type": "asi", "score": "hon", "amount": 2 }],
         "uses": {
           "id": "9D03185E-09C8-4556-996D-0F60AF7BB982",
           "type": "derived",
@@ -1556,7 +1708,7 @@
       },
       {
         "name": "Surprise Attack",
-        "description": "If you surprise a creature and hit it with an attack on your first turn in combat, the attack deals an extra 2d6 damage to it."
+        "description": "If you damage a creature that has not yet taken a turn in combat, you deal additional damage equal to your proficiency bonus."
       }
     ],
     "name": "Bugbear"
@@ -1708,6 +1860,11 @@
             "level": 1
           }
         ]
+      },
+      {
+        "name": "Beetle's Code",
+        "description": "If playing in a campaign that uses the Honor score, your Honor score increases by 2.",
+        "granted": [{ "type": "asi", "score": "hon", "amount": 2 }]
       }
     ],
     "name": "Daolagiath"
@@ -3428,6 +3585,11 @@
             ]
           },
           {
+            "name": "Militaristic Mind",
+            "description": "If playing in a campaign that uses the Honor score, your Honor score increases by 2.",
+            "granted": [{ "type": "asi", "score": "hon", "amount": 2 }]
+          },
+          {
             "name": "Tactical Fighter",
             "description": "You can use this trait to take the Help action as a bonus action, and you can do so a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest.",
             "uses": {
@@ -3555,6 +3717,11 @@
             ]
           },
           {
+            "name": "Noble Warrior",
+            "description": "If playing in a campaign that uses the Honor score, your Honor score increases by 2.",
+            "granted": [{ "type": "asi", "score": "hon", "amount": 2 }]
+          },
+          {
             "name": "Seawyrm",
             "description": "You can breathe water as well as air, and have a swimming speed equal to your walking speed.",
             "granted": [{ "type": "speed", "speed": "swim", "amount": -1 }]
@@ -3671,6 +3838,11 @@
                 }
               }
             ]
+          },
+          {
+            "name": "Bahamut's Influence",
+            "description": "If playing in a campaign that uses the Honor score, your Honor score increases by 2.",
+            "granted": [{ "type": "asi", "score": "hon", "amount": 2 }]
           },
           {
             "name": "Blessed Knowledge",
@@ -3836,8 +4008,9 @@
           },
           {
             "name": "Noble Knight",
-            "description": "You have advantage on saving throws against being charmed, dominated, or frightened.",
+            "description": "You have advantage on saving throws against being charmed, dominated, or frightened.</p><p>Additionally, if playing in a campaign that uses the Honor score, your Honor score increases by 2.",
             "granted": [
+              { "type": "asi", "score": "hon", "amount": 2 },
               {
                 "type": "condition-advantage",
                 "options": ["Charmed", "Dominated", "Frightened"]
@@ -5280,6 +5453,11 @@
         "description": "You are considered a small creature for the purposes of mounting."
       },
       {
+        "name": "Dwarvish Honor",
+        "description": "If playing in a campaign that uses the Honor score, your Honor score increases by 2.",
+        "granted": [{ "type": "asi", "score": "hon", "amount": 2 }]
+      },
+      {
         "name": "Stonecunning",
         "description": "As a bonus action, you can gain tremorsense with a range of 60 feet for 10 minutes. You must be on a stone surface or touching such a surface to use this tremorsense. The stone can be natural or worked.  You can use this trait a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.",
         "uses": {
@@ -6250,6 +6428,102 @@
     "name": "Pudding"
   },
   {
+    "description": "Ever a joy to children, geppettin resemble living playthings made of wood, cloth, or porcelain. Though easily mistaken for puppets, geppettin aren't manipulated by a just-out-of-sight puppeteer; they are animated, sentient, and independent.",
+    "asis": [{ "dex": 2 }],
+    "maturity": 12,
+    "lifespan": 100,
+    "height": [1, 2],
+    "weight": [5, 10],
+    "category": "Fey",
+    "type": "Construct Fey",
+    "size": -2,
+    "speed": 25,
+    "darkvision": 60,
+    "languages": [
+      "Common",
+      "Sylvan",
+      { "id": "840015FE-781E-4035-A80E-B81F88D95564", "type": "language" }
+    ],
+    "traits": [
+      {
+        "name": "Tiny",
+        "description": "Gepettins are among the smallest of peoples.  Due to your size, you are unable to use weapons with the Heavy, Massive, Two-Handed, or Versatile properties, and all other weapons require two hands to wield."
+      },
+      {
+        "name": "Artificial Nature",
+        "description": "You are immune to poison damage, you can't be diseased or poisoned, and you have advantage on saving throws against being paralyzed. You don't require air, food, drink, or sleep, but must rest motionless in order to regain abilities that may require a short or long rest.",
+        "granted": [
+          { "type": "damage-immunity", "options": ["Poison"] },
+          { "type": "condition-immunity", "options": ["Disease", "Poisoned"] },
+          {
+            "type": "condition-advantage",
+            "options": ["Paralyzed"]
+          }
+        ]
+      },
+      {
+        "name": "Sentry's Rest",
+        "description": "When you take a long rest, you spend at least 6 hours in an inactive, motionless state, instead of sleeping. In this state, you appear inert, but you aren't unconscious."
+      },
+      {
+        "name": "True Life",
+        "description": "If the Mending spell is cast on you, you can expend a Hit Die, roll it, and regain a number of hit points equal to the roll plus your Constitution modifier (minimum of 1 hit point). In addition, your strange nature allows you to benefit from common spells that preserve life but that normally don't affect Constructs: Cure Wounds, Healing Word, and Spare the Dying."
+      },
+      {
+        "name": "False Appearance",
+        "description": "When you remain motionless, you are indistinguishable from a normal doll, marionette, or plushie."
+      },
+      {
+        "name": "Handcrafted Quality",
+        "description": "Your design might be unnerving, articulated, or friendly. You have proficiency in the Intimidation, Performance, or Persuasion skill.",
+        "choices": [
+          {
+            "id": "A8DBB378-799C-4D95-B8AE-292623BCEA45",
+            "type": "skill",
+            "limits": ["Intimidation", "Performance", "Persuasion"],
+            "level": 1
+          }
+        ]
+      }
+    ],
+    "subraces": [
+      {
+        "name": "Bisque",
+        "description": "Bisque geppettin are a form of porcelain doll, crafted with exacting specification and luxurious clothing materials. Though they are designed to look as realistic as possible, they are often the most terrifying geppettin due to their lifeless visages.",
+        "asis": [{ "int": 1 }],
+        "traits": [
+          {
+            "name": "Surprise Attack",
+            "description": "If you damage a creature that has not yet taken a turn in combat, you deal additional damage equal to your proficiency bonus."
+          }
+        ]
+      },
+      {
+        "name": "Marionette",
+        "description": "Marionette geppettin are made mostly out of wood, with painted faces and carved clothing. Due to their construction, their jointed limbs are quite flexible, and they are known to be fantastic dancers.",
+        "asis": [{ "wis": 1 }],
+        "traits": [
+          {
+            "name": "Long-Limbed",
+            "description": "When you make a melee attack on your turn, your reach for it is 5 feet greater than normal."
+          }
+        ]
+      },
+      {
+        "name": "Plushie",
+        "description": "Plushies, also called raggedies, are any form of stuffed or soft geppettin. Though they often look humanoid, they may also look like animals, monsters, or any other anthropomorphic creature.",
+        "asis": [{ "cha": 1 }],
+        "traits": [
+          {
+            "name": "Fluffy Innards",
+            "description": "When you take bludgeoning, piercing, or slashing damage, you can use your reaction to reduce the damage by an amount equal to your proficiency bonus and be moved 5 feet away from the source of the damage. You can't take this reaction if you can't be moved."
+          }
+        ]
+      }
+    ],
+    "name": "Geppettin"
+  },
+  {
     "description": "The forest understory — one day a serene landscape, the next, a battle-struck wasteland of leaf litter and fallen heroes. The unassuming wealdkin are responsible. They are tiny warmongering spirits, but don't let their meager height fool you. Wealdkin hold only one virtue true, that being their love of freedom. If you encroach on their personal autonomy or their sovereign territory, you best pray to your deity of choice for mercy, because the wealdkin certainly won't show you any.",
     "asis": [{ "dex": 2 }],
     "maturity": 5,
@@ -6351,6 +6625,17 @@
         ]
       },
       {
+        "name": "Quillback",
+        "description": "Quillback wealdkin, or hedgehogfolk, are a curious people blessed with incredible speed. They are particularly fond of gold, and tallfolk traveling through quillback communities have to make sure to keep their valuables carefully, lest they find them swiped.",
+        "asis": [{ "wis": 1 }],
+        "traits": [
+          {
+            "name": "Speedy Scurry",
+            "description": "You can use your Scurry trait as a bonus action."
+          }
+        ]
+      },
+      {
         "name": "Redtail",
         "description": "Cunning and slightly amoral Wealdkin by nature, foxfolk rarely settle down in large clans. They are much more comfortable traveling from band to band of Wealdkin, hawking wares and collecting gossip. They are well renowned for spreading said gossip as well, oftentimes leaving a path of destruction as old feuds are reignited in their wake.",
         "asis": [{ "cha": 1 }],
@@ -6379,17 +6664,6 @@
         ]
       },
       {
-        "name": "Squeaktooth",
-        "description": "Squeaktooth wealdkin, also known as ratfolk, have a keen intellect and a strategic mind. All ratfolk are taught how to wield a blade, even those that choose to dabble in wizardry. They have a knack for making and executing plans.</p><p>Unlike most wealdkin, ratfolk prefer to make their homes in urban environments, most commonly found living in makeshift settlements in sewers or alleyways.",
-        "asis": [{ "str": 1 }],
-        "traits": [
-          {
-            "name": "Mini Gladiator",
-            "description": "You can wield weapons that have the Light property without any penalties from being Tiny."
-          }
-        ]
-      },
-      {
         "name": "Softpaw",
         "description": "Softpaw wealdkin, also known as mousefolk, are exceptionally nimble and brave for their size. Mousefolk also possess an innate connection to the natural world around them, allowing them to speak with other beasts of the forest floor.",
         "asis": [{ "wis": 1 }],
@@ -6404,6 +6678,17 @@
           {
             "name": "Speak With Small Beasts",
             "description": "You can communicate simple ideas with Small or smaller beasts."
+          }
+        ]
+      },
+      {
+        "name": "Squeaktooth",
+        "description": "Squeaktooth wealdkin, also known as ratfolk, have a keen intellect and a strategic mind. All ratfolk are taught how to wield a blade, even those that choose to dabble in wizardry. They have a knack for making and executing plans.</p><p>Unlike most wealdkin, ratfolk prefer to make their homes in urban environments, most commonly found living in makeshift settlements in sewers or alleyways.",
+        "asis": [{ "str": 1 }],
+        "traits": [
+          {
+            "name": "Mini Gladiator",
+            "description": "You can wield weapons that have the Light property without any penalties from being Tiny."
           }
         ]
       },
@@ -6585,6 +6870,11 @@
       {
         "name": "Diminutive Titan",
         "description": "You are considered a Large creature for the purposes of determining your carrying capacity and the weight you can push, drag, and lift."
+      },
+      {
+        "name": "Ordning",
+        "description": "If playing in a campaign that uses the Honor score, your Honor score increases by 2.",
+        "granted": [{ "type": "asi", "score": "hon", "amount": 2 }]
       }
     ],
     "subraces": [
@@ -8914,12 +9204,32 @@
       },
       {
         "name": "Court Culture",
-        "description": "You have proficiency in the Society skill.",
+        "description": "You have proficiency in the Society skill.</p><p>Additionally, if playing in a campaign that uses the Honor score, your Honor score increases by 2.",
         "granted": [
+          { "type": "asi", "score": "hon", "amount": 2 },
           {
             "type": "skill",
             "options": ["Society"],
             "level": 1
+          }
+        ]
+      },
+      {
+        "name": "Saving Face",
+        "description": "Bullywugs are careful not to show weakness in front of their allies, for fear of losing status. If you miss with an attack roll or fail an ability check or a saving throw, you can gain a bonus to the roll equal to the number of allies you can see within 30 feet of you (maximum bonus of +3). You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses you finish a long rest.",
+        "uses": {
+          "id": "24541615-0A71-4867-812D-A3502767DBCC",
+          "type": "derived",
+          "source": "proficiency",
+          "reset": 2
+        },
+        "actions": [
+          {
+            "id": "24541615-0A71-4867-812D-A3502767DBCC",
+            "type": "o",
+            "hasUses": true,
+            "name": "Saving Face",
+            "description": "If you miss with an attack roll or fail an ability check or a saving throw, you can gain a bonus to the roll equal to the number of allies you can see within 30 feet of you (maximum bonus of +3)."
           }
         ]
       },
@@ -9102,6 +9412,11 @@
           { "type": "damage-resistance", "options": ["Poison"] },
           { "type": "condition-advantage", "options": ["Poisoned"] }
         ]
+      },
+      {
+        "name": "Dwarven Honor",
+        "description": "If playing in a campaign that uses the Honor score, your Honor score increases by 2.",
+        "granted": [{ "type": "asi", "score": "hon", "amount": 2 }]
       },
       {
         "name": "Tool Proficiency",
@@ -10150,6 +10465,11 @@
         "granted": [
           { "type": "condition-advantage", "options": ["Charmed", "Dominated"] }
         ]
+      },
+      {
+        "name": "Militaristic Mind",
+        "description": "If playing in a campaign that uses the Honor score, your Honor score increases by 2.",
+        "granted": [{ "type": "asi", "score": "hon", "amount": 2 }]
       },
       {
         "name": "Saving Face",
@@ -11401,6 +11721,11 @@
         }
       },
       {
+        "name": "Lion's Pride",
+        "description": "If playing in a campaign that uses the Honor score, your Honor score increases by 2.",
+        "granted": [{ "type": "asi", "score": "hon", "amount": 2 }]
+      },
+      {
         "name": "Daunting Roar",
         "description": "As a bonus action, you can let out an especially menacing roar. Creatures of your choice within 10 feet of you that can hear you must succeed on a Wisdom saving throw or become frightened of you until the end of your next turn. The DC of the save equals 8 + your proficiency bonus + your Constitution modifier. You can use this trait a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.",
         "uses": {
@@ -11910,14 +12235,14 @@
     "name": "Lizardfolk"
   },
   {
-    "description": "These resilient and proud fish-folk have endured war, slavery, and mistreatment at the hands of other aquatic creatures. They dwell in submerged tribal communities along seacoasts, and hunt both above and below the water.",
+    "description": "These resilient and proud fish-folk have endured war, slavery, and mistreatment at the hands of other aquatic creatures. They dwell in submerged tribal communities along seacoasts, and hunt both above and below the water. Many inhabit the Underdark of Faerun.",
     "asis": [{ "str": 2 }, { "dex": 1 }],
     "maturity": 10,
     "lifespan": 80,
     "height": [5, 6],
     "weight": [120, 180],
     "category": "Aquatic",
-    "type": "Humanoid (locathah)",
+    "type": "Humanoid (kuo-toa)",
     "size": 0,
     "speed": 30,
     "darkvision": 0,
@@ -11962,7 +12287,7 @@
         ]
       }
     ],
-    "name": "Locathah"
+    "name": "Kuo-Toa"
   },
   {
     "description": "Loxodons are often oasis of calm. They hum or chant in sonorous tones and move slowly or sit in perfect stillness. As they say, &quot;There are three things all wise men fear: the sea in storm, a night with no moon, and the anger of a gentle man.&quot;",
@@ -15066,8 +15391,9 @@
           },
           {
             "name": "Natural Cavalry",
-            "description": "You have proficiency in the Athletics skill.  In addition, you are always considered mounted for the purposes of using weapons with the Cavalry property.",
+            "description": "You have proficiency in the Athletics skill.  In addition, you are always considered mounted for the purposes of using weapons with the Cavalry property.</p><p>Additionally, if playing in a campaign that uses the Honor score, your Honor score increases by 2.",
             "granted": [
+              { "type": "asi", "score": "hon", "amount": 2 },
               { "type": "skill", "options": ["Athletics"], "level": 1 }
             ]
           }
@@ -17141,6 +17467,11 @@
         "name": "Integrated Protection",
         "description": "Your body has built-in defensive layers, which can be enhanced with armor.<ul>    <li>You gain a +1 bonus to Armor Class.</li><li>You can don only armor with which you have proficiency. To don armor, you must incorporate it into your body over the course of 1 hour, during which you must remain in contact with the armor. To doff armor, you must spend 1 hour removing it. You can rest while donning or doffing armor in this way.</li><li>While you live, your armor can't be removed from your body against your will.</li></ul>",
         "granted": [{ "type": "armor-bonus", "amount": 1 }]
+      },
+      {
+        "name": "Axiomatic Mind",
+        "description": "If playing in a campaign that uses the Honor score, your Honor score increases by 2.",
+        "granted": [{ "type": "asi", "score": "hon", "amount": 2 }]
       }
     ],
     "subraces": [

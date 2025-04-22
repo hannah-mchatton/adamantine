@@ -584,13 +584,13 @@ export class CharacterSheetService {
       }
     });
 
-    skillProfs = skillProfs.map((prof: SkillProf) => {
+    skillProfs = skillProfs.map((prof: SkillProf, index: number) => {
       if (prof.level === 1.5) {
-        if (
-          skillProfs.find(
-            (p: SkillProf) => p.value === prof.value && p.level >= 1
-          )
-        ) {
+        const otherIndex = skillProfs.findIndex(
+          (p: SkillProf) => p.value === prof.value && p.level >= 1
+        );
+
+        if (otherIndex !== -1 && otherIndex !== index) {
           prof.level = 2;
         } else {
           prof.level = 1;

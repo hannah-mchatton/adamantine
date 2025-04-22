@@ -711,7 +711,6 @@ export class CharacterSheetComponent extends BaseComponent implements OnInit {
       delete featureObj[i];
     }
 
-    console.log(featureObj);
     return featureObj;
   }
   public levelKeys(object: any): string[] {

@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 
 interface GenericDictionary {
   [value: string]: string;
@@ -22,6 +23,9 @@ export class DisplayFeatureComponent implements OnInit {
   @Input() displayHeader: boolean = true;
 
   public alwaysAvailable;
+  public description;
+
+  constructor(private sanitizer: DomSanitizer) {}
 
   public ngOnInit(): void {
     if (this.feature.subclassSpellsFeature) {
@@ -33,6 +37,10 @@ export class DisplayFeatureComponent implements OnInit {
           "These spells don't count against your number of spells known.";
       }
     }
+
+    this.description = this.sanitizer.bypassSecurityTrustHtml(
+      this.feature.description
+    );
   }
 
   public isArray(array: any): boolean {

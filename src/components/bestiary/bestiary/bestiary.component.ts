@@ -272,7 +272,6 @@ export class BestiaryComponent extends BaseComponent implements OnInit {
               return !!destination;
             })
           );
-          console.log(temp);
         }
 
         this.monsters = temp

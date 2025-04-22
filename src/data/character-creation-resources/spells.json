@@ -1747,6 +1747,7 @@
   },
   {
     "name": "Bestow Curse",
+    "curse": true,
     "school": "Necromancy",
     "level": 3,
     "castingTime": "1 action",
@@ -4622,6 +4623,7 @@
   },
   {
     "name": "Cursed With Undeath",
+    "curse": true,
     "school": "Necromancy",
     "level": 1,
     "castingTime": "1 bonus action",
@@ -6713,6 +6715,7 @@
   },
   {
     "name": "Exoscleroma",
+    "curse": true,
     "school": "Necromancy",
     "level": 5,
     "castingTime": "1 action",
@@ -6765,6 +6768,7 @@
   },
   {
     "name": "Eyebite",
+    "curse": true,
     "school": "Enchantment",
     "level": 6,
     "castingTime": "1 action",
@@ -7272,6 +7276,123 @@
     ]
   },
   {
+    "name": "Faultline",
+    "school": "Transmutation",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "Self (60 foot line)",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You strike the ground, splitting open a 30-foot long, 5-foot wide, 20-foot deep fissure in it extending from you.",
+      "Each Large or smaller creature in the fissure's area must make a Dexterity saving throw. On a failure, the creature falls into the fissure. On a success, the creature moves to the nearest unoccupied space outside the fissure's area."
+    ],
+    "lists": ["Arcane", "Primal", "Invention", "Elemental"],
+    "element": "Earth",
+    "ritual": 0,
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 2,
+        "die": 6,
+        "type": "bludgeoning"
+      }
+    ]
+  },
+  {
+    "name": "Aftershock",
+    "school": "Transposition",
+    "level": 3,
+    "castingTime": "1 reaction, which you take when a creature within range is knocked prone",
+    "range": "30 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "The target's impact echoes as a second shock slams it further into the ground. The target must make a Constitution saving throw. On a failure, the creature takes 3d8 bludgeoning damage and is dazed until the end of its next turn."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd."
+    ],
+    "lists": ["Primal", "Invention", "Divine", "Psionic", "Elemental"],
+    "element": "Earth",
+    "ritual": 0,
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 3,
+        "die": 8,
+        "type": "bludgeoning"
+      }
+    ],
+    "upcastDice": 1
+  },
+  {
+    "name": "Siegestone",
+    "school": "Transposition",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You plunge a hand into a surface made of nonmagical earth or stone, tearing forth a slab and flinging it at a target within range. The target must make a Dexterity saving throw. On a failed save, the target takes 7d8 bludgeoning damage and is knocked prone. On a success, the target takes half as much damage."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 2d8 for each slot level above 3rd."
+    ],
+    "lists": ["Primal", "Invention", "Psionic", "Elemental"],
+    "element": "Earth",
+    "ritual": 0,
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 7,
+        "die": 8,
+        "type": "bludgeoning"
+      }
+    ],
+    "upcastDice": 2
+  },
+  {
+    "name": "Black Blood of the Earth",
+    "school": "Transmutation",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "60 feet (15-foot radius)",
+    "components": "V, M (an ancient tooth)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "A pool of bubbling tar wells up from the earth in a 15-foot radius circle within range, making the area difficult terrain for the duration.",
+      "Each creature that enters the area for the first time on a turn or that starts its turn there must make a Strength saving throw. On a failed save, the creature takes 6d6 fire damage and is restrained until the beginning of its next turn while in the area, taking half as much damage on a success. The escape DC is equal to your spell save DC.",
+      "The tar is considered an object for the purposes of spells and abilities that set objects alight. If any part is set alight, the entire area of tar is set alight, and it continues to burn while the spell persists. The fire cannot be put out through use of water. While it is burning, it deals an additional 3d6 fire damage."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 5th level or higher, the radius increases by 5 feet for each slot level above 4th."
+    ],
+    "lists": ["Primal", "Elemental", "Invention"],
+    "element": "Earth",
+    "ritual": 0,
+    "type": "save",
+    "save": "str",
+    "damage": [
+      {
+        "dice": 6,
+        "die": 6,
+        "type": "fire"
+      }
+    ],
+    "upcastRange": {
+      "5": "60 feet (20-foot radius)",
+      "6": "60 feet (25-foot radius)",
+      "7": "60 feet (30-foot radius)",
+      "8": "60 feet (35-foot radius)",
+      "9": "60 feet (40-foot radius)"
+    }
+  },
+  {
     "name": "Fissure",
     "school": "Transmutation",
     "level": 5,
@@ -7292,6 +7413,29 @@
         "dice": 6,
         "die": 10,
         "type": "bludgeoning"
+      }
+    ]
+  },
+  {
+    "name": "Scour",
+    "school": "Evocation",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "Self (30-foot line)",
+    "components": "V, M (a vial of fine sand)",
+    "duration": "Instantaneous",
+    "description": [
+      "A tearing, sand-filled wind whips forth from you in a 30-foot long, 5-foot wide line, forcing each creature in the area to make a Constitution saving throw. On a failed save, a creature takes 10d6 slashing damage, is pushed up to 10 feet away and is blinded until the end of your next turn. On a success, a creature takes half as much damage."
+    ],
+    "lists": ["Primal", "Invention"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 10,
+        "die": 6,
+        "type": "slashing"
       }
     ]
   },
@@ -8716,7 +8860,8 @@
       "You can further refine the trigger so the spell activates only under certain circumstances or according to physical characteristics (such as height or weight), creature kind (for example, the ward could be set to affect aberrations or drow), or alignment. You can also set conditions for creatures that don't trigger the glyph, such as those who say a certain password.",
       "When you inscribe the glyph, choose explosive runes or a spell glyph.",
       "<strong><em>Explosive Runes.</em></strong> When triggered, the glyph erupts with magical energy in a 20-foot-radius sphere centered on the glyph. The sphere spreads around corners. Each creature in the area must make a Dexterity saving throw. A creature takes 5d8 acid, cold, fire, lightning, or thunder damage on a failed saving throw (your choice when you create the glyph), or half as much damage on a successful one.",
-      "<strong><em>Spell Glyph.</em></strong> You can store a prepared spell of 3rd level or lower in the glyph by casting it as part of creating the glyph. The spell must target a single creature or an area. The spell being stored has no immediate effect when cast in this way. When the glyph is triggered, the stored spell is cast. If the spell has a target, it targets the creature that triggered the glyph. If the spell affects an area, the area is centered on that creature. If the spell summons hostile creatures or creates harmful objects or traps, they appear as close as possible to the intruder and attack it. If the spell requires concentration, it lasts until the end of its full duration."
+      "<strong><em>Spell Glyph.</em></strong> You can store a prepared spell of 3rd level or lower in the glyph by casting it as part of creating the glyph. The spell must target a single creature or an area. The spell being stored has no immediate effect when cast in this way. When the glyph is triggered, the stored spell is cast. If the spell has a target, it targets the creature that triggered the glyph. If the spell affects an area, the area is centered on that creature. If the spell summons hostile creatures or creates harmful objects or traps, they appear as close as possible to the intruder and attack it. If the spell requires concentration, it lasts until the end of its full duration.",
+      "You can have a number of glyphs equal to your proficiency bonus at any one time. If you try to create a new glyph while you are at your limit, the oldest existing glyph is rendered inert."
     ],
     "higherLevels": [
       "When you cast this spell using a spell slot of 4th level or higher, the damage of an explosive runes glyph increases by 1d8 for each slot level above 3rd. If you create a spell glyph, you can store any spell of up to the same level as the slot you use for the glyph of warding."
@@ -8752,6 +8897,124 @@
     "healing": [
       {
         "amount": 1
+      }
+    ]
+  },
+  {
+    "name": "Crush of Aeons",
+    "school": "Transmutation",
+    "level": 6,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You clasp a fist toward a creature you can see within range, calling the weight of endless stone to bear down upon it from all sides. The target must make a Constitution saving throw. On a failure, the target takes 5d10 bludgeoning damage plus 5d6 fire damage and the target's size is decreased by one category until cured by Greater Restoration or similar magic. On a success, the target takes half as much damage."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 7th level or higher, the bludgeoning damage increases by 1d10 and the fire damage increases by 1d6 for each slot level above 6th."
+    ],
+    "lists": ["Primal", "Arcane"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 5,
+        "die": 10,
+        "type": "bludgeoning"
+      },
+      {
+        "dice": 5,
+        "die": 6,
+        "type": "fire"
+      }
+    ],
+    "upcastDice": 1
+  },
+  {
+    "name": "Churnstone Roil",
+    "school": "Transmutation",
+    "level": 7,
+    "castingTime": "1 action",
+    "range": "Self (60-foot cone)",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "Stone and soil churn in a great deafening wave, rising forth from you in a 60-foot cone. The area becomes difficult terrain. Each creature in the area must make a Strength saving throw. On a failure, a creature takes 10d8 bludgeoning damage and is knocked prone, taking half as much damage on a success.",
+      "Caves, fissures, and simple structures in the area collapse; creatures trapped within are restrained. The escape DC is equal to your spell save DC."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 8th level or higher, the damage increases by 3d8 for each slot level above 7th."
+    ],
+    "lists": ["Primal"],
+    "ritual": 0,
+    "type": "save",
+    "save": "str",
+    "damage": [
+      {
+        "dice": 10,
+        "die": 8,
+        "type": "bludgeoning"
+      }
+    ],
+    "upcastDice": 3
+  },
+  {
+    "name": "Contintental Crush",
+    "school": "Transposition",
+    "level": 7,
+    "castingTime": "1 action",
+    "range": "300 feet (20-foot radius)",
+    "components": "V, S, M (a strip of hammered lead)",
+    "duration": "Concentration, up to 10 minutes",
+    "description": [
+      "You levitate a 20-foot radius clump of rock and soil within 300 feet, wrenching it from the earth and up to 60 feet into the air. At the beginning of each of your turns, you can move the clump up to 60 feet. Each creature standing on the clump when it moves, or whose space the clump enters, is knocked prone.",
+      "When the spell ends, the clump falls; each creature on it and each creature in a 20-foot radius cylinder beneath it must make a Dexterity saving throw. On a failure, a creature takes 8d8 bludgeoning damage is buried alive, becoming restrained if it does not have a Burrow speed. The escape DC is equal to your spell save DC. On a success, a creature takes half as much damage, is knocked prone, and is shoved to the nearest unoccupied space outside of the cylinder."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 8th level or higher, the radius of the clump increases by 5 feet for each slot level above 7th."
+    ],
+    "lists": ["Primal", "Arcane", "Psionic", "Melodic"],
+    "ritual": 0,
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 8,
+        "die": 8,
+        "type": "bludgeoning"
+      }
+    ],
+    "upcastRange": {
+      "8": "300 feet (25-foot radius)",
+      "9": "300 feet (30-foot radius)"
+    }
+  },
+  {
+    "name": "Torment of Stone",
+    "curse": true,
+    "school": "Transmutation",
+    "level": 9,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V",
+    "duration": "Concentration, up to 10 minutes",
+    "description": [
+      "Each creature of your choice that you can see within range must succeed on a Charisma saving throw or be cursed.",
+      "At the start of each of its turns, a cursed creature must make a Constitution saving throw. On a failure, the creature takes 2d10 psychic damage and its speed is reduced by 5 feet until this curse ends. This reduction to a creature's speed can stack.",
+      "A creature that has its speed reduced to 10 feet or lower in this way is blinded and choking, as liquid stone wells up from its mouth, nose, and eyes.",
+      "A creature that has its speed reduced to 0 in this way is petrified."
+    ],
+    "lists": ["Primal", "Occult"],
+    "ritual": 0,
+    "type": "save",
+    "save": "cha",
+    "damage": [
+      {
+        "dice": 2,
+        "die": 10,
+        "type": "psychic"
       }
     ]
   },
@@ -9496,6 +9759,7 @@
   },
   {
     "name": "Hallowing Curse",
+    "curse": true,
     "school": "Necromancy",
     "level": 4,
     "castingTime": "1 action",
@@ -9971,6 +10235,7 @@
   },
   {
     "name": "Hex",
+    "curse": true,
     "school": "Necromancy",
     "level": 1,
     "castingTime": "1 bonus action",
@@ -11601,7 +11866,7 @@
     "higherLevels": [
       "When you cast this spell using a slot of 9th level, you may have multiple instances of this spell active at a time, and casting the spell again no longer causes previous castings of this spell to end. When you complete the 1-hour recitation to move a Levitated Landscape, you instead move all Levitated Landscapes that you control."
     ],
-    "lists": ["Arcane", "Psionic", "Melodic"],
+    "lists": ["Arcane", "Psionic", "Melodic", "Primal"],
     "ritual": 0
   },
   {
@@ -12056,7 +12321,7 @@
     "school": "Evocation",
     "level": 5,
     "castingTime": "1 action",
-    "range": "120 feet",
+    "range": "120 feet (30-foot cylinder)",
     "components": "V, S, M (paper or leaf in the shape of a funnel)",
     "duration": "Concentration, up to 1 minute",
     "description": [
@@ -18392,11 +18657,11 @@
     "school": "Conjuration",
     "level": 3,
     "castingTime": "1 action",
-    "range": "60 feet (2/4/8 targets)",
+    "range": "60 feet (1/2/4/8 targets)",
     "components": "V, S, M (a vial of blood from a humanoid killed within the past 24 hours)",
     "duration": "Concentration, up to 1 hour",
     "description": [
-      "You utter foul words, summoning one demon from the chaos of the Abyss. Roll on the following table to determine what appears.<table><tr><th>d6</th><th>Demons Summoned</th></tr><tr><td>1-2</td><td>Two demons of challenge rating 1 or lower</td></tr><tr><td>3-4</td><td>Four demons of challenge rating 1/2 or lower</td></tr><tr><td>5-6</td><td>Eight demons of challenge rating 1/4 or lower</td></tr></table>The DM chooses the demons, such as manes or dretches, and you choose the unoccupied spaces you can see within range where they appear. A summoned demon disappears when it drops to 0 hit points or when the spell ends.",
+      "You utter foul words, summoning demons from the chaos of the Abyss that appear in unoccupied spaces you can see within range. Choose one of the following options for what appears:<ul><li>One demon of challenge rating 2 or lower</li><li>Two demons of challenge rating 1 or lower</li><li>Four demons of challenge rating 1/2 or lower</li><li>Eight demons of challenge rating 1/4 or lower</li></ul>A summoned demon disappears when it drops to 0 hit points or when the spell ends.",
       "The demons are hostile to all creatures, including you. Roll initiative for the summoned demons as a group, which has its own turns. The demons pursue and attack the nearest non-demons to the best of their ability.",
       "As part of casting the spell, you can form a circle on the ground with the blood used as a material component. The circle is large enough to encompass your space. While the spell lasts, the summoned demons can't cross the circle or harm it, and they can't target anyone within it. Using the material component in this manner consumes it when the spell ends."
     ],
@@ -18406,12 +18671,12 @@
     "lists": ["Arcane", "Occult"],
     "ritual": 0,
     "upcastRange": {
-      "4": "60 feet (2/4/8 targets)",
-      "5": "60 feet (2/4/8 targets)",
-      "6": "60 feet (4/8/16 targets)",
-      "7": "60 feet (4/8/16 targets)",
-      "8": "60 feet (6/12/24 targets)",
-      "9": "60 feet (6/12/24 targets)"
+      "4": "60 feet (1/2/4/8 targets)",
+      "5": "60 feet (1/2/4/8 targets)",
+      "6": "60 feet (2/4/8/16 targets)",
+      "7": "60 feet (2/4/8/16 targets)",
+      "8": "60 feet (3/6/12/24 targets)",
+      "9": "60 feet (3/6/12/24 targets)"
     }
   },
   {
@@ -20652,7 +20917,7 @@
   },
   {
     "name": "Water Blast",
-    "school": "Evocation",
+    "school": "Conjuration",
     "level": 1,
     "castingTime": "1 action",
     "range": "30 feet",
@@ -20677,6 +20942,174 @@
       }
     ],
     "upcastDice": 1
+  },
+  {
+    "name": "Borewater Bolt",
+    "school": "Conjuration",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S, M (a drop of seawater)",
+    "duration": "Instantaneous",
+    "description": [
+      "You conjure a driving spray of seawater and blast it towards a creature. Make a ranged spell attack against the target. On a hit, the target takes 4d8 bludgeoning damage and is pushed up to 15 feet in a direction of your choice."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell lot of 3rd level or higher, the damage increases by 1d8 for each level above 2nd."
+    ],
+    "lists": ["Arcane", "Elemental", "Primal", "Invention"],
+    "ritual": 0,
+    "element": "Water",
+    "type": ["attack"],
+    "damage": [
+      {
+        "dice": 4,
+        "die": 8,
+        "type": "bludgeoning"
+      }
+    ],
+    "upcastDice": 1
+  },
+  {
+    "name": "Knell of the Depths",
+    "school": "Transposition",
+    "curse": true,
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a cracked pearl)",
+    "duration": "Concentration, up to 1 hour",
+    "description": [
+      "You invest a creature within range with cursed elemental energy, causing nearby bodies of water to roil when the target draws near and tendrils of water to drag it deeper under the waves.",
+      "The target must make a Charisma saving throw. On a failed save, it is cursed for the duration. While cursed in this way, a creature treats all water as difficult terrain, and immediately sinks 10 feet whenever it starts its turn swimming."
+    ],
+    "lists": ["Elemental", "Primal", "Occult"],
+    "ritual": 0,
+    "element": "Water",
+    "type": ["save"],
+    "save": "cha"
+  },
+  {
+    "name": "Gyre Trap",
+    "school": "Evocation",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "120 feet (30-foot cylinder)",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "A mass of 5-foot-deep water appears and swirls in a 30-foot radius centered on a point you can see within range. The point must be on ground or in a body of water. Until the spell ends, that area is difficult terrain when moving away from its center, and any creature that starts its turn there must succeed on a Strength saving throw or take 2d8 bludgeoning damage and be pulled 10 feet toward the center."
+    ],
+    "lists": ["Arcane", "Divine", "Occult", "Primal", "Elemental"],
+    "element": "Water",
+    "ritual": 0,
+    "type": "save",
+    "save": "str",
+    "damage": [
+      {
+        "dice": 2,
+        "die": 8,
+        "type": "bludgeoning"
+      }
+    ]
+  },
+  {
+    "name": "Manifest Godmaw",
+    "school": "Conjuration",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "60 feet (10-foot radius)",
+    "components": "V, S, M (a shark tooth)",
+    "duration": "Concentration, up to 1 round",
+    "description": [
+      "Spectral jaws snap shut in a 10 foot radius around a creature within range that is bleeding or has half its hit points or fewer. Each creature in that area, including the one at the center, must make a Dexterity saving throw.",
+      "On a failed save, a creature takes 3d6 piercing damage and is restrained until the end of your next turn, taking half as much damage on a success. You gain temporary hit points equal to half the total damage dealt by this spell."
+    ],
+    "lists": ["Divine", "Occult", "Primal"],
+    "ritual": 0,
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 3,
+        "die": 6,
+        "type": "piercing"
+      }
+    ]
+  },
+  {
+    "name": "Nettletide",
+    "school": "Conjuration",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "Self (30-foot cone)",
+    "components": "V, S, M (a vial of jellyfish polyps)",
+    "duration": "Instantaneous",
+    "description": [
+      "An agonizing wave of seaform and stinging tendrils surges forth from you in a 30-foot cone. Each creature in that area must make a Constitution saving throw, taking 6d6 poison damage on a failed save, or half as much on a success.",
+      "A creature that fails its saving throw by 5 or more is additionally paralyzed until the end of its next turn."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell lot of 5th level or higher, the damage increases by 1d6 for each level above 4th."
+    ],
+    "lists": ["Primal", "Elemental"],
+    "element": "Water",
+    "ritual": 0,
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 6,
+        "die": 6,
+        "type": "posion"
+      }
+    ]
+  },
+  {
+    "name": "Power Word: Drown",
+    "school": "Illusion",
+    "level": 7,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You speak a word of power that wraps one creature you can see within range in a false scenario in which is has been abruptly submerged in water. If the target has 150 hit points or fewer, it begins suffocating for the duration. Otherwise, the spell has no effect.",
+      "The target can make an Intelligence saving throw at disadvantage at the end of each of its turns, ending the effect on a success."
+    ],
+    "lists": ["Primal", "Melodic", "Psionic"],
+    "element": "Water",
+    "ritual": 0,
+    "type": "save",
+    "save": "int"
+  },
+  {
+    "name": "Salt Wounds",
+    "school": "Necromancy",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "V, S, M (a crystal of salt pulled from the depths)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You touch a creature that does not have all of its hit points and force it to make a Constitution saving throw as you cause its wounds to fill with deadly salts. On a failed save, the target takes 4d10 necrotic damage, or half as much on a success.",
+      "If the target is bleeding, it takes twice as much damage and stops bleeding."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell lot of 4th level or higher, the damage increases by 1d10 for each level above 3rd."
+    ],
+    "lists": ["Primal", "Occult"],
+    "element": "Water",
+    "ritual": 0,
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 4,
+        "die": 10,
+        "type": "necrotic"
+      }
+    ]
   },
   {
     "name": "Water Breathing",
@@ -22187,7 +22620,7 @@
     "components": "V, S, M (a quill and a vial of your own blood)",
     "duration": "Concentration, up to 1 hour",
     "description": [
-      "You utter foul words, summoning one devil from the Nine Hells. Roll on the following table to determine what appears.<table><tr><th>d6</th><th>Devils Summoned</th></tr><tr><td>1-2</td><td>Two devils of challenge rating 1 or lower</td></tr><tr><td>3-4</td><td>Four devils of challenge rating 1/2 or lower</td></tr><tr><td>5-6</td><td>Eight devils of challenge rating 1/4 or lower</td></tr></table>The DM chooses the devils, such as imps or spinagons, and you choose the unoccupied spaces you can see within range where they appear. A summoned devil disappears when it drops to 0 hit points or when the spell ends.",
+      "You utter foul words, summoning devils from the Nine Hells that appear in unoccupied spaces you can see within range. Choose one of the following options for what appears:<ul><li>One devil of challenge rating 2 or lower</li><li>Two devils of challenge rating 1 or lower</li><li>Four devils of challenge rating 1/2 or lower</li><li>Eight devils of challenge rating 1/4 or lower</li></ul>A summoned demon disappears when it drops to 0 hit points or when the spell ends.",
       "The devils are hostile to all creatures, including you. Roll initiative for the summoned devils as a group, which has its own turns. The devils pursue and attack the nearest non-devils to the best of their ability.",
       "As part of casting the spell, you can form a circle on the ground with the blood used as a material component. The circle is large enough to encompass your space. While the spell lasts, the summoned devils can't cross the circle or harm it, and they can't target anyone within it. Using the material component in this manner consumes it when the spell ends."
     ],
@@ -22197,12 +22630,12 @@
     "lists": ["Arcane", "Occult"],
     "ritual": 0,
     "upcastRange": {
-      "4": "60 feet (2/4/8 targets)",
-      "5": "60 feet (2/4/8 targets)",
-      "6": "60 feet (4/8/16 targets)",
-      "7": "60 feet (4/8/16 targets)",
-      "8": "60 feet (6/12/24 targets)",
-      "9": "60 feet (6/12/24 targets)"
+      "4": "60 feet (1/2/4/8 targets)",
+      "5": "60 feet (1/2/4/8 targets)",
+      "6": "60 feet (2/4/8/16 targets)",
+      "7": "60 feet (2/4/8/16 targets)",
+      "8": "60 feet (3/6/12/24 targets)",
+      "9": "60 feet (3/6/12/24 targets)"
     }
   },
   {
@@ -23223,6 +23656,7 @@
   },
   {
     "name": "Seal Deathpact",
+    "curse": true,
     "school": "Enchantment",
     "level": 9,
     "castingTime": "8 hours",
@@ -23805,6 +24239,7 @@
   },
   {
     "name": "Curse of Living Bones",
+    "curse": true,
     "school": "Necromancy",
     "level": 8,
     "castingTime": "1 action",
@@ -23824,6 +24259,7 @@
   },
   {
     "name": "Curse of Frailty",
+    "curse": true,
     "school": "Necromancy",
     "level": 4,
     "castingTime": "1 action",
@@ -24343,6 +24779,7 @@
   },
   {
     "name": "Eye of Rot",
+    "curse": true,
     "school": "Enchantment",
     "level": 4,
     "castingTime": "1 action",
@@ -24629,6 +25066,7 @@
   },
   {
     "name": "Glyph of Light's Bane",
+    "curse": true,
     "school": "Enchantment",
     "level": 2,
     "castingTime": "1 action",
@@ -25098,6 +25536,7 @@
   },
   {
     "name": "Profane Fate",
+    "curse": true,
     "school": "Enchantment",
     "level": 2,
     "castingTime": "1 action",
@@ -25526,6 +25965,7 @@
   },
   {
     "name": "Steal Dreams",
+    "curse": true,
     "school": "Enchantment",
     "level": 4,
     "castingTime": "1 action",
@@ -25537,7 +25977,7 @@
       "On a failed save, you learn one closely held secret of the creature's, and the creature takes 6d10 nonlethal psychic damage.",
       "A creature reduced to 0 hit points in this way is cursed. A creature cursed in this way cannot gain levels or otherwise advance through experience. When this curse ends, the creature gains any levels prevented by the curse."
     ],
-    "lists": ["Melodic", "Psionic"],
+    "lists": ["Melodic", "Psionic", "Occult"],
     "ritual": 0,
     "type": "save",
     "save": "int",
@@ -26040,6 +26480,7 @@
   },
   {
     "name": "Curse of Stolen Sight",
+    "curse": true,
     "school": "Enchantment",
     "level": 3,
     "castingTime": "1 action",
@@ -26053,7 +26494,7 @@
     "higherLevels": [
       "When you cast this spell using a spell slot of 5th level or higher, the Duration is 30 days. If you use a spell slot of 7th level or higher, the spell lasts until it is dispelled."
     ],
-    "lists": ["Melodic", "Psionic", "Invention"],
+    "lists": ["Melodic", "Psionic", "Invention", "Occult"],
     "ritual": 0,
     "type": "save",
     "save": "cha",
@@ -26651,6 +27092,7 @@
   },
   {
     "name": "Litany of Forsaken Vows",
+    "curse": true,
     "school": "Enchantment",
     "level": 3,
     "castingTime": "1 action",
@@ -27406,6 +27848,7 @@
   },
   {
     "name": "Oathbind",
+    "curse": true,
     "school": "Enchantment",
     "level": 5,
     "castingTime": "1 action",
@@ -27524,6 +27967,7 @@
   },
   {
     "name": "Render Judgement",
+    "curse": true,
     "school": "Evocation",
     "level": 3,
     "castingTime": "1 action",
@@ -27880,6 +28324,7 @@
   },
   {
     "name": "Catastrophe Looms",
+    "curse": true,
     "school": "Divination",
     "level": 4,
     "castingTime": "1 action",
@@ -27986,6 +28431,7 @@
   },
   {
     "name": "Knowledge of the Hour",
+    "curse": true,
     "school": "Divination",
     "level": 7,
     "castingTime": "1 action",
@@ -27996,7 +28442,7 @@
       "You reach out to the mind of a creature you can see within range and thrust the certain knowledge of its looming death upon it, cursing it. While cursed in this way, the target suffers the following effecs:",
       "<ul><li>While it has fewer than 100 hit points, the cursed creature is frightened.</li><li>At the end of each of its turns, the cursed creature must succeed on a DC 11 unmodified d20 roll or take 10d10 force damage and have the curse end for it.</li></ul>"
     ],
-    "lists": ["Arcane", "Divine", "Melodic"],
+    "lists": ["Arcane", "Divine", "Melodic", "Occult"],
     "ritual": 0,
     "damage": [
       {
@@ -29594,6 +30040,7 @@
   },
   {
     "name": "Curse of the Horned Siege",
+    "curse": true,
     "school": "Enchantment",
     "level": 5,
     "castingTime": "1 reaction, when a creature you can see within range fails a saving throw against being frightened",

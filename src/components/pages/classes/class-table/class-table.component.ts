@@ -134,9 +134,20 @@ export class ClassTableComponent {
     ) {
       return '-';
     }
-    return this.levelFormatter(
+    let baseLimit = this.levelFormatter(
       this.exploitLimit[Math.floor((classLevel - 1) / this.class.exploitLevel)]
     );
+
+    if (this.class.exploitLevel === 1) {
+      return `${baseLimit} (${this.levelFormatter(
+        Math.ceil(
+          this.exploitLimit[
+            Math.floor((classLevel - 1) / this.class.exploitLevel)
+          ] / 2
+        )
+      )})`;
+    }
+    return baseLimit;
   }
 
   public getFeatureString(level: number): string {

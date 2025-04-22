@@ -347,10 +347,14 @@ export class BuilderListedComponent implements OnInit {
           });
       }
     } else if (this.listed.type === 'exploit') {
-      const maxExploitDegree = Math.max(
+      let maxExploitDegree = Math.max(
         Math.ceil(this.characterLevel / (this.listed.exploitType * 4)),
         this.listed.maxDegree ?? -1
       );
+      // Negative exploit types are used to represent mastered exploits
+      if (this.listed.exploitType < 0) {
+        maxExploitDegree = Math.abs(Math.ceil(maxExploitDegree / 2));
+      }
 
       this.options = this.dataService
         .getExploitsByListUnsplit(this.listed.list)

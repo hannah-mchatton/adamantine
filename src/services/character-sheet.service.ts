@@ -2344,20 +2344,22 @@ export class CharacterSheetService {
       }
 
       if (g.type === 'exploit') {
-        let ability = g.ability;
-        if (ability.includes('-')) {
-          const choiceEntry = choices.find((c: any) => c.id === ability);
-          ability = choiceEntry?.value ?? '';
-        }
+        if (!g.prereqLevel || characterLevel >= g.prereqLevel) {
+          let ability = g.ability;
+          if (ability.includes('-')) {
+            const choiceEntry = choices.find((c: any) => c.id === ability);
+            ability = choiceEntry?.value ?? '';
+          }
 
-        for (let exploit of g.options) {
-          const exploitData = this.dataService.getExploit(exploit);
-          if (exploitData.degree <= maxExploitDegree || g.ignoreMaxLevel) {
-            exploitList.push({
-              exploit,
-              ability,
-              source,
-            });
+          for (let exploit of g.options) {
+            const exploitData = this.dataService.getExploit(exploit);
+            if (exploitData.degree <= maxExploitDegree || g.ignoreMaxLevel) {
+              exploitList.push({
+                exploit,
+                ability,
+                source,
+              });
+            }
           }
         }
       }

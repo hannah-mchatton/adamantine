@@ -209,7 +209,7 @@
     "name": "Buster Sword",
 
     "description": "A massive weapon that is almost more club that sword.",
-    "damage": "4d4",
+    "damage": "3d4",
     "damageTypes": "Slashing",
     "cost": 50,
     "weight": 10.0,
@@ -223,8 +223,8 @@
         "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
       },
       {
-        "name": "Massive (20)",
-        "description": "Your Strength score must be a certain value in order to use this weapon. A number in parentheses appears with the property - the number that your Strength score must be equal to."
+        "name": "Massive (3d6)",
+        "description": "When you make an attack with this weapon, you can choose to take a -2 penalty to your attack roll. If you do, the damage dice of the weapon are increased by one step - which in parentheses appears with the property."
       },
       {
         "name": "Two-handed",
@@ -375,14 +375,14 @@
     "name": "Claymore",
 
     "description": "A greatsword with a wavy blade designed to resemble fire.",
-    "damage": "4d4",
+    "damage": "3d4",
     "damageTypes": "Slashing",
     "cost": 50,
     "weight": 5.0,
     "properties": [
       {
-        "name": "Massive (20)",
-        "description": "Your Strength score must be a certain value in order to use this weapon. A number in parentheses appears with the property - the number that your Strength score must be equal to."
+        "name": "Massive (3d6)",
+        "description": "When you make an attack with this weapon, you can choose to take a -2 penalty to your attack roll. If you do, the damage dice of the weapon are increased by one step - which in parentheses appears with the property."
       },
       {
         "name": "Heavy",
@@ -550,7 +550,7 @@
     "name": "Dire Flail",
 
     "description": "A giant, three-headed flail based on the weapon of the demon lord Yeenoghu.",
-    "damage": "2d8",
+    "damage": "2d6",
     "damageTypes": "Bludgeoning",
     "cost": 50,
     "weight": 35.0,
@@ -560,8 +560,8 @@
         "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
       },
       {
-        "name": "Massive (20)",
-        "description": "Your Strength score must be a certain value in order to use this weapon. A number in parentheses appears with the property - the number that your Strength score must be equal to."
+        "name": "Massive (2d8)",
+        "description": "When you make an attack with this weapon, you can choose to take a -2 penalty to your attack roll. If you do, the damage dice of the weapon are increased by one step - which in parentheses appears with the property."
       },
       {
         "name": "Two-handed",
@@ -633,7 +633,7 @@
     "name": "Executioner's Axe",
 
     "description": "A huge axe bristling with spikes.",
-    "damage": "2d8",
+    "damage": "2d6",
     "damageTypes": "Slashing",
     "cost": 50,
     "weight": 30.0,
@@ -643,8 +643,8 @@
         "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
       },
       {
-        "name": "Massive (20)",
-        "description": "Your Strength score must be a certain value in order to use this weapon. A number in parentheses appears with the property - the number that your Strength score must be equal to."
+        "name": "Massive (2d6)",
+        "description": "When you make an attack with this weapon, you can choose to take a -2 penalty to your attack roll. If you do, the damage dice of the weapon are increased by one step - which in parentheses appears with the property."
       },
       {
         "name": "Two-handed",
@@ -868,7 +868,7 @@
     "name": "Greatpick",
 
     "description": "An enormous pickaxe with a massive head.",
-    "damage": "4d4",
+    "damage": "3d4",
     "damageTypes": "Piercing",
     "cost": 50,
     "weight": 30.0,
@@ -878,8 +878,8 @@
         "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
       },
       {
-        "name": "Massive (20)",
-        "description": "Your Strength score must be a certain value in order to use this weapon. A number in parentheses appears with the property - the number that your Strength score must be equal to."
+        "name": "Massive (3d6)",
+        "description": "When you make an attack with this weapon, you can choose to take a -2 penalty to your attack roll. If you do, the damage dice of the weapon are increased by one step - which in parentheses appears with the property."
       },
       {
         "name": "Two-handed",
@@ -935,7 +935,7 @@
     "name": "Great Terbutje",
 
     "description": "A massive, two-handed terbutje.",
-    "damage": "4d4",
+    "damage": "3d4",
     "damageTypes": "Piercing",
     "cost": 45,
     "weight": 7.0,
@@ -949,8 +949,8 @@
         "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
       },
       {
-        "name": "Massive (20)",
-        "description": "Your Strength score must be a certain value in order to use this weapon. A number in parentheses appears with the property - the number that your Strength score must be equal to."
+        "name": "Massive (3d6)",
+        "description": "When you make an attack with this weapon, you can choose to take a -2 penalty to your attack roll. If you do, the damage dice of the weapon are increased by one step - which in parentheses appears with the property."
       },
       {
         "name": "Two-handed",
@@ -1453,7 +1453,7 @@
     "name": "Longtrident",
 
     "description": "An oversized, barbed trident, too heavy to be thrown.",
-    "damage": "2d8",
+    "damage": "2d6",
     "damageTypes": "Piercing",
     "cost": 50,
     "weight": 35.0,
@@ -1463,8 +1463,8 @@
         "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
       },
       {
-        "name": "Massive (20)",
-        "description": "Your Strength score must be a certain value in order to use this weapon. A number in parentheses appears with the property - the number that your Strength score must be equal to."
+        "name": "Massive (2d8)",
+        "description": "When you make an attack with this weapon, you can choose to take a -2 penalty to your attack roll. If you do, the damage dice of the weapon are increased by one step - which in parentheses appears with the property."
       },
       {
         "name": "Two-handed",
@@ -1550,7 +1550,7 @@
     "name": "Megaton Hammer",
 
     "description": "A gigantic hammer that weighs an enormous amount.",
-    "damage": "4d4",
+    "damage": "3d4",
     "damageTypes": "Bludgeoning",
     "cost": 50,
     "weight": 50.0,
@@ -1560,8 +1560,8 @@
         "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
       },
       {
-        "name": "Massive (20)",
-        "description": "Your Strength score must be a certain value in order to use this weapon. A number in parentheses appears with the property - the number that your Strength score must be equal to."
+        "name": "Massive (3d6)",
+        "description": "When you make an attack with this weapon, you can choose to take a -2 penalty to your attack roll. If you do, the damage dice of the weapon are increased by one step - which in parentheses appears with the property."
       },
       {
         "name": "Two-handed",
@@ -1688,7 +1688,7 @@
     "name": "Phalanx Pike",
 
     "description": "A gigantic pike that has an enormous reach.",
-    "damage": "2d8",
+    "damage": "2d6",
     "damageTypes": "Piercing",
     "cost": 50,
     "weight": 30.0,
@@ -1698,8 +1698,8 @@
         "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
       },
       {
-        "name": "Massive (20)",
-        "description": "Your Strength score must be a certain value in order to use this weapon. A number in parentheses appears with the property - the number that your Strength score must be equal to."
+        "name": "Massive (2d8)",
+        "description": "When you make an attack with this weapon, you can choose to take a -2 penalty to your attack roll. If you do, the damage dice of the weapon are increased by one step - which in parentheses appears with the property."
       },
       {
         "name": "Special",
@@ -2341,7 +2341,7 @@
     "name": "Warmaster's Mace",
 
     "description": "A massive, two-handed mace with a brutally flanged head.",
-    "damage": "2d8",
+    "damage": "2d6",
     "damageTypes": "Bludgeoning",
     "cost": 50,
     "weight": 35.0,
@@ -2355,8 +2355,8 @@
         "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
       },
       {
-        "name": "Massive (20)",
-        "description": "Your Strength score must be a certain value in order to use this weapon. A number in parentheses appears with the property - the number that your Strength score must be equal to."
+        "name": "Massive (2d8)",
+        "description": "When you make an attack with this weapon, you can choose to take a -2 penalty to your attack roll. If you do, the damage dice of the weapon are increased by one step - which in parentheses appears with the property."
       },
       {
         "name": "Two-handed",

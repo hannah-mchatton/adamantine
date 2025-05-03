@@ -55,7 +55,7 @@
     "name": "Crossbow, great",
 
     "description": "A massive, four-armed crossbow that fires heavier bolts.",
-    "damage": "2d8",
+    "damage": "2d6",
     "damageTypes": "Piercing",
     "cost": 75,
     "weight": 25.0,
@@ -69,8 +69,8 @@
         "description": "When you use an action, bonus action, or reaction to attack with this weapon, you can only make one attack, regardless of how many you would normally be able to make."
       },
       {
-        "name": "Massive (20)",
-        "description": "Your Strength score must be a certain value in order to use this weapon. A number in parentheses appears with the property - the number that your Strength score must be equal to."
+        "name": "Massive (2d8)",
+        "description": "When you make an attack with this weapon, you can choose to take a -2 penalty to your attack roll. If you do, the damage dice of the weapon are increased by one step - which in parentheses appears with the property."
       },
       {
         "name": "Two-handed",
@@ -370,7 +370,7 @@
     "name": "Warbow",
 
     "description": "A massive elven bow used by only those with the strength to master it.",
-    "damage": "2d6",
+    "damage": "2d4",
     "damageTypes": "Bludgeoning, Piercing, or Slashing",
     "cost": 75,
     "weight": 3.0,
@@ -380,8 +380,8 @@
         "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
       },
       {
-        "name": "Massive (20)",
-        "description": "Your Strength score must be a certain value in order to use this weapon. A number in parentheses appears with the property - the number that your Strength score must be equal to."
+        "name": "Massive (2d6)",
+        "description": "When you make an attack with this weapon, you can choose to take a -2 penalty to your attack roll. If you do, the damage dice of the weapon are increased by one step - which in parentheses appears with the property."
       },
       {
         "name": "Two-handed",
@@ -398,7 +398,7 @@
     "name": "Recurve Bow",
 
     "description": "An enormous bow specialized for horse archery, favored by centaurs and nomadic peoples.",
-    "damage": "2d10",
+    "damage": "2d8",
     "damageTypes": "Bludgeoning, Piercing, or Slashing",
     "cost": 175,
     "weight": 4.5,
@@ -412,8 +412,8 @@
         "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
       },
       {
-        "name": "Massive (20)",
-        "description": "Your Strength score must be a certain value in order to use this weapon. A number in parentheses appears with the property - the number that your Strength score must be equal to."
+        "name": "Massive (2d10)",
+        "description": "When you make an attack with this weapon, you can choose to take a -2 penalty to your attack roll. If you do, the damage dice of the weapon are increased by one step - which in parentheses appears with the property."
       },
       {
         "name": "Two-handed",

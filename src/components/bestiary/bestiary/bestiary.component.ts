@@ -421,6 +421,8 @@ export class BestiaryComponent extends BaseComponent implements OnInit {
         return 2;
       case 0.5:
         return 3;
+      case 100:
+        return 34;
       default:
         return cr + 3;
     }
@@ -435,6 +437,10 @@ export class BestiaryComponent extends BaseComponent implements OnInit {
         return 0.25;
       case 3:
         return 0.5;
+      case 34:
+        return 100;
+      case 43:
+        return 100;
       default:
         return cr - 3;
     }
@@ -448,6 +454,8 @@ export class BestiaryComponent extends BaseComponent implements OnInit {
         return '¼';
       case 0.5:
         return '½';
+      case 100:
+        return 'Epic';
       default:
         return cr.toString();
     }
@@ -462,6 +470,8 @@ export class BestiaryComponent extends BaseComponent implements OnInit {
         return '¼';
       case 3:
         return '½';
+      case 34:
+        return 'Epic';
       default:
         return (cr - 3).toString();
     }

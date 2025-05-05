@@ -247,12 +247,19 @@ export class MonsterComponent extends BaseComponent implements OnInit {
     switch (cr) {
       case 0.125:
         crString = '⅛';
+        break;
       case 0.25:
         crString = '¼';
+        break;
       case 0.5:
         crString = '½';
+        break;
+      case 100:
+        crString = 'Epic';
+        break;
       default:
         crString = cr.toString();
+        break;
     }
 
     if (this.monster.minion) {

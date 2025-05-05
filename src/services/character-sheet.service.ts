@@ -408,6 +408,7 @@ export class CharacterSheetService {
     possessed: 'ghost',
     prone: 'run',
     restrained: 'handcuffs',
+    silenced: 'microphone-variant-off',
     stunned: 'head-snowflake',
     swallowed: 'stomach',
     turned: 'cross-celtic',

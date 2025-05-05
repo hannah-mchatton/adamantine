@@ -530,7 +530,7 @@
         "any": {
           "name": "Shade Warrior",
           "size": "Medium",
-          "type": { "fiend": { "shadowy": {} } },
+          "type": { "fiend": { "shadowspawn": {} } },
           "ac": [{ "ac": 13, "from": ["natural armor"] }],
           "pbac": true,
           "hp": { "base": 5, "levelMod": 4 },

@@ -19,3 +19,4 @@ import { NzModalModule } from 'ng-zorro-antd/modal';
   ],
 })
 export class CharacterModule {}
+

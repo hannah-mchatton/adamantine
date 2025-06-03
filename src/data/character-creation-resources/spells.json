@@ -829,6 +829,7 @@
   },
   {
     "name": "Arboreal Curse",
+    "curse": true,
     "school": "Transmutation",
     "level": 7,
     "castingTime": "1 action",

@@ -2279,7 +2279,7 @@
                   "traits": [
                     {
                       "name": "",
-                      "description": "Your kindred form takes the shape of a giant badger.  While in your kindred form, you gain the following additional features: <ul><li>You can speak to and understand other badgers and mustelids.</li><li>You do not suffer disadvantage on attacks from being restrained or prone, and you can use your reaction to attack a creature that attempts to grapple or restrain you if they are within your reach.</li><li>When you drop to 0 hit points, you can choose to make a DC 15 Constitution saving throw.  On a success, you drop to 1 hit point.  You make this save at advantage if at least one hostile creature is adjacent to you.</li></ul>"
+                      "description": "Your kindred form takes the shape of a giant badger.  While in your kindred form or hybrid form, you gain the following additional features: <ul><li>You can speak to and understand other badgers and mustelids.</li><li>You do not suffer disadvantage on attacks from being restrained or prone, and you can use your reaction to attack a creature that attempts to grapple or restrain you if they are within your reach.</li><li>When you drop to 0 hit points, you can choose to make a DC 15 Constitution saving throw.  On a success, you drop to 1 hit point.  You make this save at advantage if at least one hostile creature is adjacent to you.</li></ul>"
                     }
                   ]
                 },
@@ -2288,7 +2288,7 @@
                   "traits": [
                     {
                       "name": "",
-                      "description": "Your kindred form takes the shape of a giant bat.  While in your kindred form, you gain the following additional features: <ul><li>You can speak to and understand other bats.</li><li>You can take the Disengage or Hide action as a bonus action, and you have 60 feet of blindsight as long as you aren't deafened.</li><li>You have a flying speed equal to your walking speed.</li></ul>"
+                      "description": "Your kindred form takes the shape of a giant bat.  While in your kindred form or hybrid form, you gain the following additional features: <ul><li>You can speak to and understand other bats.</li><li>You can take the Disengage or Hide action as a bonus action, and you have 60 feet of blindsight as long as you aren't deafened.</li><li>You have a flying speed equal to your walking speed.</li></ul>"
                     }
                   ]
                 },
@@ -2297,7 +2297,7 @@
                   "traits": [
                     {
                       "name": "",
-                      "description": "Your kindred form takes the shape of a large bear. While in your kindred form, you gain the additional features:<ul>    <li>You can speak to and understand other bears</li>    <li>When you make any saving throw, you can add your Constitution modifier to the result</li>    <li>Your hit point maximum increases by 15 hit points</li></ul>"
+                      "description": "Your kindred form takes the shape of a large bear. While in your kindred form or hybrid form, you gain the additional features:<ul>    <li>You can speak to and understand other bears</li>    <li>When you make any saving throw, you can add your Constitution modifier to the result</li>    <li>Your hit point maximum increases by 15 hit points</li></ul>"
                     }
                   ]
                 },
@@ -2306,7 +2306,7 @@
                   "traits": [
                     {
                       "name": "",
-                      "description": "Your kindred form takes the shape of a savage boar.  While in your kindred form, you gain the following additional features: <ul><li>You can speak to and understand other boars.</li><li>If you move at least 15 towards a creature and hit them with a melee attack on the same turn, you deal an additional 2d6 damage.</li><li>You ignore the effects of all levels of exhaustion.</li></ul>"
+                      "description": "Your kindred form takes the shape of a savage boar.  While in your kindred form or hybrid form, you gain the following additional features: <ul><li>You can speak to and understand other boars.</li><li>If you move at least 15 towards a creature and hit them with a melee attack on the same turn, you deal an additional 2d6 damage.</li><li>You ignore the effects of all levels of exhaustion.</li></ul>"
                     }
                   ]
                 },
@@ -2315,7 +2315,7 @@
                   "traits": [
                     {
                       "name": "",
-                      "description": "Your kindred form takes the shape of a primal crocodile.  While in your kindred form, you gain the following additional features: <ul><li>You can speak to and understand other crocodilians.</li><li>You can add your Constitution modifier to ability checks made to grapple or to escape a grapple.</li><li>You have a swimming speed equal to your walking speed and can hold your breath for up to 15 minutes.</li></ul>"
+                      "description": "Your kindred form takes the shape of a primal crocodile.  While in your kindred form or hybrid form, you gain the following additional features: <ul><li>You can speak to and understand other crocodilians.</li><li>You can add your Constitution modifier to ability checks made to grapple or to escape a grapple.</li><li>You have a swimming speed equal to your walking speed and can hold your breath for up to 15 minutes.</li></ul>"
                     }
                   ]
                 },
@@ -2324,7 +2324,7 @@
                   "traits": [
                     {
                       "name": "",
-                      "description": "Your kindred form takes the shape of a lithe jaguar. While in your kindred form, you gain the additional benefits:<ul>    <li>You can speak to and understand other jaguars.</li>    <li>When you make any ability check using your Wisdom, you can add your Constitution modifier to the result</li>    <li>You gain a climbing speed equal to your walking speed</li></ul>"
+                      "description": "Your kindred form takes the shape of a lithe jaguar. While in your kindred form or hybrid form, you gain the additional benefits:<ul>    <li>You can speak to and understand other jaguars.</li>    <li>When you make any ability check using your Wisdom, you can add your Constitution modifier to the result</li>    <li>You gain a climbing speed equal to your walking speed</li></ul>"
                     }
                   ]
                 },
@@ -2333,7 +2333,7 @@
                   "traits": [
                     {
                       "name": "",
-                      "description": "Your kindred form takes the shape of a giant otter. While in your kindred form, you gain the additional benefits:<ul>    <li>You can speak to and understand other otters.</li>    <li>When you make any ability check using your Dexterity, you can add your Constitution modifier to the result</li>    <li>You have a swimming speed equal to your walking speed and can hold your breath for up to 15 minutes.</li></ul>"
+                      "description": "Your kindred form takes the shape of a giant otter. While in your kindred form or hybrid form, you gain the additional benefits:<ul>    <li>You can speak to and understand other otters.</li>    <li>When you make any ability check using your Dexterity, you can add your Constitution modifier to the result</li>    <li>You have a swimming speed equal to your walking speed and can hold your breath for up to 15 minutes.</li></ul>"
                     }
                   ]
                 },
@@ -2342,7 +2342,7 @@
                   "traits": [
                     {
                       "name": "",
-                      "description": "Your kindred form takes the shape of a giant owl. While in your kindred form, you gain the additional benefits:<ul>    <li>You can speak to and understand other owls.</li>    <li>You can add your Constitution modifier to ability checks made to hide or move silently.</li>    <li>You gain a flying speed equal to your walking speed</li></ul>"
+                      "description": "Your kindred form takes the shape of a giant owl. While in your kindred form or hybrid form, you gain the additional benefits:<ul>    <li>You can speak to and understand other owls.</li>    <li>You can add your Constitution modifier to ability checks made to hide or move silently.</li>    <li>You gain a flying speed equal to your walking speed</li></ul>"
                     }
                   ]
                 },
@@ -2351,7 +2351,7 @@
                   "traits": [
                     {
                       "name": "",
-                      "description": "Your kindred form takes the shape of a giant rat. While in your kindred form, you gain the additional benefits:<ul>    <li>You can speak to and understand other rats</li>    <li>When you make any ability check using your Dexterity, you can add your Constitution modifier to the result</li>    <li>You gain darkvision out to 120 feet. If you already had darkvision from another source, its range increases to 120 feet.</li></ul>"
+                      "description": "Your kindred form takes the shape of a giant rat. While in your kindred form or hybrid form, you gain the additional benefits:<ul>    <li>You can speak to and understand other rats</li>    <li>When you make any ability check using your Dexterity, you can add your Constitution modifier to the result</li>    <li>You gain darkvision out to 120 feet. If you already had darkvision from another source, its range increases to 120 feet.</li></ul>"
                     }
                   ]
                 },
@@ -2360,7 +2360,7 @@
                   "traits": [
                     {
                       "name": "",
-                      "description": "Your kindred form takes the shape of a giant raven. While in your kindred form, you gain the additional features:<ul>    <li>You can speak to and understand other ravens</li>    <li>When you make any ability check using your Intelligence, you can add your Constitution modifier to the result</li>    <li>You gain a flying speed equal to your walking speed</li></ul>"
+                      "description": "Your kindred form takes the shape of a giant raven. While in your kindred form or hybrid form, you gain the additional features:<ul>    <li>You can speak to and understand other ravens</li>    <li>When you make any ability check using your Intelligence, you can add your Constitution modifier to the result</li>    <li>You gain a flying speed equal to your walking speed</li></ul>"
                     }
                   ]
                 },
@@ -2369,7 +2369,7 @@
                   "traits": [
                     {
                       "name": "",
-                      "description": "Your kindred form takes the shape of a giant snake. While in your kindred form, you gain the additional features:<ul>    <li>You can speak to and understand other snakes</li>    <li>You can add your Constitution modifier to ability checks made to grapple or to escape a grapple.</li>    <li>When you are grappling a creature, they take bludgeoning damage equal to your Constitution modifier at the start of each of their turns, and they cannot speak or cast spells that require a verbal component.</li></ul>"
+                      "description": "Your kindred form takes the shape of a giant snake. While in your kindred form or hybrid form, you gain the additional features:<ul>    <li>You can speak to and understand other snakes</li>    <li>You can add your Constitution modifier to ability checks made to grapple or to escape a grapple.</li>    <li>When you are grappling a creature, they take bludgeoning damage equal to your Constitution modifier at the start of each of their turns, and they cannot speak or cast spells that require a verbal component.</li></ul>"
                     }
                   ]
                 },
@@ -2378,7 +2378,7 @@
                   "traits": [
                     {
                       "name": "",
-                      "description": "Your kindred form takes the shape of a furious shark. While in your kindred form, you gain the additional benefits:<ul>    <li>You can speak to and understand other sharks</li>    <li>You have advantage on melee attack rolls against any creature that doesn't have all its hit points.</li>    <li>You gain a swimming speed equal to your walking speed and can breathe underwater.</li></ul>"
+                      "description": "Your kindred form takes the shape of a furious shark. While in your kindred form or hybrid form, you gain the additional benefits:<ul>    <li>You can speak to and understand other sharks</li>    <li>You have advantage on melee attack rolls against any creature that doesn't have all its hit points.</li>    <li>You gain a swimming speed equal to your walking speed and can breathe underwater.</li></ul>"
                     }
                   ]
                 },
@@ -2387,7 +2387,7 @@
                   "traits": [
                     {
                       "name": "",
-                      "description": "Your kindred form takes the shape of a lithe tiger. While in your kindred form, you gain the additional benefits:<ul>    <li>You can speak to and understand other tigers</li>    <li>When you make any ability check using your Wisdom, you can add your Constitution modifier to the result</li>    <li>You gain a climbing speed equal to your walking speed</li></ul>"
+                      "description": "Your kindred form takes the shape of a lithe tiger. While in your kindred form or hybrid form, you gain the additional benefits:<ul>    <li>You can speak to and understand other tigers</li>    <li>When you make any ability check using your Wisdom, you can add your Constitution modifier to the result</li>    <li>You gain a climbing speed equal to your walking speed</li></ul>"
                     }
                   ]
                 },
@@ -2396,7 +2396,7 @@
                   "traits": [
                     {
                       "name": "",
-                      "description": "Your kindred form takes the shape of a giant vulture. While in your kindred form, you gain the additional benefits:<ul>    <li>You can speak to and understand other vultures.</li>    <li>You have advantage on melee attack rolls against any creature that has any harmful condition.</li>    <li>You gain a flying speed equal to your walking speed</li></ul>"
+                      "description": "Your kindred form takes the shape of a giant vulture. While in your kindred form or hybrid form, you gain the additional benefits:<ul>    <li>You can speak to and understand other vultures.</li>    <li>You have advantage on melee attack rolls against any creature that has any harmful condition.</li>    <li>You gain a flying speed equal to your walking speed</li></ul>"
                     }
                   ]
                 },
@@ -2405,7 +2405,7 @@
                   "traits": [
                     {
                       "name": "",
-                      "description": "Your kindred form takes the shape of a ferocious dire wolf. While in your kindred form, you gain the additional features:<ul>    <li>You can speak to and understand other wolves</li>    <li>When making an attack against a creature, if an ally is within 5 feet of that creature and not incapacitated, you have advantage on that attack roll</li>    <li>Your speed increases by 20 feet</li></ul>"
+                      "description": "Your kindred form takes the shape of a ferocious dire wolf. While in your kindred form or hybrid form, you gain the additional features:<ul>    <li>You can speak to and understand other wolves</li>    <li>When making an attack against a creature, if an ally is within 5 feet of that creature and not incapacitated, you have advantage on that attack roll</li>    <li>Your speed increases by 20 feet</li></ul>"
                     }
                   ]
                 },
@@ -2414,7 +2414,7 @@
                   "traits": [
                     {
                       "name": "",
-                      "description": "Your kindred form takes the shape of a bulky yeti or large ape. While in your kindred form, you gain the additional features:<ul>    <li>You can speak to and understand other apes</li>    <li>When you make any ability check using your Strength, you can add your Constitution modifier to the result</li><li>If you move at least 15 towards a creature and hit them with a melee attack on the same turn, you can also knock them prone.</li></ul>"
+                      "description": "Your kindred form takes the shape of a bulky yeti or large ape. While in your kindred form or hybrid form, you gain the additional features:<ul>    <li>You can speak to and understand other apes</li>    <li>When you make any ability check using your Strength, you can add your Constitution modifier to the result</li><li>If you move at least 15 towards a creature and hit them with a melee attack on the same turn, you can also knock them prone.</li></ul>"
                     }
                   ]
                 }

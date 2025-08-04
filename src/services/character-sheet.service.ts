@@ -2269,6 +2269,7 @@ export class CharacterSheetService {
                 exploit: exploitData,
                 ability: e.ability,
                 source: e.source,
+                mastered: e.mastered
               };
             })
             .filter((e: any) => {
@@ -2353,12 +2354,14 @@ export class CharacterSheetService {
           }
 
           for (let exploit of g.options) {
+            let mastered = g.mastered;
             const exploitData = this.dataService.getExploit(exploit);
             if (exploitData.degree <= maxExploitDegree || g.ignoreMaxLevel) {
               exploitList.push({
                 exploit,
                 ability,
                 source,
+                mastered
               });
             }
           }
@@ -2386,7 +2389,8 @@ export class CharacterSheetService {
             choices,
             characterLevel,
             exploitType,
-            source
+            source,
+            choice.mastered
           ),
         ];
       }
@@ -2398,7 +2402,8 @@ export class CharacterSheetService {
           choices,
           characterLevel,
           exploitType,
-          source
+          source,
+          feature.choices?.mastered
         ),
       ];
     }
@@ -2411,7 +2416,8 @@ export class CharacterSheetService {
           choices,
           characterLevel,
           exploitType,
-          source
+          source,
+          feature.listed.mastered
         ),
       ];
     }
@@ -2423,7 +2429,8 @@ export class CharacterSheetService {
     choices: any[],
     characterLevel: number,
     exploitType: number = 0,
-    source: string[]
+    source: string[],
+    mastered: boolean = false
   ) {
     let exploitList = [];
 
@@ -2442,7 +2449,7 @@ export class CharacterSheetService {
       for (let trait of traits) {
         exploitList = [
           ...exploitList,
-          ...this.getFeatureSpells(
+          ...this.getFeatureExploits(
             trait,
             choices,
             characterLevel,
@@ -2456,7 +2463,7 @@ export class CharacterSheetService {
       if (feat) {
         exploitList = [
           ...exploitList,
-          ...this.getFeatureSpells(feat, choices, characterLevel, exploitType, [
+          ...this.getFeatureExploits(feat, choices, characterLevel, exploitType, [
             ...source,
             feat.name,
           ]),
@@ -2470,7 +2477,7 @@ export class CharacterSheetService {
       if (data) {
         exploitList = [
           ...exploitList,
-          ...this.getFeatureSpells(data, choices, characterLevel, exploitType, [
+          ...this.getFeatureExploits(data, choices, characterLevel, exploitType, [
             ...source,
             data.name,
           ]),
@@ -2492,6 +2499,7 @@ export class CharacterSheetService {
             exploit: choiceEntry?.value,
             ability,
             source,
+            mastered
           });
         }
       }
@@ -2504,7 +2512,8 @@ export class CharacterSheetService {
     choices: any[],
     characterLevel: number,
     exploitType: number = 0,
-    source: string[]
+    source: string[],
+    mastered: boolean = false
   ) {
     let exploitList = [];
 
@@ -2523,7 +2532,7 @@ export class CharacterSheetService {
         if (data) {
           exploitList = [
             ...exploitList,
-            ...this.getFeatureSpells(
+            ...this.getFeatureExploits(
               data,
               choices,
               characterLevel,
@@ -2548,6 +2557,7 @@ export class CharacterSheetService {
             exploit: l,
             ability,
             source,
+            mastered
           });
         }
       }
@@ -4586,7 +4596,7 @@ export class CharacterSheetService {
             speeds[g.speed] = amount;
           }
         } else {
-          if (amount > speeds.walk ?? 0) {
+          if (amount > (speeds.walk ?? 0)) {
             speeds.walk = amount;
           }
         }

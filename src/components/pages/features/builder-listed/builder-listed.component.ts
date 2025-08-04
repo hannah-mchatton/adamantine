@@ -353,7 +353,7 @@ export class BuilderListedComponent implements OnInit {
       );
       // Negative exploit types are used to represent mastered exploits
       if (this.listed.exploitType < 0) {
-        maxExploitDegree = Math.abs(Math.ceil(maxExploitDegree / 2));
+        maxExploitDegree = Math.max(Math.abs(Math.ceil(maxExploitDegree / 2)), 1);
       }
 
       this.options = this.dataService

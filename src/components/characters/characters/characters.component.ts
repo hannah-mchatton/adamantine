@@ -12,7 +12,7 @@ import { DBService } from 'src/services/db.service';
 })
 export class CharactersComponent extends BaseComponent implements OnInit {
   public users = {
-    adamantine: ['Brad', 'Hannah', 'Joey', 'Jon', 'Maddie', 'Spencer'],
+    adamantine: ['Brad', 'Hannah', 'Joey', 'Maddie', 'Spencer'],
   };
   public userCharacters = { adamantine: [], mithral: [] };
 

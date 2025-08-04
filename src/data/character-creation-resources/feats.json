@@ -5239,7 +5239,8 @@
       {
         "id": "9CA4E7B4-D7B4-439B-9EF1-58968B29BAEF",
         "type": "asi",
-        "options": ["str", "con", "cha"]
+        "options": ["str", "con", "cha"],
+        "amount": 1
       },
       {
         "id": "181C08F1-8011-4535-AAA5-BBAE75CB5F0A",

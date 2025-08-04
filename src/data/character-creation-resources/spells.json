@@ -1346,6 +1346,21 @@
     ]
   },
   {
+    "name": "Light of War Eternal",
+    "school": "Restoration",
+    "level": 8,
+    "castingTime": "1 action",
+    "range": "Self (30-foot radius)",
+    "components": "V",
+    "duration": "Concentration, up to 10 minutes",
+    "description": [
+      "Divine fury radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. Whenever a creature of your choice within the aura is reduced to 0 hit points, you can restore 1 hit point to it and allow it to stand if it is prone."
+    ],
+    "lists": [],
+    "ritual": 0,
+    "unique": "This spell was developed by the leader of the Hellriders, the warrior angel Zariel, while she was an archdevil."
+  },
+  {
     "name": "Aura of Frost",
     "school": "Evocation",
     "level": 2,
@@ -5502,6 +5517,86 @@
       }
     ],
     "upcastDice": 1
+  },
+  {
+    "name": "Trovebond Toll",
+    "school": "Enchantment",
+    "level": 1,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, M (a magic item you are attuned to)",
+    "duration": "Instantaneous",
+    "description": [
+      "You send forth a bolt that strikes the resonance between magical object and wielder. Make a ranged spell attack against a creature within range. On a hit, the target takes 2d10 thunder damage, plus 1d6 psychic damage for each magic item it is attuned to."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 2nd level or higher, the thunder damage increases by 1d10 for every slot level above 1st."
+    ],
+    "lists": ["Invention", "Melodic", "Divine", "Occult", "Arcane"],
+    "ritual": 0,
+    "type": "attack",
+    "damage": [
+      {
+        "id": "4C04AFAF-4324-475C-BBF2-04CF7CBF8BFD",
+        "dice": 2,
+        "die": 10,
+        "type": ["thunder"]
+      },
+      {
+        "id": "C36158EB-A237-4A89-92B3-D1102AD4FE85",
+        "dice": 1,
+        "die": 6,
+        "type": ["psychic"]
+      }
+    ],
+    "upcastDice": 1,
+    "upcastDiceIds": ["4C04AFAF-4324-475C-BBF2-04CF7CBF8BFD"]
+  },
+  {
+    "name": "Coin-Shot Blast",
+    "school": "Transmutation",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "Self (15-foot cone)",
+    "components": "V, S, M (a gold coin, which the spell consumes)",
+    "duration": "Instantaneous",
+    "description": [
+      "You shatter the gold coin that serves as this spell's material component and spray its shrapnel forward in a 15-foot cone. Each creature in that area must make a Dexterity saving throw. On a failed save, a creature takes 3d8 piercing damage and is pushed up to 10 feet directly away from you, or half as much damage on a success.",
+      "If only a single creature is affected by this spell, it takes the maximum damage instead of rolling."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 3rd level or higher, the thunder damage increases by 1d8 for every slot level above 2nd."
+    ],
+    "lists": ["Invention", "Occult", "Elemental"],
+    "element": "Earth",
+    "ritual": 0,
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 3,
+        "die": 8,
+        "type": ["piercing"]
+      }
+    ],
+    "upcastDice": 1
+  },
+  {
+    "name": "Crown of Avarice",
+    "school": "Enchantment",
+    "level": 7,
+    "castingTime": "1 action",
+    "range": "60 feet (30-foot radius)",
+    "components": "V, S, M (a crown worth at least 20 gp)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "A crown of brilliant gold appears above the head of a creature you can see within range. For the duration, whenever a creature that can see the target starts its turn within 30 feet of it, you can force the creature to make a Wisdom saving throw.",
+      "On a failed save, the creature becomes hostile towards the target and indifferent to all other creatures until the start of its next turn. If a creature reduces the target to 0 hit points, you can transfer this effect to it."
+    ],
+    "lists": ["Invention", "Occult", "Melodic", "Psionic"],
+    "ritual": 0,
+    "type": "save",
+    "save": "wis"
   },
   {
     "name": "Divine Favor",
@@ -13406,6 +13501,21 @@
     "ritual": 0,
     "type": "save",
     "save": "wis"
+  },
+  {
+    "name": "Seal Memory",
+    "school": "Enchantment",
+    "level": 5,
+    "castingTime": "8 hours",
+    "range": "30 feet",
+    "components": "V, S",
+    "duration": "Until dispelled",
+    "description": [
+      "You seal away a portion of a willing creature's memories. A sealed memory doesn't necessarily affect how a creature behaves, particularly if the memory contradicts the creature's natural inclinations, alignment, or beliefs. A Greater Restoration spell cast on the target at the same level as this spell or higher restores the creature's true memory.",
+      "During the casting of the spell, you can specify a condition that will cause the spell to end and return the target's memories to their original state. The condition can be as specific or as elaborate as you choose, but the DM must agree that the condition is reasonable and has a likelihood of coming to pass. The conditions can be based on a creature's name, identity, or deity but otherwise must be based on observable actions or qualities and not based on intangibles such as level, class, or hit points."
+    ],
+    "lists": ["Arcane", "Occult", "Psionic", "Melodic", "Invention"],
+    "ritual": 1
   },
   {
     "name": "Mold Earth",
@@ -26680,7 +26790,7 @@
     "castingTime": "1 action",
     "range": "20 feet (20-foot radius)",
     "components": "V, S",
-    "duration": "Concentration, up to 10 minutes",
+    "duration": "Instantaneous",
     "description": [
       "You cause the fires engulfing a creature to flare explosively. One burning creature within 20 feet erupts in an explosion of flame. It and each other creature within 20 feet of it must succeed on a Dexterity saving throw or take 3d6 fire damage."
     ],
@@ -26697,6 +26807,32 @@
         "dice": 3,
         "die": 6,
         "type": "fire"
+      }
+    ],
+    "upcastDice": 1
+  },
+  {
+    "name": "Illusory Skewer",
+    "school": "Illusion",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You conjure an illusory spear and hurl it at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 3d8 psychic damage and suffers one of the following effects of its choice:<ul><li>The target is dazed until the end of its next turn, or is stunned until the end of its next turn if it was already dazed.</li><li>The target takes 3d8 psychic damage the first time it moves or is forced to move at least 5 feet before the end of its next turn.</li></ul>"
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 3rd."
+    ],
+    "lists": ["Psionic", "Occult", "Arcane"],
+    "ritual": 0,
+    "type": "attack",
+    "damage": [
+      {
+        "dice": 3,
+        "die": 8,
+        "type": "psychic"
       }
     ],
     "upcastDice": 1
@@ -30112,6 +30248,49 @@
     ],
     "unique": "This spell was developed by the archdevil Dispater.",
     "lists": []
+  },
+  {
+    "name": "Seal of Tyranny",
+    "school": "Enchantment",
+    "level": 9,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a crown made of black metal worth at least 500 gp)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "A creature within range becomes dominated by you. At the start of each of the target's turns, it can make a Wisdom saving throw. On a failed save, the target takes 6d8 psychic damage and you gain temporary hit points equal to the damage dealt. On a success, this effect ends for the creature."
+    ],
+    "ritual": 0,
+    "type": "save",
+    "save": "wis",
+    "damage": [
+      {
+        "dice": 6,
+        "die": 8,
+        "type": "psychic"
+      }
+    ],
+    "unique": "This spell was developed by the archdevil Belial.",
+    "lists": []
+  },
+  {
+    "name": "Marrowflame Candle",
+    "school": "Evocation",
+    "level": 8,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a crown made of black metal worth at least 500 gp)",
+    "duration": "Instantaneous",
+    "description": [
+      "One creature you can see within range must make a Charisma saving throw. On a failed save, the target is cursed. While cursed in this way, whenever the target takes any amount of fire damage, it begins burning (1d10) or has its burning value increased by 1d10 if it was already burning.",
+      "Additionally, if the burning condition would end for the creature, it must make a Charisma saving throw. On a failed save, the condition does not end."
+    ],
+    "ritual": 0,
+    "type": "save",
+    "save": "cha",
+    "unique": "This spell was developed by the archdevil Fierna.",
+    "lists": [],
+    "curse": true
   },
   {
     "name": "Black Iron Bloom",

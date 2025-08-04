@@ -2242,35 +2242,74 @@
               "name": "Pureblood Chromatic",
               "traits": [
                 {
-                  "name": "Chromatic Infusion",
-                  "description": "As a bonus action, you can touch a weapon and infuse it with your breath weapon. For the next minute, the weapon deals an extra 1d4 damage of the same damage type as your breath weapon when it hits. After you use this bonus action, you can't do so again until you finish a long rest.",
+                  "name": "Focused Breath Weapon",
+                  "description": "When you use your breath weapon, you can choose to more intensely focus it and transform its effects into a different, more powerful effect.  Once you use your Metallic Breath Weapon, you can't do so again until you finish a long rest.",
                   "uses": {
-                    "id": "8E45F498-528C-463B-A207-3C0A23F69ED9",
+                    "id": "81D57E2B-449D-4284-A2F9-9B997DBC1B15",
                     "type": "fixed",
                     "amount": 1,
                     "reset": 2
                   },
-                  "actions": [
-                    {
-                      "id": "8E45F498-528C-463B-A207-3C0A23F69ED9",
-                      "hasUses": true,
-                      "type": "b",
-                      "name": "Chromatic Infusion",
-                      "description": "You can touch a weapon and infuse it with your breath weapon. For the next minute, the weapon deals an extra 1d4 {breath-damage} damage when it hits.",
-                      "variables": {
-                        "breath-damage": {
-                          "choice": "subrace",
-                          "key": {
-                            "Black": "acid",
-                            "Blue": "lightning",
-                            "Green": "poison",
-                            "Red": "fire",
-                            "White": "cold"
+                  "choices": {
+                    "id": "metallic-breath",
+                    "type": "trait",
+                    "options": [
+                      {
+                        "name": "Black Dragonborn",
+                        "traits": [
+                          {
+                            "name": "Fleshmelting Retch",
+                            "description": "You exhale a blob of concentrated acid at a creature within 30 feet of you. The target must make a Dexterity saving throw against your breath weapon save DC or be coated in acid. When a creature starts its turn coated in acid, it takes 1d10 acid damage and must use its action to remove the acid from itself. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10)."
                           }
-                        }
+                        ]
+                      },
+                      {
+                        "name": "Blue Dragonborn",
+                        "traits": [
+                          {
+                            "name": "Electric Surge",
+                            "description": "You cause lightning to violently explode from you. Creatures within 10 feet of you must make a Dexterity saving throw against your breath weapon save DC or take 1d10 lightning damage. On a successful save, a target takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10)."
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Green Dragonborn",
+                        "traits": [
+                          {
+                            "name": "Poisonous Fog",
+                            "description": "You exhale a thin poisonous mist in a 15-foot square. The area is lightly obscured, and the mist lasts for 1 minute or until a wind of moderate or greater speed disperses it. Creatures that breathe air who start their turn within the mist take 1d4 poison damage. This damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4)."
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Purple Dragonborn",
+                        "traits": [
+                          {
+                            "name": "Plasma Bomb",
+                            "description": "You fire a bolt of plasma to a point within 60 feet of you where it explodes in a 5-foot radius sphere. Creatures in that area must make a Dexterity saving throw against your breath weapon save DC or take 1d10 radiant damage. On a successful save, a target takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10)."
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Red Dragonborn",
+                        "traits": [
+                          {
+                            "name": "Volcano Plume",
+                            "description": "You fire a blob of lava to a point within 60 feet of you where it explodes in a 5-foot radius sphere. Creatures in that area must make a Dexterity saving throw against your breath weapon save DC or take 1d10 fire damage. On a successful save, a target takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10)."
+                          }
+                        ]
+                      },
+                      {
+                        "name": "White Dragonborn",
+                        "traits": [
+                          {
+                            "name": "Icy Mist",
+                            "description": "You exhale a freezing mist in a 15-foot square. The area is lightly obscured, and the mist lasts for 1 minute or until a wind of moderate or greater speed disperses it. Creatures who start their turn within the mist take 1d4 cold damage. This damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4)."
+                          }
+                        ]
                       }
-                    }
-                  ]
+                    ]
+                  }
                 }
               ]
             },
@@ -3046,6 +3085,7 @@
                             "Black": "acid",
                             "Blue": "lightning",
                             "Green": "poison",
+                            "Purple": "radiant",
                             "Red": "fire",
                             "White": "cold",
                             "Amethyst": "force",
@@ -3208,6 +3248,50 @@
             "description": "You have proficiency in the Deception skill.",
             "granted": [
               { "type": "skill", "options": ["Deception"], "level": 1 }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Purple",
+        "description": "<em>Chromatic subrace</em>",
+        "asis": [],
+        "traits": [
+          {
+            "name": "Draconic Resilience",
+            "description": "You have resistance to radiant damage. Your breath weapon deals radiant damage and imposes a Dexterity saving throw.",
+            "granted": [{ "type": "damage-resistance", "options": ["Radiant"] }],
+            "actions": [
+              {
+                "id": "B05E6826-F8BD-42C8-8EB7-A66E960D8A11",
+                "name": "Radiant Breath",
+                "hasUses": true,
+                "type": "a",
+                "description": "When you take the Attack action on your turn, you can replace one of your attacks with {desc} in a 15-foot cone. Each creature in that area must make a DC {dc-con} {save-type} saving throw. On a failed save, the creature takes {damage} + {mod-con} {damage-type} damage. On a successful save, it takes half as much damage.",
+                "variables": {
+                  "damage": {
+                    "1": "1d10",
+                    "5": "2d10",
+                    "11": "3d10",
+                    "17": "4d10"
+                  },
+                  "damage-type": "radiant",
+                  "save-type": "Dexterity",
+                  "desc": "a flash of blinding light"
+                }
+              }
+            ]
+          },
+          {
+            "name": "Mobster",
+            "description": "You gain proficiency in Intimidation, Sleight of Hand, or Stealth (your choice).",
+            "choices": [
+              {
+                "id": "449D080C-E237-46B0-84AE-074E317B084D",
+                "type": "skill",
+                "limits": ["Intimidation", "Sleight of Hand", "Stealth"],
+                "level": 1
+              }
             ]
           }
         ]

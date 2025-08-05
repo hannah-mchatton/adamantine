@@ -56,13 +56,14 @@
                 <sup *ngIf="elemental">
                   {{ spell.element }}
                 </sup>
-                <sup *ngIf="spell.unique"> U </sup>
-                <span *ngIf="spell.curse"> 🜏 </span>
+                <sup *ngIf="spell.unique" class="mdi mdi-star"></sup>
+                <span *ngIf="spell.curse" class="mdi mdi-pentagram"></span>
+                <span *ngIf="spell.powerWord" class="mdi mdi-waveform"></span>
               </td>
               <td>{{ spell.school }}</td>
               <td>
                 {{ spell.castingTime.split(",")[0] }}
-                <sup *ngIf="spell.ritual"> R </sup>
+                <span *ngIf="spell.ritual" class="mdi mdi-book"></span>
               </td>
               <td>{{ spell.range }}</td>
               <td>{{ spell.duration }}</td>

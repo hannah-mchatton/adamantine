@@ -5248,182 +5248,344 @@
         "options": [
           {
             "name": "Gold Luck",
-            "description": "You harness the mystic fortuity of the gold dragon. Whenever you or an ally makes an attack roll, an ability check, or a saving throw, you can choose to roll an additional d20. You can take this action after you roll the die, but before the outcome is determined. You choose which of the d20s is used for the attack roll, ability check, or saving throw. You can use this feature once, and regain the ability to do so after finishing a short or long rest.",
-            "uses": {
-              "id": "B4DBFCB2-A51C-42A5-A98D-6D8EAC67A463",
-              "type": "fixed",
-              "amount": 1,
-              "reset": 1
-            }
+            "traits": [
+              {
+                "name": "",
+                "description": "You harness the mystic fortuity of the gold dragon. Whenever you or an ally makes an attack roll, an ability check, or a saving throw, you can choose to roll an additional d20. You can take this action after you roll the die, but before the outcome is determined. You choose which of the d20s is used for the attack roll, ability check, or saving throw. You can use this feature once, and regain the ability to do so after finishing a short or long rest.",
+                "uses": {
+                  "id": "B4DBFCB2-A51C-42A5-A98D-6D8EAC67A463",
+                  "type": "fixed",
+                  "amount": 1,
+                  "reset": 1
+                }
+              }
+            ]
           },
           {
             "name": "Sheltering Wings",
-            "description": "Flexible armor plating grows across your wings, allowing you to use them as shelter for your allies. When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll."
+            "traits": [
+              {
+                "name": "",
+                "description": "Flexible armor plating grows across your wings, allowing you to use them as shelter for your allies. When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll."
+              }
+            ]
           },
           {
             "name": "Warrior's Will",
-            "description": "You adorn your form with a symbol of bravery and prepare yourself to face opposition. You gain advantage on Wisdom saving throws.",
-            "granted": [{ "type": "save-advantage", "options": ["wis"] }]
+            "traits": [
+              {
+                "name": "",
+                "description": "You adorn your form with a symbol of bravery and prepare yourself to face opposition. You gain advantage on Wisdom saving throws.",
+                "granted": [{ "type": "save-advantage", "options": ["wis"] }]
+              }
+            ]
           },
           {
             "name": "Ivory Charge",
-            "description": "Your horns split into a branching crown of antlers, capable of punching holes through hide and armor alike. You gain an antler natural weapon, which counts as a martial melee weapon for you. You can use it to make melee weapon attacks, with which you are proficient. Your antlers deal piercing damage equal to 3d4 + your Strength modifier. If you move at least 10 feet in a straight line during your turn, you gain advantage on the first attack you make with your antlers."
+            "traits": [
+              {
+                "name": "",
+                "description": "Your horns split into a branching crown of antlers, capable of punching holes through hide and armor alike. You gain an antler natural weapon, which counts as a martial melee weapon for you. You can use it to make melee weapon attacks, with which you are proficient. Your antlers deal piercing damage equal to 3d4 + your Strength modifier. If you move at least 10 feet in a straight line during your turn, you gain advantage on the first attack you make with your antlers."
+              }
+            ]
           },
           {
             "name": "Stone Scales",
-            "description": "You assimilate available minerals in order to create a thick layer of defensive stone scales. Your Armor Class becomes equal to 16 + your Constitution modifier. You are considered as wearing heavy armor, but don't suffer penalties to your Dexterity (Stealth) or as a result of lacking heavy armor proficiency. You lose access to the Flight feature, as well as the speed benefit of Stride.",
-            "granted": [{ "type": "unarmored", "base": 16, "scores": ["con"] }]
+            "traits": [
+              {
+                "name": "",
+                "description": "You assimilate available minerals in order to create a thick layer of defensive stone scales. Your Armor Class becomes equal to 16 + your Constitution modifier. You are considered as wearing heavy armor, but don't suffer penalties to your Dexterity (Stealth) or as a result of lacking heavy armor proficiency. You lose access to the Flight feature, as well as the speed benefit of Stride.",
+                "granted": [
+                  { "type": "unarmored", "base": 16, "scores": ["con"] }
+                ]
+              }
+            ]
           },
           {
             "name": "Capable Form",
-            "description": "Your body grows better suited to grasping and manipulating objects. You can ignore the disadvantage imposed on attack on attack rolls by Mythic Build. Additionally, you gain proficiency with simple and martial weapons as well as with two tools of your choice.",
-            "choices": [
-              { "id": "82C4D610-BB76-4D11-9880-87D553ED1922", "type": "tool" },
-              { "id": "F60A3BE6-20BC-45D6-9047-97D01AD1D652", "type": "tool" }
-            ],
-            "granted": [{ "type": "weapon", "options": ["Simple", "Martial"] }]
+            "traits": [
+              {
+                "name": "",
+                "description": "Your body grows better suited to grasping and manipulating objects. You can ignore the disadvantage imposed on attack on attack rolls by Mythic Build. Additionally, you gain proficiency with simple and martial weapons as well as with two tools of your choice.",
+                "choices": [
+                  {
+                    "id": "82C4D610-BB76-4D11-9880-87D553ED1922",
+                    "type": "tool"
+                  },
+                  {
+                    "id": "F60A3BE6-20BC-45D6-9047-97D01AD1D652",
+                    "type": "tool"
+                  }
+                ],
+                "granted": [
+                  { "type": "weapon", "options": ["Simple", "Martial"] }
+                ]
+              }
+            ]
           },
           {
             "name": "Esoteric Ward",
-            "description": "Runic glyphs carved across your body guard you against a variety of magics. You gain advantage on all Intelligence, Charisma, and Strength saving throws against magical effects."
+            "traits": [
+              {
+                "name": "",
+                "description": "Runic glyphs carved across your body guard you against a variety of magics. You gain advantage on all Intelligence, Charisma, and Strength saving throws against magical effects."
+              }
+            ]
           },
           {
             "name": "Veiled Wings",
-            "description": "Your wings expand, elegantly veiling you from your foes. Your Glide & Fly speed increases by 10 ft, and you can take the Disengage action as a bonus action."
+            "traits": [
+              {
+                "name": "",
+                "description": "Your wings expand, elegantly veiling you from your foes. Your Glide & Fly speed increases by 10 ft, and you can take the Disengage action as a bonus action."
+              }
+            ]
           },
           {
             "name": "Reverberating Roar",
-            "description": "Your voice grows deeper, seeming to come from a much larger creature. As a bonus action, you can roar, inciting fear and hesitation in your enemies. Each creature of your choice within 20 feet of you are forced to make a Wisdom saving throw against your Dragon Spark save DC. A target automatically succeeds on the save if it can't hear or see you. On a failed save, a target can't take reactions until the start of your next turn. A creature that succeeds on this saving throw is immune to your roar until the end of your next turn."
+            "traits": [
+              {
+                "name": "",
+                "description": "Your voice grows deeper, seeming to come from a much larger creature. As a bonus action, you can roar, inciting fear and hesitation in your enemies. Each creature of your choice within 20 feet of you are forced to make a Wisdom saving throw against your Dragon Spark save DC. A target automatically succeeds on the save if it can't hear or see you. On a failed save, a target can't take reactions until the start of your next turn. A creature that succeeds on this saving throw is immune to your roar until the end of your next turn."
+              }
+            ]
           },
           {
             "name": "Tunnel Wyrm",
-            "description": "You gain a burrowing speed equal to half your walking speed. You can tunnel through loose dirt, gravel, and similar materials, but not through solid materials. If you burrow at half speed, you can reinforce your tunnel as you move, allowing others to pass through-otherwise your tunnel slowly collapses behind you. Additionally, as an action while burrowing near the surface, you can hollow out a portion of space in the terrain, which immediately collapses into a 15-feet wide and deep sinkhole. Creatures caught in the area must succeed on a Dexterity saving throw against your Dragon Spark DC or fall into the sinkhole and drop prone. On a succesful save, a creature can instead choose to move to the nearest available space without provoking opportunity attacks. If you spend 1 minute creating the sinkhole, it will instead collapse when the first creature that is Small or larger moves into its space. You can use this property twice, after which you must finish a short or long rest before you can use it again.",
-            "uses": {
-              "id": "74D10329-FF1B-45FC-A14E-7CE79A8F1DF8",
-              "type": "fixed",
-              "amount": 2,
-              "reset": 1
-            },
-            "granted": [{ "type": "speed", "speed": "burrow", "amount": -0.5 }]
+            "traits": [
+              {
+                "name": "",
+                "description": "You gain a burrowing speed equal to half your walking speed. You can tunnel through loose dirt, gravel, and similar materials, but not through solid materials. If you burrow at half speed, you can reinforce your tunnel as you move, allowing others to pass through-otherwise your tunnel slowly collapses behind you. Additionally, as an action while burrowing near the surface, you can hollow out a portion of space in the terrain, which immediately collapses into a 15-feet wide and deep sinkhole. Creatures caught in the area must succeed on a Dexterity saving throw against your Dragon Spark DC or fall into the sinkhole and drop prone. On a succesful save, a creature can instead choose to move to the nearest available space without provoking opportunity attacks. If you spend 1 minute creating the sinkhole, it will instead collapse when the first creature that is Small or larger moves into its space. You can use this property twice, after which you must finish a short or long rest before you can use it again.",
+                "uses": {
+                  "id": "74D10329-FF1B-45FC-A14E-7CE79A8F1DF8",
+                  "type": "fixed",
+                  "amount": 2,
+                  "reset": 1
+                },
+                "granted": [
+                  { "type": "speed", "speed": "burrow", "amount": -0.5 }
+                ]
+              }
+            ]
           },
           {
             "name": "Blasting Breath",
-            "description": "Your elemental spark is always at the ready. You can use your action to exhale a bolt of elemental energy and spit it at a creature you can see within a range of 120. Make a ranged Dragon Spark attack. On a hit, the target takes 1d10 + your dragon spark ability score modifier damage. The damage is the same damage type as your Dragon's Breath. The number of damage dice increases by one at levels 5, 11, and 17."
+            "traits": [
+              {
+                "name": "",
+                "description": "Your elemental spark is always at the ready. You can use your action to exhale a bolt of elemental energy and spit it at a creature you can see within a range of 120. Make a ranged Dragon Spark attack. On a hit, the target takes 1d10 + your dragon spark ability score modifier damage. The damage is the same damage type as your Dragon's Breath. The number of damage dice increases by one at levels 5, 11, and 17."
+              }
+            ]
           },
           {
             "name": "Wyrm Tongue",
-            "description": "Your suave voice is affable and soothing. You have gain proficiency in Deception or Persuasion (your choice). You can change your choice every time you finish a short or long rest. Additionally, you learn two languages of your choice.",
-            "choices": [
+            "traits": [
               {
-                "id": "A2250BD4-82B8-4200-9C7D-9CB31ECCFC8F",
-                "type": "language"
-              },
-              {
-                "id": "E2F1ACE7-3E82-488A-9E21-EF6BF8EB7E8E",
-                "type": "language"
-              },
-              {
-                "id": "96E48F6D-18D9-4002-B89F-7DF02058EBA4",
-                "type": "skill",
-                "limits": ["Deception", "Persuasion"],
-                "level": 1
+                "name": "",
+                "description": "Your suave voice is affable and soothing. You have gain proficiency in Deception or Persuasion (your choice). You can change your choice every time you finish a short or long rest. Additionally, you learn two languages of your choice.",
+                "choices": [
+                  {
+                    "id": "A2250BD4-82B8-4200-9C7D-9CB31ECCFC8F",
+                    "type": "language"
+                  },
+                  {
+                    "id": "E2F1ACE7-3E82-488A-9E21-EF6BF8EB7E8E",
+                    "type": "language"
+                  },
+                  {
+                    "id": "96E48F6D-18D9-4002-B89F-7DF02058EBA4",
+                    "type": "skill",
+                    "limits": ["Deception", "Persuasion"],
+                    "level": 1
+                  }
+                ]
               }
             ]
           },
           {
             "name": "Rending Jaws",
-            "description": "Your jaw muscles grow more powerful, and your fangs grow serrated and cruel, capable of puncturing armor and rending flesh. When you hit with a bite attack, the target suffers a -1 to Armor Class for 1 minute. This effect can only be applied once per creature."
+            "traits": [
+              {
+                "name": "",
+                "description": "Your jaw muscles grow more powerful, and your fangs grow serrated and cruel, capable of puncturing armor and rending flesh. When you hit with a bite attack, the target suffers a -1 to Armor Class for 1 minute. This effect can only be applied once per creature."
+              }
+            ]
           },
           {
             "name": "White Cunning",
-            "description": "You instill yourself with the primal awareness of the white dragon. You have advantage on initiative checks and you ignore non-magical difficult terrain.",
-            "granted": [{ "type": "initiative-advantage" }]
+            "traits": [
+              {
+                "name": "",
+                "description": "You instill yourself with the primal awareness of the white dragon. You have advantage on initiative checks and you ignore non-magical difficult terrain.",
+                "granted": [{ "type": "initiative-advantage" }]
+              }
+            ]
           },
           {
             "name": "Driving Strikes",
-            "description": "The tip of your tail develops a tough, bony club, and the force of your blows leaves your enemies reeling. When you make a tail attack on your turn, your reach for it is 5 feet greater than normal. Additionally, when you hit a target twice on the same turn with any combination of natural weapons, the target must succeed on a Strength saving throw (DC = 8 + your proficiency bonus + your Strength modifier) or be pushed 10 feet away from you."
+            "traits": [
+              {
+                "name": "",
+                "description": "The tip of your tail develops a tough, bony club, and the force of your blows leaves your enemies reeling. When you make a tail attack on your turn, your reach for it is 5 feet greater than normal. Additionally, when you hit a target twice on the same turn with any combination of natural weapons, the target must succeed on a Strength saving throw (DC = 8 + your proficiency bonus + your Strength modifier) or be pushed 10 feet away from you."
+              }
+            ]
           },
           {
             "name": "Elemental Maw",
-            "description": "Volatile energy fills your gullet. Once on each of your turns when you hit with a bite attack, you deal an additional 1d6 damage of your Dragon's Breath damage type."
+            "traits": [
+              {
+                "name": "",
+                "description": "Volatile energy fills your gullet. Once on each of your turns when you hit with a bite attack, you deal an additional 1d6 damage of your Dragon's Breath damage type."
+              }
+            ]
           },
           {
             "name": "Darting Predator",
-            "description": "You adapt to better surprise your foes with short bursts of speed. You can take the Dash action as a bonus action."
+            "traits": [
+              {
+                "name": "",
+                "description": "You adapt to better surprise your foes with short bursts of speed. You can take the Dash action as a bonus action."
+              }
+            ]
           },
           {
             "name": "Drowning Terror",
-            "description": "You gain a swimming speed equal to your walking speed, and you can breathe both air and water. Whenever you grapple a target that is unable to breathe freely-such as an aquatic creature on land or vice versa-at the start of each of its turns, the target of your grapple must succeed on a Wisdom save against your Dragon Spark DC or become frightened of drowning until it can again breathe freely. Additionally, when you are dragging or carrying a grappled creature with you, your speed is no longer halved.",
-            "granted": [{ "type": "speed", "speed": "swim", "amount": -1 }]
+            "traits": [
+              {
+                "name": "",
+                "description": "You gain a swimming speed equal to your walking speed, and you can breathe both air and water. Whenever you grapple a target that is unable to breathe freely-such as an aquatic creature on land or vice versa-at the start of each of its turns, the target of your grapple must succeed on a Wisdom save against your Dragon Spark DC or become frightened of drowning until it can again breathe freely. Additionally, when you are dragging or carrying a grappled creature with you, your speed is no longer halved.",
+                "granted": [{ "type": "speed", "speed": "swim", "amount": -1 }]
+              }
+            ]
           },
           {
             "name": "Skewering Quills",
-            "description": "You develop clusters of sharp quills along your limbs which you can fire in an arc at your foes. You gain a quills natural weapon, which counts as a martial ranged weapon for you and which you are proficient with. You can use them to make ranged weapon attacks with a range of 60/120, and you add your Strength modifier to the attack and damage rolls when you attack with them. On a hit, they deal 1d10 piercing damage. Hit or miss, one square occupied by the targeted creature is then filled with quills, and you can additionally choose two squares within 5 feet of that square to also fill with quills as your inaccurate bombardment harmlessly scatters across the area. Any creature that subsequently enters a square filled with quills must succeed on a Dexterity saving throw against your Dragon Spark save DC or stop moving this turn and take 1 piercing damage. A creature moving through the area at half speed doesn't need to make the save. You can use this attack a number of times equal to 1 + your Constitution modifier (minimum 1), after which you must finish a short or long rest to use it again.",
-            "uses": {
-              "id": "9DEF8826-7002-4E6D-87AA-CB4273F3C07E",
-              "type": "derived",
-              "source": "score",
-              "score": "con",
-              "modifier": "+1",
-              "reset": 1
-            }
+            "traits": [
+              {
+                "name": "",
+                "description": "You develop clusters of sharp quills along your limbs which you can fire in an arc at your foes. You gain a quills natural weapon, which counts as a martial ranged weapon for you and which you are proficient with. You can use them to make ranged weapon attacks with a range of 60/120, and you add your Strength modifier to the attack and damage rolls when you attack with them. On a hit, they deal 1d10 piercing damage. Hit or miss, one square occupied by the targeted creature is then filled with quills, and you can additionally choose two squares within 5 feet of that square to also fill with quills as your inaccurate bombardment harmlessly scatters across the area. Any creature that subsequently enters a square filled with quills must succeed on a Dexterity saving throw against your Dragon Spark save DC or stop moving this turn and take 1 piercing damage. A creature moving through the area at half speed doesn't need to make the save. You can use this attack a number of times equal to 1 + your Constitution modifier (minimum 1), after which you must finish a short or long rest to use it again.",
+                "uses": {
+                  "id": "9DEF8826-7002-4E6D-87AA-CB4273F3C07E",
+                  "type": "derived",
+                  "source": "score",
+                  "score": "con",
+                  "modifier": "+1",
+                  "reset": 1
+                }
+              }
+            ]
           },
           {
             "name": "Thorny Spines",
-            "description": "You grow a series of sharp, slender spikes across your body. Any enemy that deals damage to you in melee suffers 1d4 piercing damage. At the start of each of your turns you deal 1d4 piercing damage to any creature grappling you or any creature grappled by you."
+            "traits": [
+              {
+                "name": "",
+                "description": "You grow a series of sharp, slender spikes across your body. Any enemy that deals damage to you in melee suffers 1d4 piercing damage. At the start of each of your turns you deal 1d4 piercing damage to any creature grappling you or any creature grappled by you."
+              }
+            ]
           },
           {
             "name": "Breath of Bolstering Essence",
-            "description": "Your magical essence is a wellspring of vitality waiting to be shared. As an action, you exhale revitalizing power unto a creature of your choice within 10 feet of you, restoring a number of hit points equal to your demi-dragon level. At your option, you can expend one or more of your Hit Dice, up to half your demi-dragon level. For each Hit Die spent in this way, roll the die then add your Constitution modifier, and add the result to the total amount of hit points you restore to the target. Once you use this feature, you cannot use it again until you finish a short or long rest.",
-            "uses": {
-              "id": "8718E1A5-D7DE-4AC6-B9CD-71FED0F41D95",
-              "type": "fixed",
-              "amount": 1,
-              "reset": 1
-            }
+            "traits": [
+              {
+                "name": "",
+                "description": "Your magical essence is a wellspring of vitality waiting to be shared. As an action, you exhale revitalizing power unto a creature of your choice within 10 feet of you, restoring a number of hit points equal to your demi-dragon level. At your option, you can expend one or more of your Hit Dice, up to half your demi-dragon level. For each Hit Die spent in this way, roll the die then add your Constitution modifier, and add the result to the total amount of hit points you restore to the target. Once you use this feature, you cannot use it again until you finish a short or long rest.",
+                "uses": {
+                  "id": "8718E1A5-D7DE-4AC6-B9CD-71FED0F41D95",
+                  "type": "fixed",
+                  "amount": 1,
+                  "reset": 1
+                }
+              }
+            ]
           },
           {
             "name": "Enthralling Dragonsong",
-            "description": "You can sing a wordless aria that pacifies your audience. As a bonus action and on each subsequent turn while your song lasts, every creature of your choice within 20 feet of you must succeed on a Wisdom saving throw against your Dragon Spark or become charmed by you until your song ends. A creature that cannot hear you or which has successfully saved against your song is immune to this use of your song. The song ends after 1 minute, if you are incapacitated, or if you do not maintain it with a bonus action each turn. Once you use this feature, you cannot use it again until you finish a short or long rest.",
-            "uses": {
-              "id": "CD2BCB17-0BF7-4BD9-9E60-45FBC87BD569",
-              "type": "fixed",
-              "amount": 1,
-              "reset": 1
-            }
+            "traits": [
+              {
+                "name": "",
+                "description": "You can sing a wordless aria that pacifies your audience. As a bonus action and on each subsequent turn while your song lasts, every creature of your choice within 20 feet of you must succeed on a Wisdom saving throw against your Dragon Spark or become charmed by you until your song ends. A creature that cannot hear you or which has successfully saved against your song is immune to this use of your song. The song ends after 1 minute, if you are incapacitated, or if you do not maintain it with a bonus action each turn. Once you use this feature, you cannot use it again until you finish a short or long rest.",
+                "uses": {
+                  "id": "CD2BCB17-0BF7-4BD9-9E60-45FBC87BD569",
+                  "type": "fixed",
+                  "amount": 1,
+                  "reset": 1
+                }
+              }
+            ]
           },
           {
             "name": "Numinous Dragonsong",
-            "description": "As a bonus action, you can sing a wordless hymn that guides your allies. Your song lasts until the start of your next turn, and while it lasts you and creatures of your choice within 20 feet of you gain a bonus to death saving throws and Constitution saving throws made to maintain concentration equal to your dragon spark ability score modifier (with a minimum bonus of +1). While singing, you gain blindsight out to 10 feet. If you already have blindsight, it instead increases by 10 feet. The song ends if you are incapacitated or if you do not maintain it with a bonus action each turn."
+            "traits": [
+              {
+                "name": "",
+                "description": "As a bonus action, you can sing a wordless hymn that guides your allies. Your song lasts until the start of your next turn, and while it lasts you and creatures of your choice within 20 feet of you gain a bonus to death saving throws and Constitution saving throws made to maintain concentration equal to your dragon spark ability score modifier (with a minimum bonus of +1). While singing, you gain blindsight out to 10 feet. If you already have blindsight, it instead increases by 10 feet. The song ends if you are incapacitated or if you do not maintain it with a bonus action each turn."
+              }
+            ]
           },
           {
             "name": "Shape Breath",
-            "description": "When you breathe destructive energy, you can shape pockets of relative safety within the area of your breath. When you use your Dragon's Breath feature, you can choose a number of creatures that are within the area of the breath weapon and which you can see equal to 1 + your dragon spark ability score modifier (minimum 1). The chosen creatures need not make a saving throw, and take no damage from your Dragon's Breath."
+            "traits": [
+              {
+                "name": "",
+                "description": "When you breathe destructive energy, you can shape pockets of relative safety within the area of your breath. When you use your Dragon's Breath feature, you can choose a number of creatures that are within the area of the breath weapon and which you can see equal to 1 + your dragon spark ability score modifier (minimum 1). The chosen creatures need not make a saving throw, and take no damage from your Dragon's Breath."
+              }
+            ]
           },
           {
             "name": "Draining Scales",
-            "description": "You alter your scales to siphon magical energy. Whenever you are a target of any spell of 1st level or higher, you gain temporary hit points equal to your Constitution modifier (minimum 1) before the spell's effects are resolved."
+            "traits": [
+              {
+                "name": "",
+                "description": "You alter your scales to siphon magical energy. Whenever you are a target of any spell of 1st level or higher, you gain temporary hit points equal to your Constitution modifier (minimum 1) before the spell's effects are resolved."
+              }
+            ]
           },
           {
             "name": "Silver Mist",
-            "description": "You take on the aspect of the silver dragon, and can walk on clouds. As a reaction that you can take at any time when you or another creature that is Large or smaller within 60 feet of you falls, you can create a cloud beneath the target as a reaction. The cloud supports the creature's weight and can harmlessly break their fall as if it were a physical object. As part of creating the cloud, you can choose to have it immediately move up to 10 feet up or down, where it will then float in place for up to 1 hour, or until you create a new one."
+            "traits": [
+              {
+                "name": "",
+                "description": "You take on the aspect of the silver dragon, and can walk on clouds. As a reaction that you can take at any time when you or another creature that is Large or smaller within 60 feet of you falls, you can create a cloud beneath the target as a reaction. The cloud supports the creature's weight and can harmlessly break their fall as if it were a physical object. As part of creating the cloud, you can choose to have it immediately move up to 10 feet up or down, where it will then float in place for up to 1 hour, or until you create a new one."
+              }
+            ]
           },
           {
             "name": "Chameleon Scales",
-            "description": "Your scales gain the ability to change color, letting you blend in with your surroundings. You can take the Hide action as a bonus action on your turn. You have advantage on Stealth checks made to hide in dim light and in natural terrain, such as rocks, plants, or sand."
+            "traits": [
+              {
+                "name": "",
+                "description": "Your scales gain the ability to change color, letting you blend in with your surroundings. You can take the Hide action as a bonus action on your turn. You have advantage on Stealth checks made to hide in dim light and in natural terrain, such as rocks, plants, or sand."
+              }
+            ]
           },
           {
             "name": "Venemous Sting",
-            "description": "Your tail develops a stinger, loaded with poison. Your tail attack deals your choice of piercing or bludgeoning damage. When you deal damage with a tail attack, you can choose to inject the target with poison. The target must succeed on a Constitution saving throw against your Dragon Spark save DC. On a failure, the target takes an additional 2d6 poison damage and is poisoned until the end of its next turn."
+            "traits": [
+              {
+                "name": "",
+                "description": "Your tail develops a stinger, loaded with poison. Your tail attack deals your choice of piercing or bludgeoning damage. When you deal damage with a tail attack, you can choose to inject the target with poison. The target must succeed on a Constitution saving throw against your Dragon Spark save DC. On a failure, the target takes an additional 2d6 poison damage and is poisoned until the end of its next turn."
+              }
+            ]
           },
           {
             "name": "Skittering Crawl",
-            "description": "You gain a climbing speed equal to your walking speed. If you move at least 20 feet on the ground or as part of a climb, you can choose to take the Dodge action as a bonus action.",
-            "granted": [{ "type": "speed", "speed": "climb", "amount": -1 }]
+            "traits": [
+              {
+                "name": "",
+                "description": "You gain a climbing speed equal to your walking speed. If you move at least 20 feet on the ground or as part of a climb, you can choose to take the Dodge action as a bonus action.",
+                "granted": [{ "type": "speed", "speed": "climb", "amount": -1 }]
+              }
+            ]
           },
           {
             "name": "Snatching Tail",
-            "description": "Your tail becomes flexible, letting you unexpectedly catch your foes and yank them around. When you hit a creature that is up to one size category larger than you with your tail, you can choose to force them to roll a Strength saving throw (DC = 8 + your proficiency bonus + your Strength modifier). On a failure, they are pulled to a space of your choosing within 10 feet of you. The space must be on the ground and unoccupied."
+            "traits": [
+              {
+                "name": "",
+                "description": "Your tail becomes flexible, letting you unexpectedly catch your foes and yank them around. When you hit a creature that is up to one size category larger than you with your tail, you can choose to force them to roll a Strength saving throw (DC = 8 + your proficiency bonus + your Strength modifier). On a failure, they are pulled to a space of your choosing within 10 feet of you. The space must be on the ground and unoccupied."
+              }
+            ]
           }
         ]
       }

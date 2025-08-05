@@ -995,6 +995,22 @@
     }
   },
   {
+    "name": "Bloodwrought Bonds",
+    "school": "Sangromancy",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "30 feet (15-foot radius)",
+    "components": "V, S, M (a chain coated in dried blood)",
+    "duration": "1 round",
+    "description": [
+      "As part of casting this spell, you or a willing creature within range must expend three hit dice or the spell automatically fails.",
+      "You cause the blood of the target to expand outwards into restraints, causing the target and each creature within 15 feet of it to become restrained (escape DC equals your spell save DC) until the end of your next turn."
+    ],
+    "lists": ["Arcane", "Elemental", "Occult"],
+    "ritual": 0,
+    "element": "Water"
+  },
+  {
     "name": "Armor of Agathys",
     "school": "Abjuration",
     "level": 1,
@@ -14867,6 +14883,7 @@
   },
   {
     "name": "Power Word: Glory",
+    "powerWord": true,
     "school": "Restoration",
     "level": 8,
     "castingTime": "1 action",
@@ -14880,7 +14897,35 @@
     "ritual": 0
   },
   {
+    "name": "Power Word: Dismiss",
+    "powerWord": true,
+    "school": "Abjuration",
+    "level": 8,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V",
+    "duration": "Concentration, up to 1 round",
+    "description": [
+      "One creature you can see within range must succeed on a Charisma saving throw or be banished to the outer void until the end of its next turn, at which point it returns to the nearest unoccupied space to the one it departed.",
+      "A creature that starts its turn in this outer void takes 10d10 + 50 force damage. A creature killed by this damage is rent asunder, cast across the void, and does not return."
+    ],
+    "lists": [],
+    "unique": "This spell was developed by the archdevil Glasya.",
+    "ritual": 0,
+    "type": "save",
+    "save": "cha",
+    "damage": [
+      {
+        "dice": 10,
+        "die": 10,
+        "amount": 50,
+        "type": "force"
+      }
+    ]
+  },
+  {
     "name": "Power Word: Heal",
+    "powerWord": true,
     "school": "Restoration",
     "level": 9,
     "castingTime": "1 action",
@@ -14895,6 +14940,7 @@
   },
   {
     "name": "Power Word: Kill",
+    "powerWord": true,
     "school": "Necromancy",
     "level": 9,
     "castingTime": "1 action",
@@ -14909,6 +14955,7 @@
   },
   {
     "name": "Power Word: Pain",
+    "powerWord": true,
     "school": "Necromancy",
     "level": 7,
     "castingTime": "1 action",
@@ -14927,6 +14974,7 @@
   },
   {
     "name": "Power Word: Resist",
+    "powerWord": true,
     "school": "Abjuration",
     "level": 6,
     "castingTime": "1 action",
@@ -14941,6 +14989,7 @@
   },
   {
     "name": "Power Word: Stun",
+    "powerWord": true,
     "school": "Necromancy",
     "level": 8,
     "castingTime": "1 action",
@@ -14957,6 +15006,7 @@
   },
   {
     "name": "Power Word: Vengeance",
+    "powerWord": true,
     "school": "Enchantment",
     "level": 7,
     "castingTime": "1 action",
@@ -21178,6 +21228,7 @@
   },
   {
     "name": "Power Word: Drown",
+    "powerWord": true,
     "school": "Illusion",
     "level": 7,
     "castingTime": "1 action",
@@ -28229,6 +28280,7 @@
   },
   {
     "name": "Power Word: Hush",
+    "powerWord": true,
     "school": "Enchantment",
     "level": 3,
     "castingTime": "1 bonus action",
@@ -28243,6 +28295,7 @@
   },
   {
     "name": "Power Word: Suffer",
+    "powerWord": true,
     "school": "Enchantment",
     "level": 3,
     "castingTime": "1 bonus action",

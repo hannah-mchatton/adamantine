@@ -730,6 +730,75 @@
       </ng-container>
     </ng-container>
   </ng-container>
+  <ng-container *ngIf="feature.subclassExploitsFeature">
+    At {{ numberThConverter(classLevel) }} level, and again at 5th and 9th
+    levels, you gain certain exploits, as shown on the {{ feature.name }} table
+    below. These exploits are always prepared and don't count against your
+    number of prepared exploits.
+    <table>
+      <tr>
+        <th>{{ feature.name }}</th>
+        <th></th>
+      </tr>
+      <tr>
+        <th>Level</th>
+        <th>Exploits</th>
+      </tr>
+      <tr>
+        <td>{{ numberThConverter(classLevel) }}</td>
+        <td>
+          <a
+            routerLink="/exploit/{{
+              nameUrlEncode(feature.granted[0].options[0])
+            }}"
+            >{{ feature.granted[0].options[0] }}</a
+          >,
+          <a
+            routerLink="/exploit/{{
+              nameUrlEncode(feature.granted[0].options[1])
+            }}"
+            >{{ feature.granted[0].options[1] }}</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td>5th</td>
+        <td>
+          <a
+            routerLink="/exploit/{{
+              nameUrlEncode(feature.granted[0].options[2])
+            }}"
+            >{{ feature.granted[0].options[2] }}</a
+          >,
+          <a
+            routerLink="/exploit/{{
+              nameUrlEncode(feature.granted[0].options[3])
+            }}"
+            >{{ feature.granted[0].options[3] }}</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td>9th</td>
+        <td>
+          <a
+            routerLink="/exploit/{{
+              nameUrlEncode(feature.granted[0].options[4])
+            }}"
+            >{{ feature.granted[0].options[4] }}</a
+          >
+        </td>
+      </tr>
+    </table>
+    <ng-conatiner *ngIf="feature.granted[0].options?.length == 6">
+      Additionally, you learn the
+      <a
+        routerLink="/exploit/{{ nameUrlEncode(feature.granted[0].options[5]) }}"
+        >{{ feature.granted[0].options[5] }}</a
+      >
+      exploit, and it is considered a Mastered Exploit for you.
+    </ng-conatiner>
+  </ng-container>
   <ng-container
     *ngIf="!feature.subclassSpellsFeature && !feature.subclassExploitsFeature"
   >

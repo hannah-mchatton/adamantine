@@ -27,13 +27,8 @@ import { SpellComponent } from './spells/spell/spell.component';
 import { SpellsComponent } from './spells/spells/spells.component';
 import { TfLevelComponent } from './transformations/tf-level/tf-level.component';
 import { TransformationComponent } from './transformations/transformation/transformation.component';
-import { BuilderChoiceComponent } from './features/builder-choice/builder-choice.component';
-import { BuilderFeatureComponent } from './features/builder-feature/builder-feature.component';
 import { DisplayChoiceComponent } from './features/display-choice/display-choice.component';
 import { DisplayFeatureComponent } from './features/display-feature/display-feature.component';
-import { BuilderListedComponent } from './features/builder-listed/builder-listed.component';
-import { StoreModule } from '@ngrx/store';
-import { updateReducer } from './features/builder.reducer';
 import { MonsterTraitComponent } from './monster/monster-trait/monster-trait.component';
 import { MonsterComponent } from './monster/monster/monster.component';
 import { NzModalModule } from 'ng-zorro-antd/modal';
@@ -43,10 +38,6 @@ import { ClassDataComponent } from './classes/class-data/class-data.component';
 import { SubclassDataComponent } from './classes/subclass-data/subclass-data.component';
 import { RaceDataComponent } from './races/race-data/race-data.component';
 import { SubracesComponent } from './races/subraces/subraces.component';
-import { SheetFeatureComponent } from './features/sheet-feature/sheet-feature.component';
-import { SheetChoiceComponent } from './features/sheet-choice/sheet-choice.component';
-import { SheetListedComponent } from './features/sheet-listed/sheet-listed.component';
-import { SheetUsesComponent } from './features/sheet-uses/sheet-uses.component';
 import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
 import { NzSwitchModule } from 'ng-zorro-antd/switch';
 import { NzRadioModule } from 'ng-zorro-antd/radio';
@@ -55,8 +46,6 @@ registerLocaleData(en);
 
 @NgModule({
   declarations: [
-    BuilderChoiceComponent,
-    BuilderFeatureComponent,
     DisplayChoiceComponent,
     DisplayFeatureComponent,
 
@@ -73,7 +62,6 @@ registerLocaleData(en);
     FeatComponent,
     TransformationComponent,
     TfLevelComponent,
-    BuilderListedComponent,
     MonsterComponent,
     MonsterTraitComponent,
     ClassSubclassesComponent,
@@ -81,10 +69,6 @@ registerLocaleData(en);
     SubclassDataComponent,
     RaceDataComponent,
     SubracesComponent,
-    SheetFeatureComponent,
-    SheetChoiceComponent,
-    SheetListedComponent,
-    SheetUsesComponent,
   ],
   imports: [
     BrowserModule,
@@ -100,8 +84,7 @@ registerLocaleData(en);
     NzButtonModule,
     NzCheckboxModule,
     NzSwitchModule,
-    NzRadioModule,
-    StoreModule.forRoot({ update: updateReducer }),
+    NzRadioModule
   ],
   providers: [DataService, { provide: NZ_I18N, useValue: en_US }],
   bootstrap: [
@@ -120,12 +103,6 @@ registerLocaleData(en);
     TfLevelComponent,
   ],
   exports: [
-    BuilderChoiceComponent,
-    BuilderFeatureComponent,
-    DisplayChoiceComponent,
-    DisplayFeatureComponent,
-    SheetFeatureComponent,
-
     SpellsComponent,
     SpellComponent,
     ExploitsComponent,

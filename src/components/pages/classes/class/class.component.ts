@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { IClass } from 'src/app/models/data.models';
 import { DataService } from 'src/services/data.service';
 
 @Component({
@@ -13,7 +12,7 @@ export class ClassComponent implements OnInit {
   set name(className: string) {
     this.class = this.dataService.getClass(className);
   }
-  public class: IClass;
+  public class;
 
   public dataService: DataService;
 

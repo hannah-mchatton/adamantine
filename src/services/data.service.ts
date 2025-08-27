@@ -10,7 +10,6 @@ import transformations from '../data/character-creation-resources/transformation
 import generic from '../data/character-creation-resources/generic.json';
 import companions from '../data/character-creation-resources/companions.json';
 import monsters from '../data/monsters.json';
-import { IClass, IRace, ISubclass, ISubrace } from 'src/app/models/data.models';
 
 import meleeWeapons from '../data/general-store/weapons/melee-weapons.json';
 import rangedWeapons from '../data/general-store/weapons/ranged-weapons.json';
@@ -583,10 +582,10 @@ export class DataService {
 
     return splitRaces;
   }
-  public getRace(name: string): IRace {
+  public getRace(name: string) {
     return races.find((r: any) => this.nameUrlEncode(r.name) === name);
   }
-  public getSubrace(raceName: string, subraceName: string): ISubrace {
+  public getSubrace(raceName: string, subraceName: string) {
     const raceData = this.getRace(raceName);
     return raceData.subraces?.find(
       (s: any) => this.nameUrlEncode(s.name) === this.nameUrlEncode(subraceName)
@@ -604,11 +603,11 @@ export class DataService {
 
     return classData;
   }
-  public getClass(name: string): IClass {
+  public getClass(name: string) {
     const classData: any[] = classes;
     return classData.find((r: any) => this.nameUrlEncode(r.name) === name);
   }
-  public getSubclass(className: string, subclassName: string): ISubclass {
+  public getSubclass(className: string, subclassName: string) {
     const classData = this.getClass(className);
     return classData.subclasses.find(
       (s: any) =>

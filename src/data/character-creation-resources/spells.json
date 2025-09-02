@@ -754,6 +754,20 @@
     "ritual": 1
   },
   {
+    "name": "Slithering Coils",
+    "school": "Transposition",
+    "level": 1,
+    "castingTime": "1 action",
+    "range": "Infinite",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "Darkness forms slithering tendrils that wrap around creatures and move them against their will. Each creature in an area of magical darkness created by you is dragged up to 10 feet in a direction of your choice."
+    ],
+    "lists": ["Occult", "Elemental"],
+    "element": "Shadow"
+  },
+  {
     "name": "Antilife Shell",
     "school": "Abjuration",
     "level": 5,

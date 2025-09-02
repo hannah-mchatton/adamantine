@@ -550,17 +550,21 @@
     "name": "Dire Flail",
 
     "description": "A giant, three-headed flail based on the weapon of the demon lord Yeenoghu.",
-    "damage": "2d6",
+    "damage": "3d4",
     "damageTypes": "Bludgeoning",
     "cost": 50,
     "weight": 35.0,
     "properties": [
       {
+        "name": "Brutal",
+        "description": "Add an additional damage die when determining the damage dealt by a critical hit."
+      },
+      {
         "name": "Heavy",
         "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
       },
       {
-        "name": "Massive (2d8)",
+        "name": "Massive (3d6)",
         "description": "When you make an attack with this weapon, you can choose to take a -2 penalty to your attack roll. If you do, the damage dice of the weapon are increased by one step - which in parentheses appears with the property."
       },
       {
@@ -1039,11 +1043,15 @@
     "name": "Heavy Flail",
 
     "description": "A large, heavy flail with two heads.",
-    "damage": "1d12",
+    "damage": "2d6",
     "damageTypes": "Bludgeoning",
     "cost": 25,
     "weight": 10.0,
     "properties": [
+      {
+        "name": "Brutal",
+        "description": "Add an additional damage die when determining the damage dealt by a critical hit."
+      },
       {
         "name": "Heavy",
         "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
@@ -1060,15 +1068,11 @@
     "name": "Heavy Mace",
 
     "description": "A heavy ornate mace",
-    "damage": "2d6",
+    "damage": "1d12",
     "damageTypes": "Bludgeoning",
     "cost": 35,
     "weight": 12.0,
     "properties": [
-      {
-        "name": "Brutal",
-        "description": "Add an additional damage die when determining the damage dealt by a critical hit."
-      },
       {
         "name": "Heavy",
         "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."
@@ -1483,10 +1487,7 @@
     "cost": 5,
     "weight": 4.0,
     "properties": [
-      {
-        "name": "Brutal",
-        "description": "Add an additional damage die when determining the damage dealt by a critical hit."
-      }
+      
     ],
     "type": 0
   },
@@ -1600,15 +1601,11 @@
     "name": "Morningstar",
 
     "description": "A weapon similar to a mace, consisting of a shaft ending in a spiked sphere.",
-    "damage": "2d4",
+    "damage": "1d8",
     "damageTypes": "Bludgeoning",
     "cost": 15,
     "weight": 4.0,
     "properties": [
-      {
-        "name": "Brutal",
-        "description": "Add an additional damage die when determining the damage dealt by a critical hit."
-      }
     ],
     "type": 1
   },
@@ -2082,7 +2079,7 @@
     "name": "Springflail",
 
     "description": "A heavy and spring-loaded flail",
-    "damage": "1d10",
+    "damage": "2d5",
     "damageTypes": "Bludgeoning",
     "cost": 20,
     "weight": 7,
@@ -2175,6 +2172,23 @@
     "damageTypes": "Piercing",
     "cost": 1,
     "weight": 3.0,
+    "properties": [
+      {
+        "name": "Brutal",
+        "description": "Add an additional damage die when determining the damage dealt by a critical hit."
+      }
+    ],
+    "type": 0
+  },
+  {
+    "class": "Flail",
+    "name": "Thresher",
+
+    "description": "A wooden flail used by farmers to thresh grains.",
+    "damage": "1d6",
+    "damageTypes": "Bludgeoning",
+    "cost": 1,
+    "weight": 5.0,
     "properties": [
       {
         "name": "Brutal",
@@ -2320,7 +2334,7 @@
     "name": "War Mallet",
 
     "description": "An oversized warhammer that is difficult to use",
-    "damage": "2d5",
+    "damage": "1d10",
     "damageTypes": "Bludgeoning",
     "cost": 20,
     "weight": 7,
@@ -2346,10 +2360,6 @@
     "cost": 50,
     "weight": 35.0,
     "properties": [
-      {
-        "name": "Brutal",
-        "description": "Add an additional damage die when determining the damage dealt by a critical hit."
-      },
       {
         "name": "Heavy",
         "description": "Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them."

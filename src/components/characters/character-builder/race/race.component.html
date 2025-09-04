@@ -1,0 +1,43 @@
+<button nz-button [nzType]="'primary'" (click)="raceModalVisible = true">
+  Change Race
+</button>
+<nz-modal
+  [nzWidth]="1000"
+  [(nzVisible)]="raceModalVisible"
+  [nzFooter]="null"
+  nzTitle="Select a race"
+  (nzOnCancel)="raceModalVisible = false"
+>
+  <ng-container *nzModalContent>
+    <div class="race-change-modal">
+      <div *ngFor="let category of races" class="race-category">
+        {{ category.name }}
+        <div *ngFor="let race of category.list">
+          <button nz-button nzType="primary" (click)="setRace(race.index)">
+            {{ race.name }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</nz-modal>
+
+<div *ngIf="raceData">
+  <h4>{{ raceData.name }}</h4>
+  <ng-container *ngFor="let trait of raceData.traits">
+    <app-builder-feature [character]="character" [feature]="trait" sourceId="race" [sourceValue]="raceData.index" (emitChange)="emitChange.emit()"></app-builder-feature>
+  </ng-container>
+
+  <div *ngIf="raceData.subraces">
+    <h5>Subrace</h5>
+    <nz-select [(ngModel)]="subraceData" (ngModelChange)="setSubrace()">
+      <nz-option *ngFor="let subrace of raceData.subraces" [nzValue]="subrace" [nzLabel]="subrace.name"></nz-option>
+    </nz-select>
+
+    <div *ngIf="subraceData">
+      <ng-container *ngFor="let trait of subraceData.traits">
+        <app-builder-feature [character]="character" [feature]="trait" [level]="1" sourceId="subrace" [sourceValue]="subraceData.name" (emitChange)="emitChange.emit()"></app-builder-feature>
+      </ng-container>
+    </div>
+  </div>
+</div>

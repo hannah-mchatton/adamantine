@@ -654,7 +654,7 @@
           {
             "name": "Elemental Attunement",
             "description": "When you finish a long rest, you may choose an element from air, earth, fire, and water. Your attunement grants you a cantrip and resistance to a damage type, as follows:<table><tr><th>Attunement</th><th>Cantrip</th><th>Damage Type</th></tr><tr><td>Air</td><td>Gust</td><td>Lightning</td></tr><tr><td>Earth</td><td>Mold Earth</td><td>Acid</td></tr><tr><td>Fire</td><td>Control Flames</td><td>Fire</td></tr><tr><td>Water</td><td>Shape Water</td><td>Cold</td></tr></table>Your attunement lasts until you finish a long rest, upon which time you can continue the same attunement or change your attuned element.  Charisma is your spellcasting ability for the learned cantrip.",
-            "choices": {
+            "choices": [{
               "id": "C39D6D4D-5EB9-470B-8492-7658E4E21F54",
               "type": "trait",
               "options": [
@@ -734,7 +734,7 @@
                   ]
                 }
               ]
-            }
+            }]
           },
           {
             "name": "Elemental Form",
@@ -1531,7 +1531,7 @@
       {
         "name": "Ancestral Legacy",
         "description": "If you replace a race with this lineage, you gain any climbing, flying, or swimming speed you gained from it.</p><p>If you don't keep any of those elements, you gain proficiency in two skills of your choice.",
-        "choices": {
+        "choices": [{
           "id": "48AF1905-F4DC-4DFF-B766-5F23B1B91018",
           "type": "trait",
           "options": [
@@ -1572,7 +1572,7 @@
               ]
             }
           ]
-        }
+        }]
       },
       {
         "name": "Animal Enhancements",
@@ -1784,11 +1784,11 @@
       {
         "name": "Divergent Persona",
         "description": "You gain proficiency with one tool of your choice. Define a unique identity associated with that proficiency; establish the name, race, gender, age, and other details. While you are in the form of this persona, the related proficiency bonus is doubled for any ability check you make that uses that proficiency.",
-        "choices": {
+        "choices": [{
           "id": "7860E3B1-4888-43AD-8083-F46B871F7368",
           "type": "tool",
           "level": 2
-        }
+        }]
       }
     ],
     "name": "Changeling"
@@ -2076,7 +2076,7 @@
       {
         "name": "Ancestral Legacy",
         "description": "If you replace a race with this lineage, you gain any climbing, flying, or swimming speed you gained from it.</p><p>If you don't keep any of those elements, you gain proficiency in two skills of your choice.",
-        "choices": {
+        "choices": [{
           "id": "48AF1905-F4DC-4DFF-B766-5F23B1B91018",
           "type": "trait",
           "options": [
@@ -2117,7 +2117,7 @@
               ]
             }
           ]
-        }
+        }]
       },
       {
         "name": "Deathless Nature",
@@ -2207,7 +2207,7 @@
       {
         "name": "Draconic Legacy",
         "description": "You have an additional feature determined by your draconic legacy, selected from the options below:",
-        "choices": {
+        "choices": [{
           "id": "draconic-legacy",
           "type": "trait",
           "options": [
@@ -2250,7 +2250,7 @@
                     "amount": 1,
                     "reset": 2
                   },
-                  "choices": {
+                  "choices": [{
                     "id": "metallic-breath",
                     "type": "trait",
                     "options": [
@@ -2309,7 +2309,7 @@
                         ]
                       }
                     ]
-                  }
+                  }]
                 }
               ]
             },
@@ -2342,7 +2342,7 @@
                     "amount": 1,
                     "reset": 2
                   },
-                  "choices": {
+                  "choices": [{
                     "id": "metallic-breath",
                     "type": "trait",
                     "options": [
@@ -2523,7 +2523,7 @@
                         ]
                       }
                     ]
-                  }
+                  }]
                 }
               ]
             },
@@ -2539,7 +2539,7 @@
                     "amount": 1,
                     "reset": 2
                   },
-                  "choices": {
+                  "choices": [{
                     "id": "planar-breath",
                     "type": "trait",
                     "options": [
@@ -2996,7 +2996,7 @@
                         ]
                       }
                     ]
-                  }
+                  }]
                 }
               ]
             },
@@ -3135,7 +3135,7 @@
               ]
             }
           ]
-        }
+        }]
       }
     ],
     "subraces": [
@@ -4462,7 +4462,7 @@
         ]
       },
       {
-        "name": "Condordant",
+        "name": "Concordant",
         "description": "<em>Planar subrace (Outlands)</em>",
         "asis": [],
         "traits": [
@@ -5526,11 +5526,11 @@
       {
         "name": "Tool Proficiency",
         "description": "You have proficiency with one type of artisan's tools of your choice.",
-        "choices": {
+        "choices": [{
           "id": "5009E274-70BE-470B-8D39-CC5E149B2CFF",
           "type": "tool",
           "level": 1
-        }
+        }]
       },
       {
         "name": "Squat Stature",
@@ -5625,12 +5625,12 @@
           {
             "name": "Master Sailor",
             "description": "You have proficiency with navigator's tools and astral vehicles or water vehicles.",
-            "choices": {
+            "choices": [{
               "id": "564EF36E-88DA-4E77-8A28-E5267072E522",
               "type": "tool",
               "limits": ["Astral Vehicles", "Water Vehicles"],
               "level": 1
-            }
+            }]
           },
           {
             "name": "Merchant's Tongue",
@@ -5784,13 +5784,13 @@
           {
             "name": "Astral Fire",
             "description": "You know one of cantrip of your choice from the Divine spell list. Wisdom is your spellcasting ability for it.",
-            "choices": {
+            "choices": [{
               "id": "2710FD62-E702-4EB4-B67B-090212148C75",
               "type": "spell",
               "list": "divine",
               "level": 0,
               "ability": "wis"
-            }
+            }]
           },
           {
             "name": "Astral Trance",
@@ -5911,21 +5911,21 @@
           {
             "name": "Arcane Gift",
             "description": "You know one cantrip of your choice from the Arcane spell list. Intelligence is your spellcasting ability for it.",
-            "choices": {
+            "choices": [{
               "id": "CB5C39B2-EFB1-44A0-9212-11C8E81E9352",
               "type": "spell",
               "list": "arcane",
               "level": 0,
               "ability": "int"
-            }
+            }]
           },
           {
             "name": "Polyglot",
             "description": "You can speak, read, and write one additional language of your choice.",
-            "choices": {
+            "choices": [{
               "id": "BB0C0DC9-E7F7-433B-84FD-D1DAEE9F6DBC",
               "type": "language"
-            }
+            }]
           }
         ]
       },
@@ -6061,7 +6061,7 @@
           {
             "name": "Streetwise",
             "description": "You gain proficiency in one of the following skills of your choice: Deception, Intimidation, Persuasion, Sleight of Hand, Society, or Stealth.",
-            "choices": {
+            "choices": [{
               "id": "C88E556E-B296-4940-B7E3-5B6FFECF4825",
               "type": "skill",
               "level": 1,
@@ -6073,7 +6073,7 @@
                 "Society",
                 "Stealth"
               ]
-            }
+            }]
           }
         ]
       },
@@ -6149,7 +6149,7 @@
           {
             "name": "Seasonal Fey Step",
             "description": "When finishing a long rest, any eladrin can change their season. An eladrin might choose the season that is present in the world or perhaps the season that most closely matches the eladrin's current emotional state. For example, an eladrin might shift to autumn if filled with contentment, another eladrin could change to winter if plunged into sorrow, still another might be bursting with joy and become an eladrin of spring, and fury might cause an eladrin to change to summer.",
-            "choices": {
+            "choices": [{
               "id": "9EC1A048-2402-4569-914A-CF2F4154F446",
               "type": "trait",
               "options": [
@@ -6262,7 +6262,7 @@
                   ]
                 }
               ]
-            }
+            }]
           }
         ]
       },
@@ -8577,12 +8577,12 @@
       {
         "name": "Astral Sailor",
         "description": "You have proficiency with navigator's tools and astral vehicles or water vehicles.",
-        "choices": {
+        "choices": [{
           "id": "5F341367-3BBB-4678-9B84-40F6ECB2FB96",
           "type": "tool",
           "limits": ["Astral Vehicles", "Water Vehicles"],
           "level": 1
-        },
+        }],
         "granted": [
           { "type": "tool", "options": ["Navigator's Tools"], "level": 1 }
         ]
@@ -9392,12 +9392,12 @@
       {
         "name": "Astral Sailor",
         "description": "You have proficiency with navigator's tools and astral vehicles or water vehicles.",
-        "choices": {
+        "choices": [{
           "id": "5F341367-3BBB-4678-9B84-40F6ECB2FB96",
           "type": "tool",
           "limits": ["Astral Vehicles", "Water Vehicles"],
           "level": 1
-        },
+        }],
         "granted": [
           { "type": "tool", "options": ["Navigator's Tools"], "level": 1 }
         ]
@@ -9505,11 +9505,11 @@
       {
         "name": "Tool Proficiency",
         "description": "You gain proficiency in one type of artisan's tools of your choice, and you can add double your proficiency bonus to any ability check you make that uses your chosen set of artisan's tools.",
-        "choices": {
+        "choices": [{
           "id": "D4E90FF4-2E75-4808-A038-2F993307096E",
           "type": "tool",
           "level": 2
-        }
+        }]
       }
     ],
     "subraces": [
@@ -9589,12 +9589,12 @@
           {
             "name": "Master Sailor",
             "description": "You have proficiency with navigator's tools and astral vehicles or water vehicles.",
-            "choices": {
+            "choices": [{
               "id": "564EF36E-88DA-4E77-8A28-E5267072E522",
               "type": "tool",
               "limits": ["Astral Vehicles", "Water Vehicles"],
               "level": 1
-            }
+            }]
           }
         ]
       },
@@ -9798,13 +9798,13 @@
           {
             "name": "Arcane Gift",
             "description": "You know one cantrip of your choice from the Arcane spell list. Intelligence is your spellcasting ability for it.",
-            "choices": {
+            "choices": [{
               "id": "CB5C39B2-EFB1-44A0-9212-11C8E81E9352",
               "type": "spell",
               "list": "arcane",
               "level": 0,
               "ability": "int"
-            }
+            }]
           }
         ]
       },
@@ -9968,7 +9968,7 @@
           {
             "name": "Seasonal Fey Step",
             "description": "Choose the season you are bound to.  Unlike a full-blooded eladrin, you cannot change your season. An eladrin might choose the season that is present in the world or perhaps the season that most closely matches the eladrin's current emotional state. For example, an eladrin might shift to autumn if filled with contentment, another eladrin could change to winter if plunged into sorrow, still another might be bursting with joy and become an eladrin of spring, and fury might cause an eladrin to change to summer.",
-            "choices": {
+            "choices": [{
               "id": "1B61FDEE-C48C-491A-A48D-B47001DAE0A3",
               "type": "trait",
               "options": [
@@ -10081,7 +10081,7 @@
                   ]
                 }
               ]
-            }
+            }]
           }
         ]
       },
@@ -10435,7 +10435,7 @@
       {
         "name": "Ancestral Legacy",
         "description": "If you replace a race with this lineage, you gain any climbing, flying, or swimming speed you gained from it.</p><p>If you don't keep any of those elements, you gain proficiency in two skills of your choice.",
-        "choices": {
+        "choices": [{
           "id": "48AF1905-F4DC-4DFF-B766-5F23B1B91018",
           "type": "trait",
           "options": [
@@ -10476,7 +10476,7 @@
               ]
             }
           ]
-        }
+        }]
       },
       {
         "name": "Fey Resilience",
@@ -10619,11 +10619,11 @@
       {
         "name": "Skill Versatility",
         "description": "You have proficiency with one skill of your choice",
-        "choices": {
+        "choices": [{
           "id": "ABD7C5D6-974B-453F-A90F-954DE2A3D469",
           "type": "skill",
           "level": 1
-        }
+        }]
       }
     ],
     "subraces": [
@@ -10778,7 +10778,7 @@
           {
             "name": "Stone People",
             "description": "You have proficiency with blacksmith's tools, mason's tools, or whitesmith's tools.",
-            "choices": {
+            "choices": [{
               "id": "34B85A1F-9CAB-4479-8282-88D67770546C",
               "type": "tool",
               "limits": [
@@ -10787,7 +10787,7 @@
                 "Whitesmith's Tools"
               ],
               "level": 1
-            }
+            }]
           },
           {
             "name": "Mountaineer",
@@ -10836,11 +10836,11 @@
           {
             "name": "Crafting Expertise",
             "description": "You gain proficiency in one artisan's tools of your choice. When you craft an object using the artisan's tools you're proficient with, you count as two characters working for determining the amount of gp worth of effort for every day spent creating the item, allowing you to craft objects faster than others.",
-            "choices": {
+            "choices": [{
               "id": "6965C21F-423F-4862-8EC4-9DFA422FA0AC",
               "type": "tool",
               "level": 1
-            }
+            }]
           }
         ]
       },
@@ -10932,10 +10932,10 @@
           {
             "name": "Versatile Training",
             "description": "You gain an extra feat of your choice.",
-            "choices": {
+            "choices": [{
               "id": "2DE73652-C9D4-4839-8F2B-7763F8C77C72",
               "type": "feat"
-            }
+            }]
           }
         ]
       },
@@ -11011,7 +11011,7 @@
       {
         "name": "Ancestral Legacy",
         "description": "If you replace a race with this lineage, you gain any climbing, flying, or swimming speed you gained from it.</p><p>If you don't keep any of those elements, you gain proficiency in two skills of your choice.",
-        "choices": {
+        "choices": [{
           "id": "48AF1905-F4DC-4DFF-B766-5F23B1B91018",
           "type": "trait",
           "options": [
@@ -11052,7 +11052,7 @@
               ]
             }
           ]
-        }
+        }]
       },
       {
         "name": "Mind Blast",
@@ -11156,13 +11156,13 @@
           {
             "name": "Close to Nature",
             "description": "Choose one cantrip from the Primal spell list. Intelligence is your spellcasting ability for it.",
-            "choices": {
+            "choices": [{
               "id": "B4C8087A-84D0-4A46-AA4B-C199B82BB9DE",
               "type": "spell",
               "list": "primal",
               "level": 0,
               "ability": "int"
-            }
+            }]
           },
           {
             "name": "Lightweight",
@@ -11456,7 +11456,7 @@
       {
         "name": "Khenra Twin",
         "description": "If your twin is alive and you can see your twin, whenever you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll. If your twin is dead (or if you were born without a twin), you can't be frightened.",
-        "choices": {
+        "choices": [{
           "id": "1B98BDE4-A017-49CA-903C-16E5894B0289",
           "type": "trait",
           "options": [
@@ -11482,7 +11482,7 @@
               ]
             }
           ]
-        }
+        }]
       },
       { "name": "Hardy", "description": "You are acclimated to extreme heat." },
       {
@@ -11545,7 +11545,7 @@
           {
             "name": "Draconic Legacy",
             "description": "The kobold connection to dragons can manifest in unpredictable ways in an individual kobold. Choose one of the following legacy options when you select this race:",
-            "choices": {
+            "choices": [{
               "id": "D78288CB-769E-4DFA-882D-42394CEC72BD",
               "type": "trait",
               "options": [
@@ -11596,18 +11596,18 @@
                     {
                       "name": "",
                       "description": "You know one cantrip of your choice from the Arcane spell list. Charisma is your spellcasting ability for that cantrip.",
-                      "choices": {
+                      "choices": [{
                         "id": "A9AC03A1-C573-4900-BA0C-D24E6E8E417A",
                         "type": "spell",
                         "level": 0,
                         "list": "arcane",
                         "ability": "cha"
-                      }
+                      }]
                     }
                   ]
                 }
               ]
-            }
+            }]
           }
         ]
       },
@@ -11797,12 +11797,12 @@
       {
         "name": "Hunter's Instincts",
         "description": "You have proficiency in one of the following skills of your choice: Athletics, Intimidation, Perception, or Survival.",
-        "choices": {
+        "choices": [{
           "id": "1DC776AA-B402-40D4-BA11-92916F094985",
           "type": "skill",
           "limits": ["Athletics", "Intimidation", "Perception", "Survival"],
           "level": 1
-        }
+        }]
       },
       {
         "name": "Lion's Pride",
@@ -12858,12 +12858,12 @@
             "name": "Monstrous Skill",
             "description": "You can speak, read, and write Abyssal. You gain proficiency in one of the following skills of your choice:  Deception, Intimidation, and Religion.",
             "granted": [{ "type": "language", "options": ["Abyssal"] }],
-            "choices": {
+            "choices": [{
               "id": "486412A3-30B0-436A-93AE-B1F838D16AD5",
               "type": "skill",
               "limits": ["Deception", "Intimidation", "Religion"],
               "level": 1
-            }
+            }]
           },
           {
             "name": "Abyssal Legacy",
@@ -12897,12 +12897,12 @@
           {
             "name": "Maze Prowler",
             "description": "You gain proficiency in one of the following skills of your choice: History, Perception and Stealth.",
-            "choices": {
+            "choices": [{
               "id": "B9227C42-523C-4043-9390-144589961114",
               "type": "skill",
               "limits": ["History", "Perception", "Stealth"],
               "level": 1
-            }
+            }]
           },
           {
             "name": "Labyrinth Sense",
@@ -12945,12 +12945,12 @@
             "name": "Born to the Wild",
             "description": "You can can speak, read, and write Sylvan. You gain proficiency with one of the following skills of your choice: Animal Handling, Nature, and Survival.",
             "granted": [{ "type": "language", "options": ["Sylvan"] }],
-            "choices": {
+            "choices": [{
               "id": "02E6763A-15DF-4CF4-9388-D84BA43C726D",
               "type": "skill",
               "limits": ["Animal Handling", "Nature", "Survival"],
               "level": 1
-            }
+            }]
           },
           {
             "name": "Nomad",
@@ -13726,7 +13726,7 @@
           {
             "name": "Studious",
             "description": "You are proficient in one of the following skills of your choice: Arcana, History, Investigation, Medicine, Nature, Religion, or Society.",
-            "choices": {
+            "choices": [{
               "id": "557D5E7C-C065-40ED-B0E6-3ED3CAD1CD33",
               "type": "skill",
               "limits": [
@@ -13739,15 +13739,15 @@
                 "Society"
               ],
               "level": 1
-            }
+            }]
           },
           {
             "name": "Linguistic Assimilation",
             "description": "You can speak, read, and write one additional language of you choice. Additionally, you can cast the Comprehend Languages spell once with this trait, requiring no material or somatic components, and you regain the ability to cast it this way when you finish a long rest.",
-            "choices": {
+            "choices": [{
               "id": "D64E3C5B-5F6D-4370-A3B8-E69D07F7692C",
               "type": "language"
-            },
+            }],
             "granted": [
               {
                 "type": "spell",
@@ -13777,12 +13777,12 @@
           {
             "name": "Hunter-Gatherer",
             "description": "You are proficient in one of the following skills of your choice: Nature, Perception, Stealth, or Survival.",
-            "choices": {
+            "choices": [{
               "id": "557D5E7C-C065-40ED-B0E6-3ED3CAD1CD33",
               "type": "skill",
               "limits": ["Nature", "Perception", "Stealth", "Survival"],
               "level": 1
-            }
+            }]
           },
           {
             "name": "Beast Speech",
@@ -14127,12 +14127,12 @@
       {
         "name": "Abyssal Mariner",
         "description": "You ignore any of the drawbacks caused by a deep, underwater environment. Additionally, you gain proficiency with the Intimidation skill, and water vehicles or astral vehicles.",
-        "choices": {
+        "choices": [{
           "id": "AD024427-DF4A-4E7D-8B98-04EA31187E9D",
           "type": "tool",
           "limits": ["Astral Vehicles", "Water Vehicles"],
           "level": 1
-        },
+        }],
         "granted": [
           { "type": "skill", "options": ["Intimidation"], "level": 1 }
         ]
@@ -14407,12 +14407,12 @@
           {
             "name": "Peak Fitness",
             "description": "You have proficiency in either the Acrobatics or Athletics skill.",
-            "choices": {
+            "choices": [{
               "id": "5E0AE87C-5BC1-4F3F-AB91-F778F86FC726",
               "type": "skill",
               "options": ["Acrobatics", "Athletics"],
               "level": 1
-            }
+            }]
           }
         ]
       },
@@ -14485,7 +14485,7 @@
       {
         "name": "Ancestral Legacy",
         "description": "If you replace a race with this lineage, you gain any climbing, flying, or swimming speed you gained from it.</p><p>If you don't keep any of those elements, you gain proficiency in two skills of your choice.",
-        "choices": {
+        "choices": [{
           "id": "48AF1905-F4DC-4DFF-B766-5F23B1B91018",
           "type": "trait",
           "options": [
@@ -14526,7 +14526,7 @@
               ]
             }
           ]
-        }
+        }]
       },
       {
         "name": "Knowledge From a Past Life",
@@ -14597,7 +14597,7 @@
       {
         "name": "Ancestral Legacy",
         "description": "If you replace a race with this lineage, you gain any climbing, flying, or swimming speed you gained from it.</p><p>If you don't keep any of those elements, you gain proficiency in two skills of your choice.",
-        "choices": {
+        "choices": [{
           "id": "48AF1905-F4DC-4DFF-B766-5F23B1B91018",
           "type": "trait",
           "options": [
@@ -14638,7 +14638,7 @@
               ]
             }
           ]
-        }
+        }]
       },
       {
         "name": "Biomechanical Nature",
@@ -14702,12 +14702,12 @@
           {
             "name": "Peak Fitness",
             "description": "You have proficiency in either the Acrobatics or Athletics skill.",
-            "choices": {
+            "choices": [{
               "id": "194D605F-1126-4AAB-B10F-38A26861AB02",
               "type": "skill",
               "options": ["Acrobatics", "Athletics"],
               "level": 1
-            }
+            }]
           }
         ]
       },
@@ -14871,11 +14871,11 @@
       {
         "name": "Reveler",
         "description": "You have proficiency in the Performance and Persuasion skills, and you have proficiency with one musical instrument of your choice.",
-        "choices": {
+        "choices": [{
           "id": "18B6AA49-918F-4E5B-80FF-E5C385D818EB",
           "type": "instrument",
           "level": 1
-        },
+        }],
         "granted": [
           {
             "type": "skill",
@@ -15411,12 +15411,12 @@
           {
             "name": "Survivor",
             "description": "You have proficiency in one of the following skills: Animal Handling, Medicine, Nature, or Survival.",
-            "choices": {
+            "choices": [{
               "id": "59A95B06-1B56-4787-AE8A-2097EDD72741",
               "type": "skill",
               "limits": ["Animal Handling", "Medicine", "Nature", "Survival"],
               "level": 1
-            }
+            }]
           },
           {
             "name": "Cervine Giant",
@@ -15797,13 +15797,13 @@
           {
             "name": "Legacy of War",
             "description": "You learn one 1st-degree Tactical Exploit and can use it once with this trait. For the purposes of using the exploit, your Exploit Die is a d4.</p><p>If the exploit requires your target to make a saving throw to resist its effects, the saving throw DC is 8 + your Intelligence modifier (your choice) + your proficiency bonus. You regain the use of your exploit when you finish a short or long rest.",
-            "choices": {
+            "choices": [{
               "id": "2D4F7D02-1DA7-4413-B9A0-E48A857480EC",
               "type": "exploit",
               "list": "tactical",
               "degree": 1,
               "ability": "int"
-            },
+            }],
             "uses": {
               "id": "A162BC68-77B4-4C1D-8254-3E78B34B8820",
               "type": "fixed",
@@ -15838,7 +15838,7 @@
           {
             "name": "Draconic Ancestry",
             "description": "You are descended from both devils and chromatic dragons.  Choose a dragon type from Black, Blue, Green, Red, or White.  Your choice grants you resistance to a damage type and advantage on saving throws against a condition.",
-            "choices": {
+            "choices": [{
               "id": "17F63CCA-A104-4C48-A16B-5A0B3397AE8F",
               "type": "trait",
               "options": [
@@ -15923,7 +15923,7 @@
                   ]
                 }
               ]
-            }
+            }]
           },
           {
             "name": "Breath Weapon",
@@ -15934,7 +15934,7 @@
               "source": "proficiency",
               "reset": 2
             },
-            "choices": {
+            "choices": [{
               "id": "17F63CCA-A104-4C48-A16B-5A0B3397AE8F",
               "type": "trait",
               "options": [
@@ -16084,7 +16084,7 @@
                   ]
                 }
               ]
-            }
+            }]
           }
         ]
       },
@@ -16563,13 +16563,13 @@
             "granted": [
               {
                 "type": "spell",
-                "choices": {
+                "choices": [{
                   "id": "D152C537-4036-4E15-AFF5-2C686EA73F37",
                   "type": "spell",
                   "list": "arcane",
                   "level": 0,
                   "ability": "int"
-                }
+                }]
               }
             ]
           },
@@ -16797,13 +16797,13 @@
           {
             "name": "Will of the General",
             "description": "You learn one 1st-degree Tactical Exploit and can use it once with this trait. For the purposes of using the exploit, your Exploit Die is a d4.</p><p>If the exploit requires your target to make a saving throw to resist its effects, the saving throw DC is 8 + your Intelligence modifier + your proficiency bonus. You regain the use of your exploit when you finish a short or long rest.",
-            "choices": {
+            "choices": [{
               "id": "AD5347FC-8DF0-43C8-B496-E20BFE19F8F3",
               "type": "exploit",
               "list": "tactical",
               "degree": 1,
               "ability": "int"
-            },
+            }],
             "uses": {
               "id": "0BA26D8F-2858-44E6-9310-C8F0F83FE160",
               "type": "fixed",
@@ -17567,13 +17567,13 @@
           {
             "name": "Legacy of War",
             "description": "You learn one 1st-degree Tactical Exploit and can use it once with this trait. For the purposes of using the exploit, your Exploit Die is a d4.</p><p>If the exploit requires your target to make a saving throw to resist its effects, the saving throw DC is 8 + your Intelligence modifier + your proficiency bonus. You regain the use of your exploit when you finish a short or long rest.",
-            "choices": {
+            "choices": [{
               "id": "2D4F7D02-1DA7-4413-B9A0-E48A857480EC",
               "type": "exploit",
               "list": "tactical",
               "degree": 1,
               "ability": "int"
-            },
+            }],
             "uses": {
               "id": "A162BC68-77B4-4C1D-8254-3E78B34B8820",
               "type": "fixed",

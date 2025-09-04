@@ -41,6 +41,8 @@ import { SubracesComponent } from './races/subraces/subraces.component';
 import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
 import { NzSwitchModule } from 'ng-zorro-antd/switch';
 import { NzRadioModule } from 'ng-zorro-antd/radio';
+import { BuilderFeatureComponent } from './features/builder-feature/builder-feature.component';
+import { BuilderChoiceComponent } from './features/builder-choice/builder-choice.component';
 
 registerLocaleData(en);
 
@@ -48,6 +50,9 @@ registerLocaleData(en);
   declarations: [
     DisplayChoiceComponent,
     DisplayFeatureComponent,
+
+    BuilderFeatureComponent,
+    BuilderChoiceComponent,
 
     SpellsComponent,
     SpellComponent,
@@ -116,6 +121,9 @@ registerLocaleData(en);
     FeatComponent,
     TransformationComponent,
     TfLevelComponent,
+
+    BuilderFeatureComponent,
+    BuilderChoiceComponent
   ],
 })
 export class PagesModule {}

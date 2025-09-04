@@ -1,0 +1,11 @@
+.border-left {
+    border-left: 1px solid lightgray;
+}
+.aoe-table ::ng-deep {
+    border: 1px solid black;
+    border-collapse: collapse;
+    tr, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+}

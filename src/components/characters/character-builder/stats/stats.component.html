@@ -1,0 +1,99 @@
+<div *ngIf="character" class="score-wrapper">
+    <button nz-button type="button" (click)="rollStats()" [disabled]="character.scores.canRoll === false">Roll Stats</button>
+
+    <div cdkDropListGroup>
+    <div class="rolled-scores">
+        <div
+        class="score-list"
+        cdkDropList
+        [cdkDropListData]="stats"
+        (cdkDropListDropped)="drop($event)"
+        >
+        <div class="score-box" *ngFor="let item of stats" cdkDrag>
+            {{ item }}
+        </div>
+        </div>
+    </div>
+
+    <div class="ability-scores">
+        <div class="score">
+        <h6>STR</h6>
+        <div
+            class="score-list"
+            cdkDropList
+            [cdkDropListData]="scores.str"
+            (cdkDropListDropped)="drop($event)"
+        >
+            <div class="score-box" *ngFor="let item of scores.str" cdkDrag>
+            {{ item }}
+            </div>
+        </div>
+        </div>
+        <div class="score">
+        <h6>DEX</h6>
+        <div
+            class="score-list"
+            cdkDropList
+            [cdkDropListData]="scores.dex"
+            (cdkDropListDropped)="drop($event)"
+        >
+            <div class="score-box" *ngFor="let item of scores.dex" cdkDrag>
+            {{ item }}
+            </div>
+        </div>
+        </div>
+        <div class="score">
+        <h6>CON</h6>
+        <div
+            class="score-list"
+            cdkDropList
+            [cdkDropListData]="scores.con"
+            (cdkDropListDropped)="drop($event)"
+        >
+            <div class="score-box" *ngFor="let item of scores.con" cdkDrag>
+            {{ item }}
+            </div>
+        </div>
+        </div>
+        <div class="score">
+        <h6>INT</h6>
+        <div
+            class="score-list"
+            cdkDropList
+            [cdkDropListData]="scores.int"
+            (cdkDropListDropped)="drop($event)"
+        >
+            <div class="score-box" *ngFor="let item of scores.int" cdkDrag>
+            {{ item }}
+            </div>
+        </div>
+        </div>
+        <div class="score">
+        <h6>WIS</h6>
+        <div
+            class="score-list"
+            cdkDropList
+            [cdkDropListData]="scores.wis"
+            (cdkDropListDropped)="drop($event)"
+        >
+            <div class="score-box" *ngFor="let item of scores.wis" cdkDrag>
+            {{ item }}
+            </div>
+        </div>
+        </div>
+        <div class="score">
+        <h6>CHA</h6>
+        <div
+            class="score-list"
+            cdkDropList
+            [cdkDropListData]="scores.cha"
+            (cdkDropListDropped)="drop($event)"
+        >
+            <div class="score-box" *ngFor="let item of scores.cha" cdkDrag>
+            {{ item }}
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>

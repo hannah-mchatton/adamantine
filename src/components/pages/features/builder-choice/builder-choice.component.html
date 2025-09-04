@@ -1,0 +1,18 @@
+<ng-container *ngIf="choice.type === 'trait'">
+  <nz-select [(ngModel)]="characterChoice.value" (ngModelChange)="emitChange.emit()">
+    <nz-option *ngFor="let option of choiceList" [nzValue]="option.name" [nzLabel]="option.name" [selected]=""></nz-option>
+  </nz-select>
+  
+  <ng-container *ngFor="let trait of getChoiceTraits(characterChoice.value)">
+    <app-builder-feature
+      [character]="character"
+      [feature]="trait"
+      [choiceFeature]="true"
+      [level]="level + 1"
+      [classLevel]="classLevel"
+      [sourceId]="choice.id"
+      [sourceValue]="characterChoice.value"
+      (emitChange)="emitChange.emit()"
+    ></app-builder-feature>
+  </ng-container>
+</ng-container>

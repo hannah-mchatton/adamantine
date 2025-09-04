@@ -1,0 +1,838 @@
+<div
+  [ngClass]="{ 'border-left': level !== 0 }"
+  [style]="'padding-left: ' + level * 10 + 'px'"
+>
+  <ng-container *ngIf="displayHeader !== false">
+    <h5 *ngIf="!subFeature && !choiceFeature">{{ feature.name }}</h5>
+    <h6 *ngIf="subFeature && !choiceFeature">{{ feature.name }}</h6>
+    <div *ngIf="choiceFeature">
+      <strong>{{ feature.name }}</strong>
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="feature.subclassSpellsFeature">
+    <ng-container [ngSwitch]="feature.granted[0].options.length">
+      <!-- Standard: Two spells per level, 1st thru 5th -->
+      <ng-container *ngSwitchCase="10">
+        <ng-container *ngIf="feature.subclassSpellCastingLevel === 1">
+          At {{ numberThConverter(classLevel) }} level, and again at 3rd, 5th,
+          7th, and 9th levels, you gain certain spells, as shown on the
+          {{ feature.name }} table below. {{ alwaysAvailable }}
+          <table>
+            <tr>
+              <th>{{ feature.name }}</th>
+              <th></th>
+            </tr>
+            <tr>
+              <th>Level</th>
+              <th>Spells</th>
+            </tr>
+            <tr>
+              <td>{{ numberThConverter(classLevel) }}</td>
+              <td>
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[0])
+                  }}"
+                  >{{ feature.granted[0].options[0] }}</a
+                >,
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[1])
+                  }}"
+                  >{{ feature.granted[0].options[1] }}</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>3rd</td>
+              <td>
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[2])
+                  }}"
+                  >{{ feature.granted[0].options[2] }}</a
+                >,
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[3])
+                  }}"
+                  >{{ feature.granted[0].options[3] }}</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>5th</td>
+              <td>
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[4])
+                  }}"
+                  >{{ feature.granted[0].options[4] }}</a
+                >,
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[5])
+                  }}"
+                  >{{ feature.granted[0].options[5] }}</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>7th</td>
+              <td>
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[6])
+                  }}"
+                  >{{ feature.granted[0].options[6] }}</a
+                >,
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[7])
+                  }}"
+                  >{{ feature.granted[0].options[7] }}</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>9th</td>
+              <td>
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[8])
+                  }}"
+                  >{{ feature.granted[0].options[8] }}</a
+                >,
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[9])
+                  }}"
+                  >{{ feature.granted[0].options[9] }}</a
+                >
+              </td>
+            </tr>
+          </table>
+        </ng-container>
+        <ng-container *ngIf="feature.subclassSpellCastingLevel === 2">
+          At {{ numberThConverter(classLevel) }} level, and again at 5th, 9th,
+          13th, and 17th levels, you gain certain spells, as shown on the
+          {{ feature.name }} table below. {{ alwaysAvailable }}
+          <table>
+            <tr>
+              <th>{{ feature.name }}</th>
+              <th></th>
+            </tr>
+            <tr>
+              <th>Level</th>
+              <th>Spells</th>
+            </tr>
+            <tr>
+              <td>{{ numberThConverter(classLevel) }}</td>
+              <td>
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[0])
+                  }}"
+                  >{{ feature.granted[0].options[0] }}</a
+                >,
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[1])
+                  }}"
+                  >{{ feature.granted[0].options[1] }}</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>5th</td>
+              <td>
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[2])
+                  }}"
+                  >{{ feature.granted[0].options[2] }}</a
+                >,
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[3])
+                  }}"
+                  >{{ feature.granted[0].options[3] }}</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>9th</td>
+              <td>
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[4])
+                  }}"
+                  >{{ feature.granted[0].options[4] }}</a
+                >,
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[5])
+                  }}"
+                  >{{ feature.granted[0].options[5] }}</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>13th</td>
+              <td>
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[6])
+                  }}"
+                  >{{ feature.granted[0].options[6] }}</a
+                >,
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[7])
+                  }}"
+                  >{{ feature.granted[0].options[7] }}</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>17th</td>
+              <td>
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[8])
+                  }}"
+                  >{{ feature.granted[0].options[8] }}</a
+                >,
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[9])
+                  }}"
+                  >{{ feature.granted[0].options[9] }}</a
+                >
+              </td>
+            </tr>
+          </table>
+        </ng-container>
+      </ng-container>
+      <!-- Standard plus a cantrip -->
+      <ng-container *ngSwitchCase="11">
+        <ng-container *ngIf="feature.subclassSpellCastingLevel === 1">
+          At {{ numberThConverter(classLevel) }} level, and again at 3rd, 5th,
+          7th, and 9th levels, you gain certain spells, as shown on the
+          {{ feature.name }} table below. {{ alwaysAvailable }}
+          <table>
+            <tr>
+              <th>{{ feature.name }}</th>
+              <th></th>
+            </tr>
+            <tr>
+              <th>Level</th>
+              <th>Spells</th>
+            </tr>
+            <tr>
+              <td>{{ numberThConverter(classLevel) }}</td>
+              <td>
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[1])
+                  }}"
+                  >{{ feature.granted[0].options[1] }}</a
+                >,
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[2])
+                  }}"
+                  >{{ feature.granted[0].options[2] }}</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>3rd</td>
+              <td>
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[3])
+                  }}"
+                  >{{ feature.granted[0].options[3] }}</a
+                >,
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[4])
+                  }}"
+                  >{{ feature.granted[0].options[4] }}</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>5th</td>
+              <td>
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[5])
+                  }}"
+                  >{{ feature.granted[0].options[5] }}</a
+                >,
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[6])
+                  }}"
+                  >{{ feature.granted[0].options[6] }}</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>7th</td>
+              <td>
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[7])
+                  }}"
+                  >{{ feature.granted[0].options[7] }}</a
+                >,
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[8])
+                  }}"
+                  >{{ feature.granted[0].options[8] }}</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>9th</td>
+              <td>
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[9])
+                  }}"
+                  >{{ feature.granted[0].options[9] }}</a
+                >,
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[10])
+                  }}"
+                  >{{ feature.granted[0].options[10] }}</a
+                >
+              </td>
+            </tr>
+          </table>
+          Additionally, you learn the
+          <a
+            routerLink="/spell/{{
+              nameUrlEncode(feature.granted[0].options[0])
+            }}"
+            >{{ feature.granted[0].options[0] }}</a
+          >
+          cantrip, and it doesn't count against your number of cantrips known.
+        </ng-container>
+        <ng-container *ngIf="feature.subclassSpellCastingLevel === 2">
+          At {{ numberThConverter(classLevel) }} level, and again at 5th, 9th,
+          13th, and 17th levels, you gain certain spells, as shown on the
+          {{ feature.name }} table below. {{ alwaysAvailable }}
+          <table>
+            <tr>
+              <th>{{ feature.name }}</th>
+              <th></th>
+            </tr>
+            <tr>
+              <th>Level</th>
+              <th>Spells</th>
+            </tr>
+            <tr>
+              <td>{{ numberThConverter(classLevel) }}</td>
+              <td>
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[1])
+                  }}"
+                  >{{ feature.granted[0].options[1] }}</a
+                >,
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[2])
+                  }}"
+                  >{{ feature.granted[0].options[2] }}</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>5th</td>
+              <td>
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[3])
+                  }}"
+                  >{{ feature.granted[0].options[3] }}</a
+                >,
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[4])
+                  }}"
+                  >{{ feature.granted[0].options[4] }}</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>9th</td>
+              <td>
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[5])
+                  }}"
+                  >{{ feature.granted[0].options[5] }}</a
+                >,
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[6])
+                  }}"
+                  >{{ feature.granted[0].options[6] }}</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>13th</td>
+              <td>
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[7])
+                  }}"
+                  >{{ feature.granted[0].options[7] }}</a
+                >,
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[8])
+                  }}"
+                  >{{ feature.granted[0].options[8] }}</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>17th</td>
+              <td>
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[9])
+                  }}"
+                  >{{ feature.granted[0].options[9] }}</a
+                >,
+                <a
+                  routerLink="/spell/{{
+                    nameUrlEncode(feature.granted[0].options[10])
+                  }}"
+                  >{{ feature.granted[0].options[10] }}</a
+                >
+              </td>
+            </tr>
+          </table>
+          Additionally, you learn the
+          <a
+            routerLink="/spell/{{
+              nameUrlEncode(feature.granted[0].options[0])
+            }}"
+            >{{ feature.granted[0].options[0] }}</a
+          >
+          cantrip, and it doesn't count against your number of cantrips known.
+        </ng-container>
+      </ng-container>
+      <!-- Extended: Two spells per level, 1st thru 5th; one spell per level, 6th thru 9th -->
+      <ng-container *ngSwitchCase="14">
+        At {{ numberThConverter(classLevel) }} level, and again at 3rd, 5th,
+        7th, 9th, 11th, 13th, 15th, and 17th levels, you gain certain spells, as
+        shown on the {{ feature.name }} table below. {{ alwaysAvailable }}
+        <table>
+          <tr>
+            <th>{{ feature.name }}</th>
+            <th></th>
+          </tr>
+          <tr>
+            <th>Level</th>
+            <th>Spells</th>
+          </tr>
+          <tr>
+            <td>{{ numberThConverter(classLevel) }}</td>
+            <td>
+              <a
+                routerLink="/spell/{{
+                  nameUrlEncode(feature.granted[0].options[0])
+                }}"
+                >{{ feature.granted[0].options[0] }}</a
+              >,
+              <a
+                routerLink="/spell/{{
+                  nameUrlEncode(feature.granted[0].options[1])
+                }}"
+                >{{ feature.granted[0].options[1] }}</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>3rd</td>
+            <td>
+              <a
+                routerLink="/spell/{{
+                  nameUrlEncode(feature.granted[0].options[2])
+                }}"
+                >{{ feature.granted[0].options[2] }}</a
+              >,
+              <a
+                routerLink="/spell/{{
+                  nameUrlEncode(feature.granted[0].options[3])
+                }}"
+                >{{ feature.granted[0].options[3] }}</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>5th</td>
+            <td>
+              <a
+                routerLink="/spell/{{
+                  nameUrlEncode(feature.granted[0].options[4])
+                }}"
+                >{{ feature.granted[0].options[4] }}</a
+              >,
+              <a
+                routerLink="/spell/{{
+                  nameUrlEncode(feature.granted[0].options[5])
+                }}"
+                >{{ feature.granted[0].options[5] }}</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>7th</td>
+            <td>
+              <a
+                routerLink="/spell/{{
+                  nameUrlEncode(feature.granted[0].options[6])
+                }}"
+                >{{ feature.granted[0].options[6] }}</a
+              >,
+              <a
+                routerLink="/spell/{{
+                  nameUrlEncode(feature.granted[0].options[7])
+                }}"
+                >{{ feature.granted[0].options[7] }}</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>9th</td>
+            <td>
+              <a
+                routerLink="/spell/{{
+                  nameUrlEncode(feature.granted[0].options[8])
+                }}"
+                >{{ feature.granted[0].options[8] }}</a
+              >,
+              <a
+                routerLink="/spell/{{
+                  nameUrlEncode(feature.granted[0].options[9])
+                }}"
+                >{{ feature.granted[0].options[9] }}</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>11th</td>
+            <td>
+              <a
+                routerLink="/spell/{{
+                  nameUrlEncode(feature.granted[0].options[10])
+                }}"
+                >{{ feature.granted[0].options[10] }}</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>13th</td>
+            <td>
+              <a
+                routerLink="/spell/{{
+                  nameUrlEncode(feature.granted[0].options[11])
+                }}"
+                >{{ feature.granted[0].options[11] }}</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>15th</td>
+            <td>
+              <a
+                routerLink="/spell/{{
+                  nameUrlEncode(feature.granted[0].options[12])
+                }}"
+                >{{ feature.granted[0].options[12] }}</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>17th</td>
+            <td>
+              <a
+                routerLink="/spell/{{
+                  nameUrlEncode(feature.granted[0].options[13])
+                }}"
+                >{{ feature.granted[0].options[13] }}</a
+              >
+            </td>
+          </tr>
+        </table>
+      </ng-container>
+      <!-- Extended plus a cantrip -->
+      <ng-container *ngSwitchCase="15">
+        At {{ numberThConverter(classLevel) }} level, and again at 3rd, 5th,
+        7th, 9th, 11th, 13th, 15th, and 17th levels, you gain certain spells, as
+        shown on the {{ feature.name }} table below. {{ alwaysAvailable }}
+        <table>
+          <tr>
+            <th>{{ feature.name }}</th>
+            <th></th>
+          </tr>
+          <tr>
+            <th>Level</th>
+            <th>Spells</th>
+          </tr>
+          <tr>
+            <td>{{ numberThConverter(classLevel) }}</td>
+            <td>
+              <a
+                routerLink="/spell/{{
+                  nameUrlEncode(feature.granted[0].options[1])
+                }}"
+                >{{ feature.granted[0].options[1] }}</a
+              >,
+              <a
+                routerLink="/spell/{{
+                  nameUrlEncode(feature.granted[0].options[2])
+                }}"
+                >{{ feature.granted[0].options[2] }}</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>3rd</td>
+            <td>
+              <a
+                routerLink="/spell/{{
+                  nameUrlEncode(feature.granted[0].options[3])
+                }}"
+                >{{ feature.granted[0].options[3] }}</a
+              >,
+              <a
+                routerLink="/spell/{{
+                  nameUrlEncode(feature.granted[0].options[4])
+                }}"
+                >{{ feature.granted[0].options[4] }}</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>5th</td>
+            <td>
+              <a
+                routerLink="/spell/{{
+                  nameUrlEncode(feature.granted[0].options[5])
+                }}"
+                >{{ feature.granted[0].options[5] }}</a
+              >,
+              <a
+                routerLink="/spell/{{
+                  nameUrlEncode(feature.granted[0].options[6])
+                }}"
+                >{{ feature.granted[0].options[6] }}</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>7th</td>
+            <td>
+              <a
+                routerLink="/spell/{{
+                  nameUrlEncode(feature.granted[0].options[7])
+                }}"
+                >{{ feature.granted[0].options[7] }}</a
+              >,
+              <a
+                routerLink="/spell/{{
+                  nameUrlEncode(feature.granted[0].options[8])
+                }}"
+                >{{ feature.granted[0].options[8] }}</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>9th</td>
+            <td>
+              <a
+                routerLink="/spell/{{
+                  nameUrlEncode(feature.granted[0].options[9])
+                }}"
+                >{{ feature.granted[0].options[9] }}</a
+              >,
+              <a
+                routerLink="/spell/{{
+                  nameUrlEncode(feature.granted[0].options[10])
+                }}"
+                >{{ feature.granted[0].options[10] }}</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>11th</td>
+            <td>
+              <a
+                routerLink="/spell/{{
+                  nameUrlEncode(feature.granted[0].options[11])
+                }}"
+                >{{ feature.granted[0].options[11] }}</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>13th</td>
+            <td>
+              <a
+                routerLink="/spell/{{
+                  nameUrlEncode(feature.granted[0].options[12])
+                }}"
+                >{{ feature.granted[0].options[12] }}</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>15th</td>
+            <td>
+              <a
+                routerLink="/spell/{{
+                  nameUrlEncode(feature.granted[0].options[13])
+                }}"
+                >{{ feature.granted[0].options[13] }}</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>17th</td>
+            <td>
+              <a
+                routerLink="/spell/{{
+                  nameUrlEncode(feature.granted[0].options[14])
+                }}"
+                >{{ feature.granted[0].options[14] }}</a
+              >
+            </td>
+          </tr>
+        </table>
+        Additionally, you learn the
+        <a
+          routerLink="/spell/{{ nameUrlEncode(feature.granted[0].options[0]) }}"
+          >{{ feature.granted[0].options[0] }}</a
+        >
+        cantrip, and it doesn't count against your number of cantrips known.
+      </ng-container>
+    </ng-container>
+  </ng-container>
+  <ng-container *ngIf="feature.subclassExploitsFeature">
+    At {{ numberThConverter(classLevel) }} level, and again at 5th and 9th
+    levels, you gain certain exploits, as shown on the {{ feature.name }} table
+    below. These exploits are always prepared and don't count against your
+    number of prepared exploits.
+    <table>
+      <tr>
+        <th>{{ feature.name }}</th>
+        <th></th>
+      </tr>
+      <tr>
+        <th>Level</th>
+        <th>Exploits</th>
+      </tr>
+      <tr>
+        <td>{{ numberThConverter(classLevel) }}</td>
+        <td>
+          <a
+            routerLink="/exploit/{{
+              nameUrlEncode(feature.granted[0].options[0])
+            }}"
+            >{{ feature.granted[0].options[0] }}</a
+          >,
+          <a
+            routerLink="/exploit/{{
+              nameUrlEncode(feature.granted[0].options[1])
+            }}"
+            >{{ feature.granted[0].options[1] }}</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td>5th</td>
+        <td>
+          <a
+            routerLink="/exploit/{{
+              nameUrlEncode(feature.granted[0].options[2])
+            }}"
+            >{{ feature.granted[0].options[2] }}</a
+          >,
+          <a
+            routerLink="/exploit/{{
+              nameUrlEncode(feature.granted[0].options[3])
+            }}"
+            >{{ feature.granted[0].options[3] }}</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td>9th</td>
+        <td>
+          <a
+            routerLink="/exploit/{{
+              nameUrlEncode(feature.granted[0].options[4])
+            }}"
+            >{{ feature.granted[0].options[4] }}</a
+          >
+        </td>
+      </tr>
+    </table>
+    <ng-conatiner *ngIf="feature.granted[0].options?.length == 6">
+      Additionally, you learn the
+      <a
+        routerLink="/exploit/{{ nameUrlEncode(feature.granted[0].options[5]) }}"
+        >{{ feature.granted[0].options[5] }}</a
+      >
+      exploit, and it is considered a Mastered Exploit for you.
+    </ng-conatiner>
+  </ng-container>
+  <ng-container
+    *ngIf="!feature.subclassSpellsFeature && !feature.subclassExploitsFeature"
+  >
+    <p [innerHTML]="description"></p>
+  </ng-container>
+
+  <ng-container *ngIf="feature.subFeatures">
+    <ng-container *ngFor="let subFeature of feature.subFeatures">
+      <app-display-feature
+        [character]="character"
+        [feature]="subFeature"
+        [subFeature]="true"
+        [level]="level + 1"
+        [classLevel]="classLevel"
+        [sourceId]="sourceId"
+        [sourceValue]="sourceValue"
+        (emitChange)="emitChange.emit()"
+      ></app-display-feature>
+    </ng-container>
+  </ng-container>
+  <ng-container *ngIf="feature.choices">
+    <ng-container *ngFor="let choice of feature.choices">
+      <app-builder-choice
+        [character]="character"
+        [choice]="choice"
+        [subChoice]="choiceFeature"
+        [level]="level + 1"
+        [classLevel]="classLevel"
+        [sourceId]="sourceId"
+        [sourceValue]="sourceValue"
+        (emitChange)="emitChange.emit()"
+      ></app-builder-choice>
+    </ng-container>
+  </ng-container>
+</div>

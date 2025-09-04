@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { IRace } from 'src/app/models/data.models';
 import { DataService } from 'src/services/data.service';
 
 @Component({
@@ -13,7 +12,7 @@ export class RaceComponent implements OnInit {
   set name(raceName: string) {
     this.race = this.dataService.getRace(raceName);
   }
-  public race: IRace;
+  public race: any;
   public asiString = '';
   public languageString = '';
 

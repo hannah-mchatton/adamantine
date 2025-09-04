@@ -5,5 +5,4 @@ export class CharacterClass {
     subclassKey?: string;
     level: number;
     hp: number[];
-    choices: CharacterChoice[];
 }

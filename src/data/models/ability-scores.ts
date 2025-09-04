@@ -6,5 +6,10 @@ export class AbilityScores {
 
 export class AbilityScore {
     name: string;
-    baseValue: string;
+    baseValue: number;
+
+    constructor(name: string, baseValue: number) {
+        this.name = name;
+        this.baseValue = baseValue;
+    }
 }

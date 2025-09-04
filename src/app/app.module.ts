@@ -16,7 +16,6 @@ import { NzTabsModule } from 'ng-zorro-antd/tabs';
 import { NzSelectModule } from 'ng-zorro-antd/select';
 import { NzCollapseModule } from 'ng-zorro-antd/collapse';
 import { DatabaseModule } from 'src/components/database/database.module';
-import { CharacterModule } from 'src/components/characters/character.module';
 import { PagesModule } from 'src/components/pages/pages.module';
 import { BestiaryModule } from 'src/components/bestiary/bestiary.module';
 import { GeneralStoreModule } from 'src/components/general-store/general-store.module';
@@ -26,6 +25,7 @@ import { DmToolsModule } from 'src/components/dm-tools/dm-tools.module';
 import { CraftingModule } from 'src/components/crafting/crafting.module';
 import { LoreModule } from 'src/components/lore/lore.module';
 import { RulesModule } from 'src/components/rules/rules.module';
+import { CharactersModule } from 'src/components/characters/characters.module';
 
 registerLocaleData(en);
 
@@ -45,8 +45,8 @@ registerLocaleData(en);
 
     PagesModule,
     DatabaseModule,
-    CharacterModule,
     BestiaryModule,
+    CharactersModule,
     GeneralStoreModule,
     DmToolsModule,
     CraftingModule,

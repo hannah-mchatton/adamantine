@@ -1,5 +1,6 @@
 import { AbilityScores } from "./ability-scores";
 import { CharacterBackground } from "./character-background";
+import { CharacterChoice } from "./character-choice";
 import { CharacterClass } from "./character-class";
 import { CharacterCurrency, CharacterEquipment } from "./character-equipment";
 import { CharacterRace } from "./character-race";
@@ -9,7 +10,7 @@ export class Character {
     name: string;
     scores: AbilityScores;
 
-    background: CharacterBackground;
+    background: string;
     race: CharacterRace;
     classes: CharacterClass[];
 
@@ -17,6 +18,7 @@ export class Character {
     currency: CharacterCurrency;
     notes: string;
 
+    choices: CharacterChoice[];
     uses: CharacterUses[];
 
     overrides: any[];

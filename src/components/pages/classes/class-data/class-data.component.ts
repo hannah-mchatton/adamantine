@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { IClass } from 'src/app/models/data.models';
 import { BaseComponent } from 'src/components/meta/base/base.component';
 import { DataService } from 'src/services/data.service';
 
@@ -10,7 +9,7 @@ import { DataService } from 'src/services/data.service';
   styleUrls: ['./class-data.component.scss'],
 })
 export class ClassDataComponent extends BaseComponent implements OnInit {
-  public classData: IClass;
+  public classData: any;
 
   constructor(private dataService: DataService, private route: ActivatedRoute) {
     super();

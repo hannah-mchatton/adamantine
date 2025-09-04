@@ -582,6 +582,17 @@ export class DataService {
 
     return splitRaces;
   }
+  public getRaceList() {
+    let raceData = races;
+    raceData = raceData.map((r: any) => {
+      r.index = this.nameUrlEncode(r.name);
+      return r;
+    });
+
+    raceData = raceData.sort((a, b) => a.name.localeCompare(b.name));
+
+    return raceData;
+  }
   public getRace(name: string) {
     return races.find((r: any) => this.nameUrlEncode(r.name) === name);
   }

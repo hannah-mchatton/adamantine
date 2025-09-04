@@ -1,0 +1,11 @@
+<button nz-button type="button" (click)="saveCharacter()">Save</button>
+<div *ngIf="hasChange">You have unsaved changes.</div>
+
+<nz-tabset [nzSize]="'large'" [nzAnimated]="false">
+  <nz-tab nzTitle="Stats">
+    <character-builder-stats [character]="character" (emitChange)="characterChanged()"></character-builder-stats>
+  </nz-tab>
+  <nz-tab nzTitle="Race">
+    <character-builder-race [character]="character" (emitChange)="characterChanged()"></character-builder-race>
+  </nz-tab>
+</nz-tabset>

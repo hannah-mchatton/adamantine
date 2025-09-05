@@ -1,6 +1,7 @@
 [
   {
     "name": "Overdeities",
+    "description": "The overdeities are a collection of Xarians who, in one way or another, harnessed the power of an ancient singularity in the Astral Sea, using it to ascend to godhood. Their power far eclipses that of all other gods.",
     "gods": [
       {
         "name": "Luminous Being",
@@ -154,7 +155,8 @@
           "Eldritch",
           "Madness",
           "Shadow",
-          "Flame"
+          "Flame",
+          "Dream"
         ]
       },
       {
@@ -169,6 +171,7 @@
   },
   {
     "name": "Faerûnian Pantheon",
+    "description": "The Faerûnian pantheon is the pantheon primarily worshipped by the continent of Faerûn on the world of Toril in Realmspace. Though they are the gods of Realmspace, the Faerûnian gods wield significant power outside of their sphere, something quite unusual for sphere gods.",
     "gods": [
       {
         "name": "Akadi",
@@ -240,7 +243,7 @@
         "alignment": "CE",
         "symbol": "White skull on a purple starburst",
         "portfolio": "Lies",
-        "domains": ["Shadow", "Trickery"]
+        "domains": ["Shadow", "Trickery", "Dream"]
       },
       {
         "name": "Deneir",
@@ -255,7 +258,7 @@
         "gender": "Male",
         "alignment": "N",
         "symbol": "Whirlpool",
-        "portfolio": "Merfolk, Locathah, Tritons",
+        "portfolio": "Aquatic Races",
         "domains": ["Tempest", "Sea"]
       },
       {
@@ -264,7 +267,7 @@
         "alignment": "NG",
         "symbol": "Waterfall",
         "portfolio": "Peace",
-        "domains": ["Nature", "Hope", "Life", "Peace", "Sea", "Hearth", "Story"]
+        "domains": ["Nature", "Hope", "Life", "Peace", "Sea", "Hearth", "Story", "Dream"]
       },
       {
         "name": "Gond",
@@ -296,7 +299,7 @@
         "alignment": "CE",
         "symbol": "An eye surrounded by ten smaller eyes",
         "portfolio": "Beholders, Fogs, Obscurement",
-        "domains": ["Eldritch", "Madness", "Trickery"]
+        "domains": ["Eldritch", "Madness", "Trickery", "Dream"]
       },
       {
         "name": "Helm",
@@ -417,7 +420,7 @@
         "alignment": "CN",
         "symbol": "Triangle containing a swirl of mist",
         "portfolio": "Illusion",
-        "domains": ["Trickery", "Twlight", "Arts", "Story"]
+        "domains": ["Trickery", "Twilight", "Arts", "Story", "Dream"]
       },
       {
         "name": "Lliira",
@@ -505,7 +508,7 @@
         "alignment": "CE",
         "symbol": "Crescent moon in front of wings",
         "portfolio": "Harpies, Night",
-        "domains": ["Death", "Shadow", "Sky", "Twilight"]
+        "domains": ["Death", "Shadow", "Sky", "Twilight", "Dream"]
       },
       {
         "name": "Oghma",
@@ -545,7 +548,7 @@
         "alignment": "LN",
         "symbol": "Crystal ball containing eyes",
         "portfolio": "Divination, Fate",
-        "domains": ["Jugement", "Knowledge", "Luck", "Story", "Time"]
+        "domains": ["Judgement", "Knowledge", "Luck", "Story", "Time"]
       },
       {
         "name": "Sekolah",
@@ -566,9 +569,10 @@
           "Knowledge",
           "Light",
           "Peace",
-          "Twlight",
+          "Twilight",
           "Sea",
-          "Time"
+          "Time",
+          "Dream"
         ]
       },
       {
@@ -592,7 +596,8 @@
           "Sorrow",
           "Trickery",
           "Twilight",
-          "Plague"
+          "Plague",
+          "Dream"
         ]
       },
       {
@@ -734,7 +739,8 @@
     ]
   },
   {
-    "name": "Oerthian Pantheon",
+    "name": "Oerdian Pantheon",
+    "description": "The Oerdian patheon is the pantheon primarily worshipped by the world of Oerth in Grayspace. The gods of Oerth are the oldest sphere gods, and their numbers are so vast that to list all of them would be impossible.",
     "gods": [
       {
         "name": "Al'Akbar",
@@ -790,7 +796,7 @@
         "alignment": "N",
         "symbol": "Arc of seven stars",
         "portfolio": "Stars",
-        "domains": ["Eldritch", "Knowledge", "Light", "Travel", "Flame"]
+        "domains": ["Eldritch", "Knowledge", "Light", "Travel", "Flame", "Dream"]
       },
       {
         "name": "Cuthbert",
@@ -959,7 +965,7 @@
         "alignment": "CN",
         "symbol": "Three bone dice",
         "portfolio": "Delusion, Misfortune",
-        "domains": ["Luck", "Trickery", "Twilight"]
+        "domains": ["Luck", "Trickery", "Twilight", "Dream"]
       },
       {
         "name": "Rao",
@@ -967,7 +973,7 @@
         "alignment": "LG",
         "symbol": "White heart",
         "portfolio": "Peace, Reason",
-        "domains": ["Hope", "Knowledge", "Peace", "Hearth", "Story"]
+        "domains": ["Hope", "Knowledge", "Peace", "Hearth", "Story", "Dream"]
       },
       {
         "name": "Rudd",
@@ -1044,6 +1050,7 @@
   },
   {
     "name": "Krynnic Pantheon",
+    "description": "The Krynnic pantheon is the pantheon primarily worshipped by the world of Krynn in Krynnspace. Most Krynnic gods are ruthless, seeing mortals as little more than chess pieces on the great board that is the surface of Krynn.",
     "gods": [
       {
         "name": "Branchala",
@@ -1099,7 +1106,7 @@
         "alignment": "CE",
         "symbol": "Broken scales",
         "portfolio": "Greed, Lies",
-        "domains": ["Luck", "Shadow", "Trickery", "Mountain", "Wealth"]
+        "domains": ["Luck", "Shadow", "Trickery", "Mountain", "Wealth", "Dream"]
       },
       {
         "name": "Kiri-Jolith",
@@ -1123,7 +1130,7 @@
         "alignment": "LG",
         "symbol": "Copper spider",
         "portfolio": "Meditation, Order",
-        "domains": ["Knowledge", "Order", "Peace"]
+        "domains": ["Knowledge", "Order", "Peace", "Dream"]
       },
       {
         "name": "Mishakal",
@@ -1228,7 +1235,7 @@
         "alignment": "LE",
         "symbol": "Black crescent",
         "portfolio": "Hatred, Night",
-        "domains": ["Death", "Madness", "Shadow", "War", "Draconic"]
+        "domains": ["Death", "Madness", "Shadow", "War", "Draconic", "Dream"]
       },
       {
         "name": "Zeboim",
@@ -1250,6 +1257,7 @@
   },
   {
     "name": "Beric Pantheon",
+    "description": "The Beric pantheon is the pantheon primarily worshipped by the world of Eberron in Berspace. The Beric pantheon is among the youngest of the sphere gods, and are themselves still recovering from Eberron's great history of warfare.",
     "gods": [
       {
         "name": "Arawai",
@@ -1353,7 +1361,7 @@
         "alignment": "NE",
         "symbol": "Twisted dragon horns",
         "portfolio": "Delusion",
-        "domains": ["Madness", "Trickery", "Draconic"]
+        "domains": ["Madness", "Trickery", "Draconic", "Dream"]
       },
       {
         "name": "Kol Korran",
@@ -1439,6 +1447,7 @@
   },
   {
     "name": "Clutch of Io (Draconic Pantheon)",
+    "description": "The Clutch of Io is the ancient draconic pantheon originating from the sphere of Thenispace. Their power is innately bound to their home sphere, but their draconic nature allows them to wield significant power outside of their sphere.",
     "gods": [
       {
         "name": "Asgorath",
@@ -1519,7 +1528,8 @@
           "Trickery",
           "Twilight",
           "Story",
-          "Draconic"
+          "Draconic",
+          "Dream"
         ]
       },
       {
@@ -1590,6 +1600,7 @@
   },
   {
     "name": "Seldarine (Elvish Pantheon)",
+    "description": "The Seldarine is the elvish pantheon. Most of them have some connection to the Feywild, and the first among them were among the first gods created by Praeteria and Ao.",
     "gods": [
       {
         "name": "Corellon",
@@ -1629,7 +1640,7 @@
         "alignment": "CG",
         "symbol": "Shaft of light",
         "portfolio": "Light, Stars",
-        "domains": ["Eldritch", "Light", "Shadow", "Flame"]
+        "domains": ["Eldritch", "Light", "Shadow", "Flame", "Dream"]
       },
       {
         "name": "Avachel",
@@ -1660,7 +1671,7 @@
         "alignment": "CN",
         "symbol": "Asymmetric starburst",
         "portfolio": "Change, Mischief",
-        "domains": ["Trickery", "Travel", "Arts", "Time"]
+        "domains": ["Trickery", "Travel", "Arts", "Time", "Dream"]
       },
       {
         "name": "Felarathael",
@@ -1783,7 +1794,7 @@
         "alignment": "CG",
         "symbol": "Full moon",
         "portfolio": "Dreams, Moon, Travel",
-        "domains": ["Light", "Shadow", "Travel", "Sea", "Time"]
+        "domains": ["Light", "Shadow", "Travel", "Sea", "Time", "Dream"]
       },
       {
         "name": "Shevarash",
@@ -1829,6 +1840,7 @@
   },
   {
     "name": "Dark Seldarine (Drow Pantheon)",
+    "description": "The Dark Seldarine is the pantheon worshipped by specifically drow, or dark elves. Long ago, they split away from the Seldarine when Lolth was banished after her war. The Dark Seldarine is among the most loosely organized pantheons, only being gesturally ruled by Lolth.",
     "gods": [
       {
         "name": "Lolth",
@@ -1852,7 +1864,7 @@
         "alignment": "CG",
         "symbol": "Dancer before a full moon",
         "portfolio": "Beauty, Dance, Freedom, Moon, Hunting, Song",
-        "domains": ["Beauty", "Light", "Travel", "Sea", "Arts", "Story", "Time"]
+        "domains": ["Beauty", "Light", "Travel", "Sea", "Arts", "Story", "Time", "Dream"]
       },
       {
         "name": "Ghaunadaur",
@@ -1900,12 +1912,13 @@
         "alignment": "CN",
         "symbol": "Dagger draped in cloth",
         "portfolio": "Assassins, Illusions, Lies",
-        "domains": ["Death", "Madness", "Trickery", "Twilight", "Arts"]
+        "domains": ["Death", "Madness", "Trickery", "Twilight", "Arts", "Dream"]
       }
     ]
   },
   {
-    "name": "Mordinsamman (Dwarvish Pantheon)",
+    "name": "Morndinsamman (Dwarvish Pantheon)",
+    "description": "The Morndinsamman is the dwarvish pantheon. They are a tightly-knit clan of dwarven shield brothers and sisters. Sometimes, the Morndinsamman is called upon by the overdeities to serve as powerful warriors.",
     "gods": [
       {
         "name": "Moradin",
@@ -2049,12 +2062,13 @@
         "alignment": "N",
         "symbol": "Gold coin",
         "portfolio": "Trickery, Wealth",
-        "domains": ["Luck", "Order", "Trickery", "Travel", "Mountain", "Wealth"]
+        "domains": ["Luck", "Order", "Trickery", "Travel", "Mountain", "Wealth", "Dream"]
       }
     ]
   },
   {
     "name": "Lords of the Golden Hills (Gnomish Pantheon)",
+    "description": "The Lords of the Golden Hills is the gnomish pantheon. They are among the pantheons most involved in the lives of their worshippers, but they usually just send avatars instead of acting themselves.",
     "gods": [
       {
         "name": "Gond",
@@ -2078,7 +2092,7 @@
         "alignment": "NG",
         "symbol": "Dagger against a cloak",
         "portfolio": "Deception, Illusion",
-        "domains": ["Shadow", "Trickery", "Twilight", "Arts"]
+        "domains": ["Shadow", "Trickery", "Twilight", "Arts", "Dream"]
       },
       {
         "name": "Callarduran",
@@ -2140,6 +2154,7 @@
   },
   {
     "name": "Tribe of He Who Watches (Orcish Pantheon)",
+    "description": "The Tribe of He Who Watches is the orcish pantheon. They are a brutal collection of little more than barbarians who bully the orcs into worshipping them. The Tribe has a long, bloody history with the Seldarine, which started when Corellon Larethian stabbed out one of Gruumsh's eyes.",
     "gods": [
       {
         "name": "Gruumsh",
@@ -2187,7 +2202,7 @@
         "alignment": "NE",
         "symbol": "Red crescent moon",
         "portfolio": "Darkness, Night, Stealth, Thieves, Trickery",
-        "domains": ["Shadow", "Trickery", "Twilight", "Travel"]
+        "domains": ["Shadow", "Trickery", "Twilight", "Travel", "Dream"]
       },
       {
         "name": "Yurtus",
@@ -2201,6 +2216,7 @@
   },
   {
     "name": "Ordning (Giant Pantheon)",
+    "description": "The Ordning is both the name for the giant pantheon, and the name for the system of ranking that permeates all of giant society. Even the pantheon itself is subject to this ranking, with Annam and Stronmaus near the top of the Ordning and Grolantor and Vaprak near the bottom.",
     "gods": [
       {
         "name": "Annam",
@@ -2216,7 +2232,7 @@
         "alignment": "CN",
         "symbol": "Ehwaz rune",
         "portfolio": "Mischief, Thievery",
-        "domains": ["Trickery", "Twilight", "Wealth"]
+        "domains": ["Trickery", "Twilight", "Wealth", "Dream"]
       },
       {
         "name": "Grolantor",
@@ -2256,7 +2272,7 @@
         "alignment": "NE",
         "symbol": "Black obelisk",
         "portfolio": "Cloud Giants, Control, Lies, Pride",
-        "domains": ["Sky", "Trickery", "Twilight", "Wealth"]
+        "domains": ["Sky", "Trickery", "Twilight", "Wealth", "Dream"]
       },
       {
         "name": "Othea",
@@ -2278,7 +2294,8 @@
           "Strength",
           "Mountain",
           "Arts",
-          "Story"
+          "Story",
+          "Dream"
         ]
       },
       {
@@ -2287,7 +2304,7 @@
         "alignment": "NG",
         "symbol": "Forked lightning bolt",
         "portfolio": "Sea, Sky, Storm Giants, Sun, Weather",
-        "domains": ["Nature", "Sky", "Tempest", "Sea", "Story", "Flame", "Time"]
+        "domains": ["Nature", "Sky", "Tempest", "Sea", "Story", "Flame", "Time", "Dream"]
       },
       {
         "name": "Surtr",
@@ -2317,6 +2334,7 @@
   },
   {
     "name": "Egyptian Pantheon",
+    "description": "The Egyptian pantheon, so named for its connections to the Primespace state of Egypt, is a pantheon worshipped across the multiverse. They have numerous names, such as the Pharaonic pantheon or the Mulhorandi pantheon.",
     "gods": [
       {
         "name": "Ra",
@@ -2411,7 +2429,7 @@
         "alignment": "CN",
         "symbol": "Crescent moon",
         "portfolio": "Moon, Trickery",
-        "domains": ["Shadow", "Trickery", "Twilight", "Travel", "Sea", "Time"]
+        "domains": ["Shadow", "Trickery", "Twilight", "Travel", "Sea", "Time", "Dream"]
       },
       {
         "name": "Nephthys",
@@ -2488,6 +2506,7 @@
   },
   {
     "name": "Olympian Pantheon",
+    "description": "The Olympian pantheon is a collection of gods that live primarily in the realm of Olympus found within Arborea. Even the good Olympian gods are extremely selfish, petty, and unpredictable beings, and it's frankly a miracle they get anything done with how much they bicker. Most of the Olympian gods are in some way related to Zeus, the king of their pantheon.",
     "gods": [
       {
         "name": "Aphrodite",
@@ -2529,7 +2548,7 @@
         "alignment": "NG",
         "symbol": "Bow and arrow on crescent moon",
         "portfolio": "Hunting, Moon",
-        "domains": ["Life", "Nature", "Sea", "Time"]
+        "domains": ["Life", "Nature", "Sea", "Time", "Dream"]
       },
       {
         "name": "Athena",
@@ -2592,7 +2611,7 @@
         "alignment": "CE",
         "symbol": "Crow",
         "portfolio": "Night",
-        "domains": ["Shadow"]
+        "domains": ["Shadow", "Dream"]
       },
       {
         "name": "Eros",
@@ -2689,7 +2708,7 @@
         "alignment": "N",
         "symbol": "Poppy flower",
         "portfolio": "Sleep",
-        "domains": ["Shadow", "Trickery", "Twilight", "Hearth"]
+        "domains": ["Shadow", "Trickery", "Twilight", "Hearth", "Dream"]
       },
       {
         "name": "Nike",
@@ -2712,8 +2731,8 @@
         "gender": "Female",
         "alignment": "CN",
         "symbol": "Pomegranate",
-        "portfolio": "Seasons",
-        "domains": ["Beauty", "Nature", "Order", "Time"]
+        "portfolio": "Seasons, Rebirth",
+        "domains": ["Beauty", "Nature", "Order", "Time", "Life", "Death"]
       },
       {
         "name": "Poseidon",
@@ -2776,6 +2795,7 @@
   },
   {
     "name": "Celtic Pantheon",
+    "description": "The Celtic pantheon, so named for its connections to the Primespace peoples of the Celts, is a pantheon worshipped across the multiverse. Celtic gods tend to be more druidic or shamanic than most other gods, and their clerics are more primitive in their magic.",
     "gods": [
       {
         "name": "Dagda",
@@ -2940,6 +2960,7 @@
   },
   {
     "name": "Ysgardian Pantheon",
+    "description": "The Ysgardian pantheon is a collection of gods that live primarily in the plane of Ysgard. Most of the Ysgardian gods are warlike and rowdy, relative to other pantheons.",
     "gods": [
       {
         "name": "Odin",
@@ -3027,7 +3048,7 @@
         "alignment": "CE",
         "symbol": "Flame",
         "portfolio": "Mischief",
-        "domains": ["Trickery", "Twilight", "Wealth"]
+        "domains": ["Trickery", "Twilight", "Wealth", "Dream"]
       },
       {
         "name": "Njord",
@@ -3138,6 +3159,7 @@
   },
   {
     "name": "Hammerspace Pantheon",
+    "description": "The Hammerspace pantheon is a collection of gods from the sphere of Hammerspace. Most of these gods are little more than ascended demon lords who were sealed in Hammerspace by powerful magic long ago. None are truly good, and most serve to keep Hammerspace itself in a state of constant, brutal warfare. While the Hammerspace gods are extremely powerful within their sphere, they pale in comparison to even the weakest of multiversal gods.",
     "gods": [
       {
         "name": "Cegorach",
@@ -3157,7 +3179,8 @@
           "Story",
           "Trickery",
           "Twilight",
-          "Wealth"
+          "Wealth",
+          "Dream"
         ]
       },
       {
@@ -3355,6 +3378,68 @@
           "Sorrow",
           "War"
         ]
+      }
+    ]
+  },
+  {
+    "name": "Eldritch Pantheon",
+    "description": "The Eldritch pantheon are, or perhaps were, a group of supremely ancient gods. They are entirely unknowable to mortals, and their very presence can bring madness. Most of the Eldritch gods are connected to the Astral Plane itself, and most theologists question if they even still live.",
+    "gods": [
+      {
+        "name": "Azathoth",
+        "gender": "Male?",
+        "alignment": "CE",
+        "symbol": "Eight-pointed star",
+        "portfolio": "Entropy, Madness, Destruction, Dreams",
+        "domains": ["Arcana", "Eldritch", "Knowledge", "Madness", "Shadow", "Dream", "Trickery", "Death"]
+      },
+      {
+        "name": "Cthulhu",
+        "gender": "Male?",
+        "alignment": "CE",
+        "symbol": "Octopus",
+        "portfolio": "Water, Cataclysms, Stars",
+        "domains": ["Madness", "Eldritch", "Sea", "Death", "Trickery", "Dream"]
+      },
+      {
+        "name": "Dagon",
+        "gender": "Male?",
+        "alignment": "CE",
+        "symbol": "Fish eye surrounded by runes",
+        "portfolio": "Sea Monsters, Fish, Demons, Aberrance",
+        "domains": ["Sea", "Tempest", "Madness", "Eldritch", "War", "Death", "Trickery", "Draconic"]
+      },
+      {
+        "name": "Hastur",
+        "gender": "Male?",
+        "alignment": "CE",
+        "symbol": "Yellow cloak",
+        "portfolio": "Decadence, Disorder, Nihilism",
+        "domains": ["Eldritch", "Madness", "Wealth", "Arts", "Trickery", "Dream"]
+      },
+      {
+        "name": "Nyarlathotep",
+        "gender": "Male?",
+        "alignment": "CE",
+        "symbol": "Three-lobed eye",
+        "portfolio": "Conspiracies, Secrets, Forbidden Magic, Corruption, Vengeance",
+        "domains": ["Knowledge", "Arcana", "Dream", "Trickery", "Sky", "Eldritch", "Madness", "Wealth", "Shadow", "Luck"]
+      },
+      {
+        "name": "Shub-Niggurath",
+        "gender": "Female?",
+        "alignment": "CE",
+        "symbol": "Goat head",
+        "portfolio": "Birth, Slime, Woodlands",
+        "domains": ["Nature", "Eldritch", "Madness", "Life"]
+      },
+      {
+        "name": "Yog-Sothoth",
+        "gender": "Male?",
+        "alignment": "CE",
+        "symbol": "Black spiral",
+        "portfolio": "Gates, Space, Time",
+        "domains": ["Knowledge", "Time", "Travel", "Shadow", "Madness", "Eldritch"]
       }
     ]
   }

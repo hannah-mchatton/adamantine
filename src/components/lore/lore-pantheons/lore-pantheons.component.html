@@ -1,5 +1,7 @@
 <nz-tabset nzSize="small" [nzAnimated]="false">
   <nz-tab *ngFor="let pantheon of pantheons" [nzTitle]="pantheon.name">
+    <div>{{ pantheon.description }}</div>
+    
     <nz-table
       [nzData]="['yo mama']"
       [nzShowPagination]="false"

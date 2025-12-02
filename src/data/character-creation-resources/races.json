@@ -3260,7 +3260,9 @@
           {
             "name": "Draconic Resilience",
             "description": "You have resistance to radiant damage. Your breath weapon deals radiant damage and imposes a Dexterity saving throw.",
-            "granted": [{ "type": "damage-resistance", "options": ["Radiant"] }],
+            "granted": [
+              { "type": "damage-resistance", "options": ["Radiant"] }
+            ],
             "actions": [
               {
                 "id": "B05E6826-F8BD-42C8-8EB7-A66E960D8A11",
@@ -10600,6 +10602,78 @@
     "name": "Hobgoblin"
   },
   {
+    "name": "Grimlock",
+    "description": "Long ago, some brave explorers wandered into the depths of the caves that honeycomb the crusts of most worlds. Some became trapped there or chose to stay, and slowly evolved into the grimlocks, a race of blind, brutal creatures with limited psionic abilities and tough, gray skin.",
+    "asis": [{ "str": 1 }, { "con": 1 }, { "int": 1 }],
+    "maturity": 18,
+    "lifespan": 100,
+    "height": [6, 7],
+    "weight": [200, 250],
+    "category": "Uncommon",
+    "type": "Aberration (grimlock)",
+    "size": 0,
+    "speed": 30,
+    "languages": ["Common", "Undercommon", "Deep Speech"],
+    "traits": [
+      {
+        "name": "Blindsense",
+        "description": "Grimlocks have lost their eyes due to evolution, but have developed strong senses of smell and hearing to navigate the world. You are permanently blinded, but you have 30 feet of blindsight, or 60 feet if you aren't deafened or muted.</p><p>Whenever an effect specifies that you must see something, if it is within your radius of blindsight, you do not need to see it to use the effect.</p><p>Finally, you have advantage on Intelligence (Investigation) and Wisdom (Perception) checks that use your sense of hearing or smell.",
+        "granted": [{ "type": "blindsight", "range": 60 }]
+      },
+      {
+        "name": "Cave-Dweller",
+        "description": "You have advantage on Dexterity (Stealth) checks made to hide in rocky terrain.</p><p>Additionally, you have a climbing speed equal to your walking speed."
+      },
+      {
+        "name": "Natural Armor",
+        "description": "You have thick, slightly scaley skin. When you aren't wearing armor, your AC is 12 + your Constitution modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor.",
+        "granted": [{ "type": "unarmored", "base": 12, "scores": ["con"] }]
+      },
+      {
+        "name": "Redundant Organs",
+        "description": "Any critical hit against you becomes a normal hit.",
+        "granted": [
+          { "type": "condition-immunity", "options": ["Critical Hits"] }
+        ]
+      },
+      {
+        "name": "Grimlock Psionics",
+        "description": "You know the Mage Hand cantrip, and the hand is invisible when you cast the cantrip with this trait. When you reach 3rd level, you can cast the Catapult spell once with this trait, and you regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the Earthbind spell once with this trait, and you regain the ability to do so when you finish a long rest. Intelligence is your spellcasting ability for these spells. When you cast them with this trait, they don't require components.",
+        "granted": [
+          { "type": "spell", "options": ["Mage Hand"], "ability": "int" },
+          {
+            "type": "spell",
+            "options": ["Catapult"],
+            "prereq": 3,
+            "ability": "int"
+          },
+          {
+            "type": "spell",
+            "options": ["Earthbind"],
+            "prereq": 5,
+            "ability": "int"
+          }
+        ],
+        "uses": [
+          {
+            "id": "16F9EE66-5500-4E7E-B093-EE31ED7B1A3B",
+            "type": "fixed",
+            "amount": 1,
+            "prereq": 3,
+            "reset": 2
+          },
+          {
+            "id": "1E4CBC77-5AB2-4299-9E0A-ABF871C4DE51",
+            "type": "fixed",
+            "amount": 1,
+            "prereq": 5,
+            "reset": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
     "description": "In the reckonings of most worlds, humans are the youngest of the common races, late to arrive on the world scene and short-lived in comparison to dwarves, elves, and dragons. Perhaps it is because of their shorter lives that they strive to achieve as much as they can in the years they are given. Or maybe they feel they have something to prove to the elder races, and that's why they build their mighty empires on the foundation of conquest and trade. Whatever drives them, humans are the innovators, the achievers, and the pioneers of the worlds.",
     "asis": [],
     "maturity": 18,
@@ -12067,6 +12141,49 @@
       }
     ],
     "name": "Leshy"
+  },
+  {
+    "description": "Hermit trolls are small trolls that live as perpetual squatters. They never dwell in the same place for long, and live anywhere from in a cellar to under a bridge to inside a barrel. They are intensely private creatures, and have an innate ability to appear as simple objects, which they use to watch silently. They are much less dangerous than their larger cousins, and most people just view them as a nuisance, except when they need their help finding something, which they are famously experts at.",
+    "asis": [{ "dex": 1 }, { "con": 1 }, { "int": 1 }],
+    "maturity": 20,
+    "lifespan": 100,
+    "height": [2, 4],
+    "weight": [35, 80],
+    "category": "Uncommon",
+    "type": "Giant (lesser giant (troll))",
+    "size": -1,
+    "speed": 30,
+    "darkvision": 60,
+    "languages": ["Common", "Jiganti"],
+    "traits": [
+      {
+        "name": "Expert Seeker",
+        "description": "You have proficiency in Investigation. You have advantage on checks made to find things.",
+        "granted": [
+          {
+            "type": "skill",
+            "options": ["Investigation"],
+            "level": 1
+          }
+        ]
+      },
+      {
+        "name": "False Appearance",
+        "description": "As an action, you can camouflage yourself as a Small object. While you remain disguised and motionless, you are indistinguishable from your disguise. You can end the disguise at any time (no action required).</p><p>Additionally, you have proficiency in Stealth.",
+        "granted": [
+          {
+            "type": "skill",
+            "options": ["Stealth"],
+            "level": 1
+          }
+        ]
+      },
+      {
+        "name": "Slink Away",
+        "description": "You can take the Disengage or Hide action as a bonus action on each of your turns.</p><p>Additionally, you can move through the space of any creature that is of a size larger than yours.</p><p>Finally, you can attempt to hide even when you are only obscured by a creature that is at least one size larger than you."
+      }
+    ],
+    "name": "Hermit Troll"
   },
   {
     "description": "The myconids are a unique and enigmatic race of mushroom folk. Their history is rich with the lore of ancient druidic arts, which they shared with other races, becoming revered as wise and benevolent teachers. Living in harmony with the wilds, myconids adopt a nomadic, tribal lifestyle, continuously moving to remain in balance with the land. While most myconids are content with their relationship with nature, a select few are born with an insatiable curiosity and adventurous spirit, seeking to experience the diversity and complexities of the civilized world.",
@@ -18282,22 +18399,22 @@
     "name": "Lanternfolk"
   },
   {
-    "description": "What... <i>is</i> this?",
+    "description": "Xarians are an ancient race that hails from the planet Xarin, a planet lost in the Astral Wastes. They resemble elves in appearance, but their skin and eye color varies dramatically, from relatively normal tones to metallic shades, saturated colors, and rarely a crystalline skin that reflects light. Most Xarians currently lack their memories of their homeworld, but they remember their skills and abilities.</p><p>Xarian society is matrilineal, and their most recent empress Xedalli is a despotic conquerer.",
     "asis": [{ "int": 1 }, { "wis": 1 }, { "cha": 1 }],
     "maturity": 20,
     "lifespan": -1,
     "height": [5, 6],
     "weight": [90, 110],
     "category": "Extraplanar",
-    "type": "Celestial",
+    "type": "Celestial (Xarian)",
     "size": 0,
     "speed": 30,
     "darkvision": 60,
-    "languages": ["Common", "Enigmatic Language"],
+    "languages": ["Common", "Xarian"],
     "traits": [
       {
-        "name": "Void Body",
-        "description": "You do not need to breathe.",
+        "name": "Astral Body",
+        "description": "You do not need to breathe, eat or drink, though you can if you wish to, and you do not visibly age unless you wish to.",
         "granted": [
           {
             "type": "condition-immunity",
@@ -18306,41 +18423,50 @@
         ]
       },
       {
-        "name": "Void Magic",
-        "description": "Your magic calls upon a different source than the Spellweave.  Spells that defend against, detect, or dispel magic, such as Antimagic Field, Counterspell, or Detect Magic, fail if used against you.  However, you can also not use such spells.</p><p>In addition, you ignore resistance or immunity to force damage, and cannot be resistant or immune to force damage."
-      },
-      {
-        "name": "Void Mind",
-        "description": "Your thoughts cannot be read by magical means.  Any attempt to do so causes the telepath to take psychic damage equal to your level and be unable to read thoughts or communicate telepathically until they finish a long rest.</p><p>In addition, you seem to have a knack for certain things, but you don't remember why.  You have proficiency in two skills and two tools of your choice.",
+        "name": "Knowledge of the Spheres",
+        "description": "You have a knack for certain things, but you don't remember when you learned them. You have proficiency with one skill and a combination of two tools and languages.",
         "choices": [
           {
-            "id": "F455F394-1857-4B98-9C86-3D01FAB539D3",
+            "id": "8A5CA9DD-E056-4B45-91F5-5BA099C4C4CB",
             "type": "skill",
             "level": 1
           },
           {
-            "id": "EAA9F38C-1C6B-49E4-BAD9-4B1B95595321",
-            "type": "skill",
+            "id": "FA8E44DA-370B-49EE-8149-8A547742E702",
+            "type": ["game", "instrument", "language", "tool"],
             "level": 1
           },
           {
-            "id": "D79C8D26-8194-4ABC-8E09-F19315AA8BFF",
-            "type": "tool",
-            "level": 1
-          },
-          {
-            "id": "2CFD883F-9C01-423E-BF86-814DFD799A11",
-            "type": "tool",
+            "id": "18F96CAA-E620-40CD-B5B1-61D15F6DB59D",
+            "type": ["game", "instrument", "language", "tool"],
             "level": 1
           }
         ]
       },
       {
-        "name": "Void Trance",
-        "description": "Void enigmas do not sleep. Instead they drift into a void trance for 4 hours a day. After resting in this way, you gain the same benefit a human would from 8 hours of sleep."
+        "name": "Trance",
+        "description": "Xarians do not sleep. Instead they drift into a trance for 4 hours a day. After resting in this way, you gain the same benefit a human would from 8 hours of sleep."
+      },
+      {
+        "name": "Void Magic",
+        "description": "Your magic calls upon a different source than the Spellweave.  Spells that defend against, detect, or dispel magic, such as Antimagic Field, Counterspell, or Detect Magic, fail if used against you.  However, you can also not use such spells.</p><p>In addition, you ignore resistance or immunity to force damage, and cannot be resistant or immune to force damage.</p><p>Finally, you know the Astral Fire cantrip. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (your choice).",
+        "choices": [
+          {
+            "id": "54FF74C6-248A-4962-A761-5711778AB519",
+            "type": "text",
+            "options": ["int", "wis", "cha"]
+          }
+        ],
+        "granted": [
+          {
+            "type": "spell",
+            "options": ["Astral Fire"],
+            "ability": "54FF74C6-248A-4962-A761-5711778AB519"
+          }
+        ]
       }
     ],
-    "name": "Void Enigma"
+    "name": "Xarian"
   },
   {
     "description": "Papillons are tiny butterfly folk who live short but exciting lives.  Always eager for a new adventure, they throw themselves at any challenge and travel any road.  They know their lifespan is incredibly short, but most choose to take joy in the pleasures they can find along the way, and are eternal optimists.  Each possesses a unique pattern on their wide, colorful wings, and they particularly enjoy art, cooking, and other forms of creative outlet.",

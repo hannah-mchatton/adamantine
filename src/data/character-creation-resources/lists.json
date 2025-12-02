@@ -7769,6 +7769,10 @@
       "description": "<strong>Item:</strong> a pair of boots</p><p>While wearing these boots, the wearer can use a bonus action to click the boots' heels together, making its steps sound as if a large crowd is moving at its location. The sound produced by the boots matches with the current speed of the wearer, and this sound also interacts with its environment. For example, if the wearer is running across a wet surface, the boots will create the sound of a large crowd running accompanied by splashing water. However, the boots can't replicate vibrations or other tactile sensations that would normally result from an actual crowd of people. The wearer can use a bonus action to end this effect."
     },
     {
+      "name": "Burrowing Piton",
+      "description": "<strong>Item:</strong> a piton</p><p>If the piton is within 100 feet of you, you can command it as a bonus action to walk or climb up to 30 feet and try to burrow into a surface or through the foot of a creature you can see. The target must make a Dexterity saving throw against your infusion save DC. On a failed save, it takes 1d4 piercing damage, and its movement speed becomes 0. A creature that can reach the piton can use their action to remove it, dealing an additional 1d4 piercing damage to the target."
+    },
+    {
       "name": "Enhanced Arcane Focus",
       "description": "<strong>Item:</strong> a rod, staff, or wand (requires attunement)</p><p>This item grants the user +1 bonus to spell attack rolls, and they can ignore half cover when making spell attacks.</p><p>This bonus increases at 11th level (+2) and 17th level (+3)."
     },
@@ -7833,6 +7837,10 @@
       ]
     },
     {
+      "name": "Instant Armor",
+      "description": "<strong>Item:</strong> a suit of armor</p><p>The wearer can use its action to transform the armor into a ring on its finger. While wearing the ring, it can use an action to transform it back into armor if it is not wearing armor."
+    },
+    {
       "name": "Minor Magic Item",
       "description": "<strong>Item:</strong> variable</p><p>Choose any common magic item. Your infusion replicates the function of your chosen magic item.</p><p>You cannot use this infusion to replicate any of the following magic items:<ul><li>Any magic item that has the sole purpose of replicating a spell, such as a spell scroll or lesser wand</li></ul>"
     },
@@ -7865,6 +7873,18 @@
       "description": "<strong>Item:</strong> a ring (requires attunement)</p><p>The wearer of this ring gains proficiency in one skill or set of tools that you are proficient in (your choice upon infusion)."
     },
     {
+      "name": "Rocket Arrow",
+      "description": "<strong>Item:</strong> an arrow</p><p>When this magic arrow is fired, its normal and long ranges increase by 90 feet. Additionally, it deals an extra 1d10 damage on a hit.</p><p>This extra damage increases at 5th level (2d10), 11th level (3d10), and 17th level (4d10)."
+    },
+    {
+      "name": "Scuttling Caltrops",
+      "description": "<strong>Item:</strong> a set of up to 20 caltrops</p><p>If these caltrops are within 100 feet of you, you can command them as a bonus action to move up to 20 feet. The caltrops can scatter in an unoccupied 10-foot square, or enter or exit their bag as part of this movement. The caltrops use your infusion save DC."
+    },
+    {
+      "name": "Shock Manacles",
+      "description": "<strong>Item:</strong> a pair of manacles</p><p>Whenever a creature restrained by these manacles fails a check to escape from or break the manacles, it takes 2d10 lightning damage."
+    },
+    {
       "name": "Tactician's Amulet",
       "description": "<strong>Item:</strong> an amulet or pendant</p><p>While wearing this amulet, a creature can choose to use its Intelligence modifier in place of its Dexterity modifier when rolling for initiative."
     },
@@ -7885,6 +7905,25 @@
       "name": "Cloak of Many Things",
       "prereqLevel": 5,
       "description": "<strong>Item:</strong> a cape, cloak, mantle, or robe</p><p>This robe is enchanted to be able to store items. Over the course of a minute, you can touch the robe to a Medium or smaller object to convert that object into a patch on the cloak. While wearing the cloak, you can use an action to detach one of the patches, causing it to become the object it represents.</p><p>The cloak can hold up to 50 such objects, and attempting to add an additional object when it is at capacity will fail."
+    },
+    {
+      "name": "Flying Shovel",
+      "prereqLevel": 5,
+      "description": "<strong>Item:</strong> a shovel</p><p>This shovel is animated, has a hovering speed of 30 feet, and follows you if not given commands. You can give it a command on your turn (no action required), choosing from the following options:",
+      "subFeatures": [
+        {
+          "name": "Bury",
+          "description": "The shovel moves a 5-foot cube of loose material up to 20 feet. It can deposit it onto a Medium or smaller creature. The target must make a Strength saving throw against your infusion save DC or become buried underneath the material. A buried creature is considered restrained unless it has a burrowing speed. The creature or another creature that can reach them can use their action to dig the creature out."
+        },
+        {
+          "name": "Dig",
+          "description": "The shovel moves a 5-foot cube of loose material up to 30 feet to an unoccupied space."
+        },
+        {
+          "name": "Toss",
+          "description": "The shovel throws loose material at a creature within 30 feet. The target must make a Dexterity saving throw against your infusion save DC or become blinded until the end of its next turn."
+        }
+      ]
     },
     {
       "name": "Greater Magic Item",
@@ -7912,6 +7951,11 @@
       "description": "<strong>Item:</strong> a pair of boots (requires attunement)</p><p>When the wearer is standing on a flat surface, it can use an action to activate the boots, magically fixing the wearer in place. Until the wearer uses an action to deactivate the boots, they do not move, even if they are defying gravity.</p><p>A creature can use an action to make a DC 30 Strength check, separating the boots from the surface on a success."
     },
     {
+      "name": "Inertial Weapon",
+      "prereqLevel": 5,
+      "description": "<strong>Item:</strong> a melee weapon</p><p>Once per turn, when the wielder of this magic weapon hits a creature with it, it can push the target up to 20 feet away from them or knock them prone.</p><p>At 11th level it gains a +1 bonus to its attack and damage rolls. This bonus becomes +2 at 17th level."
+    },
+    {
       "name": "Infiltrator Armor",
       "prereqLevel": 5,
       "description": "<strong>Item:</strong> a suit of armor (requires attunement)</p><p>This magic suit of armor retains its weight but is formfitting and wearable under clothes. The wearer of this armor has advantage on any Dexterity (Stealth) checks."
@@ -7925,6 +7969,11 @@
       "name": "Magic Bomb",
       "prereqLevel": 5,
       "description": "<strong>Item:</strong> a throwable vessel such as a bottle, flask, jar, or urn</p><p>You infuse implosive power into an object which you can throw. You are proficient with these bombs.</p><p>As an action, you or any creature holding the Magic Bomb can throw it up to 60 feet away. Upon collision with any object or creature the magic bomb detonates affecting all creatures, objects, and structures in 20 foot radius. Each creature in this radius must make a Constitution save taking 2d6 thunder damage and 2d6 force damage and be pulled up to 10 feet towards where the magic bomb landed on a failed save or half as much damage and not pulled on a successful save. Objects & structures take double damage, and objects that aren't being held automatically fail this saving throw and fly to the center of the implosion.</p><p>At 10th level the damage increases to 3d6 thunder and 3d6 force.</p><p>You can imbue this infusion with more arcane charges, producing an additional bomb for each charge you expend."
+    },
+    {
+      "name": "Mandible Helm",
+      "prereqLevel": 5,
+      "description": "<strong>Item:</strong> a helmet (requires attunement)</p><p>This helmet has large, beetle-like pincers. The wearer can grapple a creature using the pincers. While they have a creature grappled, they can use an action to deal 3d6 slashing damage to the grappled creature."
     },
     {
       "name": "Many-Handed Pouch",
@@ -7962,6 +8011,16 @@
       "description": "<strong>Item:</strong> a ring (requires attunement)</p><p>While wearing this magic ring, the wearer can use an action to recover one of its expended spell slots of 3rd-level or lower, or 5 sorcery points.  Once used, the ring can't be used again until the next dawn."
     },
     {
+      "name": "Riveting Boots",
+      "prereqLevel": 5,
+      "description": "<strong>Item:</strong> a pair of boots</p><p>The wearer of these boots can use a bonus action to activate them, causing tiny screws to attach them to  a solid surface they are standing on. While the boots are attached, the wearer has advantage on saving throws made to resist being forcefully moved or knocked prone. When the wearer moves, the screws detach themselves."
+    },
+    {
+      "name": "Seeker Net",
+      "prereqLevel": 5,
+      "description": "<strong>Item:</strong> a net</p><p>This magic net grants a +1 bonus to attack and damage rolls made with it. If an attack with this net is missed, the net animates for 1 minute and acts after its wielder's turn in initiative. While animated, each turn it moves up to 20 feet towards its original target. If it ends its movement within 5 feet of the target, it attempts to ensnare it. The target must make a Dexterity saving throw against your infusion save DC, becoming restrained by the net on a failed save.</p><p>Additionally, the net is immune to nonmagical damage."
+    },
+    {
       "name": "Skittering Servant",
       "prereqLevel": 5,
       "description": "<strong>Item:</strong> a gem or crystal worth at least 100 gp</p><p>Your experimentation has created an arachnoid Skittering Servant. It is a Tiny mechanical construct with eight metallic legs. As an action, you can use your tinker's tools to attach (or remove) a single weapon or object to the Servant.</p><p>As an action, you can expend one of the Servant's Charges and throw it to an unoccupied space you can see within 30 ft. where it activates. While it is activated, you can use a bonus action to order the Servant to move up to 20 feet and use the object attached to it as if you were using it. The Servant can move up walls and difficult surfaces, including upside down on ceilings, without having to make an ability check.</p><p>The Servant has hit points equal to your Artificer level and Armor Class equal to your Intelligence score. It is active for up to 1 minute or until it is destroyed, then it deactivates, instantly returning to its wielder.</p><p>This magic Servant has a number of Charges equal to the number of arcane charges used for this infusion."
@@ -7970,6 +8029,11 @@
       "name": "Skyfall Harness",
       "prereqLevel": 5,
       "description": "<strong>Item:</strong> a cloak, vest, or harness</p><p>This magic harness automatically sizes to fit the wearer and can be worn over clothing or light armor. It has wing-like fins between its limbs that slow falls and allow wearers to glide.</p><p>When the wearer falls and isn't incapacitated, it subtracts up to 100 feet from its fall when calculating falling damage, and it can glide 2 feet horizontally every 1 foot that it falls."
+    },
+    {
+      "name": "Stretch Gloves",
+      "prereqLevel": 5,
+      "description": "<strong>Item:</strong> a pair of gloves or gauntlets (requires attunement)</p><p>While wearing these gloves, a creature can cast spells that have a range of touch at a range of 30 feet. They can also activate magic items and perform other object interactions with objects up to 30 feet away."
     },
     {
       "name": "Swift Ring",
@@ -8027,6 +8091,11 @@
       "description": "<strong>Item:</strong> a land vehicle such as a carriage, cart, or wagon</p><p>The vehicle no longer needs horses or other steeds to pull it, it can now propel itself.  The vehicle has a speed of 50 feet. A creature on or inside the vehicle can give it a simple command in a language you speak such as \"go straight\", \"turn left\" or \"follow this road\" as an action. The vehicle will follow the given command provided it is simple enough."
     },
     {
+      "name": "Lightning-Rider Armor",
+      "prereqLevel": 9,
+      "description": "<strong>Item:</strong> a suit of armor</p><p>The wearer of this armor has resistance to lightning damage. Whenever the wearer takes lightning damage, it can use its reaction to teleport up to 50 feet towards the source of the damage."
+    },
+    {
       "name": "Shoulder-Mounted Weapon",
       "prereqLevel": 9,
       "description": "<strong>Item:</strong> a ranged weapon (requires attunement)</p><p>This magic weapon grants a +1 bonus to attack and damage rolls made with it. As an action, a creature can mount the weapon onto its shoulder. It can also detach the weapon as an action, and the weapon can't be removed against the creature's will.</p><p>While the weapon is attached in this way, the weapon reloads itself automatically if it has the loading property and if the creature has enough ammunition for the weapon. The creature can also use a bonus action to make a ranged attack from it."
@@ -8055,6 +8124,11 @@
       "name": "Arcane Propulsion Armor",
       "prereqLevel": 13,
       "description": "<strong>Item:</strong> a suit of armor (requires attunement)</p><p>The wearer of this armor gains these benefits:<ul> <li>The wearer gains a +1 bonus to AC.</li> <li>The wearer's walking speed increases by 10 feet.</li> <li>If the wearer is missing any limbs, the armor replaces those limbs - hands, arms, feet, legs, or similar appendages. The replacements function identically to the body parts they replace. </li> <li>The wearer has a flying speed equal to their walking speed. The wearer falls if they end their turn in the air and nothing else is holding them aloft. </li> <li>If the wearer flies at least 20 feet in a straight line towards a target and makes a melee attack against it, the target is pushed back 10 feet and takes an extra 1d8 force damage. </li> </ul>"
+    },
+    {
+      "name": "Armature Armor",
+      "prereqLevel": 13,
+      "description": "<strong>Item:</strong> a suit of armor (requires attunement)</p><p>This magical armor grants its wearer a +1 bonus to its Armor Class. Additionally, it has two smaller arms located beneath where the wearer's arms would be. The smaller arms can manipulate an object, open or close a door or container, pick up or set down a Tiny object, or wield a weapon that has the light property."
     },
     {
       "name": "Collar of Taming",

@@ -5059,6 +5059,9 @@ export class CharacterSheetService {
                     case '/2':
                       amount = Math.floor(amount / 2);
                       break;
+                    case '*3':
+                      amount *= 3;
+                      break;
                   }
 
                   maxUses += amount;
@@ -5113,6 +5116,9 @@ export class CharacterSheetService {
                     break;
                   case '/2':
                     amount = Math.floor(amount / 2);
+                    break;
+                  case '*3':
+                    amount *= 3;
                     break;
                 }
 

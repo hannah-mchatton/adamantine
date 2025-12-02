@@ -1547,6 +1547,15 @@
     "index": "blackdragonmask"
   },
   {
+    "name": "The Unforgiving Blade",
+    "rarity": 5,
+    "type": "weapon (shortsword)",
+    "attunement": true,
+    "attunementDesc": "by a non-good creature",
+    "description": "The Unforgiving Blade is a dark artifact forged from the shattered blade of an ancient demon lord, Gorgrog, who styled himself as the king of demons. Its hilt is made of obsidian and its blade is formed of pure darkness, resembling more the absence of a sword than a sword.</p><p>You gain a +3 bonus to attack and damage rolls made with this magic weapon. Proficiency with a shortsword allows you to add your proficiency bonus to attack and damage rolls with it. It has the following additional properties.<h4>Dark Wounds</h4>The Unforgiving Blade deals necrotic damage instead of slashing damage, and ignores resistance and immunity to necrotic damage. Whenever a target takes damage from the Unforgiving Blade, its hit point maximum is permanently reduced by an equal amount, and the target suffers a slashing injury that can never be healed.<h4>Magical Reave</h4>The Unforgiving Blade can be used to attack illusions and creations of magical force. Such effects have an Armor Class equal to the spellcasters spell save DC. On a hit, the triggering spell ends, and the spellcaster can never cast that spell again. The Unforgiving Blade can also be used to permanently destroy any magical item, with the exception of Vasilis, but only if Vasilis is held by an attuned wielder.<h4>Unstoppable Blackness</h4>The Unforgiving Blade can cleave through anything with no resistance, which renders armor and shields, magical or mundane, useless against it. When attacking a creature with the Unforgiving Blade, its Armor Class is considered equal to 10 + its Dexterity modifier. Shields do not apply their bonuses to this number.<h4>Sentience</h4>The Unforgiving Blade is a sentient chaotic evil weapon with an Intelligence of 10, a Wisdom of 19, and a Charisma of 17. The weapon cannot understand language, but can communicate with its wielder through emotions.<h5>Personality</h5>The Unforgiving Blade is nihilistic and desires the end of all. It derives a sick pleasure from any harm it is used to cause.<h4>Destroying the Unforgiving Blade</h4>The Unforgiving Blade can be destroyed only be overwhelming it with holy magic. This could be accomplished by dropping the blade into a spring high on the slopes of Mount Celestia, giving the blade to an angel or god of light, or any number of other methods. If the blade is destroyed, any injuries caused by it become normal injuries that can heal, and any reduction to maximum hit points caused by it is removed.",
+    "index": "unforgivingblade"
+  },
+  {
     "name": "Vasilis",
     "rarity": 5,
     "type": "weapon (longsword)",

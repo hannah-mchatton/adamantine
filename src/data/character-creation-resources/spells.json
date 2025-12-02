@@ -211,7 +211,7 @@
     "higherLevels": [
       "If you cast this spell using a spell slot of 8th level or higher, the Duration is 8 hours. If you use a 9th level spell slot, the spell lasts until you dismiss it as a bonus action."
     ],
-    "lists": ["Arcane", "Divine", "Primal"],
+    "lists": ["Arcane", "Divine", "Primal", "Invention"],
     "ritual": 0,
     "type": "save",
     "save": "con",
@@ -459,7 +459,7 @@
       "A creature entering the pool for the first time on a turn or starting its turn there must make a Dexterity saving throw, taking 4d6 acid damage on a failed save and sinking into the pool, as the grappled condition. On a successful save, the creature takes half as much acid damage and is not grappled. A grappled creature can use its action to make a Strength (Athletics) or Dexterity (Acrobatics) check (its choice) against your spell save DC. On a success, it frees itself. A creature of size Large or smaller that fails the saving throw while already grappled by the pool is also restrained against your spell save DC.",
       "A restrained creature can't breathe, and any non-magical metal objects it carries begin to corrode. When the restrained creature takes acid damage from the pool, non-magical metal weapons and armor take a permanent, cumulative -1 penalty to their damage rolls and AC, respectively. If this penalty on a weapon reaches -5, the weapon is destroyed similarly, armor is destroyed if its AC is reduced to 10. Other metal objects take cumulative damage as well, as the pool eats through a 1-inch-thickness of non-magical metal each round it is immersed."
     ],
-    "lists": ["Arcane", "Occult", "Primal"],
+    "lists": ["Arcane", "Occult", "Primal", "Invention"],
     "ritual": 0,
     "type": "save",
     "save": "dex",
@@ -547,7 +547,7 @@
     "description": [
       "You use your bonus action to place a boon upon yourself, empowering the spells. While are under the effects of this spell, the next 3rd level spell that you cast using one of your available spell slots gains benefits as though it had been cast at 7th level."
     ],
-    "lists": ["Arcane", "Psionic", "Melodic"],
+    "lists": ["Arcane", "Psionic", "Melodic", "Invention"],
     "ritual": 0
   },
   {
@@ -822,7 +822,7 @@
       "A 10-foot-radius invisible sphere of antimagic surrounds you. This area is divorced from the magical energy that suffuses the multiverse. Within the sphere, spells can't be cast, summoned creatures disappear, and even magic items become mundane. Until the spell ends, the sphere moves with you, centered on you.",
       "Spells and other magical effects, except those created by an artifact or a deity, are suppressed in the sphere and can't protrude into it. A slot expended to cast a suppressed spell is consumed. While an effect is suppressed, it doesn't function, but the time it spends suppressed counts against its duration.<ul><li><strong>Targeted Effects.</strong> Spells and other magical effects, such as Magic Missile and Charm Person, that target a creature or an object in the sphere have no effect on that target.</li><li><strong>Areas of Magic.</strong> The area of another spell or magical effect, such as Fireball, can't extend into the sphere. If the sphere overlaps an area of magic, the part of the area that is covered by the sphere is suppressed. For example, the flames created by a Wall of Fire are suppressed within the sphere, creating a gap in the wall if the overlap is large enough.</li><li><strong>Spells.</strong> Any active spell or other magical effect on a creature or an object in the sphere is suppressed while the creature or object is in it.</li><li><strong>Magic Items.</strong> The properties and powers of magic items are suppressed in the sphere. For example, a +1 longsword in the sphere functions as a nonmagical longsword. A magic weapon's properties and powers are suppressed if it is used against a target in the sphere or wielded by an attacker in the sphere. If a magic weapon or piece of magic ammunition fully leaves the sphere - for example, if you fire a magic arrow or throw a magic spear at a target outside the sphere - the magic of the item ceases to be suppressed as soon as it exits.</li><li><strong>Magical Travel.</strong> Teleportation and planar travel fail to work in the sphere, whether the sphere is the destination or the departure point for such magical travel. A portal to another location, world, or plane of existence, as well as an opening to an extradimensional space such as that created by the rope trick spells, temporarily closes while in the sphere.</li><li><strong>Creatures and Objects.</strong> A creature or object summoned or created by magic temporarily winks out of existence in the sphere. Such a creature instantly reappears once the space the creature occupied is no longer within the sphere.</li><li><strong>Dispel Magic.</strong> Spells and magical effects such as Dispel Magic have no effect on the sphere. Likewise, the spheres created by different Antimagic Field spells don't nullify each other.</li></ul>"
     ],
-    "lists": ["Arcane", "Divine", "Psionic", "Melodic"],
+    "lists": ["Arcane", "Divine", "Psionic", "Melodic", "Invention"],
     "ritual": 0
   },
   {
@@ -916,7 +916,7 @@
       "The portals are two-dimensional glowing rings filled with mist, hovering inches from the ground and perpendicular to it at the points you choose. A ring is visible only from one side (your choice), which is the side that functions as a portal.",
       "Any creature or object entering the portal exits from the other portal as if the two were adjacent to each other passing through a portal from the nonportal side has no effect. The mist that fills each portal is opaque and blocks vision through it. On your turn, you can rotate the rings as a bonus action so that the active side faces in a different direction."
     ],
-    "lists": ["Arcane", "Occult", "Psionic", "Melodic"],
+    "lists": ["Arcane", "Occult", "Psionic", "Melodic", "Invention"],
     "ritual": 0
   },
   {
@@ -1890,7 +1890,7 @@
       "<strong><em>Ending the Spell.</em></strong> The spell may be ended through a ceremonial ritual where diamonds worth at least 500gp per Hit Die of the bound target are fired in a brazier for 24 hours, stoked and fueled with rare herbs native to the target's place of birth. The item must be laid upon the diamonds for the duration of the ceremony, and the true name of the target chanted at its zenith. Performing this ritual will expunge the target's soul from the item, releasing it to its expected destination upon death, and destroying the possessed item along with all resources used in the ritual.",
       "A Dispel Magic spell can end the spell only if it is cast as a 9th-level spell, targeting the item."
     ],
-    "lists": ["Arcane", "Occult", "Psionic", "Melodic"],
+    "lists": ["Arcane", "Occult", "Psionic", "Melodic", "Invention"],
     "ritual": 0
   },
   {
@@ -1905,7 +1905,7 @@
       "You create a vertical wall of whirling, razor-sharp blades made of magical energy. The wall appears within range and lasts for the duration. You can make a straight wall up to 100 feet long, 20 feet high, and 5 feet thick, or a ringed wall up to 60 feet in diameter, 20 feet high, and 5 feet thick. The wall provides three-quarters cover to creatures behind it, and its space is difficult terrain.",
       "When a creature enters the wall's area for the first time on a turn or starts its turn there, the creature must make a Dexterity saving throw. On a failed save, the creature takes 6d10 slashing damage. On a successful save, the creature takes half as much damage."
     ],
-    "lists": ["Arcane", "Divine", "Psionic", "Melodic"],
+    "lists": ["Arcane", "Divine", "Psionic", "Melodic", "Invention"],
     "ritual": 0,
     "type": "save",
     "save": "dex",
@@ -1944,7 +1944,7 @@
       "As a bonus action on your turn, you can move the blade up to 30 feet to an unoccupied space you can see and then make up to two melee spell attacks with it again.",
       "The blade can harmlessly pass through any barrier, including a Wall of Force."
     ],
-    "lists": ["Arcane", "Occult", "Primal", "Psionic"],
+    "lists": ["Arcane", "Occult", "Primal", "Psionic", "Invention"],
     "ritual": 0,
     "type": "attack",
     "damage": [
@@ -2106,7 +2106,7 @@
     "higherLevels": [
       "When you cast this spell using a spell slot of 8th level or higher, the lightning damage and the necrotic damage each increase by 1d6 for each slot level above 7th."
     ],
-    "lists": ["Arcane", "Divine", "Occult", "Primal"],
+    "lists": ["Arcane", "Divine", "Occult", "Primal", "Invention"],
     "ritual": false,
     "type": "save",
     "save": "dex",
@@ -2923,7 +2923,7 @@
     "higherLevels": [
       "When you cast this spell using a spell slot of 7th level or higher, one additional bolt leaps from the first target to another target for each slot level above 6th."
     ],
-    "lists": ["Arcane"],
+    "lists": ["Arcane", "Invention"],
     "ritual": 0,
     "type": "save",
     "save": "dex",
@@ -2949,7 +2949,7 @@
       "You create a massive bolt of electricity that lances toward a target of your choice that you can see within range. Five bolts then leap from that target to as many as five other targets, each of which must be within 60 feet of the first target. Each of these five bolts also produce an additional two bolts each, which follow the same rules. A target can be a creature or an object and can be targeted by only one of the bolts.",
       "A target must make a Dexterity saving throw. The target takes 10d6 lightning damage on a failed save, or half as much on a successful one. If a creature fails its saving throw by 5 or more, it is additional stunned for 1 minute. An affected creature can repeat its saving throw at the end of each of its turns, ending the effect on itself on a success."
     ],
-    "lists": ["Arcane"],
+    "lists": ["Arcane", "Invention"],
     "ritual": 0,
     "type": "save",
     "save": "dex",
@@ -3097,7 +3097,7 @@
     "description": [
       "You tear the spell scroll used as this spell's material component into shreds, tearing the fabric of the Spellweave along with it.  Choose a point within range, where a sphere of magical chaos spreads.  A creature that casts a spell or activates any other magical effect while within the spell's area causes a Wild Magic surge.  If you can see them and the Wild Magic surge causes them to cast a spell, you can use your reaction to gain control of the spell."
     ],
-    "lists": ["Arcane"],
+    "lists": ["Arcane", "Invention"],
     "ritual": 0
   },
   {
@@ -3293,7 +3293,7 @@
       "This spell grows an inert duplicate of a living creature as a safeguard against death. This clone forms inside the vessel used in the spell's casting and grows to full size and maturity after 120 days you can also choose to have the clone be a younger version of the same creature. It remains inert and endures indefinitely, as long as its vessel remains undisturbed.",
       "At any time after the clone matures, if the original creature dies, its soul transfers to the clone, provided that the soul is free and willing to return. The clone is physically identical to the original and has the same personality, memories, and abilities, but none of the original's equipment. The original creature's physical remains, if they still exist, become inert and can't thereafter be restored to life, since the creature's soul is elsewhere."
     ],
-    "lists": ["Arcane", "Occult"],
+    "lists": ["Arcane", "Occult", "Invention"],
     "ritual": 0
   },
   {
@@ -3888,7 +3888,7 @@
       "You call forth an inevitable, a Kolyarut, Marut, Varakhut, or Zelekhut, from Mechanus to impel law on your behalf. The inevitable is friendly to you and your companions for the duration. Roll initiative for the inevitable, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to the inevitable, it defends itself from hostile creatures but otherwise takes no actions.",
       "If your concentration is broken, the inevitable doesn't disappear. Instead, you lose control of the inevitable, it becomes hostile toward you and your companions, and it might attack if it deems you unlawful. An uncontrolled inevitable can't be dismissed by you, and it disappears 1 hour after you summoned it. The DM has the inevitable's statistics."
     ],
-    "lists": ["Arcane"],
+    "lists": ["Invention"],
     "ritual": 0
   },
   {
@@ -3905,7 +3905,7 @@
     "higherLevels": [
       "When you cast this spell using a 9th-level spell slot, you summon two shambling mounds in unoccupied area that you can see."
     ],
-    "lists": ["Arcane", "Primal"],
+    "lists": ["Arcane", "Primal", "Invention"],
     "ritual": 0,
     "upcastRange": {
       "8": "60 feet",
@@ -4098,7 +4098,7 @@
       "The contingent spell takes effect immediately after the circumstance is met for the first time, whether or not you want it to. and then contingency ends.",
       "The contingent spell takes effect only on you, even if it can normally target others. You can use only one contingency spell at a time. If you cast this spell again, the effect of another contingency spell on you ends. Also, contingency ends on you if its material component is ever not on your person."
     ],
-    "lists": ["Arcane", "Melodic"],
+    "lists": ["Arcane", "Melodic", "Invention"],
     "ritual": 1
   },
   {
@@ -5055,7 +5055,7 @@
     "higherLevels": [
       "When you cast this spell using a spell slot of 8th level or higher, the base damage increases by 1d6 for each slot level above 7th."
     ],
-    "lists": ["Arcane", "Primal"],
+    "lists": ["Arcane", "Primal", "Invention"],
     "ritual": 0,
     "type": "save",
     "save": "dex",
@@ -5080,7 +5080,7 @@
       "You create a shadowy door on a flat solid surface that you can see within range. The door is large enough to allow Medium creatures to pass through unhindered. When opened, the door leads to a demiplane that appears to be an empty room 30 feet in each dimension, made of wood or stone. When the spell ends, the door disappears, and any creatures or objects inside the demiplane remain trapped there, as the door also disappears from the other side.",
       "Each time you cast this spell, you can create a new demiplane, or have the shadowy door connect to a demiplane you created with a previous casting of this spell. Additionally, if you know the nature and contents of a demiplane created by a casting of this spell by another creature, you can have the shadowy door connect to its demiplane instead."
     ],
-    "lists": ["Arcane", "Divine", "Occult", "Psionic"],
+    "lists": ["Arcane", "Divine", "Occult", "Psionic", "Invention"],
     "ritual": 0
   },
   {
@@ -5391,7 +5391,7 @@
     "higherLevels": [
       "When you cast this spell using a spell slot of 7th level or higher, the damage increases by 3d6 for each slot level above 6th."
     ],
-    "lists": ["Arcane", "Primal"],
+    "lists": ["Arcane", "Primal", "Invention"],
     "ritual": 0,
     "type": "save",
     "save": "dex",
@@ -5924,7 +5924,7 @@
       "At any time thereafter, you can use your action to speak the item's name and crush the sapphire. The item instantly appears in your hand regardless of physical or planar distances, and the spell ends. If another creature is holding or carrying the item, crushing the sapphire doesn't transport the item to you, but instead you learn who the creature possessing the object is and roughly where that creature is located at that moment.",
       "Dispel Magic or a similar effect successfully applied to the sapphire ends this spell's effect."
     ],
-    "lists": ["Arcane", "Psionic"],
+    "lists": ["Arcane", "Psionic", "Invention"],
     "ritual": 1
   },
   {
@@ -6325,7 +6325,7 @@
     "castingTime": "1 action",
     "range": "30 feet",
     "components": "V, S",
-    "duration": "Conjuration, up to 1 minute",
+    "duration": "Concentration, up to 1 minute",
     "description": [
       "A creature that you can see within range must succeed on a Strength (Athletics) or Dexterity (Acrobatics) skill check (target's choice) vs your spell DC or become grappled. The target may attempt another skill check at the start of each of its turns to break the grapple."
     ],
@@ -7243,7 +7243,7 @@
       "This spell allows you to find the shortest, most direct physical route to a specific fixed location that you are familiar with on the same plane of existence. If you name a destination on another plan of existence, a destination that moves (such as a mobile fortress), or a destination that isn't specific (such as a green dragon's lair), the spell fails.",
       "For the duration, as long as you are on the same plane of existence as the destination, you know how far it is and in what direction it lies. While you are traveling there, whenever you are presented with a choice of paths along the way, you automatically determine which path is the shortest and most direct route (but not necessarily the safest route) to the destination."
     ],
-    "lists": ["Arcane", "Divine", "Primal", "Psionic", "Melodic"],
+    "lists": ["Arcane", "Divine", "Primal", "Psionic", "Melodic", "Invention"],
     "ritual": 0
   },
   {
@@ -7815,7 +7815,7 @@
       "A creature restrained by this spell must make another Constitution saving throw at the end of each of its turns. If it successfully saves against this spell three times, the spell ends. If it fails saves three times, it is turned to stone and subjected to the petrified condition for the duration. The successes and failures don't need to be consecutive keep track of both until the target collects three of a kind.",
       "If the creature is physically broken while petrified, it suffers from similar deformities if it reverts to its original state. If you maintain your concentration on this spell for the entire possible duration, the creature is turned to stone until the effect is removed."
     ],
-    "lists": ["Arcane", "Occult", "Primal", "Psionic"],
+    "lists": ["Arcane", "Occult", "Primal", "Psionic", "Invention"],
     "ritual": 0,
     "type": "save",
     "save": "con"
@@ -7923,7 +7923,7 @@
       "When you cast this spell, you can designate a password. A creature that speaks the password as it enters the area takes no damage from the spell.",
       "This spell's area can't overlap with the area of another forbiddance spell. If you cast forbiddance every day for 30 days in the same location, the spell lasts until it is dispelled, and the material components are consumed on the last casting."
     ],
-    "lists": ["Arcane", "Divine", "Melodic"],
+    "lists": ["Arcane", "Divine", "Melodic", "Invention"],
     "ritual": 1,
     "damage": [
       {
@@ -8000,7 +8000,7 @@
       "A creature inside the cage can't leave it by nonmagical means. If the creature tries to use teleportation or interplanar travel to leave the cage, it must first make a Charisma saving throw. On a success, the creature can use that magic to exit the cage. On a failure, the creature can't exit the cage and wastes the use of the spell or effect. The cage also extends into the Ethereal Plane, blocking ethereal travel.",
       "This spell can't be dispelled by Dispel Magic."
     ],
-    "lists": ["Arcane", "Occult", "Psionic"],
+    "lists": ["Arcane", "Occult", "Psionic", "Invention"],
     "ritual": 0,
     "type": "save",
     "save": "cha"
@@ -8124,7 +8124,7 @@
       "A proficient creature with Carpenter's Tools can use them to restore 1 hit point to the golem for each 10 minutes spent repairing it. If the golem is reduced to 0 hit points, it is destroyed and cannot be reanimated.",
       "With a ritual that takes 10 minutes, you can designate additional friendly creatures, or can issue a simple command of five words or fewer to the golem, which it follows at literally as possible until it completes the task or you issue a new command."
     ],
-    "lists": ["Arcane", "Occult", "Primal", "Divine"],
+    "lists": ["Arcane", "Occult", "Primal", "Divine", "Invention"],
     "ritual": 0
   },
   {
@@ -8580,7 +8580,7 @@
       "Deities and other planar rulers can prevent portals created by this spell from opening in their presence or anywhere within their domains.",
       "When you cast this spell, you can speak the name of a specific creature (a pseudonym, title, or nickname doesn't work). If that creature is on a plane other than the one you are on, the portal opens in the named creature's immediate vicinity and draws the creature through it to the nearest unoccupied space on your side of the portal. You gain no special power over the creature, and it is free to act as the DM deems appropriate. It might leave, attack you, or help you."
     ],
-    "lists": ["Arcane", "Divine", "Psionic", "Melodic"],
+    "lists": ["Arcane", "Divine", "Psionic", "Melodic", "Invention"],
     "ritual": 0
   },
   {
@@ -8981,7 +8981,7 @@
     "higherLevels": [
       "When you cast this spell using a spell slot of 7th level or higher, the barrier blocks spells of one level higher for each slot level above 6th."
     ],
-    "lists": ["Arcane", "Psionic", "Melodic"],
+    "lists": ["Arcane", "Psionic", "Melodic", "Invention"],
     "ritual": 0
   },
   {
@@ -9114,7 +9114,7 @@
     "upcastDice": 3
   },
   {
-    "name": "Contintental Crush",
+    "name": "Continental Crush",
     "school": "Transposition",
     "level": 7,
     "castingTime": "1 action",
@@ -9128,7 +9128,7 @@
     "higherLevels": [
       "When you cast this spell using a spell slot of 8th level or higher, the radius of the clump increases by 5 feet for each slot level above 7th."
     ],
-    "lists": ["Primal", "Arcane", "Psionic", "Melodic"],
+    "lists": ["Primal", "Arcane", "Psionic", "Melodic", "Invention"],
     "ritual": 0,
     "type": "save",
     "save": "dex",
@@ -9724,7 +9724,7 @@
       "When you cast this spell, you can specify individuals that are unaffected by any or all of the effects that you choose. You can also specify a password that, when spoken aloud, makes the speaker immune to these effects.",
       "Guards and Wards creates the following effects within the warded area.<ul><li><strong>Corridors.</strong> Fog fills all the warded corridors, making them heavily obscured. In addition, at each intersection or branching passage offering a choice of direction, there is a 50 percent chance that a creature other than you will believe it is going in the opposite direction from the one it chooses.</li><li><strong>Doors.</strong> All doors in the warded area are magically locked, as if sealed by an Arcane Lock spell. In addition, you can cover up to ten doors with an illusion (equivalent to the illusory object function of the Minor Illusion spell) to make them appear as plain sections of wall.</li><li><strong>Stairs.</strong> Webs fill all stairs in the warded area from top to bottom, as the Web spell. These strands regrow in 10 minutes if they are burned or torn away while Guards and Wards lasts.</li><li><strong>Other Spell Effect.</strong> You can place your choice of one of the following magical effects within the warded area of the stronghold.<ul><li>Place Dancing Lights in four corridors. You can designate a simple program that the lights repeat as long as Guards and Wards lasts.</li><li>Place a Magic Mouth in two locations.</li><li>Place a Stinking Cloud in two locations. The vapors appear in the places you designate they return within 10 minutes if dispersed by wind while Guards and Wards lasts.</li><li>Place a constant Gust of Wind in one corridor or room.</li><li>Place a Suggestion in one location. You select an area of up to 5 feet square, and any creature that enters or passes through the area receives the Suggestion mentally.</li></ul></li></ul>The whole warded area radiates magic. A Dispel Magic spell cast on a specific effect, if successful, removes only that effect. You can create a permanently Guarded and Warded structure by casting this spell there every day for one year."
     ],
-    "lists": ["Arcane", "Melodic"],
+    "lists": ["Arcane", "Melodic", "Invention"],
     "ritual": 0
   },
   {
@@ -10205,6 +10205,41 @@
     "upcastDice": 1
   },
   {
+    "name": "Quicken Metal",
+    "school": "Transmutation",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a piece of iron and a flame)",
+    "duration": "Instantaneous",
+    "description": [
+      "Choose a manufactured metal object, such as a metal weapon or a suit of heavy or medium metal armor, that you can see within range. You cause the object to briefly glow white-hot. Any creature in physical contact with the object takes 8d6 fire damage when you cast the spell.",
+      "If a creature is holding or wearing the object and takes the damage from it, the creature must succeed on a Constitution saving throw or drop the object if it can.",
+      "If the object targeted with this spell is a nonmagical weapon or suit of armor, it melts into slag and is destroyed."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d6 for each slot level above 5th."
+    ],
+    "lists": [
+      "Arcane",
+      "Occult",
+      "Primal",
+      "Melodic",
+      "Invention"
+    ],
+    "ritual": 0,
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 8,
+        "die": 6,
+        "type": "fire"
+      }
+    ],
+    "upcastDice": 1
+  },
+  {
     "name": "Heaven Burst",
     "school": "Evocation",
     "level": 0,
@@ -10604,7 +10639,7 @@
       "If a willing creature dies within 60 feet of the house, you can use your reaction to cage its soul within the house. The soul remains within the house until the house is destroyed, or until it chooses to leave. A soul within the house can control it. Its game statistics are replaced by the statistics of the house, though it retains its alignment and its Intelligence, Wisdom, and Charisma scores. It also retains all of its skill and saving throw proficiencies, in addition to gaining those of the house, and it retains the benefits of its own class features.",
       "The house collapses into a puddle of flesh when it is reduced to 0 hit points, or after 24 hours. To maintain the house's form for another 24 hours, you must cast this spell on the house again before the current 24-hour period ends. When you cast this spell to maintain a house's form, it has a casting time of 1 minute, and you can ignore the spell's material components."
     ],
-    "lists": ["Occult"],
+    "lists": ["Occult", "Invention"],
     "ritual": 0
   },
   {
@@ -11176,7 +11211,7 @@
       "You can use a particular special component to create only one prison at a time. If you cast the spell again using the same component, the target of the first casting is immediately freed from its binding.",
       "When you cast the spell, you choose one of the following forms of imprisonment.<ul><li><strong>Burial.</strong> The target is entombed far beneath the earth in a sphere of magical force that is just large enough to contain the target. Nothing can pass through the sphere, nor can any creature teleport or use planar travel to get into or out of it. The special component for this version of the spell is a small mithral orb.</li><li><strong>Chaining.</strong> Heavy chains, firmly rooted in the ground, hold the target in place. The target is restrained until the spell ends, and it can't move or be moved by any means until then. The special component for this version of the spell is a fine chain of precious metal.</li><li><strong>Hedged Prison.</strong> The spell transports the target into a tiny demiplane that is warded against teleportation and planar travel. The demiplane can be a labyrinth, a cage, a tower, or any similar confined structure or area of your choice. The special component for this version of the spell is a miniature representation of the prison made from jade.</li><li><strong>Minimus Containment.</strong> The target shrinks to a height of 1 inch and is imprisoned inside a gemstone or similar object. Light can pass through the gemstone normally (allowing the target to see out and other creatures to see in), but nothing else can pass through, even by means of teleportation or planar travel. The gemstone can't be cut or broken while the spell remains in effect. The special component for this version of the spell is a large, transparent gemstone, such as a corundum, diamond, or ruby.</li><li><strong>Slumber.</strong> The target falls asleep and can't be awoken. The special component for this version of the spell consists of rare soporific herbs.</li></ul>"
     ],
-    "lists": ["Arcane", "Divine", "Occult", "Psionic"],
+    "lists": ["Arcane", "Divine", "Occult", "Psionic", "Invention"],
     "ritual": 0,
     "type": "save",
     "save": "wis"
@@ -11230,7 +11265,7 @@
       "When the cloud appears, each creature in it must make a Dexterity saving throw. A creature takes 10d8 fire damage on a failed save, or half as much damage on a successful one. A creature must also make this saving throw when it enters the spell's area for the first time on a turn or ends its turn there.",
       "The cloud moves 10 feet directly away from you in a direction that you choose at the start of each of your turns."
     ],
-    "lists": ["Arcane", "Primal"],
+    "lists": ["Arcane", "Primal", "Invention"],
     "ritual": 0,
     "type": "save",
     "save": "dex",
@@ -11239,6 +11274,31 @@
         "dice": 10,
         "die": 8,
         "type": "fire"
+      }
+    ]
+  },
+  {
+    "name": "Blizzard",
+    "school": "Conjuration",
+    "level": 8,
+    "castingTime": "1 action",
+    "range": "120 feet (50-foot cube)",
+    "components": "V, S, M (a vial of glacier water)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "A torrent of icy wind sweeps across a 50-foot cube within range. When a creature enters the area for the first time on a turn or starts their turn there, they must make a Constitution sacing throw.",
+      "On a failed save, a creature takes 8d8 cold damage, and their speed is halved for 1 minute. On a success, a creature takes half as much damage and is not slowed. If a creature that is already slowed fails its saving throw against this spell, its speed is reduced to 0 for 1 minute. Creatures slowed by this spell can repeat the saving throw at the end of each of their turns, ending the effect on a success.",
+      "While the spell persists, you can use a bonus action to move the blizzard up to 30 feet in any direction."
+    ],
+    "lists": ["Arcane", "Primal", "Divine"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 8,
+        "die": 8,
+        "type": "cold"
       }
     ]
   },
@@ -11647,7 +11707,7 @@
     "components": "V, S, M (a small piece of adamantine worth at least 500 gp, which the spell consumes)",
     "duration": "Concentration, up to 10 minutes",
     "description": ["You are immune to all damage until the spell ends."],
-    "lists": ["Arcane", "Psionic", "Melodic"],
+    "lists": ["Arcane", "Psionic", "Melodic", "Invention"],
     "ritual": 0
   },
   {
@@ -12019,7 +12079,7 @@
     "higherLevels": [
       "When you cast this spell using a slot of 9th level, you may have multiple instances of this spell active at a time, and casting the spell again no longer causes previous castings of this spell to end. When you complete the 1-hour recitation to move a Levitated Landscape, you instead move all Levitated Landscapes that you control."
     ],
-    "lists": ["Arcane", "Psionic", "Melodic", "Primal"],
+    "lists": ["Arcane", "Psionic", "Melodic", "Primal", "Invention"],
     "ritual": 0
   },
   {
@@ -12190,7 +12250,7 @@
       "You bestow your allies with supernatural reflexes, making them ready to react to the slightest hint of danger. Choose up to five willing creatures in range. If one of the creatures would make a Dexterity saving throw or an initiative roll, its reflexes kick in and grant it advantage on the roll. If this causes the creature to succeed on a Dexterity saving throw to take only half damage, they instead take no damage. Whenever the effects of the spell are triggered for a creature, the creature then has its speed doubled until the end of its next turn.",
       "A creature can only safely benefit from this spell once every 24 hours. For every successive casting beyond the first, the affected creatures suffers a level of exhaustion."
     ],
-    "lists": ["Arcane", "Divine", "Occult", "Primal"],
+    "lists": ["Arcane", "Divine", "Occult", "Primal", "Invention"],
     "ritual": false
   },
   {
@@ -12570,7 +12630,7 @@
       "If the container is destroyed or the spell ends, your soul immediately returns to your body. If your body is more than 100 feet away from you, or if your body is dead when you attempt to return to it, you die. If another creature's soul is in the container when it is destroyed, the creature's soul returns to its body if the body is alive and within 100 feet. Otherwise, that creature dies.",
       "When the spell ends, the container is destroyed."
     ],
-    "lists": ["Arcane", "Occult", "Psionic"],
+    "lists": ["Arcane", "Occult", "Psionic", "Invention"],
     "ritual": 0,
     "type": "save",
     "save": "cha"
@@ -13083,7 +13143,7 @@
       "The target can use its action to attempt to escape. When it does so, it makes a DC 20 Intelligence check. If it succeeds, it escapes, and the spell ends (a minotaur or goristro demon automatically succeeds, as does Baphomet).",
       "When the spell ends, the target reappears in the space it left or, if that space is occupied, in the nearest unoccupied space."
     ],
-    "lists": ["Arcane", "Psionic", "Melodic"],
+    "lists": ["Arcane", "Psionic", "Melodic", "Invention"],
     "ritual": 0
   },
   {
@@ -13289,7 +13349,7 @@
       "After 7 days or when you cast this spell somewhere else, the fortress harmlessly crumbles and sinks back into the ground, leaving any creatures that were inside it safely on the ground.",
       "Casting this spell on the same spot once every 7 days for a year makes the fortress permanent."
     ],
-    "lists": ["Arcane"],
+    "lists": ["Arcane", "Invention"],
     "ritual": 0
   },
   {
@@ -13415,7 +13475,7 @@
       "The illusion includes audible, visual, tactile, and olfactory elements, so it can turn clear ground into difficult terrain (or vice versa) or otherwise impede movement through the area. Any piece of the illusory terrain (such as a rock or stick) that is removed from the spell's area disappears immediately.",
       "Creatures with truesight can see through the illusion to the terrain's true form however, all other elements of the illusion remain, so while the creature is aware of the illusion's presence, the creature can still physically interact with the illusion."
     ],
-    "lists": ["Arcane", "Primal", "Psionic", "Melodic"],
+    "lists": ["Arcane", "Primal", "Psionic", "Melodic", "Invention"],
     "ritual": 0
   },
   {
@@ -13657,7 +13717,7 @@
       "Beyond the portal is a magnificent foyer with numerous chambers beyond. The atmosphere is clean, fresh, and warm.",
       "You can create any floor plan you like, but the space can't exceed 50 cubes, each cube being 10 feet on each side. The place is furnished and decorated as you choose. It contains sufficient food to serve a nine-course banquet for up to 100 people. A staff of 100 near-transparent servants attends all who enter. You decide the visual appearance of these servants and their attire. They are completely obedient to your orders. Each servant can perform any task a normal human servant could perform, but they can't attack or take any action that would directly harm another creature. Thus the servants can fetch things, clean, mend, fold clothes, light fires, serve food, pour wine, and so on. The servants can go anywhere in the mansion but can't leave it. Furnishings and other objects created by this spell dissipate into smoke if removed from the mansion. When the spell ends, any creatures or objects inside the extradimensional space are expelled into the open spaces nearest to the entrance."
     ],
-    "lists": ["Arcane"],
+    "lists": ["Arcane", "Invention"],
     "ritual": 0
   },
   {
@@ -13699,7 +13759,7 @@
       "<strong>Guard:</strong> The sword moves up to 20 feet towards a creature of your choice. It grants half cover to the creature while it shares their space as it attempts to deflect incoming attacks. The first time a hostile creature comes within 5 feet of the sword, it will attack that creature, making a melee spell attack. On a hit, the target takes force damage equal to 3d10 + your spellcasting ability modifier. The sword cannot attack again until you issue a command.",
       "<strong>Spin:</strong> The sword moves up to 20 feet towards a point of your choice. When it reaches the point it will begin to spin in a deadly whirl. Creatures that start their turn or enter for the first time on their turn within 5 feet of the sword must make a Dexterity saving throw, taking 4d10 force damage on a failed saving throw and half as much damage on a success."
     ],
-    "lists": ["Arcane", "Psionic"],
+    "lists": ["Arcane", "Psionic", "Invention"],
     "ritual": 0,
     "type": ["attack", "save"],
     "save": "dex",
@@ -13784,7 +13844,7 @@
       "This spell can't manipulate natural stone or stone construction. Rocks and structures shift to accommodate the new terrain. If the way you shape the terrain would make a structure unstable, it might collapse.",
       "Similarly, this spell doesn't directly affect plant growth. The moved earth carries any plants along with it."
     ],
-    "lists": ["Arcane", "Primal"],
+    "lists": ["Arcane", "Primal", "Invention"],
     "ritual": 0
   },
   {
@@ -14626,7 +14686,7 @@
       "Alternatively, if you know the sigil sequence of a teleportation circle on another plane of existence, this spell can take you to that circle. If the teleportation circle is too small to hold all the creatures you transported, they appear in the closest unoccupied spaces next to the circle.",
       "You can use this spell to banish an unwilling creature to another plane. Choose a creature within your reach.  The creature must make a Charisma saving throw. If the creature fails the save, it is transported to a random location on the plane of existence you specify. A creature so transported must find its own way back to your current plane of existence.<table> <tr> <th colspan=\"4\">Planar Forks</th> </tr> <tr> <th>Plane</th> <th>Subplane</th> <th>Material</th> <th>Pitch</th> </tr> <tr> <th colspan=\"4\">Material and Echoes</th> </tr> <tr> <td>Material</td> <td>-</td> <td>Steel</td> <td>C</td> </tr> <tr> <td>Feywild</td> <td>-</td> <td>Steel</td> <td>C&sharp;</td> </tr> <tr> <td>Shadowfell</td> <td>-</td> <td>Steel</td> <td>C&flat;</td> </tr> <tr> <th colspan=\"4\">Elemental Planes</th> </tr> <tr> <td>Fire</td> <td>-</td> <td>Copper</td> <td>A</td> </tr> <tr> <td>Earth</td> <td>-</td> <td>Zinc</td> <td>A</td> </tr> <tr> <td>Water</td> <td>-</td> <td>Lead</td> <td>A</td> </tr> <tr> <td>Air</td> <td>-</td> <td>Tin</td> <td>A</td> </tr> <tr> <th colspan=\"4\">Para-Elemental Planes</th> </tr> <tr> <td>Smoke</td> <td>-</td> <td>Bronze</td> <td>A</td> </tr> <tr> <td>Magma</td> <td>-</td> <td>Brass</td> <td>A</td> </tr> <tr> <td>Ooze</td> <td>-</td> <td>Solder</td> <td>A</td> </tr> <tr> <td>Ice</td> <td>-</td> <td>Terne</td> <td>A</td> </tr> <tr> <th colspan=\"4\">Quasi-Elemental Planes</th> </tr> <tr> <td>Radiance</td> <td>-</td> <td>Copper</td> <td>A&sharp;</td> </tr> <tr> <td>Mineral</td> <td>-</td> <td>Zinc</td> <td>A&sharp;</td> </tr> <tr> <td>Steam</td> <td>-</td> <td>Lead</td> <td>A&sharp;</td> </tr> <tr> <td>Lightning</td> <td>-</td> <td>Tin</td> <td>A&sharp;</td> </tr> <tr> <td>Ash</td> <td>-</td> <td>Copper</td> <td>A&flat;</td> </tr> <tr> <td>Dust</td> <td>-</td> <td>Zinc</td> <td>A&flat;</td> </tr> <tr> <td>Salt</td> <td>-</td> <td>Lead</td> <td>A&flat;</td> </tr> <tr> <td>Vacuum</td> <td>-</td> <td>Tin</td> <td>A&flat;</td> </tr> <tr> <th colspan=\"4\">Energy Planes</th> </tr> <tr> <td>Positive</td> <td>-</td> <td>Ivory</td> <td>C<sub>8</sub></td> </tr> <tr> <td>Negative</td> <td>-</td> <td>Ebony</td> <td>A<sub>0</sub></td> </tr> <tr> <th colspan=\"4\">Transitive Planes</th> </tr> <tr> <td>Ethereal</td> <td>-</td> <td>Glass</td> <td>B</td> </tr> <tr> <td>Astral</td> <td>-</td> <td>Quartz</td> <td>B</td> </tr> <tr> <th colspan=\"4\">Outer Planes</th> </tr> <tr> <td>Outlands</td> <td>-</td> <td>Platinum</td> <td>C</td> </tr> <tr> <td>Mechanus</td> <td>-</td> <td>Silver</td> <td>C</td> </tr> <tr> <td>Arcadia</td> <td>Abellio</td> <td>Gold</td> <td>C&sharp;<sub>0</sub></td> </tr> <tr> <td></td> <td>Buxenus</td> <td>Gold</td> <td>C&sharp;<sub>1</sub></td> </tr> <tr> <td>Celestia</td> <td>Lunia</td> <td>Gold</td> <td>D<sub>0</sub></td> </tr> <tr> <td></td> <td>Mercuria</td> <td>Gold</td> <td>D<sub>1</sub></td> </tr> <tr> <td></td> <td>Venya</td> <td>Gold</td> <td>D<sub>2</sub></td> </tr> <tr> <td></td> <td>Solania</td> <td>Gold</td> <td>D<sub>3</sub></td> </tr> <tr> <td></td> <td>Mertion</td> <td>Gold</td> <td>D<sub>4</sub></td> </tr> <tr> <td></td> <td>Jovar</td> <td>Gold</td> <td>D<sub>5</sub></td> </tr> <tr> <td></td> <td>Chronias</td> <td>Gold</td> <td>D<sub>6</sub></td> </tr> <tr> <td></td> <td>Palace of Time</td> <td>Gold</td> <td>D<sub>7</sub></td> </tr> <tr> <td>Bytopia</td> <td>Dothion</td> <td>Gold</td> <td>E&flat;<sub>0</sub></td> </tr> <tr> <td></td> <td>Shurrock</td> <td>Gold</td> <td>E&flat;<sub>1</sub></td> </tr> <tr> <td>Elysium</td> <td>Amoria</td> <td>Gold</td> <td>E<sub>0</sub></td> </tr> <tr> <td></td> <td>Eronia</td> <td>Gold</td> <td>E<sub>1</sub></td> </tr> <tr> <td></td> <td>Belierin</td> <td>Gold</td> <td>E<sub>2</sub></td> </tr> <tr> <td></td> <td>Thalasia</td> <td>Gold</td> <td>E<sub>3</sub></td> </tr> <tr> <td>Beastlands</td> <td>Krigala</td> <td>Gold</td> <td>F<sub>0</sub></td> </tr> <tr> <td></td> <td>Brux</td> <td>Gold</td> <td>F<sub>1</sub></td> </tr> <tr> <td></td> <td>Karasuthra</td> <td>Gold</td> <td>F<sub>2</sub></td> </tr> <tr> <td>Arborea</td> <td>Arvandor</td> <td>Gold</td> <td>F&sharp;<sub>0</sub></td> </tr> <tr> <td></td> <td>Aquallor</td> <td>Gold</td> <td>F&sharp;<sub>1</sub></td> </tr> <tr> <td></td> <td>Mithardir</td> <td>Gold</td> <td>F&sharp;<sub>2</sub></td> </tr> <tr> <td>Ysgard</td> <td>Asgard</td> <td>Gold</td> <td>G<sub>0</sub></td> </tr> <tr> <td></td> <td>Muspelheim</td> <td>Gold</td> <td>G<sub>1</sub></td> </tr> <tr> <td></td> <td>Nidavellir</td> <td>Gold</td> <td>G<sub>2</sub></td> </tr> <tr> <td>Limbo</td> <td>-</td> <td>Nickel</td> <td>C</td> </tr> <tr> <td>Pandemonium</td> <td>Pandesmos</td> <td>Iron</td> <td>C&sharp;<sub>0</sub></td> </tr> <tr> <td></td> <td>Cocytus</td> <td>Iron</td> <td>C&sharp;<sub>1</sub></td> </tr> <tr> <td></td> <td>Phlegethon</td> <td>Iron</td> <td>C&sharp;<sub>2</sub></td> </tr> <tr> <td></td> <td>Agathion</td> <td>Iron</td> <td>C&sharp;<sub>3</sub></td> </tr> <tr> <td>Abyss</td> <td>Pazunia</td> <td>Iron</td> <td>D<sub>8</sub></td> </tr> <tr> <td></td> <td>Other Layers</td> <td>Iron</td> <td>Random Chords</td> </tr> <tr> <td></td> <td>Blackhole</td> <td>Iron</td> <td><em>h</em></td> </tr> <tr> <td>Carceri</td> <td>Orthrys</td> <td>Iron</td> <td>E&flat;<sub>0</sub></td> </tr> <tr> <td></td> <td>Cathrys</td> <td>Iron</td> <td>E&flat;<sub>1</sub></td> </tr> <tr> <td></td> <td>Minethys</td> <td>Iron</td> <td>E&flat;<sub>2</sub></td> </tr> <tr> <td></td> <td>Colothys</td> <td>Iron</td> <td>E&flat;<sub>3</sub></td> </tr> <tr> <td></td> <td>Porphatys</td> <td>Iron</td> <td>E&flat;<sub>4</sub></td> </tr> <tr> <td></td> <td>Agathys</td> <td>Iron</td> <td>E&flat;<sub>5</sub></td> </tr> <tr> <td>Hades</td> <td>Oinos</td> <td>Iron</td> <td>E<sub>0</sub></td> </tr> <tr> <td></td> <td>Niflheim</td> <td>Iron</td> <td>E<sub>1</sub></td> </tr> <tr> <td></td> <td>Pluton</td> <td>Iron</td> <td>E<sub>2</sub></td> </tr> <tr> <td>Gehenna</td> <td>Khalas</td> <td>Iron</td> <td>F<sub>0</sub></td> </tr> <tr> <td></td> <td>Chamada</td> <td>Iron</td> <td>F<sub>1</sub></td> </tr> <tr> <td></td> <td>Mungoth</td> <td>Iron</td> <td>F<sub>2</sub></td> </tr> <tr> <td></td> <td>Krangath</td> <td>Iron</td> <td>F<sub>3</sub></td> </tr> <tr> <td>Nine Hells</td> <td>Avernus</td> <td>Iron</td> <td>F&sharp;<sub>0</sub></td> </tr> <tr> <td></td> <td>Dis</td> <td>Iron</td> <td>F&sharp;<sub>1</sub></td> </tr> <tr> <td></td> <td>Minauros</td> <td>Iron</td> <td>F&sharp;<sub>2</sub></td> </tr> <tr> <td></td> <td>Phlegethos</td> <td>Iron</td> <td>F&sharp;<sub>3</sub></td> </tr> <tr> <td></td> <td>Stygia</td> <td>Iron</td> <td>F&sharp;<sub>4</sub></td> </tr> <tr> <td></td> <td>Malbolge</td> <td>Iron</td> <td>F&sharp;<sub>5</sub></td> </tr> <tr> <td></td> <td>Maladomini</td> <td>Iron</td> <td>F&sharp;<sub>6</sub></td> </tr> <tr> <td></td> <td>Cania</td> <td>Iron</td> <td>F&sharp;<sub>7</sub></td> </tr> <tr> <td></td> <td>Nessus</td> <td>Iron</td> <td>F&sharp;<sub>8</sub></td> </tr> <tr> <td>Acheron</td> <td>Avalas</td> <td>Iron</td> <td>G<sub>0</sub></td> </tr> <tr> <td></td> <td>Thuldanin</td> <td>Iron</td> <td>G<sub>1</sub></td> </tr> <tr> <td></td> <td>Tintibulus</td> <td>Iron</td> <td>G<sub>2</sub></td> </tr> <tr> <td></td> <td>Ocanthus</td> <td>Iron</td> <td>G<sub>3</sub></td> </tr> </table> "
     ],
-    "lists": ["Arcane", "Divine", "Occult", "Primal", "Psionic", "Melodic"],
+    "lists": ["Arcane", "Divine", "Occult", "Primal", "Psionic", "Melodic", "Invention"],
     "ritual": 0,
     "type": "save",
     "save": "cha"
@@ -15209,7 +15269,7 @@
       "You have resistance to acid, cold, fire, lightning, and thunder damage for the spell's duration.",
       "When you take damage of one of those types, you can use your reaction to gain immunity to that type of damage, including against the triggering damage. If you do so, the resistances end, and you have the immunity until the end of your next turn, at which time the spell ends."
     ],
-    "lists": ["Arcane", "Primal"],
+    "lists": ["Arcane", "Primal", "Invention"],
     "ritual": 0
   },
   {
@@ -15687,7 +15747,7 @@
     "higherLevels": [
       "When you cast this spell using a spell slot of 7th level or higher, the duration is 1 hour. If you use a spell slot of 8th level or higher, the duration is 24 hours. If you use an 9th level spell slot, the spell lasts for 1 month. Using a spell slot of 7th level or higher grants a duration that does not require Concentration."
     ],
-    "lists": ["Arcane", "Divine", "Psionic", "Melodic"],
+    "lists": ["Arcane", "Divine", "Psionic", "Melodic", "Invention"],
     "ritual": 0,
     "upcastDuration": {
       "7": "1 hour",
@@ -16097,7 +16157,7 @@
       "You create a duplicate of yourself that is similar to you in every way at the time of casting. You can communicate with your duplicate telepathically, and it obeys all of your commands. Your duplicate has all of the same abilities (though none of your equipment), spells and features that you do, but these become shared resources between you both. If your duplicate casts a spell, you both lose the corresponding spell slot, for example. Your duplicate ages at the same rate as you do and is immune to the Dispel Magic spell. You may only have one duplicate active at a time, and your duplicate is not able to cast the Replicate spell.",
       "The duplicate dies when it drops to 0 hit points, ending the spell. If you die while your duplicate is still alive, your soul is transferred to it, and it becomes your new form, ending the spell."
     ],
-    "lists": ["Arcane"],
+    "lists": ["Arcane", "Invention"],
     "ritual": 0
   },
   {
@@ -16848,7 +16908,7 @@
       "If the target is a creature, it falls into a state of suspended animation. Time ceases to flow for it, and it doesn't grow older.",
       "You can set a condition for the spell to end early. The condition can be anything you choose, but it must occur or be visible within 1 mile of the target. Examples include &quotafter 1000 years&quot or &quotwhen the tarrasque awakes&quot. This spells also ends if the target takes any damage."
     ],
-    "lists": ["Arcane", "Divine", "Psionic", "Melodic"],
+    "lists": ["Arcane", "Divine", "Psionic", "Melodic", "Invention"],
     "ritual": 0
   },
   {
@@ -17356,7 +17416,7 @@
       "If the simulacrum is damaged, you can repair it in an alchemical laboratory, using rare herbs and minerals worth 100 gp per hit point it regains. The simulacrum lasts until it drops to 0 hit points, at which point it reverts to snow and melts instantly.",
       "If you cast this spell again, any currently active duplicates you created with this spell are instantly destroyed."
     ],
-    "lists": ["Arcane"],
+    "lists": ["Arcane", "Invention"],
     "ritual": 0
   },
   {
@@ -17701,7 +17761,7 @@
       "<strong>Eyes of the Dead.</strong> You can use an action to name a place the humanoid saw in life, which creates an invisible sensor somewhere in that place if it is on the plane of existence you're currently on. The sensor remains for as long as you concentrate, up to 10 minutes (as if you were concentrating on a spell). You receive visual and auditory information from the sensor as if you were in its space using your senses.",
       "A creature that can see the sensor (such as one using see invisibility or truesight) sees a translucent image of the tormented humanoid whose soul you caged."
     ],
-    "lists": ["Arcane", "Occult", "Psionic"],
+    "lists": ["Arcane", "Occult", "Psionic", "Invention"],
     "ritual": 0
   },
   {
@@ -19153,7 +19213,7 @@
       "You can further refine the trigger so the spell is activated only under certain circumstances or according to a creature's physical characteristics (such as height or weight), or physical kind (for example, the ward could be set to affect hags or shapechangers). You can also specify creatures that don't trigger the glyph, such as those who say a certain password.",
       "When you inscribe the glyph, choose one of the options below for its effect. Once triggered, the glyph glows, filling a 60-foot-radius sphere with dim light for 10 minutes, after which time the spell ends. Each creature in the sphere when the glyph activates is targeted by its effect, as is a creature that enters the sphere for the first time on a turn or ends its turn there.<ul><li><strong>Death.</strong> Each target must make a Constitution saving throw, taking 10d10 necrotic damage on a failed save, or half as much damage on a successful save.</li><li><strong>Discord.</strong> Each target must make a Constitution saving throw. On a failed save, a target bickers and argues with other creatures for 1 minute. During this time, it is incapable of meaningful communication and has disadvantage on attack rolls and ability checks.</li><li><strong>Fear.</strong> Each target must make a Wisdom saving throw and becomes frightened for 1 minute on a failed save. While frightened, the target drops whatever it is holding and must move at least 20 feet away from the glyph on each of ist turns, if able.</li><li><strong>Hopelessness.</strong> Each target must make a Charisma saving throw. On a failed save, the target is overwhelmed with despair for 1 minute. During this time, it can't attack or target any creature with harmful abilities, spells, or other magical effects.</li><li><strong>Insanity.</strong> Each target must make an Intelligence saving throw. On a failed save, the target is driven insane for 1 minute. An insane creature can't take actions, can't understand what other creatures say, can't read, and speaks only in gibberish. The DM controls its movement, which is erratic.</li><li><strong>Pain.</strong> Each target must make a Constitution saving throw and becomes incapacitated with excruciating pain for 1 minute on a failed save.</li><li><strong>Sleep.</strong> Each target must make a Wisdom saving throw and falls unconscious for 10 minutes on a failed save. A creature awakens if it takes damage or if someone uses an action to shake or slap it awake.</li><li><strong>Stunning.</strong> Each target must make a Wisdom saving throw and becomes stunned for 1 minute on a failed save.</li></ul>"
     ],
-    "lists": ["Arcane", "Divine", "Primal", "Melodic"],
+    "lists": ["Arcane", "Divine", "Primal", "Melodic", "Invention"],
     "ritual": 0
   },
   {
@@ -19342,7 +19402,7 @@
       "You create a telepathic link between yourself and a willing creature with which you are familiar. The creature can be anywhere on the same plane of existence as you. The spell ends if you or the target are no longer on the same plane.",
       "Until the spell ends, you and the target can instantaneously share words, images, sounds, and other sensory messages with one another through the link, and the target recognizes you as the creature it is communicating with. The spell enables a creature with an Intelligence score of at least 1 to understand the meaning of your words and take in the scope of any sensory messages you send to it."
     ],
-    "lists": ["Arcane", "Psionic", "Melodic"],
+    "lists": ["Arcane", "Psionic", "Melodic", "Invention"],
     "ritual": 0
   },
   {
@@ -19363,7 +19423,7 @@
       "&quotDescription&quot is a place whose location and appearance you know through someone else's description, perhaps from a map.",
       "&quotFalse destination&quot is a place that doesn't exist. Perhaps you tried to scry an enemy's sanctum but instead viewed an illusion, or you are attempting to teleport to a familiar location that no longer exists.<ul><li><strong>On Target.</strong> You and your group (or the target object) appear where you want to.</li><li><strong>Off Target.</strong> You and your group (or the target object) appear a random distance away from the destination in a random direction. Distance off target is 1d10 x 1d10 percent of the distance that was to be traveled. For example, if you tried to travel 120 miles, landed off target, and rolled a 5 and 3 on the two d10s, then you would be off target by 15 percent, or 18 miles. The DM determines the direction off target randomly by rolling a d8 and designating 1 as north, 2 as northeast, 3 as east, and so on around the points of the compass. If you were teleporting to a coastal city and wound up 18 miles out at sea, you could be in trouble.</li><li><strong>Similar Area.</strong> You and your group (or the target object) wind up in a different area that's visually or thematically similar to the target area. If you are heading for your home laboratory, for example, you might wind up in another wizard's laboratory or in an alchemical supply shop that has many of the same tools and implements as your laboratory. Generally, you appear in the closest similar place, but since the spell has no range limit, you could conceivably wind up anywhere on the plane.</li><li><strong>Mishap.</strong> The spell's unpredictable magic results in a difficult journey. Each teleporting creature (or the target object) takes 3d10 force damage, and the DM rerolls on the table to see where you wind up (multiple mishaps can occur, dealing damage each time).</li></ul>"
     ],
-    "lists": ["Arcane", "Psionic"],
+    "lists": ["Arcane", "Psionic", "Invention"],
     "ritual": 0
   },
   {
@@ -19400,7 +19460,7 @@
       "Finally, whenever any creature in the temple regains hit points from a spell of 1st level or higher, the creature regains additional hit points equal to your Wisdom modifier (minimum 1 hit point).",
       "The temple is made from opaque magical force that extends into the Ethereal Plane, thus blocking ethereal travel into the temple's interior. Nothing can physically pass through the temple's exterior. It can't be dispelled by dispel magic, and antimagic field has no effect on it. A disintegrate spell destroys the temple instantly.<br />Casting this spell on the same spot every day for a year makes this effect permanent."
     ],
-    "lists": ["Divine"],
+    "lists": ["Divine", "Invention"],
     "ritual": 0,
     "type": "save",
     "save": "cha"
@@ -19474,7 +19534,7 @@
     "description": [
       "Two creatures you can see within range must make a Constitution saving throw, with disadvantage if they are within 30 feet of each other. Either creature can willingly fail the save. If either save succeeds, the spell has no effect. If both saves fail, the creatures are magically linked for the duration, regardless of the distance between them. When damage is dealt to one of them, the same damage is dealt to the other one. If hit points are restored to one of them, the same number of hit points are restored to the other one. If either of the tethered creatures is reduced to 0 hit points, the spell ends on both. If the spell ends on one creature, it ends on both."
     ],
-    "lists": ["Arcane", "Divine", "Occult", "Psionic", "Melodic"],
+    "lists": ["Arcane", "Divine", "Occult", "Psionic", "Melodic", "Invention"],
     "ritual": 0,
     "type": "save",
     "save": "con"
@@ -21786,7 +21846,7 @@
       "You and up to five willing creatures within 5 feet of you instantly teleport to a previously designated sanctuary. You and any creatures that teleport with you appear in the nearest unoccupied space to the spot you designated when you prepared your sanctuary (see below). If you cast this spell without first preparing a sanctuary, the spell has no effect.",
       "You must designate a sanctuary by casting this spell within a location, such as a temple, dedicated to or strongly linked to your deity. If you attempt to cast the spell in this manner in an area that isn't dedicated to your deity, the spell has no effect."
     ],
-    "lists": ["Divine", "Melodic"],
+    "lists": ["Divine", "Melodic", "Invention"],
     "ritual": 0
   },
   {
@@ -22525,7 +22585,7 @@
     "higherLevels": [
       "When you cast this spell using a spell slot of 9th level, the poison damage increases by 2d10."
     ],
-    "lists": ["Arcane", "Occult", "Primal"],
+    "lists": ["Arcane", "Occult", "Primal", "Invention"],
     "ritual": 0,
     "type": "save",
     "save": "con",
@@ -22551,7 +22611,7 @@
       "Alternatively, you can use it to coat a single weapon or piece of ammunition, apply it to a portion of food or drink, or an object or surface that is up to 1 foot square area by touching it with the hand used. Regardless of the method, a creature that touches, is injured by, or ingests the targeted object or area can be affected by the poison, unless it is immune to the poisoned condition or this spell. If applied to an object, the poison lasts for 8 hours before becoming inert. You are immune to your own Mortal Tear poison.",
       "The first non-immune creature exposed to the tear is affected by the spell, and must make a Constitution saving throw immediately and at the end of each of its turns. The affected creature takes 8d12 poison damage on a failed save, or half as much on a successful one. Additionally:<ul><li>If it fails a save, the creature is poisoned until the spell ends.</li><li>If it fails saves two times, the creature is incapacitated until the spell ends.</li><li>If it fails saves three times, the creature dies and the spell ends.</li></ul>If it successfully saves against this spell three times, the spell ends. The successes and failures don't need to be consecutive; keep track of both until the target collects three of a kind. Each casting of this spell can only affect one creature."
     ],
-    "lists": ["Arcane", "Divine", "Occult", "Primal"],
+    "lists": ["Arcane", "Divine", "Occult", "Primal", "Invention"],
     "ritual": 0,
     "type": ["attack", "save"],
     "save": "con",
@@ -23169,9 +23229,10 @@
       "You attempt to sunder all active magic in a 30 foot radius centered on yourself. Spells you are concentrating on and magic items you are carrying are unaffected.",
       "Each spell that is not being concentrated on in the area ends. Each summoned creature in the area disappears. Each nonartifact magic item in the area that no creature is attuned to is destroyed.",
       "If a spell effect in the area is being concentrated on, the creature concentrating on it must make a Charisma saving throw. On a failed saving throw, the spell ends.",
-      "A creature that is attuned to one or more magic items in the area must make a Charisma saving throw for each of them. On a failed save, the item is destroyed."
+      "A creature that is attuned to one or more magic items in the area must make a Charisma saving throw for each of them. On a failed save, the item is destroyed.",
+      "A sentient magic item must make a Charisma saving throw. On a failed save, it is rendered non-magical for the next year."
     ],
-    "lists": ["Arcane"],
+    "lists": ["Arcane", "Invention"],
     "ritual": 0
   },
   {
@@ -23251,7 +23312,7 @@
     "higherLevels": [
       "When you cast this spell using a spell slot of 8th level or higher, you can use your action to cast a spell this turn as if you had not cast a spell as a bonus action this turn."
     ],
-    "lists": ["Arcane"],
+    "lists": ["Arcane", "Invention"],
     "ritual": 0
   },
   {
@@ -23351,7 +23412,7 @@
       "You attempt to neutralize a spell as it is cast, meeting it with a tailored blend of opposing cosmic energies; fire with water, order with chaos, etc. The spell caster must succeed on an Intelligence saving throw or have its spell fail.",
       "If the target fails this saving throw by 5 or more, you can instead have the spell rebound upon its caster. If the spell targets one or more creatures, it instead targets only the spell caster. If the spell targets an area, it instead targets an area centered on the spell caster."
     ],
-    "lists": ["Arcane", "Melodic", "Psionic"],
+    "lists": ["Arcane", "Melodic", "Psionic", "Invention"],
     "ritual": 0
   },
   {
@@ -23759,7 +23820,7 @@
       "A bolt from the blue rockets downward, blasting a creature you can see within range into the earth.",
       "The target must make a Dexterity saving throw. It takes 14d10 lightning damage on a failed save, or half as much damage on a successful one. On a failed save, the target also immediately falls up to 500 feet if it is not supported by a solid surface."
     ],
-    "lists": ["Arcane", "Primal"],
+    "lists": ["Arcane", "Primal", "Invention"],
     "type": "save",
     "save": "dex",
     "damage": [
@@ -24328,7 +24389,7 @@
       "A creature with a Wisdom score of 13 or lower that starts its turn in the area and can see the object is charmed by you until it takes any damage, or until the object is moved or destroyed (AC 20, 20 HP; Immunity to poison and psychic damage).",
       "Unless surprised, a creature can avert its eyes to avoid this effect. If it does, it treats each creature within 10 feet of the object as Invisible."
     ],
-    "lists": ["Arcane", "Occult", "Psionic"],
+    "lists": ["Occult", "Psionic", "Invention"],
     "ritual": 0
   },
   {
@@ -24380,6 +24441,85 @@
       }
     ],
     "upcastDice": 1
+  },
+  {
+    "name": "Inkwrought Bonds",
+    "school": "Evocation",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "V, S, M (a drop of ink)",
+    "duration": "Instantaneous",
+    "description": [
+      "You fire a blob of sticky ink at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 6d8 force damage and is restrained until the end of its next turn. As an action, the target can make a Strength check against your spell save DC, ending the effect on a success."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 4th level or higher, the damage and temporary hit points increase by 1d8 for each slot level above 3rd."
+    ],
+    "lists": ["Elemental", "Arcane", "Invention"],
+    "element": "Water",
+    "ritual": 0,
+    "type": "attack",
+    "damage": [
+      {
+        "dice": 6,
+        "die": 8,
+        "type": "force"
+      }
+    ],
+    "upcastDice": 1
+  },
+  {
+    "name": "Consign to Myth",
+    "school": "Illusion",
+    "level": 7,
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "V, S, M (a written book worth at least 25 gp)",
+    "duration": "Instantaneous",
+    "description": [
+      "You touch a creature and attempt to trap it within the pages of the book that serves as this spell's material component. The target must make a Charisma saving throw. On a failed save, the target disappears into the book and is considered incapacitated. When the spell ends, the target gains the benefits of a short rest.",
+      "The target can repeat its saving throw at the end of each of its turns, ending the effect on a success. After three failed saving throws, the target stops repeating the saving throw. If the book is opened or destroyed, the spell ends."
+    ],
+    "lists": ["Arcane", "Melodic", "Invention"],
+    "ritual": 0,
+    "type": "save",
+    "save": "cha"
+  },
+  {
+    "name": "Fictive Twist",
+    "school": "Illusion",
+    "level": 2,
+    "castingTime": "1 reaction, which you take when a creature within range casts a spell",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You twist the triggering spell into a mere work of fiction, changing it into an illusion, resulting in the following effects:",
+      "<ul><li>Any damage dealt by the spell becomes psychic damage</li><li>Any saving throw that the spell forces creatures to make becomes an Intelligence saving throw</li></ul>"
+    ],
+    "lists": ["Arcane", "Melodic", "Invention"],
+    "ritual": 0
+  },
+  {
+    "name": "Merlin's Condensing Abode",
+    "school": "Transposition",
+    "level": 3,
+    "castingTime": "1 minute",
+    "range": "10 feet",
+    "components": "V, S, M (an empty backpack, carpetbag, chest, satchel, or other suitable container, worth at least 1 sp)",
+    "duration": "Until dispelled or triggered",
+    "description": [
+      "You cause all books, furniture, and other Huge or smaller loose objects within the room you are currently in to shrink and fly into the container that serves as the material component for this spell.",
+      "The objects shrunk by this spell are safely stored in the container as long as it remains closed, which weighs an additional 30 lbs while the objects are contained within. If the container is opened or destroyed, the objects automatically disperse themselves into the nearest unoccupied spaces to the same layout they were originally in when the spell was cast.",
+      "Objects being worn, carried, or held by a creature, that are Gargantuan or larger, or that weigh more than 1,000 lbs are unaffected by this spell."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 4th level or higher, the maximum weight of an object increases by 1,000 lbs and you can add one additional room to the ones being shrunk provided it is adjacent to one of the current rooms affected by this spell and there is an open passageway with sufficient space for the objects to move through for every two slot levels above the 3rd level.",
+      "When cast using a 9th level spell slot, you can target all rooms in the structure that you are aware of, so long as you meet all other requirements."
+    ],
+    "lists": ["Arcane", "Invention", "Melodic"],
+    "ritual": 1
   },
   {
     "name": "Creeping Ruin",
@@ -24754,7 +24894,7 @@
     ]
   },
   {
-    "name": "Devouring Rain",
+    "name": "Devouring Downpour",
     "school": "Conjuration",
     "level": 9,
     "castingTime": "1 action",
@@ -24764,7 +24904,7 @@
     "description": [
       "An acrid rain begins to fall in a 15 foot radius, 300 foot tall cylinder centered on a point you can see within range. A creature that starts its turn in the area, or that enters it for the first time on a turn, must succeed on a Constitution saving throw or take 8d10 acid damage, or half as much on a success. A creature killed by this damage melts and is disintegrated."
     ],
-    "lists": ["Divine", "Primal"],
+    "lists": ["Divine", "Primal", "Invention"],
     "ritual": 0,
     "type": "save",
     "save": "con",
@@ -25169,7 +25309,7 @@
       "When you cast this spell using a spell slot of 7th level or higher, you make one additional attack for each slot level above 6th."
     ],
     "multiplier": 3,
-    "lists": ["Arcane", "Occult"],
+    "lists": ["Arcane", "Occult", "Invention"],
     "ritual": 0,
     "type": "attack",
     "damage": [
@@ -26210,6 +26350,78 @@
     "save": "str"
   },
   {
+    "name": "Demon Warp",
+    "school": "Sangromancy",
+    "level": 8,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a drop of glabrezu blood, worth at least 1,000 gp, which the spell consumes)",
+    "duration": "Instantaneous",
+    "description": [
+      "You infuse a creature within range with demonic power, warping its flesh and mind into little more than a mindless killing machine. The target gains 150 temporary hit points. While the target has any of these temporary hit points, it is transformed into a Glabrezu Persecutor and is hostile towards all creatures.",
+      "An unwilling creature can make a Charisma saving throw, resisting the effect on a success."
+    ],
+    "lists": ["Occult"],
+    "ritual": 0,
+    "type": "save",
+    "save": "cha",
+    "healing": [
+      {
+        "amount": 150,
+        "temporary": true
+      }
+    ]
+  },
+  {
+    "name": "Chaos Tether",
+    "school": "Transposition",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "129 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You launch a twisting bolt of chaotic magic at a creature within range. Make a ranged spell attack. On a hit, the target takes 6d8 force damage.",
+      "Then, the target and you make a contested Charisma saving throw. The creature with the lower result teleports to the nearest unoccupied space to the other creature."
+    ],
+    "lists": ["Elemental", "Arcane", "Occult", "Melodic"],
+    "element": "Aether",
+    "ritual": 0,
+    "type": ["attack", "save"],
+    "save": "cha",
+    "damage": [
+      {
+        "type": "force",
+        "dice": 6,
+        "die": 8
+      }
+    ]
+  },
+  {
+    "name": "Wound Reality",
+    "school": "Transposition",
+    "level": 9,
+    "castingTime": "1 action",
+    "range": "15 feet (10-foot line)",
+    "components": "V, S, M (a silver knife worth at least 500 gp)",
+    "duration": "Concentration, up to 10 minutes",
+    "description": [
+      "You carve a ragged tear in the fabric of reality in a 10-foot long, 5-foot wide line at a point within range. When you cast this spell and at the start of each of ypur turns for the duration, each creature other than you within 60 feet of the tear takes 4d10 force damage and is dragged up to 20 feet towards it.",
+      "A creature that ends this movement within 5 feet of the tear must make a Strength saving throw. On a failed save, the creature is dragged into the Astral Plane. The creature can repeat this saving throw as an action, returning through the tear on a success. If this spell ends while a creature is on the Astral Plane, it remains trapped there."
+    ],
+    "unique": "This spell was developed by the demon lord Miska, the Wolf Spider.",
+    "ritual": 0,
+    "type": "save",
+    "save": "str",
+    "damage": [
+      {
+        "type": "force",
+        "dice": 4,
+        "die": 10
+      }
+    ]
+  },
+  {
     "name": "Sudden Spoiling",
     "school": "Necromancy",
     "level": 6,
@@ -26423,7 +26635,7 @@
       "On each of your turns, you may call down demonic lightning as a bonus action. Each creature encircled by the movement you took this turn must succeed on a Dexterity saving throw or take 6d6 lightning plus 2d10 necrotic damage, or half as much on a success.",
       "A creature is encircled by your movement if the ground you moved over on this turn marks a contiuous path that intersects itself, creating an enclosed shape that contains the creature. The path of your movement counts as part of the shape it encloses."
     ],
-    "lists": ["Divine", "Occult"],
+    "lists": ["Divine", "Occult", "Invention"],
     "ritual": 0,
     "type": "save",
     "save": "dex",
@@ -27177,6 +27389,396 @@
     "ritual": 0,
     "type": "save",
     "save": "con"
+  },
+  {
+    "name": "Roost",
+    "school": "Restoration",
+    "level": 0,
+    "castingTime": "1 bonus action",
+    "range": "Self",
+    "components": "S",
+    "duration": "Instantaneous",
+    "description": [
+      "You gain 1d4 temporary hit points and you gain Plumage."
+    ],
+    "higherLevels": [
+      "The temporary hit points granted by this spell increase by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4)."
+    ],
+    "lists": ["Primal"],
+    "ritual": 0,
+    "healing": [
+      {
+        "dice": 1,
+        "die": 4,
+        "temporary": true
+      }
+    ],
+    "upcastDice": 1
+  },
+  {
+    "name": "Flap",
+    "school": "Transposition",
+    "level": 1,
+    "castingTime": "1 reaction, which you take when a creature enters a space within 5 feet of you",
+    "range": "Self",
+    "components": "S, M (a feather)",
+    "duration": "Instantaneous",
+    "description": [
+      "You jump up to 15 feet in any direction without provoking attacks of opportunity. After you jump, if you have Plumage, you may fire a feather at the triggering creature. Make a ranged spell attack. On a hit, the target takes 2d4 slashing damage."
+    ],
+    "lists": ["Primal", "Elemental"],
+    "element": "Air",
+    "ritual": 0,
+    "type": "attack",
+    "damage": [
+      {
+        "dice": 2,
+        "die": 4,
+        "type": "slashing"
+      }
+    ]
+  },
+  {
+    "name": "Rectrix Slash",
+    "school": "Transmutation",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "V, S, M (a feather)",
+    "duration": "Instantaneous",
+    "description": [
+      "A sharp mass of feathers extends from a free hand. Make a melee spell attack against a creature within your reach. On a hit, the target takes 3d8 slashing damage.",
+      "If you have Plumage when you cast this spell, you can teleport up to 10 feet to an unoccupied space you can see immediately before or after making this attack."
+    ],
+    "higherLevels": ["If you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd."],
+    "lists": ["Primal", "Elemental"],
+    "element": "Air",
+    "ritual": 0,
+    "type": "attack",
+    "damage": [
+      {
+        "dice": 3,
+        "die": 8,
+        "type": "slashing"
+      }
+    ]
+  },
+  {
+    "name": "Feather Storm",
+    "school": "Conjuration",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "Self (20-foot cone)",
+    "components": "V, S, M (a feather)",
+    "duration": "Instantaneous",
+    "description": [
+      "You unleash a flurry of sharp feathers in a 20-foot cone originating from you. Each creature in the area must make a Dexterity saving throw, taking 6d6 slashing damage on a failed save, or half as much on a success.",
+      "Immediately after casting this spell, if you have Plumage, you can teleport to an unoccupied space you can see that is adjacent to at least one creature that took damage from this spell."
+    ],
+    "higherLevels": ["If you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd."],
+    "lists": ["Primal", "Elemental"],
+    "element": "Air",
+    "ritual": 0,
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 6,
+        "die": 6,
+        "type": "slashing"
+      }
+    ]
+  },
+  {
+    "name": "Hunting Wings",
+    "school": "Transmutation",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": "V, S, M (a feather)",
+    "duration": "Concentration, up to 1 hour",
+    "description": [
+      "Large bird wings to appear from your back. For the duration, you gain a flying speed of 60 feet and your movement doesn't provoke opportunity attacks.",
+      "As part of the action that you used to cast this spell, and as an action on subsequent turns, you can make a melee spell attack with the wings against a creature within 10 feet. On a hit, the target takes slashing damage equal to 3d6 plus your spellcasting ability modifier. If you have Plumage, this damage increases to 3d10."
+    ],
+    "lists": ["Primal", "Elemental"],
+    "element": "Air",
+    "ritual": 0,
+    "type": "attack",
+    "damage": [
+      {
+        "dice": 3,
+        "die": 6,
+        "type": "slashing"
+      }
+    ]
+  },
+  {
+    "name": "Ecstatic Dance",
+    "school": "Enchantment",
+    "level": 2,
+    "castingTime": "1 bonus action",
+    "range": "Special",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "Each creature you hit with an attack this turn must make a Wisdom saving throw. On a failed save, a creature becomes charmed by you until the end of your next turn.",
+      "A creature charmed in this way must use its action to Dash, Disengage, or Dodge."
+    ],
+    "lists": ["Melodic", "Psionic"],
+    "ritual": 0,
+    "type": "save",
+    "save": "wis"
+  },
+  {
+    "name": "Share Libations",
+    "school": "Enchantment",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "Self (5-foot radius)",
+    "components": "V, S, M (a bottle of alcohol, which the spell consumes)",
+    "duration": "Up to 1 minute",
+    "description": [
+      "Each willing creature or creature charmed by you within 5 feet of you gains 10 temporary hit points that last for the duration. A swarm affected by this ability gains twice as many temporary hit points.",
+      "While a creature has any of these temporary hit points, it is charmed by you, poisoned, and has resistance to bludgeoning, piercing, and slashing damage."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 5th level or higher, the temporary hit points increase by 10 for each slot level above 4th."
+    ],
+    "lists": ["Melodic"],
+    "ritual": 0,
+    "healing": [
+      {
+        "amount": 10,
+        "temporary": true
+      }
+    ],
+    "upcastAmount": 10
+  },
+  {
+    "name": "Song of Mischief",
+    "school": "Enchantment",
+    "level": 5,
+    "castingTime": "1 bonus action",
+    "range": "Self (60-foot radius)",
+    "components": "V, S, M (a musical instrument worth at least 1 sp)",
+    "duration": "Concentration, up to 10 minutes",
+    "description": [
+      "You begin to play a song of mischief and troublemaking. Each creature within 60 feet of you rolls a d10 whenever it would roll a d20."
+    ],
+    "lists": ["Melodic"],
+    "ritual": 0
+  },
+  {
+    "name": "Song of Mirth",
+    "school": "Enchantment",
+    "level": 5,
+    "castingTime": "1 bonus action",
+    "range": "Self (60-foot radius)",
+    "components": "V, S, M (a musical instrument worth at least 1 sp)",
+    "duration": "Concentration, up to 10 minutes",
+    "description": [
+      "You begin to play a song of happiness and revelry. Each creature within 60 feet of you that has any number of temporary hit points can use its bonus action to take the Dash, Disengage, or Dodge action."
+    ],
+    "lists": ["Melodic"],
+    "ritual": 0
+  },
+  {
+    "name": "Song of Mayhem",
+    "school": "Enchantment",
+    "level": 7,
+    "castingTime": "1 bonus action",
+    "range": "Self (60-foot radius)",
+    "components": "V, S, M (a musical instrument worth at least 1 sp)",
+    "duration": "Concentration, up to 10 minutes",
+    "description": [
+      "You begin to play a song of battle and rage. Each creature within 60 feet of you that has any number of temporary hit points is charmed by you and treats all other creatures as hostile."
+    ],
+    "lists": ["Melodic"],
+    "ritual": 0
+  },
+  {
+    "name": "Note of Discord",
+    "school": "Evocation",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You play a harsh note that scrapes against the mind and soul. A creature within range must make a Wisdom saving throw. On a failed save, the target takes 4d8 thunder damage plus 4d8 psychic damage and is dazed until the end of its next turn, or half as much damage on a success.",
+      "If you are concentrating on a spell, you can end your concentration as part of casting this spell to impose disadvantage on the target's saving throw."
+    ],
+    "higherLevels": [
+      "If you cast this spell using a spell slot of 6th level or higher, each instance of damage increases by 1d8 for each slot level above 5th."
+    ],
+    "lists": ["Melodic"],
+    "ritual": 0,
+    "type": "save",
+    "save": "wis",
+    "damage": [
+      {
+        "dice": 4,
+        "die": 8,
+        "type": "thunder"
+      },
+      {
+        "dice": 4,
+        "die": 8,
+        "type": "psychic"
+      }
+    ],
+    "upcastDice": 1
+  },
+  {
+    "name": "Benumb",
+    "school": "Restoration",
+    "level": 6,
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "V, S",
+    "duration": "1 hour",
+    "description": [
+      "You touch a willing creature. For the duration, the target ignores the effects of being frightened, paralyzed, or poisoned, and has resistance to bludgeoning, piercing, and slashing damage."
+    ],
+    "lists": ["Melodic", "Divine", "Psionic"],
+    "ritual": 0
+  },
+  {
+    "name": "Life From the Vine",
+    "school": "Restoration",
+    "level": 8,
+    "castingTime": "1 action",
+    "range": "300 feet (30-foot radius)",
+    "components": "V, S, M (a fruit from the Feywild worth at least 500 gp, which the spell consumes)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You cause fruiting vines to sprout up in a 30-foot radius within range, making the area difficult terrain for the duration.",
+      "Creatures in the area can use their action or bonus action to restore 3d6 hit points to themselves or a creature within 5 feet.",
+      "A creature targeted with this ability that died in the last minute is restored to life with 1 hit point."
+    ],
+    "lists": ["Primal", "Divine"],
+    "ritual": 0,
+    "healing": [
+      {
+        "dice": 3,
+        "die": 6
+      }
+    ]
+  },
+  {
+    "name": "Call to Revel",
+    "school": "Restoration",
+    "level": 7,
+    "castingTime": "1 action",
+    "range": "Self (60-foot radius)",
+    "components": "V, S, M (a drop of ambrosia worth at least 200 gp, which the spell consumes)",
+    "duration": "Instantaneous",
+    "description": [
+      "You call down a cascade of ambrosia, granting each willing creature within 60 feet of you 20 temporary hit points. While a creature has any of these temporary hit points, it has advantage on attack rolls.",
+      "When a creature loses the last of these temporary hit points, it must make a Constitution saving throw. On a failed save, a creature becomes poisoned until it finishes a long rest."
+    ],
+    "lists": ["Primal", "Divine", "Melodic"],
+    "ritual": 0,
+    "healing": [
+      {
+        "amount": 20,
+        "temporary": true
+      }
+    ],
+    "type": "save",
+    "save": "con"
+  },
+  {
+    "name": "Unname",
+    "school": "Enchantment",
+    "level": 9,
+    "castingTime": "1 action",
+    "range": "5 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You attempt to draw forth the true name from a creature within 5 feet of you, forcing it to make a Charisma saving throw. On a failed save, the target takes 6d12 + 30 psychic damage and its true name is obliterated, each record and memory of it is forever destroyed. If this damage reduces a creature to 0 hit points, it ceases to exist and cannot be restored to life by any means.",
+      "For 1 year, or until it is given a new true name, a nameless creature has disadvantage on Intelligence, Wisdom, and Charisma saving throws."
+    ],
+    "lists": [],
+    "unique": "This spell was developed by the archfey prince of fools, Hyrsam.",
+    "ritual": 0,
+    "type": "save",
+    "save": "cha",
+    "damage": [
+      {
+        "dice": 6,
+        "die": 12,
+        "amount": 30,
+        "type": "psychic"
+      }
+    ]
+  },
+  {
+    "name": "Twinfeather",
+    "school": "Conjuration",
+    "level": 1,
+    "castingTime": "1 action",
+    "range": "60 feet (2 targets)",
+    "components": "V, S, M (a feather)",
+    "duration": "Instantaneous",
+    "description": [
+      "You fire two razor-sharp feathres at creatures you can see within range. You can fire them at one target or several. Make a ranged spell attack for each feather. On a hit, the target takes 2d4 slashing damage. After casting this spell, you gain Plumage."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 2nd level or higher, you fire one additional feather for each slot level above 1st."
+    ],
+    "lists": ["Primal", "Elemental"],
+    "element": "Air",
+    "ritual": 0,
+    "type": "attack",
+    "damage": [
+      {
+        "dice": 2,
+        "die": 4,
+        "type": "slashing"
+      }
+    ],
+    "upcastRange": {
+      "2": "60 feet (3 targets)",
+      "3": "60 feet (4 targets)",
+      "4": "60 feet (5 targets)",
+      "5": "60 feet (6 targets)",
+      "6": "60 feet (7 targets)",
+      "7": "60 feet (8 targets)",
+      "8": "60 feet (9 targets)",
+      "9": "60 feet (10 targets)"
+    }
+  },
+  {
+    "name": "Necroflame Torrent",
+    "school": "Evocation",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "Self (30-foot cone)",
+    "components": "S",
+    "duration": "Instantaneous",
+    "description": [
+      "You spew black flames in a 30-foot cone, forcing each creature in the area to make a DC 15 Dexterity saving throw, taking 4d6 fire damage plus 4d6 necrotic damage on a failed save, or half as much on a success."
+    ],
+    "lists": ["Occult", "Arcane", "Elemental"],
+    "element": "Shadow",
+    "ritual": 0,
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 4,
+        "die": 6,
+        "type": "fire"
+      },
+      {
+        "dice": 4,
+        "die": 6,
+        "type": "necrotic"
+      }
+    ]
   },
   {
     "name": "Necrofire Orb",
@@ -28469,7 +29071,7 @@
     "description": [
       "By casting this spell, you can permanently sever a creature from the Weave.  You must be touching an incapacitated creature for the casting of this spell, forcing the target to make a Charisma saving throw.  On a failed save, the target can no longer cast spells.  This effect cannot be reversed by any means short of the wish spell."
     ],
-    "lists": ["Arcane"],
+    "lists": ["Arcane", "Invention"],
     "ritual": 0,
     "type": "save",
     "save": "cha"
@@ -28926,7 +29528,7 @@
       "For the next hour, evocation spells cast within 30 feet of the shard have their range multiplied by 10 and their radius doubled.",
       "After that, the shard persists but loses its arcane potency."
     ],
-    "lists": ["Arcane", "Divine", "Primal", "Occult"],
+    "lists": ["Arcane", "Divine", "Primal", "Occult", "Invention"],
     "ritual": 0
   },
   {
@@ -29049,7 +29651,7 @@
       "You crush an explosive burst down to a pinpoint, concentrating its force. When a damage-dealing effect that targets an area within range takes effect, you can cause only one creature in the area to be affected.",
       "If you do, the effect deals maximum damage, instead of rolling damage."
     ],
-    "lists": ["Arcane", "Psionic"],
+    "lists": ["Arcane", "Psionic", "Invention"],
     "ritual": 0
   },
   {
@@ -29332,7 +29934,7 @@
     "higherLevels": [
       "When you cast this spell using a spell slot of 7th Level or higher, the circle has 10 additional hit points for each level above 6th."
     ],
-    "lists": ["Arcane", "Divine", "Occult", "Melodic"],
+    "lists": ["Arcane", "Divine", "Occult", "Melodic", "Invention"],
     "ritual": 0
   },
   {
@@ -30288,6 +30890,24 @@
     "save": "cha"
   },
   {
+    "name": "Curse of Smoldering Embers",
+    "curse": true,
+    "school": "Transmutation",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a white-hot ember)",
+    "duration": "Instantaneous",
+    "description": [
+      "You stoke flames within and around the target, forcing it to succeed on a Charisma saving throw or be cursed.",
+      "While cursed in this way, the creature takes double damage the first time it takes any amount of fire damage. Additionally, whenever the target takes any amount of fire damage, it begins burning (1d10)."
+    ],
+    "lists": ["Occult"],
+    "ritual": 0,
+    "type": "save",
+    "save": "cha"
+  },
+  {
     "name": "Rust-Wrought Ruin",
     "school": "Evocation",
     "level": 6,
@@ -30669,7 +31289,7 @@
       }
     ],
     "ritual": 0,
-    "lists": ["Arcane", "Occult"]
+    "lists": ["Arcane", "Occult", "Invention"]
   },
   {
     "name": "Devastation Cascade",

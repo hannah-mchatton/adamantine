@@ -2060,11 +2060,7 @@
               "granted": [
                 {
                   "type": "infusion",
-                  "options": [
-                    "Arm Launcher",
-                    "Swift Ring",
-                    "Adrenaline Armor"
-                  ]
+                  "options": ["Arm Launcher", "Swift Ring", "Adrenaline Armor"]
                 }
               ]
             },
@@ -2072,7 +2068,11 @@
               "name": "Tools of the Trade",
               "description": "You gain proficiency with alchemist's supplies. If you are already proficient with alchemist's supplies, you instead gain proficiency with another set of artisan's tools of your choice.",
               "granted": [
-                { "type": "tool", "level": 1, "options": ["Alchemist's Supplies"] }
+                {
+                  "type": "tool",
+                  "level": 1,
+                  "options": ["Alchemist's Supplies"]
+                }
               ]
             },
             {
@@ -10112,8 +10112,8 @@
                     "Mage Hand",
                     "Injurious Spellbook",
                     "Instant Orchestra",
-                    "Call to Feast",
                     "Enhance Ability",
+                    "Suspend Tempo",
                     "Enemies Abound",
                     "Tiny Servant",
                     "Amplify Voice",
@@ -16792,7 +16792,7 @@
                     "Consecration",
                     "Silence",
                     "Counterspell",
-                    "Mage's Blind",
+                    "Unveiling Ray",
                     "Arcane Eye",
                     "Scour Conduit",
                     "Circle of Power",
@@ -18836,7 +18836,7 @@
                     "Slow",
                     "Catastrophe Looms",
                     "Freedom of Movement",
-                    "Delay Spell",
+                    "Riddle of Time Eclipsed",
                     "Temporal Shunt",
                     "Borrowed Time",
                     "Moment Lock",
@@ -36067,10 +36067,10 @@
                     "Slow",
                     "Divination",
                     "Freedom of Movement",
-                    "Hold Monster",
+                    "Riddle of Time Eclipsed",
                     "Temporal Shunt",
                     "Borrowed Time",
-                    "Moment Lock",
+                    "Future-Sieve",
                     "Reality Break",
                     "Time Ravage"
                   ],
@@ -40135,33 +40135,97 @@
               ]
             },
             {
-              "name": "Adrenal Recovery",
-              "description": "Starting at 3rd level, you can focus for a moment to recover your wounds, even in the heat of battle. As a bonus action, you can spend a Hit Die and roll it, gaining temporary hit points equal to the number rolled + your Constitution modifier."
+              "name": "Brutality",
+              "description": "Shaped by the intensity of the arena, you've learned to execute brutal martial moves. Starting at 3rd level, once per turn when you hit with a melee weapon attack, you can add one of the following effects of your choice.</p><p>You can use this feature a number of times equal to your Charisma modifier, and regain all expended uses when you finish a short or long rest.",
+              "uses": [
+                {
+                  "id": "0D0E01E8-DD08-4DE3-956D-38D44B989799",
+                  "type": "derived",
+                  "source": "score",
+                  "score": "cha",
+                  "reset": 1
+                }
+              ],
+              "subFeatures": [
+                {
+                  "name": "Break",
+                  "description": "The target takes extra damage equal to your Charisma modifier and has disadvantage on the next attack roll it makes before the start of your next turn."
+                },
+                {
+                  "name": "Bluff",
+                  "description": "You have advantage on the next attack roll you make against the target and on the next saving throw you make before the end of your next turn."
+                },
+                {
+                  "name": "Stumble",
+                  "description": "The target must make a Constitution saving throw against your Exploit save DC or fall prone, and on its next turn, it can only take an action or a bonus action, not both."
+                }
+              ]
             },
             {
-              "name": "Gladiator's Arms",
-              "description": "Also at 3rd level, you are adept at brawling with a pair of weapons, gaining the following benefits:<ul><li>You can engage in two-weapon fighting even when the one-handed melee weapons you're wielding aren't light.</li><li>When you take the Attack action while two-weapon fighting, you can make a single additional attack with your off-hand weapon as part of your action instead of your bonus action, adding your ability modifier to the damage of this attack.</li><li>You can form an Iron Bond with two weapons, rather than one.</li></ul>"
+              "name": "Combat Theatrics",
+              "description": "Also at 3rd level, you've honed your combat skills to entertain, devastating opponents and dazzling onlookers. You gain the following benefits:<ul><li>Whenever you make an Acrobatics or Athletics check, you gain a bonus to the roll equal to your Charisma modifier.</li><li>You gain proficiency in Acrobatics, Athletics, Deception, Intimidation, or Performance.</li></ul>",
+              "choices": [
+                {
+                  "id": "E1F65745-0E0E-4EB2-8D1C-C5572E2A76B1",
+                  "type": "skill",
+                  "level": 1,
+                  "limits": [
+                    "Acrobatics",
+                    "Athletics",
+                    "Deception",
+                    "Intimidation",
+                    "Performance"
+                  ]
+                }
+              ]
             }
           ],
           "7": [
             {
-              "name": "Are You Not Entertained?",
-              "description": "At 7th level, you always know how to please a crowd in your fights. You gain proficiency in the Persuasion skill. If you already have proficiency in Persuasion, you instead gain proficiency in another skill of your choice from the juggernaut skill list.</p><p>In addition, you can add double your proficiency bonus to Persuasion checks you make.",
-              "granted": [
-                { "type": "skill", "options": ["Persuasion"], "level": 2 }
+              "name": "Flourish Parry",
+              "description": "At 7th level, you've learned to stylishly counter blows from your opponents. When a creature hits you with a melee attack, you can use your reaction to add your Charisma modifier to your AC against the attack, potentially causing it to miss.</p><p>If the attack misses, you can make a melee weapon attack against the attacker as part of the same reaction, and you can use your Brutality feature without expending a use of it.</p><p>Once you hit with a counterattack, you can't make another counterattack until you finish a long rest. If you have no uses of this feature remaining, you can expend an Exploit Die to use it again.",
+              "uses": [
+                {
+                  "id": "882DC49F-5DD7-45C4-B264-A26F04D0A592",
+                  "type": "fixed",
+                  "amount": 1,
+                  "reset": 2
+                }
               ]
             }
           ],
           "11": [
             {
-              "name": "Unrelenting",
-              "description": "Starting at 11th level, your ability to fight on despite your wounds increases. When you reduce a creature to 0 hit points or land a critical hit, you regain a number of expended Hit Dice equal to your proficiency bonus."
+              "name": "Bolder Brutalities",
+              "description": "Starting at 11th level, your brutal martial prowess has improved. You gain the following additional options for your Brutality feature. Additionally, you regain a use of your Brutality feature whenever you expend an Exploit Die.",
+              "subFeatures": [
+                {
+                  "name": "Rive",
+                  "description": "You can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach."
+                },
+                {
+                  "name": "Rush",
+                  "description": "You can push the target up to 10 feet away, then you can move up to your speed without provoking attacks of opportunity."
+                },
+                {
+                  "name": "Stagger",
+                  "description": "The target's speed is halved until the end of your next turn, and it has disadvantage on the next saving throw it makes before the end of your next turn."
+                }
+              ]
             }
           ],
           "15": [
             {
-              "name": "Living Legend",
-              "description": "Starting at 17th level, if you are below half of your maximum hit points, you gain a number of temporary hit points equal to your Constitution modifier at the start of each of your turns."
+              "name": "Mutilate",
+              "description": "Starting at 15th level, when you hit a creature with an attack roll that has half of its hit points or fewer, you can attempt to critically injure it. The target must make a Constitution saving throw against your Exploit save DC.</p><p>On a failed save, the target can only make one attack whenever it takes the Attack action, its speed is halved, and it has a -2 penalty to its Armor Class for 1 minute or until the target has greater than half of its maximum hit points.</p><p>You can use this feature once, and regain the ability to do so when you finish a long rest.",
+              "uses": [
+                {
+                  "id": "882DC49F-5DD7-45C4-B264-A26F04D0A592",
+                  "type": "fixed",
+                  "amount": 1,
+                  "reset": 2
+                }
+              ]
             }
           ]
         },
@@ -52154,7 +52218,7 @@
                     "Moonbeam",
                     "Zone of Truth",
                     "Clairvoyance",
-                    "Magic Circle",
+                    "Unveiling Ray",
                     "Arcane Eye",
                     "Charm Monster",
                     "Legend Lore",
@@ -57643,6 +57707,104 @@
         "show": true,
         "spellcaster": false,
         "name": "Vermin Lord Conclave"
+      },
+      {
+        "description": "Life is many things for Wastewalkers, but never easy. Adapting a ranger's survivalist tactics to a desolate landscape is an incredible feat on its own, made all the greater by learning to command the wastes' volatile magic.",
+        "features": {
+          "3": [
+            {
+              "name": "Conclave Spells",
+              "granted": [
+                {
+                  "type": "spell",
+                  "options": [
+                    "Faerie Fire",
+                    "Vital Inversion",
+                    "Moonbeam",
+                    "Radiant Barrage",
+                    "Bestow Curse",
+                    "Horrid Growth",
+                    "Grimlore's Writhing Coils",
+                    "Sickening Radiance",
+                    "Dawn",
+                    "Wall of Light"
+                  ],
+                  "ability": "wis"
+                }
+              ],
+              "subclassSpellsFeature": true,
+              "preparedCaster": true,
+              "subclassSpellCastingLevel": 2
+            },
+            {
+              "name": "Irradiated Flame",
+              "description": "Starting at 3rd level, when you cast Faerie Fire, you can choose to infuse it with radioactive energy. When you do so, affected creature must make a Constitution saving throw against its effects instead of a Dexterity saving throw. Each creature of your choice who fails its saving throw takes radiant damage equal to your Ranger level.</p><p>Additionally, you can choose for the extra damage granted by your Hunter's Prey feature to be radiant damage."
+            },
+            {
+              "name": "Favorable Mutation",
+              "description": "Also at 3rd level, the strange magic of the wastes has infused you with supernatural vigor. You no longer suffer negative effects as a result of harsh weather conditions, starvation, thirst, or lack of sleep."
+            }
+          ],
+          "7": [
+            {
+              "name": "Permeating Radiance",
+              "description": "Starting at 7th level, when you deal radiant damage to a creature, you can force that creature must make a Constitution saving throw against your spell save DC or become poisoned until the start of your next turn. A creature can only be forced to make this saving throw once per turn."
+            }
+          ],
+          "11": [
+            {
+              "name": "Superior Mutation",
+              "description": "Starting at 11th level, your body becomes more mutated and twisted by strange magic, granting you the following benefits:",
+              "subFeatures": [
+                {
+                  "name": "Acute Exposure",
+                  "description": "Radiant damage dealt by you ignores resistance to radiant damage."
+                },
+                {
+                  "name": "Flashing Eyes",
+                  "description": "You gain darkvision out to 120 feet.",
+                  "granted": [
+                    {
+                      "type": "darkvision",
+                      "range": 120
+                    }
+                  ]
+                },
+                {
+                  "name": "Ghoulish Fortitude",
+                  "description": "You gain resistance to necrotic, poison, and radiant damage, and you have advantage on saving throws against being diseased, exhausted, or poisoned.",
+                  "granted": [
+                    {
+                      "type": "damage-resistance",
+                      "options": ["Necrotic", "Poison", "Radiant"]
+                    },
+                    {
+                      "type": "condition-advantage",
+                      "options": ["Disease", "Exhaustion", "Poisoned"]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "15": [
+            {
+              "name": "Form of the Fallout",
+              "description": "Starting at 15th level, when you cast a spell that deals radiant damage, you may adopt a form that surges with a magical chain reaction for 1 minute. While you are in this form, you gain the following benefits:<ul><li>When a creature fails a saving throw against your Permeating Radiance feature, it loses all damage resistances for the effect's duration.</li><li>You shed bright light in a 20-foot radius and dim light 20 feet beyond that. Creatures of your choice within the bright light have disadvantage on Constitution saving throws.</li></ul> Once you use this feature, you can't do so again until you finish a long rest, unless you expend a spell slot of 4th level or higher to do so again.",
+              "uses": [
+                {
+                  "id": "66624093-DAEA-4F5F-A6E3-93A61F843F21",
+                  "type": "fixed",
+                  "amount": 1,
+                  "reset": 2
+                }
+              ]
+            }
+          ]
+        },
+        "show": true,
+        "spellcaster": false,
+        "name": "Wastewalker Conclave"
       },
       {
         "description": "Winter Walkers hone their craft in the bleak and frozen wilds. Rimed with ice, these ruthless Rangers hunt the monsters that haunt arctic wastelands, eventually becoming frigid terrors themselves.",
@@ -72203,7 +72365,7 @@
           "1": [
             {
               "name": "Ancient Knowledge",
-              "description": "Starting at 1st level, the ascended mage bound to your soul grants you access to its esoteric knowledge. You gain the following benefits: <ul><li>When your Vessel Magic feature lets you learn an occult spell of 1st level or higher, you can choose the new spell from the Arcane spell list or the Occult spell list. You must otherwise obey all the restrictions for selecting the spell, and it becomes an occult spell for you.</li><li>Whenever you make an Intelligence check, you gain a bonus to your roll equal to your Charisma modifier (minimum of +1).</li></ul>",
+              "description": "Starting at 1st level, the ascended mage bound to your soul grants you access to its esoteric knowledge. You gain the following benefits: <ul><li>You learn the Prestidigitation cantrip.</li><li>When your Vessel Magic feature lets you learn an occult spell of 1st level or higher, you can choose the new spell from the Arcane spell list or the Occult spell list. You must otherwise obey all the restrictions for selecting the spell, and it becomes an occult spell for you.</li><li>Whenever you make an Intelligence check, you gain a bonus to your roll equal to your Charisma modifier (minimum of +1).</li></ul>",
               "granted": [
                 {
                   "type": "spell",
@@ -75739,6 +75901,122 @@
         "name": "Trickster"
       },
       {
+        "description": "When a god dies, it leaves a great deal of power in its wake. You are bound to, or perhaps are, the last remnant of a dying god. This dying god, known as a vestige, might have been benevolent, evil, or strange and unknowable, but now it is driven to regain its former power. The vestige seeks out those that it views as enemies and curses them with its power, demanding that you end its foes and bring more allies to its cause.</p><p><em>Familiar Types:</em> Celestial",
+        "features": {
+          "1": [
+            {
+              "name": "Deific Remnant",
+              "description": "Starting at 1st level, the vestige within you grants you access to its memories and power. You gain the following benefits: <ul><li>You learn the Thaumaturgy cantrip.</li><li>When your Vessel Magic feature lets you learn an occult spell of 1st level or higher, you can choose the new spell from the Divine spell list or the Occult spell list. You must otherwise obey all the restrictions for selecting the spell, and it becomes an occult spell for you.</li><li>Whenever you make a Wisdom check, you gain a bonus to your roll equal to your Charisma modifier (minimum of +1).</li></ul>",
+              "granted": [
+                {
+                  "type": "spell",
+                  "options": ["Thaumaturgy"],
+                  "ability": "cha"
+                }
+              ]
+            },
+            {
+              "name": "Remnant Strikes",
+              "description": "You can draw on the Spirit sealed in you to strike with otherworldly power. When you make an unarmed strike, you can cloak the strike in a remnant of deific power and use your Charisma, in place of Strength, for the attack and damage rolls. On hit, these special unarmed strikes deal 1d6 radiant damage.</p><p>The damage die of these strikes increases at certain Vessel levels: 5th level (1d8), 11th level (1d10), and 17th level (1d12)."
+            }
+          ],
+          "2": [
+            {
+              "name": "Spirit Spells",
+              "granted": [
+                {
+                  "type": "spell",
+                  "options": [
+                    "Dread Will",
+                    "Hex",
+                    "Demand Offering",
+                    "Profane Fate",
+                    "Enforced Appearance",
+                    "Render Judgement",
+                    "Catastrophe Looms",
+                    "Scour Conduit",
+                    "Terrible Majesty",
+                    "Vehement Inquiry"
+                  ],
+                  "ability": "cha"
+                }
+              ],
+              "subclassSpellsFeature": true,
+              "preparedCaster": false,
+              "subclassSpellCastingLevel": 2
+            }
+          ],
+          "3": [
+            {
+              "name": "Vestige Archon",
+              "description": "You take on an appearance resembling the vestige's true form. Your Archon Form uses the stat block below.  While transformed, your creature type changes to Humanoid. <table><tbody><tr><th>Vestige Archon</th></tr><tr><td><strong>Armor Class Bonus</strong> +0</td></tr><tr><td><strong>Speed</strong> 5 ft., fly 30 ft. (hover)</td></tr><tr><td><strong>Skills</strong> History +PB, Religion +PB</td></tr><tr><td><strong>Damage Resistances</strong> necrotic, radiant</td></tr><tr><td><strong>Languages</strong> Celestial, and any languages you know</td></tr><tr><td><strong><em>Divine Sight.</em></strong> Whenever the Archon deals damage to a creature with a spell of 1st level or higher or a Remnant Strike, you can place a curse on it until the end of your next turn. While cursed in this way, you always know its exact location, and it can't benefit from being invisible. Additionally, you can choose to change the damage type to necrotic or radiant.</td></tr><tr><th>Actions</th></tr><tr><td><strong><em>Cursed Invocation.</em></strong> Once on its turn, the Archon forgo one attack to force a creature within 30 feet of you to make a Charisma saving throw against your spell save DC. On a failed save, the target is cursed until the end of your next turn. While a creature is cursed in this way, it has disadvantage on attack rolls against you and your allies.</td></tr></tbody></table>"
+            }
+          ],
+          "6": [
+            {
+              "name": "Curse of Power",
+              "description": "Starting at 6th level, the vestige allows you to tear through those it has marked its enemies, body and soul. Whenever you deal damage to a cursed creature with a Vessel spell, you add your Charisma modifier (minimum of +1) to one damage roll."
+            }
+          ],
+          "14": [
+            {
+              "name": "Semblance of Life",
+              "description": "At 14th level, the vestige begins to regain more of its lost power. You learn a single 6th-level Divine spell of your choice, which you can cast once per long rest without spending a spell slot.</p><p>At 18th level, you learn a 7th-level Divine spell that you can also cast once per long rest without expending a spell slot.",
+              "choices": [
+                {
+                  "id": "54C57B7D-86FE-403C-95AB-CE3722B3E5EE",
+                  "type": "spell",
+                  "level": 6,
+                  "list": "divine",
+                  "ability": "cha"
+                },
+                {
+                  "id": "3F2E86A6-0F45-4C0B-8F12-F31ABC81C5EE",
+                  "type": "spell",
+                  "level": 7,
+                  "list": "divine",
+                  "ability": "cha",
+                  "prereq": 18
+                }
+              ],
+              "uses": [
+                {
+                  "id": "A4824748-6701-406B-B877-D999E18A9F40",
+                  "type": "fixed",
+                  "amount": 1,
+                  "reset": 2
+                },
+                {
+                  "id": "3BC08E81-68B1-4905-BDF9-AFEADFFC460E",
+                  "type": "fixed",
+                  "amount": 1,
+                  "prereq": 18,
+                  "reset": 2
+                }
+              ]
+            }
+          ],
+          "18": [
+            {
+              "name": "Deific Might",
+              "description": "At 18th level, the vestige regains enough power to assume its true form once more, if only temporarily. When you are in your Archon Form you gain the following benefits:<ul><li>You assume the true form of your vestige.</li><li>When you curse a creature with your Divine Sight or Cursed Invocation, it remains cursed for 1 minute.</li><li>Once per turn, when you deal damage to a cursed creature, you can choose to forgo rolling damage and take the maximum possible value. If you do so, any curses that can be removed by the Remove Curse spell on the creature immediately end. You can use this feature a number of times equal to your Charisma modifier (minimum of once) and regain the ability to do so when you finish a long rest.</li></ul>",
+              "uses": [
+                {
+                  "id": "7E745501-8E95-4073-BCFB-152FC8CB806A",
+                  "type": "derived",
+                  "source": "score",
+                  "score": "cha",
+                  "reset": 2
+                }
+              ]
+            }
+          ]
+        },
+        "show": true,
+        "spellcaster": false,
+        "name": "Vestige"
+      },
+      {
         "description": "Many cultures throughout time have told tales of the winter spirit that visits once a year to bestow blessings on children who have behaved well, and punish those who are naughty.  Sometimes these winter spirits inhabit people to do their bidding.</p><p><em>Familiar Types:</em> Fey (seelie)",
         "features": {
           "1": [
@@ -78995,6 +79273,123 @@
         "show": true,
         "spellcaster": false,
         "name": "World Tree"
+      },
+      {
+        "description": "You had a patron, but that connection has been broken and that bond has ended. You have not lost your powers, but without the connection to your former patron, your magic has changed into something entirely different. It is protective, discerning, and reactive, lashing out against enemies. Pactbreakers are often deeply distrusting of extraplanar forces, including deities.</p><p><em>Familiar Types:</em> Any",
+        "features": {
+          "1": [
+            {
+              "name": "Pact Spells",
+              "granted": [
+                {
+                  "type": "spell",
+                  "options": [
+                    "Detect Magic",
+                    "Protection from Evil and Good",
+                    "Mind Spike",
+                    "Pass Without Trace",
+                    "Dispel Magic",
+                    "Litany of Forsaken Vows",
+                    "Causal Reversion",
+                    "Freedom of Movement",
+                    "Dispel Evil and Good",
+                    "Synaptic Static",
+                    "Globe of Invulnerability",
+                    "Instant Opposition",
+                    "Scornful Mantle of the Undaunted",
+                    "Mordenkainen's Disjunction"
+                  ],
+                  "ability": "B85FFA8F-7EE5-4B27-9789-05477333032E"
+                }
+              ],
+              "subclassSpellsFeature": true,
+              "preparedCaster": false,
+              "subclassSpellCastingLevel": 1
+            },
+            {
+              "name": "Pactless Magic",
+              "description": "Starting at 1st level, you gain the following beneifts as you begin to master your new powers.",
+              "subFeatures": [
+                {
+                  "name": "Detect the Otherworldly",
+                  "description": "As an action, you can use an action to open your senses to powerful extraplanar forces. For the next 10 minutes, you know the exact location and creature type of any aberration, celestial, elemental, fey, fiend, shapechanger, or undead within 60 feet of you that isn't behind total cover or hidden from divination magic.</p><p>You can use this feature once, and regain the ability to do so when you finish a short or long rest. If you have no uses of this feature remaining, you can expend a spell slot to use this feature again.",
+                  "uses": [
+                    {
+                      "id": "59347131-9958-4425-BFD8-B2537CB020C3",
+                      "type": "fixed",
+                      "amount": 1,
+                      "reset": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "Pactless Wrath",
+                  "description": "Once per turn when you hit a creature with an attack roll, you can deal extra psychic damage to the target equal to your proficiency bonus."
+                }
+              ]
+            }
+          ],
+          "6": [
+            {
+              "name": "Rebuking Will",
+              "description": "Starting at 6th level, when you cast a spell of 1st level or higher on a creature, you can force it to make a Charisma saving throw against your spell save DC. On a failed save, the target is stunned until the start of your next turn.</p><p>You can use this feature a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.",
+              "uses": [
+                {
+                  "id": "613E4BAE-BC2B-4F51-926E-124D1DF15F6D",
+                  "type": "derived",
+                  "source": "proficiency",
+                  "reset": 2
+                }
+              ]
+            },
+            {
+              "name": "Unconquered Soul",
+              "description": "Also starting at 6th level, you have advantage on saving throws against being charmed, frightened, incapacitated, paralyzed, petrified, or stunned.",
+              "granted": [
+                {
+                  "type": "condition-advantage",
+                  "options": [
+                    "Charmed",
+                    "Frightened",
+                    "Incapacitated",
+                    "Paralyzed",
+                    "Petrified",
+                    "Stunned"
+                  ]
+                }
+              ]
+            }
+          ],
+          "10": [
+            {
+              "name": "Unyielding Mind",
+              "description": "Beginning at 10th level, at the end of each of your turns, you can remove one of the following conditions from yourself: charmed, frightened, or incapacitated.</p><p>You can use this feature once, and regain the ability to do so when you finish a short or long rest. If you have no uses of this feature remaining, you can expend a spell slot to use this feature again.</p><p>In addition, you can use your Pactless Wrath feature any number of times in a single turn.",
+              "uses": [
+                {
+                  "id": "2AC709CC-B52D-4BFA-B3B2-F9DA179DB947",
+                  "type": "fixed",
+                  "amount": 1,
+                  "reset": 1
+                }
+              ]
+            }
+          ],
+          "14": [
+            {
+              "name": "Sovereign Magic",
+              "description": "Starting at 14th level, when you use your Rebuking Will feature, you can choose to empower the effect in the following ways:<ul><li>The target has disadvantage on its saving throw.</li><li>On a failed save, the target additionally takes psychic damage equal to your Warlock level, plus additional psychic damage equal to the amount the target failed its saving throw by.</li></ul>You can use this feature once, and regain the ability to do so when you finish a long rest.",
+              "uses": {
+                "id": "0D5C565D-7528-4609-B669-590C3239A3D7",
+                "type": "fixed",
+                "amount": 1,
+                "reset": 2
+              }
+            }
+          ]
+        },
+        "show": true,
+        "spellcaster": false,
+        "name": "Pactbreaker"
       }
     ],
     "extraTabs": [
@@ -82786,11 +83181,11 @@
                     "Hold Person",
                     "Haste",
                     "Slow",
-                    "Catastrophe Looms",
                     "Freedom of Movement",
+                    "Twine Fates",
                     "Delay Spell",
                     "Temporal Shunt",
-                    "Borrowed Time",
+                    "Splice Timeline",
                     "Moment Lock",
                     "Creeping Death",
                     "Time Stop"

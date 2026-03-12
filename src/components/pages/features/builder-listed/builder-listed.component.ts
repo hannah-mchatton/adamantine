@@ -251,6 +251,9 @@ export class BuilderListedComponent implements OnInit {
           ...(this.characterObj.subclass === 'Conduit'
             ? this.dataService.getSpellsByListUnsplit('divine')
             : []),
+          ...(this.characterObj.subclass === 'Vestige'
+            ? this.dataService.getSpellsByListUnsplit('divine')
+            : []),
         ]
           .filter((s: any) => {
             if (this.listed.ritualsOnly) {

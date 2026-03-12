@@ -249,6 +249,8 @@ export class BuilderChoiceComponent implements OnInit {
                     (this.characterObj.subclass === 'Ascended' &&
                       s.lists.includes('Arcane')) ||
                     (this.characterObj.subclass === 'Conduit' &&
+                      s.lists.includes('Divine')) ||
+                    (this.characterObj.subclass === 'Vestige' &&
                       s.lists.includes('Divine')))
               );
 

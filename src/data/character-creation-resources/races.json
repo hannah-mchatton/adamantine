@@ -1673,6 +1673,64 @@
     "name": "Bomok"
   },
   {
+    "description": "The snowborn are a young species in most worlds, having existed for only a few decades. In most cases, they first appeared during a long and cold winter - an incursion of the Elemental Plane of Ice called the First Flurry by snowborn. A snowborn's body is formed of compacted snow. They have a small, spherical head, branch-like limbs, coal eyes, and carrot noses. They enjoy sparingly using clothing as self-expression, like a top hat or a scarf.",
+    "asis": [{ "con": 1 }, { "cha": 2 }],
+    "maturity": -1,
+    "lifespan": 20,
+    "height": [4, 5],
+    "weight": [500, 1000],
+    "category": "Extraplanar",
+    "type": "Elemental (water (ice))",
+    "size": 0,
+    "speed": 30,
+    "darkvision": 0,
+    "languages": ["Common", "Aquan"],
+    "traits": [
+      {
+        "name": "Chilled Anatomy",
+        "description": "You have resistance to cold damage and can move across difficult terrain composed of ice or snow without spending extra movement. Additionally, you cannot slip on ice.",
+        "granted": [
+          {
+            "type": "damage-resistance",
+            "options": ["Cold"]
+          }
+        ]
+      },
+      {
+        "name": "Compacted Snow",
+        "description": "You can move through the space of any creature larger than you, but you can't end your turn there. Additionally, you can squeeze through a space that is large enough for a creature one size smaller than you without any penalties."
+      },
+      {
+        "name": "Frigid Rest",
+        "description": "You don't need to eat, breathe, or sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours unmoving."
+      },
+      {
+        "name": "False Appearance",
+        "description": "While you remain motionless, you are indistinguishable from an ordinary snowman."
+      },
+      {
+        "name": "Glacial Chill",
+        "description": "As a bonus action, you can harden the outer layer of your body into ice, granting you temporary hit points equal to 1d4 + your Charisma modifier. Once you use this trait, you can't do so again until you finish a short or long rest.</p><p>Additionally, you know the Frostbite cantrip. Charisma is your spellcasting ability for it.",
+        "uses": [
+          {
+            "id": "DFB3FE24-120A-466C-9C67-462D8FCFFF54",
+            "type": "fixed",
+            "amount": 1,
+            "reset": 1
+          }
+        ],
+        "granted": [
+          {
+            "type": "spell",
+            "options": ["Frostbite"],
+            "ability": "cha"
+          }
+        ]
+      }
+    ],
+    "name": "Snowborn"
+  },
+  {
     "description": "Bugbears rely on stealth and strength to attack, preferring to operate at night. When they're not in battle, bugbears spend much of their time resting or dozing, and bully weaker creatures into doing their bidding. From the viewpoint of the rest of the world, their aggression and savagery are thankfully offset by their rarity and lethargy.",
     "asis": [{ "str": 2 }, { "dex": 1 }],
     "maturity": 16,
@@ -8162,6 +8220,258 @@
     "name": "Genasi"
   },
   {
+    "description": "When a humanoid dies due to an overwhelming influx of negative energy, sometimes that negative energy causes a part of them to be reborn as a shade. Shades are the absence of people, and resemble dark silhouettes, easy to spot in light, but nearly invisible in darkness. They often despise light and life, as their own cold existence renders them deeply envious of the warmth of the living.",
+    "asis": [
+      { "cha": 2 },
+      {
+        "id": "81D7495D-EA97-4143-B3F2-4F009705C617",
+        "type": "asi",
+        "options": ["str", "dex", "con", "int", "wis"],
+        "amount": 1
+      }
+    ],
+    "maturity": 0,
+    "lifespan": -1,
+    "height": [3, 6],
+    "weight": [10, 20],
+    "category": "Undead",
+    "type": "Undead (ethereal (shade))",
+    "size": {
+      "id": "290CA200-7BFE-4521-8F6C-2756D1DF8833",
+      "type": "text",
+      "options": ["Small", "Medium"],
+      "grants": "size"
+    },
+    "speed": 30,
+    "darkvision": 60,
+    "languages": [
+      "Common",
+      { "id": "37B98913-5AD9-4FF4-9F23-2F3B0C080324", "type": "language" }
+    ],
+    "traits": [
+      {
+        "name": "Amorphous",
+        "description": "You can squeeze through a space as narrow as 1 inch wide, provided you are wearing and carrying nothing. You also have advantage on ability checks you make to initiate or escape a grapple."
+      },
+      {
+        "name": "Antilife Nature",
+        "description": "You have advantage on saving throws against being charmed or dominated. You are immune to poison damage, and you can't be diseased or poisoned. You don't require air, food, drink, or sleep. If your shade dies, your essence is irrevocably dispersed, and you are unable to be resurrected.",
+        "granted": [
+          { "type": "damage-immunity", "options": ["Poison"] },
+          { "type": "condition-immunity", "options": ["Disease", "Poisoned"] },
+          { "type": "condition-advantage", "options": ["Charmed", "Dominated"] }
+        ]
+      },
+      {
+        "name": "Shadow Stealth",
+        "description": "While in dim light or darkness, you can take the Hide action as a bonus action. Additionally, you have proficiency in Stealth.",
+        "granted": [
+          {
+            "type": "skill",
+            "options": ["Stealth"],
+            "level": 1
+          }
+        ]
+      },
+      {
+        "name": "Strength Drain",
+        "description": "Your touch saps the strength and life from the living. Your Strength Drain is a natural weapon you can use to make unarmed strikes. On a hit, it deals necrotic damage equal to 1d6 + your Strength modifier. You can use your Charisma score for attack and damage rolls with your Strength Drain.</p><p>Once per turn when you hit a creature with your Strength Drain, you can force the target to make a Charisma saving throw (DC = 8 + your proficiency bonus + your Charisma modifier). On a failed save, the target's Strength score is reduced by 1 until it finishes a short or long rest."
+      },
+      {
+        "name": "Soulbound",
+        "description": "Your strange nature allows you to benefit from common spells that preserve life but that normally don't affect Undead: Cure Wounds, Healing Word, and Spare the Dying."
+      },
+      {
+        "name": "Turn Immunity",
+        "description": "You are immune to effects that turn undead.",
+        "granted": [
+          {
+            "type": "condition-immunity",
+            "options": ["Turned"]
+          }
+        ]
+      }
+    ],
+    "name": "Shade"
+  },
+  {
+    "description": "Wraiths are a form of ethereal undead born of deep rage. Becoming a wraith is something someone chooses, they do it to enact their vengeance upon those who wronged them. But as with many forms of vengeance, the vengeful never truly wins. If a wraith completes its goal, it finds itself purposeless, wandering and draining the life from anything and anyone it comes across in an attempt to feel something again other than endless fury. Some wraiths manage to control this though, and find new purpose in adventuring.",
+    "asis": [
+      { "con": 1 },
+      { "cha": 1 },
+      {
+        "id": "6DF683F6-1CCC-4C78-BF32-74E740712CC6",
+        "type": "asi",
+        "options": ["str", "dex", "int", "wis"],
+        "amount": 1
+      }
+    ],
+    "maturity": 0,
+    "lifespan": -1,
+    "height": [3, 6],
+    "weight": [10, 20],
+    "category": "Undead",
+    "type": "Undead (ethereal (wraith))",
+    "size": {
+      "id": "7DEAEC46-1FC9-41A3-A8F8-4D8A511C6B54",
+      "type": "text",
+      "options": ["Small", "Medium"],
+      "grants": "size"
+    },
+    "speed": 30,
+    "darkvision": 60,
+    "languages": [
+      "Common",
+      { "id": "B4DC3D00-3D47-4F12-BF72-704604DB10F1", "type": "language" }
+    ],
+    "traits": [
+      {
+        "name": "Ethereal Jaunt",
+        "description": "As a bonus action, you enter the Ethereal Plane. At the end of your next turn, return to the plane you originated from in the spot you currently occupy. If you occupy the same spot as a solid object or creature when this happens, you are immediately shunted to the nearest unoccupied space that you can occupy and take force damage equal to twice the number of feet you are moved. You can use this trait a number of times equal to your proficiency bonus, and regain expended uses of it when you complete long rest.",
+        "uses": {
+          "id": "382763C5-CB83-4D98-89F4-0D11F3780766",
+          "type": "derived",
+          "source": "proficiency",
+          "reset": 2
+        },
+        "actions": [
+          {
+            "id": "382763C5-CB83-4D98-89F4-0D11F3780766",
+            "type": "b",
+            "hasUses": true,
+            "name": "Ethereal Jaunt",
+            "description": "You enter the Ethereal Plane. At the end of your next turn, return to the plane you originated from in the spot you currently occupy. If you occupy the same spot as a solid object or creature when this happens, you are immediately shunted to the nearest unoccupied space that you can occupy and take force damage equal to twice the number of feet you are moved."
+          }
+        ]
+      },
+      {
+        "name": "Life Drain",
+        "description": "When you hit a creature with a melee weapon attack, you can use a bonus action to force the target to make a Constitution saving throw DC 8 + your proficiency bonus + your Charisma modifier. If they fail, they take a number of d6s equal to your proficiency bonus as necrotic damage. If they succeed, they take half the amount. You gain half the amount of necrotic damage dealt as temporary hit points. Once you use this trait, you can't do so again until you finish a long rest.",
+        "uses": {
+          "id": "E82E18FB-683D-4747-9981-194613A22923",
+          "type": "fixed",
+          "amount": 1,
+          "reset": 2
+        },
+        "actions": [
+          {
+            "id": "E82E18FB-683D-4747-9981-194613A22923",
+            "hasUses": true,
+            "type": "b",
+            "name": "Life Drain",
+            "description": "When you hit a creature with a melee weapon attack, you can force the target to make a DC {dc-cha} Constitution saving throw. If they fail, they take  {prof}d6 necrotic damage. If they succeed, they take half the amount. You gain half the amount of necrotic damage dealt as temporary hit points."
+          }
+        ]
+      },
+      {
+        "name": "Ghostly Nature",
+        "description": "You have advantage on saving throws against being charmed or dominated. You are immune to poison damage, and you can't be diseased or poisoned. You don't require air, food, drink, or sleep. If your wraith dies, your essence is irrevocably dispersed, and you are unable to be resurrected.",
+        "granted": [
+          { "type": "damage-immunity", "options": ["Poison"] },
+          { "type": "condition-immunity", "options": ["Disease", "Poisoned"] },
+          { "type": "condition-advantage", "options": ["Charmed", "Dominated"] }
+        ]
+      },
+      {
+        "name": "Soulbound",
+        "description": "Your strange nature allows you to benefit from common spells that preserve life but that normally don't affect Undead: Cure Wounds, Healing Word, and Spare the Dying."
+      },
+      {
+        "name": "Turn Immunity",
+        "description": "You are immune to effects that turn undead.",
+        "granted": [
+          {
+            "type": "condition-immunity",
+            "options": ["Turned"]
+          }
+        ]
+      }
+    ],
+    "name": "Wraith"
+  },
+  {
+    "description": "Banshees are a form of ethereal undead created by a woman lost to intense grief. In her sorrow, she becomes envious of anyone happy. She eventually dies from the heartbreak, and becomes consumed by the envy. Most banshees don't remember the origin of their jealousy, but those who do are even more dangerous. A banshee's most famous attribute is her wail, a mournful keening that saps life from those around her.",
+    "asis": [
+      { "dex": 1 },
+      { "cha": 2 }
+    ],
+    "maturity": 0,
+    "lifespan": -1,
+    "height": [3, 6],
+    "weight": [10, 20],
+    "category": "Undead",
+    "type": "Undead (ethereal (banshee))",
+    "size": {
+      "id": "7DEAEC46-1FC9-41A3-A8F8-4D8A511C6B54",
+      "type": "text",
+      "options": ["Small", "Medium"],
+      "grants": "size"
+    },
+    "speed": 30,
+    "darkvision": 60,
+    "languages": [
+      "Common",
+      { "id": "B4DC3D00-3D47-4F12-BF72-704604DB10F1", "type": "language" }
+    ],
+    "traits": [
+      {
+        "name": "Mournful Wail",
+        "description": "You can use your action to start wailing for the next minute, which can be heard out to 120 feet. When you do so, each creature of your choice within 30 feet of you must make a Wisdom saving throw with a DC equal to 8 + your Charisma modifier + your proficiency bonus.</p><p>On a failed save, a creature takes 3d6 psychic damage and is incapacitated for the duration of the wail. Whenever it takes damage from any source, a target can repeat its saving throw. A creature can also repeat the saving throw at the end of each of its turns. If a creature's saving throw is successful, the effect ends on it.  A target that successfully saves is immune to your wail for the next 24 hours.</p><p>You can use this feature once, and regain the ability to do so when you finish a short or long rest.",
+        "uses": [
+          {
+            "id": "1D4B92C1-8B14-49ED-A0A4-0952F8E162D0",
+            "type": "fixed",
+            "amount": 1,
+            "reset": 1
+          }
+        ]
+      },
+      {
+        "name": "Ill Omen",
+        "description": "You know the Hex spell. Charisma is your spellcasting ability for it. You can cast Hex using this trait once without expending a spell slot, and you regain the ability to do so when you finish a long rest.",
+        "granted": [
+          {
+            "type": "spell",
+            "options": ["Hex"],
+            "ability": "cha"
+          }
+        ],
+        "uses": [
+          {
+            "id": "0638A9B2-924B-4A72-AA91-65D54132E77E",
+            "type": "fixed",
+            "amount": 1,
+            "reset": 2
+          }
+        ]
+      },
+      {
+        "name": "Spiritual Nature",
+        "description": "You have advantage on saving throws against being charmed or dominated. You are immune to poison damage, and you can't be diseased or poisoned. You don't require air, food, drink, or sleep. If your spirit dies, your essence is irrevocably dispersed, and you are unable to be resurrected.",
+        "granted": [
+          { "type": "damage-immunity", "options": ["Poison"] },
+          { "type": "condition-immunity", "options": ["Disease", "Poisoned"] },
+          { "type": "condition-advantage", "options": ["Charmed", "Dominated"] }
+        ]
+      },
+      {
+        "name": "Soulbound",
+        "description": "Your strange nature allows you to benefit from common spells that preserve life but that normally don't affect Undead: Cure Wounds, Healing Word, and Spare the Dying."
+      },
+      {
+        "name": "Turn Immunity",
+        "description": "You are immune to effects that turn undead.",
+        "granted": [
+          {
+            "type": "condition-immunity",
+            "options": ["Turned"]
+          }
+        ]
+      }
+    ],
+    "name": "Banshee"
+  },
+  {
     "description": "Long after their remains have turned to dust, the spirit of an individual can linger still. There are as many reasons for a ghost to haunt the world as there are folk in it. Ghosts are forcibly tied to the material plane by deep magic and are only able to move on when their unfinished business is concluded. Most ghosts awaken confused, and must discover what it is that holds their attachment to the world of the living, as if discovering a final piece of themselves that they must confront before entering the next phase of their existence.",
     "asis": [
       { "wis": 2 },
@@ -11520,12 +11830,12 @@
     "lifespan": 60,
     "height": [5, 6],
     "weight": [120, 150],
-    "category": "Uncommon",
-    "type": "Humanoid (khenra)",
+    "category": "Extraplanar",
+    "type": "Elemental (earth (dust))",
     "size": 0,
     "speed": 35,
     "darkvision": 60,
-    "languages": ["Common", "Khenra"],
+    "languages": ["Common", "Terran"],
     "traits": [
       {
         "name": "Khenra Twin",
@@ -13244,6 +13554,17 @@
                 "type": "r",
                 "name": "All-Seeing Eye",
                 "description": "When you make an Intelligence (Investigation) check to discern whether something within 30 feet of you is an illusion, you can choose to automatically succeed on the check."
+              }
+            ]
+          },
+          {
+            "name": "Nomadic Shepherd",
+            "description": "You have proficiency in the Animal Handling skill.",
+            "granted": [
+              {
+                "type": "skill",
+                "options": ["Animal Handling"],
+                "level": 1
               }
             ]
           },

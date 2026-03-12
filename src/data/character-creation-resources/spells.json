@@ -4670,6 +4670,21 @@
     "ritual": 0
   },
   {
+    "name": "Conquerer's Mantle",
+    "school": "Necromancy",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": "V",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "Dark fire radiates from you in an aura with a 30-foot radius, awakening boldness in friendly creatures. Until the spell ends, the aura moves with you, centered on you. While in the aura, each non-hostile creature in the aura (including you) deals an extra 1d4 necrotic damage when it hits with a weapon attack."
+    ],
+    "lists": ["Occult", "Melodic", "Elemental"],
+    "element": "Shadow",
+    "ritual": 0
+  },
+  {
     "name": "Cure Wounds",
     "school": "Restoration",
     "level": 1,
@@ -4693,6 +4708,98 @@
       }
     ],
     "upcastDice": 1
+  },
+  {
+    "name": "Forced Fruition",
+    "school": "Restoration",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "V, S, M (a cracked peach pit)",
+    "duration": "Instantaneous",
+    "description": [
+      "You touch a creature and wrest its vitality, forcing it to rapidly heal itself. The target takes 2d10 necrotic damage, then must make a Constitution saving throw. On a failure, the creature regains 8d10 hit points. The target can choose to fail this saving throw. on a success, the creature regains 4d10 hit points. A creature that has more than half of its maximum hit points has advantage on this saving throw."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 4th level or higher, the necrotic damage increases by 1d10 for each slot level above 3rd."
+    ],
+    "lists": ["Divine", "Primal", "Occult", "Invention"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "id": "FDC3DFDB-551B-4C45-A562-E3C150FB964E",
+        "dice": 2,
+        "die": 10,
+        "type": "necrotic"
+      }
+    ],
+    "healing": [
+      {
+        "dice": 8,
+        "die": 10
+      }
+    ],
+    "upcastDice": 1,
+    "upcastDiceIds": ["FDC3DFDB-551B-4C45-A562-E3C150FB964E"]
+  },
+  {
+    "name": "Pollen Swarm",
+    "school": "Conjuration",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "60 feet (30-foot sphere)",
+    "components": "V, S, M (a piece of honeycomb)",
+    "duration": "Concentration, up to 10 minutes",
+    "description": [
+      "A restless golden haze fills the air in a 30-foot radius sphere centered on a point within range, lightly obscuring the area for 1 minute or until dispersed by a strong wind.",
+      "Whenever a creature ends its turn within the area, begins to speak, or begins to cast a spell that requires verbal components, you can use your reaction to force it to make a Constitution saving throw.",
+      "On a failed save, the target takes 8d8 poison damage and begins choking until the start of its next turn, or half as much on a success. If the target was casting a spell, the spell fails and any resources expended in its casting are wasted.",
+      "If an exposed flame enters the area, each creature within the area takes 4d6 fire damage and the spell ends."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 5th level or higher, you can activate this spell freely, without needing to use your reaction."
+    ],
+    "lists": ["Divine", "Primal", "Elemental"],
+    "element": "Wood",
+    "ritual": 0,
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 8,
+        "die": 8,
+        "type": "poison"
+      }
+    ]
+  },
+  {
+    "name": "Sprout Spearshoot",
+    "school": "Transmutation",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a sliver of bamboo)",
+    "duration": "Instantaneous",
+    "description": [
+      "You call forth a spear of bamboo to burst from an area of unworked earth at a point you can see within range, forcing a creature within 5 feet of it to make a Dexterity saving throw, taking 10d6 piercing damage on a failed save.",
+      "A creature that fails its saving throw by 5 or more is additionally knocked prone and begins bleeding (1d6)."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 6th level or higher, the damage increases by 2d6 for each slot level above 5th."
+    ],
+    "lists": ["Divine", "Primal"],
+    "ritual": 0,
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 10,
+        "die": 6,
+        "type": "piercing"
+      }
+    ]
   },
   {
     "name": "Cursed With Undeath",
@@ -5666,8 +5773,81 @@
     "description": [
       "Your prayer empowers you with divine radiance. Until the spell ends, your weapon attacks deal an extra 1d4 radiant damage on a hit."
     ],
+    "damage": [
+      {
+        "dice": 1,
+        "die": 4,
+        "type": "radiant"
+      }
+    ],
     "lists": ["Divine", "Elemental"],
     "element": "Light",
+    "ritual": 0
+  },
+  {
+    "name": "Shining Vow",
+    "school": "Evocation",
+    "level": 1,
+    "castingTime": "1 bonus action",
+    "range": "Self",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 round",
+    "description": [
+      "You become wreathed in holy light. Until the spell ends, whenever you deal damage, you deal an extra 1d8 radiant damage."
+    ],
+    "damage": [
+      {
+        "dice": 1,
+        "die": 8,
+        "type": "radiant"
+      }
+    ],
+    "lists": ["Divine", "Elemental"],
+    "element": "Light",
+    "ritual": 0
+  },
+  {
+    "name": "Profane Favor",
+    "school": "Necromancy",
+    "level": 1,
+    "castingTime": "1 bonus action",
+    "range": "Self",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "Your prayer empowers you with corrupted malice. Until the spell ends, your weapon attacks deal an extra 1d4 necrotic damage on a hit."
+    ],
+    "damage": [
+      {
+        "dice": 1,
+        "die": 4,
+        "type": "necrotic"
+      }
+    ],
+    "lists": ["Occult", "Elemental"],
+    "element": "Shadow",
+    "ritual": 0
+  },
+  {
+    "name": "Reaping Vow",
+    "school": "Necromancy",
+    "level": 1,
+    "castingTime": "1 bonus action",
+    "range": "Self",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 round",
+    "description": [
+      "You become wreathed in necromantic energy. Until the spell ends, whenever you deal damage, you deal an extra 1d8 necrotic damage."
+    ],
+    "damage": [
+      {
+        "dice": 1,
+        "die": 8,
+        "type": "radiant"
+      }
+    ],
+    "lists": ["Occult", "Elemental"],
+    "element": "Shadow",
     "ritual": 0
   },
   {
@@ -10240,6 +10420,35 @@
     "upcastDice": 1
   },
   {
+    "name": "Forgeflame Burst",
+    "school": "Transmutation",
+    "level": 7,
+    "castingTime": "1 action",
+    "range": "Self (20-foot radius)",
+    "components": "V, S, M (a quartz crucible worth at least 250 gp)",
+    "duration": "Instantaneous",
+    "description": [
+      "You send a blast of intense heat out around you in a 20-foot radius. Manufactured metal objects within range briefly begin glowing white-hot. Any creature in physical contact with such an object takes 8d6 fire damage when you cast the spell.",
+      "If a creature is holding or wearing such an object and takes the damage from it, the creature must succeed on a Constitution saving throw or drop the object if it can.",
+      "If an object targeted with this spell is a nonmagical weapon or suit of armor, it melts into slag and is destroyed."
+    ],
+    "lists": [
+      "Arcane",
+      "Occult",
+      "Invention"
+    ],
+    "ritual": 0,
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 8,
+        "die": 6,
+        "type": "fire"
+      }
+    ]
+  },
+  {
     "name": "Heaven Burst",
     "school": "Evocation",
     "level": 0,
@@ -11550,6 +11759,97 @@
     "upcastDice": 1
   },
   {
+    "name": "Hornetbolt",
+    "school": "Conjuration",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "300 feet",
+    "components": "V, S, M (a few grains of sugar, some kernels of grain, and a smear of fat)",
+    "duration": "Concentration, up to 10 minutes",
+    "description": [
+      "You conjure a stinging hornet and launch it at a creature within range. Make a ranged spell attack. On a hit, the target takes 4d6 poison damage. On a miss, the target takes half as much damage. On a critical hit, the target is additionally poisoned until the end of your next turn."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd."
+    ],
+    "lists": ["Arcane", "Divine", "Occult", "Primal"],
+    "ritual": 0,
+    "type": "attack",
+    "damage": [
+      {
+        "dice": 4,
+        "die": 6,
+        "type": "poison"
+      }
+    ],
+    "upcastDice": 1
+  },
+  {
+    "name": "Hive Sign",
+    "school": "Conjuration",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "An angry swarm of flies fills the air around a creature of your choice within 60 feet. At the start of the target's next turn, it and creatures within 15 feet of it must make a Constitution saving throw, taking 2d12 poison damage on a failed save, or half as much on a success."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d12 for each slot level above 2nd."
+    ],
+    "lists": ["Arcane", "Divine", "Occult", "Primal"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 2,
+        "die": 12,
+        "type": "poison"
+      }
+    ],
+    "upcastDice": 1
+  },
+  {
+    "name": "Mucksong",
+    "school": "Transmutation",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "Self (20-foot radius)",
+    "components": "V, S, M (a toad)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You sing a croaking song. The ground within 20 feet of you begins to churn and burble, changing into sticky mud. Creatures of your choice treat the area as difficult terrain. All other creatures add 1d4 to any attack roll or saving throw they make while in the area."
+    ],
+    "lists": ["Primal", "Elemental", "Melodic"],
+    "element": "Earth",
+    "ritual": 0
+  },
+  {
+    "name": "Bogsting Bulb",
+    "school": "Conjuration",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "60 feet (10-foot sphere)",
+    "components": "V, S, M (a cattail)",
+    "duration": "Up to 1 minute",
+    "description": [
+      "A bulbous plant sprouts in an unoccupied space you can see within range, venting acrid fumes in a 10-foot radius sphere. For 1 minute, or until the plant is destroyed, each creature that enters the area for the first time on a turn or starts its turn there takes 2d10 acid damage.",
+      "The plant has 10 AC, 20 hit points, and vulnerability to fire damage."
+    ],
+    "lists": ["Primal", "Elemental"],
+    "element": "Wood",
+    "ritual": 0,
+    "damage": [
+      {
+        "dice": 2,
+        "die": 10,
+        "type": "acid"
+      }
+    ]
+  },
+  {
     "name": "Intellect Fortress",
     "school": "Abjuration",
     "level": 3,
@@ -12678,6 +12978,34 @@
     "upcastMultiplier": 1
   },
   {
+    "name": "Dead Man's Volley",
+    "school": "Evocation",
+    "level": 1,
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S, M (a tennis racket)",
+    "duration": "Instantaneous",
+    "description": [
+      "You create a ball of energy and fling it at a creature within range. The target must make a DC 10 Dexterity saving throw, smacking the ball back in your direction on a success. You can then make a DC 13 Dexterity saving throw to return the ball. Both of you continue making saving throws, with the DC increasing by 3 each saving throw, until one of you fails. The creature that failed takes 2d6 force damage per succeeded saving throw (minimum of 2d6, maximum of 8d6)"
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 2nd level or higher, the damage per failed saving throw increases by 1d6 for each slot level above 1st, and the maximum damage increases by 2d6 for each slot level above 1st."
+    ],
+    "lists": ["Arcane", "Elemental", "Melodic", "Invention", "Occult"],
+    "element": "Aether",
+    "ritual": 0,
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 2,
+        "die": 6,
+        "type": "force"
+      }
+    ],
+    "upcastDice": 1
+  },
+  {
     "name": "Magic Mouth",
     "school": "Illusion",
     "level": 2,
@@ -12858,6 +13186,174 @@
         "type": "necrotic"
       }
     ]
+  },
+  {
+    "name": "Unveiling Ray",
+    "school": "Divination",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You fire a ray of wondrous light at a creature within range. Make a ranged spell attack. On a hit, the target takes 6d6 radiant damage and each spell of 2nd level or lower affecting the target ends.",
+      "This attack does not have disadvantage against an invisible creature, and ignores bonuses to Armor Class granted by spells and other magical effects."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 4th level or higher, the maximum level of spell ended on the target increases to be one less than the level of spell slot you used to cast this spell."
+    ],
+    "lists": ["Divine", "Melodic", "Psionic"],
+    "ritual": 0,
+    "type": "attack",
+    "damage": [
+      {
+        "dice": 6,
+        "die": 6,
+        "type": "radiant"
+      }
+    ]
+  },
+  {
+    "name": "Burden of Years",
+    "school": "Transmutation",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S, M (a pocketwatch)",
+    "duration": "Instantaneous",
+    "description": [
+      "You force a creature to rapidly feel the pain of aging. One living creature within range must make a Constitution saving throw. On a failed save, the target suffers one level of exhaustion and appears to age 10 percent of its natural lifespan while it has any levels of exhaustion.",
+      "A creature that dies from exhaustion as a result of this spell ages into dust and can only be revived by the True Resurrection spell or similar magic."
+    ],
+    "lists": ["Occult", "Primal"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con"
+  },
+  {
+    "name": "Twine Fates",
+    "school": "Necromancy",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a black cord and white cord, intertwined with one another)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You intertwine your fate with that of a creature within range. The target must make a Charisma saving throw. On a failed save, the target is cursed.",
+      "While cursed in this way, whenever you takes damage, you instead take half as much damage, and the cursed creature takes the other half as psychic damage."
+    ],
+    "lists": [],
+    "ritual": 0,
+    "type": "save",
+    "curse": true,
+    "save": "cha",
+    "unique": "This spell is known only by gynosphinxes and those they choose to share it with."
+  },
+  {
+    "name": "Riddle of Gate and Key",
+    "school": "Abjuration",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "Self (20-foot radius)",
+    "components": "V, S, M (a lock and key)",
+    "duration": "Concentration, up to 1 hour",
+    "description": [
+      "You raise an inivisible wall of force, enclosing the area within 20 feet of you. When a creature attempts to pass through the wall or target a creature on the other side of the wall for the first time on a turn, you can force it to make an Intelligence saving throw. On a failed save, the creature's attempt fails and it is stunned until the start of its next turn. On a success, the creature is immune to this effect for 1 minute, and all other creautres gain advantage on this saving throw."
+    ],
+    "lists": [],
+    "ritual": 0,
+    "type": "save",
+    "save": "int",
+    "unique": "This spell is known only by gynosphinxes and those they choose to share it with."
+  },
+  {
+    "name": "Riddle of Wrath Returned",
+    "school": "Evocation",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "60 feet (3 targets)",
+    "components": "V, S",
+    "duration": "1 round",
+    "description": [
+      "You trap up to three creatures within range in a trap of their own wrath. The targets must make a Charisma saving throw. On a failed save, until the end of a creature's next turn, whenever it deals damage it takes an equal amount of damage."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 6th level or higher, it can target one additional creature for each level above 6th."
+    ],
+    "upcastRange": {
+      "6": "60 feet (4 targets)",
+      "7": "60 feet (5 targets)",
+      "8": "60 feet (6 targets)",
+      "9": "60 feet (7 targets)"
+    },
+    "lists": [],
+    "ritual": 0,
+    "type": "save",
+    "save": "cha",
+    "unique": "This spell is known only by androsphinxes and those they choose to share it with."
+  },
+  {
+    "name": "Riddle of Time Eclipsed",
+    "school": "Divination",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "Self (60-foot radius)",
+    "components": "V, S",
+    "duration": "Until triggered",
+    "description": [
+      "You erode a possible future. Whenever a creature starts its turn within 60 feet of you, you can roll a d4. On a roll of 1, the creature's turn ends and this spell ends."
+    ],
+    "lists": [],
+    "ritual": 0,
+    "unique": "This spell is known only by androsphinxes and those they choose to share it with."
+  },
+  {
+    "name": "Splice Timeline",
+    "school": "Conjuration",
+    "level": 6,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a gardener's grafter)",
+    "duration": "Instantaneous",
+    "description": [
+      "You reach across time and space to pull an alternate version of a creature within range into the nearest unoccupied space. The copy immediately takes a turn under your control, then disappears. The copy can't cast spells of 6th level or higher, or use exploits of 4th degree or higher.",
+      "An unwilling target can make a Charisma saving throw to resist this effect. On a success, the copy still appears, but takes no action. If the target succeeds by 5 or more, the copy's actions are controlled by it instead of you."
+    ],
+    "lists": ["Psionic", "Arcane", "Divine", "Melodic"],
+    "ritual": 0,
+    "type": "save",
+    "save": "cha"
+  },
+  {
+    "name": "Future-Sieve",
+    "school": "Divination",
+    "level": 7,
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": "V, S, M (a golden mesh worth at least 500 gp)",
+    "duration": "1 minute",
+    "description": [
+      "You sift through possible futures and subtly guide the present towards your chosen possibility. Roll 3d20 and mark the result of each. For 1 minute, whenever a creature within 30 feet rolls one of those numbers on a d20, you can change the result to either a 20 or a 1. Each result can only be used once in this way. If you cast this spell again, you lose any unused rolls."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 8th level or higher, you roll one additional d20 per level of spell slot above 7th."
+    ],
+    "lists": ["Arcane", "Psionic"],
+    "ritual": 0
+  },
+  {
+    "name": "Possibility Vault",
+    "school": "Divination",
+    "level": 2,
+    "castingTime": "1 reaction, which you take when a creature within range rolls with advantage or disadvantage",
+    "range": "30 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You capture some of the possibility in the triggering roll. Make note of the target's discarded d20 roll. The next time that creature rolls an ability check, attack roll, or saving throw, it uses the discarded result instead of rolling, and the spell ends."
+    ],
+    "lists": ["Arcane", "Psionic", "Invention"],
+    "ritual": 0
   },
   {
     "name": "Manifest Mimic",
@@ -15219,6 +15715,26 @@
     "ritual": 0
   },
   {
+    "name": "Catcraft",
+    "school": "Conjuration",
+    "level": 0,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a pinch of dried catnip)",
+    "duration": "10 minutes",
+    "description": [
+      "You conjure a harmless, semi-corporeal feline spirit in an unoccupied space within range. The cat can move through creatures and objects freely, and cannot be targeted with spells or other harmful effects. It is opalescent with blue, white, orange, or calico patters.",
+      "You can name the cat. It responds to its name each time it is summoned. The cat is friendly to you and your companions, and follows you. You can use a bonus action to command the cat to move to a spot within 60 feet or change its mood.",
+      "<strong>Biscuit Maker.</strong> The cat sits on a willing prone creature and kneads them with its paws. The creature feels pleasantly warm and calm, drying them instantly if they are wet or warming them if they are cold.",
+      "<strong>Hunter.</strong> The cat crouches and tracks small vermin. It will meow loudly if a Tiny beast moves to a space within 10 feet of it or starts its turn there.",
+      "<strong>Judge.</strong> The cat stares at a creature that it can see within 30 feet. The target feels a deep, unexplainable sense of guilt.",
+      "<strong>Loaf.</strong> The cat curls up on a Tiny object or in a space. If it sits on an object, the object cannot be picked up or used by a creature unless they use an object interaction to move the cat.",
+      "<strong>Zoomies.</strong> The cat darts erratically, moving up to 60 feet. It can knock over one unsecured Tiny object during the move."
+    ],
+    "lists": ["Arcane", "Occult", "Primal", "Melodic"],
+    "ritual": 0
+  },
+  {
     "name": "Pride of the Wild",
     "school": "Transposition",
     "level": 5,
@@ -15231,6 +15747,32 @@
     ],
     "lists": ["Primal"],
     "ritual": 1
+  },
+  {
+    "name": "Suspend Tempo",
+    "school": "Transposition",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You alter the tempo of battle, allowing one ally within range to reroll its initiative and use the new result."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 3rd level or higher, you can target an additional creature for each slot level above 2nd."
+    ],
+    "upcastRange": {
+      "3": "60 feet (2 targets)",
+      "4": "60 feet (3 targets)",
+      "5": "60 feet (4 targets)",
+      "6": "60 feet (5 targets)",
+      "7": "60 feet (6 targets)",
+      "8": "60 feet (7 targets)",
+      "9": "60 feet (8 targets)"
+    },
+    "lists": ["Melodic"],
+    "ritual": 0
   },
   {
     "name": "Primal Savagery",
@@ -23682,6 +24224,37 @@
         "type": "acid"
       }
     ]
+  },
+  {
+    "name": "Cyst Swarm",
+    "school": "Evocation",
+    "level": 8,
+    "castingTime": "1 action",
+    "range": "300 feet (10-foot sphere)",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You cause four bubbles of boiling acid to swell and burst at points within 300 feet of you, showering the area within a 10-foot sphere around each of them with acid. Each creature in one or more of the affected areas must make a Constitution saving throw. On a failed save, a creature takes 3d6 + 20 acid damage plus 3d6 + 20 fire damage, or half as much on a success.",
+      "A creature that is in two or more of these areas subtracts 1d6 from its saving throw for each additional area it is in beyond one."
+    ],
+    "lists": [],
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 3,
+        "die": 6,
+        "amount": 20,
+        "type": "acid"
+      },
+      {
+        "dice": 3,
+        "die": 6,
+        "amount": 20,
+        "type": "fire"
+      }
+    ],
+    "unique": "This spell was developed by the demon lord Juiblex."
   },
   {
     "name": "Tailored Bane",

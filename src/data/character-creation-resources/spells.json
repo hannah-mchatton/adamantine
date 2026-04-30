@@ -656,7 +656,7 @@
     "level": 1,
     "castingTime": "1 action",
     "range": "Touch",
-    "components": "V, S, M (a humanoid skull)",
+    "components": "V, S, M (a humanoid skull, which the spell consumes)",
     "duration": "8 hours",
     "description": [
       "You infuse a skull with dark energy, granting it the foul mimicry of life. The skull is an object that has AC 5 and 1 Hit Point. When you cast this spell, you can speak a phrase of up to 10 words, which are memorized by the skull. Whenever a creature other than yourself or of your choosing enters an area within 15 feet of skull for the first time, the skull speaks the phrase exactly as it was taught.",
@@ -6848,6 +6848,310 @@
     "element": "Wood",
     "type": "save",
     "save": "str"
+  },
+  {
+    "name": "Herbalmancy",
+    "school": "Transmutation",
+    "level": 0,
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "V, S, M (a flower petal)",
+    "duration": "Instantaneous",
+    "description": [
+      "You tap into the natural energy within a plant that you touch, creating one of the following effects:",
+      "<ul><li>The plants limbs, leaves, and roots gently rearrange themselves to take positions that you choose.</li><li>You learn which parts of the plant are edible or poisonous.</li><li>You gain a fleeting vision of the last creature that touched the plant.</li><li>You learn what beasts have passed within 10 feet of the plant within the last 7 days.</li><li>You learn the direction to the nearest source of fresh water.</li><li>You harmlessly extract a pint of sap or syrup from the plant if it is Medium or larger. After you use this effect on a plant, you can't use it again on the same plant until 24 hours have passed.</li></ul>"
+    ],
+    "lists": ["Primal"],
+    "ritual": 0
+  },
+  {
+    "name": "Pollen Burst",
+    "school": "Conjuration",
+    "level": 1,
+    "castingTime": "1 action",
+    "range": "Self (15-foot cone)",
+    "components": "V, S, M (a dried daisy)",
+    "duration": "Instantaneous",
+    "description": [
+      "A thick cloud of pollen pours out from you in a 15-foot cone. Creatures in the area must make a Constitution saving throw. On a failed save, a creature is poisoned until the end of its next turn, and must use its bonus action on its next turn to sneeze."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 2nd level or higher, the spell's area of effect increases by 5 feet for each slot level above 1st."
+    ],
+    "type": "save",
+    "save": "con",
+    "upcastRange": {
+      "2": "Self (20-foot cone)",
+      "3": "Self (25-foot cone)",
+      "4": "Self (30-foot cone)",
+      "5": "Self (35-foot cone)",
+      "6": "Self (40-foot cone)",
+      "7": "Self (45-foot cone)",
+      "8": "Self (50-foot cone)",
+      "9": "Self (55-foot cone)"
+    },
+    "lists": ["Primal", "Elemental"],
+    "element": "Wood",
+    "ritual": 0
+  },
+  {
+    "name": "Sap Bomb",
+    "school": "Conjuration",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "60 feet (10-foot sphere)",
+    "components": "V, S, M (a pinecone)",
+    "duration": "1 minute",
+    "description": [
+      "You throw a glob of sticky sap, which explodes at a point within range that you can see, splattering in a 10-foot radius sphere. Creatures within the area must make a Strength saving throw. On a failed save, a creature's speed is halved for 1 minute.",
+      "An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Additionally, an affected creature or a creature within 5 feet of them can use an action to wash the sap off with 1 gallon of water, ending the effect."
+    ],
+    "type": "save",
+    "save": "str",
+    "lists": ["Primal", "Elemental"],
+    "element": "Wood",
+    "ritual": 0
+  },
+  {
+    "name": "Draining Seed",
+    "school": "Necromancy",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "V, S, M (a sunflower seed)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You press a seed into a creature you can touch. The target must make a Constitution saving throw. On a failed save, the seed embeds itself in their body.",
+      "At the start of each of the target's turns, it takes 2d4 necrotic damage, and you gain an equal number of temporary hit points. The target can repeat its saving throw at the end of each of its turns, ending the effect on a success."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d4 for each slot level above 2nd."
+    ],
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 2,
+        "die": 4,
+        "type": "necrotic"
+      }
+    ],
+    "upcastDice": 1,
+    "lists": ["Primal", "Elemental", "Occult"],
+    "element": "Wood",
+    "ritual": 0
+  },
+  {
+    "name": "Mycelium Madness",
+    "school": "Enchantment",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "60 feet (20-foot sphere)",
+    "components": "V, S, M (a dried psychedelic mushroom)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "Mushrooms sprout from the ground and pour spores into the air in a 20-foot radius sphere centered on a point you can see within range. Creatures in the area must make a Wisdom saving throw. On a failed save, a creature becomes befuddled by the psychedelic spores for 1 minute.",
+      "While befuddled, a creature must make a Wisdom saving throw whenever it attempts to make an attack or target a creature with a spell. On a failed save, you can choose a different valid target for the attack or spell.",
+      "A creature that is immune to being charmed or poisoned is immune to this effect."
+    ],
+    "type": "save",
+    "save": "wis",
+    "lists": ["Primal", "Elemental", "Occult", "Melodic"],
+    "element": "Wood",
+    "ritual": 0
+  },
+  {
+    "name": "Hedge Wall",
+    "school": "Conjuration",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a twig)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You grow a collection of dense shrubbery on a solid surface within range. You can place up to six hedges, each taking up a 10-foot cube. Each hedge must share at least a 5-foot edge with another hedge, and all of the hedges must connect with each other to form one continuous hedge. The hedges are too dense to see or move through, and last until destroyed.",
+      "When the hedge appears, each creature in its area is moved to the nearest unoccupied space. Each section of hedge has an AC of 13, 40 hit points, immunity to psychic damage, and vulnerability to fire damage. As a bonus action while the spell lasts, you can restore up to 30 hit points to a section of the hedge.",
+      "As an action while the spell lasts, you can grow a new section of the hedge in a 10-foot cube, following the same placement rules."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 4th level or higher, you can creature an additional hedge upon casting the spell for each slot level above 3rd."
+    ],
+    "lists": ["Primal", "Elemental", "Invention"],
+    "element": "Wood",
+    "ritual": 0
+  },
+  {
+    "name": "Sapling Lance",
+    "school": "Conjuration",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a tree branch)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You grow a sapling from the earth and hurl it at a creature you can see within range. Make a ranged spell attack. On a hit, the target takes 4d10 piercing damage, and if it is Medium or larger, the sapling becomes embedded in it. A creature's speed is reduced by 15 feet for each sapling it has embedded in it. The sapling can be removed as an action, or destroyed (AC 14, 20 hit points, immunity to psychic damage, vulnerability to fire damage).",
+      "While the spell lasts, you can use a bonus action to animate the sapling, causing it to deal 2d10 piercing damage to the creature."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 4th level or higher, the damage (both initial and later) increases by 1d10 for each slot level above 3rd."
+    ],
+    "type": "attack",
+    "damage": [
+      {
+        "dice": 4,
+        "die": 10,
+        "type": "piercing"
+      }
+    ],
+    "upcastDice": 1,
+    "lists": ["Primal", "Elemental"],
+    "element": "Wood",
+    "ritual": 0
+  },
+  {
+    "name": "Thorn Storm",
+    "school": "Conjuration",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "Self (30-foot cone)",
+    "components": "V, S, M (a handful of pine needles, rose thorns, cactus spines, or similar plant parts)",
+    "duration": "Instantaneous",
+    "description": [
+      "A wave of thorns blasts outward from you in a 30-foot cone. Creatures in the area must make a Dexterity saving throw. On a failed save, a creature takes 6d6 piercing damage, and thorns become embedded all over their body. On a success, creatures take half as much damage.",
+      "The first time a creature with thorns embedded in them attempts to move on their turn, they take 2d6 piercing damage. A creature can make a Constitution saving throw at the end of each of their turns, ending the effect on a success. The thorns naturally fall out after 1 minute."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 5th level or higher, the damage (both initial and later) increases by 1d6 for each slot level above 4th."
+    ],
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 6,
+        "die": 6,
+        "type": "piercing"
+      }
+    ],
+    "upcastDice": 1,
+    "lists": ["Primal", "Elemental"],
+    "element": "Wood",
+    "ritual": 0
+  },
+  {
+    "name": "Grasping Roots",
+    "school": "Conjuration",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "60 feet (20-foot cube)",
+    "components": "V, S, M (a knot of tree roots)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "Roots burst up from the ground in a 20-foot cube centered on a point you can see within range. The area is difficult terrain. While the spell lasts, when a creature starts its turn in the area or enters it for the first time on a turn, you can force it to make a Strength saving throw. On a failed save, the creature takes 4d8 bludgeoning damage, is knocked prone, and is restrained by the roots.",
+      "While the spell lasts, you can use an action on your turn to attempt to drag a creature restrained by the roots underground. The target must make a Strength saving throw. On a failed save, a creature takes 4d6 bludgeoning damage and is dragged 5 feet underground. While underground, a creature has total cover from outside effects and is blinded and choking.",
+      "A restrained creature or another creature that can reach them can use their action to make a Strength (Athletics) check against your spell save DC, digging out 5 feet on a success, or escaping if it is on the surface already."
+    ],
+    "type": "save",
+    "save": "str",
+    "damage": [
+      {
+        "dice": 4,
+        "die": 8,
+        "type": "bludgeoning"
+      }
+    ],
+    "lists": ["Primal"],
+    "ritual": 0
+  },
+  {
+    "name": "Grass Tide",
+    "school": "Conjuration",
+    "level": 6,
+    "castingTime": "1 action",
+    "range": "90 feet (30-foot radius)",
+    "components": "V, S, M (an enchanted grass seed worth at least 50 gp, which the spell consumes)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You grow long, green grass on the ground in a 30-foot radius centered on a point you can see within range. When you cast this spell and as a bonus action on subsequent turns while the spell lasts, you can animate the grass to pull creatures of your choice, forcing them to make a Strength saving throw. On a failed save, a creature takes 4d6 slashing damage and is dragged up to 20 feet along the ground in a direction of your choice. All creatures must be dragged in the same direction."
+    ],
+    "type": "save",
+    "save": "str",
+    "damage": [
+      {
+        "dice": 4,
+        "die": 6,
+        "type": "slashing"
+      }
+    ],
+    "lists": ["Primal", "Divine"],
+    "ritual": 0
+  },
+  {
+    "name": "Arborist's Enchantment",
+    "school": "Conjuration",
+    "level": 8,
+    "castingTime": "1 minute",
+    "range": "Sight (1-mile radius)",
+    "components": "V, S, M (three enchanted tree seeds worth at least 1,000 gp each, which the spell consumes)",
+    "duration": "Instantaneous",
+    "description": [
+      "The power of renewal and growth flows from you and into an area of land within a radius of 1 mile centered on a point you can see. New trees rapidly take root and grow to their full maturity in the affected area. You determine what kind of trees appear and what their density and distribution is. Each tree you grow must be at least 10 feet away from other trees. Creatures that would be in a tree's area are harmlessly pushed to the nearest unoccupied space. Structures in the area take 3d10 bludgeoning damage for each tree that grows within them.",
+      "Once grown, the trees are nonmagical and require soil, sunlight, water, and air like any mundane tree to survive."
+    ],
+    "lists": ["Primal"],
+    "ritual": 1
+  },
+  {
+    "name": "Root Boulder",
+    "school": "Conjuration",
+    "level": 8,
+    "castingTime": "1 action",
+    "range": "60 feet (10-foot sphere)",
+    "components": "V, S, M (a handful of thorny roots)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You grow a 10-foot radius sphere of roots in an unoccupied space on the ground within range. When you cast this spell, and as a bonus action on subsequent turns while the spell lasts, you can roll the ball up to 30 feet along the ground, and can enter the space of other creatures with it.",
+      "When the ball enters a creature's space, it must make a Strength saving throw. On a failed save, the target takes 6d10 bludgeoning damage, and if it is Larger or smaller it is drawn into the ball, becoming restrained by it. On a success, it takes half as much damage and is moved to the nearest unoccupied space.",
+      "When a creature starts its turn inside the ball, it takes 4d10 bludgeoning damage. A restrained creature or another creature that can reach it can use an action to make a Strength (Athletics) check against your spell save DC, escaping and emerging prone in the nearest unoccupied space on a success."
+    ],
+    "type": "save",
+    "save": "str",
+    "damage": [
+      {
+        "dice": 6,
+        "die": 10,
+        "type": "bludgeoning"
+      }
+    ],
+    "lists": ["Primal"],
+    "ritual": 0
+  },
+  {
+    "name": "Herbification",
+    "school": "Transmutation",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": "V, S, M (an acorn)",
+    "duration": "Concentration, up to 1 hour",
+    "description": [
+      "You transform yourself into a Large or smaller nonmagical plant of your choice. Your speed becomes 0, you automatically fail Dexterity saving throws, and the only action you can take is to revert to your original form. Otherwise, your game statistics remain the same.",
+      "A creature within 5 feet of you can make an Intelligence (Nature) check against your spell save DC to discern whether you are a true plant or not."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a 3rd- or 4th-level spell slot, the duration increases to 8 hours. When you cast it using a 5th- or 6th-level spell slot, the duration increases to 24 hours. When you cast it using a spell slot of 7th level or higher, the spell lasts until dispelled. If you cast it using a spell slot of 5th level or higher, it no longer requires concentration."
+    ],
+    "upcastDuration": {
+      "3": "Concentration, up to 8 hours",
+      "4": "Concentration, up to 8 hours",
+      "5": "Up to 24 hours",
+      "6": "Up to 24 hours",
+      "7": "Until dispelled",
+      "8": "Until dispelled",
+      "9": "Until dispelled"
+    },
+    "lists": ["Primal", "Elemental", "Arcane", "Divine"],
+    "element": "Wood",
+    "ritual": 1
   },
   {
     "name": "Enthrall",
@@ -13202,7 +13506,8 @@
     "higherLevels": [
       "When you cast this spell using a spell slot of 4th level or higher, the maximum level of spell ended on the target increases to be one less than the level of spell slot you used to cast this spell."
     ],
-    "lists": ["Divine", "Melodic", "Psionic"],
+    "lists": ["Divine", "Melodic", "Psionic", "Elemental"],
+    "element": "Light",
     "ritual": 0,
     "type": "attack",
     "damage": [
@@ -13212,6 +13517,71 @@
         "type": "radiant"
       }
     ]
+  },
+  {
+    "name": "Quagmire Coil",
+    "school": "Conjuration",
+    "level": 2,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "1 round",
+    "description": [
+      "Tendrils of muck rise to grasp at a creature within 60 feet, forcing it to make a Strength or Dexterity saving throw (target's choice). On a failed save, the target takes 4d8 bludgeoning damage and is restrained until the end of your next turn. If the target fails its saving throw by 5 or more, it is additionally considered blinded and choking while it remains restrained."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd. The creatures must be within 30 feet of each other when you target them."
+    ],
+    "lists": ["Elemental", "Primal"],
+    "element": "Earth",
+    "ritual": 0,
+    "type": "save",
+    "save": ["str", "dex"],
+    "damage": [
+      {
+        "dice": 4,
+        "die": 8,
+        "type": "bludgeoning"
+      }
+    ],
+    "upcastRange": {
+      "3": "60 feet (2 targets)",
+      "4": "60 feet (3 targets)",
+      "5": "60 feet (4 targets)",
+      "6": "60 feet (5 targets)",
+      "7": "60 feet (6 targets)",
+      "8": "60 feet (7 targets)",
+      "9": "60 feet (8 targets)"
+    }
+  },
+  {
+    "name": "Ebonmire's Erosion",
+    "school": "Transmutation",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S, M (a clump of mud)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You hurl corrosive acid at a creature within range. The target must make a Dexterity saving throw. On a failed save, it takes 5d6 acid damage and its AC is reduced by 1 until the spell ends.",
+      "At the start of each of your turns while the spell lasts, the target's AC is reduced by a further 1."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd."
+    ],
+    "lists": ["Elemental", "Primal"],
+    "element": "Earth",
+    "ritual": 0,
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 5,
+        "die": 6,
+        "type": "acid"
+      }
+    ],
+    "upcastDice": 1
   },
   {
     "name": "Burden of Years",
@@ -14029,6 +14399,209 @@
     "upcastDice": 1
   },
   {
+    "name": "Shieldflare",
+    "school": "Evocation",
+    "level": 2,
+    "castingTime": "1 bonus action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You reform the magical wards of a creature with any number of temporary hit points within range into magical force and use it to lash out at another. The new target must be within 15 feet of the original target. The original target loses all of its temporary hit points, and the second target takes an equal amount of force damage, to a maximum of 20."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 3rd level or higher, the maximum damage increases by 20 for each spell slot level above 2nd."
+    ],
+    "lists": ["Arcane", "Occult", "Melodic", "Psionic", "Elemental"],
+    "element": "Aether",
+    "ritual": 0
+  },
+  {
+    "name": "Beacon of Shelter",
+    "school": "Abjuration",
+    "level": 2,
+    "castingTime": "1 bonus action",
+    "range": "Self (30-foot radius)",
+    "components": "V, S",
+    "duration": "1 round",
+    "description": [
+      "A protective glow spreads from you in a 30-foot radius, briefly staving off harm. Each creature of your choice within the area, other than you, gains a +2 bonus to its AC until the start of your next turn."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 3rd level or higher, radius of the spell increases by 10 feet for each spell slot level above 2nd."
+    ],
+    "lists": ["Melodic", "Divine", "Invention"],
+    "ritual": 0,
+    "upcastRange": {
+      "3": "Self (40-foot radius)",
+      "4": "Self (50-foot radius)",
+      "5": "Self (60-foot radius)",
+      "6": "Self (70-foot radius)",
+      "7": "Self (80-foot radius)",
+      "8": "Self (90-foot radius)",
+      "9": "Self (100-foot radius)"
+    }
+  },
+  {
+    "name": "Dilute",
+    "school": "Abjuration",
+    "level": 2,
+    "castingTime": "1 reaction, which you take when a creature within range casts a spell that deals damage",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You attempt to weaken the target's spell, forcing it to make a Constitution saving throw. On a failed save, the triggering spell deals half as much damage."
+    ],
+    "lists": ["Melodic", "Arcane", "Invention", "Psionic"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con"
+  },
+  {
+    "name": "Mirrorveil",
+    "school": "Abjuration",
+    "level": 2,
+    "castingTime": "1 reaction, which you take when you are missed with a spell attack roll",
+    "range": "Self",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You reflect a magical strike, forcing the attacker to make a new roll for the triggering attack, targeting itself."
+    ],
+    "lists": ["Melodic", "Arcane", "Invention", "Psionic"],
+    "ritual": 0
+  },
+  {
+    "name": "Adamant Stand",
+    "school": "Abjuration",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "V, S, M (a diamond worth at least 300 gp)",
+    "duration": "Concentration, up to 1 round",
+    "description": [
+      "You bolster a creature within range against harm. Until the start of your next turn, the target has resistance to all damage and regains its reaction at the start of each turn."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd."
+    ],
+    "lists": ["Melodic"],
+    "ritual": 0,
+    "upcastRange": {
+      "4": "30 feet (2 targets)",
+      "5": "30 feet (3 targets)",
+      "6": "30 feet (4 targets)",
+      "7": "30 feet (5 targets)",
+      "8": "30 feet (6 targets)",
+      "9": "30 feet (7 targets)"
+    }
+  },
+  {
+    "name": "Fleeting Shield",
+    "school": "Abjuration",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You shroud a creature within range in a bubble of protection, granting it 2d10 + 20 temporary hit points. If the creature would deal any damage while it has any of these temporary hit points, it deals no damage and instead loses all remaining temporary hit points."
+    ],
+    "lists": ["Melodic", "Divine"],
+    "ritual": 0,
+    "healing": [
+      {
+        "dice": 2,
+        "die": 10,
+        "amount": 20,
+        "temporary": true
+      }
+    ]
+  },
+  {
+    "name": "Glyph of Revelation",
+    "school": "Abjuration",
+    "level": 3,
+    "castingTime": "1 bonus action",
+    "range": "5 feet (30-foot radius)",
+    "components": "V, S",
+    "duration": "1 minute",
+    "description": [
+      "You trace a glyph in the air within 5 feet of you, where it hangs for the duration. Illusions within 30 feet of the glyph become translucent, and creatures within the area can't benefit from being invisible. Creatures in the area have advantage on saving throws against illusions, and resistance to damage dealt by them."
+    ],
+    "lists": ["Melodic", "Divine"],
+    "ritual": 0
+  },
+  {
+    "name": "Planar Refuge",
+    "school": "Abjuration",
+    "level": 3,
+    "castingTime": "1 bonus action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 round",
+    "description": [
+      "You banish a willing creature within range to a harmless demiplane until the start of that creature's next turn. When the spell ends, the target reappears in an occupied space of its choice within 30 feet of the space it disappeared from."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd."
+    ],
+    "lists": ["Melodic", "Divine", "Arcane", "Occult"],
+    "ritual": 0,
+    "upcastRange": {
+      "4": "30 feet (2 targets)",
+      "5": "30 feet (3 targets)",
+      "6": "30 feet (4 targets)",
+      "7": "30 feet (5 targets)",
+      "8": "30 feet (6 targets)",
+      "9": "30 feet (7 targets)"
+    }
+  },
+  {
+    "name": "Snip Bindings",
+    "school": "Transmutation",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "S, M (a pair of silver shears worth at least 2 gp)",
+    "duration": "Instantaneous",
+    "description": [
+      "You snip carefully away at the threads of magic binding a magical effect or creation into being, altering its effects in one of the following ways:",
+      "<ul><li>Whenever the effect or creation deals damage, it deals two fewer dice of damage (minimum of 0)</li><li>If the effect has a radius or range, its radius or range is decreased by 10 feet (minimum of 0)</li><li>If the effect or creation can move or be moved, the distance it can move or be moved is decresed by 10 feet (minimum of 0)</li><li>If the effect or creation has a duration, its duration is reduced by half</li></ul>"
+    ],
+    "lists": ["Invention", "Psionic", "Melodic"],
+    "ritual": 0
+  },
+  {
+    "name": "Thaumic Trammel",
+    "school": "Evocation",
+    "level": 4,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You manifest a raw weight of magical force, forcing a creature within range to make a Constitution saving throw. On a failed save, the target takes 1d10 + 10 force damage for each spell that is currently affecting it or it is concentrating on, including this one, or half as much damage on a success.",
+      "If the target takes 30 or more damage, it is additionally knocked prone."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 5th level or higher, the damage per spell increases by 1d10 for each slot level above 4th."
+    ],
+    "lists": ["Arcane", "Melodic", "Invention"],
+    "ritual": 0,
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 1,
+        "die": 10,
+        "type": "force"
+      }
+    ],
+    "upcastDice": 1
+  },
+  {
     "name": "Mislead",
     "school": "Illusion",
     "level": 5,
@@ -14042,6 +14615,145 @@
       "You can see through its eyes and hear through its ears as if you were located where it is. On each of your turns as a bonus action, you can switch from using its senses to using your own, or back again. While you are using its senses, you are blinded and deafened in regard to your own surroundings."
     ],
     "lists": ["Arcane", "Occult", "Psionic", "Melodic", "Invention"],
+    "ritual": 0
+  },
+  {
+    "name": "Gravechill",
+    "school": "Necromancy",
+    "level": 0,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a pinch of graveyard dirt)",
+    "duration": "Instantaneous",
+    "description": [
+      "A creeping chill envelops a creature you can see within range, forcing it to make a Constitution saving throw. On a failed save, the target takes 2d4 cold damage, plus an additional 2d4 necrotic damage if it is below half of its maximum hit points."
+    ],
+    "higherLevels": [
+      "The cold and necrotic damage dealt by this spell each increase by 2d4 when you reach 5th level (4d4), 11th level (6d4), and 17th level (8d4)."
+    ],
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 2,
+        "die": 4,
+        "type": "cold"
+      },
+      {
+        "dice": 2,
+        "die": 4,
+        "type": "necrotic"
+      }
+    ],
+    "upcastDice": 2,
+    "lists": ["Occult"],
+    "ritual": 0
+  },
+  {
+    "name": "Fray Time",
+    "school": "Transmutation",
+    "level": 8,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a golden hourglass worth at least 1,000 gp)",
+    "duration": "Instantaneous",
+    "description": [
+      "You stretch seconds into days, forcing a creature you can see within range to make a Charisma saving throw. On a failed save, the target gains 1d4 + 1 levels of exhaustion. On a success, the target gains 1 level of exhaustion."
+    ],
+    "type": "save",
+    "save": "cha",
+    "lists": ["Arcane", "Occult", "Divine"],
+    "ritual": 0
+  },
+  {
+    "name": "Eternity Reap",
+    "school": "Necromancy",
+    "level": 7,
+    "castingTime": "1 action",
+    "range": "Self (120-foot cone)",
+    "components": "V, S, M (a tiny platinum scythe worth at least 500 gp)",
+    "duration": "Instantaneous",
+    "description": [
+      "You conjure a spectral scythe that sweeps in a wide arc, sending forth a wave of shrieking death in a 120 foot cone. Each creature in the area must make a Dexterity saving throw, taking 5d10 force damage plus 5d10 necrotic damage on a failed save, or half as much on a success. Corpses in the area crumble to dust.",
+      "A creature reduced to 0 hit points by this damage must immediately make three death saving throws. If it fails all three death saving throws, it dies and crumbles to dust."
+    ],
+    "type": "save",
+    "save": "dex",
+    "damage": [
+      {
+        "dice": 5,
+        "die": 10,
+        "type": "force"
+      },
+      {
+        "dice": 5,
+        "die": 10,
+        "type": "necrotic"
+      }
+    ],
+    "lists": [],
+    "unique": "This spell was developed by the death god Myrkul.",
+    "ritual": 0
+  },
+  {
+    "name": "Thousand Deaths",
+    "school": "Necromancy",
+    "level": 9,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a black diamond worth at least 5,000 gp, which the spell consumes)",
+    "duration": "Instantaneous",
+    "description": [
+      "A torrent of howling spirits rushes around and through a creature you can see within range, forcing it to make three Constitution saving throws. If the target fails the first saving throw, it takes 1d100 cold damage. If the target fails the second saving throw, it takes 1d100 psychic damage and is poisoned for 1 minute (save ends at end of turn). If the target fails the third saving throw, it takes 1d100 necrotic damage, then dies if it has 50 or fewer hit points."
+    ],
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 1,
+        "die": 100,
+        "type": "cold"
+      },
+      {
+        "dice": 1,
+        "die": 100,
+        "type": "psychic"
+      },
+      {
+        "dice": 1,
+        "die": 100,
+        "type": "necrotic"
+      }
+    ],
+    "lists": [],
+    "unique": "This spell was developed by the death god Myrkul.",
+    "ritual": 0
+  },
+  {
+    "name": "Blood Deluge",
+    "school": "Sangromancy",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": "V, S, M (a crystal vial of demon ichor, worth at least 1 sp)",
+    "duration": "Instantaneous",
+    "description": [
+      "You manifest the wings of a hazvongel - great demonic birds with wings of corrupted ichor - and fly up to half your walking speed. Each creature you fly over in this way must make a Constitution saving throw, taking 6d8 + 20 necrotic damage on a failed save, or half as much on success."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 6th level or higher, you can fly an additional one-quarter of your walking speed for each slot level above 5th (rounded down to the nearest amount of 5 feet)."
+    ],
+    "lists": ["Occult"],
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 6,
+        "die": 8,
+        "amount": 20,
+        "type": "necrotic"
+      }
+    ],
     "ritual": 0
   },
   {
@@ -14174,6 +14886,49 @@
       }
     ],
     "upcastDice": 1
+  },
+  {
+    "name": "Haunting Head",
+    "school": "Necromancy",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "100 feet",
+    "components": "V, S, M (a humanoid skull, which the spell consumes)",
+    "duration": "Up to 1 round",
+    "description": [
+      "You imbue the skull with dark magic, causing it to start chattering, then hurl it at a creature you can see within range. Make a ranged spell attack. On a hit, the target takes 4d10 necrotic damage and the chattering skull floats nearby, accosting and insulting them. Until the end of your next turn, or until the target fails a saving throw, it subtracts 1d4 from each attack roll and saving throw it makes."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 4th level or above, the spell's damage increases by 1d10 for each slot level above 3rd."
+    ],
+    "lists": ["Occult", "Melodic"],
+    "ritual": 0,
+    "type": "attack",
+    "damage": [
+      {
+        "dice": 4,
+        "die": 10,
+        "type": "necrotic"
+      }
+    ],
+    "upcastDice": 1
+  },
+  {
+    "name": "Invocation of Death Triumphant",
+    "school": "Necromancy",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "V, S",
+    "duration": "1 round",
+    "description": [
+      "You chatter a deadly curse, forcing a creature within range to make a Charisma saving throw or become cursed. While cursed in this way, attacks made against the target automatically hit."
+    ],
+    "lists": ["Occult"],
+    "ritual": 0,
+    "type": "save",
+    "save": "cha",
+    "curse": true
   },
   {
     "name": "Mordenkainen's Faithful Hound",

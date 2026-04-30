@@ -370,80 +370,444 @@
     "conditionInflictSpell": ["charmed"]
   },
   {
-    "name": "Abjurer",
-    "reprintedAs": ["Abjurer Wizard|MPMM"],
+    "name": "Abjurer Nullslinger",
     "size": "Medium",
     "type": { "humanoid": {} },
     "alignment": ["A"],
-    "ac": [12, { "ac": 15, "condition": "with mage armor", "braces": true }],
-    "hp": { "average": 84, "formula": "13d8 + 26" },
+    "ac": [{ "ac": 18, "from": "multilayer ward" }],
+    "hp": { "average": 104, "formula": "16d8 + 32" },
     "speed": { "walk": 30 },
-    "str": 9,
-    "dex": 14,
-    "con": 14,
-    "int": 18,
+    "str": 10,
+    "dex": 16,
+    "con": 15,
+    "int": 17,
     "wis": 12,
-    "cha": 11,
-    "save": { "int": "+8", "wis": "+5" },
-    "skill": { "arcana": "+8", "history": "+8" },
-    "passive": 11,
-    "languages": ["any four languages"],
-    "cr": 9,
-    "spellcasting": [
-      {
-        "name": "Spellcasting",
-        "headerEntries": [
-          "The abjurer is a 13th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 16, +8 to hit with spell attacks). The abjurer has the following wizard spells prepared:"
-        ],
-        "spells": {
-          "0": {
-            "spells": [
-              "blade ward",
-              "dancing lights",
-              "mending",
-              "message",
-              "ray of frost"
-            ]
-          },
-          "1": {
-            "slots": 4,
-            "spells": ["alarm", "mage armor", "magic missile", "shield"]
-          },
-          "2": { "slots": 3, "spells": ["arcane lock", "invisibility"] },
-          "3": {
-            "slots": 3,
-            "spells": ["counterspell", "dispel magic", "fireball"]
-          },
-          "4": { "slots": 3, "spells": ["banishment", "stoneskin"] },
-          "5": { "slots": 2, "spells": ["cone of cold", "wall of force"] },
-          "6": {
-            "slots": 1,
-            "spells": ["flesh to stone", "globe of invulnerability"]
-          },
-          "7": { "slots": 1, "spells": ["symbol", "teleport"] }
-        },
-        "footerEntries": ["*Abjuration spell of 1st level or higher"],
-        "ability": "int",
-        "type": "spellcasting"
-      }
-    ],
+    "cha": 12,
+    "save": { "con": "+5", "int": "+6", "wis": "+4" },
+    "skill": { "arcana": "+6", "perception": "+4" },
+    "passive": 14,
+    "languages": ["Common"],
+    "cr": 5,
     "trait": [
       {
-        "name": "Arcane Ward",
+        "name": "Multilayer Ward",
         "entries": [
-          "The abjurer has a magical ward that has 30 hit points. Whenever the abjurer takes damage, the ward takes the damage instead. If the ward is reduced to 0 hit points, the abjurer takes any remaining damage. When the abjurer casts an abjuration spell of 1st level or higher, the ward regains a number of hit points equal to twice the level of the spell."
+          "Whenever the abjurer is hit with an attack, its AC is reduced by 1, to a minimum of 13."
+        ]
+      },
+      {
+        "name": "Abjurative Purge (1/Day)",
+        "entries": [
+          "At the start of each of the abjurer's turns, it can end one spell or condition affecting it or a creature within 30 feet, or can restore its AC to 18."
         ]
       }
     ],
     "action": [
       {
-        "name": "Quarterstaff",
+        "name": "Multiattack",
         "entries": [
-          "<em>Melee Weapon Attack.</em> +3 to hit, reach 5 ft., one target. <em>Hit:</em> 2 (1d6 - 1) bludgeoning damage, or 3 (1d8 - 1) bludgeoning damage if used with two hands."
+          "The abjurer makes two attacks with its Nullsteel Staff or Threadbind."
+        ]
+      },
+      {
+        "name": "Nullsteel Staff",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +6 to hit, reach 5 ft., one target. <em>Hit:</em> 7 (1d8 + 3) bludgeoning damage plus 5 (1d10) force damage.",
+          "This attack ignores any bonuses to the target's AC provided by spells, magic items, or other magical effects."
+        ]
+      },
+      {
+        "name": "Threadbind (2nd Level Spell)",
+        "entries": [
+          "<em>Ranged Spell Attack.</em> +6 to hit, range 60 ft., one target. <em>Hit:</em> 16 (3d10) force damage.",
+          "Whether this attack hits or misses, the next attack made against the target is made at advantage. On a critical hit, the target is restrained until the end of the abjurer's next turn (escape DC 14)."
+        ]
+      },
+      {
+        "name": "Sunder Arms (Recharge 5-6, 4th Level Spell)",
+        "entries": [
+          "One creature the abjurer can see within 30 feet must make a DC 14 Strength saving throw. On a failed save, the target takes 36 (8d8) thunder damage and one weapon or spell focus carried by it flies 30 (1d6 x 10) feet in a direction of the abjurer's choice, or half as much damage on a success.",
+          "Nonmagical weapons affected by this spell shatter and are destroyed."
         ]
       }
     ],
-    "damageTagsSpell": ["C", "F", "N", "O"]
+    "reaction": [
+      {
+        "name": "Dilute (2nd Level Spell)",
+        "entries": [
+          "When a creature the abjurer can see within 60 feet casts a spell, the abjurer can force it to make a DC 14 Constitution saving throw. On a failed save, any damage dealt by the spell is reduced by half."
+        ]
+      },
+      {
+        "name": "Syncopate (2nd Level Spell)",
+        "entries": [
+          "When a creature the abjurer can see within 60 feet casts a spell, the abjurer can roll a d6. If the result is greater than the level of the triggering spell, the spell fails, and any action or spell slot used in its casting is wasted."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Abjurer Wardwright",
+    "size": "Medium",
+    "type": { "humanoid": {} },
+    "alignment": ["A"],
+    "ac": [{ "ac": 18, "from": "multilayer ward" }],
+    "hp": { "average": 120, "formula": "16d8 + 48" },
+    "speed": { "walk": 30 },
+    "str": 10,
+    "dex": 17,
+    "con": 16,
+    "int": 19,
+    "wis": 12,
+    "cha": 12,
+    "save": { "con": "+7", "int": "+8", "wis": "+5" },
+    "skill": { "arcana": "+8", "perception": "+5", "religion": "+8" },
+    "passive": 15,
+    "languages": ["Common"],
+    "cr": 9,
+    "trait": [
+      {
+        "name": "Multilayer Ward",
+        "entries": [
+          "Whenever the abjurer is hit with an attack, its AC is reduced by 1, to a minimum of 13."
+        ]
+      },
+      {
+        "name": "Abjurative Purge (2/Day)",
+        "entries": [
+          "At the start of each of the abjurer's turns, it can end one spell or condition affecting it or a creature within 30 feet, or can restore its AC to 18."
+        ]
+      },
+      {
+        "name": "Ciphered Spells",
+        "entries": [
+          "The abjurer gains a +5 bonus to any ability check or saving throw it makes to resist its spells being countered or dispelled."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The abjurer makes two attacks with its Nullsteel Staff or Threadbind, one of which it can replace with a use of its Thunderous Rejection, Adamant Stand, or Asylum Field."
+        ]
+      },
+      {
+        "name": "Nullsteel Staff",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +8 to hit, reach 5 ft., one target. <em>Hit:</em> 8 (1d8 + 4) bludgeoning damage plus 5 (1d10) force damage.",
+          "This attack ignores any bonuses to the target's AC provided by spells, magic items, or other magical effects."
+        ]
+      },
+      {
+        "name": "Threadbind (3rd Level Spell)",
+        "entries": [
+          "<em>Ranged Spell Attack.</em> +8 to hit, range 60 ft., one target. <em>Hit:</em> 22 (4d10) force damage.",
+          "Whether this attack hits or misses, the next attack made against the target is made at advantage. On a critical hit, the target is restrained until the end of the abjurer's next turn (escape DC 16)."
+        ]
+      },
+      {
+        "name": "Thunderous Rejection (3rd Level Spell)",
+        "entries": [
+          "Each creature of the abjurer's choice within 15 feet of it must make a DC 16 Constitution saving throw. On a failed save, a creature takes 16 (3d10) thunder damage and is pushed up to 20 feet away, or half as much damage on a success."
+        ]
+      },
+      {
+        "name": "Adamant Stand (4th Level Spell, Concentration)",
+        "entries": [
+          "The abjurer bolsters up to two creatures of its choice within 30 feet of it against harm. Until the start of the abjurer's next turn, each creature has resistance to all damage and regains its reaction at the start of each turn."
+        ]
+      },
+      {
+        "name": "Asylum Field (5th Level Spell, Concentration)",
+        "entries": [
+          "Protective glyphs swirl around the abjurer in a 15-foot radius. Creatures in the area have advantage on saving throws against any effect that targets an area, and take no damage on a successful saving throw against such an effect."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Syncopate (2nd Level Spell)",
+        "entries": [
+          "When a creature the abjurer can see within 60 feet casts a spell, the abjurer can roll a d6. If the result is greater than the level of the triggering spell, the spell fails, and any action or spell slot used in its casting is wasted."
+        ]
+      },
+      {
+        "name": "Mirrorveil (2nd Level Spell)",
+        "entries": [
+          "When the abjurer is missed with a spell attack roll, it can force the attacker to make a new attack roll with the same spell, targeting itself."
+        ]
+      },
+      {
+        "name": "Mage's Misstep (3rd Level Spell)",
+        "entries": [
+          "When a creature within 60 feet of the abjurer teleports, the abjurer can force it to make a DC 16 Intelligence saving throw. On a failed save, the target takes 18 (4d8) psychic damage and teleports to an unoccupied space of the abjurer's choice within 60 feet of it, instead of its originally intended destination."
+        ]
+      }
+    ],
+    "shortName": "the abjurer",
+    "legendary": [
+      {
+        "name": "Vigor on the Brink (2nd Level Spell)",
+        "entries": [
+          "One creature within 60 feet gains 10 temporary hit points. If the target is at 0 hit points, it instead gains 20 temporary hit points and is stabilized."
+        ]
+      },
+      {
+        "name": "Beacon of Shelter (2nd Level Spell)",
+        "entries": [
+          "A protective glow spreads from the abjurer in a 30-foot radius. Until the start of its next turn, each creature of its choice within the area other than it gains a +2 bonus to its AC."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Abjurer Antimage",
+    "size": "Medium",
+    "type": { "humanoid": {} },
+    "alignment": ["A"],
+    "ac": [{ "ac": 19, "from": "multilayer ward" }],
+    "hp": { "average": 225, "formula": "30d8 + 90" },
+    "speed": { "walk": 30 },
+    "str": 10,
+    "dex": 18,
+    "con": 17,
+    "int": 21,
+    "wis": 15,
+    "cha": 12,
+    "save": { "con": "+8", "int": "+10", "wis": "+7" },
+    "skill": { "arcana": "+15", "perception": "+7", "religion": "+10" },
+    "passive": 17,
+    "languages": ["Common"],
+    "cr": 14,
+    "trait": [
+      {
+        "name": "Multilayer Ward",
+        "entries": [
+          "Whenever the abjurer is hit with an attack, its AC is reduced by 1, to a minimum of 14."
+        ]
+      },
+      {
+        "name": "Abjurative Purge (3/Day)",
+        "entries": [
+          "At the start of each of the abjurer's turns, it can end one spell or condition affecting it or a creature within 30 feet, or can restore its AC to 19."
+        ]
+      },
+      {
+        "name": "Ciphered Spells",
+        "entries": [
+          "The abjurer gains a +5 bonus to any ability check or saving throw it makes to resist its spells being countered or dispelled."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The abjurer makes two attacks, one of which it can replace with a use of its Thaumic Trammel or Adamant Stand."
+        ]
+      },
+      {
+        "name": "Nullsteel Staff",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +10 to hit, reach 5 ft., one target. <em>Hit:</em> 9 (1d8 + 5) bludgeoning damage plus 5 (1d10) force damage.",
+          "This attack ignores any bonuses to the target's AC provided by spells, magic items, or other magical effects."
+        ]
+      },
+      {
+        "name": "Threadbind (4th Level Spell)",
+        "entries": [
+          "<em>Ranged Spell Attack.</em> +10 to hit, range 60 ft., one target. <em>Hit:</em> 27 (5d10) force damage.",
+          "Whether this attack hits or misses, the next attack made against the target is made at advantage. On a critical hit, the target is restrained until the end of the abjurer's next turn (escape DC 18)."
+        ]
+      },
+      {
+        "name": "Thaumic Trammel (4th Level Spell)",
+        "entries": [
+          "The abjurer manifests a weight of magical force, forcing a creature within 60 feet to make a DC 18 Constitution saving throw. On a failed save, the target takes 15 (1d10 + 10) force damage for each spell currently affecting it or that it is concentrating on, including this one, or half as much damage on a success.",
+          "If a creature takes 30 or more damage from this spell, it is knocked prone."
+        ]
+      },
+      {
+        "name": "Adamant Stand (5th Level Spell, Concentration)",
+        "entries": [
+          "The abjurer bolsters up to three creatures of its choice within 30 feet of it against harm. Until the start of the abjurer's next turn, each creature has resistance to all damage and regains its reaction at the start of each turn."
+        ]
+      },
+      {
+        "name": "Expulsion Field (6th Level Spell, Concentration)",
+        "entries": [
+          "A cloud of luminous threads surrounds the abjurer in a 15-foot radius, moving with it for 1 minute. Whenever a creature enters the area for the first time on a turn or starts its turn there, the abjurer can force it to make a DC 18 Strength saving throw. On a failed save, it takes 27 (6d8) thunder damage and is pushed up to 30 feet away, or half as much damage on a success."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Counterspell (3rd Level Spell)",
+        "entries": [
+          "When a creature within 60 feet of the abjurer casts a spell, the abjurer can attempt to counter it. If the target is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, the abjurer must make an Intelligence ability check with a DC equal to 10 + the spell's level. On a success, the target's spell fails and has no effect.",
+          "If the abjurer uses this reaction to successfully counter a casting of Counterspell, it causes a wild magic surge."
+        ]
+      },
+      {
+        "name": "Mage's Misstep (3rd Level Spell)",
+        "entries": [
+          "When a creature within 60 feet of the abjurer teleports, the abjurer can force it to make a DC 18 Intelligence saving throw. On a failed save, the target takes 18 (4d8) psychic damage and teleports to an unoccupied space of the abjurer's choice within 60 feet of it, instead of its originally intended destination."
+        ]
+      }
+    ],
+    "shortName": "the abjurer",
+    "legendary": [
+      {
+        "name": "Fleeting Shield (3rd Level Spell)",
+        "entries": [
+          "One creature within 60 feet gains 31 (2d10 + 20) temporary hit points. If the target would deal any amount of damage while it has any of these temporary hit points, it instead deals no damage and loses all remaining temporary hit points."
+        ]
+      },
+      {
+        "name": "Shieldflare (2nd Level Spell)",
+        "entries": [
+          "One creature the abjurer can see within 60 feet loses any temporary hit points it has, then a creature within 15 feet of the original target takes an equal amount of force damage."
+        ]
+      },
+      {
+        "name": "Planar Refuge (3rd Level Spell, Concentration)",
+        "entries": [
+          "The abjurer banishes a willing creature other than itself within 60 feet of it to a harmless demiplane until the start of the target's next turn. When the spell ends, the target reappears in an unoccupied space of its choice within 30 feet of the space it disappeared from."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Abjurer Keymaster",
+    "size": "Medium",
+    "type": { "humanoid": {} },
+    "alignment": ["A"],
+    "ac": [{ "ac": 20, "from": "multilayer ward" }],
+    "hp": { "average": 306, "formula": "36d8 + 144" },
+    "speed": { "walk": 30 },
+    "str": 10,
+    "dex": 20,
+    "con": 19,
+    "int": 22,
+    "wis": 15,
+    "cha": 12,
+    "save": { "con": "+11", "int": "+13", "wis": "9", "cha": "+8" },
+    "skill": { "arcana": "+20", "perception": "+9", "religion": "+13" },
+    "passive": 19,
+    "senses": ["truesight 60 ft."],
+    "languages": ["Common"],
+    "cr": 22,
+    "trait": [
+      {
+        "name": "Multilayer Ward",
+        "entries": [
+          "Whenever the abjurer is hit with an attack, its AC is reduced by 1, to a minimum of 15."
+        ]
+      },
+      {
+        "name": "Abjurative Purge (5/Day)",
+        "entries": [
+          "At the start of each of the abjurer's turns, it can end one spell or condition affecting it or a creature within 30 feet, or can restore its AC to 20."
+        ]
+      },
+      {
+        "name": "Ciphered Spells",
+        "entries": [
+          "The abjurer gains a +5 bonus to any ability check or saving throw it makes to resist its spells being countered or dispelled."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The abjurer makes three attacks, one of which it can replace with a use of its Thaumic Trammel, Expulsion Field, or Shroud of Mundus."
+        ]
+      },
+      {
+        "name": "Nullsteel Staff",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +13 to hit, reach 5 ft., one target. <em>Hit:</em> 10 (1d8 + 6) bludgeoning damage plus 5 (1d10) force damage.",
+          "This attack ignores any bonuses to the target's AC provided by spells, magic items, or other magical effects."
+        ]
+      },
+      {
+        "name": "Threadbind (5th Level Spell)",
+        "entries": [
+          "<em>Ranged Spell Attack.</em> +13 to hit, range 60 ft., one target. <em>Hit:</em> 33 (6d10) force damage.",
+          "Whether this attack hits or misses, the next attack made against the target is made at advantage. On a critical hit, the target is restrained until the end of the abjurer's next turn (escape DC 21)."
+        ]
+      },
+      {
+        "name": "Thaumic Trammel (5th Level Spell)",
+        "entries": [
+          "The abjurer manifests a weight of magical force, forcing a creature within 60 feet to make a DC 21 Constitution saving throw. On a failed save, the target takes 21 (2d10 + 10) force damage for each spell currently affecting it or that it is concentrating on, including this one, or half as much damage on a success.",
+          "If a creature takes 30 or more damage from this spell, it is knocked prone."
+        ]
+      },
+      {
+        "name": "Expulsion Field (6th Level Spell, Concentration)",
+        "entries": [
+          "A cloud of luminous threads surrounds the abjurer in a 15-foot radius, moving with it for 1 minute. Whenever a creature enters the area for the first time on a turn or starts its turn there, the abjurer can force it to make a DC 21 Strength saving throw. On a failed save, it takes 27 (6d8) thunder damage and is pushed up to 30 feet away, or half as much damage on a success."
+        ]
+      },
+      {
+        "name": "Shroud of Mundus (Recharge 5-6, 8th Level Spell)",
+        "entries": [
+          "One spellcaster the abjurer can see within 60 feet must make a DC 21 Charisma saving throw. On a failed save, the target takes 55 (10d10) force damage and can't cast spells for 1 minute (save ends at end of turn), or half as much damage on a success.",
+          "Whenever a creature makes a saving throw against this effect, it can expend up to one spell slot or up to 5 sorcery points, adding the slot's level or number of sorcery points to its result."
+        ]
+      },
+      {
+        "name": "Division Seal (1/Day, 9th Level Spell)",
+        "entries": [
+          "A magical barrier envelops a 30-foot radius centered on a point within 500 feet. Nothing can move or teleport in or out of the area. For 1 minute, the barrier can be destroyed (AC 20, 200 HP, regains 50 HP at the start of each of the abjurer's turns). After this time, the barrier can be destroyed only by the Disintegrate spell or similar magic."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Shield (1st Level Spell)",
+        "entries": [
+          "When the abjurer is hit with an attack, it can gain a +5 bonus to its AC until the start of its next turn, potentially causing the triggering attack to miss."
+        ]
+      },
+      {
+        "name": "Counterspell (4th Level Spell)",
+        "entries": [
+          "When a creature within 60 feet of the abjurer casts a spell, the abjurer can attempt to counter it. If the target is casting a spell of 4th level or lower, its spell fails and has no effect. If it is casting a spell of 5th level or higher, the abjurer must make an Intelligence ability check with a DC equal to 10 + the spell's level. On a success, the target's spell fails and has no effect.",
+          "If the abjurer uses this reaction to successfully counter a casting of Counterspell, it causes a wild magic surge."
+        ]
+      },
+      {
+        "name": "Glyph of Exclusion (2/Day, 7th Level Spell)",
+        "entries": [
+          "When the abjurer would make a saving throw, it can disjoin the area in a 15-foot radius around it from reality. Until the start of the abjurer's next turn, nothing outside that area can affect anything inside, and vice versa."
+        ]
+      }
+    ],
+    "shortName": "the abjurer",
+    "legendary": [
+      {
+        "name": "Fleeting Shield (3rd Level Spell)",
+        "entries": [
+          "One creature within 60 feet gains 31 (2d10 + 20) temporary hit points. If the target would deal any amount of damage while it has any of these temporary hit points, it instead deals no damage and loses all remaining temporary hit points."
+        ]
+      },
+      {
+        "name": "Shieldflare (2nd Level Spell)",
+        "entries": [
+          "One creature the abjurer can see within 60 feet loses any temporary hit points it has, then a creature within 15 feet of the original target takes an equal amount of force damage."
+        ]
+      },
+      {
+        "name": "Planar Refuge (3rd Level Spell, Concentration)",
+        "entries": [
+          "The abjurer banishes a willing creature other than itself within 60 feet of it to a harmless demiplane until the start of the target's next turn. When the spell ends, the target reappears in an unoccupied space of its choice within 30 feet of the space it disappeared from."
+        ]
+      }
+    ]
   },
   {
     "name": "Aboleth",
@@ -37300,7 +37664,7 @@
     ]
   },
   {
-    "name": "Goon",
+    "name": "Goon Grunt",
     "size": "Medium",
     "type": { "humanoid": {} },
     "alignment": ["A"],
@@ -37312,23 +37676,759 @@
     "con": 10,
     "int": 10,
     "wis": 11,
-    "cha": 10,
+    "cha": 8,
     "passive": 10,
     "languages": ["Common"],
     "cr": 0.125,
     "trait": [
       {
-        "name": "Goon Grit",
+        "name": "Dogged Return (1/Day)",
         "entries": [
-          "The goon has advantage on saving throws against being charmed, intimidated, or persuaded."
+          "When the goon starts its turn with 0 hit points, it can regain 3 hit points."
         ]
       }
     ],
     "action": [
       {
-        "name": "Scimitar",
+        "name": "Whack",
         "entries": [
-          "<em>Melee Weapon Attack.</em> +3 to hit, reach 5 ft., one target. <em>Hit:</em> 4 (1d6 + 1) slashing damage"
+          "<em>Melee Weapon Attack.</em> +3 to hit, reach 5 ft., one target. <em>Hit:</em> 3 (1d4 + 1) bludgeoning damage."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Eager Aid",
+        "entries": [
+          "The goon grants a creature within 30 feet advantage on its next ability check or attack roll."
+        ]
+      },
+      {
+        "name": "Mean-Mug",
+        "entries": [
+          "The goon glares at a creature within 30 feet. Until the start of the goon's next turn, that creature must spend 2 feet of speed for every foot it moves towards the goon."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Intercept",
+        "entries": [
+          "When a creature within 5 feet of the goon makes or is targeted by an attack, the goon can force the attack to target it instead."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Goon Peon",
+    "size": "Medium",
+    "type": { "humanoid": {} },
+    "alignment": ["A"],
+    "ac": [{ "ac": 16, "from": ["breastplate"] }],
+    "hp": { "average": 35, "formula": "3d12 + 12" },
+    "speed": { "walk": 30 },
+    "str": 16,
+    "dex": 14,
+    "con": 14,
+    "int": 10,
+    "wis": 12,
+    "cha": 8,
+    "save": { "str": "+5", "con": "+4" },
+    "skill": { "athletics": "+5", "perception": "+3" },
+    "passive": 13,
+    "languages": ["Common"],
+    "cr": 1,
+    "trait": [
+      {
+        "name": "Dogged Return (1/Day)",
+        "entries": [
+          "When the goon starts its turn with 0 hit points, it can regain 6 hit points."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The goon makes two attacks, one of which can be with its Leadshot Sling."
+        ]
+      },
+      {
+        "name": "Blackjack",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +5 to hit, reach 5 ft., one target. <em>Hit:</em> 8 (2d4 + 3) bludgeoning damage."
+        ]
+      },
+      {
+        "name": "Leadshot Sling",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +4 to hit, range 30/120 ft., one target. <em>Hit:</em> 7 (2d4 + 2) bludgeoning damage and the target's speed is reduced by 10 feet until the end of its next turn."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Eager Aid",
+        "entries": [
+          "The goon grants a creature within 30 feet advantage on its next ability check or attack roll."
+        ]
+      },
+      {
+        "name": "Mean-Mug",
+        "entries": [
+          "The goon glares at a creature within 30 feet. Until the start of the goon's next turn, that creature must spend 2 feet of speed for every foot it moves towards the goon."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Intercept",
+        "entries": [
+          "When a creature within 5 feet of the goon makes or is targeted by an attack, the goon can force the attack to target it instead."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Goon Bruiser",
+    "size": "Medium",
+    "type": { "humanoid": {} },
+    "alignment": ["A"],
+    "ac": [{ "ac": 17, "from": ["half plate"] }],
+    "hp": { "average": 63, "formula": "6d12 + 24" },
+    "speed": { "walk": 30 },
+    "str": 18,
+    "dex": 14,
+    "con": 14,
+    "int": 10,
+    "wis": 12,
+    "cha": 8,
+    "save": { "str": "+7", "con": "+5" },
+    "skill": { "athletics": "+7", "perception": "+4" },
+    "passive": 14,
+    "languages": ["Common"],
+    "cr": 4,
+    "trait": [
+      {
+        "name": "Dogged Return (1/Day)",
+        "entries": [
+          "When the goon starts its turn with 0 hit points, it can regain 12 hit points."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The goon makes three attacks, one of which it can replace with a use of its Clobber."
+        ]
+      },
+      {
+        "name": "Blackjack",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +7 to hit, reach 5 ft., one target. <em>Hit:</em> 9 (2d4 + 4) bludgeoning damage."
+        ]
+      },
+      {
+        "name": "Leadshot Sling",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +5 to hit, range 30/120 ft., one target. <em>Hit:</em> 7 (2d4 + 2) bludgeoning damage and the target's speed is reduced by 10 feet until the end of its next turn."
+        ]
+      },
+      {
+        "name": "Clobber",
+        "entries": [
+          "The goon wildly flails at a creature within 5 feet, forcing it to make a DC 15 Strength or Dexterity saving throw (target's choice). On a failed save, the target takes 5 (2d4) bludgeoning damage, is knocked prone, is grappled by the goon (escape DC 15), and until the end of its next turn can't take reactions or make more than one attack on its turn."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Eager Aid",
+        "entries": [
+          "The goon grants a creature within 30 feet advantage on its next ability check or attack roll."
+        ]
+      },
+      {
+        "name": "Mean-Mug",
+        "entries": [
+          "The goon glares at a creature within 30 feet. Until the start of the goon's next turn, that creature must spend 2 feet of speed for every foot it moves towards the goon."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Intercept",
+        "entries": [
+          "When a creature within 5 feet of the goon makes or is targeted by an attack, the goon can force the attack to target it instead."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Goon Deputy",
+    "size": "Medium",
+    "type": { "humanoid": {} },
+    "alignment": ["A"],
+    "ac": [{ "ac": 17, "from": ["half plate"] }],
+    "hp": { "average": 138, "formula": "12d12 + 60" },
+    "speed": { "walk": 30 },
+    "str": 20,
+    "dex": 14,
+    "con": 16,
+    "int": 10,
+    "wis": 12,
+    "cha": 8,
+    "save": { "str": "+9", "con": "+7" },
+    "skill": { "athletics": "+9", "intimidation": "+3", "perception": "+5" },
+    "passive": 15,
+    "languages": ["Common"],
+    "cr": 8,
+    "trait": [
+      {
+        "name": "Dogged Return (1/Day)",
+        "entries": [
+          "When the goon starts its turn with 0 hit points, it can regain 24 hit points."
+        ]
+      },
+      {
+        "name": "Expose Weakness",
+        "entries": [
+          "Attacks made against a creature grappled by the goon score a critical hit on a roll of 18-20 on the d20."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The goon makes three attacks, one of which it can replace with a use of its Clobber."
+        ]
+      },
+      {
+        "name": "Blackjack",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +9 to hit, reach 5 ft., one target. <em>Hit:</em> 10 (2d4 + 5) bludgeoning damage.",
+          "If the target is prone, each of the goon's allies within 5 feet of the target can make an attack against it."
+        ]
+      },
+      {
+        "name": "Leadshot Sling",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +6 to hit, range 30/120 ft., one target. <em>Hit:</em> 7 (2d4 + 2) bludgeoning damage and the target's speed is reduced by 10 feet until the end of its next turn."
+        ]
+      },
+      {
+        "name": "Clobber",
+        "entries": [
+          "The goon wildly flails at a creature within 5 feet, forcing it to make a DC 17 Strength or Dexterity saving throw (target's choice). On a failed save, the target takes 5 (2d4) bludgeoning damage, is knocked prone, is grappled by the goon (escape DC 17), and until the end of its next turn can't take reactions or make more than one attack on its turn."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Eager Aid",
+        "entries": [
+          "The goon grants a creature within 30 feet advantage on its next ability check or attack roll."
+        ]
+      },
+      {
+        "name": "Mean-Mug",
+        "entries": [
+          "The goon glares at a creature within 30 feet. Until the start of the goon's next turn, that creature must spend 2 feet of speed for every foot it moves towards the goon."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Intercept",
+        "entries": [
+          "When a creature within 5 feet of the goon makes or is targeted by an attack, the goon can force the attack to target it instead."
+        ]
+      },
+      {
+        "name": "Break Balance",
+        "entries": [
+          "When a creature within 5 feet of the goon makes a saving throw against being knocked prone, the goon can impose disadvantage on its saving throw."
+        ]
+      },
+      {
+        "name": "That's Why You're the Boss!",
+        "entries": [
+          "When an ally of the goon within 30 feet of it scores a critical hit, the goon can gain 8 temporary hit points. While it has any of these temporary hit points, it can't be charmed or frightened."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Goon Underboss",
+    "size": "Medium",
+    "type": { "humanoid": {} },
+    "alignment": ["A"],
+    "ac": [{ "ac": 17, "from": ["half plate"] }],
+    "hp": { "average": 212, "formula": "17d12 + 102" },
+    "speed": { "walk": 30 },
+    "str": 20,
+    "dex": 14,
+    "con": 18,
+    "int": 10,
+    "wis": 12,
+    "cha": 8,
+    "save": { "str": "+11", "con": "+10" },
+    "skill": { "athletics": "+11", "intimidation": "+5", "perception": "+7" },
+    "passive": 17,
+    "languages": ["Common"],
+    "cr": 12,
+    "trait": [
+      {
+        "name": "Dogged Return (1/Day)",
+        "entries": [
+          "When the goon starts its turn with 0 hit points, it can regain 34 hit points."
+        ]
+      },
+      {
+        "name": "Expose Weakness",
+        "entries": [
+          "Attacks made against a creature grappled by the goon score a critical hit on a roll of 18-20 on the d20."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The goon makes three attacks, one of which it can replace with a use of its Clobber."
+        ]
+      },
+      {
+        "name": "Blackjack",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +11 to hit, reach 5 ft., one target. <em>Hit:</em> 10 (2d4 + 5) bludgeoning damage.",
+          "If the target is prone, each of the goon's allies within 5 feet of the target can make an attack against it."
+        ]
+      },
+      {
+        "name": "Leadshot Sling",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +8 to hit, range 30/120 ft., one target. <em>Hit:</em> 7 (2d4 + 2) bludgeoning damage and the target's speed is reduced by 10 feet until the end of its next turn."
+        ]
+      },
+      {
+        "name": "Clobber",
+        "entries": [
+          "The goon wildly flails at a creature within 5 feet, forcing it to make a DC 19 Strength or Dexterity saving throw (target's choice). On a failed save, the target takes 5 (2d4) bludgeoning damage, is knocked prone, is grappled by the goon (escape DC 19), and until the end of its next turn can't take reactions or make more than one attack on its turn."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Eager Aid",
+        "entries": [
+          "The goon grants a creature within 30 feet advantage on its next ability check or attack roll."
+        ]
+      },
+      {
+        "name": "Mean-Mug",
+        "entries": [
+          "The goon glares at a creature within 30 feet, forcing it to make a DC 19 Wisdom saving throw. On a failed save, the target is frightened of the goon for 1 minute (save ends at end of turn). On a success, the target is immune to the goon's Mean-Mug for 24 hours."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Intercept",
+        "entries": [
+          "When a creature within 5 feet of the goon makes or is targeted by an attack, the goon can force the attack to target it instead."
+        ]
+      },
+      {
+        "name": "Break Balance",
+        "entries": [
+          "When a creature within 5 feet of the goon makes a saving throw against being knocked prone, the goon can impose disadvantage on its saving throw."
+        ]
+      },
+      {
+        "name": "That's Why You're the Boss!",
+        "entries": [
+          "When an ally of the goon within 30 feet of it scores a critical hit, the goon can gain 12 temporary hit points. While it has any of these temporary hit points, it can't be charmed or frightened."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Wrestler Greenhorn",
+    "size": "Medium",
+    "type": { "humanoid": {} },
+    "alignment": ["A"],
+    "ac": [{ "ac": 14, "from": ["natural armor"] }],
+    "hp": { "average": 33, "formula": "3d10 + 12" },
+    "speed": { "walk": 30 },
+    "str": 17,
+    "dex": 14,
+    "con": 14,
+    "int": 8,
+    "wis": 10,
+    "cha": 12,
+    "skill": { "athletics": "+5", "performance": "+3" },
+    "passive": 10,
+    "languages": ["Common"],
+    "cr": 0.5,
+    "trait": [
+      {
+        "name": "Heat",
+        "entries": [
+          "Whenever the wrestler hits with an attack or a creature fails a saving throw against its Wrestler's Grasp while it does not have Heat, it gains Heat.",
+          "While the wrestler has Heat, a creature that ends its turn grappled by the wrestler takes 2 (1d4) bludgeoning damage."
+        ]
+      },
+      {
+        "name": "False Finish (1/Day)",
+        "entries": [
+          "When the wrestler starts its turn with 0 hit points, it can regain 16 hit points."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Haymaker",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +5 to hit, reach 5 ft., one target. <em>Hit:</em> 5 (1d4 + 3) bludgeoning damage, plus an extra 2 (1d4) bludgeoning damage if the target is grappled.",
+          "If the wrestler has Heat, it deals an additional 8 (2d8) bludgeoning damage and loses Heat."
+        ]
+      },
+      {
+        "name": "Iron Grasp",
+        "entries": [
+          "The wrestler forces a creature within 5 feet of it that is no more than one size larger than it to make a DC 13 Strength or Dexterity saving throw (target's choice). On a failed save, the target is knocked prone or grappled (wrestler's choice, escape DC 13)."
+        ]
+      },
+      {
+        "name": "Neck Crank",
+        "entries": [
+          "The wrestler forces a creature grappled by it to make a DC 13 Strength saving throw, taking 13 (3d6 + 3) bludgeoning damage on a failed save."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Agile Escape",
+        "entries": [
+          "The wrestler attempts to escape from a grapple or stands from prone without expending any movement."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Clothesline",
+        "entries": [
+          "When a creature moves within 5 feet of the wrestler, the wrestler can force it to make a DC 13 Strength saving throw. On a failed save, the target falls prone and can't stand this turn.",
+          "If the wrestler has Heat, the target is additionally choking until the start of its next turn, and the wrestler loses Heat."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Wrestler Showman",
+    "size": "Medium",
+    "type": { "humanoid": {} },
+    "alignment": ["A"],
+    "ac": [{ "ac": 14, "from": ["natural armor"] }],
+    "hp": { "average": 61, "formula": "6d10 + 24" },
+    "speed": { "walk": 30 },
+    "str": 19,
+    "dex": 14,
+    "con": 14,
+    "int": 8,
+    "wis": 10,
+    "cha": 12,
+    "save": { "str": "+7", "dex": "+5" },
+    "skill": { "athletics": "+7", "performance": "+4" },
+    "passive": 10,
+    "languages": ["Common"],
+    "cr": 3,
+    "trait": [
+      {
+        "name": "Heat",
+        "entries": [
+          "Whenever the wrestler hits with an attack or a creature fails a saving throw against its Wrestler's Grasp while it does not have Heat, it gains Heat.",
+          "While the wrestler has Heat, a creature that ends its turn grappled by the wrestler takes 3 (1d6) bludgeoning damage."
+        ]
+      },
+      {
+        "name": "False Finish (1/Day)",
+        "entries": [
+          "When the wrestler starts its turn with 0 hit points, it can regain 30 hit points."
+        ]
+      },
+      {
+        "name": "Spirit Lock",
+        "entries": ["The wrestler ignores immunity to the grappled condition."]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The wrestler makes two attacks, each of which it can replace with a use of its Iron Grasp."
+        ]
+      },
+      {
+        "name": "Haymaker",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +7 to hit, reach 5 ft., one target. <em>Hit:</em> 7 (1d6 + 4) bludgeoning damage, plus an extra 3 (1d6) bludgeoning damage if the target is grappled.",
+          "If the wrestler has Heat, it deals an additional 8 (2d8) bludgeoning damage and loses Heat."
+        ]
+      },
+      {
+        "name": "Iron Grasp",
+        "entries": [
+          "The wrestler forces a creature within 5 feet of it that is no more than one size larger than it to make a DC 15 Strength or Dexterity saving throw (target's choice). On a failed save, the target is knocked prone or grappled (wrestler's choice, escape DC 15)."
+        ]
+      },
+      {
+        "name": "Neck Crank",
+        "entries": [
+          "The wrestler forces a creature grappled by it to make a DC 15 Strength saving throw, taking 16 (3d6 + 6) bludgeoning damage on a failed save."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Agile Escape",
+        "entries": [
+          "The wrestler attempts to escape from a grapple or stands from prone without expending any movement."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Clothesline",
+        "entries": [
+          "When a creature moves within 5 feet of the wrestler, the wrestler can force it to make a DC 15 Strength saving throw. On a failed save, the target falls prone and can't stand this turn.",
+          "If the wrestler has Heat, the target is additionally choking until the start of its next turn, and the wrestler loses Heat."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Wrestler Gladiator",
+    "size": "Medium",
+    "type": { "humanoid": {} },
+    "alignment": ["A"],
+    "ac": [{ "ac": 15, "from": ["natural armor"] }],
+    "hp": { "average": 126, "formula": "12d10 + 60" },
+    "speed": { "walk": 30 },
+    "str": 20,
+    "dex": 14,
+    "con": 16,
+    "int": 8,
+    "wis": 10,
+    "cha": 12,
+    "save": { "str": "+9", "dex": "+6" },
+    "skill": { "athletics": "+9", "performance": "+9" },
+    "passive": 10,
+    "languages": ["Common"],
+    "cr": 10,
+    "trait": [
+      {
+        "name": "Heat",
+        "entries": [
+          "Whenever the wrestler hits with an attack or a creature fails a saving throw against its Wrestler's Grasp while it does not have Heat, it gains Heat.",
+          "While the wrestler has Heat, a creature that ends its turn grappled by the wrestler takes 5 (2d4) bludgeoning damage."
+        ]
+      },
+      {
+        "name": "False Finish (1/Day)",
+        "entries": [
+          "When the wrestler starts its turn with 0 hit points, it can regain 63 hit points."
+        ]
+      },
+      {
+        "name": "Spirit Lock",
+        "entries": ["The wrestler ignores immunity to the grappled condition."]
+      },
+      {
+        "name": "Adept Grappler",
+        "entries": [
+          "The wrestler's movement isn't slowed when it has a grappled creature, and its attacks have advantage against creatures grappled by it. While grappling a creature that is no smaller than one size smaller than it, the wrestler gains half cover."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": ["The wrestler makes two attacks and uses its Iron Grasp."]
+      },
+      {
+        "name": "Haymaker",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +9 to hit, reach 5 ft., one target. <em>Hit:</em> 10 (2d4 + 5) bludgeoning damage, plus an extra 5 (2d4) bludgeoning damage if the target is grappled.",
+          "If the wrestler has Heat, it deals an additional 8 (2d8) bludgeoning damage, the target is dazed until the end of its next turn, and the wrestler loses Heat."
+        ]
+      },
+      {
+        "name": "Iron Grasp",
+        "entries": [
+          "The wrestler forces a creature within 5 feet of it that is no more than two sizes larger than it to make a DC 17 Strength or Dexterity saving throw (target's choice). On a failed save, the target is knocked prone or grappled (wrestler's choice, escape DC 17)."
+        ]
+      },
+      {
+        "name": "Giant Swing",
+        "entries": [
+          "The wrestler swings a creature grappled by it in a wide arc, forcing each creature within 10 feet of it to make a DC 17 Dexterity saving throw. On a failed save, a creature takes 10 (2d4 + 5) bludgeoning damage, and the grappled creature takes an equal amount of damage.",
+          "The wrestler can't use this action unless it has Heat, and loses Heat after using it."
+        ]
+      },
+      {
+        "name": "Gorilla Press Gutbuster",
+        "entries": [
+          "The wrestler knocks a creature grappled by it prone, and the grapple ends. Then, the target must make a DC 17 Constitution saving throw. On a failed save, the target takes 27 (6d8) bludgeoning damage and is dazed until the end of the wrestler's next turn, or half as much damage on a success.",
+          "The wrestler can't use this action unless it has Heat, and loses Heat after using it."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Agile Escape",
+        "entries": [
+          "The wrestler attempts to escape from a grapple or stands from prone without expending any movement."
+        ]
+      },
+      {
+        "name": "Rile Crowd",
+        "entries": [
+          "The wrestler makes a DC 15 Performance check, attempting to enrage enemies and encourage allies. On a success, the wrestler gains Heat."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Clothesline",
+        "entries": [
+          "When a creature moves within 5 feet of the wrestler, the wrestler can force it to make a DC 17 Strength saving throw. On a failed save, the target falls prone and can't stand this turn.",
+          "If the wrestler has Heat, the target is additionally choking until the start of its next turn, and the wrestler loses Heat."
+        ]
+      },
+      {
+        "name": "No-Sell",
+        "entries": [
+          "When the wrestler would take any amount of damage, it can make a Constitution saving throw with a DC equal to the damage dealt. On a success, it instead takes 1 damage.",
+          "The wrestler can't use this reaction unless it has Heat, and loses Heat after using it."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Wrestler Superstar",
+    "size": "Medium",
+    "type": { "humanoid": {} },
+    "alignment": ["A"],
+    "ac": [{ "ac": 16, "from": ["natural armor"] }],
+    "hp": { "average": 195, "formula": "17d10 + 102" },
+    "speed": { "walk": 30 },
+    "str": 20,
+    "dex": 14,
+    "con": 18,
+    "int": 8,
+    "wis": 10,
+    "cha": 12,
+    "save": { "str": "+11", "dex": "+8" },
+    "skill": { "athletics": "+11", "performance": "+13" },
+    "passive": 10,
+    "languages": ["Common"],
+    "cr": 15,
+    "trait": [
+      {
+        "name": "Heat",
+        "entries": [
+          "Whenever the wrestler hits with an attack or a creature fails a saving throw against its Wrestler's Grasp while it does not have Heat, it gains Heat.",
+          "While the wrestler has Heat, a creature that ends its turn grappled by the wrestler takes 5 (2d4) bludgeoning damage."
+        ]
+      },
+      {
+        "name": "False Finish (1/Day)",
+        "entries": [
+          "When the wrestler starts its turn with 0 hit points, it can regain 97 hit points."
+        ]
+      },
+      {
+        "name": "Spirit Lock",
+        "entries": ["The wrestler ignores immunity to the grappled condition."]
+      },
+      {
+        "name": "Master Grappler",
+        "entries": [
+          "The wrestler's movement isn't slowed when it has a grappled creature, and its attacks have advantage against creatures grappled by it. While grappling a creature that is no smaller than one size smaller than it, the wrestler gains half cover.",
+          "Additionally, the wrestler does not automatically release creatures grappled by it when it becomes incapacitated or dies."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": ["The wrestler makes two attacks and uses its Iron Grasp."]
+      },
+      {
+        "name": "Haymaker",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +11 to hit, reach 5 ft., one target. <em>Hit:</em> 12 (2d6 + 5) bludgeoning damage, plus an extra 7 (2d6) bludgeoning damage if the target is grappled.",
+          "If the wrestler has Heat, it deals an additional 8 (2d8) bludgeoning damage, the target is dazed until the end of its next turn, and the wrestler loses Heat."
+        ]
+      },
+      {
+        "name": "Iron Grasp",
+        "entries": [
+          "The wrestler forces a creature within 5 feet of it that is no more than two sizes larger than it to make a DC 19 Strength or Dexterity saving throw (target's choice). On a failed save, the target is knocked prone or grappled (wrestler's choice, escape DC 19)."
+        ]
+      },
+      {
+        "name": "Giant Swing",
+        "entries": [
+          "The wrestler swings a creature grappled by it in a wide arc, forcing each creature within 10 feet of it to make a DC 19 Dexterity saving throw. On a failed save, a creature takes 12 (2d6 + 5) bludgeoning damage, and the grappled creature takes an equal amount of damage."
+        ]
+      },
+      {
+        "name": "Gorilla Press Gutbuster",
+        "entries": [
+          "The wrestler knocks a creature grappled by it prone, and the grapple ends. Then, the target must make a DC 19 Constitution saving throw. On a failed save, the target takes 27 (6d8) bludgeoning damage and is dazed until the end of the wrestler's next turn, or half as much damage on a success.",
+          "The wrestler can't use this action unless it has Heat, and loses Heat after using it."
+        ]
+      },
+      {
+        "name": "Piledriver",
+        "entries": [
+          "The wrestler knocks a creature grappled by it prone. Then, the target must make a DC 19 Constitution saving throw. On a failed save, the target takes 44 (8d10) bludgeoning damage, or half as much damage on a success. If this damage reduces the creature to 20 or fewer hit points, it falls to 0 hit points.",
+          "The wrestler can't use this action unless it has Heat, and loses Heat after using it."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Agile Escape",
+        "entries": [
+          "The wrestler attempts to escape from a grapple or stands from prone without expending any movement."
+        ]
+      },
+      {
+        "name": "Rile Crowd",
+        "entries": [
+          "The wrestler makes a DC 15 Performance check, attempting to enrage enemies and encourage allies. On a success, the wrestler gains Heat."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Clothesline",
+        "entries": [
+          "When a creature moves within 5 feet of the wrestler, the wrestler can force it to make a DC 19 Strength saving throw. On a failed save, the target falls prone and can't stand this turn.",
+          "If the wrestler has Heat, the target is additionally choking until the start of its next turn, and the wrestler loses Heat."
+        ]
+      },
+      {
+        "name": "No-Sell",
+        "entries": [
+          "When the wrestler would take any amount of damage, it can make a Constitution saving throw with a DC equal to the damage dealt. On a success, it instead takes 1 damage.",
+          "The wrestler can't use this reaction unless it has Heat, and loses Heat after using it."
         ]
       }
     ]
@@ -81766,44 +82866,6 @@
     ]
   },
   {
-    "name": "Otter",
-    "size": "Small",
-    "type": { "beast": { "mammal": { "mustelid": {} } } },
-    "ac": [{ "ac": 12, "from": ["natural armor"] }],
-    "hp": { "average": 4, "formula": "1d8" },
-    "speed": { "walk": 25, "swim": 30 },
-    "str": 12,
-    "dex": 13,
-    "con": 10,
-    "int": 6,
-    "wis": 13,
-    "cha": 8,
-    "skill": { "perception": "+3", "survival": "+3" },
-    "passive": 13,
-    "cr": 0,
-    "familiar": true,
-    "trait": [
-      {
-        "name": "Hold Breath",
-        "entries": ["The otter can hold its breath for 10 minutes."]
-      },
-      {
-        "name": "Pack Tactics",
-        "entries": [
-          "The otter has advantage on an attack roll against a creature if at least one of the otter's allies is within 5 feet of the creature and the ally isn't incapacitated."
-        ]
-      }
-    ],
-    "action": [
-      {
-        "name": "Bite",
-        "entries": [
-          "<em>Melee Weapon Attack.</em> +3 to hit, reach 5 ft., one target. <em>Hit:</em> 4 (1d6 + 1) piercing damage."
-        ]
-      }
-    ]
-  },
-  {
     "name": "Piglet",
     "size": "Tiny",
     "type": { "beast": { "mammal": { "pig": {} } } },
@@ -92322,80 +93384,6 @@
         "name": "Trembling Grasp (Group Attack)",
         "entries": [
           "<em>Melee Weapon Attack.</em> +4 to hit, reach 5 ft., one target. <em>Hit:</em> 3 bludgeoning damage and the target must succeed on a DC 12 Strength saving throw or be grappled (escape DC 12). At the start of each of the creature's turns, it takes 2 necrotic damage for each Mummy Retainer grappling it."
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Mohrg",
-    "size": "Medium",
-    "type": { "undead": { "corporeal": { "skeleton": {} } } },
-    "alignment": ["C", "E"],
-    "ac": [{ "ac": 15, "from": ["natural armor"] }],
-    "hp": { "average": 188, "formula": "22d8 + 88" },
-    "speed": { "walk": 30 },
-    "str": 18,
-    "dex": 17,
-    "con": 18,
-    "int": 6,
-    "wis": 8,
-    "cha": 5,
-    "save": { "con": "+7", "wis": "+2" },
-    "senses": ["darkvision 60 ft."],
-    "passive": 9,
-    "immune": ["poison"],
-    "vulnerable": ["bludgeoning"],
-    "conditionImmune": ["exhaustion", "poisoned"],
-    "languages": ["understands all languages it knew in life but can't speak"],
-    "cr": 8,
-    "trait": [
-      {
-        "name": "Rattle",
-        "entries": [
-          "A creature that hits the mohrg with a melee attack that deals bludgeoning damage must succeed a DC 15 Wisdom saving throw or be frightened until the end of its next turn as it feels its own skeleton twitch slightly."
-        ]
-      },
-      {
-        "name": "Writhing Innards",
-        "entries": [
-          "When a creature that can see the mohrg starts its turn within 30 feet of it, the morgh can force the creature to succeed on a DC 15 Constitution saving throw or be poisoned until the beginning of its next turn."
-        ]
-      }
-    ],
-    "action": [
-      {
-        "name": "Multiattack",
-        "entries": ["The mohrg makes two attacks with its Bony Grasp."]
-      },
-      {
-        "name": "Bony Grasp",
-        "entries": [
-          "<em>Melee Weapon Attack.</em> +7 to hit, reach 5 ft., one target. <em>Hit:</em> 13 (2d8 + 4) bludgeoning plus 11 (2d10) necrotic damage and the target is grappled (escape DC 15)."
-        ]
-      },
-      {
-        "name": "Clawed Tongue",
-        "entries": [
-          "The mohrg attempts to shove its clawed tongue into a creature's mouth. One grappled or incapacitated creature within 15 feet must succeed on a DC 15 Constitution saving throw or take 55 (10d10) piercing damage and be unable to speak or breathe on its following turn, or take half as much damage on a success.",
-          {
-            "type": "list",
-            "style": "list-hang-notitle",
-            "items": [
-              {
-                "name": "A creature killed by this damage rises on the mohrg's following turn as a ",
-                "entries": ["Zombie Rotter** under the mohrg's control."],
-                "type": "item"
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "reaction": [
-      {
-        "name": "Visceral Caress",
-        "entries": [
-          "When the mohrg is missed with a melee attack by a poisoned or frightened creature, it can force the creature to succeed on a DC 15 Constitution saving throw or be paralyzed until the end of the mohrg's next turn."
         ]
       }
     ]
@@ -104553,6 +105541,200 @@
       }
     ],
     "legendaryActions": 2
+  },
+  {
+    "name": "Mohrg Glistener",
+    "size": "Medium",
+    "type": { "undead": { "corporeal": { "skeleton": {} } } },
+    "alignment": ["C", "E"],
+    "ac": [{ "ac": 15, "from": ["natural armor"] }],
+    "hp": { "average": 25, "formula": "3d8 + 12" },
+    "speed": { "walk": 30 },
+    "str": 14,
+    "dex": 17,
+    "con": 18,
+    "int": 6,
+    "wis": 8,
+    "cha": 5,
+    "save": { "con": "+7", "wis": "+2" },
+    "senses": ["darkvision 60 ft."],
+    "passive": 9,
+    "immune": ["poison"],
+    "vulnerable": ["bludgeoning", "necrotic"],
+    "conditionImmune": ["exhaustion", "poisoned"],
+    "languages": ["understands all languages it knew in life but can't speak"],
+    "cr": 20,
+    "minion": true,
+    "trait": [
+      {
+        "name": "Minion",
+        "entries": [
+          "If the creature takes damage from an attack or as the result of a failed saving throw, its hit points are reduced to 0. If the creature takes damage from another effect, it dies if the damage equals or exceeds its hit point maximum, otherwise it takes no damage."
+        ],
+        "sort": 0
+      },
+      {
+        "name": "Rootless Flesh",
+        "entries": [
+          "If the mohrg would receive any magical healing, it recives no healing and instead dies."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": ["The mohrg makes two attacks with its Bony Grasp."]
+      },
+      {
+        "name": "Gruesome Lunge (Group Attack)",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +9 to hit, reach 5 ft., one target. <em>Hit:</em> 0 slashing damage.",
+          "If three or more mohrgs contributed to this attack, the target takes an additional 11 necrotic damage and is grappled (escape DC 17)"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mohrg Gorehive",
+    "size": "Medium",
+    "type": { "undead": { "corporeal": { "skeleton": {} } } },
+    "alignment": ["C", "E"],
+    "ac": [{ "ac": 15, "from": ["natural armor"] }],
+    "hp": { "average": 188, "formula": "22d8 + 88" },
+    "speed": { "walk": 30 },
+    "str": 18,
+    "dex": 17,
+    "con": 18,
+    "int": 6,
+    "wis": 8,
+    "cha": 5,
+    "save": { "con": "+7", "wis": "+2" },
+    "senses": ["darkvision 60 ft."],
+    "passive": 9,
+    "immune": ["poison"],
+    "vulnerable": ["bludgeoning", "necrotic"],
+    "conditionImmune": ["exhaustion", "poisoned"],
+    "languages": ["understands all languages it knew in life but can't speak"],
+    "cr": 8,
+    "trait": [
+      {
+        "name": "Bonesense",
+        "entries": [
+          "The mohrg can pinpoint, by scent, the location of any creature with bones within 20 feet of it."
+        ]
+      },
+      {
+        "name": "Twined Anima",
+        "entries": [
+          "If the mohrg would receive any magical healing, it receives no healing, and instead instead can't use its Visceral Intrusion until the end of its next turn."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": ["The mohrg makes two attacks with its Clawing Grasp."]
+      },
+      {
+        "name": "Clawing Grasp",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +7 to hit, reach 5 ft., one target. <em>Hit:</em> 13 (2d8 + 4) bludgeoning plus 11 (2d10) necrotic damage and the target is grappled (escape DC 15).",
+          "A creature that has less than half its hit points while grappled in this way is additionally frightened of the mohrg."
+        ]
+      },
+      {
+        "name": "Visceral Intrusion",
+        "entries": [
+          "The mohrg spears its clawed entrails into a grappled or incapacitated creature within 5 feet, forcing it to make a DC 15 Constitution saving throw. On a failed save, the target takes 55 (10d10) piercing damage and begins choking until the end of its next turn, or half as much damage on a success.",
+          "A creature that is killed by this damage rises on its following turn as a Zombie under the mohrg's control."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Deadly Caress",
+        "entries": [
+          "When a creature within 5 feet of the mohrg misses it with an attack, it can force the attacker to make a DC 15 Constitution saving throw or be paralyzed until the end of the mohrg's next turn."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Boneyard",
+    "size": "Gargantuan",
+    "type": { "undead": { "corporeal": { "skeleton": {} } } },
+    "alignment": ["C", "E"],
+    "ac": [{ "ac": 14, "from": ["natural armor"] }],
+    "hp": { "average": 310, "formula": "20d20 + 100" },
+    "speed": { "walk": 40 },
+    "str": 24,
+    "dex": 14,
+    "con": 20,
+    "int": 8,
+    "wis": 18,
+    "cha": 8,
+    "save": { "str": "+12", "con": "+10", "wis": "+9" },
+    "senses": ["darkvision 60 ft."],
+    "passive": 14,
+    "immune": ["poison"],
+    "vulnerable": ["bludgeoning"],
+    "conditionImmune": ["exhaustion", "poisoned"],
+    "languages": ["understands all languages it knew in life but can't speak"],
+    "cr": 14,
+    "trait": [
+      {
+        "name": "Ossuary Call",
+        "entries": [
+          "Friendly skeletons within 30 feet of the boneyard can use its attack bonus (+12) in place of their own."
+        ]
+      },
+      {
+        "name": "Bone Feast",
+        "entries": [
+          "The boneyard absorbs bones, corpses, and skeletons that enter its space, destorying them. The boneyard regains 10 hit points for each corpse or skeleton destroyed in this way."
+        ]
+      },
+      {
+        "name": "Implacable",
+        "entries": [
+            "If the boneyard fails a saving throw, it can choose to succeed instead. If it does, it loses 25 hit points."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": ["The boneyard makes four attacks, or makes two attacks and uses its Corrupt Marrow."]
+      },
+      {
+        "name": "Ghastly Thrash",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +12 to hit, reach 10 ft., one target. <em>Hit:</em> 21 (4d6 + 7) slashing damage and the target is grappled (escape DC 20).",
+          "If the boneyard uses its Clattering Torrent or Restless Return, each creature grappled by it is released."
+        ]
+      },
+      {
+        "name": "Corrupt Marrow (4th Level Spell)",
+        "entries": [
+          "Each creature in a 15 foot radius centered on a point within 60 feet must succeed on a DC 18 Constitution saving throw or take 16 (3d10) necrotic damage.",
+          "A creature that fails this saving throw by 5 or more is paralyzed until the end of the boneyard's next turn."
+        ]
+      },
+      {
+        "name": "Clattering Torrent (Recharge 4-6)",
+        "entries": [
+            "The boneyard churns, flying up to its speed, during which it can move through the space of other creatures. Each creature whose space it enters during this move must make a DC 18 Strength saving throw, taking 27 (6d8) bludgeoning damage and being knocked prone on a failed save, or half as much damage on a success."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Restless Return",
+        "entries": [
+          "When the boneyard takes 20 or more non-radiant damage from a single source, it can create one Skeleton for each 10 damage it took that acts on initiative count 0 in an unoccupied space within 10 feet."
+        ]
+      }
+    ]
   },
   {
     "name": "Necromancer Skulldigger",
@@ -185865,50 +187047,6 @@
     ]
   },
   {
-    "name": "Dire Otter",
-    "size": "Medium",
-    "type": { "beast": { "mammal": { "mustelid": {} } } },
-    "ac": [{ "ac": 13, "from": ["natural armor"] }],
-    "hp": { "average": 24, "formula": "4d10 + 1" },
-    "speed": { "walk": 35, "swim": 40 },
-    "str": 14,
-    "dex": 13,
-    "con": 12,
-    "int": 6,
-    "wis": 13,
-    "cha": 8,
-    "skill": { "perception": "+4", "survival": "+4" },
-    "passive": 13,
-    "cr": 2,
-    "greatSteed": true,
-    "trait": [
-      {
-        "name": "Dire Rage",
-        "entries": [
-          "When the dire otter takes the Attack action, it can make an additional attack with a natural weapon."
-        ]
-      },
-      {
-        "name": "Hold Breath",
-        "entries": ["The otter can hold its breath for 10 minutes."]
-      },
-      {
-        "name": "Pack Tactics",
-        "entries": [
-          "The otter has advantage on an attack roll against a creature if at least one of the otter's allies is within 5 feet of the creature and the ally isn't incapacitated."
-        ]
-      }
-    ],
-    "action": [
-      {
-        "name": "Bite",
-        "entries": [
-          "<em>Melee Weapon Attack.</em> +4 to hit, reach 5 ft., one target. <em>Hit:</em> 10 (2d8 + 2) piercing damage."
-        ]
-      }
-    ]
-  },
-  {
     "name": "Dire Piglet",
     "size": "Small",
     "type": { "beast": { "mammal": { "pig": {} } } },
@@ -240782,6 +241920,523 @@
     ]
   },
   {
+    "name": "Hazvongel Crourjay",
+    "size": "Huge",
+    "type": { "fiend": { "demon": {} } },
+    "ac": [{ "ac": 17, "from": ["natural armor"] }],
+    "hp": { "average": 237, "formula": "25d12 + 75" },
+    "speed": { "walk": 40, "fly": 60 },
+    "str": 21,
+    "dex": 20,
+    "con": 16,
+    "int": 12,
+    "wis": 15,
+    "cha": 11,
+    "save": { "con": "+8", "wis": "+7" },
+    "skill": { "perception": "+7" },
+    "senses": ["darkvision 120 ft."],
+    "passive": 17,
+    "resist": [
+      "cold",
+      "fire",
+      "lightning",
+      "bludgeoning, piercing, and slashing damage from nonmagical sources"
+    ],
+    "immune": ["poison"],
+    "conditionImmune": ["exhaustion", "poisoned"],
+    "languages": ["Abyssal", "telepathy 120 ft."],
+    "cr": 14,
+    "trait": [
+      {
+        "name": "Fickle Resistance",
+        "entries": [
+          "The hazvongel has advantage on saving throws against spells and other magical effects that do not impose the charmed condition."
+        ]
+      },
+      {
+        "name": "Wandering Eye",
+        "entries": [
+          "The hazvongel has disadvantage on attacks against any creature it hit with an attack on its previous turn."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": ["The hazvongel makes four attacks."]
+      },
+      {
+        "name": "Talon Stampede",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +10 to hit, reach 5 ft., one target. <em>Hit:</em> 18 (3d8 + 5) slashing damage.",
+          "Instead of dealing damage, the hazvongel can knock the target prone or grapple it (escape DC 18)."
+        ]
+      },
+      {
+        "name": "Bloodrot Barbs",
+        "entries": [
+          "<em>Ranged Weapon Attack.</em> +10 to hit, range 60/120 ft., one target. <em>Hit:</em> 12 (2d6 + 5) necrotic damage."
+        ]
+      },
+      {
+        "name": "Blood Deluge (Recharge 5-6)",
+        "entries": [
+          "The hazvongel flies up to half its speed, raining corrupted ichor from its wings. Each creature the hazvongel flies over in this way must make a DC 18 Constitution saving throw, taking 47 (6d8 + 20) necrotic damage on a failed save, or half as much on a success."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "False Fall",
+        "entries": [
+          "When the hazvongel is hit with a ranged attack, it can fall prone. The first time a creature moves within 10 feet of the hazvongel before the start of its next turn, the hazvongel can leap to its feet and make an attack with its Talon Stampede."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Hazvongel Gorelord",
+    "size": "Huge",
+    "type": { "fiend": { "demon": {} } },
+    "ac": [{ "ac": 18, "from": ["natural armor"] }],
+    "hp": { "average": 420, "formula": "40d12 + 160" },
+    "speed": { "walk": 40, "fly": 60 },
+    "str": 23,
+    "dex": 20,
+    "con": 19,
+    "int": 16,
+    "wis": 15,
+    "cha": 14,
+    "save": { "con": "+11", "wis": "+9", "cha": "+9" },
+    "skill": { "perception": "+7" },
+    "senses": ["darkvision 120 ft."],
+    "passive": 17,
+    "resist": [
+      "cold",
+      "fire",
+      "lightning",
+      "bludgeoning, piercing, and slashing damage from nonmagical sources"
+    ],
+    "immune": ["poison"],
+    "conditionImmune": ["exhaustion", "poisoned"],
+    "languages": ["Abyssal", "telepathy 120 ft."],
+    "cr": 21,
+    "trait": [
+      {
+        "name": "Wandering Eye",
+        "entries": [
+          "The hazvongel has disadvantage on attacks against any creature it hit with an attack on its previous turn."
+        ]
+      },
+      {
+        "name": "Demonic Purge (3/Day)",
+        "entries": [
+          "The hazvongel has advantage on saving throws against spells and other magical effects. At the start of each of its turns, it can end one spell or condition affecting it. If it does, it loses this advantage until the start of its next turn."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The hazvongel makes four attacks, two of which can be with its Jagged Beak."
+        ]
+      },
+      {
+        "name": "Talon Stampede",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +13 to hit, reach 5 ft., one target. <em>Hit:</em> 19 (3d8 + 6) slashing damage.",
+          "Instead of dealing damage, the hazvongel can knock the target prone or grapple it (escape DC 21)."
+        ]
+      },
+      {
+        "name": "Jagged Beak",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +13 to hit, reach 5 ft., one target. <em>Hit:</em> 22 (3d10 + 6) piercing damage.",
+          "This attack deals an additional 5 (1d10) damage to a prone target."
+        ]
+      },
+      {
+        "name": "Bloodrot Barbs",
+        "entries": [
+          "<em>Ranged Weapon Attack.</em> +13 to hit, range 60/120 ft., one target. <em>Hit:</em> 16 (3d6 + 6) necrotic damage."
+        ]
+      },
+      {
+        "name": "Blood Deluge (Recharge 5-6)",
+        "entries": [
+          "The hazvongel flies up to half its speed, raining corrupted ichor from its wings. Each creature the hazvongel flies over in this way must make a DC 21 Constitution saving throw, taking 47 (6d8 + 20) necrotic damage on a failed save, or half as much on a success."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "False Fall",
+        "entries": [
+          "When the hazvongel is hit with a ranged attack, it can fall prone. The first time a creature moves within 10 feet of the hazvongel before the start of its next turn, the hazvongel can leap to its feet and make an attack with its Talon Stampede."
+        ]
+      },
+      {
+        "name": "Murderous Shriek (1/Day)",
+        "entries": [
+          "When the hazvongel is reduced below half of its maximum hit points, it can let out a fierce shriek. For the next minute, it can make one additional attack with its Talon Stampede whenever it takes its Multiattack action."
+        ]
+      }
+    ],
+    "shortName": "the hazvongel",
+    "legendary": [
+      {
+        "name": "Crimson Omen",
+        "entries": [
+          "One creature the hazvongel can see within 30 feet that has half its hit points or fewer must make a DC 18 Charisma saving throw. On a failed save, the target is cursed for 8 hours. While cursed in this way, whenever it falls to 0 hit points, it immediately fails one death saving throw.",
+          "This curse can stack, and the target fails additional death saving throws for each stack of the curse it has."
+        ]
+      },
+      {
+        "name": "Staggering Spray",
+        "entries": [
+          "The hazvongel beats its wings, sending forth a gust of crimson mist in a 30 foot cone. Each creature in the area loses its reaction, then must make a DC 21 Strength saving throw. On a failed save, a creature is pushed up to 15 feet away."
+        ]
+      },
+      {
+        "name": "Double Slam (Costs 2 Actions)",
+        "entries": [
+          "The hazvongel moves up to 15 feet, then makes two attacks at advantage."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Myrkul, Lord of Bones",
+    "size": "Gargantuan",
+    "type": { "celestial": {}, "undead": { "corporeal": { "skeleton": {} } } },
+    "tags": ["deity"],
+    "ac": [{ "ac": 25, "from": ["natural armor"] }],
+    "hp": { "average": 1066, "formula": "52d20 + 520" },
+    "speed": { "walk": 40, "hover": 40 },
+    "str": 26,
+    "dex": 22,
+    "con": 30,
+    "int": 28,
+    "wis": 30,
+    "cha": 26,
+    "save": { "con": "10", "int": "+18", "wis": "+19", "cha": "+17" },
+    "skill": { "history": "+27", "insight": "+19", "perception": "+19" },
+    "senses": ["truesight 120 ft."],
+    "passive": 29,
+    "immune": [
+      "necrotic",
+      "poison",
+      "bludgeoning, piercing, and slashing damage from nonmagical sources"
+    ],
+    "conditionImmune": ["exhaustion", "poisoned"],
+    "languages": ["All", "telepathy 120 ft."],
+    "cr": 100,
+    "trait": [
+      {
+        "name": "Keeper of the Dead",
+        "entries": [
+          "Creatures killed by Myrkul can't be returned to life by any means short of divine intervention, unless he allows it."
+        ]
+      },
+      {
+        "name": "Ossuary Call",
+        "entries": [
+          "Skeletons within 90 feet of Myrkul of his choice use his attack bonus (+17) in place of their own, unless their own is already higher."
+        ]
+      },
+      {
+        "name": "Invincible Avatar (2/Day)",
+        "entries": [
+          "If Myrkul fails a saving throw, he can choose to succeed instead. If he does, he regains one fewer legendary action on his following turn.",
+          "At the end of each of Myrkul's turns, he can end one spell or condition affecting him."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "Myrkul makes two attacks with his Scythe of Ages, one of which he can replace with a use of his Maggot Feast, Eternity Reap, or Fray Time."
+        ]
+      },
+      {
+        "name": "Scythe of Ages",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +17 to hit, reach 15 ft., one target. <em>Hit:</em> 52 (8d10 + 8) force damage.",
+          "This attack deals an additional 11 (2d10) necrotic damage for each level of exhaustion the target has."
+        ]
+      },
+      {
+        "name": "Maggot Feast (7th Level Spell)",
+        "entries": [
+          "Fat white worms spill from the wounds of creatures of Myrkul's choice within 60 feet of him. Each creature must make a DC 25 Constitution saving throw, taking 44 (8d10) necrotic damage on a failed save, or half as much on a success.",
+          "If a creature that is poisoned, diseased, or below half of its maximum hit points fails a saving throw against this effect, it is additionally dazed until the end of its next turn."
+        ]
+      },
+      {
+        "name": "Eternity Reap (8th Level Spell)",
+        "entries": [
+          "Myrkul sweeps his scythe in a wide arc, sending forth a wave of shrieking death in a 120 foot cone. Each creature in the area must make a DC 25 Dexterity saving throw, taking 27 (5d10) force damage plus 27 (5d10) necrotic damage on a failed save, or half as much on a success. Corpses in the area crumble to dust.",
+          "A creature reduced to 0 hit points by this damage must immediately make three death saving throws."
+        ]
+      },
+      {
+        "name": "Fray Time (8th Level Spell)",
+        "entries": [
+          "Myrkul stretches seconds into days, forcing a creature he can see within 60 feet to make a DC 25 Charisma saving throw. On a failed save, the target gains 3 (1d4 + 1) levels of exhaustion. On a success, the target gains 1 level of exhaustion."
+        ]
+      },
+      {
+        "name": "Thousand Deaths (9th Level Spell)",
+        "entries": [
+          "A torrent of howling spirits rushes around and through a creature Myrkul can see within 60 feet, forcing it to make three DC 25 Constitution saving throws. If the target fails the first saving throw, it takes 50 (1d100) cold damage. If the target fails the second saving throw, it takes 50 (1d100) psychic damage and is poisoned for 1 minute (save ends at end of turn). If the target fails the third saving throw, it takes 50 (1d100) necrotic damage, then dies if it has 50 or fewer hit points."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Draw of the Void",
+        "entries": [
+          "Each creature of Myrkul's choice within 120 feet must make a DC 25 STrength saving throw. On a failed save, a creautre takes 16 (3d10) necrotic damage and is dragged up to 60 feet towards Myrkul."
+        ]
+      },
+      {
+        "name": "Death Looms",
+        "entries": [
+          "The last creature to hit Myrkul with a melee atack since the end of his last turn gains a level of exhaustion and must make a DC 25 Constitution saving throw. On a failed save, the target drops to 0 hit points."
+        ]
+      }
+    ],
+    "shortName": "Myrkul",
+    "pronouns": ["he", "him", "his"],
+    "legendary": [
+      {
+        "name": "Inevitable Approach",
+        "entries": [
+          "Myrkul moves up to his speed, then makes an attack with his Scythe of Ages. This movement can't be impeded or prevented by any means."
+        ]
+      },
+      {
+        "name": "Judgement of the False",
+        "entries": [
+          "One creature that Myrkul can see within 60 feet must make a DC 25 Charisma saving throw. On a failed save, the next time the target takes any amount of damage, it takes twice as much damage.",
+          "Creatures who have at least one level in a class or subclass that can use Divine spells are immune to this effect."
+        ]
+      },
+      {
+        "name": "Unearth Attendants",
+        "entries": [
+          "Myrkul conjures three Necromite Reapers that act on initiative count 0 in unoccupied spaces within 30 feet."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Necromite Hollow",
+    "size": "Medium",
+    "type": { "undead": { "corporeal": { "skeleton": {} } } },
+    "ac": [{ "ac": 14, "from": ["mage armor"] }],
+    "hp": { "average": 45, "formula": "7d8 + 14" },
+    "speed": { "walk": 30 },
+    "str": 14,
+    "dex": 13,
+    "con": 15,
+    "int": 16,
+    "wis": 11,
+    "cha": 10,
+    "senses": ["darkvision 60 ft."],
+    "passive": 10,
+    "vulnerable": ["bludgeoning"],
+    "resist": ["necrotic"],
+    "immune": ["poison"],
+    "conditionImmune": ["exhaustion", "poisoned"],
+    "languages": ["Common", "Dark Speech"],
+    "cr": 1,
+    "trait": [
+      {
+        "name": "One With Death",
+        "entries": [
+          "When the necromite is reduced to 0 hit points, each other undead creature within 10 feet of it regains 10 hit points."
+        ]
+      },
+      {
+        "name": "Bonesense",
+        "entries": [
+          "The necromite can pinpoint, by scent, the location of any creature with bones within 20 feet of it."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Death's Head Flail",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +4 to hit, reach 5 ft., one target. <em>Hit:</em> 5 (1d6 + 2) bludgeoning damage plus 5 (1d10) necrotic damage."
+        ]
+      },
+      {
+        "name": "Gravefrost (Cantrip)",
+        "entries": [
+          "A creeping chill envelops a creature the necromite can see within 60 feet, forcing it to make a DC 13 Constitution saving throw. On a failed save, the target takes 5 (2d4) cold damage, plus an additional 11 (2d10) necrotic damage if it is below half of its maximum hit points."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Death Throes (1st Level Spell)",
+        "entries": [
+          "When one of the necromite's allies within 30 feet of it is reduced to 0 hit points, the necromite can allow it to use its reaction to make one melee attack."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Necromite Reaper",
+    "size": "Medium",
+    "type": { "undead": { "corporeal": { "skeleton": {} } } },
+    "ac": [{ "ac": 16, "from": ["mage armor"] }],
+    "hp": { "average": 86, "formula": "13d8 + 26" },
+    "speed": { "walk": 30 },
+    "str": 14,
+    "dex": 16,
+    "con": 15,
+    "int": 17,
+    "wis": 12,
+    "cha": 10,
+    "senses": ["darkvision 60 ft."],
+    "passive": 11,
+    "vulnerable": ["bludgeoning"],
+    "resist": ["necrotic"],
+    "immune": ["poison"],
+    "conditionImmune": ["exhaustion", "poisoned"],
+    "languages": ["Common", "Dark Speech"],
+    "cr": 3,
+    "trait": [
+      {
+        "name": "One With Death",
+        "entries": [
+          "When the necromite is reduced to 0 hit points, each other undead creature within 10 feet of it regains 10 hit points."
+        ]
+      },
+      {
+        "name": "Bonesense",
+        "entries": [
+          "The necromite can pinpoint, by scent, the location of any creature with bones within 20 feet of it."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Reaper's Greatscythe",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +5 to hit, reach 10 ft., one target. <em>Hit:</em> 14 (2d10 + 3) slashing damage plus 5 (1d10) necrotic damage.",
+          "On a critical hit, the target can't regain hit points until the start of the necromite's next turn."
+        ]
+      },
+      {
+        "name": "Haunting Head (3rd Level Spell)",
+        "entries": [
+          "<em>Ranged Spell Attack.</em> +5 to hit, range 100 ft., one target. <em>Hit:</em> 22 (4d10) necrotic damage and a chattering spectral head accosts the target. Until the end of the necromite's next turn or until the target fails a saving throw, it subtracts 1d4 from each attack roll and saving throw it makes."
+        ]
+      },
+      {
+        "name": "Invocation of Death Triumphant (3rd Level Spell)",
+        "entries": [
+          "The necromite chatters a deadly curse, forcing a creature within 30 feet to make a DC 13 Charisma saving throw. On a failed save, the target becomes cursed until the end of the necromite's next turn. While cursed in this way, attacks made against the target automatically hit."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Necromite Apostle",
+    "size": "Medium",
+    "type": { "undead": { "corporeal": { "skeleton": {} } } },
+    "ac": [{ "ac": 16, "from": ["mage armor"] }],
+    "hp": { "average": 150, "formula": "20d8 + 60" },
+    "speed": { "walk": 30 },
+    "str": 14,
+    "dex": 16,
+    "con": 16,
+    "int": 19,
+    "wis": 15,
+    "cha": 10,
+    "save": { "con": "+6", "int": "+7" },
+    "senses": ["darkvision 60 ft."],
+    "passive": 12,
+    "vulnerable": ["bludgeoning"],
+    "resist": ["necrotic"],
+    "immune": ["poison"],
+    "conditionImmune": ["charmed", "exhaustion", "frightened", "poisoned"],
+    "languages": ["Common", "Dark Speech"],
+    "cr": 6,
+    "trait": [
+      {
+        "name": "One With Death",
+        "entries": [
+          "When the necromite is reduced to 0 hit points, each other undead creature within 10 feet of it regains 10 hit points."
+        ]
+      },
+      {
+        "name": "Bonesense",
+        "entries": [
+          "The necromite can pinpoint, by scent, the location of any creature with bones within 20 feet of it."
+        ]
+      },
+      {
+        "name": "Reclaim Anima (1/Day)",
+        "entries": [
+          "If the necromite would fail a saving throw, it can drain the animating force from one undead ally within 30 feet to succeed instead, reducing the ally to 0 hit points."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": ["The necromite makes two attacks with its Doom Slice."]
+      },
+      {
+        "name": "Doom Slice",
+        "entries": [
+          "<em>Melee Spell Attack.</em> +7 to hit, reach 10 ft., one target. <em>Hit:</em> 11 (2d10) force damage plus 11 (2d10) necrotic damage.",
+          "On a critical hit, this attacks deals an additional 20 force damage and 20 necrotic damage."
+        ]
+      },
+      {
+        "name": "Haunting Head (5th Level Spell)",
+        "entries": [
+          "<em>Ranged Spell Attack.</em> +7 to hit, range 100 ft., one target. <em>Hit:</em> 33 (6d10) necrotic damage and a chattering spectral head accosts the target. Until the end of the necromite's next turn or until the target fails a saving throw, it subtracts 1d4 from each attack roll and saving throw it makes."
+        ]
+      },
+      {
+        "name": "Seal of Death's Gate (5th Level Spell)",
+        "entries": [
+          "One creature the necromite can see wihtin 15 feet must make a DC 15 Constitution saving throw, taking 36 (8d8) necrotic damage on a failed save, or half as much on a success."
+        ]
+      },
+      {
+        "name": "Danse Macabre (5th Level Spell, Concentration)",
+        "entries": [
+          "Up to 5 corpses within 60 feet rise as Skeletons that act on the necromite's turn and under its control. When the spell ends, the skeletons drop to 0 hit points."
+        ]
+      }
+    ],
+    "shortName": "the necromite",
+    "legendary": [
+      {
+        "name": "Invocation of Death Triumphant (3rd Level Spell)",
+        "entries": [
+          "The necromite chatters a deadly curse, forcing a creature within 30 feet to make a DC 15 Charisma saving throw. On a failed save, the target becomes cursed until the end of the necromite's next turn. While cursed in this way, attacks made against the target automatically hit."
+        ]
+      },
+      {
+        "name": "Tombstride (3rd Level Spell)",
+        "entries": [
+          "The necromite turns to dust and crumbles away, then bursts from the earth in an unoccupied space within 60 feet of it. Each creature within 5 feet of the space it departed must then make a DC 15 Constitution saving throw. On a failed save, a creature is blinded until the start of the necromite's next turn."
+        ]
+      }
+    ]
+  },
+  {
     "name": "Devoted of the Reigning Serpent",
     "size": "Medium",
     "type": { "humanoid": {} },
@@ -254866,62 +256521,6 @@
       {
         "name": "Cast a Spell (Costs 2 Actions)",
         "entries": ["The false lich uses Spellcasting."]
-      }
-    ]
-  },
-  {
-    "name": "Hazvongel",
-    "size": "Huge",
-    "type": { "fiend": { "demon": {} } },
-    "alignment": ["C", "E"],
-    "alignmentPrefix": "typically ",
-    "ac": [{ "ac": 17, "from": ["natural armor"] }],
-    "hp": { "average": 237, "formula": "25d12 + 75" },
-    "speed": { "walk": 20, "fly": 60 },
-    "str": 21,
-    "dex": 20,
-    "con": 16,
-    "int": 12,
-    "wis": 15,
-    "cha": 11,
-    "save": { "con": "+8", "wis": "+7" },
-    "skill": { "perception": "+7" },
-    "senses": ["blindsight 60 ft.", "darkvision 120 ft."],
-    "passive": 17,
-    "resist": [
-      "cold",
-      "fire",
-      "lightning",
-      "bludgeoning, piercing, and slashing damage from nonmagical sources"
-    ],
-    "immune": ["poison"],
-    "conditionImmune": ["exhaustion", "poisoned"],
-    "languages": ["Abyssal", "telepathy 120 ft."],
-    "cr": 14,
-    "trait": [
-      {
-        "name": "Magic Resistance",
-        "entries": [
-          "The hazvongel has advantage on saving throws against spells and other magical effects."
-        ]
-      }
-    ],
-    "action": [
-      {
-        "name": "Multiattack",
-        "entries": ["The hazvongel makes three Talon attacks."]
-      },
-      {
-        "name": "Talon",
-        "entries": [
-          "<em>Melee Weapon Attack.</em> +10 to hit, reach 15 ft., one target. <em>Hit:</em> 18 (3d8 + 5) piercing damage."
-        ]
-      },
-      {
-        "name": "Blood Barrage (Recharge 5-6)",
-        "entries": [
-          "The hazvongel launches a spray of blood in a 90-foot cone. Each creature in that area must make a DC 18 Dexterity saving throw, taking 27 (6d8) necrotic damage on a failed save or half as much damage on a successful one."
-        ]
       }
     ]
   },
@@ -290380,6 +291979,349 @@
         "name": "Breath of Gales (Recharge 5-6)",
         "entries": [
           "The dragon exhales a blast of wind in a 30-foot cone. Each creature in that cone takes 11 (2d10) bludgeoning damage and is pushed 25 feet away from the dragon and knocked prone; a successful DC 16 Strength saving throw halves the damage and prevents being pushed and knocked prone. Unprotected flames in the cone are extinguished, and sheltered flames (such as those in lanterns) have a 75% chance of being extinguished."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "River Otter",
+    "size": "Small",
+    "type": { "beast": { "mammal": { "mustelid": {} } } },
+    "ac": [12],
+    "hp": { "average": 4, "formula": "1d6 + 1" },
+    "speed": { "walk": 30, "swim": 30 },
+    "str": 6,
+    "dex": 14,
+    "con": 12,
+    "int": 5,
+    "wis": 13,
+    "cha": 8,
+    "senses": ["blindsight 5 ft."],
+    "passive": 11,
+    "cr": 0,
+    "familiar": true,
+    "trait": [
+      {
+        "name": "Sleek Coat Insulation",
+        "entries": [
+          "While the otter has more than half of its hit points, it has resistance to cold and fire damage."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Vicious Nip",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +4 to hit, reach 5 ft., one target. <em>Hit:</em> 2 (1d4) piercing damage."
+        ]
+      },
+      {
+        "name": "Toss Rock",
+        "entries": [
+          "<em>Ranged Weapon Attack.</em> +4 to hit, range 15/30 ft., one target. <em>Hit:</em> 1 bludgeoning damage and the next attack made against the target before the start of the otter's next turn has advantage."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Playful Scull",
+        "entries": [
+          "If the otter is submerged, it moves up to 5 feet without provoking an attack of opportunity."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Wildsea Otter",
+    "size": "Medium",
+    "type": { "beast": { "mammal": { "mustelid": {} } } },
+    "ac": [{ "ac": 13, "from": ["natural armor"] }],
+    "hp": { "average": 33, "formula": "3d8 + 6" },
+    "speed": { "walk": 30, "swim": 30 },
+    "str": 12,
+    "dex": 15,
+    "con": 13,
+    "int": 5,
+    "wis": 13,
+    "cha": 8,
+    "senses": ["blindsight 5 ft."],
+    "passive": 11,
+    "cr": 1,
+    "greatSteed": true,
+    "trait": [
+      {
+        "name": "Sleek Coat Insulation",
+        "entries": [
+          "While the otter has more than half of its hit points, it has resistance to cold and fire damage."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Shellcrack Bite",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +4 to hit, reach 5 ft., one target. <em>Hit:</em> 12 (3d6 + 2) piercing damage.",
+          "A creature with natural armor hit by this attack takes a cumulative -1 penalty to the AC offered by its natural armor, which lasts until it completes a long rest."
+        ]
+      },
+      {
+        "name": "Toss Rock",
+        "entries": [
+          "<em>Ranged Weapon Attack.</em> +4 to hit, range 15/30 ft., one target. <em>Hit:</em> 7 (2d4 + 2) bludgeoning damage and the next attack made against the target before the start of the otter's next turn has advantage."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Playful Scull",
+        "entries": [
+          "If the otter is submerged, it moves up to 5 feet without provoking an attack of opportunity."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Umberlant Otter",
+    "size": "Huge",
+    "type": { "beast": { "mammal": { "mustelid": {} } } },
+    "ac": [{ "ac": 14, "from": ["natural armor"] }],
+    "hp": { "average": 76, "formula": "9d12 + 18" },
+    "speed": { "walk": 30, "swim": 40 },
+    "str": 18,
+    "dex": 17,
+    "con": 14,
+    "int": 5,
+    "wis": 13,
+    "cha": 8,
+    "senses": ["blindsight 10 ft."],
+    "passive": 11,
+    "cr": 4,
+    "trait": [
+      {
+        "name": "Sleek Coat Insulation",
+        "entries": [
+          "While the otter has more than half of its hit points, it has resistance to cold and fire damage."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The otter makes two attacks, one of which can be with its Toss Anvilstone."
+        ]
+      },
+      {
+        "name": "Steelrend Bite",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +6 to hit, reach 5 ft., one target. <em>Hit:</em> 14 (3d6 + 4) piercing damage.",
+          "A creature with natural or nonmagical armor hit by this attack takes a cumulative -1 penalty to the AC offered by its armor, which lasts until it completes a long rest."
+        ]
+      },
+      {
+        "name": "Webclaw Grasp",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +6 to hit, reach 5 ft., one target. <em>Hit:</em> the target is grappled (escape DC 14)."
+        ]
+      },
+      {
+        "name": "Toss Anvilstone",
+        "entries": [
+          "<em>Ranged Weapon Attack.</em> +6 to hit, range 20/40 ft., one target. <em>Hit:</em> 15 (2d10 + 4) bludgeoning damage and the next attack made against the target before the start of the otter's next turn has advantage."
+        ]
+      },
+      {
+        "name": "Smash to Bits",
+        "entries": [
+          "The otter places a stone on its stomach and smashes a grappled creature into it repeatedly, forcing it to make a DC 14 Constitution saving throw, taking 38 (4d8 + 20) bludgeoning damage on a failed save, or half as much on a success."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Playful Scull",
+        "entries": [
+          "If the otter is submerged, it moves up to 5 feet without provoking an attack of opportunity."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Dire River Otter",
+    "size": "Medium",
+    "type": { "beast": { "mammal": { "mustelid": {} } } },
+    "ac": [{ "ac": 13, "from": ["natural armor"] }],
+    "hp": { "average": 22, "formula": "3d8 + 6" },
+    "speed": { "walk": 40, "swim": 40 },
+    "str": 12,
+    "dex": 14,
+    "con": 14,
+    "int": 5,
+    "wis": 13,
+    "cha": 8,
+    "senses": ["blindsight 5 ft."],
+    "passive": 11,
+    "cr": 1,
+    "greatSteed": true,
+    "trait": [
+      {
+        "name": "Dire Rage",
+        "entries": [
+          "When the dire river otter takes the Attack action, it can make an additional attack with a natural weapon."
+        ]
+      },
+      {
+        "name": "Sleek Coat Insulation",
+        "entries": [
+          "While the otter has more than half of its hit points, it has resistance to cold and fire damage."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Vicious Nip",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +5 to hit, reach 5 ft., one target. <em>Hit:</em> 7 (2d6 + 1) piercing damage."
+        ]
+      },
+      {
+        "name": "Toss Rock",
+        "entries": [
+          "<em>Ranged Weapon Attack.</em> +5 to hit, range 15/30 ft., one target. <em>Hit:</em> 5 (2d4 + 1) bludgeoning damage and the next attack made against the target before the start of the otter's next turn has advantage."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Playful Scull",
+        "entries": [
+          "If the otter is submerged, it moves up to 5 feet without provoking an attack of opportunity."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Dire Wildsea Otter",
+    "size": "Large",
+    "type": { "beast": { "mammal": { "mustelid": {} } } },
+    "ac": [{ "ac": 14, "from": ["natural armor"] }],
+    "hp": { "average": 37, "formula": "5d10 + 10" },
+    "speed": { "walk": 40, "swim": 40 },
+    "str": 14,
+    "dex": 15,
+    "con": 15,
+    "int": 5,
+    "wis": 13,
+    "cha": 8,
+    "senses": ["blindsight 5 ft."],
+    "passive": 11,
+    "cr": 3,
+    "trait": [
+      {
+        "name": "Dire Rage",
+        "entries": [
+          "When the dire wildsea otter takes the Attack action, it can make an additional attack with a natural weapon."
+        ]
+      },
+      {
+        "name": "Sleek Coat Insulation",
+        "entries": [
+          "While the otter has more than half of its hit points, it has resistance to cold and fire damage."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Shellcrack Bite",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +5 to hit, reach 5 ft., one target. <em>Hit:</em> 20 (4d8 + 2) piercing damage.",
+          "A creature with natural armor hit by this attack takes a cumulative -1 penalty to the AC offered by its natural armor, which lasts until it completes a long rest."
+        ]
+      },
+      {
+        "name": "Toss Rock",
+        "entries": [
+          "<em>Ranged Weapon Attack.</em> +5 to hit, range 15/30 ft., one target. <em>Hit:</em> 12 (3d6 + 2) bludgeoning damage and the next attack made against the target before the start of the otter's next turn has advantage."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Playful Scull",
+        "entries": [
+          "If the otter is submerged, it moves up to 5 feet without provoking an attack of opportunity."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Dire Umberlant Otter",
+    "size": "Gargantuan",
+    "type": { "beast": { "mammal": { "mustelid": {} } } },
+    "ac": [{ "ac": 15, "from": ["natural armor"] }],
+    "hp": { "average": 104, "formula": "11d12 + 33" },
+    "speed": { "walk": 30, "swim": 40 },
+    "str": 20,
+    "dex": 17,
+    "con": 16,
+    "int": 5,
+    "wis": 13,
+    "cha": 8,
+    "senses": ["blindsight 10 ft."],
+    "passive": 11,
+    "cr": 8,
+    "trait": [
+      {
+        "name": "Dire Rage",
+        "entries": [
+          "When the dire umberlant otter takes the Attack action, it can make an additional attack with a natural weapon."
+        ]
+      },
+      {
+        "name": "Sleek Coat Insulation",
+        "entries": [
+          "While the otter has more than half of its hit points, it has resistance to cold and fire damage."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The otter makes two attacks, one of which can be with its Toss Anvilstone."
+        ]
+      },
+      {
+        "name": "Steelrend Bite",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +8 to hit, reach 5 ft., one target. <em>Hit:</em> 23 (4d8 + 5) piercing damage.",
+          "A creature with natural or nonmagical armor hit by this attack takes a cumulative -1 penalty to the AC offered by its armor, which lasts until it completes a long rest."
+        ]
+      },
+      {
+        "name": "Webclaw Grasp",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +8 to hit, reach 5 ft., one target. <em>Hit:</em> the target is grappled (escape DC 16)."
+        ]
+      },
+      {
+        "name": "Toss Anvilstone",
+        "entries": [
+          "<em>Ranged Weapon Attack.</em> +8 to hit, range 20/40 ft., one target. <em>Hit:</em> 25 (3d12 + 5) bludgeoning damage and the next attack made against the target before the start of the otter's next turn has advantage."
+        ]
+      },
+      {
+        "name": "Smash to Bits",
+        "entries": [
+          "The otter places a stone on its stomach and smashes a grappled creature into it repeatedly, forcing it to make a DC 16 Constitution saving throw, taking 52 (5d10 + 25) bludgeoning damage on a failed save, or half as much on a success."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Playful Scull",
+        "entries": [
+          "If the otter is submerged, it moves up to 5 feet without provoking an attack of opportunity."
         ]
       }
     ]

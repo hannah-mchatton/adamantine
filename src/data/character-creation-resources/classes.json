@@ -15268,9 +15268,9 @@
                     "Cloudkill",
                     "Enervation",
                     "Circle of Death",
-                    "Finger of Death",
+                    "Eternal Reap",
                     "Ghastly Scourge",
-                    "Massacre"
+                    "Thousand Deaths"
                   ],
                   "ability": "CEA30030-C511-428E-86E0-E9A13585D452"
                 }
@@ -17512,14 +17512,14 @@
                 {
                   "type": "spell",
                   "options": [
-                    "Animal Friendship",
+                    "Pollen Burst",
                     "Speak with Animals",
                     "Barkskin",
                     "Locate Animals or Plants",
                     "Conjure Animals",
                     "Plant Growth",
                     "Grasping Vine",
-                    "Guardian of Nature",
+                    "Thorn Storm",
                     "Commune with Nature",
                     "Insect Plague",
                     "Druid Grove",
@@ -27923,7 +27923,7 @@
                     "Mycelia Snare",
                     "Blindness/Deafness",
                     "Wither and Bloom",
-                    "Horrid Growth",
+                    "Mycelium Madness",
                     "Sprouting Doom",
                     "Blight",
                     "Pallid Rooting",
@@ -28406,17 +28406,17 @@
                     "Thorn Whip",
                     "Ensnaring Strike",
                     "Skein of Vines",
-                    "Earthbind",
+                    "Sap Bomb",
                     "Spike Growth",
-                    "Plant Growth",
+                    "Sapling Lance",
                     "Speak with Plants",
                     "Grasping Vine",
                     "Wake Plantlife",
+                    "Grasping Roots",
                     "Tree Stride",
-                    "Wrath of Nature",
                     "Transport via Plants",
                     "Arboreal Curse",
-                    "Earthquake",
+                    "Arborist's Enchantment",
                     "Titanic Growth"
                   ],
                   "ability": "00C78F01-EC17-4192-A4C9-D1939F6CA631"
@@ -52909,6 +52909,104 @@
         "show": true,
         "spellcaster": false,
         "name": "Oath of Shadows"
+      },
+      {
+        "description": "Spiders are beings of incredible creativity and ingenuinty for their small size. Though their appearance wouldn't obviously betray it, all mundane spiders are distantly descended from the great, demonic Demonweb Spiders of Lolth's domain - the Demonweb Pits. Paladins who swear this oath are almost always devout followers of the Spider Queen, and often drow. Their fealty to her grants them powerful spider-like abilities, though the cost of this power is unclear given their patron's madness.",
+        "features": {
+          "1": [
+            {
+              "name": "Tenets",
+              "description": "",
+              "subFeatures": [
+                {
+                  "name": "Have a Plan",
+                  "description": "Spiders delight in managing their intricate webs. Likewise, you should always form a plan to take what you want and say, do, and sacrifice whatever necessary."
+                },
+                {
+                  "name": "Might Makes Right",
+                  "description": "In the bug world, only power is respected. There is no greater goal and no emotion or attachment that should prevent you from your upward progress."
+                },
+                {
+                  "name": "Sow Discord",
+                  "description": "If power is the greatest virtue, then you can only help the world by throwing it into chaos and conflict. This provides opportunity for the strong to rise over the weak."
+                }
+              ]
+            },
+            {
+              "name": "Spider Walk",
+              "description": "Starting at 1st level, as a bonus action you can expend a point of Fervor to transform your legs into eight spider-like limbs for 10 minutes. While you have spider legs, you have a climbing speed equal to your walking speed, you can climb difficult surfaces, including upside down on ceilings and across webs, without penalty, and you have advantage on saving throws against being knocked prone."
+            }
+          ],
+          "2": [
+            {
+              "name": "Oath Spells",
+              "granted": [
+                {
+                  "type": "spell",
+                  "options": [
+                    "Creeping Touch",
+                    "Ensnaring Strike",
+                    "Spider Climb",
+                    "Web",
+                    "Lolth's Favor",
+                    "Spider Bite",
+                    "Arcane Eye",
+                    "Widowcraft",
+                    "Dridershape",
+                    "Strands of the Demonweb"
+                  ],
+                  "ability": "AE907445-7FA4-47C1-916D-99B82D61ACFD"
+                }
+              ],
+              "subclassSpellsFeature": true,
+              "preparedCaster": true,
+              "subclassSpellCastingLevel": 2
+            }
+          ],
+          "3": [
+            {
+              "name": "Dark Mother's Design",
+              "description": "Starting at 3rd level, when you roll initiative, you can choose to not roll initiative. If you do so, during the current combat encounter, if you have not taken a turn yet in a given round, you can take your turn directly after any other creature's turn."
+            },
+            {
+              "name": "Venomous Smite",
+              "description": "Also at 3rd level, when you use your Smite feature, you can expend 1 point of Fervor to force the target to make a Constitution saving throw against your oath save DC.  On a failed save, the target is poisoned for 1 minute. The target can repeat its saving throw at the end of each of its turns, ending the effect on a success.</p><p>A poisoned creature has disadvantage on their saving throw. If a poisoned creature fails its saving throw, it takes additional poison damage equal to half the initial damage."
+            }
+          ],
+          "7": [
+            {
+              "name": "Aura of the Demonweb",
+              "description": "Beginning at 7th level, a bit of the Demonweb seeps into the world around, obscuring secrets and lies. When a creature within your aura makes a Wisdom ability check or saving throw, you can choose to impose a penalty equal to your oath ability modifier.</p><p>Additionally, creatures within your aura of your choice have advantage on checks made to hide, and can move across webs without penalty."
+            }
+          ],
+          "15": [
+            {
+              "name": "Spinner of Webs",
+              "description": "At 15th level, your connection to the Demonweb allows you to pull in sections of its silk to coat your surroundings in webs. As an action, you can expend 2 points of Fervor to fill a 5-foot cube within 5 feet of you with spectral, demonic webs for 1 hour.</p><p>Each creature that starts its turn in the webs or that enters them for the first time on a turn must make a Dexterity saving throw against your oath save DC. On a failed save, a creature is restrained as long as it remains in the webs or until it breaks free. A creature restrained by the webs can use its action to make a Strength check against your oath save DC. If it succeeds, it is no longer restrained.</p><p>Additionally, you are immune to being grappled or restrained.",
+              "granted": [
+                {
+                  "type": "condition-immunity",
+                  "options": ["Grappled", "Restrained"]
+                }
+              ]
+            }
+          ],
+          "20": [
+            {
+              "name": "Spider Queen's Decree",
+              "description": "Upon reaching 20th level, you can use an action to allow the Spider Queen to twist your form into that of a monstrous spider. When you do so, you gain the benefits listed below for one minute:<ul><li>Your weapons are incorporated into your new form, and you cannot be disarmed of them.</li><li>Your size becomes Huge, unless it was larger.</li><li>Your type changes to Fiend (demon), you cannot speak, and you are considered hostile to all creatures.</li><li>Your Strength score becomes 26, unless it was already higher.</li><li>Your movement speed increases by 10 feet, and you gain a climbing speed equal to your walking speed. You can climb difficult surfaces, including upside down on ceilings and across webs, without penalty.</li><li>You can use your Spinner of Webs feature without expending any points of Fervor and as a bonus action.</li></ul>Once you use this feature, you can't use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again.",
+              "uses": {
+                "id": "A38B754B-B572-43FE-85C2-DC37AE65E31B",
+                "type": "fixed",
+                "amount": 1,
+                "reset": 2
+              }
+            }
+          ]
+        },
+        "show": true,
+        "spellcaster": false,
+        "name": "Oath of the Spider"
       },
       {
         "description": "        Unbreakable Paladins are soldiers who dedicate themselves to defending the ideals of freedom and prosperity and fighting those who would use strength and violence to subdue and rule the weak. Commonly called bulwark knights, mountain knights, and The Unbroken, these soldiers stride into battle with defensive magics alight, making them mobile fortresses that can withstand the wrath of kings, emperors, and gods.",
@@ -79198,18 +79296,18 @@
                   "type": "spell",
                   "options": [
                     "Entangle",
-                    "Mycelia Snare",
+                    "Pollen Burst",
                     "Barkskin",
-                    "Spike Growth",
+                    "Sap Bomb",
+                    "Sapling Lance",
                     "Speak with Plants",
-                    "Sprouting Doom",
                     "Grasping Vine",
-                    "Lesser Blightbirth",
+                    "Thorn Storm",
                     "Hederan Embrace",
                     "Tree Stride",
-                    "Greater Blightbirth",
+                    "Grass Tide",
                     "Arboreal Curse",
-                    "Sudden Wasting",
+                    "Arborist's Enchantment",
                     "Garden of Rot and Ruin"
                   ],
                   "ability": "B85FFA8F-7EE5-4B27-9789-05477333032E"
@@ -82840,7 +82938,7 @@
                   "options": [
                     "Mage Armor",
                     "Protection from Evil and Good",
-                    "Barkskin",
+                    "Mirrorveil",
                     "Warding Bond",
                     "Counterspell",
                     "Magic Circle",

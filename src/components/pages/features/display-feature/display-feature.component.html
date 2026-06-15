@@ -871,7 +871,7 @@
   <ng-container
     *ngIf="!feature.subclassSpellsFeature && !feature.subclassExploitsFeature"
   >
-    <p [innerHTML]="description"></p>
+    <div *ngFor="let desc of feature.description"><p [innerHTML]="desc"></p></div>
   </ng-container>
 
   <ng-container *ngIf="feature.subFeatures">

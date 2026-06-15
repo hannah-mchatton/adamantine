@@ -23,7 +23,6 @@ export class DisplayFeatureComponent implements OnInit {
   @Input() displayHeader: boolean = true;
 
   public alwaysAvailable;
-  public description;
 
   constructor(private sanitizer: DomSanitizer) {}
 
@@ -37,10 +36,6 @@ export class DisplayFeatureComponent implements OnInit {
           "These spells don't count against your number of spells known.";
       }
     }
-
-    this.description = this.sanitizer.bypassSecurityTrustHtml(
-      this.feature.description
-    );
   }
 
   public isArray(array: any): boolean {

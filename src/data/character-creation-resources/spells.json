@@ -10704,13 +10704,7 @@
     "higherLevels": [
       "When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d6 for each slot level above 5th."
     ],
-    "lists": [
-      "Arcane",
-      "Occult",
-      "Primal",
-      "Melodic",
-      "Invention"
-    ],
+    "lists": ["Arcane", "Occult", "Primal", "Melodic", "Invention"],
     "ritual": 0,
     "type": "save",
     "save": "con",
@@ -10736,11 +10730,7 @@
       "If a creature is holding or wearing such an object and takes the damage from it, the creature must succeed on a Constitution saving throw or drop the object if it can.",
       "If an object targeted with this spell is a nonmagical weapon or suit of armor, it melts into slag and is destroyed."
     ],
-    "lists": [
-      "Arcane",
-      "Occult",
-      "Invention"
-    ],
+    "lists": ["Arcane", "Occult", "Invention"],
     "ritual": 0,
     "type": "save",
     "save": "con",
@@ -14666,6 +14656,56 @@
     "ritual": 0
   },
   {
+    "name": "Malevolent Vise",
+    "school": "Conjuration",
+    "level": 8,
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "S",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "An iron claw envelops a creature you can see within 120 feet, restraining it. The restrained creature can't teleport, and at the end of each of its turns must make a DC 25 Constitution saving throw. On a failed save, the creature takes 4d8 + 30 force damage, or half as much on a success."
+    ],
+    "type": "save",
+    "save": "con",
+    "damage": [
+      {
+        "dice": 4,
+        "die": 8,
+        "amount": 30,
+        "type": "force"
+      }
+    ],
+    "lists": [],
+    "unique": "This spell was developed by the tyrant god Bane.",
+    "ritual": 0
+  },
+  {
+    "name": "Almighty Fist",
+    "school": "Conjuration",
+    "level": 9,
+    "castingTime": "1 action",
+    "range": "300 feet (10-foot radius)",
+    "components": "S",
+    "duration": "1 round",
+    "description": [
+      "A titanic searing fist plummets from the heavens, crashing down to strike a 10-foot radius centered on a point within range. Each creature in the area is knocked prone, then must make a Strength saving throw. On a failed save, a creature takes 4d12 + 100 force damage and is restrained until the end of your next turn. On a success, a creature takes half as much damage."
+    ],
+    "type": "save",
+    "save": "str",
+    "damage": [
+      {
+        "dice": 4,
+        "die": 12,
+        "amount": 100,
+        "type": "force"
+      }
+    ],
+    "lists": [],
+    "unique": "This spell was developed by the tyrant god Bane.",
+    "ritual": 0
+  },
+  {
     "name": "Eternity Reap",
     "school": "Necromancy",
     "level": 7,
@@ -14954,6 +14994,46 @@
         "type": "piercing"
       }
     ]
+  },
+  {
+    "name": "Invocation of the Black Hand",
+    "school": "Enchantment",
+    "level": 2,
+    "castingTime": "1 bonus action",
+    "range": "Special",
+    "components": "V, S, M (a black glove)",
+    "duration": "1 round",
+    "description": [
+      "Spectral claws clutch at each creature that you dealt damage to this turn, forcing each of them to make a Wisdom saving throw. On a failed save, a creature is frightened of you and restrained until the end of your next turn."
+    ],
+    "lists": ["Occult", "Divine", "Psionic"],
+    "ritual": 0,
+    "type": "save",
+    "save": "wis"
+  },
+  {
+    "name": "Tyrant's Might",
+    "school": "Enchantment",
+    "level": 2,
+    "castingTime": "1 bonus action",
+    "range": "Self",
+    "components": "V, S",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You exude the terrifying strength of an iron fist. For the duration, at the end of each of your turns, you gain 5 temporary hit points. If you hit a creature with an attack while you have any of these temporary hit points, you lose all of them and deal extra force damage equal to the temporary hit points lost."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 3rd level or higher, the amount of temporary hit points that you gain at the end of each turn increases by 5 per spell slot level above 3rd."
+    ],
+    "lists": ["Occult", "Divine", "Psionic"],
+    "ritual": 0,
+    "healing": [
+      {
+        "amount": 5,
+        "temporary": true
+      }
+    ],
+    "upcastAmount": 5
   },
   {
     "name": "Mordenkainen's Magnificent Mansion",
@@ -15937,7 +16017,15 @@
       "Alternatively, if you know the sigil sequence of a teleportation circle on another plane of existence, this spell can take you to that circle. If the teleportation circle is too small to hold all the creatures you transported, they appear in the closest unoccupied spaces next to the circle.",
       "You can use this spell to banish an unwilling creature to another plane. Choose a creature within your reach.  The creature must make a Charisma saving throw. If the creature fails the save, it is transported to a random location on the plane of existence you specify. A creature so transported must find its own way back to your current plane of existence.<table> <tr> <th colspan=\"4\">Planar Forks</th> </tr> <tr> <th>Plane</th> <th>Subplane</th> <th>Material</th> <th>Pitch</th> </tr> <tr> <th colspan=\"4\">Material and Echoes</th> </tr> <tr> <td>Material</td> <td>-</td> <td>Steel</td> <td>C</td> </tr> <tr> <td>Feywild</td> <td>-</td> <td>Steel</td> <td>C&sharp;</td> </tr> <tr> <td>Shadowfell</td> <td>-</td> <td>Steel</td> <td>C&flat;</td> </tr> <tr> <th colspan=\"4\">Elemental Planes</th> </tr> <tr> <td>Fire</td> <td>-</td> <td>Copper</td> <td>A</td> </tr> <tr> <td>Earth</td> <td>-</td> <td>Zinc</td> <td>A</td> </tr> <tr> <td>Water</td> <td>-</td> <td>Lead</td> <td>A</td> </tr> <tr> <td>Air</td> <td>-</td> <td>Tin</td> <td>A</td> </tr> <tr> <th colspan=\"4\">Para-Elemental Planes</th> </tr> <tr> <td>Smoke</td> <td>-</td> <td>Bronze</td> <td>A</td> </tr> <tr> <td>Magma</td> <td>-</td> <td>Brass</td> <td>A</td> </tr> <tr> <td>Ooze</td> <td>-</td> <td>Solder</td> <td>A</td> </tr> <tr> <td>Ice</td> <td>-</td> <td>Terne</td> <td>A</td> </tr> <tr> <th colspan=\"4\">Quasi-Elemental Planes</th> </tr> <tr> <td>Radiance</td> <td>-</td> <td>Copper</td> <td>A&sharp;</td> </tr> <tr> <td>Mineral</td> <td>-</td> <td>Zinc</td> <td>A&sharp;</td> </tr> <tr> <td>Steam</td> <td>-</td> <td>Lead</td> <td>A&sharp;</td> </tr> <tr> <td>Lightning</td> <td>-</td> <td>Tin</td> <td>A&sharp;</td> </tr> <tr> <td>Ash</td> <td>-</td> <td>Copper</td> <td>A&flat;</td> </tr> <tr> <td>Dust</td> <td>-</td> <td>Zinc</td> <td>A&flat;</td> </tr> <tr> <td>Salt</td> <td>-</td> <td>Lead</td> <td>A&flat;</td> </tr> <tr> <td>Vacuum</td> <td>-</td> <td>Tin</td> <td>A&flat;</td> </tr> <tr> <th colspan=\"4\">Energy Planes</th> </tr> <tr> <td>Positive</td> <td>-</td> <td>Ivory</td> <td>C<sub>8</sub></td> </tr> <tr> <td>Negative</td> <td>-</td> <td>Ebony</td> <td>A<sub>0</sub></td> </tr> <tr> <th colspan=\"4\">Transitive Planes</th> </tr> <tr> <td>Ethereal</td> <td>-</td> <td>Glass</td> <td>B</td> </tr> <tr> <td>Astral</td> <td>-</td> <td>Quartz</td> <td>B</td> </tr> <tr> <th colspan=\"4\">Outer Planes</th> </tr> <tr> <td>Outlands</td> <td>-</td> <td>Platinum</td> <td>C</td> </tr> <tr> <td>Mechanus</td> <td>-</td> <td>Silver</td> <td>C</td> </tr> <tr> <td>Arcadia</td> <td>Abellio</td> <td>Gold</td> <td>C&sharp;<sub>0</sub></td> </tr> <tr> <td></td> <td>Buxenus</td> <td>Gold</td> <td>C&sharp;<sub>1</sub></td> </tr> <tr> <td>Celestia</td> <td>Lunia</td> <td>Gold</td> <td>D<sub>0</sub></td> </tr> <tr> <td></td> <td>Mercuria</td> <td>Gold</td> <td>D<sub>1</sub></td> </tr> <tr> <td></td> <td>Venya</td> <td>Gold</td> <td>D<sub>2</sub></td> </tr> <tr> <td></td> <td>Solania</td> <td>Gold</td> <td>D<sub>3</sub></td> </tr> <tr> <td></td> <td>Mertion</td> <td>Gold</td> <td>D<sub>4</sub></td> </tr> <tr> <td></td> <td>Jovar</td> <td>Gold</td> <td>D<sub>5</sub></td> </tr> <tr> <td></td> <td>Chronias</td> <td>Gold</td> <td>D<sub>6</sub></td> </tr> <tr> <td></td> <td>Palace of Time</td> <td>Gold</td> <td>D<sub>7</sub></td> </tr> <tr> <td>Bytopia</td> <td>Dothion</td> <td>Gold</td> <td>E&flat;<sub>0</sub></td> </tr> <tr> <td></td> <td>Shurrock</td> <td>Gold</td> <td>E&flat;<sub>1</sub></td> </tr> <tr> <td>Elysium</td> <td>Amoria</td> <td>Gold</td> <td>E<sub>0</sub></td> </tr> <tr> <td></td> <td>Eronia</td> <td>Gold</td> <td>E<sub>1</sub></td> </tr> <tr> <td></td> <td>Belierin</td> <td>Gold</td> <td>E<sub>2</sub></td> </tr> <tr> <td></td> <td>Thalasia</td> <td>Gold</td> <td>E<sub>3</sub></td> </tr> <tr> <td>Beastlands</td> <td>Krigala</td> <td>Gold</td> <td>F<sub>0</sub></td> </tr> <tr> <td></td> <td>Brux</td> <td>Gold</td> <td>F<sub>1</sub></td> </tr> <tr> <td></td> <td>Karasuthra</td> <td>Gold</td> <td>F<sub>2</sub></td> </tr> <tr> <td>Arborea</td> <td>Arvandor</td> <td>Gold</td> <td>F&sharp;<sub>0</sub></td> </tr> <tr> <td></td> <td>Aquallor</td> <td>Gold</td> <td>F&sharp;<sub>1</sub></td> </tr> <tr> <td></td> <td>Mithardir</td> <td>Gold</td> <td>F&sharp;<sub>2</sub></td> </tr> <tr> <td>Ysgard</td> <td>Asgard</td> <td>Gold</td> <td>G<sub>0</sub></td> </tr> <tr> <td></td> <td>Muspelheim</td> <td>Gold</td> <td>G<sub>1</sub></td> </tr> <tr> <td></td> <td>Nidavellir</td> <td>Gold</td> <td>G<sub>2</sub></td> </tr> <tr> <td>Limbo</td> <td>-</td> <td>Nickel</td> <td>C</td> </tr> <tr> <td>Pandemonium</td> <td>Pandesmos</td> <td>Iron</td> <td>C&sharp;<sub>0</sub></td> </tr> <tr> <td></td> <td>Cocytus</td> <td>Iron</td> <td>C&sharp;<sub>1</sub></td> </tr> <tr> <td></td> <td>Phlegethon</td> <td>Iron</td> <td>C&sharp;<sub>2</sub></td> </tr> <tr> <td></td> <td>Agathion</td> <td>Iron</td> <td>C&sharp;<sub>3</sub></td> </tr> <tr> <td>Abyss</td> <td>Pazunia</td> <td>Iron</td> <td>D<sub>8</sub></td> </tr> <tr> <td></td> <td>Other Layers</td> <td>Iron</td> <td>Random Chords</td> </tr> <tr> <td></td> <td>Blackhole</td> <td>Iron</td> <td><em>h</em></td> </tr> <tr> <td>Carceri</td> <td>Orthrys</td> <td>Iron</td> <td>E&flat;<sub>0</sub></td> </tr> <tr> <td></td> <td>Cathrys</td> <td>Iron</td> <td>E&flat;<sub>1</sub></td> </tr> <tr> <td></td> <td>Minethys</td> <td>Iron</td> <td>E&flat;<sub>2</sub></td> </tr> <tr> <td></td> <td>Colothys</td> <td>Iron</td> <td>E&flat;<sub>3</sub></td> </tr> <tr> <td></td> <td>Porphatys</td> <td>Iron</td> <td>E&flat;<sub>4</sub></td> </tr> <tr> <td></td> <td>Agathys</td> <td>Iron</td> <td>E&flat;<sub>5</sub></td> </tr> <tr> <td>Hades</td> <td>Oinos</td> <td>Iron</td> <td>E<sub>0</sub></td> </tr> <tr> <td></td> <td>Niflheim</td> <td>Iron</td> <td>E<sub>1</sub></td> </tr> <tr> <td></td> <td>Pluton</td> <td>Iron</td> <td>E<sub>2</sub></td> </tr> <tr> <td>Gehenna</td> <td>Khalas</td> <td>Iron</td> <td>F<sub>0</sub></td> </tr> <tr> <td></td> <td>Chamada</td> <td>Iron</td> <td>F<sub>1</sub></td> </tr> <tr> <td></td> <td>Mungoth</td> <td>Iron</td> <td>F<sub>2</sub></td> </tr> <tr> <td></td> <td>Krangath</td> <td>Iron</td> <td>F<sub>3</sub></td> </tr> <tr> <td>Nine Hells</td> <td>Avernus</td> <td>Iron</td> <td>F&sharp;<sub>0</sub></td> </tr> <tr> <td></td> <td>Dis</td> <td>Iron</td> <td>F&sharp;<sub>1</sub></td> </tr> <tr> <td></td> <td>Minauros</td> <td>Iron</td> <td>F&sharp;<sub>2</sub></td> </tr> <tr> <td></td> <td>Phlegethos</td> <td>Iron</td> <td>F&sharp;<sub>3</sub></td> </tr> <tr> <td></td> <td>Stygia</td> <td>Iron</td> <td>F&sharp;<sub>4</sub></td> </tr> <tr> <td></td> <td>Malbolge</td> <td>Iron</td> <td>F&sharp;<sub>5</sub></td> </tr> <tr> <td></td> <td>Maladomini</td> <td>Iron</td> <td>F&sharp;<sub>6</sub></td> </tr> <tr> <td></td> <td>Cania</td> <td>Iron</td> <td>F&sharp;<sub>7</sub></td> </tr> <tr> <td></td> <td>Nessus</td> <td>Iron</td> <td>F&sharp;<sub>8</sub></td> </tr> <tr> <td>Acheron</td> <td>Avalas</td> <td>Iron</td> <td>G<sub>0</sub></td> </tr> <tr> <td></td> <td>Thuldanin</td> <td>Iron</td> <td>G<sub>1</sub></td> </tr> <tr> <td></td> <td>Tintibulus</td> <td>Iron</td> <td>G<sub>2</sub></td> </tr> <tr> <td></td> <td>Ocanthus</td> <td>Iron</td> <td>G<sub>3</sub></td> </tr> </table> "
     ],
-    "lists": ["Arcane", "Divine", "Occult", "Primal", "Psionic", "Melodic", "Invention"],
+    "lists": [
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal",
+      "Psionic",
+      "Melodic",
+      "Invention"
+    ],
     "ritual": 0,
     "type": "save",
     "save": "cha"
@@ -28726,9 +28814,7 @@
     "range": "Self",
     "components": "S",
     "duration": "Instantaneous",
-    "description": [
-      "You gain 1d4 temporary hit points and you gain Plumage."
-    ],
+    "description": ["You gain 1d4 temporary hit points and you gain Plumage."],
     "higherLevels": [
       "The temporary hit points granted by this spell increase by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4)."
     ],
@@ -28778,7 +28864,9 @@
       "A sharp mass of feathers extends from a free hand. Make a melee spell attack against a creature within your reach. On a hit, the target takes 3d8 slashing damage.",
       "If you have Plumage when you cast this spell, you can teleport up to 10 feet to an unoccupied space you can see immediately before or after making this attack."
     ],
-    "higherLevels": ["If you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd."],
+    "higherLevels": [
+      "If you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd."
+    ],
     "lists": ["Primal", "Elemental"],
     "element": "Air",
     "ritual": 0,
@@ -28803,7 +28891,9 @@
       "You unleash a flurry of sharp feathers in a 20-foot cone originating from you. Each creature in the area must make a Dexterity saving throw, taking 6d6 slashing damage on a failed save, or half as much on a success.",
       "Immediately after casting this spell, if you have Plumage, you can teleport to an unoccupied space you can see that is adjacent to at least one creature that took damage from this spell."
     ],
-    "higherLevels": ["If you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd."],
+    "higherLevels": [
+      "If you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd."
+    ],
     "lists": ["Primal", "Elemental"],
     "element": "Air",
     "ritual": 0,
@@ -31958,6 +32048,61 @@
     "lists": ["Occult", "Elemental"],
     "element": "Shadow",
     "ritual": 0
+  },
+  {
+    "name": "Shatter Strength",
+    "school": "Necromancy",
+    "level": 6,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a fragment from a broken blade)",
+    "duration": "1 hour",
+    "description": [
+      "You lash out with crippling force, deals 4d10 necrotic damage to a creature you can see within range.",
+      "Then, if the target has half of its maximum hit points or fewer, it must make a Constitution saving throw. On a failed save, you choose one of the following effects. On a success, the target chooses one of the following effects.",
+      "<ul><li>For 1 hour, the target loses any immunity to being charmed or frightened.</li><li>For 1 hour, the target has disadvantage on Strength, Dexterity, and Constitution saving throws.</li><li>For 1 hour, the target can't take bonus actions or reactions.</li></ul>"
+    ],
+    "lists": ["Occult"],
+    "ritual": 0,
+    "damage": [
+      {
+        "dice": 4,
+        "die": 10,
+        "type": "necrotic"
+      }
+    ],
+    "type": "save",
+    "save": "con"
+  },
+  {
+    "name": "Condemn",
+    "school": "Conjuration",
+    "level": 8,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a dagger)",
+    "duration": "Concentration, up to 10 minutes",
+    "description": [
+      "You conjure a looming blade above a creature within range. At the start of each of the creature's turns, it takes 2d10 psychic damage.",
+      "When the spell ends, the blade falls, forcing the target to make a Dexterity saving throw. On a failed save, the target takes 5d10 + 40 force damage, plus an extra 10 force damage for each round that you concentrated on the spell, or half as much damage on a success."
+    ],
+    "lists": ["Occult"],
+    "ritual": 0,
+    "damage": [
+      {
+        "dice": 2,
+        "die": 10,
+        "type": "psychic"
+      },
+      {
+        "dice": 5,
+        "die": 10,
+        "amount": 40,
+        "type": "force"
+      }
+    ],
+    "type": "save",
+    "save": "con"
   },
   {
     "name": "Smothering Gloom",

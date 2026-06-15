@@ -447,6 +447,214 @@
     ]
   },
   {
+    "name": "Banedead Vassal",
+    "size": "Medium",
+    "type": { "undead": { "corporeal": { "undying": {} } } },
+    "ac": [{ "ac": 17, "from": ["grave plate"] }],
+    "hp": { "average": 45, "formula": "7d8 + 14" },
+    "speed": { "walk": 30 },
+    "str": 18,
+    "dex": 12,
+    "con": 14,
+    "int": 10,
+    "wis": 12,
+    "cha": 15,
+    "senses": ["darkvision 60 ft."],
+    "passive": 11,
+    "resist": ["necrotic"],
+    "immune": ["poison"],
+    "conditionImmune": ["exhaustion", "frightened", "poisoned"],
+    "languages": ["Common", "Dark Speech"],
+    "cr": 3,
+    "trait": [
+      {
+        "name": "Undying Legion",
+        "entries": [
+          "While the banedead is within 30 feet of at least two other banedead, it has resistance to all damage except force and radiant."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": ["The banedead makes two attacks."]
+      },
+      {
+        "name": "Merciless Slash",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +6 to hit, reach 5 ft., one target. <em>Hit:</em> 9 (1d10 + 4) slashing damage plus 4 (1d8) necrotic damage.",
+          "A creature reduced to 0 hit points by this damage immediately fails one death saving throw."
+        ]
+      },
+      {
+        "name": "Iron Grasp",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +6 to hit, reach 5 ft., one target. <em>Hit:</em> 8 (1d8 + 4) bludgeoning damage and the target is grappled (escape DC 14).",
+          "A creature grappled in this way subtracts 1d4 from any attack roll or saving throw it makes."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Banedead Direguard",
+    "size": "Medium",
+    "type": { "undead": { "corporeal": { "undying": {} } } },
+    "ac": [{ "ac": 17, "from": ["grave plate"] }],
+    "hp": { "average": 60, "formula": "8d8 + 24" },
+    "speed": { "walk": 30 },
+    "str": 19,
+    "dex": 12,
+    "con": 16,
+    "int": 10,
+    "wis": 14,
+    "cha": 17,
+    "senses": ["darkvision 60 ft."],
+    "passive": 12,
+    "resist": ["necrotic"],
+    "immune": ["poison"],
+    "conditionImmune": ["exhaustion", "frightened", "poisoned"],
+    "languages": ["Common", "Dark Speech"],
+    "cr": 5,
+    "trait": [
+      {
+        "name": "Undying Legion",
+        "entries": [
+          "While the banedead is within 30 feet of at least two other banedead, it has resistance to all damage except force and radiant."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": ["The banedead makes two attacks."]
+      },
+      {
+        "name": "Merciless Slash",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +7 to hit, reach 5 ft., one target. <em>Hit:</em> 9 (1d10 + 4) slashing damage plus 4 (1d8) necrotic damage.",
+          "A creature reduced to 0 hit points by this damage immediately fails one death saving throw."
+        ]
+      },
+      {
+        "name": "Iron Grasp",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +7 to hit, reach 5 ft., one target. <em>Hit:</em> 8 (1d8 + 4) bludgeoning damage and the target is grappled (escape DC 15).",
+          "A creature grappled in this way subtracts 1d4 from any attack roll or saving throw it makes."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Invocation of the Black Hand (2nd Level Spell)",
+        "entries": [
+          "Spectral claws clutch at each creature that the banedead dealt damage to this turn, forcing each to make a DC 14 Wisdom saving throw. On a failed save, a creature is frightened and restrained until the end of the banedead's next turn."
+        ]
+      },
+      {
+        "name": "Tyrant's Might (2nd Level Spell, Concentration)",
+        "entries": [
+          "At the end of each of its turns, the banedead gains 5 temporary hit points. If the banedead hits a creature with an attack, it loses all of these temporary hit points, and the attack deals extra force damage equal to the temporary hit points lost."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Banedead Dreadmaster",
+    "size": "Medium",
+    "type": { "undead": { "corporeal": { "undying": {} } } },
+    "ac": [{ "ac": 20, "from": ["grave plate"] }],
+    "hp": { "average": 85, "formula": "10d10 + 30" },
+    "speed": { "walk": 30 },
+    "str": 20,
+    "dex": 12,
+    "con": 16,
+    "int": 10,
+    "wis": 16,
+    "cha": 18,
+    "save": { "str": "+8", "con": "+6", "wis": "+6" },
+    "senses": ["darkvision 60 ft."],
+    "passive": 13,
+    "resist": ["necrotic"],
+    "immune": ["poison"],
+    "conditionImmune": ["exhaustion", "frightened", "poisoned"],
+    "languages": ["Common", "Dark Speech"],
+    "cr": 8,
+    "trait": [
+      {
+        "name": "Undying Legion",
+        "entries": [
+          "While the banedead is within 30 feet of at least two other banedead, it has resistance to all damage except force and radiant."
+        ]
+      },
+      {
+        "name": "Grave Purge (2/Day)",
+        "entries": [
+          "At the st art of each of the banedead's turns, it can end one condition or spell affecting it. If it does so, it has disadvantage on ability checks, attack rolls, and saving throws until the start of its next turn."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": ["The banedead makes two attacks."]
+      },
+      {
+        "name": "Dreadmaster's Poleaxe",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +8 to hit, reach 10 ft., one target. <em>Hit:</em> 10 (1d10 + 5) slashing damage plus 9 (2d8) necrotic damage.",
+          "If at least two of the banedead's allies are within 30 feet, this attack is made at advantage."
+        ]
+      },
+      {
+        "name": "Iron Grasp",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +8 to hit, reach 5 ft., one target. <em>Hit:</em> 14 (2d8 + 5) bludgeoning damage and the target is grappled (escape DC 16).",
+          "A creature grappled in this way subtracts 1d4 from any attack roll or saving throw it makes."
+        ]
+      },
+      {
+        "name": "Sunder Arms (4th Level Spell)",
+        "entries": [
+          "One creature the banedead can see within 30 feet must make a DC 15 Strength saving throw. On a failed save, the target takes 36 (8d8) thunder damage and one weapon or spell focus carried by it flies 30 (1d6 x 10) feet in a direction of the banedead's choice, or half as much damage on a success.",
+          "Nonmagical weapons affected by this spell shatter and are destroyed."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Invocation of the Black Hand (2nd Level Spell)",
+        "entries": [
+          "Spectral claws clutch at each creature that the banedead dealt damage to this turn, forcing each to make a DC 15 Wisdom saving throw. On a failed save, a creature is frightened and restrained until the end of the banedead's next turn."
+        ]
+      },
+      {
+        "name": "Tyrant's Might (2nd Level Spell, Concentration)",
+        "entries": [
+          "At the end of each of its turns, the banedead gains 5 temporary hit points. If the banedead hits a creature with an attack, it loses all of these temporary hit points, and the attack deals extra force damage equal to the temporary hit points lost."
+        ]
+      }
+    ],
+    "shortName": "the banedead",
+    "legendary": [
+      {
+        "name": "Dread Assault",
+        "entries": ["The banedead moves up to its speed and makes an attack."]
+      },
+      {
+        "name": "No Escape",
+        "entries": [
+          "One Large or smaller creature the banedead can see within 150 feet is dragged up to 30 feet towards it, then must make a DC 15 Strength saving throw or fall prone."
+        ]
+      },
+      {
+        "name": "Ironlight Glare (2nd Level Spell)",
+        "entries": [
+          "One frightened creature the banedead can see within 60 feet must make a DC 15 Wisdom saving throw. On a failed save, the target is paralyzed until the start of its next turn, or until it takes any damage."
+        ]
+      }
+    ]
+  },
+  {
     "name": "Abjurer Wardwright",
     "size": "Medium",
     "type": { "humanoid": {} },
@@ -242146,7 +242354,7 @@
         ]
       },
       {
-        "name": "Invincible Avatar (2/Day)",
+        "name": "Invincible Avatar (2/Round)",
         "entries": [
           "If Myrkul fails a saving throw, he can choose to succeed instead. If he does, he regains one fewer legendary action on his following turn.",
           "At the end of each of Myrkul's turns, he can end one spell or condition affecting him."
@@ -242228,6 +242436,288 @@
         "name": "Unearth Attendants",
         "entries": [
           "Myrkul conjures three Necromite Reapers that act on initiative count 0 in unoccupied spaces within 30 feet."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bane, Tyrant Supreme",
+    "size": "Large",
+    "type": { "fiend": {} },
+    "tags": ["deity"],
+    "ac": [{ "ac": 25, "from": ["natural armor"] }],
+    "hp": { "average": 945, "formula": "70d10 + 560" },
+    "speed": { "walk": 40, "hover": 40 },
+    "str": 27,
+    "dex": 21,
+    "con": 26,
+    "int": 24,
+    "wis": 25,
+    "cha": 26,
+    "save": { "str": "+17", "con": "+17", "wis": "+16", "cha": "+17" },
+    "skill": { "insight": "+16", "intimidation": "+26", "perception": "+19" },
+    "senses": ["truesight 120 ft."],
+    "passive": 29,
+    "immune": [
+      "necrotic",
+      "poison",
+      "bludgeoning, piercing, and slashing damage from nonmagical sources"
+    ],
+    "conditionImmune": ["exhaustion", "poisoned"],
+    "languages": ["All", "telepathy 120 ft."],
+    "cr": 100,
+    "trait": [
+      {
+        "name": "Tyrant's Presence",
+        "entries": [
+          "At the start of each of Bane's turns, each creature within 60 feet of him can choose to be charmed by him or frightened of him until the start of his next turn. A creature can choose neither, but takes 22 (4d10) psychic damage if it does so."
+        ]
+      },
+      {
+        "name": "Invincible Avatar (2/Round)",
+        "entries": [
+          "If Bane fails a saving throw, he can choose to succeed instead. If he does, he regains one fewer legendary action on his following turn.",
+          "At the end of each of Bane's turns, he can end one spell or condition affecting him."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "Bane makes three attacks, one of which he can replace with a use of his Shatter Strength, Condem, or Malevolent Vise."
+        ]
+      },
+      {
+        "name": "Black Gauntlet",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +17 to hit, reach 5 ft., one target. <em>Hit:</em> 30 (4d10 + 8) bludgeoning damage.",
+          "If this attack exceeds the target's AC by 10 or more, the target is additionally pushed up to 30 feet and knocked prone."
+        ]
+      },
+      {
+        "name": "Blade of Strife",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +17 to hit, reach 10 ft., one target. <em>Hit:</em> 35 (6d8 + 8) slashing damage.",
+          "This attack deals an additional 9 (2d8) necrotic damage for each creature charmed by Bane within 20 feet of him."
+        ]
+      },
+      {
+        "name": "Shatter Strength (6th Level Spell)",
+        "entries": [
+          "One creature Bane can see within 60 feet takes 22 (4d10) necrotic damage. Then, if it has half of its maximum hit points or fewer, it must make a DC 25 Constitution saving throw. On a failed save, Bane chooses one of the following effects. On a success, the target chooses one of the following effects.",
+          "<ul><li>For 1 hour, the target loses any immunity to being charmed or frightened.</li><li>For 1 hour, the target has disadvantage on Strength, Dexterity, and Constitution saving throws.</li><li>For 1 hour, the target can't take bonus actions or reactions.</li></ul>"
+        ]
+      },
+      {
+        "name": "Condemn (8th Level Spell, Concentration)",
+        "entries": [
+          "Bane conjures a looming blade above a creature within 60 feet. At the start of each of the creature's turns, it takes 11 (2d10) psychic damage.",
+          "When the spell ends, the blade falls, forcing the target to make a DC 25 Dexterity saving throw. On a failed save, the target takes 67 (5d10 + 40) force damage, plus an extra 10 force damage for each round that Bane concentrated on the spell, or half as much damage on a success."
+        ]
+      },
+      {
+        "name": "Malvolent Vise (8th Level Spell, Concentration)",
+        "entries": [
+          "An iron claw envelops a creature Bane can see within 120 feet, restraining it (escape DC 25). The restrained creature can't teleport, and at the end of each of its turns must make a DC 25 Constitution saving throw. On a failed save, the creature takes 48 (4d8 + 30) force damage, or half as much on a success."
+        ]
+      },
+      {
+        "name": "Almighty Fist (Recharge 4-6, 9th Level Spell)",
+        "entries": [
+          "A titanic searing fist plummets from the heavens, crashing down to strike a 10-foot radius centered on a point within 300 feet. Each creature in the area is knocked prone, then must make a DC 25 Strength saving throw. On a failed save, a creature takes 126 (4d12 + 100) force damage and is restrained until the end of Bane's next turn (escape DC 25). On a success, a creature takes half as much damage."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Edict of Conquest",
+        "entries": [
+          "Until the start of Bane's next turn, all attacks against creatures frightened by him are made at advantage."
+        ]
+      },
+      {
+        "name": "Edict of Cruelty",
+        "entries": [
+          "Until the start of Bane's next turn, he and creatures charmed by him gain a +10 bonus to the first attack roll they make each turn."
+        ]
+      },
+      {
+        "name": "Edict of Contempt",
+        "entries": [
+          "Until the start of Bane's next turn, he and creatures charmed by him reduce the first source of damage they take each turn by 10."
+        ]
+      }
+    ],
+    "shortName": "Bane",
+    "pronouns": ["he", "him", "his"],
+    "legendary": [
+      {
+        "name": "Bear Down",
+        "entries": [
+          "Bane teleports to an unoccupied space within 60 feet and makes an attack."
+        ]
+      },
+      {
+        "name": "Grind Underfoot",
+        "entries": [
+          "Bane moves up to his speed, then forces a prone creature within 5 feet of him to make a DC 25 Constitution saving throw. On a failed save, the target takes 33 (6d10) bludgeoning damage and is dazed until the end of its next turn, or half as much damage on a success."
+        ]
+      },
+      {
+        "name": "Supreme Command",
+        "entries": [
+          "Each creature charmed by Bane must use its reaction, if available, to move up to its speed and make a weapon attack or cast a cantrip under Bane's control."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bhaal, Eternal Blasphemy",
+    "size": "Medium",
+    "type": { "fiend": {} },
+    "tags": ["deity"],
+    "ac": [{ "ac": 25, "from": ["natural armor"] }],
+    "hp": { "average": 506, "formula": "44d8 + 308" },
+    "speed": { "walk": 50, "climb": 50 },
+    "str": 24,
+    "dex": 27,
+    "con": 24,
+    "int": 28,
+    "wis": 30,
+    "cha": 26,
+    "save": { "dex": "+17", "con": "+14", "wis": "+19" },
+    "skill": { "acrobatics": "17", "perception": "+19", "stealth": "+17" },
+    "senses": ["truesight 120 ft."],
+    "passive": 29,
+    "immune": [
+      "necrotic",
+      "poison",
+      "bludgeoning, piercing, and slashing damage from nonmagical sources"
+    ],
+    "conditionImmune": ["exhaustion", "poisoned"],
+    "languages": ["All", "telepathy 120 ft."],
+    "cr": 100,
+    "trait": [
+      {
+        "name": "Thrill of the Edge",
+        "entries": [
+          "Whenever a creature witin 30 feet of Bhaal is reduced to 0 hit points, each other creature within 30 feet of him gains advantage on the next attack it makes. If Bhaal's Mythic Trait is active, creatures in the area can additionally make a melee attack as a bonus action on their turn."
+        ]
+      },
+      {
+        "name": "Invincible Avatar (2/Round)",
+        "entries": [
+          "If Bhaal fails a saving throw, he can choose to succeed instead. If he does, he regains one fewer legendary action on his following turn.",
+          "At the end of each of Bhaal's turns, he can end one spell or condition affecting him."
+        ]
+      },
+      {
+        "name": "Red Sun's Rise (Mythic Trait, 1/Day)",
+        "entries": [
+          "When Bhaal is reduced to 0 hit points, he doesn't die or fall unconscious. Instead, he resets to 506 hit points and his spilled essence burns with unholy hunger. Each humanoid corpse within 120 feet of him rises as a Horde Ghoul that acts at initiative count 0 under Bhaal's control."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "Bhaal makes three attacks and uses his Gore Inversion, Wreath of Blades, or Maiming Gale."
+        ]
+      },
+      {
+        "name": "Thirsting Knife",
+        "entries": [
+          "<em>Melee or Ranged Weapon Attack.</em> +17 to hit, reach 5 ft. or range 30/60 ft., one target. <em>Hit:</em> 24 (3d10 + 8) piercing damage plus one of the following effects:",
+          {
+            "type": "list",
+            "items": [
+              {
+                "name": "Crimson Reap",
+                "entries": [
+                  "The target takes an additional 5 (1d10) necrotic damage for each bleeding creature within 30 feet of Bhaal."
+                ]
+              },
+              {
+                "name": "Open Vein",
+                "entries": [
+                  "The target begins bleeding (1d10), or has its bleeding value increase by 1d10 if it is already bleeding."
+                ]
+              },
+              {
+                "name": "Relentless Intent",
+                "entries": [
+                  "The next attack Bhaal makes against the target this turn is made at advantage."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gore Inversion (6th Level Spell)",
+        "entries": [
+          "One paralyzed or unconscious creature Bhaal can see within 60 feet must succeed on a DC 25 Constitution saving throw or die and be turned inside out in a spray of gore.",
+          "Each creature of Bhaal's choice within 60 feet that can see the target is frightened until the end of his next turn."
+        ]
+      },
+      {
+        "name": "Wreath of Blades (7th Level Spell, Concentration)",
+        "entries": [
+          "Razor-sharp blades of hardened magic whirl through the air in a 10 foot radius centered on Bhaal.",
+          "A creature that starts its turn in the area, or that enters it for the first time on a turn, must succeed on a DC 25 Dexterity saving throw or take 38 (7d10) slashing damage, or half as much on a success."
+        ]
+      },
+      {
+        "name": "Maiming Gale (8th Level Spell)",
+        "entries": [
+          "Bhaal casts forth a torrent of invisible blades to slice through the air in a 60-foot cone, forcing each creature in the area to make a DC 25 Dexterity saving throw, taking 62 (4d10 + 40) slashing damage, or half as much damage on a success.",
+          "A creature reduced to 0 hit points by this damage is sliced to pieces, killing it instantly."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Twist Knife",
+        "entries": [
+          "Immediately after Bhaal exceeds a target's AC by 10 or more with an attack roll, he can take this bonus action to make that attack a critical hit."
+        ]
+      },
+      {
+        "name": "Exultation of Blood (2nd Level Spell)",
+        "entries": [
+          "Bhaal gains 5 temporary hit points for each creature he hit with an attack this turn. While he has any of these temporary hit points, his attacks are made at advantage."
+        ]
+      }
+    ],
+    "shortName": "Bhaal",
+    "pronouns": ["he", "him", "his"],
+    "legendary": [
+      {
+        "name": "Slaughter Rush",
+        "entries": [
+          "Bhaal moves up to his speed and makes two attacks."
+        ]
+      },
+      {
+        "name": "Unstoppable Will",
+        "entries": [
+          "Bhaal armors himself is hallowed blood. The next source of damage that Bhaal takes before the start of his next turn is reduced to 1."
+        ]
+      },
+      {
+        "name": "Death is Here",
+        "entries": [
+          "Bhaal teleports to an unoccupied space within 120 feet, then makes an attack or forces a creature within 5 feet to make a DC 25 Wisdom saving throw. On a failed save, the target is frightened until the start of its next turn. While frightened in this way, the target is paralyzed."
+        ]
+      }
+    ],
+    "mythic": [
+      {
+        "name": "Power Word: Kill (Recharge 4-6, 9th Level Spell)",
+        "entries": [
+          "Bhaal speaks a word of power, compelling death. One creature he can see within 60 feet dies if it has 100 hit points or fewer. Otherwise, it takes 78 (12d12) psychic damage."
         ]
       }
     ]
@@ -249620,129 +250110,6 @@
         "name": "Wish",
         "entries": [
           "The zodar casts the wish spell, requiring no spell components and using Charisma as the spellcasting ability (spell save DC 17). After casting this spell, the zodar turns to dust and is destroyed."
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Bhaal, Lord of Murder",
-    "size": "Huge",
-    "type": { "fiend": {} },
-    "tags": ["deity"],
-    "alignment": ["L", "E"],
-    "ac": [{ "ac": 20, "from": ["natural armor"] }],
-    "hp": { "average": 351, "formula": "26d12 + 182" },
-    "speed": { "walk": 40 },
-    "str": 28,
-    "dex": 24,
-    "con": 24,
-    "int": 14,
-    "wis": 16,
-    "cha": 14,
-    "save": { "str": "+16", "dex": "+14", "cha": "+9" },
-    "skill": { "athletics": "+16", "perception": "+10", "stealth": "+14" },
-    "senses": ["darkvision 120 ft.", "truesight 60 ft."],
-    "passive": 20,
-    "resist": ["necrotic"],
-    "immune": [
-      "acid",
-      "cold",
-      "fire",
-      "lightning",
-      "poison",
-      "bludgeoning, piercing, and slashing damage from nonmagical sources"
-    ],
-    "conditionImmune": [
-      "charmed",
-      "exhaustion",
-      "frightened",
-      "incapacitated",
-      "paralyzed",
-      "petrified",
-      "poisoned",
-      "stunned",
-      "unconscious"
-    ],
-    "languages": ["Abyssal", "Common", "Primordial", "Undercommon"],
-    "cr": 100,
-    "trait": [
-      {
-        "name": "Cull the Weak",
-        "entries": [
-          "When Bhaal damages a creature with a melee attack and the target is left with 20 or fewer remaining hit points, the creature must make a DC 21 Constitution saving throw or be reduced to 0 hit points."
-        ]
-      },
-      {
-        "name": "Immutable Form",
-        "entries": [
-          "Bhaal is immune to any spell or effect that would alter his form."
-        ]
-      },
-      {
-        "name": "Legendary Resistance (3/Day)",
-        "entries": [
-          "If Bhaal fails a saving throw, he can choose to succeed instead."
-        ]
-      },
-      {
-        "name": "Magic Resistance",
-        "entries": [
-          "Bhaal has advantage on saving throws against spells and other magical effects."
-        ]
-      },
-      { "name": "Magic Weapons", "entries": ["Bhaal's attacks are magical."] },
-      {
-        "name": "Spiked Hide",
-        "entries": [
-          "At the start of each of his turns, Bhaal deals 16 (3d10) piercing damage to any creature grappling him or being grappled by him."
-        ]
-      }
-    ],
-    "action": [
-      {
-        "name": "Multiattack",
-        "entries": [
-          "Bhaal uses his Fear aura (if available) and then makes one bite attack and two claw attacks or two spine attacks."
-        ]
-      },
-      {
-        "name": "Claw",
-        "entries": [
-          "<em>Melee Weapon Attack.</em> +16 to hit, reach 5 ft., one target. <em>Hit:</em> 22 (3d8 + 9) slashing damage plus 7 (2d6) necrotic damage. If the target is a creature, it must succeed on a DC 21 Constitution saving throw or have its hit point maximum reduced by an amount equal to the damage taken. The target dies if this attack reduces its hit point maximum to 0. The reduction lasts until removed by the greater restoration spell or other magic."
-        ]
-      },
-      {
-        "name": "Bite",
-        "entries": [
-          "<em>Melee Weapon Attack.</em> +16 to hit, reach 5 ft., one target. <em>Hit:</em> 25 (3d10 + 9) piercing damage plus 7 (2d6) necrotic damage. If the target is a creature, it must succeed on a DC 21 Constitution saving throw or have its hit point maximum reduced by an amount equal to the damage taken. The target dies if this attack reduces its hit point maximum to 0. The reduction lasts until removed by the greater restoration spell or other magic. Large or smaller creatures damaged by this attack are grappled (escape DC 20) and Bhaal cannot make another Bite attack until this grapple ends."
-        ]
-      },
-      {
-        "name": "Spines",
-        "entries": [
-          "<em>Ranged Weapon Attack.</em> +14 to hit, range 60/120 ft., one target. <em>Hit:</em> 17 (3d6 + 7) piercing damage. If the target fails a DC 19 Constitution saving throw, they are stunned until the end of their next turn."
-        ]
-      }
-    ],
-    "shortName": "Bhaal",
-    "pronouns": ["he", "him", "his"],
-    "multiPronoun": false,
-    "legendary": [
-      {
-        "name": "Detect",
-        "entries": ["Bhaal makes a Wisdom (Perception) check."]
-      },
-      {
-        "name": "Smash",
-        "entries": [
-          "Bhaal smashes the ground and creates a thunderwave. Any creature in a 10-foot cube originating from Bhaal must make a Constitution saving throw against DC 20. On a failed save, the creature suffers 36 (8d8) thunder and is pushed 5 feet away from him.",
-          "On a successful save, the creature takes half damage and is not pushed. The soundwave produced by this attack can be heard up to 100 feet away."
-        ]
-      },
-      {
-        "name": "Spiky Carapace (Costs 2 Actions)",
-        "entries": [
-          "Bhaal flares his numerous spines and they elongate. Any creature that starts their turn within 5 feet of him must make a DC 21 Dexterity saving throw or take 44 (8d10) piercing damage. The damage is halved with a successful save."
         ]
       }
     ]

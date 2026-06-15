@@ -8391,10 +8391,7 @@
   },
   {
     "description": "Banshees are a form of ethereal undead created by a woman lost to intense grief. In her sorrow, she becomes envious of anyone happy. She eventually dies from the heartbreak, and becomes consumed by the envy. Most banshees don't remember the origin of their jealousy, but those who do are even more dangerous. A banshee's most famous attribute is her wail, a mournful keening that saps life from those around her.",
-    "asis": [
-      { "dex": 1 },
-      { "cha": 2 }
-    ],
+    "asis": [{ "dex": 1 }, { "cha": 2 }],
     "maturity": 0,
     "lifespan": -1,
     "height": [3, 6],
@@ -9611,23 +9608,8 @@
         ]
       },
       {
-        "name": "Saving Face",
-        "description": "Bullywugs are careful not to show weakness in front of their allies, for fear of losing status. If you miss with an attack roll or fail an ability check or a saving throw, you can gain a bonus to the roll equal to the number of allies you can see within 30 feet of you (maximum bonus of +3). You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses you finish a long rest.",
-        "uses": {
-          "id": "24541615-0A71-4867-812D-A3502767DBCC",
-          "type": "derived",
-          "source": "proficiency",
-          "reset": 2
-        },
-        "actions": [
-          {
-            "id": "24541615-0A71-4867-812D-A3502767DBCC",
-            "type": "o",
-            "hasUses": true,
-            "name": "Saving Face",
-            "description": "If you miss with an attack roll or fail an ability check or a saving throw, you can gain a bonus to the roll equal to the number of allies you can see within 30 feet of you (maximum bonus of +3)."
-          }
-        ]
+        "name": "Sticky Tongue",
+        "description": "When you make an unarmed strike, you can do so with your tongue. If you do, it has a reach of 15 feet. On a hit, you deal bludgeoning damage equal to 1d6 + your Strength modifier instead of the damage normal for an unarmed strike, and you can choose one of the following options in addition to the attack's other effects:<ul><li>If the target is size Medium or smaller, you can drag the target up to 10 feet toward you.</li><li>If the target is size Medium or larger, you move up to 10 feet toward the target.</li></ul>"
       },
       {
         "name": "Speak with Frogs",
@@ -9639,25 +9621,132 @@
       },
       {
         "name": "Twitchy Jump",
-        "description": "As a bonus action, you can jump a number of feet equal to five times your proficiency bonus, without provoking opportunity attacks. You can use this trait only if your speed is greater than 0. You can use it a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+        "description": "As a bonus action, you can jump 20 feet without expending movement."
+      }
+    ],
+    "name": "Bullywug"
+  },
+  {
+    "description": "Nothics are the fate of mages broken beneath the weight of their own knowledge, cursed and twisted by their reckless tread into secrets that shouldn't be known. Most nothics are utterly insane, capering and gibbering for no apparent reason. They retain no memories of their previous life, just an insatiable, neverending curiosity.",
+    "asis": [{ "dex": 1 }, { "int": 2 }],
+    "maturity": 0,
+    "lifespan": 100,
+    "height": [4, 7],
+    "weight": [75, 120],
+    "category": "Uncommon",
+    "type": "Aberration (nothic)",
+    "size": 0,
+    "speed": 30,
+    "darkvision": 60,
+    "languages": ["Common", "Deep Speech"],
+    "traits": [
+      {
+        "name": "Telepathy",
+        "description": "You can telepathically speak to any creature you can see within 30 feet of you. You don't need to share a language with the creature, but the creature must be able to understand at least one language.",
+        "granted": [{ "type": "telepathy", "range": 30 }]
+      },
+      {
+        "name": "Keen Sight",
+        "description": "You have advantage on Wisdom (Perception) checks that rely on sight."
+      },
+      {
+        "name": "Insatiable Curiosity",
+        "description": "You have proficiency in two of the following skills of your choice: Arcana, History, Nature, Religion, Society, or Technology. Additionally, you add 1d4 to any ability check using any of the previous skills.",
+        "choices": [
+          {
+            "id": "94B58423-A741-444C-96A2-E28DA4DDCDC5",
+            "type": "skill",
+            "limits": [
+              "Arcana",
+              "History",
+              "Nature",
+              "Religion",
+              "Society",
+              "Technology"
+            ],
+            "level": 1
+          },
+          {
+            "id": "38C7DDC5-8899-42AB-A3F5-12BEC68FA6F7",
+            "type": "skill",
+            "limits": [
+              "Arcana",
+              "History",
+              "Nature",
+              "Religion",
+              "Society",
+              "Technology"
+            ],
+            "level": 1
+          }
+        ]
+      },
+      {
+        "name": "Forbidden Whispers",
+        "description": "Over the course of a short or long rest, you can listen to the whispers in your mind. You learn a 1st-level spell of your choice from the Arcane spell list, and can cast it once without expending a spell slot. Intelligence is your spellcasting ability for it. You retain the spell until the end of your next short or long rest.</p><p>If you are a Pale Master or a Wizard, you can copy the spell into your grimoire or spellbook while you know it.",
+        "choices": {
+          "id": "63F1C531-8412-4B5A-BB30-78BEFA023E5C",
+          "type": "spell",
+          "list": "arcane",
+          "level": 1,
+          "ability": "int"
+        }
+      },
+      {
+        "name": "Weirding Gaze",
+        "description": "As a bonus action, you can gaze at a creature within 30 feet and force it to make a Constitution saving throw (DC = 8 + your Intelligence modifier + your proficiency bonus). On a failed save, you learn one secret the target wishes to keep hidden from you, and you can choose to charm the target for the next minute (save ends at end of turn). While charmed in this way, a creature will freely reveal its secrets to you. If a creature succeeds on its initial saving throw, it's immune to your Weirding Gaze for 1 hour. You can charm a creature using your Weirding Gaze a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
         "uses": {
           "id": "9304A43D-8F03-438B-89C7-FC220F8A1C23",
           "type": "derived",
           "source": "proficiency",
           "reset": 2
-        },
-        "actions": [
-          {
-            "id": "9304A43D-8F03-438B-89C7-FC220F8A1C23",
-            "hasUses": true,
-            "type": "b",
-            "name": "Twitchy Jump",
-            "description": "You jump up to <{prof} * 5> feet, without provoking opportunity attacks. You can use this trait only if your speed is greater than 0."
-          }
-        ]
+        }
       }
     ],
-    "name": "Bullywug"
+    "name": "Nothic"
+  },
+  {
+    "description": "Bhaalspawn are the mortal descendants of Bhaal, the once-human god of murder. Though few of his children are granted the Slayer's personal attentions, all carry within them his sacred hunger, the unceasing urge toward carnage. Whether repudiated or embraced, this drive shapes and defines the Bhaalspawn as they move through the world.",
+    "asis": [{ "dex": 2 }, { "con": 1 }],
+    "maturity": 18,
+    "lifespan": 140,
+    "height": [4, 7],
+    "weight": [75, 120],
+    "category": "Uncommon",
+    "type": "Humanoid",
+    "size": 0,
+    "speed": 30,
+    "darkvision": 0,
+    "languages": ["Common", "Abyssal"],
+    "traits": [
+      {
+        "name": "Deathshrouded",
+        "description": "You can't be perceived or detected by divination magic."
+      },
+      {
+        "name": "Born to Carnage",
+        "description": "While you have half of your maximum hit points or fewer, you can use your bonus action to take the Dash or Disengage actions, or make a melee weapon attack."
+      },
+      {
+        "name": "Blade Expertise",
+        "description": "You have proficency with wrist daggers, kunai, and sais.",
+        "granted": [
+          {
+            "type": "weapon",
+            "options": ["Dagger, wrist", "Kunai", "Sai"]
+          }
+        ]
+      },
+      {
+        "name": "Razor Reflex",
+        "description": "When a creature within 5 feet of you takes damage, you can move up to 5 feet without provoking opportunity attacks."
+      },
+      {
+        "name": "Dark Urge",
+        "description": "Bhaal's dark hunger haunts you. On occasion, the hunger of the Slayer will attempt to influence you to cause havoc."
+      }
+    ],
+    "name": "Bhaalspawn"
   },
   {
     "description": "Hadozees are people with simian features that long ago adapted to live among the tall trees of their home world. They are natural climbers, with feet as dexterous as their hands, even to the extent of having opposable thumbs. Membranes of skin hang loosely from their arms and legs. When stretched taut, these membranes enable a hadozee to glide.<br><br>The first hadozees were hunted by large natural predators. To survive in this hostile environment, they developed an instinctual sense of community. Today, that same instinct compels many hadozees to cultivate friendships, knowing there is safety in numbers. They are particularly fond of sailing, and many crews on the seas are full of hadozee.",
@@ -15714,6 +15803,67 @@
       }
     ],
     "name": "Synthsteel"
+  },
+  {
+    "description": "Modrons are living embodiments of cosmic Law, subordinate organs of the Great Machine which keeps the multiverse functioning as it should. From the highest seat in Mechanus, Lord Primus gives his holy directives, which divide and convolute as they descend through the vast modronic hierarchy, passing from Tertian to Quarton, from Decaton to Pentadrone and so on, until finally they reach the humble Monodrone, upon whose dedication and precision all the world rests.",
+    "asis": [{ "con": 2 }, { "int": 1 }],
+    "lifespan": -1,
+    "height": [4, 4],
+    "weight": [120, 120],
+    "category": "Artificial",
+    "type": "Construct (modron (base))",
+    "size": 0,
+    "speed": 30,
+    "darkvision": 60,
+    "languages": ["Common", "Binary"],
+    "traits": [
+      {
+        "name": "Artificial Nature",
+        "description": "You are immune to poison damage, you can't be diseased or poisoned, and you have advantage on saving throws against being paralyzed. You don't require air, food, drink, or sleep, but must rest motionless in order to regain abilities that may require a short or long rest.",
+        "granted": [
+          { "type": "damage-immunity", "options": ["Poison"] },
+          { "type": "condition-immunity", "options": ["Disease", "Poisoned"] },
+          {
+            "type": "condition-advantage",
+            "options": ["Paralyzed"]
+          }
+        ]
+      },
+      {
+        "name": "Axiomatic Mind",
+        "description": "You are immune to any effect that would force you to act against your will, including being charmed or dominated. In addition, if playing in a campaign that uses the Honor score, your Honor score increases by 2.",
+        "granted": [
+          { "type": "asi", "score": "hon", "amount": 2 },
+          { "type": "condition-immunity", "options": ["Charmed", "Dominated"] }
+        ]
+      },
+      {
+        "name": "Clockwork Repition",
+        "description": "Whenever you roll a d20, you can choose to take a result of 10 instead of rolling. You can use this feature a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.",
+        "uses": [
+          {
+            "id": "766E83F2-3EBE-4DFE-9BE2-36D95C9F32BB",
+            "type": "derived",
+            "source": "proficiency",
+            "reset": 2
+          }
+        ]
+      },
+      {
+        "name": "Flight",
+        "description": "You have a flying speed equal to your walking speed. To fly, you can't be wearing medium or heavy armor.",
+        "granted": [{ "type": "speed", "speed": "fly", "amount": -1 }]
+      },
+      {
+        "name": "Sentry's Rest",
+        "description": "When you take a long rest, you spend at least 6 hours in an inactive, motionless state, instead of sleeping. In this state, you appear inert, but you aren't unconscious."
+      },
+      {
+        "name": "True Life",
+        "description": "If the Mending spell is cast on you, you can expend a Hit Die, roll it, and regain a number of hit points equal to the roll plus your Constitution modifier (minimum of 1 hit point). In addition, your strange nature allows you to benefit from common spells that preserve life but that normally don't affect Constructs: Cure Wounds, Healing Word, and Spare the Dying."
+      }
+    ],
+    "name": "Monodrone"
   },
   {
     "description": "Hailing from a strange and distant land, wandering tabaxi are catlike humanoids driven by curiosity to collect interesting artifacts, gather tales and stories, and lay eyes on all the world's wonders. Ultimate travelers, the inquisitive tabaxi rarely stay in one place for long. Their innate nature pushes them to leave no secrets uncovered, no treasures or legends lost.",

@@ -2963,6 +2963,71 @@
     ]
   },
   {
+    "name": "Battle Leaper",
+    "prereq": [
+      {
+        "race": ["bullywug"]
+      }
+    ],
+    "type": "racial",
+    "description": "You learn how to use your toad anatomy to aid your agility in battle, gaining the following benefits:<ul><li>Increase your Dexterity score by 1, to a maximum of 20.</li><li>When you use your Twitchy Jump trait, you can make an unarmed strike as a part of the same bonus action, either before or after jumping.</li></ul>",
+    "granted": [
+      {
+        "type": "asi",
+        "score": "dex",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "name": "Voice of Thunder",
+    "prereq": [
+      {
+        "race": ["bullywug"]
+      }
+    ],
+    "type": "racial",
+    "description": "You learn to harness your croaks to create a reverberating shockwave. When you take the Attack action on your turn, you can replace one of your attacks with a massive croak that affects the area in a 15-foot cone. Each creature in that area must make a Constitution saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d10 thunder damage. On a successful save, it takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p><p>You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+    "uses": {
+      "id": "7BAC2FDD-4062-438E-AF3A-068D3AE49C6F",
+      "type": "derived",
+      "source": "proficiency",
+      "reset": 2
+    }
+  },
+  {
+    "name": "Tempt with Knowledge",
+    "prereq": [
+      {
+        "race": ["nothic"]
+      }
+    ],
+    "type": "racial",
+    "description": "You can share your eldritch knowledge with other creatures, forcing information into their mind that could drive them mad. As an action, you can bestow knowledge from your mind of a creature within 30 feet. The target must make an Intelligence saving throw (DC = 8 + your Intelligence modifier + your proficiency bonus). The target can choose to willingly fail this save. On a failed save, the target takes 3d6 psychic damage, and is stunned until the end of its next turn. If the target willingly failed its saving throw, it gains one of the following effects of your choice:<ul><li>The target learns one spell of 3rd-level or lower that you know. For 10 minutes, the target also knows that spell.</li><li>The target gains one skill proficiency that you have for 10 minutes.</li></ul>You can use this feature once, and regain the ability to do so when you finish a long rest.",
+    "uses": {
+      "id": "884FA64A-F3CF-466B-9D0E-F76CCB9D8AEF",
+      "type": "fixed",
+      "amount": 1,
+      "reset": 2
+    }
+  },
+  {
+    "name": "Gaze of Primus",
+    "prereq": [
+      {
+        "race": ["monodrone"]
+      }
+    ],
+    "type": "racial",
+    "description": "Primus shares a fragment of his infinite vision with you, granting you truesight out to 5 feet.",
+    "granted": [
+      {
+        "type": "truesight",
+        "amount": 5
+      }
+    ]
+  },
+  {
     "name": "Elven Accuracy",
     "prereq": [
       {

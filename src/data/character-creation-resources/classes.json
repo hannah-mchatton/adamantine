@@ -51350,8 +51350,8 @@
                   "options": [
                     "Armor of Agathys",
                     "Command",
-                    "Hold Person",
-                    "Spiritual Weapon",
+                    "Invocation of the Black Hand",
+                    "Tyrant's Might",
                     "Bestow Curse",
                     "Fear",
                     "Dominate Beast",
@@ -54295,7 +54295,7 @@
                   "options": [
                     "Entangle",
                     "Rot",
-                    "Hold Person",
+                    "Invocation of the Black Hand",
                     "Manacle of Burden",
                     "Mummify",
                     "Incite Greed",
@@ -68028,7 +68028,7 @@
                     "Bound into Obedience",
                     "Fealty's Clairon",
                     "Mighty Fortress",
-                    "Seal Deathpact"
+                    "Almighty Fist"
                   ],
                   "ability": "7597F51A-5BBB-4EFA-BACE-8385F4FD7153"
                 }
@@ -79061,7 +79061,7 @@
                     "Bound into Obedience",
                     "Fealty's Clairon",
                     "Mighty Fortress",
-                    "Seal Deathpact"
+                    "Almighty Fist"
                   ],
                   "ability": "B85FFA8F-7EE5-4B27-9789-05477333032E"
                 }

@@ -678,12 +678,14 @@
         "id": "10F4D3F9-B6F2-4948-912C-93EA7C95621F",
         "type": "exploit",
         "list": "Rogue",
+        "degree": 1,
         "ability": "dex"
       },
       {
         "id": "195A8F6E-4AEC-4A58-8BC8-B7709109112E",
         "type": "exploit",
         "list": "Rogue",
+        "degree": 1,
         "ability": "dex"
       }
     ],
@@ -1967,12 +1969,14 @@
         "id": "9645663B-414C-4321-AFE8-A9587D908786",
         "type": "exploit",
         "list": "Fighter",
+        "degree": 1,
         "ability": "63C920E6-7B5B-43C1-AC58-91134008E392"
       },
       {
         "id": "20CD041A-DC1D-432C-9869-AC1C554905CB",
         "type": "exploit",
         "list": "Fighter",
+        "degree": 1,
         "ability": "63C920E6-7B5B-43C1-AC58-91134008E392"
       }
     ],
@@ -2286,12 +2290,14 @@
         "id": "333556BA-A4F7-4092-92FC-B5BEEC804372",
         "type": "exploit",
         "list": "Barbarian",
+        "degree": 1,
         "ability": "str"
       },
       {
         "id": "2E8BC3CB-2BEE-4912-9747-74525AF38225",
         "type": "exploit",
         "list": "Barbarian",
+        "degree": 1,
         "ability": "str"
       }
     ],
@@ -2530,12 +2536,14 @@
         "id": "B999B06E-D76C-48E5-BC4C-452A28FDA7EF",
         "type": "exploit",
         "list": "Warlord",
+        "degree": 1,
         "ability": "30AAB77B-C9D0-4B2F-BCB3-F18A2F73E6E1"
       },
       {
         "id": "5992CDFA-1403-479D-9375-63F3CA10159B",
         "type": "exploit",
         "list": "Warlord",
+        "degree": 1,
         "ability": "30AAB77B-C9D0-4B2F-BCB3-F18A2F73E6E1"
       }
     ],
@@ -2649,12 +2657,14 @@
         "id": "538C8283-F813-4C7A-9DDB-A068DAD7600A",
         "type": "exploit",
         "list": "Juggernaut",
+        "degree": 1,
         "ability": "con"
       },
       {
         "id": "65E376B0-A86D-4ECD-AAD8-7A0703A2352A",
         "type": "exploit",
         "list": "Juggernaut",
+        "degree": 1,
         "ability": "con"
       }
     ],
@@ -6247,12 +6257,14 @@
         "id": "ED1C1488-F526-41B5-8894-7B124E039514",
         "type": "exploit",
         "list": "Brawler",
+        "degree": 1,
         "ability": "CD5FE698-337E-4882-B12F-CF6EB94FC920"
       },
       {
         "id": "873700B7-940A-4687-967D-2E24BB16F1E2",
         "type": "exploit",
         "list": "Brawler",
+        "degree": 1,
         "ability": "CD5FE698-337E-4882-B12F-CF6EB94FC920"
       }
     ],
@@ -6277,12 +6289,14 @@
         "id": "B8FD32A4-3FF2-49FE-B5A9-088A66E4A297",
         "type": "exploit",
         "list": "Nomad",
+        "degree": 1,
         "ability": "A83CDC90-801B-4CBE-A36D-4DEB51EEDDE7"
       },
       {
         "id": "1F928FC7-E0FF-4167-878D-77C589E0FC61",
         "type": "exploit",
         "list": "Nomad",
+        "degree": 1,
         "ability": "A83CDC90-801B-4CBE-A36D-4DEB51EEDDE7"
       }
     ],
@@ -6302,12 +6316,14 @@
         "id": "006E9085-DD20-4A1C-A11C-6441232A9576",
         "type": "exploit",
         "list": "Gunslinger",
+        "degree": 1,
         "ability": "dex"
       },
       {
         "id": "DAF9C5C6-AFBF-400C-A20F-9C63A4EFB90A",
         "type": "exploit",
         "list": "Gunslinger",
+        "degree": 1,
         "ability": "dex"
       }
     ],

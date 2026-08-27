@@ -2283,6 +2283,171 @@
     ]
   },
   {
+    "name": "Illithid",
+    "description": [""],
+    "abilityScore": "Intelligence",
+    "scoreAmount": 13,
+    "prereq": {
+      "mechanical": "",
+      "roleplay": "You have underwent ceremorphosis as a result of an illithid tadpole being implanted in you. Discuss with the GM whether your original character retains control over their body, or whether they died during the transformation and you are playing as a new consciousness."
+    },
+    "milestones": [
+      "Defeating a powerful creature and devouring its brain",
+      "Create an army of thralls",
+      "Surviving",
+      "Acquiring",
+      "Fulfilling"
+    ],
+    "levels": [
+      {
+        "boons": [
+          {
+            "name": "Tentacles",
+            "description": [
+              "Four short tentacles grow around your mouth. Your tentacles are a natural weapon with which you are proficient. On a hit, they deal psychic damage equal to 1d10 + your Strength modifier.",
+              "Instead of dealing damage, you can choose to grapple the target with your tentacles. When a creature starts its turn grappled by you in this way, you can choose to force it to make an Intelligence saving throw against your transformation save DC or be stunned until the start of its next turn.",
+              "You can force this saving throw a number of times equal to your Intelligence modifier (minimum of once) and regain the all expended uses when you finish a long rest."
+            ]
+          },
+          {
+            "name": "Mind Blast",
+            "description": "As an action, you can emit psychic energy in a 30-foot cone. Each creature in the area must make an Intelligence saving throw against your transformation save DC. On a failed save, creature takes 3d8 psychic damage and is blinded until the end of its next turn."
+          },
+          {
+            "name": "Illithid Form",
+            "description": [
+              "Your Intelligence score increases by 2 and your Constitution score increases by 1. An ability score cannot be increased beyond 16 this way.",
+              "You become an Aberration in addition to any other creature types you are.",
+              "Additionally, you gain 120 feet of telepathy. You don't need to share a language with a creature to communicate telepathically with it.",
+              "As an action, you can devour the brain of any humanoid corpse within 5 feet of you. When you do so, you learn one important memory of the creature whose brain you devoured."
+            ],
+            "granted": [
+              { "type": "asi", "score": "con", "amount": 2 },
+              { "type": "asi", "score": "str", "amount": 1 },
+              { "type": "creature-type", "options": ["Aberration"] }
+            ]
+          }
+        ],
+        "flaw": {
+          "name": "Hideous Appearance",
+          "description": [
+            "Your appearance has grotesquely transformed. Non-evil creatures that witness your true form become instantly hostile to you unless the GM decides otherwise."
+          ]
+        }
+      },
+      {
+        "boons": [
+          {
+            "name": "Thrallmaker",
+            "description": [
+              "As an action, you can attempt to dominate the mind of an incapacitated humanoid within 5 feet of you that is of a CR equal to or lower than your proficiency bonus. The target must make a Wisdom saving throw against your transformation save DC. On a failed save, the target is permanently dominated by you. While a creature is dominated, you can mentally command it at any time (no action required) and it will do anything for you, including putting itself in harm's way.",
+              "Additionally, you can devour the brain of any of your thralls while it is alive, upon which time it instantly dies.",
+              "You can have a maximum number of thralls equal to your proficiency bonus."
+            ]
+          },
+          {
+            "name": "Illithid Psionics",
+            "description": [
+              "The psionic power of your transformation manifests, and you gain the ability to cast spells, requiring no material components.",
+              "You know the Mind Sliver, Friends, and Mage Hand cantrips. When cast in this way, the spectral hand of Mage Hand is invisible.",
+              "Additionally, you can cast the Command and Detect Thoughts spells once each and regain the ability to do so when you finish a short or long rest.",
+              "Intelligence is your spellcasting ability for all of these spells."
+            ]
+          }
+        ],
+        "flaw": {
+          "name": "Brain Food",
+          "description": [
+            "If you go for one week without devouring a brain, you gain the following effects:",
+            "<ul><li>You cannot take the Dash, Disengage, or Dodge action.</li><li>You cannot use your reaction to make opportunity attacks.</li><li>You have disadvantage on ability checks, attack rolls, and saving throws that utilize your Strength or Dexterity scores.</li></ul>"
+          ]
+        }
+      },
+      {
+        "boons": [
+          {
+            "name": "Greater Psionics",
+            "prereq": { "type": "boon", "value": "Illithid Psionics" },
+            "description": [
+              "You learn the Lunacy, Confusion, and Telekinesis spells. You can cast each spell once using this feature, and regain the ability to do so when you finish a long rest. Intelligence is your spellcasting ability for these spells.",
+              "Additionally, you can cast Command and Detect Thoughts twice per short or long rest."
+            ]
+          },
+          {
+            "name": "Psychic Overload",
+            "prereq": { "type": "boon", "value": "Thrallmaker" },
+            "description": [
+              "Whenever you take damage, you can use your reaction to take half as much damage. If you do so, one of your thralls within 30 feet of you dies. If there are no thralls within 30 feet of you, you can't use this reaction."
+            ]
+          },
+          {
+            "name": "Master's Command",
+            "prereq": { "type": "boon", "value": "Thrallmaker" },
+            "description": [
+              "Whenever you command one of your thralls to take the Attack action, it can make one additional attack as part of the action."
+            ]
+          },
+          {
+            "name": "Levitation",
+            "description": [
+              "You gain the ability to psionically levitate yourself. You gain a flying speed equal to your walking speed and the ability to hover."
+            ]
+          }
+        ],
+        "flaw": {
+          "name": "Elder's Voice",
+          "description": [
+            "Within your mind, you hear the voice of the Elder Brain calling to you. At the GM's discretion, your Elder Brain can telepathically command you to pursue a specific course of action. When it does so, you must make a Charisma saving throw with a DC equal to 13 + double the level of your transformation. On a failed save, you are dominated by the Elder Brain and forced to carry out its command. This applies even if you are normally immune to being dominated.",
+            "Whenever you finish a long rest, you can repeat the saving throw, ending the domination until the Elder Brain's next command on a success."
+          ]
+        }
+      },
+      {
+        "boons": [
+          {
+            "name": "Ulitharid",
+            "description": [
+              "Your transformation mutates you into a ulitharid, a rare type of illithid that boasts great physical strength and mental power, as well as two additional tentacles. You gain the following benefits:",
+              "<ul><li>The reach of your tentacles becomes 10 feet.</li><li>You can deal damage and grapple a creature with your tentacles at the same time.</li><li>You can force the saving throw of your tentacles any number of times.</li></ul>"
+            ]
+          },
+          {
+            "name": "Master Psionics",
+            "prereq": { "type": "boon", "value": "Illithid Psionics" },
+            "description": [
+              "You learn the Psychic Crush and Project Image spells. You can cast each spell once using this feature, and regain the ability to do so when you finish a long rest. Intelligence is your spellcasting ability for these spells.",
+              "Additionally, you can cast Command and Detect Thoughts three times per short or long rest.",
+              "Finally, you can cast Lunacy and Confusion twice per long rest."
+            ]
+          },
+          {
+            "name": "Thrallmaster",
+            "prereq": { "type": "boon", "value": "Thrallmaker" },
+            "description": [
+              "You can have any number of thralls. Additionally, creatures you can dominate can be of any creature type."
+            ]
+          },
+          {
+            "name": "Master's Resistance",
+            "prereq": { "type": "boon", "value": "Thrallmaker" },
+            "description": [
+              "While you are within 60 feet of one of your thralls, if you fail a saving throw against a spell or magical effect, you can choose to transfer the saving throw's effect to one of your thralls.",
+              "You can use this feature a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a long rest."
+            ]
+          }
+        ],
+        "flaw": {
+          "name": "Cranial Dependence",
+          "description": [
+            "The increase in your power comes at a cost of more brain food. If you go 24 hours without consuming a brain, you gain the following effects:",
+            "<ul><li>You cannot take the Attack action.</li><li>If you move on your turn, you cannot take a bonus action or reaction until the start of your next turn.</li><li>If you use a bonus action on your turn, your speed becomes 0 until the start of your next turn.</li></ul>",
+            "Upon consuming a brain, you are no longer affected by the aforementioned effects."
+          ]
+        }
+      }
+    ]
+  },
+  {
     "name": "Lich",
     "description": [
       "Across the Multiverse there are many ways to become a Lich, each determining the type of Lich the mortal becomes. However, the most common method of ascending to Lichdom is The Ritual of Dread. The process of this ritual is a well-guarded secret, entrusted to only a handful of mortals at any one time. The process of the ritual involves several despicable acts including murder, the brewing of a vile concoction, and even one's own death. However, it is the process of tearing one's soul from the body that is most despised, for this process involves the sacrifice of something truly dear to a mortal, and no substitute will be accepted. For some, it is the death of a cherished loved one. For others it is a family legacy. Regardless of the sacrifice, unless the Dreadscape spirits deem it worthy, Lichdom will not be granted."

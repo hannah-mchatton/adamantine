@@ -55944,6 +55944,7 @@
       "restrained"
     ],
     "cr": 20,
+    "language": ["Tenebrean"],
     "trait": [
       {
         "name": "Annihilating Aura",
@@ -56040,6 +56041,7 @@
       "prone",
       "restrained"
     ],
+    "language": ["Luxan"],
     "cr": 20,
     "trait": [
       {
@@ -56122,6 +56124,7 @@
     "immune": ["radiant"],
     "cr": 8,
     "minion": true,
+    "language": ["understands Luxan but can't speak"],
     "trait": [
       {
         "name": "Minion",

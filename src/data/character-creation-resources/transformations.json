@@ -2293,10 +2293,9 @@
     },
     "milestones": [
       "Defeating a powerful creature and devouring its brain",
-      "Create an army of thralls",
-      "Surviving",
-      "Acquiring",
-      "Fulfilling"
+      "Creating an army of thralls",
+      "Completing missions for the Elder Brain and being rewarded with additional power",
+      "Implanting a tadpole in a powerful creature"
     ],
     "levels": [
       {
@@ -2319,7 +2318,7 @@
               "Your Intelligence score increases by 2 and your Constitution score increases by 1. An ability score cannot be increased beyond 16 this way.",
               "You become an Aberration in addition to any other creature types you are.",
               "Additionally, you gain 120 feet of telepathy. You don't need to share a language with a creature to communicate telepathically with it.",
-              "As an action, you can devour the brain of any humanoid corpse within 5 feet of you. When you do so, you learn one important memory of the creature whose brain you devoured."
+              "As an action, you can devour the brain of any Small or larger corpse within 5 feet of you. When you do so, you learn one important memory of the creature whose brain you devoured."
             ],
             "granted": [
               { "type": "asi", "score": "con", "amount": 2 },
@@ -2358,7 +2357,7 @@
         "flaw": {
           "name": "Brain Food",
           "description": [
-            "If you go for one week without devouring a brain, you gain the following effects:",
+            "If you go for one week without devouring the brain of a creature of at least CR 1, you gain the following effects:",
             "<ul><li>You cannot take the Dash, Disengage, or Dodge action.</li><li>You cannot use your reaction to make opportunity attacks.</li><li>You have disadvantage on ability checks, attack rolls, and saving throws that utilize your Strength or Dexterity scores.</li></ul>"
           ]
         }
@@ -2439,7 +2438,7 @@
         "flaw": {
           "name": "Cranial Dependence",
           "description": [
-            "The increase in your power comes at a cost of more brain food. If you go 24 hours without consuming a brain, you gain the following effects:",
+            "The increase in your power comes at a cost of more brain food. If you go 24 hours without consuming the brain of a creature of at least CR 1, you gain the following effects:",
             "<ul><li>You cannot take the Attack action.</li><li>If you move on your turn, you cannot take a bonus action or reaction until the start of your next turn.</li><li>If you use a bonus action on your turn, your speed becomes 0 until the start of your next turn.</li></ul>",
             "Upon consuming a brain, you are no longer affected by the aforementioned effects."
           ]

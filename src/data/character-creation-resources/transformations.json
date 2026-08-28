@@ -2284,7 +2284,7 @@
   },
   {
     "name": "Illithid",
-    "description": [""],
+    "description": ["Illithids, also called mind flayers, are strange otherworldly creatures with heads resembling cephalopods. Becoming an illithid involves a tadpole being implanted in the body of a creature. The tadpole rapidly transforms the victim's body in a process known as ceremorphosis. The newborn illithid retains the victim's memories, but is almost always a new consciousness, the victim having died in the transformation. Rarely, the victim's mind can remain intact in their new form."],
     "abilityScore": "Intelligence",
     "scoreAmount": 13,
     "prereq": {
@@ -2310,7 +2310,7 @@
           },
           {
             "name": "Mind Blast",
-            "description": "As an action, you can emit psychic energy in a 30-foot cone. Each creature in the area must make an Intelligence saving throw against your transformation save DC. On a failed save, creature takes 3d8 psychic damage and is blinded until the end of its next turn."
+            "description": ["As an action, you can emit psychic energy in a 30-foot cone. Each creature in the area must make an Intelligence saving throw against your transformation save DC. On a failed save, creature takes 3d8 psychic damage and is blinded until the end of its next turn."]
           },
           {
             "name": "Illithid Form",
@@ -2337,20 +2337,26 @@
       {
         "boons": [
           {
-            "name": "Thrallmaker",
-            "description": [
-              "As an action, you can attempt to dominate the mind of an incapacitated humanoid within 5 feet of you that is of a CR equal to or lower than your proficiency bonus. The target must make a Wisdom saving throw against your transformation save DC. On a failed save, the target is permanently dominated by you. While a creature is dominated, you can mentally command it at any time (no action required) and it will do anything for you, including putting itself in harm's way.",
-              "Additionally, you can devour the brain of any of your thralls while it is alive, upon which time it instantly dies.",
-              "You can have a maximum number of thralls equal to your proficiency bonus."
-            ]
-          },
-          {
             "name": "Illithid Psionics",
             "description": [
               "The psionic power of your transformation manifests, and you gain the ability to cast spells, requiring no material components.",
               "You know the Mind Sliver, Friends, and Mage Hand cantrips. When cast in this way, the spectral hand of Mage Hand is invisible.",
               "Additionally, you can cast the Command and Detect Thoughts spells once each and regain the ability to do so when you finish a short or long rest.",
               "Intelligence is your spellcasting ability for all of these spells."
+            ]
+          },
+          {
+            "name": "Levitation",
+            "description": [
+              "You gain the ability to psionically levitate yourself. You gain a flying speed equal to your walking speed and the ability to hover."
+            ]
+          },
+          {
+            "name": "Thrallmaker",
+            "description": [
+              "As an action, you can attempt to dominate the mind of an incapacitated humanoid within 5 feet of you that is of a CR equal to or lower than your proficiency bonus. The target must make a Wisdom saving throw against your transformation save DC. On a failed save, the target is permanently dominated by you. While a creature is dominated, you can mentally command it at any time (no action required) and it will do anything for you, including putting itself in harm's way.",
+              "Additionally, you can devour the brain of any of your thralls while it is alive, upon which time it instantly dies.",
+              "You can have a maximum number of thralls equal to your proficiency bonus."
             ]
           }
         ],
@@ -2365,6 +2371,13 @@
       {
         "boons": [
           {
+            "name": "Greater Mind Blast",
+            "description": [
+              "Your Mind Blast gains the following benefits:",
+              "<ul><li>The area increases to a 60-foot cone.</li><li>The damage increases to 6d8.</li><li>Creatures that fail their saving throw are additionally stunned until the end of their next turn.</li></ul>"
+            ]
+          },
+          {
             "name": "Greater Psionics",
             "prereq": { "type": "boon", "value": "Illithid Psionics" },
             "description": [
@@ -2373,10 +2386,9 @@
             ]
           },
           {
-            "name": "Psychic Overload",
-            "prereq": { "type": "boon", "value": "Thrallmaker" },
+            "name": "Magic Resistance",
             "description": [
-              "Whenever you take damage, you can use your reaction to take half as much damage. If you do so, one of your thralls within 30 feet of you dies. If there are no thralls within 30 feet of you, you can't use this reaction."
+              "You have advantage on saving throws against spells and other magical effects."
             ]
           },
           {
@@ -2387,9 +2399,10 @@
             ]
           },
           {
-            "name": "Levitation",
+            "name": "Psychic Overload",
+            "prereq": { "type": "boon", "value": "Thrallmaker" },
             "description": [
-              "You gain the ability to psionically levitate yourself. You gain a flying speed equal to your walking speed and the ability to hover."
+              "Whenever you take damage, you can use your reaction to take half as much damage. If you do so, one of your thralls within 30 feet of you dies. If there are no thralls within 30 feet of you, you can't use this reaction."
             ]
           }
         ],
@@ -2404,19 +2417,20 @@
       {
         "boons": [
           {
-            "name": "Ulitharid",
-            "description": [
-              "Your transformation mutates you into a ulitharid, a rare type of illithid that boasts great physical strength and mental power, as well as two additional tentacles. You gain the following benefits:",
-              "<ul><li>The reach of your tentacles becomes 10 feet.</li><li>You can deal damage and grapple a creature with your tentacles at the same time.</li><li>You can force the saving throw of your tentacles any number of times.</li></ul>"
-            ]
-          },
-          {
             "name": "Master Psionics",
             "prereq": { "type": "boon", "value": "Illithid Psionics" },
             "description": [
               "You learn the Psychic Crush and Project Image spells. You can cast each spell once using this feature, and regain the ability to do so when you finish a long rest. Intelligence is your spellcasting ability for these spells.",
               "Additionally, you can cast Command and Detect Thoughts three times per short or long rest.",
               "Finally, you can cast Lunacy and Confusion twice per long rest."
+            ]
+          },
+          {
+            "name": "Master's Resistance",
+            "prereq": { "type": "boon", "value": "Thrallmaker" },
+            "description": [
+              "While you are within 60 feet of one of your thralls, if you fail a saving throw against a spell or magical effect, you can choose to transfer the saving throw's effect to one of your thralls.",
+              "You can use this feature a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a long rest."
             ]
           },
           {
@@ -2427,11 +2441,10 @@
             ]
           },
           {
-            "name": "Master's Resistance",
-            "prereq": { "type": "boon", "value": "Thrallmaker" },
+            "name": "Ulitharid",
             "description": [
-              "While you are within 60 feet of one of your thralls, if you fail a saving throw against a spell or magical effect, you can choose to transfer the saving throw's effect to one of your thralls.",
-              "You can use this feature a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a long rest."
+              "Your transformation mutates you into a ulitharid, a rare type of illithid that boasts great physical strength and mental power, as well as two additional tentacles. You gain the following benefits:",
+              "<ul><li>The reach of your tentacles becomes 10 feet.</li><li>You can deal damage and grapple a creature with your tentacles at the same time.</li><li>You can force the saving throw of your tentacles any number of times.</li></ul>"
             ]
           }
         ],

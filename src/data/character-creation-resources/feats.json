@@ -5313,7 +5313,7 @@
   },
   {
     "name": "Shell Defender",
-    "prereq": [{ "race": ["daolagiath", "snailian", "testasian", "tortle"] }],
+    "prereq": [{ "race": ["snailian", "testasian", "tortle"] }],
     "type": "racial",
     "description": [
       "You have mastered using your shell to better protect yourself and others. You gain the following benefits:",
@@ -5334,6 +5334,21 @@
         "reset": 1
       }
     ]
+  },
+  {
+    "name": "Curling Carapace",
+    "prereq": [{ "race": ["daolagiath"] }],
+    "type": "racial",
+    "description": [
+      "You can use your shell to assume a mighty defensive stance. You gain the following benefits:",
+      "<ul><li>Increase your Strength or Constitution score by 1, to a maximum of 20.</li><li>As a bonus action on your turn, you can curl up to gain half cover until the start of your next turn. While you have this half cover, your movement speed is halved.</li></ul>"
+    ],
+    "choices": {
+      "id": "E3EBF6FB-0D52-4A18-828C-09DC2411F07E",
+      "type": "asi",
+      "amount": 1,
+      "options": ["str", "con"]
+    }
   },
   {
     "name": "Serpent Form",

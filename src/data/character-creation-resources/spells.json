@@ -11673,6 +11673,22 @@
     ]
   },
   {
+    "name": "Yaga's Remand",
+    "school": "Abjuration",
+    "level": 7,
+    "castingTime": "1 reaction, when a creature you can see within range casts a spell",
+    "range": "60 feet",
+    "components": "V",
+    "duration": "Instantaneous",
+    "description": [
+      "You speak a winding curse. If the creature is casting a spell of 7th level or lower, its spell fails and has no effect. If it is casting a spell of 8th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.",
+      "This spell cannot be countered or otherwise prevented."
+    ],
+    "lists": [],
+    "unique": "This spell was developed by Baba Yaga and her sisters. Her adoptive daughter Iggwilv is also capable of teaching it.",
+    "ritual": 0
+  },
+  {
     "name": "Immovable Object",
     "school": "Transmutation",
     "level": 2,
@@ -19638,6 +19654,22 @@
     "upcastDice": 1
   },
   {
+    "name": "Abyssal Apocalypse",
+    "school": "Conjuration",
+    "level": 9,
+    "castingTime": "1 action",
+    "range": "Self (60-foot-radius)",
+    "components": "V, S, M (an unholy symbol)",
+    "duration": "Concentration, up to 10 minutes",
+    "description": [
+      "You call forth a legion of gnashing demonic spirits that swarm about you in a 60-foot radius. Whenever a creature enters the area for the first time on a turn or starts its turn there, you can force it to make a Dexterity saving throw, taking 10d8 damage on a failed save, or half as much on a success. The damage type is chosen randomly each time from cold, fire, force, or lightning.",
+      "If the spell ends as a result of you losing concentration, you must make a saving throw against it."
+    ],
+    "lists": [],
+    "unique": "This spell was developed by the witch-queen Iggwilv, better known as Tasha.",
+    "ritual": 0
+  },
+  {
     "name": "Spirit Shroud",
     "school": "Necromancy",
     "level": 3,
@@ -25622,6 +25654,22 @@
       "A creature wearing a silver talisman, or one that has had a Protection from Good and Evil spell cast on it in the last 8 hours, makes this saving throw at advantage."
     ],
     "lists": ["Occult"],
+    "ritual": 0
+  },
+  {
+    "name": "Tasha's Cauldron Tide",
+    "school": "Conjuration",
+    "level": 8,
+    "castingTime": "1 action",
+    "range": "Self (60-foot cone)",
+    "components": "V, S, M (a potion worth at least 1,000 gp, which the spell consumes)",
+    "duration": "Instantaneous",
+    "description": [
+      "Bubbling sludge surges forth from you in a 60-foot cone, forcing each creature in the area to make a Dexterity saving throw. On a failed save, a creature takes 8d6 force damage plus 8d6 poison damage, or half as much on a success.",
+      "If a creature fails its saving throw by 5 or more, it is incapacitated and shape-shifted into a Tiny toad until the end of its next turn, or until it takes any damage."
+    ],
+    "lists": [],
+    "unique": "This spell was developed by the witch-queen Iggwilv, better known as Tasha. Her adoptive mother Baba Yaga is also capable of teaching it.",
     "ritual": 0
   },
   {

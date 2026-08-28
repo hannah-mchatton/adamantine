@@ -11966,11 +11966,12 @@
     "cr": 12,
     "trait": [
       {
-        "name": "Magic Resistance",
+        "name": "Conniving Resistance",
         "entries": [
-          "The arcanaloth has advantage on saving throws against spells and other magical effects."
+          "The arcanaloth has advantage on saving throws against spells and other magical effects.",
+          "When the arcanaloth succeeds on a saving throw against a spell or other magical effect, it can choose to fail. If it does so, it can end the spell's effect at any time (no action required)."
         ],
-        "sort": 0
+        "sort": 2
       },
       {
         "name": "Venal Nature",
@@ -15311,7 +15312,7 @@
     "passive": 16,
     "resist": ["damage from attacks made without advantage"],
     "immune": ["lightning"],
-    "languages": ["Draconic"],
+    "languages": ["Draconic", "Fulgan"],
     "cr": 11,
     "trait": [
       {
@@ -18228,9 +18229,10 @@
         "sort": 1
       },
       {
-        "name": "Magic Resistance",
+        "name": "Conniving Resistance",
         "entries": [
-          "The canoloth has advantage on saving throws against spells and other magical effects."
+          "The canoloth has advantage on saving throws against spells and other magical effects.",
+          "When the canoloth succeeds on a saving throw against a spell or other magical effect, it can choose to fail. If it does so, it can end the spell's effect at any time (no action required)."
         ],
         "sort": 2
       },
@@ -21591,7 +21593,7 @@
       "poisoned",
       "prone"
     ],
-    "languages": ["Common", "Primordial"],
+    "languages": ["Common", "Gelan"],
     "cr": 22,
     "spellcasting": [
       {
@@ -24083,11 +24085,1052 @@
     ]
   },
   {
-    "name": "Dhergoloth",
+    "name": "Candlewax Golem",
+    "size": "Large",
+    "type": { "construct": { "golem": { "organic": {} } } },
+    "alignment": ["U"],
+    "ac": [{ "ac": 14, "from": ["natural armor"] }],
+    "hp": { "average": 136, "formula": "16d8 + 64" },
+    "speed": { "walk": 30 },
+    "str": 18,
+    "dex": 14,
+    "con": 18,
+    "int": 8,
+    "wis": 15,
+    "cha": 8,
+    "senses": ["darkvision 120 ft."],
+    "passive": 12,
+    "vulnerable": ["fire"],
+    "immune": ["poison", "psychic"],
+    "conditionImmune": [
+      "charmed",
+      "exhaustion",
+      "frightened",
+      "paralyzed",
+      "petrified",
+      "poisoned"
+    ],
+    "languages": ["understands The Languages Of Its Creator but can't speak"],
+    "cr": 6,
+    "trait": [
+      {
+        "name": "Sculpted Mask",
+        "entries": [
+          "The golem can mimic the appearance and speak the languages of any creature petrified by its Effigy Seal. This disguise melts away if its candles are lit."
+        ],
+        "sort": 0
+      },
+      {
+        "name": "Snuff Out",
+        "entries": [
+          "The golem is covered in candles, which it can ignire when it rolls initiative, and which are extinguished if it takes any cold damage.",
+          "If the golem's candles are lit, it deals an additional 3 (1d6) fire damage with its Waxen Grasp and Candlewax Skewer."
+        ],
+        "sort": 1
+      },
+      {
+        "name": "Golemcraft Ward (2/Day)",
+        "entries": [
+          "When the golem fails a saving throw that would alter its form or incapacitate it, it can choose to succeed instead. The golem adds +3 to saving throws against spells and magical effects for each use of this ability it has remaining."
+        ],
+        "sort": 1
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The golem makes two attacks, each of which it can replace with its Candlewax Skewer or Effigy Seal."
+        ]
+      },
+      {
+        "name": "Waxen Grasp",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +7 to hit, reach 5 ft., one target. <em>Hit:</em> 16 (3d8 + 3) bludgeoning damage and the target is grappled (escape DC 15)."
+        ]
+      },
+      {
+        "name": "Candlewax Skewer",
+        "entries": [
+          "The golem forms a spear of wax, thrusting it forward in a 15-foot long, 6-inch wide line. Each creature in the area must make a DC 15 Dexterity saving throw, taking 10 (3d6) piercing damage and being pushed 10 feet on a failed save, or half as much on a success."
+        ]
+      },
+      {
+        "name": "Effigy Seal",
+        "entries": [
+          "Wax flows over a creature grappled by the golem and hardens, forcing it to make a DC 15 Strength saving throw. On a failed save, the target is restrained (escape DC 15).",
+          "While restrained in this way, the creature is blinded and suffocating. If the restrained creature would die, it is instead petrified and stabilized at 0 hit points. This restraint ends if the creature takes any amount of fire damage."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Reignite",
+        "entries": [
+          "When the golem is reduced below half of its maximum hit points or takes any fire damage while its candles are extinguished, the golem can relight its candles and deal 5 (1d10) fire damage to each creature within 5 feet of it."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Kamadan",
+    "size": "Large",
+    "type": {
+      "celestial": {}
+    },
+    "alignment": ["U"],
+    "ac": [13],
+    "hp": { "average": 67, "formula": "9d10 + 18" },
+    "speed": { "walk": 30, "climb": 30 },
+    "str": 16,
+    "dex": 16,
+    "con": 14,
+    "int": 3,
+    "wis": 14,
+    "cha": 10,
+    "skill": { "perception": "+6", "stealth": "+7" },
+    "senses": ["darkvision 60 ft."],
+    "passive": 16,
+    "cr": 4,
+    "trait": [
+      {
+        "name": "Righting Reflex",
+        "entries": [
+          "The kamadan takes only 1 point of bludgeoning damage per 10 feet fallen."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The kamadan makes two attacks, one of which it can replace with a use of its Serpent Mane."
+        ]
+      },
+      {
+        "name": "Rending Swipe",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +5 to hit, reach 5 ft., one target. <em>Hit:</em> 10 (2d6 + 3) slashing damage."
+        ]
+      },
+      {
+        "name": "Serpent Mane",
+        "entries": [
+          "The kamadan's serpents lash out, forcing a creature within 5 feet to make a DC 12 Dexterity saving throw, taking 21 (6d6) poison damage on a failed save, or half as much on a success.",
+          "The kamadan can take this action even while incapacitated."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Prowling Pounce",
+        "entries": [
+          "The kamadan leaps up to 20 feet, then can force one creature within 5 feet to make a DC 13 Strength saving throw. On a failed save, the target is knocked prone. If the target is dazed or the kamadan started this turn invisible, the target has disadvantage on its saving throw."
+        ]
+      },
+      {
+        "name": "Lethargy Breath (Recharge 5-6)",
+        "entries": [
+          "The kamadan breathes a soporific gas in a 30-foot cone, forcing each creature in the area to make a DC 12 Constitution saving throw. On a failed save, a creature is dazed for 1 minute (save ends at end of turn), or falls unconscious until the end of its next turn if it was already dazed."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Senmurv Maverick",
+    "size": "Large",
+    "type": { "celestial": {} },
+    "alignment": ["U"],
+    "ac": [{ "ac": 15, "from": ["natural armor"] }],
+    "hp": { "average": 95, "formula": "10d10 + 40" },
+    "speed": { "walk": 15, "fly": 50 },
+    "str": 21,
+    "dex": 16,
+    "con": 19,
+    "int": 7,
+    "wis": 13,
+    "cha": 16,
+    "skill": { "perception": "+5", "survival": "+5" },
+    "passive": 15,
+    "languages": ["Celestial", "Sylvan"],
+    "cr": 3,
+    "trait": [
+      {
+        "name": "Scent of Evil",
+        "entries": [
+          "The senmurv can determine, by smell, whether any evil-aligned creatures are within 500 feet of it."
+        ],
+        "sort": 0
+      },
+      {
+        "name": "Poor Flyer",
+        "entries": [
+          "The senmurv falls 10 feet at the end of each of its turns if it's airborne and the only thing holding it aloft is its fly speed."
+        ],
+        "sort": 1
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": ["The senmurv makes two attacks with its Taloned Paws."]
+      },
+      {
+        "name": "Taloned Paws",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +7 to hit, reach 5 ft., one target. <em>Hit:</em> 8 (1d6 + 5) slashing damage.",
+          "This attack is made at disadvantage if the senmurv is not flying."
+        ]
+      },
+      {
+        "name": "Glimmerlight Gaze",
+        "entries": [
+          "<em>Ranged Spell Attack.</em> +5 to hit, range 30 ft., one target. <em>Hit:</em> 22 (5d8) radiant damage.",
+          "On a critical hit, the target is covered in lingering sparks of colored light for 1 minute. All attacks against the target are made at advantage while this effect lasts."
+        ]
+      },
+      {
+        "name": "Noble Howl (1/Day)",
+        "entries": [
+          "The senmurv lets out a melodic cry that strikes fear in the hearts of profane beings. Each fiend and undead within 30 feet must make a DC 13 Wisdom saving throw or become frightened until the end of its next turn."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Smite Evil",
+        "entries": [
+          "Immediately after hitting a creature with a melee attack, the senmurv can deal an additional 9 (2d8) radiant damage to it."
+        ]
+      },
+      {
+        "name": "Prismatic Flash (1/Day)",
+        "entries": [
+          "The senmurv spreads its shining wings, forcing each creature within 10 feet that can see it to make a DC 13 Constitution saving throw. On a failed save, a creature falls prone and is blinded until the start of its next turn.",
+          "The senmurv can't use this action while flying."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Senmurv Skymaster",
+    "size": "Huge",
+    "type": { "celestial": {} },
+    "alignment": ["U"],
+    "ac": [{ "ac": 16, "from": ["natural armor"] }],
+    "hp": { "average": 207, "formula": "18d12 + 90" },
+    "speed": { "walk": 15, "fly": 50 },
+    "str": 23,
+    "dex": 16,
+    "con": 20,
+    "int": 8,
+    "wis": 17,
+    "cha": 17,
+    "save": { "str": "+10", "con": "+9", "cha": "+7" },
+    "skill": { "perception": "+11", "survival": "+11" },
+    "passive": 21,
+    "languages": ["Celestial", "Sylvan"],
+    "cr": 11,
+    "trait": [
+      {
+        "name": "Scent of Evil",
+        "entries": [
+          "The senmurv can determine, by smell, whether any evil-aligned creatures are within 500 feet of it."
+        ],
+        "sort": 0
+      },
+      {
+        "name": "Poor Flyer",
+        "entries": [
+          "The senmurv falls 10 feet at the end of each of its turns if it's airborne and the only thing holding it aloft is its fly speed."
+        ],
+        "sort": 1
+      },
+      {
+        "name": "Purebeast Purge (2/Day)",
+        "entries": [
+          "At the start of each of the senmurv's turns, it can end one condition affecting it. If it does, it can't use its Multiattack this turn."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The senmurv makes two attacks with its Taloned Paws, one of which it can replace a use of its Glimmerlight Gaze or Noble Howl."
+        ]
+      },
+      {
+        "name": "Taloned Paws",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +10 to hit, reach 5 ft., one target. <em>Hit:</em> 13 (2d6 + 5) slashing damage.",
+          "This attack is made at disadvantage if the senmurv is not flying."
+        ]
+      },
+      {
+        "name": "Glimmerlight Gaze",
+        "entries": [
+          "<em>Ranged Spell Attack.</em> +7 to hit, range 60 ft., one target. <em>Hit:</em> 27 (6d8) radiant damage.",
+          "On a critical hit, the target is covered in lingering sparks of colored light for 1 minute. All attacks against the target are made at advantage while this effect lasts."
+        ]
+      },
+      {
+        "name": "Noble Howl",
+        "entries": [
+          "The senmurv lets out a melodic cry that strikes fear in the hearts of profane beings. Each fiend and undead within 60 feet must make a DC 15 Wisdom saving throw or become frightened until the end of its next turn."
+        ]
+      },
+      {
+        "name": "Beam Sweep (Recharge 5-6)",
+        "entries": [
+          "Gem-bright light bursts from the senmurv's eyes, carving through a 20-foot long, 1-foot wide line within 60 feet. Each creature in the area must make a DC 15 Dexterity saving throw. On a failed save, a creature takes 22 (5d8) radiant damage and is pushed up to 10 feeet away."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Smite Evil",
+        "entries": [
+          "Immediately after hitting a creature with a melee attack, the senmurv can deal an additional 13 (3d8) radiant damage to it."
+        ]
+      },
+      {
+        "name": "Prismatic Flash (1/Day)",
+        "entries": [
+          "The senmurv spreads its shining wings, forcing each creature within 10 feet that can see it to make a DC 15 Constitution saving throw. On a failed save, a creature falls prone and is blinded until the start of its next turn.",
+          "The senmurv can't use this action while flying."
+        ]
+      }
+    ],
+    "shortName": "the senmurv",
+    "legendary": [
+      {
+        "name": "Shine Bright",
+        "entries": [
+          "The senmurv gains 15 temporary hit points. While it has any of these temporary hit points remaining, it emits bright light in a 30-foot radius and attacks made against it are made at advantage."
+        ]
+      },
+      {
+        "name": "Swift Kick",
+        "entries": [
+          "The senmurv makes a Taloned Paws attack. If the attack hits, the target is pushed up to 15 feet away."
+        ]
+      },
+      {
+        "name": "Winged Whirl",
+        "entries": [
+          "The senmurv moves up to half its flying speed, then falls prone if it is flying. Opportunity attacks provoked by this movement are made at disadvantage."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Nilbog Wag",
+    "size": "Small",
+    "type": { "fey": { "unseelie": {} } },
+    "alignment": ["C", "E"],
+    "ac": [{ "ac": 13, "from": ["leather armor"] }],
+    "hp": { "average": 14, "formula": "4d6" },
+    "speed": { "walk": 30 },
+    "str": 8,
+    "dex": 14,
+    "con": 10,
+    "int": 10,
+    "wis": 10,
+    "cha": 16,
+    "skill": { "stealth": "+4" },
+    "senses": ["darkvision 60 ft."],
+    "passive": 10,
+    "languages": ["Common", "Goblish", "Sylvan"],
+    "cr": 1,
+    "trait": [
+      {
+        "name": "Anarchic Tenacity",
+        "entries": [
+          "If two or more creatures with this trait would be killed by a single damage source, one of them (chosen at random) survives unharmed."
+        ],
+        "sort": 0
+      },
+      {
+        "name": "Healing Reversal",
+        "entries": [
+          "If the nilbog would receive any magical healing from a source other than its Wound Reversal, it instead loses that many hit points."
+        ],
+        "sort": 1
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The nilbog makes two attacks, each of which it can replace with its Distort Perception or a use of the Dodge action."
+        ]
+      },
+      {
+        "name": "Toe-Smasher",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +4 to hit, reach 5 ft., one target. <em>Hit:</em> 5 (1d6 + 2) bludgeoning damage.",
+          "A Medium or smaller creature hit with this attack falls prone."
+        ]
+      },
+      {
+        "name": "Distort Perception",
+        "entries": [
+          "One creature the nilbog can see within 60 feet must make a DC 13 Wisdom Saving Throw. On a failed save, until the end of the creature's next turn, the creature has disadvantage on attacks and the nilbog controls its movement."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Trade Trinket",
+        "entries": [
+          "When the nilbog is missed with a melee weapon attack, it can trade weapons with the attacker. It can use any weapons acquired in this way as though it were proficient with and attuned to them."
+        ]
+      },
+      {
+        "name": "Wound Reversal",
+        "entries": [
+          "When the nilbog would take 20 or less damage from a single source, it can instead take no damage and regain an equal number of hit points.",
+          "If the nilbog is healed to its maximum hit points, any extra hit points are granted to it as temporary hit points."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Nilbog Pandemoniac",
+    "size": "Small",
+    "type": { "fey": { "unseelie": {} } },
+    "alignment": ["C", "E"],
+    "ac": [{ "ac": 15, "from": ["leather armor"] }],
+    "hp": { "average": 55, "formula": "10d6 + 20" },
+    "speed": { "walk": 30 },
+    "str": 8,
+    "dex": 18,
+    "con": 14,
+    "int": 10,
+    "wis": 13,
+    "cha": 17,
+    "save": { "dex": "+7", "con": "+5", "cha": "+6" },
+    "skill": { "sleight of hand": "+10", "stealth": "+7" },
+    "senses": ["darkvision 60 ft."],
+    "passive": 11,
+    "languages": ["Common", "Goblish", "Sylvan"],
+    "cr": 5,
+    "trait": [
+      {
+        "name": "Anarchic Tenacity",
+        "entries": [
+          "If two or more creatures with this trait would be killed by a single damage source, one of them (chosen at random) survives unharmed."
+        ],
+        "sort": 0
+      },
+      {
+        "name": "Healing Reversal",
+        "entries": [
+          "If the nilbog would receive any magical healing from a source other than its Wound Reversal, it instead loses that many hit points."
+        ],
+        "sort": 1
+      },
+      {
+        "name": "Nilbog Spirit",
+        "entries": [
+          "When the nilbog is killed, the nearest willing goblin or nilbog within 60 feet receives the Nilbog spirit, transforming into a Pandemoniac."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The nilbog makes two attacks and uses its Distort Perception or Infectious Cackle."
+        ]
+      },
+      {
+        "name": "Fool's Scepter",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +7 to hit, reach 5 ft., one target. <em>Hit:</em> 11 (2d6 + 4) bludgeoning damage and the target is cursed for 1 minute.",
+          "Whenever a creature cursed in this way fails an ability check or saving throw, or misses with an attack roll, it takes 3 (1d6) bludgeoning damage and falls prone."
+        ]
+      },
+      {
+        "name": "Distort Perception",
+        "entries": [
+          "One creature the nilbog can see within 60 feet must make a DC 14 Wisdom Saving Throw. On a failed save, until the end of the creature's next turn, the creature has disadvantage on attacks and the nilbog controls its movement."
+        ]
+      },
+      {
+        "name": "Infectious Cackle (Concentration)",
+        "entries": [
+          "Uncontrollable laughter wells up within a creature the the nilbog can see within 60 feet, forcing it to make a DC 14 Wisdom saving throw. On a failed save, the creature falls prone and begins choking (save ends at end of turn), then the nilbog can target an additional creature in range with this effect."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Trade Trinket",
+        "entries": [
+          "When the nilbog is missed with a melee weapon attack, it can trade weapons with the attacker. It can use any weapons acquired in this way as though it were proficient with and attuned to them."
+        ]
+      },
+      {
+        "name": "Wound Reversal",
+        "entries": [
+          "When the nilbog would take 20 or less damage from a single source, it can instead take no damage and regain an equal number of hit points.",
+          "If the nilbog is healed to its maximum hit points, any extra hit points are granted to it as temporary hit points."
+        ]
+      }
+    ],
+    "shortName": "the nilbog",
+    "legendary": [
+      {
+        "name": "Banish Wits",
+        "entries": [
+          "One allied goblin affected by the nilbog's Infectious Cackle transforms into a Nilbog Wag under the nilbog's control, retaining its current hit points."
+        ]
+      },
+      {
+        "name": "Trickster's Tumble",
+        "entries": [
+          "The nilbog moves up to 10 feet without provoking opportunity attacks. Intil the start of the nilbog's next turn, attacks against it are made at disadvatage."
+        ]
+      },
+      {
+        "name": "Vicious Kick",
+        "entries": [
+          "The nilbog moves up to its speed, then deals 5 (1d10) bludgeoning damage to a prone creature within 5 feet of it."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Red Echo Stalker",
+    "size": "Medium",
+    "type": { "undead": { "ethereal": { "wraith": {} } } },
+    "alignment": ["A"],
+    "ac": [13],
+    "hp": { "average": 78, "formula": "12d8 + 24" },
+    "speed": { "walk": 30 },
+    "str": 1,
+    "dex": 16,
+    "con": 14,
+    "int": 10,
+    "wis": 12,
+    "cha": 15,
+    "skill": { "stealth": "+9" },
+    "senses": ["darkvision 60 ft."],
+    "passive": 11,
+    "resist": ["bludgeoning", "piercing", "slashing"],
+    "immune": ["poison"],
+    "conditionImmune": [
+      "exhaustion",
+      "grappled",
+      "paralyzed",
+      "petrified",
+      "poisoned",
+      "prone",
+      "restrained",
+      "unconscious"
+    ],
+    "languages": ["Common", "Abyssal"],
+    "cr": 5,
+    "trait": [
+      {
+        "name": "Bhaal's Red Blessing",
+        "entries": [
+          "The echo's attacks deal maximum damage, instead of rolling, to targets that have 20 or fewer hit points."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": ["The echo makes four attacks."]
+      },
+      {
+        "name": "Wraithblade",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +6 to hit, reach 5 ft., one target. <em>Hit:</em> 8 (2d4 + 3) force damage.",
+          "This attack treats all targets as unarmored (an unarmored creature's AC is usually 10 plus its Dexterity modifier)."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Death Haunt (Concentration)",
+        "entries": [
+          "The echo chooses an enemy it can see. Until the end of its next turn, the echo's attacks can only target the chosen creature and the echo is invisible to all other creatures."
+        ]
+      },
+      {
+        "name": "Fade Out",
+        "entries": [
+          "The echo disappears into the Border Ethereal. At the start of each of its turns, roll a d6. On a 3+ the echo reappears in an unoccupied space within 30 feet of where it departed."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Red Echo Farslayer",
+    "size": "Medium",
+    "type": { "undead": { "ethereal": { "wraith": {} } } },
+    "alignment": ["A"],
+    "ac": [13],
+    "hp": { "average": 91, "formula": "14d8 + 28" },
+    "speed": { "walk": 30 },
+    "str": 1,
+    "dex": 17,
+    "con": 15,
+    "int": 10,
+    "wis": 12,
+    "cha": 18,
+    "save": { "dex": "+6", "con": "+5", "cha": "+7" },
+    "skill": { "arcana": "+3", "perception": "+4", "stealth": "+9" },
+    "senses": ["darkvision 60 ft."],
+    "passive": 14,
+    "resist": ["bludgeoning", "piercing", "slashing"],
+    "immune": ["poison"],
+    "conditionImmune": [
+      "exhaustion",
+      "grappled",
+      "paralyzed",
+      "petrified",
+      "poisoned",
+      "prone",
+      "restrained",
+      "unconscious"
+    ],
+    "languages": ["Common", "Abyssal"],
+    "cr": 8,
+    "trait": [
+      {
+        "name": "Bhaal's Red Blessing",
+        "entries": [
+          "The echo's attacks deal maximum damage, instead of rolling, to targets that have 20 or fewer hit points."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The echo makes four attacks, one of which it can replace with a use of its Tear Heart."
+        ]
+      },
+      {
+        "name": "Wraithblade",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +6 to hit, reach 5 ft., one target. <em>Hit:</em> 10 (2d6 + 3) force damage.",
+          "This attack treats all targets as unarmored (an unarmored creature's AC is usually 10 plus its Dexterity modifier)."
+        ]
+      },
+      {
+        "name": "Tear Heart (3rd Level Spell, Concentration)",
+        "entries": [
+          "The echo plunges a hand into the chest of a creature within 5 feet, tearing forth a ghostly image of the target's heart and causing it to start bleeding (2d10). This condition can't be ended for the spell's duration.",
+          "At the end of each of the target's turns, it must make a DC 15 Constitution saving throw. On a failed save, the creature's bleeding value increases by 2d10. On a success, the effect ends."
+        ]
+      },
+      {
+        "name": "Wounding Bond (1/Day, 4th Level Spell)",
+        "entries": [
+          "The echo loses 13 (3d8) hit points, then each creature that it dealt damage to in the last minute must make a DC 15 Constitution saving throw, taking 27 (6d8) necrotic damage on a failed save, or half as much on a success."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Death Haunt (Concentration)",
+        "entries": [
+          "The echo chooses an enemy it can see. Until the end of its next turn, the echo's attacks can only target the chosen creature and the echo is invisible to all other creatures."
+        ]
+      },
+      {
+        "name": "Fade Out",
+        "entries": [
+          "The echo disappears into the Border Ethereal. At the start of each of its turns, roll a d6. On a 3+ the echo reappears in an unoccupied space within 30 feet of where it departed."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Red Echo Malignus",
+    "size": "Medium",
+    "type": { "undead": { "ethereal": { "wraith": {} } } },
+    "alignment": ["A"],
+    "ac": [14],
+    "hp": { "average": 195, "formula": "26d8 + 78" },
+    "speed": { "walk": 30 },
+    "str": 1,
+    "dex": 18,
+    "con": 16,
+    "int": 14,
+    "wis": 12,
+    "cha": 20,
+    "save": { "dex": "9", "wis": "+6", "cha": "+10" },
+    "skill": { "perception": "+6", "stealth": "+14" },
+    "senses": ["darkvision 60 ft."],
+    "passive": 16,
+    "resist": ["bludgeoning", "piercing", "slashing"],
+    "immune": ["poison"],
+    "conditionImmune": [
+      "exhaustion",
+      "grappled",
+      "paralyzed",
+      "petrified",
+      "poisoned",
+      "prone",
+      "restrained",
+      "unconscious"
+    ],
+    "languages": ["Common", "Abyssal"],
+    "cr": 13,
+    "trait": [
+      {
+        "name": "Bhaal's Red Blessing",
+        "entries": [
+          "The echo's attacks deal maximum damage, instead of rolling, to targets that have 20 or fewer hit points."
+        ]
+      },
+      {
+        "name": "Beyond Death's Door (3/Day)",
+        "entries": [
+          "When the echo fails a saving throw, it can choose to succeed instead.",
+          "At the start of each of the echo's turns, it loses 5 hit points for each expended use of this ability."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The echo makes four attacks, or makes two attacks and uses its Drown in Blood or Wounding Bond."
+        ]
+      },
+      {
+        "name": "Wraithblade",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +9 to hit, reach 5 ft., one target. <em>Hit:</em> 14 (3d6 + 3) force damage.",
+          "This attack treats all targets as unarmored (an unarmored creature's AC is usually 10 plus its Dexterity modifier)."
+        ]
+      },
+      {
+        "name": "Drown in Blood (3rd Level Spell, Concentration)",
+        "entries": [
+          "Blood wells up within a creature the echo can see within 60 feet, forcing it to make a DC 18 Constitution saving throw. On a failed save, the target takes 18 (4d8) necrotic damage and is choking for 1 minute (save ends at end of turn)."
+        ]
+      },
+      {
+        "name": "Tear Heart (4th Level Spell, Concentration)",
+        "entries": [
+          "The echo plunges a hand into the chest of a creature within 5 feet, tearing forth a ghostly image of the target's heart and causing it to start bleeding (3d10). This condition can't be ended for the spell's duration.",
+          "At the end of each of the target's turns, it must make a DC 18 Constitution saving throw. On a failed save, the creature's bleeding value increases by 2d10. On a success, the effect ends."
+        ]
+      },
+      {
+        "name": "Wounding Bond (4th Level Spell)",
+        "entries": [
+          "The echo loses 13 (3d8) hit points, then each creature that it dealt damage to in the last minute must make a DC 15 Constitution saving throw, taking 27 (6d8) necrotic damage on a failed save, or half as much on a success."
+        ]
+      },
+      {
+        "name": "Exsanguinate (1/Day, 6th Level Spell)",
+        "entries": [
+          "The echo touches a creature, tearing forth its vital ichor. The target must make a DC 18 Constitution saving throw, taking 55 (10d10) necrotic damage and falling prone on a failed save, or half as much damage on a success.",
+          "A target that loses half or more of its current hit points from this spell is additionally dazed for 1 minute (save ends at end of turn)."
+        ]
+      }
+    ],
+    "shortName": "the echo",
+    "legendary": [
+      {
+        "name": "Death Haunt (Concentration)",
+        "entries": [
+          "The echo chooses an enemy it can see. Until the end of its next turn, the echo's attacks can only target the chosen creature and the echo is invisible to all other creatures."
+        ]
+      },
+      {
+        "name": "Doom Seed (3rd Level Spell)",
+        "entries": [
+          "One creature the echo can see within 60 feet must make a DC 18 Wisdom saving throw or become cursed for 1 minute.",
+          "While cursed in this way, the first time each turn that the creature takes any damage, roll a d4. On a 1, the creature takes twice as much damage and the curse ends."
+        ]
+      },
+      {
+        "name": "Fading Rush",
+        "entries": [
+          "The echo moves up to its speed and makes two attacks. If both attacks hit, the echo can disappear into the Border Ethereal. At the start of the echo's turn, roll a d6. On a 3+ the echo reappears in an unoccupied space within 30 feet of where it departed."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mezzoloth Sellblade",
     "size": "Medium",
     "type": { "fiend": { "yugoloth": { "lesser": {} } } },
     "alignment": ["N", "E"],
-    "ac": [{ "ac": 15, "from": ["natural armor"] }],
+    "ac": [{ "ac": 18, "from": ["natural armor"] }],
+    "hp": { "average": 75, "formula": "10d8 + 30" },
+    "speed": { "walk": 40 },
+    "str": 18,
+    "dex": 11,
+    "con": 16,
+    "int": 7,
+    "wis": 14,
+    "cha": 10,
+    "skill": { "perception": "+5" },
+    "senses": ["blindsight 60 ft.", "darkvision 60 ft."],
+    "passive": 15,
+    "resist": ["fire"],
+    "immune": ["acid", "poison"],
+    "conditionImmune": ["poisoned"],
+    "languages": ["Abyssal", "Infernal", "telepathy 60 ft."],
+    "cr": 5,
+    "trait": [
+      {
+        "name": "Conniving Resistance",
+        "entries": [
+          "The mezzoloth has advantage on saving throws against spells and other magical effects.",
+          "When the mezzoloth succeeds on a saving throw against a spell or other magical effect, it can choose to fail. If it does so, it can end the spell's effect at any time (no action required)."
+        ],
+        "sort": 2
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": ["The mezzoloth makes two attacks."]
+      },
+      {
+        "name": "Spindletip Claws",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +7 to hit, reach 5 ft., one target. <em>Hit:</em> 13 (2d8 + 4) slashing damage and the target is grappled (escape DC 15).",
+          "A target grappled in this way can attempt to escape as a bonus action."
+        ]
+      },
+      {
+        "name": "Weaverot Barb",
+        "entries": [
+          "<em>Ranged Weapon Attack.</em> +7 to hit, range 20/60 ft., one target. <em>Hit:</em> 7 (1d6 + 4) piercing damage plus 5 (1d10) necrotic damage.",
+          "Hit or miss, the mezzoloth can then end one spell or 2nd level or lower affecting the target."
+        ]
+      },
+      {
+        "name": "Toxic Emission",
+        "entries": [
+          "A cloud of stinging gas hisses from the mezzoloth, forcing each creature within 10 feet of it to make a DC 14 Constitution saving throw. On a failed save, a creature takes 18 (4d8) poison damage and is blinded until the end of its next turn, or half as much damage on a success."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Shred",
+        "entries": [
+          "One creature grappled by the mezzoloth takes 9 (2d8) slashing damage, or half as much if it is wearing heavy armor."
+        ]
+      },
+      {
+        "name": "Divergent Dark (3rd Level Spell)",
+        "entries": [
+          "The mezzoloth creates two 5-foot diameter spheres of magical darkness within 30 feet, then can teleport to an unoccupied space not illuminated by bright light within 30 feet.",
+          "This darkness clears at the start of the mezzoloth's next turn, or if a creature within it takes or deals any damage."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mezzoloth Company",
+    "size": "Huge",
+    "swarmSize": "Medium",
+    "type": { "fiend": { "yugoloth": { "lesser": {} } } },
+    "alignment": ["N", "E"],
+    "ac": [{ "ac": 18, "from": ["natural armor"] }],
+    "hp": { "average": 225, "formula": "30d8 + 90" },
+    "speed": { "walk": 40 },
+    "str": 18,
+    "dex": 11,
+    "con": 16,
+    "int": 7,
+    "wis": 14,
+    "cha": 10,
+    "senses": ["blindsight 60 ft.", "darkvision 60 ft."],
+    "passive": 12,
+    "resist": ["fire", "damage from attacks"],
+    "immune": ["acid", "poison"],
+    "conditionImmune": [
+      "charmed",
+      "exhaustion",
+      "grappled",
+      "paralyzed",
+      "petrified",
+      "poisoned",
+      "prone",
+      "restrained",
+      "unconscious"
+    ],
+    "languages": ["Abyssal", "Infernal", "telepathy 60 ft."],
+    "cr": 20,
+    "trait": [
+      {
+        "name": "Conniving Resistance",
+        "entries": [
+          "The company has advantage on saving throws against spells and other magical effects.",
+          "When the company succeeds on a saving throw against a spell or other magical effect, it can choose to fail. If it does so, it can end the spell's effect at any time (no action required)."
+        ],
+        "sort": 2
+      },
+      {
+        "name": "Swarm",
+        "entries": [
+          "The company can occupy another creature's space and vice versa, and the company can move through any opening large enough for a Medium creature."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The company makes one attack and uses its Weaverot Volley."
+        ]
+      },
+      {
+        "name": "Spindly Shred",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +10 to hit, reach 0 ft., one target. <em>Hit:</em> 49 (10d8 + 4) slashing damage, or 27 (5d8 + 4) slashing damage if the company has fewer than half its maximum hit points, and the target is grappled (escape DC 18).",
+          "A target grappled in this way can attempt to escape as a bonus action."
+        ]
+      },
+      {
+        "name": "Weaverot Volley",
+        "entries": [
+          "A volley of barbed spines sails forth, leaving trails of ruined magic in their wake. Each creature in a 15-foot radius sphere centered on a point within 60 feet must make a DC 18 Dexterity saving throw, taking 14 (4d6) piercing damage plus 11 (2d10) necrotic damage on a failed save.",
+          "Whether a creature succeeds or fails its saving throw, each spell of 2nd level or lower affecting it ends."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Toxic Emission",
+        "entries": [
+          "Clouds of stinging gas hiss from the company, forcing each creature within 10 feet of it to make a DC 17 Constitution saving throw. On a failed save, a creature takes 18 (4d8) poison damage and is blinded until the end of its next turn, or half as much damage on a success."
+        ]
+      },
+      {
+        "name": "Strike-Gate (1/Day)",
+        "entries": [
+          "The company teleports to a space within 120 feet. Any creature grappled by it must make a DC 16 Charisma saving throw to avoid teleporting with the company."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mezzoloth Rune-Veteran",
+    "size": "Medium",
+    "type": { "fiend": { "yugoloth": { "lesser": {} } } },
+    "alignment": ["N", "E"],
+    "ac": [{ "ac": 18, "from": ["natural armor"] }],
+    "hp": { "average": 195, "formula": "26d8 + 78" },
+    "speed": { "walk": 40 },
+    "str": 20,
+    "dex": 14,
+    "con": 17,
+    "int": 10,
+    "wis": 14,
+    "cha": 16,
+    "skill": { "intimidation": "+6", "perception": "+6" },
+    "save": { "str": "+9", "wis": "+6" },
+    "senses": ["blindsight 60 ft.", "darkvision 60 ft."],
+    "passive": 16,
+    "resist": ["fire"],
+    "immune": ["acid", "poison"],
+    "conditionImmune": ["poisoned"],
+    "languages": ["Abyssal", "Infernal", "telepathy 60 ft."],
+    "cr": 5,
+    "trait": [
+      {
+        "name": "Conniving Resistance",
+        "entries": [
+          "The mezzoloth has advantage on saving throws against spells and other magical effects.",
+          "When the mezzoloth succeeds on a saving throw against a spell or other magical effect, it can choose to fail. If it does so, it can end the spell's effect at any time (no action required)."
+        ],
+        "sort": 2
+      },
+      {
+        "name": "Venal Purge",
+        "entries": [
+          "At the start of each of the mezzoloth's turns, it can end one spell affecting it.",
+          "The spell's caster can expend an extra spell slot of the spell's level to prevent this effect. If it does so, the mezzoloth gains temporary hit points equal to 5 times the spell's level."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": ["The mezzoloth makes two attacks."]
+      },
+      {
+        "name": "Spindletip Claws",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +9 to hit, reach 5 ft., one target. <em>Hit:</em> 14 (2d8 + 5) slashing damage and the target is grappled (escape DC 17).",
+          "A target grappled in this way can attempt to escape as a bonus action."
+        ]
+      },
+      {
+        "name": "Arrow of Strife (4th Level Spell)",
+        "entries": [
+          "<em>Ranged Spell Attack.</em> +7 to hit, range 120 ft., one target. <em>Hit:</em> 21 (6d6) psychic damage and the target must use its reaction, if available, to make a weapon attack under the mezzoloth's control."
+        ]
+      },
+      {
+        "name": "Toxic Emission",
+        "entries": [
+          "A cloud of stinging gas hisses from the mezzoloth, forcing each creature within 10 feet of it to make a DC 15 Constitution saving throw. On a failed save, a creature takes 18 (4d8) poison damage and is blinded until the end of its next turn, or half as much damage on a success."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Shred",
+        "entries": [
+          "One creature grappled by the mezzoloth takes 18 (4d8) slashing damage, or half as much if it is wearing heavy armor."
+        ]
+      },
+      {
+        "name": "Spelljack (3rd Level Spell)",
+        "entries": [
+          "One creature the mezzoloth dealt damage to this turn must make a DC 15 Charisma saving throw. On a failed save, the mezzoloth transfers the effect of one spell affecting the target to itself.",
+          "If the spell requires concentration, the mezzoloth must concentrate to maintain this effect."
+        ]
+      }
+    ],
+    "shortName": "the mezzoloth",
+    "legendary": [
+      {
+        "name": "Divergent Dark (3rd Level Spell)",
+        "entries": [
+          "The mezzoloth creates two 5-foot diameter spheres of magical darkness within 30 feet, then can teleport to an unoccupied space not illuminated by bright light within 30 feet.",
+          "This darkness clears at the start of the mezzoloth's next turn, or if a creature within it takes or deals any damage."
+        ]
+      },
+      {
+        "name": "Target Matrix (1st Level Spell, Concentration)",
+        "entries": [
+          "An illusory array of guidemarks appears in the air around a creature the mezzoloth can see within 120 feet. Until the end of the mezzoloth's next turn, or until the target moves at least 10 feet, all ranged attacks made against it are made at advantage."
+        ]
+      },
+      {
+        "name": "Vengeful Strike",
+        "entries": [
+          "The mezzoloth moves up to half its speed then can make a melee attack. This attack has advantage if the target has dealt damage to the mezzoloth since the end of its last turn."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Dhergoloth Shock-Dervish",
+    "size": "Medium",
+    "type": { "fiend": { "yugoloth": { "lesser": {} } } },
+    "alignment": ["N", "E"],
+    "ac": [{ "ac": 17, "from": ["natural armor"] }],
     "hp": { "average": 119, "formula": "14d8 + 56" },
     "speed": { "walk": 30 },
     "str": 17,
@@ -24096,44 +25139,34 @@
     "int": 7,
     "wis": 10,
     "cha": 9,
+    "save": { "str": "+6", "dex": "+3" },
     "senses": ["blindsight 60 ft.", "darkvision 60 ft."],
     "passive": 10,
-    "resist": [
-      "cold",
-      "fire",
-      "lightning",
-      "bludgeoning, piercing, and slashing damage from nonmagical sources"
-    ],
-    "immune": ["acid", "poison"],
+    "vulnerable": ["cold"],
+    "immune": ["acid", "fire", "poison"],
     "conditionImmune": ["poisoned"],
     "languages": ["Abyssal", "Infernal", "telepathy 60 ft."],
     "cr": 7,
     "trait": [
       {
-        "name": "Magic Resistance",
+        "name": "Conniving Resistance",
         "entries": [
-          "The dhergoloth has advantage on saving throws against spells and other magical effects."
-        ],
-        "sort": 0
-      },
-      {
-        "name": "Confusing Anatomy",
-        "entries": [
-          "A creature gains no benefit from flanking the dhergoloth. If the dhergoloth falls prone, it must spend its action to stand up."
-        ],
-        "sort": 1
-      },
-      {
-        "name": "Gyroscopic",
-        "entries": [
-          "If the dhergoloth makes four or more claw attacks in a turn, it has advantage on Strength (Athletics) checks until the beginning of its next turn."
+          "The dhergoloth has advantage on saving throws against spells and other magical effects.",
+          "When the dhergoloth succeeds on a saving throw against a spell or other magical effect, it can choose to fail. If it does so, it can end the spell's effect at any time (no action required)."
         ],
         "sort": 2
       },
       {
-        "name": "Venal Nature",
+        "name": "Confusing Anatomy",
         "entries": [
-          "The yugoloth is always willing to accept a bribe rather than fight. A dhergoloth will usually accept a rate of its challenge rating times 25 gp, or half as much from a creature proficient in Intimidation."
+          "A creature gains no benefit from flanking the dhergoloth."
+        ],
+        "sort": 1
+      },
+      {
+        "name": "Careening Crash",
+        "entries": [
+          "If the dhergoloth falls prone, it loses any Spin Counters it has and takes 7 (2d6) bludgeoning damage for each Spin Counter lost in this way."
         ],
         "sort": 3
       }
@@ -24142,33 +25175,214 @@
       {
         "name": "Multiattack",
         "entries": [
-          "The dhergoloth makes three flailing claw attacks, plus an additional flailing claw attack for each successive turn it uses this ability, to a maximum of six. If it makes five or more flailing claw attacks in a turn, it also uses its Shriek."
+          "The dhergoloth makes three attacks, plus one extra attack for each Spin Counter it has."
         ]
       },
       {
         "name": "Flailing Claws",
         "entries": [
-          "<em>Melee Weapon Attack.</em> +7 to hit, reach 5 ft., one target. <em>Hit:</em> 9 (2d4 + 4) slashing damage."
+          "<em>Melee Weapon Attack.</em> +6 to hit, reach 5 ft., one target. <em>Hit:</em> 10 (2d6 + 3) slashing damage and the target is pushed 5 feet for each Spin Counter the dhergoloth has."
         ]
-      },
+      }
+    ],
+    "bonus": [
       {
-        "name": "Shriek",
+        "name": "Blender Twirl",
         "entries": [
-          "Each creature within 15 feet of the Dhergoloth must succeed on a DC 12 Wisdom saving throw or be frightened of it until the end of the Dhergoloth's next turn."
-        ]
-      },
-      {
-        "name": "Teleport (3rd level spell)",
-        "entries": [
-          "The dhergoloth magically teleports up to 60 feet to an unoccupied space it can see."
+          "The dhergoloth gains one Spin Counter, to a maximum of three, then can move up to half it speed without provoking opportunity attacks."
         ]
       }
     ],
     "reaction": [
       {
-        "name": "Dark Escape",
+        "name": "Horrid Shriek",
         "entries": [
-          "As a reaction to taking 20 or more damage from a single source, the Dhergoloth may shroud itself in a 20 foot radius cloud of magical darkness until the end of its next turn."
+          "When the dhergoloth gains a third Spin Counter, it can force each creature within 15 feet of it to make a DC 15 Wisdom saving throw. On a failed save, a creature falls prone as is dazed until the end of its next turn."
+        ]
+      },
+      {
+        "name": "Whirling Block",
+        "entries": [
+          "When the dhergoloth is hit with an attack, it can gain a bonus to its Armor Class equal to the number of Spin Counters it has. If this causes a weapon attack to miss, the attacker's weapon is wrenched from its grasp and flung 15 feet away."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Dhergoloth Shred Team",
+    "size": "Gargantuan",
+    "swarmSize": "Medium",
+    "type": { "fiend": { "yugoloth": { "lesser": {} } } },
+    "alignment": ["N", "E"],
+    "ac": [{ "ac": 17, "from": ["natural armor"] }],
+    "hp": { "average": 323, "formula": "38d8 + 152" },
+    "speed": { "walk": 30 },
+    "str": 17,
+    "dex": 10,
+    "con": 19,
+    "int": 7,
+    "wis": 10,
+    "cha": 9,
+    "save": { "str": "+6", "dex": "+3" },
+    "senses": ["blindsight 60 ft.", "darkvision 60 ft."],
+    "passive": 10,
+    "vulnerable": ["cold"],
+    "resist": ["damage from attacks"],
+    "immune": ["acid", "fire", "poison"],
+    "conditionImmune": [
+      "charmed",
+      "exhaustion",
+      "grappled",
+      "paralyzed",
+      "petrified",
+      "poisoned",
+      "prone",
+      "restrained",
+      "unconscious"
+    ],
+    "languages": ["Abyssal", "Infernal", "telepathy 60 ft."],
+    "cr": 22,
+    "trait": [
+      {
+        "name": "Conniving Resistance",
+        "entries": [
+          "The team has advantage on saving throws against spells and other magical effects.",
+          "When the team succeeds on a saving throw against a spell or other magical effect, it can choose to fail. If it does so, it can end the spell's effect at any time (no action required)."
+        ],
+        "sort": 2
+      },
+      {
+        "name": "Careening Swarm",
+        "entries": [
+            "The team can occupy another creature's space and vice versa, and the team can move through any opening large enough for a Medium creature.",
+          "At the start of each of the team's turns, each other creature in its space takes 10 (3d6) slashing damage. The team takes half the damage dealt in this way."
+        ],
+        "sort": 3
+      }
+    ],
+    "action": [
+      {
+        "name": "Blender Shred",
+        "entries": [
+          "Each creature in the team's space must make a DC 18 Dexterity saving throw. On a failed save, a creature takes 55 (10d10) slashing damage, or 28 (5d10) slashing damage if the team has fewer than half its maximum hit points, or half as much on success.",
+          "If the target fails its saving throw by 5 or more, it must make the saving throw a second time. The second saving throw cannot trigger a third in this way."
+        ]
+      },
+      {
+        "name": "Crash In",
+        "entries": [
+            "The team moves up to its speed, and can drag any Large or smaller creature in its space with it for this movement. Until the start of its next turn, the team's Careening Swarm trait deals an additional 10 (3d6) slashing damage."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Horrid Chorus",
+        "entries": [
+          "When the team is reduced below half its maximum hit points, it can force each creature within 15 feet of it to make a DC 19 Wisdom saving throw. On a failed save, a creature falls prone as is dazed until the end of its next turn."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Dhergoloth Duplicarius",
+    "size": "Medium",
+    "type": { "fiend": { "yugoloth": { "lesser": {} } } },
+    "alignment": ["N", "E"],
+    "ac": [{ "ac": 17, "from": ["natural armor"] }],
+    "hp": { "average": 212, "formula": "25d8 + 100" },
+    "speed": { "walk": 30 },
+    "str": 20,
+    "dex": 16,
+    "con": 19,
+    "int": 7,
+    "wis": 10,
+    "cha": 16,
+    "save": { "str": "+9", "dex": "+7", "cha": "+7" },
+    "senses": ["blindsight 60 ft.", "darkvision 60 ft."],
+    "passive": 10,
+    "vulnerable": ["cold"],
+    "immune": ["acid", "fire", "poison"],
+    "conditionImmune": ["poisoned"],
+    "languages": ["Abyssal", "Infernal", "telepathy 60 ft."],
+    "cr": 11,
+    "trait": [
+      {
+        "name": "Conniving Resistance",
+        "entries": [
+          "The dhergoloth has advantage on saving throws against spells and other magical effects.",
+          "When the dhergoloth succeeds on a saving throw against a spell or other magical effect, it can choose to fail. If it does so, it can end the spell's effect at any time (no action required)."
+        ],
+        "sort": 2
+      },
+      {
+        "name": "Confusing Anatomy",
+        "entries": [
+          "A creature gains no benefit from flanking the dhergoloth."
+        ],
+        "sort": 1
+      },
+      {
+        "name": "Careening Crash",
+        "entries": [
+          "If the dhergoloth falls prone, it loses any Spin Counters it has and takes 7 (2d6) bludgeoning damage for each Spin Counter lost in this way."
+        ],
+        "sort": 3
+      },
+      {
+        "name": "Venal Purge",
+        "entries": [
+          "At the start of each of the dhergoloth's turns, it can end one spell affecting it.",
+          "The spell's caster can expend an extra spell slot of the spell's level to prevent this effect. If it does so, the dhergoloth gains temporary hit points equal to 5 times the spell's level."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The dhergoloth makes three attacks, plus one extra attack for each Spin Counter it has."
+        ]
+      },
+      {
+        "name": "Flailing Claws",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +9 to hit, reach 5 ft., one target. <em>Hit:</em> 15 (3d6 + 5) slashing damage and the target is pushed 5 feet for each Spin Counter the dhergoloth has."
+        ]
+      },
+      {
+        "name": "Lattice Clone (Recharge 4-6, 5th Level Spell)",
+        "entries": [
+            "The dhergoloth conjures a Dhergoloth Shock-Dervish in an unoccupied space within 30 feet, which acts directly after it initiative. The summoned dhergoloth disappears if it takes any damage, or if the dhergoloth uses this action again."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Blender Twirl",
+        "entries": [
+          "The dhergoloth gains one Spin Counter, to a maximum of three, then can move up to half it speed without provoking opportunity attacks."
+        ]
+      },
+      {
+        "name": "Divergent Dark (3rd Level Spell)",
+        "entries": [
+          "The dhergoloth creates two 5-foot diameter spheres of magical darkness within 30 feet, then can teleport to an unoccupied space not illuminated by bright light within 30 feet.",
+          "This darkness clears at the start of the dhergoloth's next turn, or if a creature within it takes or deals any damage."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Horrid Shriek",
+        "entries": [
+          "When the dhergoloth gains a third Spin Counter, it can force each creature within 15 feet of it to make a DC 16 Wisdom saving throw. On a failed save, a creature falls prone as is dazed until the end of its next turn."
+        ]
+      },
+      {
+        "name": "Whirling Block",
+        "entries": [
+          "When the dhergoloth is hit with an attack, it can gain a bonus to its Armor Class equal to the number of Spin Counters it has. If this causes a weapon attack to miss, the attacker's weapon is wrenched from its grasp and flung 15 feet away."
         ]
       }
     ]
@@ -33567,7 +34781,7 @@
     "passive": 14,
     "immune": ["cold"],
     "vulnerable": ["fire"],
-    "languages": ["Primordial"],
+    "languages": ["Gelan"],
     "cr": 9,
     "trait": [
       {
@@ -33689,7 +34903,7 @@
     "passive": 10,
     "immune": ["fire", "poison"],
     "conditionImmune": ["poisoned"],
-    "languages": ["Draconic", "Ignan"],
+    "languages": ["Draconic", "Fuman"],
     "cr": 0.25,
     "familiar": true,
     "trait": [
@@ -36006,7 +37220,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 10,
     "immune": ["cold"],
-    "languages": ["Aquan"],
+    "languages": ["Gelan"],
     "cr": 3,
     "trait": [
       {
@@ -45311,7 +46525,7 @@
       "restrained",
       "unconscious"
     ],
-    "languages": ["Auran"],
+    "languages": ["Fulgan"],
     "cr": 1,
     "trait": [
       {
@@ -45372,7 +46586,7 @@
       "restrained",
       "unconscious"
     ],
-    "languages": ["Auran"],
+    "languages": ["Fulgan"],
     "cr": 5,
     "trait": [
       {
@@ -45447,7 +46661,7 @@
       "poisoned",
       "unconscious"
     ],
-    "languages": ["Auran"],
+    "languages": ["Fulgan"],
     "cr": 5,
     "trait": [
       {
@@ -47236,11 +48450,12 @@
         "sort": 0
       },
       {
-        "name": "Magic Resistance",
+        "name": "Conniving Resistance",
         "entries": [
-          "The hydroloth has advantage on saving throws against spells and other magical effects."
+          "The hydroloth has advantage on saving throws against spells and other magical effects.",
+          "When the hydroloth succeeds on a saving throw against a spell or other magical effect, it can choose to fail. If it does so, it can end the spell's effect at any time (no action required)."
         ],
-        "sort": 1
+        "sort": 2
       },
       {
         "name": "Adaptive Combat",
@@ -47485,7 +48700,7 @@
     "passive": 12,
     "immune": ["cold", "poison"],
     "conditionImmune": ["poisoned"],
-    "languages": ["Auran", "Aquan"],
+    "languages": ["Gelan"],
     "cr": 0.5,
     "trait": [
       {
@@ -47697,7 +48912,7 @@
     "senses": ["darkvision 60 ft."],
     "passive": 12,
     "immune": ["cold"],
-    "languages": ["Aquan"],
+    "languages": ["Gelan"],
     "cr": 1,
     "greatSteed": true,
     "trait": [
@@ -51443,7 +52658,7 @@
     "immune": ["fire", "poison"],
     "vulnerable": ["cold"],
     "conditionImmune": ["poisoned"],
-    "languages": ["Ignan", "Terran"],
+    "languages": ["Magman"],
     "cr": 1,
     "trait": [
       {
@@ -53869,11 +55084,12 @@
     "cr": 3,
     "trait": [
       {
-        "name": "Magic Resistance",
+        "name": "Conniving Resistance",
         "entries": [
-          "The merrenoloth has advantage on saving throws against spells and other magical effects."
+          "The merrenoloth has advantage on saving throws against spells and other magical effects.",
+          "When the merrenoloth succeeds on a saving throw against a spell or other magical effect, it can choose to fail. If it does so, it can end the spell's effect at any time (no action required)."
         ],
-        "sort": 0
+        "sort": 2
       },
       {
         "name": "Venal Nature",
@@ -54028,95 +55244,6 @@
         "name": "Calming Mist (Recharge 5-6)",
         "entries": [
           "The warbler releases a calming gas in a 5-foot-radius sphere centered on itself. Each creature in that area must succeed on a DC 11 Charisma saving throw or become charmed by the warbler for 1 minute. While charmed in this way, the creature is incapacitated and has a speed of 0."
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Mezzoloth",
-    "size": "Medium",
-    "type": { "fiend": { "yugoloth": { "lesser": {} } } },
-    "alignment": ["N", "E"],
-    "ac": [{ "ac": 18, "from": ["natural armor"] }],
-    "hp": { "average": 75, "formula": "10d8 + 30" },
-    "speed": { "walk": 40 },
-    "str": 18,
-    "dex": 11,
-    "con": 16,
-    "int": 7,
-    "wis": 10,
-    "cha": 11,
-    "skill": { "perception": "+3" },
-    "senses": ["blindsight 60 ft.", "darkvision 60 ft."],
-    "passive": 13,
-    "resist": [
-      "cold",
-      "fire",
-      "lightning",
-      "bludgeoning, piercing, and slashing damage from nonmagical sources"
-    ],
-    "immune": ["acid", "poison"],
-    "conditionImmune": ["poisoned"],
-    "languages": ["Abyssal", "Infernal", "telepathy 60 ft."],
-    "cr": 5,
-    "trait": [
-      {
-        "name": "Magic Resistance",
-        "entries": [
-          "The mezzoloth has advantage on saving throws against spells and other magical effects."
-        ],
-        "sort": 0
-      },
-      {
-        "name": "Magic Weapons",
-        "entries": ["The mezzoloth's weapon attacks are magical."],
-        "sort": 1
-      },
-      {
-        "name": "Venal Nature",
-        "entries": [
-          "The yugoloth is always willing to accept a bribe rather than fight. A yugoloth will usually accept a rate of the yugoloth's challenge rating times 25 gp, though it may accept less."
-        ],
-        "sort": 2
-      }
-    ],
-    "action": [
-      {
-        "name": "Multiattack",
-        "entries": [
-          "The mezzoloth makes two attacks: one with its claws and one with its trident. It may replace its claw attack with a use of its Toxic Spittle ability."
-        ]
-      },
-      {
-        "name": "Claws",
-        "entries": [
-          "<em>Melee Weapon Attack.</em> +7 to hit, reach 5 ft., one target. <em>Hit:</em> 9 (2d4 + 4) slashing damage."
-        ]
-      },
-      {
-        "name": "Trident",
-        "entries": [
-          "<em>Melee or Ranged Weapon Attack.</em> +7 to hit, reach 5 ft. or range 20/60 ft., one target. <em>Hit:</em> 7 (1d6 + 4) piercing damage, or 8 (1d8 + 4) piercing damage when held with two claws and used to make a melee attack."
-        ]
-      },
-      {
-        "name": "Toxic Spittle (Recharge 5-6)",
-        "entries": [
-          "One creature within 15 feet must succeed on a DC 11 Constitution saving throw or take 23 (5d8) poison damage and be blinded until the end of its next turn."
-        ]
-      },
-      {
-        "name": "Teleport (3rd level spell)",
-        "entries": [
-          "The mezzoloth magically teleports, along with any equipment it is wearing or carrying, up to 60 feet to an unoccupied space it can see."
-        ]
-      }
-    ],
-    "reaction": [
-      {
-        "name": "Dark Escape",
-        "entries": [
-          "As a reaction to taking 20 or more damage from a single source, the Mezzoloth may shroud itself in a 20 foot radius cloud of magical darkness until the end of its next turn."
         ]
       }
     ]
@@ -55079,7 +56206,7 @@
     "passive": 13,
     "immune": ["poison"],
     "conditionImmune": ["poisoned"],
-    "languages": ["Aquan", "Terran"],
+    "languages": ["Liman"],
     "cr": 1,
     "trait": [
       {
@@ -56520,7 +57647,7 @@
     ],
     "passive": 9,
     "senses": ["blindsight 60 ft. (blind beyond this radius)"],
-    "languages": ["Aquan", "Terran"],
+    "languages": ["Liman"],
     "cr": 1,
     "trait": [
       {
@@ -56584,7 +57711,7 @@
     ],
     "passive": 9,
     "senses": ["blindsight 60 ft."],
-    "languages": ["Aquan", "Terran"],
+    "languages": ["Liman"],
     "cr": 3,
     "trait": [
       {
@@ -56649,7 +57776,7 @@
     ],
     "passive": 9,
     "senses": ["blindsight 60 ft."],
-    "languages": ["Aquan", "Terran"],
+    "languages": ["Liman"],
     "cr": 19,
     "trait": [
       {
@@ -56744,7 +57871,7 @@
     ],
     "passive": 11,
     "senses": ["blindsight 60 ft."],
-    "languages": ["Aquan", "Terran"],
+    "languages": ["Liman"],
     "cr": 21,
     "trait": [
       {
@@ -56841,7 +57968,7 @@
     ],
     "passive": 11,
     "senses": ["blindsight 60 ft."],
-    "languages": ["Aquan", "Terran"],
+    "languages": ["Liman"],
     "cr": 27,
     "trait": [
       {
@@ -56930,7 +58057,7 @@
     ],
     "passive": 11,
     "senses": ["blindsight 120 ft."],
-    "languages": ["Aquan", "Terran"],
+    "languages": ["Liman"],
     "cr": 30,
     "trait": [
       {
@@ -57050,7 +58177,7 @@
     ],
     "passive": 9,
     "senses": ["blindsight 60 ft."],
-    "languages": ["Aquan", "Terran"],
+    "languages": ["Liman"],
     "cr": 15,
     "trait": [
       {
@@ -57463,7 +58590,7 @@
       "prone",
       "restrained"
     ],
-    "language": ["Luxan"],
+    "language": ["Vitan"],
     "cr": 20,
     "trait": [
       {
@@ -57546,7 +58673,7 @@
     "immune": ["radiant"],
     "cr": 8,
     "minion": true,
-    "language": ["understands Luxan but can't speak"],
+    "language": ["understands Vitan but can't speak"],
     "trait": [
       {
         "name": "Minion",
@@ -57568,70 +58695,6 @@
         "name": "Regenerative Fluid (Group Attack)",
         "entries": [
           "<em>Ranged Weapon Attack.</em> +2 to hit, range 30/60 ft., one target. <em>Hit:</em> the target regains the maximum possible number of hit points the next time it receives magical healing before the beginning of the tumor's next turn."
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Nilbog",
-    "size": "Small",
-    "type": { "fey": { "unseelie": {} } },
-    "alignment": ["C", "E"],
-    "ac": [{ "ac": 13, "from": ["leather armor"] }],
-    "hp": { "average": 7, "formula": "2d6" },
-    "speed": { "walk": 30 },
-    "str": 8,
-    "dex": 14,
-    "con": 10,
-    "int": 10,
-    "wis": 10,
-    "cha": 16,
-    "skill": { "stealth": "+4" },
-    "senses": ["darkvision 60 ft."],
-    "passive": 9,
-    "languages": ["Common", "Goblish", "Sylvan"],
-    "cr": 1,
-    "trait": [
-      {
-        "name": "Trickster's Tumble",
-        "entries": [
-          "The nilbog can take the Dodge action as a bonus action on each of its turns."
-        ],
-        "sort": 0
-      },
-      {
-        "name": "Healing Reversal",
-        "entries": [
-          "If the nilbog would receive a source of magical healing, it instead loses that many hit points."
-        ],
-        "sort": 1
-      }
-    ],
-    "action": [
-      {
-        "name": "Fool's Scepter",
-        "entries": [
-          "<em>Melee Weapon Attack.</em> +4 to hit, reach 5 ft., one target. <em>Hit:</em> 5 (1d6 + 2) bludgeoning damage. For the next minute, the target falls prone and takes 3 (1d6) bludgeoning damage whenever it misses with an attack."
-        ]
-      },
-      {
-        "name": "Distorted Perception (Recharge 5-6)",
-        "entries": [
-          "One creature within 60 ft must make a DC 13 Wisdom saving throw. On a failed save, for the next minute whenever the creature moves the nilbog chooses the direction of that movement. An affected creature repeats this saving throw at the end of its turn, ending the effect on a success."
-        ]
-      }
-    ],
-    "reaction": [
-      {
-        "name": "Trade Weapon",
-        "entries": [
-          "As a reaction to being missed with a melee weapon attack, the nilbog trades weapons with the attacker. It is considered attuned to any magic weapons that require attunement."
-        ]
-      },
-      {
-        "name": "Damage Reversal",
-        "entries": [
-          "As a reaction to being hit with an attack or hostile spell, the nilbog activates its damage reversal, taking no damage and instead being healed for the same amount. The nilbog receives healing beyond its maximum hit points as temporary hit points."
         ]
       }
     ]
@@ -57803,11 +58866,12 @@
         "sort": 0
       },
       {
-        "name": "Limited Magic Immunity",
+        "name": "Conniving Resistance",
         "entries": [
-          "The nycaloth can't be affected or detected by spells of 3rd level or lower unless it wishes to be. It has advantage on saving throws against all other spells and magical effects."
+          "The nycaloth has advantage on saving throws against spells and other magical effects of 3rd level or lower.",
+          "When the nycaloth succeeds on a saving throw against a spell or other magical effect of 3rd level or lower, it can choose to fail. If it does so, it can end the spell's effect at any time (no action required)."
         ],
-        "sort": 1
+        "sort": 2
       },
       {
         "name": "Magic Weapons",
@@ -58477,11 +59541,12 @@
     "cr": 12,
     "trait": [
       {
-        "name": "Magic Resistance",
+        "name": "Conniving Resistance",
         "entries": [
-          "The yagnoloth has advantage on saving throws against spells and other magical effects."
+          "The oinoloth has advantage on saving throws against spells and other magical effects.",
+          "When the oinoloth succeeds on a saving throw against a spell or other magical effect, it can choose to fail. If it does so, it can end the spell's effect at any time (no action required)."
         ],
-        "sort": 0
+        "sort": 2
       },
       {
         "name": "Venal Nature",
@@ -66738,7 +67803,7 @@
     "passive": 9,
     "immune": ["fire", "poison"],
     "conditionImmune": ["poisoned", "prone"],
-    "languages": ["Auran", "Ignan"],
+    "languages": ["Fuman"],
     "cr": 0.5,
     "trait": [
       {
@@ -68318,7 +69383,7 @@
     "passive": 12,
     "immune": ["poison"],
     "conditionImmune": ["poisoned", "prone"],
-    "languages": ["Auran"],
+    "languages": ["Vapan"],
     "cr": 0.5,
     "trait": [
       {
@@ -72341,10 +73406,12 @@
     ],
     "trait": [
       {
-        "name": "Magic Resistance",
+        "name": "Conniving Resistance",
         "entries": [
-          "The ultroloth has advantage on saving throws against spells and other magical effects."
-        ]
+          "The ultroloth has advantage on saving throws against spells and other magical effects.",
+          "When the ultroloth succeeds on a saving throw against a spell or other magical effect, it can choose to fail. If it does so, it can end the spell's effect at any time (no action required)."
+        ],
+        "sort": 2
       },
       {
         "name": "Magic Weapons",
@@ -75573,7 +76640,7 @@
     "cha": 8,
     "skill": { "perception": "+5", "stealth": "+5" },
     "passive": 15,
-    "languages": ["Common", "Jotunise", "Aquan"],
+    "languages": ["Common", "Jotunise", "Gelan"],
     "immune": ["cold"],
     "cr": 3,
     "trait": [
@@ -75641,7 +76708,7 @@
     "save": { "str": "+9", "dex": "+6", "con": "+7" },
     "skill": { "perception": "+11", "stealth": "+6" },
     "passive": 21,
-    "languages": ["Common", "Jotunise", "Aquan"],
+    "languages": ["Common", "Jotunise", "Gelan"],
     "resist": ["damage from attacks"],
     "immune": ["cold"],
     "conditionImmune": [
@@ -77431,7 +78498,7 @@
     "save": { "str": "+7", "dex": "+5" },
     "skill": { "perception": "+7", "stealth": "+8" },
     "passive": 17,
-    "languages": ["Common", "Jotunise", "Aquan"],
+    "languages": ["Common", "Jotunise", "Gelan"],
     "immune": ["cold"],
     "cr": 3,
     "trait": [
@@ -79648,11 +80715,12 @@
     "cr": 11,
     "trait": [
       {
-        "name": "Magic Resistance",
+        "name": "Conniving Resistance",
         "entries": [
-          "The yagnoloth has advantage on saving throws against spells and other magical effects."
+          "The yagnoloth has advantage on saving throws against spells and other magical effects.",
+          "When the yagnoloth succeeds on a saving throw against a spell or other magical effect, it can choose to fail. If it does so, it can end the spell's effect at any time (no action required)."
         ],
-        "sort": 0
+        "sort": 2
       },
       {
         "name": "Venal Nature",
@@ -86147,7 +87215,7 @@
     "resist": ["piercing and slashing damage from nonmagical sources"],
     "immune": ["poison"],
     "conditionImmune": ["petrified", "poisoned"],
-    "languages": ["understands Terran but can't speak"],
+    "languages": ["understands Aesan but can't speak"],
     "cr": 0.25,
     "steed": true,
     "trait": [
@@ -91513,7 +92581,7 @@
       "restrained",
       "unconscious"
     ],
-    "languages": ["Ignan"],
+    "languages": ["Luxan"],
     "cr": 4,
     "trait": [
       {
@@ -97997,7 +99065,7 @@
       "paralyzed",
       "poisoned"
     ],
-    "languages": ["understands Aquan but can't speak"],
+    "languages": ["understands Salan but can't speak"],
     "cr": 11,
     "trait": [
       {
@@ -113228,6 +114296,7 @@
     "immune": ["psychic", "damage from attacks made without advantage"],
     "conditionImmune": ["frightened", "paralyzed"],
     "languages": [
+      "Vacuan",
       "Deep Speech",
       "telepathy (can communicate with any creature on the same plane of existence)"
     ],
@@ -113660,7 +114729,7 @@
       "understands Abyssal",
       "Celestial",
       "Infernal",
-      "and Primordial but can't speak",
+      "and Gelan but can't speak",
       "telepathy 120 ft."
     ],
     "cr": 15,
@@ -116739,7 +117808,7 @@
     "senses": ["darkvision 90 ft."],
     "passive": 16,
     "immune": ["lightning"],
-    "languages": ["Draconic"],
+    "languages": ["Draconic", "Fulgan"],
     "cr": 8,
     "trait": [
       {
@@ -131246,108 +132315,6 @@
     ]
   },
   {
-    "name": "Mezzoloth Rune Veteran",
-    "size": "Medium",
-    "type": { "fiend": { "yugoloth": { "lesser": {} } } },
-    "alignment": ["N", "E"],
-    "ac": [{ "ac": 18, "from": ["natural armor"] }],
-    "hp": { "average": 153, "formula": "18d8 + 72" },
-    "speed": { "walk": 40 },
-    "str": 18,
-    "dex": 11,
-    "con": 19,
-    "int": 7,
-    "wis": 10,
-    "cha": 16,
-    "save": { "con": "+8", "wis": "+4", "cha": "+7" },
-    "skill": { "perception": "+3" },
-    "senses": ["blindsight 60 ft.", "darkvision 60 ft."],
-    "passive": 13,
-    "resist": [
-      "cold",
-      "fire",
-      "lightning",
-      "bludgeoning, piercing, and slashing damage from nonmagical sources"
-    ],
-    "immune": ["acid", "poison"],
-    "conditionImmune": ["poisoned"],
-    "languages": ["Abyssal", "Infernal", "telepathy 60 ft."],
-    "cr": 9,
-    "trait": [
-      {
-        "name": "Magic Resistance",
-        "entries": [
-          "The mezzoloth has advantage on saving throws against spells and other magical effects."
-        ],
-        "sort": 0
-      },
-      {
-        "name": "Magic Weapons",
-        "entries": ["The mezzoloth's weapon attacks are magical."],
-        "sort": 1
-      },
-      {
-        "name": "Venal Nature",
-        "entries": [
-          "The yugoloth is always willing to accept a bribe rather than fight. A yugoloth will usually accept a rate of the yugoloth's challenge rating times 25 gp, though it may accept less."
-        ],
-        "sort": 2
-      }
-    ],
-    "action": [
-      {
-        "name": "Multiattack",
-        "entries": [
-          "The mezzoloth makes four attacks: one with its toxic spittle and three with its trident."
-        ]
-      },
-      {
-        "name": "Dweomerend Trident",
-        "entries": [
-          "<em>Melee or Ranged Weapon Attack.</em> +7 to hit, reach 5 ft., one target. <em>Hit:</em> 13 (2d8 + 4) piercing damage, and the target has any spells of fourth level or below it is affected by dispelled. If a spell is dispelled in this way, the target takes an additional 1d8 force damage per level of the spell."
-        ]
-      },
-      {
-        "name": "Toxic Spittle (Recharge 5-6)",
-        "entries": [
-          "Target creature within 15 feet must make a DC 15 Constitution saving throw or take 23 (5d8) poison damage and be blinded until the end of its next turn."
-        ]
-      },
-      {
-        "name": "Teleport (3rd level spell)",
-        "entries": [
-          "The mezzoloth magically teleports, along with any equipment it is wearing or carrying, up to 60 feet to an unoccupied space it can see."
-        ]
-      }
-    ],
-    "reaction": [
-      {
-        "name": "Legendary Reactions",
-        "entries": [
-          "The mezzoloth may make a legendary reaction whenever its conditions are met, without using its reaction."
-        ]
-      },
-      {
-        "name": "Dark Escape",
-        "entries": [
-          "As a reaction to taking 15 or more damage from a single source, the Mezzoloth may shroud itself in a 20 foot radius cloud of magical darkness until the end of its next turn."
-        ]
-      },
-      {
-        "name": "Trident Trip",
-        "entries": [
-          "As a reaction to a creature missing it with a melee attack, the mezoloth may force it to make a DC 16 Dexterity saving throw or be knocked prone."
-        ]
-      },
-      {
-        "name": "Swift Vengeance",
-        "entries": [
-          "As a reaction to passing a saving throw against a spell, the mezzoloth teleports up to 60 feet. If it ends this teleportation within 5 feet of the spellcaster, the mezzoloth may make an attack with its trident."
-        ]
-      }
-    ]
-  },
-  {
     "name": "Zariel, Fallen Angel",
     "size": "Large",
     "type": { "celestial": { "angel": {} } },
@@ -135191,7 +136158,7 @@
       "restrained",
       "unconscious"
     ],
-    "languages": ["understands Auran but can't speak"],
+    "languages": ["understands Vacuan but can't speak"],
     "cr": 0.5,
     "trait": [
       {
@@ -135258,7 +136225,7 @@
       "restrained",
       "unconscious"
     ],
-    "languages": ["Auran"],
+    "languages": ["Vacuan"],
     "cr": 8,
     "trait": [
       {
@@ -135351,7 +136318,7 @@
       "restrained",
       "unconscious"
     ],
-    "languages": ["Auran"],
+    "languages": ["Vacuan"],
     "cr": 11,
     "trait": [
       {
@@ -135455,7 +136422,7 @@
       "restrained",
       "unconscious"
     ],
-    "languages": ["Auran"],
+    "languages": ["Vacuan"],
     "cr": 21,
     "trait": [
       {
@@ -135558,7 +136525,7 @@
     ],
     "senses": ["darkvision 60 ft."],
     "passive": 11,
-    "languages": ["understands Ignan but can't speak"],
+    "languages": ["understands Spodan but can't speak"],
     "cr": 0.25,
     "familiar": true,
     "trait": [
@@ -135624,7 +136591,7 @@
     ],
     "senses": ["darkvision 60 ft."],
     "passive": 12,
-    "languages": ["Ignan"],
+    "languages": ["Spodan"],
     "cr": 1,
     "trait": [
       {
@@ -135696,7 +136663,7 @@
     ],
     "senses": ["darkvision 60 ft.", "tremorsense 60 ft."],
     "passive": 13,
-    "languages": ["Ignan"],
+    "languages": ["Spodan"],
     "cr": 2,
     "trait": [
       {
@@ -135768,7 +136735,7 @@
     ],
     "senses": ["darkvision 60 ft.", "tremorsense 60 ft."],
     "passive": 13,
-    "languages": ["Ignan"],
+    "languages": ["Spodan"],
     "cr": 10,
     "trait": [
       {
@@ -135854,7 +136821,7 @@
     ],
     "senses": ["truesight 120 ft.", "tremorsense 120 ft."],
     "passive": 24,
-    "languages": ["Ignan"],
+    "languages": ["Spodan"],
     "cr": 27,
     "trait": [
       {
@@ -135991,7 +136958,7 @@
     ],
     "senses": ["darkvision 60 ft."],
     "passive": 12,
-    "languages": ["understands Aquan but can't speak"],
+    "languages": ["understands Salan but can't speak"],
     "cr": 0.125,
     "familiar": true,
     "trait": [
@@ -136047,7 +137014,7 @@
     ],
     "senses": ["darkvision 60 ft.", "tremorsense 30 ft."],
     "passive": 12,
-    "languages": ["understands Aquan but can't speak"],
+    "languages": ["understands Salan but can't speak"],
     "cr": 0.5,
     "steed": true,
     "trait": [
@@ -136111,7 +137078,7 @@
     ],
     "senses": ["darkvision 60 ft."],
     "passive": 11,
-    "languages": ["Aquan"],
+    "languages": ["Salan"],
     "cr": 2,
     "trait": [
       {
@@ -136193,7 +137160,7 @@
     ],
     "senses": ["darkvision 60 ft.", "tremorsense 60 ft."],
     "passive": 18,
-    "languages": ["Aquan"],
+    "languages": ["Salan"],
     "cr": 11,
     "trait": [
       {
@@ -136272,7 +137239,7 @@
     ],
     "senses": ["darkvision 60 ft.", "tremorsense 60 ft."],
     "passive": 12,
-    "languages": ["Aquan"],
+    "languages": ["Salan"],
     "cr": 18,
     "trait": [
       {
@@ -136367,7 +137334,7 @@
     ],
     "senses": ["darkvision 60 ft.", "tremorsense 60 ft."],
     "passive": 15,
-    "languages": ["Aquan"],
+    "languages": ["Salan"],
     "cr": 24,
     "trait": [
       {
@@ -136462,7 +137429,7 @@
     ],
     "senses": ["darkvision 120 ft.", "tremorsense 120 ft."],
     "passive": 17,
-    "languages": ["Aquan", "Abyssal", "telepathy 120 ft."],
+    "languages": ["Salan", "Abyssal", "telepathy 120 ft."],
     "cr": 30,
     "trait": [
       {
@@ -136623,7 +137590,7 @@
       "prone",
       "unconscious"
     ],
-    "languages": ["understands Aquan and Auran but can't speak"],
+    "languages": ["understands Gelan but can't speak"],
     "cr": 0.25,
     "familiar": true,
     "trait": [
@@ -136687,7 +137654,7 @@
       "poisoned",
       "unconscious"
     ],
-    "languages": ["Aquan", "Auran"],
+    "languages": ["Gelan"],
     "cr": 10,
     "trait": [
       {
@@ -136774,7 +137741,7 @@
       "restrained",
       "unconscious"
     ],
-    "languages": ["Aquan", "Auran"],
+    "languages": ["Gelan"],
     "cr": 12,
     "trait": [
       {
@@ -136915,7 +137882,7 @@
       "poisoned",
       "unconscious"
     ],
-    "languages": ["Aquan", "Auran"],
+    "languages": ["Gelan"],
     "cr": 2,
     "trait": [
       {
@@ -136984,7 +137951,7 @@
       "poisoned",
       "unconscious"
     ],
-    "languages": ["Aquan", "Auran"],
+    "languages": ["Gelan"],
     "cr": 8,
     "trait": [
       {
@@ -147208,83 +148175,6 @@
     ]
   },
   {
-    "name": "Nilbog Pandemaniac",
-    "size": "Small",
-    "type": { "fey": { "unseelie": {} } },
-    "alignment": ["C", "E"],
-    "ac": [{ "ac": 15, "from": ["natural armor"] }],
-    "hp": { "average": 44, "formula": "8d6 + 16" },
-    "speed": { "walk": 30 },
-    "str": 11,
-    "dex": 16,
-    "con": 15,
-    "int": 10,
-    "wis": 10,
-    "cha": 19,
-    "skill": { "stealth": "+5" },
-    "senses": ["darkvision 60 ft."],
-    "passive": 9,
-    "languages": ["Common", "Goblish", "Sylvan"],
-    "cr": 2,
-    "trait": [
-      {
-        "name": "Infectious Laughter",
-        "entries": [
-          "When the nilbog dies, the nearest goblin within 60 ft. must succeed on a DC 14 Charisma saving throw or become a nilbog."
-        ],
-        "sort": 0
-      },
-      {
-        "name": "Trickster's Tumble",
-        "entries": [
-          "The nilbog can take the Dodge action as a bonus action on each of its turns."
-        ],
-        "sort": 1
-      },
-      {
-        "name": "Healing Reversal",
-        "entries": [
-          "If the nilbog would receive a source of magical healing, it instead loses that many hit points."
-        ],
-        "sort": 2
-      }
-    ],
-    "action": [
-      {
-        "name": "Multiattack",
-        "entries": [
-          "The nilbog makes two attacks, one of which it may replace with its Distorted Perception, if available."
-        ]
-      },
-      {
-        "name": "Fool's Scepter",
-        "entries": [
-          "<em>Melee Weapon Attack.</em> +5 to hit, reach 5 ft., one target. <em>Hit:</em> 5 (1d6 + 2) bludgeoning damage. For the next minute, the target falls prone and takes 3 (1d6) bludgeoning damage whenever it misses with an attack."
-        ]
-      },
-      {
-        "name": "Distorted Perception (Recharge 5-6)",
-        "entries": [
-          "One creature within 60 ft must make a DC 14 Wisdom saving throw. On a failed save, for the next minute whenever the creature moves the nilbog chooses the direction of that movement. An affected creature repeats this saving throw at the end of its turn, ending the effect on a success."
-        ]
-      }
-    ],
-    "reaction": [
-      {
-        "name": "Trade Weapon",
-        "entries": [
-          "As a reaction to being missed with a melee weapon attack, the nilbog trades weapons with the attacker. It is considered attuned to any magic weapons that require attunement."
-        ]
-      },
-      {
-        "name": "Damage Reversal",
-        "entries": [
-          "As a reaction to being hit with an attack or hostile spell, the nilbog activates its damage reversal, taking no damage and instead being healed for the same amount. The nilbog receives healing beyond its maximum hit points as temporary hit points."
-        ]
-      }
-    ]
-  },
-  {
     "name": "Naiad Effervent",
     "size": "Medium",
     "type": { "fey": { "nymph": {}, "seelie": {} } },
@@ -148656,7 +149546,7 @@
       "prone",
       "restrained"
     ],
-    "languages": ["Auran"],
+    "languages": ["Vacuan"],
     "cr": 6,
     "trait": [
       {
@@ -149148,7 +150038,7 @@
       "restrained",
       "unconscious"
     ],
-    "languages": ["Aquan", "Terran"],
+    "languages": ["Liman"],
     "cr": 2,
     "trait": [
       {
@@ -149214,7 +150104,7 @@
       "fire",
       "bludgeoning, piercing, and slashing damage from nonmagical sources"
     ],
-    "languages": ["Common", "Ignan"],
+    "languages": ["Common", "Magman"],
     "cr": 3,
     "trait": [
       {
@@ -149562,7 +150452,7 @@
     "passive": 10,
     "immune": ["poison", "thunder"],
     "conditionImmune": ["paralyzed", "petrified", "poisoned", "prone"],
-    "languages": ["Auran"],
+    "languages": ["Vacuan"],
     "cr": 7,
     "trait": [
       {
@@ -149629,7 +150519,7 @@
     ],
     "immune": ["poison"],
     "conditionImmune": ["paralyzed", "petrified", "poisoned", "prone"],
-    "languages": ["Auran"],
+    "languages": ["Vapan"],
     "cr": 7,
     "trait": [
       {
@@ -149695,7 +150585,7 @@
     "passive": 10,
     "immune": ["fire", "poison"],
     "conditionImmune": ["paralyzed", "petrified", "poisoned", "prone"],
-    "languages": ["Auran", "Ignan"],
+    "languages": ["Fuman"],
     "cr": 7,
     "trait": [
       {
@@ -149766,7 +150656,7 @@
     "passive": 10,
     "immune": ["acid", "poison"],
     "conditionImmune": ["paralyzed", "petrified", "poisoned", "prone"],
-    "languages": ["Aquan", "Terran"],
+    "languages": ["Liman"],
     "cr": 7,
     "trait": [
       {
@@ -149831,7 +150721,7 @@
     "passive": 10,
     "immune": ["poison"],
     "conditionImmune": ["paralyzed", "petrified", "poisoned", "prone"],
-    "languages": ["Aquan"],
+    "languages": ["Salan"],
     "cr": 7,
     "trait": [
       {
@@ -149902,7 +150792,7 @@
     "passive": 10,
     "immune": ["poison"],
     "conditionImmune": ["paralyzed", "petrified", "poisoned", "prone"],
-    "languages": ["Aquan", "Terran"],
+    "languages": ["Liman"],
     "cr": 7,
     "trait": [
       {
@@ -149965,7 +150855,7 @@
     "passive": 10,
     "immune": ["poison", "radiant"],
     "conditionImmune": ["blinded", "paralyzed", "petrified", "poisoned", "prone"],
-    "languages": ["Terran"],
+    "languages": ["Aesan"],
     "cr": 7,
     "trait": [
       {
@@ -150030,7 +150920,7 @@
     "passive": 10,
     "immune": ["fire", "poison"],
     "conditionImmune": ["paralyzed", "petrified", "poisoned", "prone"],
-    "languages": ["Ignan", "Terran"],
+    "languages": ["Magman"],
     "cr": 7,
     "trait": [
       {
@@ -150104,7 +150994,7 @@
     "passive": 10,
     "immune": ["lightning", "poison"],
     "conditionImmune": ["paralyzed", "petrified", "poisoned", "prone"],
-    "languages": ["Auran"],
+    "languages": ["Fulgan"],
     "cr": 7,
     "trait": [
       {
@@ -150169,7 +151059,7 @@
     "passive": 10,
     "immune": ["poison", "radiant"],
     "conditionImmune": ["blinded", "paralyzed", "petrified", "poisoned", "prone"],
-    "languages": ["Ignan"],
+    "languages": ["Luxan"],
     "cr": 7,
     "trait": [
       {
@@ -150242,7 +151132,7 @@
     "passive": 10,
     "immune": ["cold", "poison"],
     "conditionImmune": ["paralyzed", "petrified", "poisoned", "prone"],
-    "languages": ["Auran", "Aquan"],
+    "languages": ["Gelan"],
     "cr": 7,
     "trait": [
       {
@@ -150313,7 +151203,7 @@
     "passive": 10,
     "immune": ["poison", "radiant"],
     "conditionImmune": ["paralyzed", "petrified", "poisoned", "prone"],
-    "languages": ["Ignan", "Terran"],
+    "languages": ["Aesan"],
     "cr": 7,
     "trait": [
       {
@@ -150385,7 +151275,7 @@
     "passive": 10,
     "immune": ["poison"],
     "conditionImmune": ["paralyzed", "petrified", "poisoned", "prone"],
-    "languages": ["Terran"],
+    "languages": ["Pulvan"],
     "cr": 7,
     "trait": [
       {
@@ -150450,7 +151340,7 @@
     "passive": 10,
     "immune": ["fire", "poison"],
     "conditionImmune": ["paralyzed", "petrified", "poisoned", "prone"],
-    "languages": ["Auran", "Ignan"],
+    "languages": ["Spodan"],
     "cr": 7,
     "trait": [
       {
@@ -150570,7 +151460,7 @@
     "resist": ["bludgeoning, piercing, and slashing damage from nonmagical sources"],
     "immune": ["fire", "poison"],
     "conditionImmune": ["exhaustion", "paralyzed", "petrified", "poisoned", "prone", "unconscious"],
-    "languages": ["Ignan", "Terran"],
+    "languages": ["Magman"],
     "cr": 2,
     "trait": [
       {
@@ -150626,7 +151516,7 @@
     "resist": ["bludgeoning, piercing, and slashing damage from nonmagical sources"],
     "immune": ["fire", "poison"],
     "conditionImmune": ["exhaustion", "paralyzed", "petrified", "poisoned", "unconscious"],
-    "languages": ["Ignan", "Terran"],
+    "languages": ["Magman"],
     "cr": 8,
     "trait": [
       {
@@ -150706,7 +151596,7 @@
     "passive": 17,
     "immune": ["fire", "poison", "bludgeoning, piercing, and slashing damage from nonmagical sources"],
     "conditionImmune": ["exhaustion", "paralyzed", "petrified", "poisoned", "unconscious"],
-    "languages": ["Ignan", "Terran"],
+    "languages": ["Magman"],
     "cr": 10,
     "trait": [
       {
@@ -150849,7 +151739,7 @@
     "passive": 12,
     "immune": ["poison", "thunder"],
     "conditionImmune": ["poisoned", "prone"],
-    "languages": ["Auran"],
+    "languages": ["Vacuan"],
     "cr": 1,
     "trait": [
       {
@@ -150914,7 +151804,7 @@
     "resist": ["slashing damage from nonmagical sources"],
     "immune": ["acid", "poison"],
     "conditionImmune": ["grappled", "poisoned"],
-    "languages": ["Aquan"],
+    "languages": ["Liman"],
     "cr": 0.5,
     "trait": [
       {
@@ -150972,7 +151862,7 @@
     "passive": 13,
     "immune": ["poison"],
     "conditionImmune": ["poisoned"],
-    "languages": ["Terran"],
+    "languages": ["Salan"],
     "cr": 0.5,
     "trait": [
       {
@@ -151031,7 +151921,7 @@
     "immune": ["poison"],
     "vulnerable": ["thunder"],
     "conditionImmune": ["poisoned"],
-    "languages": ["Terran"],
+    "languages": ["Aesan"],
     "cr": 0.5,
     "trait": [
       {
@@ -151089,7 +151979,7 @@
     "passive": 12,
     "immune": ["lightning", "poison"],
     "conditionImmune": ["poisoned"],
-    "languages": ["Auran"],
+    "languages": ["Fulgan"],
     "cr": 0.5,
     "trait": [
       {
@@ -151147,7 +152037,7 @@
     "passive": 9,
     "immune": ["fire", "radiant", "poison"],
     "conditionImmune": ["poisoned"],
-    "languages": ["Ignan"],
+    "languages": ["Luxan"],
     "cr": 0.5,
     "trait": [
       {
@@ -151206,7 +152096,7 @@
     "immune": ["fire", "poison"],
     "vulnerable": ["bludgeoning", "thunder"],
     "conditionImmune": ["poisoned"],
-    "languages": ["Ignan", "Terran"],
+    "languages": ["Aesan"],
     "cr": 0.25,
     "trait": [
       {
@@ -151385,7 +152275,7 @@
     "passive": 8,
     "immune": ["fire", "poison"],
     "conditionImmune": ["poisoned"],
-    "languages": ["Auran"],
+    "languages": ["Spodan"],
     "cr": 0.5,
     "trait": [
       {
@@ -151515,7 +152405,7 @@
       "restrained",
       "unconscious"
     ],
-    "languages": ["Terran"],
+    "languages": ["Pulvan"],
     "cr": 16,
     "trait": [
       {
@@ -151602,7 +152492,7 @@
     "passive": 10,
     "immune": ["necrotic", "poison"],
     "conditionImmune": ["exhaustion", "paralyzed", "petrified", "poisoned"],
-    "languages": ["Aquan"],
+    "languages": ["Salan"],
     "cr": 2,
     "trait": [
       {
@@ -151679,7 +152569,7 @@
       "poisoned",
       "restrained"
     ],
-    "languages": ["Ignan"],
+    "languages": ["Spodan"],
     "cr": 6,
     "trait": [
       {
@@ -151752,7 +152642,7 @@
       "prone",
       "restrained"
     ],
-    "languages": ["Auran"],
+    "languages": ["Fuman"],
     "cr": 6,
     "trait": [
       {
@@ -159450,7 +160340,7 @@
       "poisoned",
       "unconscious"
     ],
-    "languages": ["Ignan", "Terran"],
+    "languages": ["Magman"],
     "cr": 17,
     "trait": [
       {
@@ -159543,7 +160433,7 @@
       "poisoned",
       "unconscious"
     ],
-    "languages": ["Ignan", "Terran"],
+    "languages": ["Magman"],
     "cr": 24,
     "trait": [
       {
@@ -159662,7 +160552,7 @@
       "poisoned",
       "unconscious"
     ],
-    "languages": ["Ignan", "Terran"],
+    "languages": ["Magman"],
     "cr": 30,
     "trait": [
       {
@@ -209407,10 +210297,12 @@
         ]
       },
       {
-        "name": "Magic Resistance",
+        "name": "Conniving Resistance",
         "entries": [
-          "The baernaloth has advantage on saving throws against spells and other magical effects."
-        ]
+          "The baernaloth has advantage on saving throws against spells and other magical effects.",
+          "When the baernaloth succeeds on a saving throw against a spell or other magical effect, it can choose to fail. If it does so, it can end the spell's effect at any time (no action required)."
+        ],
+        "sort": 2
       }
     ],
     "action": [
@@ -210684,7 +211576,7 @@
     "passive": 15,
     "immune": ["fire", "poison"],
     "conditionImmune": ["exhaustion", "poisoned"],
-    "languages": ["Jotunild", "Ignan"],
+    "languages": ["Jotunild", "Spodan"],
     "cr": 7,
     "trait": [
       {
@@ -212325,7 +213217,7 @@
       "poisoned",
       "restrained"
     ],
-    "languages": ["Jotunstein", "Terran"],
+    "languages": ["Jotunstein", "Pulvan"],
     "cr": 5,
     "trait": [
       {
@@ -218126,7 +219018,7 @@
       "prone",
       "restrained"
     ],
-    "languages": ["Auran", "Jotunuvar"],
+    "languages": ["Fulgan", "Jotunuvar"],
     "cr": 9,
     "trait": [
       {
@@ -218678,10 +219570,12 @@
         ]
       },
       {
-        "name": "Magic Resistance",
+        "name": "Conniving Resistance",
         "entries": [
-          "Malaxxix has advantage on saving throws against spells and other magical effects."
-        ]
+          "Malaxxix has advantage on saving throws against spells and other magical effects.",
+          "When Malaxxix succeeds on a saving throw against a spell or other magical effect, it can choose to fail. If it does so, it can end the spell's effect at any time (no action required)."
+        ],
+        "sort": 2
       }
     ],
     "action": [
@@ -219171,7 +220065,7 @@
     "resist": ["thunder"],
     "immune": ["poison"],
     "conditionImmune": ["exhaustion", "paralyzed", "poisoned", "restrained"],
-    "languages": ["Aquan", "Jotunskye"],
+    "languages": ["Vapan", "Jotunskye"],
     "cr": 6,
     "trait": [
       {
@@ -219238,7 +220132,7 @@
       "poisoned",
       "unconscious"
     ],
-    "languages": ["Ignan", "Terran"],
+    "languages": ["Magman"],
     "cr": 3,
     "trait": [
       {
@@ -219306,7 +220200,7 @@
       "poisoned",
       "unconscious"
     ],
-    "languages": ["Ignan", "Terran"],
+    "languages": ["Magman"],
     "cr": 6,
     "trait": [
       {
@@ -219396,7 +220290,7 @@
       "poisoned",
       "unconscious"
     ],
-    "languages": ["Ignan", "Terran"],
+    "languages": ["Magman"],
     "cr": 6,
     "trait": [
       {
@@ -219485,7 +220379,7 @@
       "poisoned",
       "unconscious"
     ],
-    "languages": ["Ignan", "Terran"],
+    "languages": ["Magman"],
     "cr": 7,
     "trait": [
       {
@@ -219564,7 +220458,7 @@
       "poisoned",
       "unconscious"
     ],
-    "languages": ["understands Ignan and Terran but can't speak"],
+    "languages": ["understands Magman but can't speak"],
     "cr": 0.25,
     "familiar": true,
     "trait": [
@@ -219629,7 +220523,7 @@
       "restrained",
       "unconscious"
     ],
-    "languages": ["understands Ignan and Terran but can't speak"],
+    "languages": ["understands Magman but can't speak"],
     "cr": 2,
     "trait": [
       {
@@ -219772,7 +220666,7 @@
     "passive": 9,
     "resist": ["acid"],
     "conditionImmune": ["exhaustion", "paralyzed"],
-    "languages": ["Jotunhaug", "Terran"],
+    "languages": ["Jotunhaug", "Liman"],
     "cr": 3,
     "trait": [
       {
@@ -219918,10 +220812,12 @@
     ],
     "trait": [
       {
-        "name": "Magic Resistance",
+        "name": "Conniving Resistance",
         "entries": [
-          "Nellik has advantage on saving throws against spells and other magical effects."
-        ]
+          "Nellik has advantage on saving throws against spells and other magical effects.",
+          "When Nellik succeeds on a saving throw against a spell or other magical effect, it can choose to fail. If it does so, it can end the spell's effect at any time (no action required)."
+        ],
+        "sort": 2
       },
       {
         "name": "Magic Weapons",
@@ -221120,7 +222016,7 @@
     "passive": 9,
     "immune": ["cold", "poison"],
     "conditionImmune": ["exhaustion", "poisoned"],
-    "languages": ["Aquan", "Jotunise"],
+    "languages": ["Gelan", "Jotunise"],
     "cr": 5,
     "trait": [
       {
@@ -221755,6 +222651,160 @@
     "hasToken": true,
     "hasFluff": true,
     "hasFluffImages": true
+  },
+  {
+    "name": "Iggwilv, the Witch Queen",
+    "size": "Medium",
+    "type": { "fey": { "archfey": {}, "unseelie": { "hag": {} } } },
+    "alignment": ["C", "N"],
+    "ac": [{ "ac": 22, "from": ["otherworldly ward"] }],
+    "hp": { "average": 475, "formula": "50d8 + 250" },
+    "speed": { "walk": 30, "hover": 40 },
+    "str": 15,
+    "dex": 17,
+    "con": 21,
+    "int": 27,
+    "wis": 21,
+    "cha": 23,
+    "save": { "con": "+12", "int": "+15", "wis": "+12", "cha": "+13" },
+    "skill": {
+      "arcana": "+22",
+      "insight": "+12",
+      "perception": "+12",
+      "persuasion": "+12"
+    },
+    "senses": ["truesight 120 ft."],
+    "passive": 22,
+    "immune": [
+      "fire",
+      "poison",
+      "bludgeoning, piercing, and slashing damage from nonmagical sources"
+    ],
+    "conditionImmune": ["frightened", "poisoned"],
+    "languages": [
+      "Abyssal",
+      "Celestial",
+      "Common",
+      "Draconic",
+      "Elvish",
+      "Infernal",
+      "Sylvan"
+    ],
+    "cr": 24,
+    "trait": [
+      {
+        "name": "Dark Glamour",
+        "entries": [
+          "Creatures that can see Iggwilv can't be immune to being charmed."
+        ]
+      },
+      {
+        "name": "Coven Craft",
+        "entries": [
+          "While Iggwilv is within 30 feet of at least two other hags, she has advantage on attack rolls, and creatures have disadvantage on any saving throw against an effect she controls."
+        ],
+        "sort": 1
+      },
+      {
+        "name": "Witch-Queen's Mastery (5/Day)",
+        "entries": [
+          "When Iggwilv would fail a saving throw, she can choose to succeed instead. For each remaining use of this ability, Iggwilv adds +1 to her concentration saving throws."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "Iggwilv uses her Mind Weevil three times, one of which she can replace with a use of her Demoniac Imbrual or Profane Dismissal."
+        ]
+      },
+      {
+        "name": "Mind Weevil (5th Level Spell)",
+        "entries": [
+          "Iggwilv forces one creature she can see within 90 feet to make a DC 23 Intelligence saving throw. On a failed save, the target takes 27 (5d10) psychic damage and is dazed until the end of Iggwilv's next turn.",
+          "While dazed in this way, whenever the target casts a spell or makes an ability check, attack roll, or saving throw using its Intelligence, Wisdom, or Charisma, it takes 11 (2d10) psychic damage."
+        ]
+      },
+      {
+        "name": "Demoniac Imbrual (5th Level Spell)",
+        "entries": [
+          "One incapacitated creature within 60 feet must make a DC 23 Charisma saving throw. On a failed save, the target is possessed by a demonic spirit for as long as it remains incapacitated.",
+          "While possessed, the target ignores the effects of any incapacitating condition or effect, is charmed by Iggwilv, and is hostile to all other creatures."
+        ]
+      },
+      {
+        "name": "Profane Dismissal (7th Level Spell)",
+        "entries": [
+          "Iggwilv forces a creature she can see within 120 feet to make a DC 23 Charisma saving throw. On a failed save, the target takes 33 (6d10) fire damage plus 33 (6d10) force damage and is banished to the Abyss until the end of Iggwilv's next turn, at which point it reappears in the nearest unoccupied space to where it departed."
+        ]
+      },
+      {
+        "name": "Cauldron Tide (8th Level Spell)",
+        "entries": [
+          "Bubbling sludge surges forth from Iggwilv in a 60-foot cone, forcing each creature in the area to make a DC 23 Dexterity saving throw. On a failed save, a creature takes 28 (8d6) force damage plus 28 (8d6) poison damage, or half as much on a success.",
+          "If a creature fails its saving throw by 5 or more, it is incapacitated and shape-shifted into a Tiny toad until the end of its next turn, or until it takes any damage."
+        ]
+      },
+      {
+        "name": "Abyssal Apocalypse (9th Level Spell, Concentration)",
+        "entries": [
+          "Iggwilv calls forth a legion of gnashing demonic spirits that swarm about her in a 60-foot radius. Whenever a creature enters the area for the first time on a turn or starts its turn there, Iggwilv can force it to make a DC 23 Dexterity saving throw, taking 45 (10d8) damage on a failed save, or half as much on a success. The damage type is chosen randomly each time from cold, fire, force, or lightning.",
+          "If the spell ends as a result of her losing concentration, Iggwilv must make a saving throw against it."
+        ]
+      },
+      {
+        "name": "Imprisonment (9th Level)",
+        "entries": [
+          "Iggwilv raises a runed gemstone toward a creature within 60 feet that is affected by her Scribe Likeness, forcing it to make a DC 23 Wisdom saving throw. On a failed save, the creature shrinks to 1-inch tall and is trapped within the stone and incapacitated.",
+          "A Dispel Magic spell can end the spell only if it is cast as a 9th-level spell targeting the gemstone."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Still Ichor (5th Level Spell)",
+        "entries": [
+          "When a creature hits Iggwilv with a melee attack, she can force that creature to make a DC 23 Constitution saving throw. On a failed save, the target is frightened and paralyzed until the start of its next turn."
+        ]
+      },
+      {
+        "name": "Yaga's Remand (7th Level Spell)",
+        "entries": [
+          "When a creature within 60 feet of Iggwilv casts a spell, she can cause it to fail. This spell can't be countered or otherwise prevented."
+        ]
+      }
+    ],
+    "shortName": "Iggwilv",
+    "pronouns": ["she", "her", "hers"],
+    "multiPronoun": false,
+    "legendary": [
+      {
+        "name": "Contest of Wills",
+        "entries": [
+          "Iggwilv psychically assails a creature within 60 feet, forcing it to make a DC 23 Wisdom saving throw. On a failed save, the creature is dominated by Iggwilv until the end of its next turn. On a success, Iggwilv is charmed by the creature until the end of her next turn."
+        ]
+      },
+      {
+        "name": "Hideous Laughter (1st Level Spell, Concentration)",
+        "entries": [
+          "A creature within 90 feet perceives everything as hilariously funny and falls into fits of laughter if this spell affects it. The target must succeed on a DC 23 Wisdom saving throw or fall prone, becoming incapacitated and unable to stand up for the duration. A creature with an Intelligence score of 4 or less isn't affected.",
+          "At the end of each of its turns, and each time it takes damage, the target can make another Wisdom saving throw. The target has advantage on the saving throw if it's triggered by damage. On a success, the spell ends."
+        ]
+      },
+      {
+        "name": "Umbral Surge",
+        "entries": [
+          "Iggwilv teleports to an unoccupied space within 30 feet, then can use her Mind Weevil or Demoniac Imbual."
+        ]
+      },
+      {
+        "name": "Scribe Likeness (Costs 2 Actions)",
+        "entries": [
+          "Iggwilv summons magical vellum and a quill, rapidly creating a sketch of a creature she can see within 30 feet."
+        ]
+      }
+    ]
   },
   {
     "name": "Shatter Corpse",
@@ -236773,7 +237823,7 @@
       "bludgeoning, piercing, and slashing damage from nonmagical sources"
     ],
     "immune": ["fire"],
-    "languages": ["Ignan"],
+    "languages": ["Magman"],
     "cr": 4,
     "minion": true,
     "trait": [
@@ -236837,7 +237887,7 @@
       "bludgeoning, piercing, and slashing damage from nonmagical sources"
     ],
     "immune": ["fire"],
-    "languages": ["Ignan"],
+    "languages": ["Magman"],
     "cr": 3,
     "trait": [
       {
@@ -237405,7 +238455,7 @@
       "fire",
       "bludgeoning and piercing damage from attacks made without advantage"
     ],
-    "languages": ["Common", "Druidic", "Ignan"],
+    "languages": ["Common", "Druidic", "Luxan"],
     "cr": 5,
     "trait": [
       {
@@ -240821,7 +241871,7 @@
     ],
     "immune": ["fire", "poison"],
     "conditionImmune": ["charmed", "frightened", "poisoned"],
-    "languages": ["Celestial", "Common", "Ignan", "telepathy 60 ft."],
+    "languages": ["Celestial", "Common", "Luxan", "telepathy 60 ft."],
     "cr": 4,
     "trait": [
       {
@@ -247415,143 +248465,6 @@
     ]
   },
   {
-    "name": "Iggwilv, the Witch Queen",
-    "size": "Medium",
-    "type": { "fey": { "archfey": {}, "unseelie": {} } },
-    "alignment": ["C", "N"],
-    "ac": [{ "ac": 19, "from": ["robe of the archmagi"] }],
-    "hp": { "average": 255, "formula": "30d8 + 120" },
-    "speed": { "walk": 30 },
-    "str": 10,
-    "dex": 18,
-    "con": 18,
-    "int": 27,
-    "wis": 12,
-    "cha": 23,
-    "save": { "int": "+14", "wis": "+7", "cha": "+12" },
-    "skill": { "arcana": "+20", "history": "+14", "nature": "+14" },
-    "senses": ["truesight 60 ft."],
-    "passive": 11,
-    "conditionImmune": ["charmed", "frightened"],
-    "languages": [
-      "Abyssal",
-      "Celestial",
-      "Common",
-      "Draconic",
-      "Elvish",
-      "Infernal",
-      "Sylvan"
-    ],
-    "cr": 20,
-    "spellcasting": [
-      {
-        "name": "Spellcasting",
-        "type": "spellcasting",
-        "headerEntries": [
-          "Iggwilv casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save DC 24, +16 to hit with spell attacks):"
-        ],
-        "will": [
-          "detect magic",
-          "disguise self",
-          "invisibility",
-          "light",
-          "mage hand",
-          "message",
-          "prestidigitation",
-          "Tasha's hideous laughter"
-        ],
-        "daily": {
-          "3e": ["dispel magic", "fly", "polymorph"],
-          "1e": ["maze", "telekinesis", "teleport", "wish"]
-        },
-        "ability": "int",
-        "displayAs": "action"
-      }
-    ],
-    "trait": [
-      {
-        "name": "Boon of Immortality",
-        "entries": [
-          "Iggwilv is immune to any effect that would age her, and she can't die from old age."
-        ]
-      },
-      {
-        "name": "Legendary Resistance (3/Day)",
-        "entries": [
-          "If Iggwilv fails a saving throw, she can choose to succeed instead."
-        ]
-      },
-      {
-        "name": "Archfey Resistance",
-        "entries": [
-          "Iggwilv succeeds automatically on saving throws against spells and magical effects imposed by a creature that does not know her name, and has advantage on saving throws against all other spells and magical effects."
-        ],
-        "sort": 0
-      },
-      {
-        "name": "Special Equipment",
-        "entries": [
-          "Iggwilv wears an amulet of the planes and a robe of the archmagi."
-        ]
-      }
-    ],
-    "action": [
-      {
-        "name": "Multiattack",
-        "entries": ["Iggwilv makes two Bewitching Bolt attacks."]
-      },
-      {
-        "name": "Bewitching Bolt",
-        "entries": [
-          "<em>Melee or Ranged Spell Attack.</em> +16 to hit, reach 5 ft. or range 120 ft., one target. <em>Hit:</em> 25 (5d6 + 8) lightning damage, and if the target is a creature, it must succeed on a DC 22 Wisdom saving throw or be charmed by Iggwilv until the start of her next turn."
-        ]
-      },
-      {
-        "name": "Abyssal Rift (Recharge 5-6)",
-        "entries": [
-          "Iggwilv opens a momentary Abyssal rift within 120 feet of her. The rift is a 20-foot-radius sphere. Each creature in that area must make a DC 22 Constitution saving throw, taking 40 (9d8) necrotic damage on a failed save, or half as much damage on a successful one. In addition, there is a 50 percent chance that 3 hezrous then appear in unoccupied spaces in the sphere. They act as Iggwilv's allies, take their turns immediately after hers, and can't summon other demons. They remain until they die or until Iggwilv dismisses them as an action."
-        ]
-      }
-    ],
-    "bonus": [
-      {
-        "name": "Fey Step",
-        "entries": [
-          "Iggwilv teleports, along with any equipment she is wearing or carrying, to an unoccupied space she can see within 30 feet of her."
-        ]
-      }
-    ],
-    "reaction": [
-      {
-        "name": "Negate Spell (2/Day)",
-        "entries": [
-          "When Iggwilv sees a creature within 60 feet of her casting a spell, she tries to interrupt it. If the creature is casting a spell using a spell slot of 8th level or lower, its spell fails and has no effect. If it is casting a 9th-level spell, it must succeed on a DC 22 Intelligence saving throw, or the spells fails and has no effect."
-        ]
-      }
-    ],
-    "shortName": "Iggwilv",
-    "pronouns": ["she", "her", "hers"],
-    "multiPronoun": false,
-    "legendary": [
-      {
-        "name": "Witchcraft",
-        "entries": ["Iggwilv uses Spellcasting or Fey Step."]
-      },
-      {
-        "name": "Dark Speech (Costs 2 Actions)",
-        "entries": [
-          "Iggwilv utters a phrase in a forbidden language and targets one or two creatures she can see within 60 feet of her. Each target must succeed on a DC 22 Wisdom saving throw or take 11 (2d10) psychic damage and be frightened of Iggwilv for 1 minute. A target can repeat the save at the end of each of its turns, ending the effect on itself on a success and thereby becoming immune to Iggwilv's Dark Speech for 24 hours."
-        ]
-      },
-      {
-        "name": "Fey Beguilement (Costs 3 Actions)",
-        "entries": [
-          "Iggwilv targets one creature she can see within 60 feet of her. The target must succeed on a DC 22 Charisma saving throw or be possessed by a fey spirit. While possessed, the target must obey Iggwilv's commands. The target can repeat the saving throw at the end of each of its turns, banishing the fey spirit and ending the effect on itself on a success."
-        ]
-      }
-    ]
-  },
-  {
     "name": "Imix, the Eternal Flame",
     "size": "Huge",
     "type": { "elemental": { "elder": {}, "fire": {} } },
@@ -253313,7 +254226,7 @@
       "restrained",
       "unconscious"
     ],
-    "languages": ["Ignan"],
+    "languages": ["Luxan"],
     "cr": 8,
     "trait": [
       {
@@ -253711,7 +254624,7 @@
     "skill": { "perception": "+4", "stealth": "+4", "survival": "+4" },
     "senses": ["darkvision 60 ft."],
     "passive": 14,
-    "languages": ["Entognatha", "Terran"],
+    "languages": ["Entognatha", "Pulvan"],
     "cr": 5,
     "trait": [
       {
@@ -253781,7 +254694,7 @@
     "skill": { "perception": "+5", "stealth": "+5", "survival": "+5" },
     "senses": ["darkvision 60 ft."],
     "passive": 15,
-    "languages": ["Entognatha", "Terran"],
+    "languages": ["Entognatha", "Pulvan"],
     "cr": 8,
     "trait": [
       {
@@ -253852,7 +254765,7 @@
     "skill": { "nature": "+7", "perception": "+10", "stealth": "+5" },
     "senses": ["darkvision 60 ft."],
     "passive": 20,
-    "languages": ["Entognatha", "Terran"],
+    "languages": ["Entognatha", "Pulvan"],
     "cr": 13,
     "trait": [
       {
@@ -277370,7 +278283,7 @@
       "poisoned",
       "prone"
     ],
-    "languages": ["Ignan", "Terran"],
+    "languages": ["Magman"],
     "cr": 14,
     "trait": [
       {
@@ -284485,7 +285398,7 @@
       "poisoned",
       "unconscious"
     ],
-    "languages": ["Aquan"],
+    "languages": ["Gelan"],
     "cr": 5,
     "trait": [
       {
@@ -285717,7 +286630,7 @@
       "poisoned",
       "prone"
     ],
-    "languages": ["Ignan", "Terran"],
+    "languages": ["Magman"],
     "cr": 18,
     "spellcasting": [
       {
@@ -286065,7 +286978,7 @@
     ],
     "senses": ["darkvision 60 ft."],
     "passive": 10,
-    "languages": ["Auran", "Ignan", "Terran"],
+    "languages": ["Spodan"],
     "cr": 7,
     "trait": [
       {
@@ -287437,7 +288350,7 @@
     ],
     "senses": ["darkvision 60 ft.", "tremorsense 60 ft."],
     "passive": 12,
-    "languages": ["Terran"],
+    "languages": ["Gelan", "Terran"],
     "cr": 6,
     "trait": [
       {
@@ -290683,7 +291596,7 @@
       "restrained",
       "unconscious"
     ],
-    "languages": ["Common", "Auran"],
+    "languages": ["Common", "Fulgan"],
     "cr": 7,
     "spellcasting": [
       {
@@ -296305,7 +297218,7 @@
       "restrained",
       "unconscious"
     ],
-    "languages": ["Ignan", "Terran"],
+    "languages": ["Magman"],
     "cr": 13,
     "trait": [
       {

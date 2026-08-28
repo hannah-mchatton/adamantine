@@ -2680,6 +2680,1798 @@
     ]
   },
   {
+    "name": "Sea Hag Harridan",
+    "size": "Medium",
+    "type": { "fey": { "unseelie": { "hag": {} } } },
+    "alignment": ["C", "E"],
+    "ac": [{ "ac": 14, "from": ["natural armor"] }],
+    "hp": { "average": 67, "formula": "9d8 + 27" },
+    "speed": { "walk": 30, "swim": 40 },
+    "str": 16,
+    "dex": 13,
+    "con": 16,
+    "int": 12,
+    "wis": 12,
+    "cha": 15,
+    "skill": { "deception": "+4", "insight": "+3", "stealth": "+5" },
+    "senses": ["darkvision 60 ft."],
+    "passive": 11,
+    "languages": ["Aquan", "Common", "Jiganti", "Sylvan"],
+    "cr": 2,
+    "trait": [
+      {
+        "name": "Illusory Mimicry",
+        "entries": [
+          "Thhe hag can perfectly mimic the voice and appearance of any beast or humanoid that is cursed by her or indebted to her."
+        ]
+      },
+      {
+        "name": "Coven Craft",
+        "entries": [
+          "While the hag is within 30 feet of at least two other hags, she has advantage on attack rolls, and creatures have disadvantage on any saving throw against an effect she controls."
+        ],
+        "sort": 1
+      }
+    ],
+    "action": [
+      {
+        "name": "Rotflesh Claw",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +5 to hit, reach 5 ft., one target. <em>Hit:</em> 12 (2d8 + 3) slashing damage plus 5 (1d10) necrotic damage."
+        ]
+      },
+      {
+        "name": "Pilfered Spell",
+        "entries": [
+          "The hag casts a spell of 2nd level or lower known by a creature cursed by her or indebted to her, using that creature's spell slots or other spellcasting resource."
+        ]
+      },
+      {
+        "name": "Seed Terror",
+        "entries": [
+          "Illusory blight spreads from the hag in a 15-foot radius, makin flesh appear to sag and rot. Each creature in the area must make a DC 12 Wisdom saving throw or become frightened for 1 minute (save ends at end of turn)."
+        ]
+      },
+      {
+        "name": "Steal Passion (Concentration)",
+        "entries": [
+          "The hag tears a token from a creature within 5 feet, forcing it to make a DC 12 Charisma saving throw or become cursed. If the target fails its saving throw by 5 or more, this effect does not require concentration.",
+          "While cursed in this way, the creture suffers one of the following effects of the hag's choice.",
+          {
+            "type": "list",
+            "items": [
+              "The creature can't speak louder than a whisper, and can't cast spells of 1st level or higher",
+              "The creature's speed is reduced by 10 feet and it can't take bonus actions or reactions",
+              "The creature has disadvantage on any ability check, attack roll, or saving throw that uses its Strength or Charisma"
+            ]
+          }
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Courage to Dread",
+        "entries": [
+          "When a creature within 30 feet succeeds on an Intelligence or Wisdom saving throw, the hag can deal 9 (2d8) necrotic damage to it."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sea Hag Auntie",
+    "size": "Medium",
+    "type": { "fey": { "unseelie": { "hag": {} } } },
+    "alignment": ["C", "E"],
+    "ac": [{ "ac": 15, "from": ["natural armor"] }],
+    "hp": { "average": 151, "formula": "18d8 + 72" },
+    "speed": { "walk": 30, "swim": 40 },
+    "str": 19,
+    "dex": 15,
+    "con": 18,
+    "int": 15,
+    "wis": 13,
+    "cha": 18,
+    "save": { "con": "+7", "wis": "+4", "cha": "+7" },
+    "skill": {
+      "deception": "7",
+      "insight": "+4",
+      "perception": "+4",
+      "stealth": "+8"
+    },
+    "senses": ["darkvision 60 ft."],
+    "passive": 14,
+    "conditionImmune": ["charmed", "frightened"],
+    "languages": ["Aquan", "Common", "Jiganti", "Sylvan"],
+    "cr": 7,
+    "trait": [
+      {
+        "name": "Illusory Mimicry",
+        "entries": [
+          "Thhe hag can perfectly mimic the voice and appearance of any beast or humanoid that is cursed by her or indebted to her."
+        ]
+      },
+      {
+        "name": "Coven Craft",
+        "entries": [
+          "While the hag is within 30 feet of at least two other hags, she has advantage on attack rolls, and creatures have disadvantage on any saving throw against an effect she controls."
+        ],
+        "sort": 1
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The hag makes two attacks, one of which she can replace with a use of her Pilfered Spell, Seed Terror, or Steal Passion."
+        ]
+      },
+      {
+        "name": "Rotflesh Claw",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +7 to hit, reach 5 ft., one target. <em>Hit:</em> 13 (2d8 + 4) slashing damage plus 5 (1d10) necrotic damage."
+        ]
+      },
+      {
+        "name": "Pilfered Spell",
+        "entries": [
+          "The hag casts a spell of 3rd level or lower known by a creature cursed by her or indebted to her, using that creature's spell slots or other spellcasting resource."
+        ]
+      },
+      {
+        "name": "Seed Terror",
+        "entries": [
+          "Illusory blight spreads from the hag in a 15-foot radius, makin flesh appear to sag and rot. Each creature in the area must make a DC 15 Wisdom saving throw or become frightened for 1 minute (save ends at end of turn)."
+        ]
+      },
+      {
+        "name": "Steal Passion (Concentration)",
+        "entries": [
+          "The hag tears a token from a creature within 5 feet, forcing it to make a DC 15 Charisma saving throw or become cursed. If the target fails its saving throw by 5 or more, this effect does not require concentration.",
+          "While cursed in this way, the creture suffers one of the following effects of the hag's choice.",
+          {
+            "type": "list",
+            "items": [
+              "The creature can't speak louder than a whisper, and can't cast spells of 1st level or higher",
+              "The creature's speed is reduced by 10 feet and it can't take bonus actions or reactions",
+              "The creature has disadvantage on any ability check, attack roll, or saving throw that uses its Strength or Charisma"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bilebrine (Recharge 5-6, 5th Level Spell)",
+        "entries": [
+          "Stinging brine surges over a creature the hag can see within 30 feet, forcing it to make a DC 15 Constitution saving throw, taking 22 (5d8) acid damage plus 22 (5d8) necrotic damage on a failed save, or half as much on a success.",
+          "A creature reduced to 0 hit points by this damage is infected with Merthirst."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Drowner's Dive",
+        "entries": [
+          "The hag moves up to half her swim speed, then can attempt to hide if she has at least half cover."
+        ]
+      },
+      {
+        "name": "Sargassum Grasp (2nd Level Spell)",
+        "entries": [
+          "A tangle of seaweed blooms to envelop a submerged creature within 30 feet, forcing it to make a DC 15 Dexterity saving throw. On a failed save, the target is restrained (escape DC 15) until the end of its next turn and dragged 15 feet in a direction of the hag's choice."
+        ]
+      },
+      {
+        "name": "Death Glare",
+        "entries": [
+          "One frightened creature within 30 feet of the hag must make a DC 15 Wisdom saving throw or become stunned until the end of its next turn.",
+          "If the target fails its saving throw by 5 or more, it additionally drops to 0 hit points."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Courage to Dread",
+        "entries": [
+          "When a creature within 30 feet succeeds on an Intelligence or Wisdom saving throw, the hag can deal 13 (3d8) necrotic damage to it."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sea Hag Grandmother",
+    "size": "Medium",
+    "type": { "fey": { "unseelie": { "hag": {} } } },
+    "alignment": ["C", "E"],
+    "ac": [{ "ac": 16, "from": ["natural armor"] }],
+    "hp": { "average": 272, "formula": "32d8 + 128" },
+    "speed": { "walk": 30, "swim": 40 },
+    "str": 20,
+    "dex": 15,
+    "con": 19,
+    "int": 15,
+    "wis": 17,
+    "cha": 21,
+    "save": { "con": "+9", "int": "+7", "wis": "+8", "cha": "+10" },
+    "skill": {
+      "deception": "10",
+      "insight": "+8",
+      "perception": "+8",
+      "stealth": "+12"
+    },
+    "senses": ["darkvision 60 ft."],
+    "passive": 18,
+    "conditionImmune": ["charmed", "exhaustion", "frightened"],
+    "languages": ["All"],
+    "cr": 15,
+    "trait": [
+      {
+        "name": "Illusory Mimicry",
+        "entries": [
+          "Thhe hag can perfectly mimic the voice and appearance of any beast or humanoid that is cursed by her or indebted to her."
+        ]
+      },
+      {
+        "name": "Coven Craft",
+        "entries": [
+          "While the hag is within 30 feet of at least two other hags, she has advantage on attack rolls, and creatures have disadvantage on any saving throw against an effect she controls."
+        ],
+        "sort": 1
+      },
+      {
+        "name": "Stilling Purge",
+        "entries": [
+          "At the start of each of her turns, the hag can end one spell or condition affecting her. If she does, she can't take bonus actions or reactions until the start of her next turn."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The hag makes two attacks, one of which she can replace with a use of her Seed Terror or Steal Passion."
+        ]
+      },
+      {
+        "name": "Rotflesh Claw",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +10 to hit, reach 5 ft., one target. <em>Hit:</em> 14 (2d8 + 5) slashing damage plus 11 (2d10) necrotic damage."
+        ]
+      },
+      {
+        "name": "Seed Terror",
+        "entries": [
+          "Illusory blight spreads from the hag in a 15-foot radius, makin flesh appear to sag and rot. Each creature in the area must make a DC 18 Wisdom saving throw or become frightened for 1 minute (save ends at end of turn)."
+        ]
+      },
+      {
+        "name": "Steal Passion (Concentration)",
+        "entries": [
+          "The hag tears a token from a creature within 5 feet, forcing it to make a DC 18 Charisma saving throw or become cursed. If the target fails its saving throw by 5 or more, this effect does not require concentration.",
+          "While cursed in this way, the creture suffers one of the following effects of the hag's choice.",
+          {
+            "type": "list",
+            "items": [
+              "The creature can't speak louder than a whisper, and can't cast spells of 1st level or higher",
+              "The creature's speed is reduced by 10 feet and it can't take bonus actions or reactions",
+              "The creature has disadvantage on any ability check, attack roll, or saving throw that uses its Strength or Charisma"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Nettletide (4th Level Spell)",
+        "entries": [
+          "The hag causes seafoam to surge forwards in a 30-foot cone. Each creature in that area must make a DC 18 Constitution saving throw, taking 21 (6d6) poison damage on a failed save, or half as much damage on a success.",
+          "A creature that fails its saving throw by 5 or more is additionally paralyzed until the end of its next turn."
+        ]
+      },
+      {
+        "name": "Bilebrine (5th Level Spell)",
+        "entries": [
+          "Stinging brine surges over a creature the hag can see within 30 feet, forcing it to make a DC 18 Constitution saving throw, taking 22 (5d8) acid damage plus 22 (5d8) necrotic damage on a failed save, or half as much on a success.",
+          "A creature reduced to 0 hit points by this damage is infected with Merthirst."
+        ]
+      },
+      {
+        "name": "Mariner's Woe (Recharge 5-6, 8th Level Spell)",
+        "entries": [
+          "The hag calls the sea to reject a creature within 60 feet, forcing it to make a DC 18 Charisma saving throw. On a failed save, it is cursed. While cursed in this way, a creature treats all water as difficult terrain, immediately sinks 25 feet whenever it starts its turn swimming, and can't breathe underwater by any means."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Drowner's Dive",
+        "entries": [
+          "The hag moves up to half her swim speed, then can attempt to hide if she has at least half cover."
+        ]
+      },
+      {
+        "name": "Sargassum Grasp (2nd Level Spell)",
+        "entries": [
+          "A tangle of seaweed blooms to envelop a submerged creature within 30 feet, forcing it to make a DC 15 Dexterity saving throw. On a failed save, the target is restrained (escape DC 15) until the end of its next turn and dragged 15 feet in a direction of the hag's choice."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Courage to Dread",
+        "entries": [
+          "When a creature within 30 feet succeeds on an Intelligence or Wisdom saving throw, the hag can deal 13 (3d8) necrotic damage to it."
+        ]
+      }
+    ],
+    "shortName": "the hag",
+    "pronouns": ["she", "her", "hers"],
+    "legendary": [
+      {
+        "name": "Chaos Churn",
+        "entries": [
+          "The hag moves up to her speed, then can use her Nettletide or Bilebrine."
+        ]
+      },
+      {
+        "name": "Death Glare",
+        "entries": [
+          "One frightened creature within 30 feet of the hag must make a DC 15 Wisdom saving throw or become stunned until the end of its next turn.",
+          "If the target fails its saving throw by 5 or more, it additionally drops to 0 hit points."
+        ]
+      },
+      {
+        "name": "Malice Deeps",
+        "entries": [
+          "A wave of ice roils forth in a 40-foot radius around the hag. Each creature cursed by the hag or indebted to her in the area takes 9 (2d8) cold damage and is pushed up to 10 feet in a direction of the hag's choice."
+        ]
+      },
+      {
+        "name": "Pilfered Spell",
+        "entries": [
+          "The hag casts a spell of 5th level or lower known by a creature cursed by her or indebted to her, using that creature's spell slots or other spellcasting resource."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bheur Hag Hexwind",
+    "size": "Medium",
+    "type": { "fey": { "unseelie": { "hag": {} } } },
+    "alignment": ["C", "E"],
+    "ac": [{ "ac": 17, "from": ["natural armor"] }],
+    "hp": { "average": 136, "formula": "16d8 + 64" },
+    "speed": { "walk": 30 },
+    "str": 13,
+    "dex": 16,
+    "con": 19,
+    "int": 12,
+    "wis": 13,
+    "cha": 16,
+    "save": { "con": "+7", "wis": "+4" },
+    "skill": {
+      "nature": "+4",
+      "perception": "+4",
+      "stealth": "+6",
+      "survival": "+4"
+    },
+    "senses": ["darkvision 60 ft."],
+    "passive": 14,
+    "immune": ["cold"],
+    "languages": ["Common", "Gelan", "Jotunise", "Sylvan"],
+    "cr": 7,
+    "trait": [
+      {
+        "name": "Sapping Chill",
+        "entries": [
+          "At the start of each of the hag's turns, each creature of her choice within 30 feet of her loses one unexpended hit die, then each such creature with no remaining hit dice is frightened of the hag until the start of its next turn."
+        ],
+        "sort": 0
+      },
+      {
+        "name": "Coven Craft",
+        "entries": [
+          "While the hag is within 30 feet of at least two other hags, she has advantage on attack rolls, and creatures have disadvantage on any saving throw against an effect she controls."
+        ],
+        "sort": 1
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The hag makes two attacks, one of which she can replace with a use of her Steal Fat, Frostfire Surge, or Flesh to Ice."
+        ]
+      },
+      {
+        "name": "Grip of Winter",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +6 to hit, reach 5ft., one target. <em>Hit:</em> 10 (2d6 + 3) slashing damage and the target is grappled (escape DC 14)",
+          "While grappled in this way, a creature takes 9 (2d8) cold damage at the start of each of its turns."
+        ]
+      },
+      {
+        "name": "Steal Fat",
+        "entries": [
+          "One creature grappled by the hag must make two DC 14 Constitution saving throws. If the target fails the first saving throw, it takes 28 (8d6) cold damage. If the target fails the second saving throw, it loses 4 (1d8) hit dice, and takes 4 (1d8) cold damage for each hit die it doesn't have to lose."
+        ]
+      },
+      {
+        "name": "Frostfire Surge (3rd Level Spell)",
+        "entries": [
+          "Ice erupts and shatters in a 10-foot radius sphere centered on a point within 60 feet, forcing each creature in the area to make a DC 14 Constitution saving throw. On a failed save, a creature takes 22 (5d8) cold damage and is restrained (escape DC 14) until the end of its next turn, or half as much damage on a success."
+        ]
+      },
+      {
+        "name": "Flesh to Ice (Recharge 5-6, 5th Level Spell)",
+        "entries": [
+          "One creature the hag can see within 60 feet must make a DC 14 Constitution saving throw. On a failed save, the target takes 36 (8d8) cold damage, or half as much damage on a success.",
+          "A creature reduced to 0 hit points by this damage freezes solid, becoming petrified until it takes any amount of fire damage."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Erode Bonds",
+        "entries": [
+          "Each frightened creature within 30 feet of the hag must make a DC 14 Charisma saving throw or become cursed. While cursed in this way, a creature can't target its allies with beneficial spells or abilities."
+        ]
+      },
+      {
+        "name": "Maddening Feast (Concentration)",
+        "entries": [
+          "The hag begins to devour a corpse or unconscious creature within 5 feet of her. At the start of the hag's next turn, the target is swallowed by the hag, and each enemy within 60 feet of her must make a DC 14 Wisdom saving throw or become frightened of her for 1 minute (save ends at end of turn)."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bheur Hag Auntie",
+    "size": "Medium",
+    "type": { "fey": { "unseelie": { "hag": {} } } },
+    "alignment": ["C", "E"],
+    "ac": [{ "ac": 18, "from": ["natural armor"] }],
+    "hp": { "average": 221, "formula": "26d8 + 104" },
+    "speed": { "walk": 30, "hover": 30 },
+    "str": 16,
+    "dex": 18,
+    "con": 19,
+    "int": 18,
+    "wis": 15,
+    "cha": 18,
+    "save": { "con": "+8", "wis": "+6", "cha": "+8" },
+    "skill": {
+      "nature": "+8",
+      "perception": "+6",
+      "stealth": "+8",
+      "survival": "+6"
+    },
+    "senses": ["darkvision 60 ft."],
+    "passive": 16,
+    "immune": ["cold"],
+    "conditionImmune": ["charmed", "frightened"],
+    "languages": ["Common", "Gelan", "Jotunise", "Sylvan"],
+    "cr": 12,
+    "trait": [
+      {
+        "name": "Sapping Chill",
+        "entries": [
+          "At the start of each of the hag's turns, each creature of her choice within 30 feet of her loses one unexpended hit die, then each such creature with no remaining hit dice is frightened of the hag until the start of its next turn."
+        ],
+        "sort": 0
+      },
+      {
+        "name": "Coven Craft",
+        "entries": [
+          "While the hag is within 30 feet of at least two other hags, she has advantage on attack rolls, and creatures have disadvantage on any saving throw against an effect she controls."
+        ],
+        "sort": 1
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The hag makes two attacks and can use her Steal Fat, Frostfire Surge or Flesh to Ice."
+        ]
+      },
+      {
+        "name": "Grip of Winter",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +8 to hit, reach 5ft., one target. <em>Hit:</em> 11 (2d6 + 4) slashing damage plus 9 (2d8) cold damage and the target is grappled (escape DC 16)",
+          "While grappled in this way, a creature takes 9 (2d8) cold damage at the start of each of its turns."
+        ]
+      },
+      {
+        "name": "Steal Fat",
+        "entries": [
+          "One creature grappled by the hag must make two DC 16 Constitution saving throws. If the target fails the first saving throw, it takes 28 (8d6) cold damage. If the target fails the second saving throw, it loses 4 (1d8) hit dice, and takes 4 (1d8) cold damage for each hit die it doesn't have to lose."
+        ]
+      },
+      {
+        "name": "Frostfire Surge (3rd Level Spell)",
+        "entries": [
+          "Ice erupts and shatters in a 10-foot radius sphere centered on a point within 60 feet, forcing each creature in the area to make a DC 16 Constitution saving throw. On a failed save, a creature takes 22 (5d8) cold damage and is restrained (escape DC 16) until the end of its next turn, or half as much damage on a success."
+        ]
+      },
+      {
+        "name": "Flesh to Ice (5th Level Spell)",
+        "entries": [
+          "One creature the hag can see within 60 feet must make a DC 16 Constitution saving throw. On a failed save, the target takes 36 (8d8) cold damage, or half as much damage on a success.",
+          "A creature reduced to 0 hit points by this damage freezes solid, becoming petrified until it takes any amount of fire damage."
+        ]
+      },
+      {
+        "name": "Tempest Howl (1/Day, 8th Level Spell, Concentration)",
+        "entries": [
+          "The hag shrieks forth a terrible blizzard in a 100-foot radius centered on herself. Creatures other than the hag treat the area as difficult terrain and heavily obscured.",
+          "At the start of each of the hag's turns while the spell lasts, each creature in the area of the hag's choice takes 18 (4d8) cold damage and is pushed 10 feet in a direction of her choice."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Erode Bonds",
+        "entries": [
+          "Each frightened creature within 30 feet of the hag must make a DC 16 Charisma saving throw or become cursed. While cursed in this way, a creature can't target its allies with beneficial spells or abilities."
+        ]
+      },
+      {
+        "name": "Maddening Feast (Concentration)",
+        "entries": [
+          "The hag begins to devour a corpse or unconscious creature within 5 feet of her. At the start of the hag's next turn, the target is swallowed by the hag, and each enemy within 60 feet of her must make a DC 16 Wisdom saving throw or become frightened of her for 1 minute (save ends at end of turn)."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Chill the Weave",
+        "entries": [
+          "When the hag is targeted by a spell of 1st level or higher, she can force the creature to expend one additional spell slot. If the creature can't or chooses not to, the hag gains control of the spell and can choose new targets for it."
+        ]
+      },
+      {
+        "name": "Feed on Greed",
+        "entries": [
+          "When a creature the hag can see targets itself with a spell, the hag can choose for the spell to target her instead of the intended creature."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bheur Hag Grandmother",
+    "size": "Medium",
+    "type": { "fey": { "unseelie": { "hag": {} } } },
+    "alignment": ["C", "E"],
+    "ac": [{ "ac": 19, "from": ["natural armor"] }],
+    "hp": { "average": 399, "formula": "38d8 + 228" },
+    "speed": { "walk": 30, "hover": 30 },
+    "str": 20,
+    "dex": 18,
+    "con": 21,
+    "int": 18,
+    "wis": 21,
+    "cha": 22,
+    "save": { "con": "+11", "int": "+10", "wis": "+11", "cha": "+12" },
+    "skill": {
+      "nature": "+10",
+      "perception": "+11",
+      "stealth": "+10",
+      "survival": "+11"
+    },
+    "senses": ["darkvision 60 ft."],
+    "passive": 21,
+    "immune": ["cold"],
+    "conditionImmune": ["charmed", "exhaustion", "frightened"],
+    "languages": ["All"],
+    "cr": 20,
+    "trait": [
+      {
+        "name": "Sapping Chill",
+        "entries": [
+          "At the start of each of the hag's turns, each creature of her choice within 30 feet of her loses one unexpended hit die, then each such creature with no remaining hit dice is frightened of the hag until the start of its next turn."
+        ],
+        "sort": 0
+      },
+      {
+        "name": "Coven Craft",
+        "entries": [
+          "While the hag is within 30 feet of at least two other hags, she has advantage on attack rolls, and creatures have disadvantage on any saving throw against an effect she controls."
+        ],
+        "sort": 1
+      },
+      {
+        "name": "Respite Purge",
+        "entries": [
+          "At the start of each of her turns, the hag can end one spell or condition affecting her. If she does, each of her enemies within 30 feet can use its reaction to regain 2 (1d4) hit dice or 11 (2d10) hit points."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The hag makes two attacks and can use her Steal Fat, Frostfire Surge or Flesh to Ice."
+        ]
+      },
+      {
+        "name": "Grip of Winter",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +11 to hit, reach 5ft., one target. <em>Hit:</em> 12 (2d6 + 5) slashing damage plus 13 (3d8) cold damage and the target is grappled (escape DC 19)",
+          "While grappled in this way, a creature takes 13 (3d8) cold damage at the start of each of its turns."
+        ]
+      },
+      {
+        "name": "Steal Fat",
+        "entries": [
+          "One creature grappled by the hag must make two DC 20 Constitution saving throws. If the target fails the first saving throw, it takes 28 (8d6) cold damage. If the target fails the second saving throw, it loses 5 (1d10) hit dice, and takes 4 (1d8) cold damage for each hit die it doesn't have to lose."
+        ]
+      },
+      {
+        "name": "Frostfire Surge (3rd Level Spell)",
+        "entries": [
+          "Ice erupts and shatters in a 10-foot radius sphere centered on a point within 60 feet, forcing each creature in the area to make a DC 20 Constitution saving throw. On a failed save, a creature takes 22 (5d8) cold damage and is restrained (escape DC 20) until the end of its next turn, or half as much damage on a success."
+        ]
+      },
+      {
+        "name": "Flesh to Ice (5th Level Spell)",
+        "entries": [
+          "One creature the hag can see within 60 feet must make a DC 20 Constitution saving throw. On a failed save, the target takes 36 (8d8) cold damage, or half as much damage on a success.",
+          "A creature reduced to 0 hit points by this damage freezes solid, becoming petrified until it takes any amount of fire damage."
+        ]
+      },
+      {
+        "name": "Tempest Howl (9th Level Spell, Concentration)",
+        "entries": [
+          "The hag shrieks forth a terrible blizzard in a 100-foot radius centered on herself. Creatures other than the hag treat the area as difficult terrain and heavily obscured.",
+          "At the start of each of the hag's turns while the spell lasts, each creature in the area of the hag's choice takes 22 (5d8) cold damage and is pushed 10 feet in a direction of her choice."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Erode Bonds",
+        "entries": [
+          "Each frightened creature within 30 feet of the hag must make a DC 20 Charisma saving throw or become cursed. While cursed in this way, a creature can't target its allies with beneficial spells or abilities."
+        ]
+      },
+      {
+        "name": "Maddening Feast (Concentration)",
+        "entries": [
+          "The hag begins to devour a corpse or unconscious creature within 5 feet of her. At the start of the hag's next turn, the target is swallowed by the hag, and each enemy within 60 feet of her must make a DC 20 Wisdom saving throw or become frightened of her for 1 minute (save ends at end of turn)."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Chill the Weave",
+        "entries": [
+          "When the hag is targeted by a spell of 1st level or higher, she can force the creature to expend one additional spell slot. If the creature can't or chooses not to, the hag gains control of the spell and can choose new targets for it."
+        ]
+      },
+      {
+        "name": "Feed on Greed",
+        "entries": [
+          "When a creature the hag can see targets itself with a spell, the hag can choose for the spell to target her instead of the intended creature."
+        ]
+      }
+    ],
+    "shortName": "the hag",
+    "pronouns": ["she", "her", "hers"],
+    "legendary": [
+      {
+        "name": "Desperation's Claim",
+        "entries": [
+          "Each of the hag's enemies within 60 feet of her can choose to lose two hit dice, or take 13 (3d8) cold damage if it can't or chooses not to.",
+          "If a creature is frightened, the hag chooses which effect triggers."
+        ]
+      },
+      {
+        "name": "Rime Passage",
+        "entries": [
+          "The hag teleports to an unoccupied space within 30 feet, then makes two attacks with her Grip of Winter or uses her Flesh to Ice."
+        ]
+      },
+      {
+        "name": "Snuff Flame",
+        "entries": [
+          "One creature within 60 feet of the hag takes 18 (4d8) cold damage. Then, if the creature has fewer hit points remaining than the damage it took, it falls unconscious until the end of its next turn, or until it takes any amount of damage."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Annis Hag Beldam",
+    "size": "Large",
+    "type": { "fey": { "unseelie": { "hag": {} } } },
+    "alignment": ["C", "E"],
+    "ac": [{ "ac": 18, "from": ["natural armor"] }],
+    "hp": { "average": 135, "formula": "18d10 + 36" },
+    "speed": { "walk": 40, "climb": 40 },
+    "str": 21,
+    "dex": 12,
+    "con": 14,
+    "int": 14,
+    "wis": 13,
+    "cha": 15,
+    "save": { "str": "+8" },
+    "skill": { "deception": "+5", "perception": "+4", "stealth": "+4" },
+    "senses": ["darkvision 60 ft."],
+    "passive": 14,
+    "resist": ["cold"],
+    "languages": ["Common", "Jiganti", "Sylvan"],
+    "cr": 6,
+    "trait": [
+      {
+        "name": "Gravel-Blind",
+        "entries": [
+          "The hag can't identify individual humanoid creatures by sight alone, and creatures do not need cover to hide from her."
+        ],
+        "sort": 1
+      },
+      {
+        "name": "Coven Craft",
+        "entries": [
+          "While the hag is within 30 feet of at least two other hags, she has advantage on attack rolls, and creatures have disadvantage on any saving throw against an effect she controls."
+        ],
+        "sort": 1
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The hag makes three attacks, or makes one attack and uses her Crushing Embrace."
+        ]
+      },
+      {
+        "name": "Screeching Teeth",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +8 to hit, reach 5 ft., one target. <em>Hit:</em> 12 (2d6 + 5) slashing damage.",
+          "If the target is prone or incapacitated, any hit becomes a critical hit."
+        ]
+      },
+      {
+        "name": "Ironscrew Claws",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +8 to hit, reach 10 ft., one target. <em>Hit:</em> 13 (2d8 + 5) slashing damage and the target is grappled (escape DC 16)"
+        ]
+      },
+      {
+        "name": "Crushing Embrace",
+        "entries": [
+          "The hag squeezes a creature grappled by her, forcing it to make a DC 16 Constitution saving throw. On a failed save, the target takes 39 (6d12) bludgeoning damage and falls prone, or half as much damage on a success. If the target fails its saving throw by 5 or more, it can't stand from prone until it regains at least 1 hit point."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Grisly Display",
+        "entries": [
+          "When the hag kills a creature within 5 feet of her, she can tear off the creature's skin in a single piece. Each creature of the hag's choice within 30 feet of her is frightened of her until the end of her next turn."
+        ]
+      },
+      {
+        "name": "Forbidding Hiss",
+        "entries": [
+          "When the hag is targeted by an attack or spell, she can force the attacker to make a DC 13 Charisma saving throw or become cursed.",
+          "While cursed in this way, whenever the creature makes an attack with that weapon or casts that spell, it takes 5 (1d10) psychic damage."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Annis Hag Auntie",
+    "size": "Large",
+    "type": { "fey": { "unseelie": { "hag": {} } } },
+    "alignment": ["C", "E"],
+    "ac": [{ "ac": 19, "from": ["natural armor"] }],
+    "hp": { "average": 228, "formula": "24d10 + 96" },
+    "speed": { "walk": 40, "climb": 40 },
+    "str": 23,
+    "dex": 16,
+    "con": 19,
+    "int": 14,
+    "wis": 13,
+    "cha": 18,
+    "save": { "str": "+10", "con": "+8", "cha": "+8" },
+    "skill": { "deception": "+8", "perception": "+5", "stealth": "+7" },
+    "senses": ["darkvision 60 ft."],
+    "passive": 14,
+    "resist": ["cold"],
+    "conditionImmune": ["charmed", "frightened"],
+    "languages": ["Common", "Jiganti", "Sylvan"],
+    "cr": 11,
+    "trait": [
+      {
+        "name": "Gravel-Blind",
+        "entries": [
+          "The hag can't identify individual humanoid creatures by sight alone, and creatures do not need cover to hide from her."
+        ],
+        "sort": 1
+      },
+      {
+        "name": "Coven Craft",
+        "entries": [
+          "While the hag is within 30 feet of at least two other hags, she has advantage on attack rolls, and creatures have disadvantage on any saving throw against an effect she controls."
+        ],
+        "sort": 1
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The hag makes three attacks, one of which she can replace with a use of her Body Flail or Crushing Embrace."
+        ]
+      },
+      {
+        "name": "Screeching Teeth",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +10 to hit, reach 5 ft., one target. <em>Hit:</em> 16 (3d6 + 6) slashing damage.",
+          "If the target is prone or incapacitated, any hit becomes a critical hit."
+        ]
+      },
+      {
+        "name": "Ironscrew Claws",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +10 to hit, reach 10 ft., one target. <em>Hit:</em> 19 (3d8 + 6) slashing damage and the target is grappled (escape DC 18)"
+        ]
+      },
+      {
+        "name": "Body Flail",
+        "entries": [
+          "The hag whips a creature grappled by her around, forcing a target within 10 feet to make a DC 18 Dexterity saving throw. On a failed save, the target and the grappled creature take 22 (4d10) bludgeoning damage."
+        ]
+      },
+      {
+        "name": "Crushing Embrace",
+        "entries": [
+          "The hag squeezes a creature grappled by her, forcing it to make a DC 18 Constitution saving throw. On a failed save, the target takes 39 (6d12) bludgeoning damage and falls prone, or half as much damage on a success. If the target fails its saving throw by 5 or more, it can't stand from prone until it regains at least 1 hit point."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Devour Magic",
+        "entries": [
+          "One creature grappled by the hag loses its lowest level unexpended spell slot, or 5 sorcery points. Unless it didn't have a resource to lose, the hag's attacks with her Screeching Teeth deal an extra 5 (1d10) force damage to that creature until the end of the hag's next turn."
+        ]
+      },
+      {
+        "name": "Bewitching Whispers (2nd Level Spell)",
+        "entries": [
+          "One creature the hag can see within 60 feet must make a DC 16 Wisdom saving throw. On a failed save, the target chooses one of the following effects:",
+          {
+            "type": "list",
+            "items": [
+              "The creature moves up to its speed under the hag's control",
+              "The creature makes an attack under the hag's control",
+              "The creature takes a non-attack action under the hag's control"
+            ]
+          }
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Grisly Display",
+        "entries": [
+          "When the hag kills a creature within 5 feet of her, she can tear off the creature's skin in a single piece. Each creature of the hag's choice within 30 feet of her is frightened of her until the end of her next turn."
+        ]
+      },
+      {
+        "name": "Forbidding Hiss",
+        "entries": [
+          "When the hag is targeted by an attack or spell, she can force the attacker to make a DC 16 Charisma saving throw or become cursed.",
+          "While cursed in this way, whenever the creature makes an attack with that weapon or casts that spell, it takes 5 (1d10) psychic damage."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Annis Hag Grandmother",
+    "size": "Huge",
+    "type": { "fey": { "unseelie": { "hag": {} } } },
+    "alignment": ["C", "E"],
+    "ac": [{ "ac": 20, "from": ["natural armor"] }],
+    "hp": { "average": 322, "formula": "28d12 + 140" },
+    "speed": { "walk": 40, "climb": 40 },
+    "str": 25,
+    "dex": 17,
+    "con": 21,
+    "int": 15,
+    "wis": 15,
+    "cha": 20,
+    "save": { "str": "+13", "con": "+11", "wis": "+8", "cha": "+11" },
+    "skill": { "deception": "+11", "perception": "+8", "stealth": "+9" },
+    "senses": ["darkvision 60 ft."],
+    "passive": 18,
+    "resist": ["cold"],
+    "conditionImmune": ["charmed", "exhaustion", "frightened"],
+    "languages": ["All"],
+    "cr": 19,
+    "trait": [
+      {
+        "name": "Gravel-Blind",
+        "entries": [
+          "The hag can't identify individual humanoid creatures by sight alone, and creatures do not need cover to hide from her."
+        ],
+        "sort": 1
+      },
+      {
+        "name": "Coven Craft",
+        "entries": [
+          "While the hag is within 30 feet of at least two other hags, she has advantage on attack rolls, and creatures have disadvantage on any saving throw against an effect she controls."
+        ],
+        "sort": 1
+      },
+      {
+        "name": "Muddled Purge",
+        "entries": [
+          "At the start of each of her turns, the hag can end one spell or condition affecting her. If she does, each enemy that is more than 15 feet away from her can use its reaction to attempt to hide."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The hag makes three attacks, one of which she can replace with a use of her Body Flail, Crushing Embrace, or Wightling Wyrd."
+        ]
+      },
+      {
+        "name": "Screeching Teeth",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +13 to hit, reach 5 ft., one target. <em>Hit:</em> 17 (3d6 + 7) slashing damage.",
+          "If the target is prone or incapacitated, any hit becomes a critical hit."
+        ]
+      },
+      {
+        "name": "Ironscrew Claws",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +13 to hit, reach 10 ft., one target. <em>Hit:</em> 20 (3d8 + 7) slashing damage and the target is grappled (escape DC 21)"
+        ]
+      },
+      {
+        "name": "Body Flail",
+        "entries": [
+          "The hag whips a creature grappled by her around, forcing a target within 10 feet to make a DC 21 Dexterity saving throw. On a failed save, the target and the grappled creature take 22 (4d10) bludgeoning damage."
+        ]
+      },
+      {
+        "name": "Crushing Embrace",
+        "entries": [
+          "The hag squeezes a creature grappled by her, forcing it to make a DC 21 Constitution saving throw. On a failed save, the target takes 39 (6d12) bludgeoning damage and falls prone, or half as much damage on a success. If the target fails its saving throw by 5 or more, it can't stand from prone until it regains at least 1 hit point."
+        ]
+      },
+      {
+        "name": "Wightling Wyrd (1/Day, 7th Level Spell, Concentration)",
+        "entries": [
+          "The hag weaves a strange spell of days gone past. Each creature of the hag's choice within 30 feet must make a DC 19 Charisma saving throw.",
+          "On a failed save, a creature reverts to a childlike form. It becomes one size smaller, and its attacks and abilities deal minimum damage, instead of rolling. At the end of each of its turns, a creature can repeat its saving throw, ending the effect on itself on a success."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Devour Magic",
+        "entries": [
+          "One creature grappled by the hag loses its lowest level unexpended spell slot, or 5 sorcery points. Unless it didn't have a resource to lose, the hag's attacks with her Screeching Teeth deal an extra 5 (1d10) force damage to that creature until the end of the hag's next turn."
+        ]
+      },
+      {
+        "name": "Bewitching Whispers (2nd Level Spell)",
+        "entries": [
+          "One creature the hag can see within 60 feet must make a DC 19 Wisdom saving throw. On a failed save, the target chooses one of the following effects:",
+          {
+            "type": "list",
+            "items": [
+              "The creature moves up to its speed under the hag's control",
+              "The creature makes an attack under the hag's control",
+              "The creature takes a non-attack action under the hag's control"
+            ]
+          }
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Grisly Display",
+        "entries": [
+          "When the hag kills a creature within 5 feet of her, she can tear off the creature's skin in a single piece. Each creature of the hag's choice within 30 feet of her is frightened of her until the end of her next turn."
+        ]
+      },
+      {
+        "name": "Forbidding Hiss",
+        "entries": [
+          "When the hag is targeted by an attack or spell, she can force the attacker to make a DC 19 Charisma saving throw or become cursed.",
+          "While cursed in this way, whenever the creature makes an attack with that weapon or casts that spell, it takes 5 (1d10) psychic damage."
+        ]
+      }
+    ],
+    "shortName": "the hag",
+    "pronouns": ["she", "her", "hers"],
+    "legendary": [
+      {
+        "name": "Crib Snatch",
+        "entries": [
+          "Shadowy arms grasp at a creature within 60 feet, forcing it to make a DC 19 Dexterity saving throw. On a failed save, the target is dragged to a space within 5 feet of the hag and grappled (escape DC 21)."
+        ]
+      },
+      {
+        "name": "Polluted Bond",
+        "entries": [
+          "Each creature within 15 feet of the hag must make a DC 19 Charisma saving throw. On a failed save, the next time the hag takes any amount of damage before the start of her next turn, the creature takes the same amount of damage."
+        ]
+      },
+      {
+        "name": "Tear Apart",
+        "entries": [
+          "The hag moves up to her speed, then can make two attacks or use her Crushing Embrace."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Green Hag Mirewife",
+    "size": "Medium",
+    "type": { "fey": { "unseelie": { "hag": {} } } },
+    "alignment": ["C", "E"],
+    "ac": [{ "ac": 17, "from": ["natural armor"] }],
+    "hp": { "average": 82, "formula": "11d8 + 33" },
+    "speed": { "walk": 30, "climb": 30 },
+    "str": 18,
+    "dex": 12,
+    "con": 16,
+    "int": 13,
+    "wis": 16,
+    "cha": 14,
+    "skill": {
+      "arcana": "+5",
+      "deception": "+4",
+      "perception": "+5",
+      "stealth": "+3"
+    },
+    "senses": ["darkvision 60 ft."],
+    "passive": 15,
+    "languages": ["Common", "Elvish", "Sylvan"],
+    "cr": 3,
+    "trait": [
+      {
+        "name": "Glimmer of Hope",
+        "entries": [
+          "Whenever an enemy within 30 feet succeeds on saving throw, the hag gains 5 (1d10) temporary hit points."
+        ]
+      },
+      {
+        "name": "Coven Craft",
+        "entries": [
+          "While the hag is within 30 feet of at least two other hags, she has advantage on attack rolls, and creatures have disadvantage on any saving throw against an effect she controls."
+        ],
+        "sort": 1
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The hag makes two attacks, one of which she can replace with a use of her Quagmire Coil."
+        ]
+      },
+      {
+        "name": "Bogrot Claw",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +6 to hit, reach 5 ft., one target. <em>Hit:</em> 8 (1d8 + 4) slashing damage plus 4 (1d8) poison damage."
+        ]
+      },
+      {
+        "name": "Quagmire Coil (2nd Level Spell)",
+        "entries": [
+          "Tendrils of muck rise to grasp at a creature within 60 feet, forcing it to make a DC 13 Strength or Dexterity saving throw (target's choice). On a failed save, the target takes 18 (4d8) bludgeoning damage and is restrained (escape DC 13) until the end of the hag's next turn. If the target fails its saving throw by 5 or more, it is additionally considered blinded and choking while it remains restrained."
+        ]
+      },
+      {
+        "name": "Briar Twist (3rd Level Spell)",
+        "entries": [
+          "Vines slither towards a creature within 60 feet, forcing it to make a DC 13 Dexterity saving throw. On a failed save, the target takes 21 (6d6) bludgeoning damage, is dragged up to 30 feet towards the hag, and is knocked prone."
+        ]
+      },
+      {
+        "name": "Cauldron Haze (5th Level Spell)",
+        "entries": [
+          "Shimmering fumes vent from the ground in a 10-foot radius centered on a point within 60 feet, forcing each creature in the area to make a DC 13 Constitution saving throw. On a failed save, a creature takes 13 (3d8) poison damage, and suffers one of the following effects at random:",
+          {
+            "type": "list",
+            "items": [
+              "The creature is incapacitated and shape-shifted into a Tiny toad until the end of its next turn, or until it takes any damage.",
+              "The creature is blinded until the end of its next turn.",
+              "The creature is poisoned until the end of its next turn.",
+              "The creature rolls an effect on the Wild Mutations table, which lasts for 10 days."
+            ]
+          }
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Hope to Despair",
+        "entries": [
+          "When a creature within 30 feet makes a saving throw, the hag can lose any amount of temporary hit points it has to subtract an amount from the result equal to the number of temporary hit points."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Green Hag Auntie",
+    "size": "Medium",
+    "type": { "fey": { "unseelie": { "hag": {} } } },
+    "alignment": ["C", "E"],
+    "ac": [{ "ac": 17, "from": ["natural armor"] }],
+    "hp": { "average": 136, "formula": "16d8 + 64" },
+    "speed": { "walk": 30, "climb": 30 },
+    "str": 21,
+    "dex": 14,
+    "con": 18,
+    "int": 16,
+    "wis": 18,
+    "cha": 15,
+    "skill": {
+      "arcana": "+6",
+      "deception": "+5",
+      "perception": "+7",
+      "stealth": "+5"
+    },
+    "save": { "con": "+7", "int": "+6", "wis": "+7" },
+    "senses": ["darkvision 60 ft."],
+    "conditionImmune": ["charmed", "frightened"],
+    "passive": 17,
+    "languages": ["Common", "Elvish", "Sylvan"],
+    "cr": 7,
+    "trait": [
+      {
+        "name": "Glimmer of Hope",
+        "entries": [
+          "Whenever an enemy within 30 feet succeeds on saving throw, the hag gains 5 (1d10) temporary hit points."
+        ]
+      },
+      {
+        "name": "Coven Craft",
+        "entries": [
+          "While the hag is within 30 feet of at least two other hags, she has advantage on attack rolls, and creatures have disadvantage on any saving throw against an effect she controls."
+        ],
+        "sort": 1
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The hag makes two attacks, each of which she can replace with a use of her Quagmire Coil, Briar Twist, or Witchfire Bloom."
+        ]
+      },
+      {
+        "name": "Bogrot Claw",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +8 to hit, reach 5 ft., one target. <em>Hit:</em> 14 (2d8 + 5) slashing damage plus 9 (2d8) poison damage."
+        ]
+      },
+      {
+        "name": "Quagmire Coil (2nd Level Spell)",
+        "entries": [
+          "Tendrils of muck rise to grasp at a creature within 60 feet, forcing it to make a DC 15 Strength or Dexterity saving throw (target's choice). On a failed save, the target takes 18 (4d8) bludgeoning damage and is restrained (escape DC 15) until the end of the hag's next turn. If the target fails its saving throw by 5 or more, it is additionally considered blinded and choking while it remains restrained."
+        ]
+      },
+      {
+        "name": "Briar Twist (3rd Level Spell)",
+        "entries": [
+          "Vines slither towards a creature within 60 feet, forcing it to make a DC 15 Dexterity saving throw. On a failed save, the target takes 21 (6d6) bludgeoning damage, is dragged up to 30 feet towards the hag, and is knocked prone."
+        ]
+      },
+      {
+        "name": "Witchfire Bloom (Concentration)",
+        "entries": [
+          "The hag conjures two Will-o-Wisps in unoccupied spaces within 30 feet of her that act on her initiative and disappear when the hag loses concentration."
+        ]
+      },
+      {
+        "name": "Cauldron Haze (6th Level Spell)",
+        "entries": [
+          "Shimmering fumes vent from the ground in a 10-foot radius centered on a point within 60 feet, forcing each creature in the area to make a DC 15 Constitution saving throw. On a failed save, a creature takes 18 (4d8) poison damage, and suffers one of the following effects at random:",
+          {
+            "type": "list",
+            "items": [
+              "The creature is incapacitated and shape-shifted into a Tiny toad until the end of its next turn, or until it takes any damage.",
+              "The creature is blinded until the end of its next turn.",
+              "The creature is poisoned until the end of its next turn.",
+              "The creature rolls an effect on the Wild Mutations table, which lasts for 10 days."
+            ]
+          }
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Wildcloak",
+        "entries": [
+          "The hag turns invisible until the start of its next turn. This effect ends early if the hag takes or deals any damage."
+        ]
+      },
+      {
+        "name": "Vermin Feast",
+        "entries": [
+          "Tiny creatures swarm forth, ripping and tearing. Each creature within 30 feet of the hag that is blinded, poisoned, or restrained takes 3 (1d6) piercing damage."
+        ]
+      },
+      {
+        "name": "Poison Well",
+        "entries": [
+          "The hag touches a creature and forces it to make a DC 15 Charisma saving throw, or it is cursed. The first time each day that the cursed creature would receive any magical healing, it receives no healing and instead takes an equal amount of poison damage."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Hope to Despair",
+        "entries": [
+          "When a creature within 30 feet makes a saving throw, the hag can lose any amount of temporary hit points it has to subtract an amount from the result equal to the number of temporary hit points."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Green Hag Grandmother",
+    "size": "Large",
+    "type": { "fey": { "unseelie": { "hag": {} } } },
+    "alignment": ["C", "E"],
+    "ac": [{ "ac": 18, "from": ["natural armor"] }],
+    "hp": { "average": 231, "formula": "22d10 + 110" },
+    "speed": { "walk": 30, "climb": 30 },
+    "str": 23,
+    "dex": 15,
+    "con": 20,
+    "int": 16,
+    "wis": 22,
+    "cha": 17,
+    "skill": {
+      "arcana": "+8",
+      "deception": "+8",
+      "perception": "+11",
+      "stealth": "+7"
+    },
+    "save": { "con": "+10", "int": "+8", "wis": "+11" },
+    "senses": ["truesight 60 ft."],
+    "immune": ["poison"],
+    "conditionImmune": ["charmed", "exhaustion", "frightened", "poisoned"],
+    "passive": 21,
+    "languages": ["All"],
+    "cr": 14,
+    "trait": [
+      {
+        "name": "Glimmer of Hope",
+        "entries": [
+          "Whenever an enemy within 30 feet succeeds on saving throw, the hag gains 5 (1d10) temporary hit points."
+        ]
+      },
+      {
+        "name": "Coven Craft",
+        "entries": [
+          "While the hag is within 30 feet of at least two other hags, she has advantage on attack rolls, and creatures have disadvantage on any saving throw against an effect she controls."
+        ],
+        "sort": 1
+      },
+      {
+        "name": "Wildlight Purge",
+        "entries": [
+          "At the start of each of her turns, the hag can end one spell or condition affecting her. If she does, she is wreathed in glimmers of light until the start of her next turn. While she is under this effect, attack rolls against her are made at advantage, and she can't turn invisible."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The hag makes three attacks, each of which she can replace with a use of her Quagmire Coil, Briar Twist, or Witchfire Bloom."
+        ]
+      },
+      {
+        "name": "Bogrot Claw",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +11 to hit, reach 5 ft., one target. <em>Hit:</em> 19 (3d8 + 6) slashing damage plus 9 (2d8) poison damage."
+        ]
+      },
+      {
+        "name": "Quagmire Coil (2nd Level Spell)",
+        "entries": [
+          "Tendrils of muck rise to grasp at a creature within 60 feet, forcing it to make a DC 19 Strength or Dexterity saving throw (target's choice). On a failed save, the target takes 18 (4d8) bludgeoning damage and is restrained (escape DC 19) until the end of the hag's next turn. If the target fails its saving throw by 5 or more, it is additionally considered blinded and choking while it remains restrained."
+        ]
+      },
+      {
+        "name": "Briar Twist (3rd Level Spell)",
+        "entries": [
+          "Vines slither towards a creature within 60 feet, forcing it to make a DC 19 Dexterity saving throw. On a failed save, the target takes 21 (6d6) bludgeoning damage, is dragged up to 30 feet towards the hag, and is knocked prone."
+        ]
+      },
+      {
+        "name": "Witchfire Bloom (Concentration)",
+        "entries": [
+          "The hag conjures two Will-o-Wisps in unoccupied spaces within 30 feet of her that act on her initiative and disappear when the hag loses concentration."
+        ]
+      },
+      {
+        "name": "Maggot Feast (Recharge 5-6, 7th Level Spell)",
+        "entries": [
+          "Fat white worms spill from the wounds of creatures of the hag's choice within 60 feet of her. Each creature must make a DC 19 Constitution saving throw, taking 44 (8d10) necrotic damage on a failed save, or half as much on a success.",
+          "If a creature that is poisoned, diseased, or below half of its maximum hit points fails a saving throw against this effect, it is additionally dazed until the end of its next turn."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Wildcloak",
+        "entries": [
+          "The hag turns invisible until the start of its next turn. This effect ends early if the hag takes or deals any damage."
+        ]
+      },
+      {
+        "name": "Vermin Feast",
+        "entries": [
+          "Tiny creatures swarm forth, ripping and tearing. Each creature within 30 feet of the hag that is blinded, poisoned, or restrained takes 7 (2d6) piercing damage."
+        ]
+      },
+      {
+        "name": "Poison Well",
+        "entries": [
+          "The hag touches a creature and forces it to make a DC 19 Charisma saving throw, or it is cursed. The first time each day that the cursed creature would receive any magical healing, it receives no healing and instead takes an equal amount of poison damage."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Hope to Despair",
+        "entries": [
+          "When a creature within 30 feet makes a saving throw, the hag can lose any amount of temporary hit points it has to subtract an amount from the result equal to the number of temporary hit points."
+        ]
+      }
+    ],
+    "shortName": "the hag",
+    "pronouns": ["she", "her", "hers"],
+    "legendary": [
+      {
+        "name": "Cauldron Haze (6th Level Spell)",
+        "entries": [
+          "Shimmering fumes vent from the ground in a 10-foot radius centered on a point within 60 feet, forcing each creature in the area to make a DC 19 Constitution saving throw. On a failed save, a creature takes 18 (4d8) poison damage, and suffers one of the following effects at random:",
+          {
+            "type": "list",
+            "items": [
+              "The creature is incapacitated and shape-shifted into a Tiny toad until the end of its next turn, or until it takes any damage.",
+              "The creature is blinded until the end of its next turn.",
+              "The creature is poisoned until the end of its next turn.",
+              "The creature rolls an effect on the Wild Mutations table, which lasts for 10 days."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Weatherwax Brew",
+        "entries": [
+          "The hag and each other allied hag within 30 feet of her gain 11 (2d10) hit points. While a creature has any of these temporary hit points, it ignores the effects of being charmed, paralyzed, poisoned, and stunned."
+        ]
+      },
+      {
+        "name": "Witch's Wrath",
+        "entries": [
+          "The hag moves up to her speed and can make an attack with her Bogrot Claw or use her Briar Twist."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Night Hag Crone",
+    "size": "Medium",
+    "type": { "fey": { "unseelie": { "hag": {} } } },
+    "alignment": ["N", "E"],
+    "ac": [{ "ac": 17, "from": ["natural armor"] }],
+    "hp": { "average": 112, "formula": "15d8 + 45" },
+    "speed": { "walk": 30 },
+    "str": 18,
+    "dex": 15,
+    "con": 16,
+    "int": 16,
+    "wis": 14,
+    "cha": 16,
+    "skill": {
+      "deception": "+6",
+      "insight": "+5",
+      "perception": "+5",
+      "stealth": "+5"
+    },
+    "senses": ["darksight 120 ft."],
+    "passive": 15,
+    "resist": ["cold", "fire"],
+    "languages": ["Abyssal", "Common", "Infernal", "Primordial"],
+    "cr": 5,
+    "trait": [
+      {
+        "name": "Debt-Keeper",
+        "entries": [
+          "The hag has resistance to all damage dealt by creatures indebted to her, and has advantage on saving throws against creatures indebted to her."
+        ]
+      },
+      {
+        "name": "Nightmare Haunting",
+        "entries": [
+          "The hag can afflict sleeping creatures that she touchs across the Border Ethereal, or those that are indebted to her, with horrific nightmares. When an affected creature completes a long rest, it must make a DC 15 Wisdom saving throw. On a failure, the creature gains no benefit from its rest and its hit point maximum is reduced by 1d10. A target that dies in this way has its spirit trapped in the hag's soul bag, and can't be resurrected without her leave.",
+          "A creature that succeeds on this saving throw by 5 or more awakes and can drag the hag into the waking world with it, causing her to appear in an unoccupied space within 5 feet and be unable use her Etherealness ability for 1 minute.",
+          "A creature wearing a silver talisman, or one that has had a Protection from Good and Evil spell cast on it in the last 8 hours, makes this saving throw with advantage."
+        ]
+      },
+      {
+        "name": "Coven Craft",
+        "entries": [
+          "While the hag is within 30 feet of at least two other hags, she has advantage on attack rolls, and creatures have disadvantage on any saving throw against an effect she controls."
+        ],
+        "sort": 1
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The hag makes two attacks, one of which she can replace with a use of her Soul Leech."
+        ]
+      },
+      {
+        "name": "Vile Claw",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +7 to hit, reach 5 ft., one target. <em>Hit:</em> 13 (2d8 + 4) slashing damage and the target is grappled (escape DC 15)."
+        ]
+      },
+      {
+        "name": "Soul Leech",
+        "entries": [
+          "One creature grappled by the hag must make a DC 14 Constitution saving throw. On a failed save, the creature suffers one of the following effects of the hag's choice:",
+          {
+            "type": "list",
+            "items": [
+              "The creature loses its highest level unexpended spell slot, or 10 sorcery points.",
+              "The creature gains a point of exhaustion.",
+              "The creature falls unconscious until it takes any damage or a creature within 5 feet of it uses an action to wake it.",
+              "The creature takes 16 (3d10) necrotic damage."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Embitter Heart",
+        "entries": [
+          "One creature the hag can see within 60 feet must make a DC 14 Wisdom saving throw. On a failed save, it takes 22 (4d10) psychic damage and becomes hostile to all creatures until the end of its next turn."
+        ]
+      },
+      {
+        "name": "Spirit Travel",
+        "entries": [
+          "The hag magically enters the Ethereal Plane from the Material Plane, or vice versa, or teleports to an unoccupied space within 30 feet."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Offer Bargain",
+        "entries": [
+          "When a creature fails a saving throw against an effect the hag controls, she can allow it to choose to succeed. If it does so, it becomes indebted to the hag,"
+        ]
+      },
+      {
+        "name": "Spit Curse",
+        "entries": [
+          "When a creature the hag can see deals damage to her, she can deal 10 (3d6) necrotic damage to that creature."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Night Hag Auntie",
+    "size": "Medium",
+    "type": { "fey": { "unseelie": { "hag": {} } } },
+    "alignment": ["N", "E"],
+    "ac": [{ "ac": 18, "from": ["natural armor"] }],
+    "hp": { "average": 178, "formula": "21d8 + 84" },
+    "speed": { "walk": 30 },
+    "str": 21,
+    "dex": 15,
+    "con": 19,
+    "int": 18,
+    "wis": 17,
+    "cha": 20,
+    "skill": {
+      "deception": "+9",
+      "insight": "+7",
+      "perception": "+7",
+      "stealth": "+6"
+    },
+    "save": { "con": "+9", "wis": "+7", "cha": "+9" },
+    "senses": ["darksight 120 ft."],
+    "passive": 17,
+    "resist": ["cold", "fire"],
+    "conditionImmune": ["charmed", "frightened"],
+    "languages": ["Abyssal", "Common", "Infernal", "Primordial"],
+    "cr": 9,
+    "trait": [
+      {
+        "name": "Debt-Keeper",
+        "entries": [
+          "The hag has resistance to all damage dealt by creatures indebted to her, and has advantage on saving throws against creatures indebted to her."
+        ]
+      },
+      {
+        "name": "Nightmare Haunting",
+        "entries": [
+          "The hag can afflict sleeping creatures that she touchs across the Border Ethereal, or those that are indebted to her, with horrific nightmares. When an affected creature completes a long rest, it must make a DC 15 Wisdom saving throw. On a failure, the creature gains no benefit from its rest and its hit point maximum is reduced by 1d10. A target that dies in this way has its spirit trapped in the hag's soul bag, and can't be resurrected without her leave.",
+          "A creature that succeeds on this saving throw by 5 or more awakes and can drag the hag into the waking world with it, causing her to appear in an unoccupied space within 5 feet and be unable use her Etherealness ability for 1 minute.",
+          "A creature wearing a silver talisman, or one that has had a Protection from Good and Evil spell cast on it in the last 8 hours, makes this saving throw with advantage."
+        ]
+      },
+      {
+        "name": "Coven Craft",
+        "entries": [
+          "While the hag is within 30 feet of at least two other hags, she has advantage on attack rolls, and creatures have disadvantage on any saving throw against an effect she controls."
+        ],
+        "sort": 1
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The hag makes three attacks, one of which she can replace with a use of her Caustic Cure, Soul Leech, or Embitter Heart."
+        ]
+      },
+      {
+        "name": "Vile Claw",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +9 to hit, reach 5 ft., one target. <em>Hit:</em> 18 (3d8 + 5) slashing damage and the target is grappled (escape DC 17)."
+        ]
+      },
+      {
+        "name": "Flickerflame (3rd Level Spell)",
+        "entries": [
+          "<em>Ranged Spell Attack.</em> +9 to hit, range 150 ft., one target. <em>Hit:</em> 17 (5d6) fire damage, plus an extra 7 (2d6) fire damage if the target cast a spell since the end of its last turn."
+        ]
+      },
+      {
+        "name": "Caustic Cure",
+        "entries": [
+          "The hag touches a creature, dealing 18 (4d8) acid damage to it and ending one spell of 5th level or lower affecting it. An unwilling target can make a DC 17 Constitution saving throw to not be affected."
+        ]
+      },
+      {
+        "name": "Soul Leech",
+        "entries": [
+          "One creature grappled by the hag must make a DC 17 Constitution saving throw. On a failed save, the creature suffers one of the following effects of the hag's choice:",
+          {
+            "type": "list",
+            "items": [
+              "The creature loses its highest level unexpended spell slot, or 10 sorcery points.",
+              "The creature gains a point of exhaustion.",
+              "The creature falls unconscious until it takes any damage or a creature within 5 feet of it uses an action to wake it.",
+              "The creature takes 16 (3d10) necrotic damage."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Embitter Heart",
+        "entries": [
+          "One creature the hag can see within 60 feet must make a DC 17 Wisdom saving throw. On a failed save, it takes 22 (4d10) psychic damage and becomes hostile to all creatures until the end of its next turn."
+        ]
+      },
+      {
+        "name": "Corpsehatch (3rd Level Spell)",
+        "entries": [
+          "One Medium or larger corpse the hag can see within 60 feet splits open, birthing forth a Swarm of Abyssal Chickens that acts on initiative count 0 and is hostile to all creatures."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Spirit Travel",
+        "entries": [
+          "The hag magically enters the Ethereal Plane from the Material Plane, or vice versa, or teleports to an unoccupied space within 30 feet."
+        ]
+      },
+      {
+        "name": "Spoil Dreams (7th Level Spell)",
+        "entries": [
+          "The hag touches an unconscious creature, forcing it to make a DC 17 Charisma saving throw or become cursed. While cursed in this way, the hag can afflict the creature with her Nightmare Haunting at any distance."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Offer Bargain",
+        "entries": [
+          "When a creature fails a saving throw against an effect the hag controls, she can allow it to choose to succeed. If it does so, it becomes indebted to the hag,"
+        ]
+      },
+      {
+        "name": "Spit Curse",
+        "entries": [
+          "When a creature the hag can see deals damage to her, she can deal 14 (4d6) necrotic damage to that creature."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Night Hag Grandmother",
+    "size": "Medium",
+    "type": { "fey": { "unseelie": { "hag": {} } } },
+    "alignment": ["N", "E"],
+    "ac": [{ "ac": 20, "from": ["natural armor"] }],
+    "hp": { "average": 323, "formula": "34d10 + 136" },
+    "speed": { "walk": 30 },
+    "str": 25,
+    "dex": 15,
+    "con": 19,
+    "int": 19,
+    "wis": 19,
+    "cha": 24,
+    "skill": {
+      "deception": "+13",
+      "insight": "+10",
+      "perception": "+10",
+      "stealth": "+8"
+    },
+    "save": { "dex": "+8", "con": "+9", "wis": "+7", "cha": "+9" },
+    "senses": ["darksight 120 ft.", "truesight 60 ft."],
+    "passive": 20,
+    "immune": ["cold", "fire"],
+    "conditionImmune": ["charmed", "exhaustion", "frightened"],
+    "languages": ["All"],
+    "cr": 20,
+    "trait": [
+      {
+        "name": "Debt-Keeper",
+        "entries": [
+          "The hag has resistance to all damage dealt by creatures indebted to her, and has advantage on saving throws against creatures indebted to her."
+        ]
+      },
+      {
+        "name": "Nightmare Haunting",
+        "entries": [
+          "The hag can afflict sleeping creatures that she touchs across the Border Ethereal, or those that are indebted to her, with horrific nightmares. When an affected creature completes a long rest, it must make a DC 15 Wisdom saving throw. On a failure, the creature gains no benefit from its rest and its hit point maximum is reduced by 1d10. A target that dies in this way has its spirit trapped in the hag's soul bag, and can't be resurrected without her leave.",
+          "A creature that succeeds on this saving throw by 5 or more awakes and can drag the hag into the waking world with it, causing her to appear in an unoccupied space within 5 feet and be unable use her Etherealness ability for 1 minute.",
+          "A creature wearing a silver talisman, or one that has had a Protection from Good and Evil spell cast on it in the last 8 hours, makes this saving throw with advantage."
+        ]
+      },
+      {
+        "name": "Coven Craft",
+        "entries": [
+          "While the hag is within 30 feet of at least two other hags, she has advantage on attack rolls, and creatures have disadvantage on any saving throw against an effect she controls."
+        ],
+        "sort": 1
+      },
+      {
+        "name": "Soul Purge",
+        "entries": [
+          "At the start of each of her turns, the hag can end one spell or condition affecting her. If she does, the soul most recently trapped in her Soul Bag is released. If that creature died in the last minute and its body is intact, it returns to life with 1 hit point."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The hag makes three attacks, one of which she can replace with a use of her Caustic Cure, Soul Leech, or Embitter Heart."
+        ]
+      },
+      {
+        "name": "Vile Claw",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +13 to hit, reach 5 ft., one target. <em>Hit:</em> 20 (3d8 + 7) slashing damage and the target is grappled (escape DC 21)."
+        ]
+      },
+      {
+        "name": "Flickerflame (3rd Level Spell)",
+        "entries": [
+          "<em>Ranged Spell Attack.</em> +13 to hit, range 150 ft., one target. <em>Hit:</em> 21 (6d6) fire damage, plus an extra 10 (3d6) fire damage if the target cast a spell since the end of its last turn."
+        ]
+      },
+      {
+        "name": "Caustic Cure",
+        "entries": [
+          "The hag touches a creature, dealing 18 (4d8) acid damage to it and ending one spell of 5th level or lower affecting it. An unwilling target can make a DC 21 Constitution saving throw to not be affected."
+        ]
+      },
+      {
+        "name": "Soul Leech",
+        "entries": [
+          "One creature grappled by the hag must make a DC 21 Constitution saving throw. On a failed save, the creature takes 16 (3d10) necrotic damage and suffers one of the following effects of the hag's choice:",
+          {
+            "type": "list",
+            "items": [
+              "The creature loses its highest level unexpended spell slot, or 10 sorcery points.",
+              "The creature gains a point of exhaustion.",
+              "The creature falls unconscious until it takes any damage or a creature within 5 feet of it uses an action to wake it."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Embitter Heart",
+        "entries": [
+          "One creature the hag can see within 60 feet must make a DC 21 Wisdom saving throw. On a failed save, it takes 22 (4d10) psychic damage and becomes hostile to all creatures until the end of its next turn."
+        ]
+      },
+      {
+        "name": "Corpsehatch (3rd Level Spell)",
+        "entries": [
+          "One Medium or larger corpse the hag can see within 60 feet splits open, birthing forth a Swarm of Abyssal Chickens that acts on initiative count 0 and is hostile to all creatures."
+        ]
+      },
+      {
+        "name": "Marrowflame Candle (1/Day, 8th Level Spell)",
+        "entries": [
+          "One creature the hag can see within 60 feet of her must make a DC 21 Charisma saving throw. On a failed save, the target is cursed. While cursed in this way, whenever the target takes any amount of fire damage, it begins burning (1d10) or has its burning value increased by 1d10 if it was already burning.",
+          "Additionally, if the burning condition would end for the creature, it must make a DC 21 Charisma saving throw. On a failed save, the condition does not end."
+        ]
+      },
+      {
+        "name": "Make Low (1/Day, 9th Level Spell)",
+        "entries": [
+          "One creature the hag can see within 60 feet of her must make a DC 21 Charisma saving throw. On a failed save, the target is cursed, shapeshifting into a small and wormlike form.",
+          "While cursed in this way, the target becomes Tiny, its speed and any damage dealt by it is halved, and it has vulnerability to all damage."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Spirit Travel",
+        "entries": [
+          "The hag magically enters the Ethereal Plane from the Material Plane, or vice versa, or teleports to an unoccupied space within 30 feet."
+        ]
+      },
+      {
+        "name": "Spoil Dreams (7th Level Spell)",
+        "entries": [
+          "The hag touches an unconscious creature, forcing it to make a DC 21 Charisma saving throw or become cursed. While cursed in this way, the hag can afflict the creature with her Nightmare Haunting at any distance."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Offer Bargain",
+        "entries": [
+          "When a creature fails a saving throw against an effect the hag controls, she can allow it to choose to succeed. If it does so, it becomes indebted to the hag,"
+        ]
+      },
+      {
+        "name": "Spit Curse",
+        "entries": [
+          "When a creature the hag can see deals damage to her, she can deal 14 (4d6) necrotic damage to that creature."
+        ]
+      }
+    ],
+    "shortName": "the hag",
+    "pronouns": ["she", "her", "hers"],
+    "legendary": [
+      {
+        "name": "Cauldron Dance",
+        "entries": [
+          "The hag and each other allied hag within 30 feet can each move up to half their speed and make an attack."
+        ]
+      },
+      {
+        "name": "Settle Debt",
+        "entries": [
+          "One creature indebted to the hag or to one of the hag's allies is no longer indebted and loses half its current hit points, then the hag or one of her allies within 30 feet regains an equal number of hit points."
+        ]
+      },
+      {
+        "name": "Witch-Lightning",
+        "entries": [
+          "Lightning skitters across the ground, dealing 10 (3d6) lightning damage to each creature cursed by or indebted to the hag within 30 feet of it."
+        ]
+      }
+    ]
+  },
+  {
     "name": "Adult Obsidian Dragon",
     "group": ["Gem Dragon"],
     "size": "Huge",
@@ -9834,86 +11626,6 @@
     ]
   },
   {
-    "name": "Annis Hag",
-    "size": "Large",
-    "type": { "fey": { "unseelie": { "hag": {} } } },
-    "alignment": ["C", "E"],
-    "ac": [{ "ac": 17, "from": ["natural armor"] }],
-    "hp": { "average": 120, "formula": "16d8 + 48" },
-    "speed": { "walk": 40 },
-    "str": 21,
-    "dex": 12,
-    "con": 14,
-    "int": 14,
-    "wis": 13,
-    "cha": 15,
-    "save": { "con": "+5" },
-    "skill": { "deception": "+5", "perception": "+5", "stealth": "+4" },
-    "senses": ["darkvision 60 ft."],
-    "passive": 15,
-    "resist": ["cold", "piercing and slashing damage from nonmagical sources"],
-    "languages": ["Common", "Jiganti", "Sylvan"],
-    "cr": 6,
-    "trait": [
-      {
-        "name": "Fey Magic Resistance",
-        "entries": [
-          "The hag has advantage on saving throws against spells and magical effects imposed by a creature that does not know its name."
-        ],
-        "sort": 0
-      },
-      {
-        "name": "Skinktaker Mimicry",
-        "entries": [
-          "The hag can mimic the voice or appearance of any humanoid it has skinned. A creature can discern the nature of these illusions with a successful DC 13 Wisdom (Insight) check."
-        ],
-        "sort": 1
-      },
-      {
-        "name": "Corruptor Coven",
-        "entries": [
-          "Children within 10 miles of a coven of annis hags are slowly incited to misbehave in ever-escalating ways, up to and including things like destruction of food stores, killing pets and livestock, arson, and even murder.",
-          "Additionally, a fog settles in the area that never lifts. Creatures other than the annis hag in the area are blind beyond a 30 ft. radius."
-        ],
-        "sort": 2
-      }
-    ],
-    "action": [
-      {
-        "name": "Multiattack",
-        "entries": [
-          "The annis makes three attacks: one with her teeth of iron and two with her corkscrew claws."
-        ]
-      },
-      {
-        "name": "Teeth of Iron",
-        "entries": [
-          "<em>Melee Weapon Attack.</em> +8 to hit, reach 5 ft., one target. <em>Hit:</em> 12 (2d6 + 5) slashing damage. This attack deals an additional 7 (2d6) damage against a prone creature."
-        ]
-      },
-      {
-        "name": "Corkscrew Claws",
-        "entries": [
-          "<em>Melee Weapon Attack.</em> +8 to hit, reach 5 ft., one target. <em>Hit:</em> 13 (2d8 + 5) slashing damage and the hag may grapple the target (escape DC 16). While the hag has a creature grappled in this way, it cannot use its multiattack."
-        ]
-      },
-      {
-        "name": "Crushing Hug",
-        "entries": [
-          "One creature grappled by the hag must make a DC 16 Constitution saving throw. On a failed save, the creature takes 39 (6d12) bludgeoning damage, falls prone, and cannot stand on its following turn. A creature that fails this save by 5 or more cannot stand until it completes a short or long rest. On a successful save, a creature takes half as much damage."
-        ]
-      }
-    ],
-    "reaction": [
-      {
-        "name": "Grisly Display",
-        "entries": [
-          "As a reaction when the hag kills a creature with a melee attack, the hag rips the creature's skin off in a single piece. Each creature that can see the display must succeed on a DC 13 Wisdom save or be frightened until the end of its next turn. While frightened in this way, a creature uses its movement and action to dash in a random direction."
-        ]
-      }
-    ]
-  },
-  {
     "name": "Anvilwrought Raptor",
     "size": "Diminutive",
     "type": { "construct": {} },
@@ -14028,91 +15740,6 @@
         "name": "Greataxe",
         "entries": [
           "<em>Melee Weapon Attack.</em> +5 to hit, reach 5 ft., one target. <em>Hit:</em> 9 (1d12 + 3) slashing damage."
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Bheur Hag",
-    "size": "Medium",
-    "type": { "fey": { "unseelie": { "hag": {} } } },
-    "alignment": ["C", "E"],
-    "ac": [{ "ac": 17, "from": ["natural armor"] }],
-    "hp": { "average": 136, "formula": "16d8 + 64" },
-    "speed": { "walk": 30 },
-    "str": 13,
-    "dex": 16,
-    "con": 19,
-    "int": 12,
-    "wis": 13,
-    "cha": 16,
-    "save": { "wis": "+4" },
-    "skill": {
-      "nature": "+4",
-      "perception": "+4",
-      "stealth": "+6",
-      "survival": "+4"
-    },
-    "senses": ["darkvision 60 ft."],
-    "passive": 14,
-    "immune": ["cold"],
-    "languages": ["Aquan", "Common", "Jotunise"],
-    "cr": 7,
-    "trait": [
-      {
-        "name": "Graystaff Magic",
-        "entries": [
-          "The hag carries a graystaff, a length of gray wood that is a focus for her inner power. She can ride the staff as if it were a broom of flying. If the staff is lost or destroyed, the hag cannot use its rime burst and must craft another, which takes a year and a day. Only a bheur hag can use a graystaff."
-        ],
-        "sort": 0
-      },
-      {
-        "name": "Ice Walk",
-        "entries": [
-          "The hag can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost her extra moment."
-        ],
-        "sort": 1
-      },
-      {
-        "name": "Sapping Cold",
-        "entries": [
-          "Each time a creature hits the bheur hag with a melee attack, it must expend one unexpended hit die. If it cannot, it must succeed on a DC 14 Wisdom saving throw or be frightened until the end its next turn."
-        ],
-        "sort": 2
-      },
-      {
-        "name": "Wintergiver Coven",
-        "entries": [
-          "The area within 50 miles of a coven of bheur hags drops 1 degree every hour until it reaches 10 degrees below the lowest natural winter temperature of the area. Creatures in the area without cold resistance or immunity subtract 1d4 from the result of saving throws they make."
-        ],
-        "sort": 3
-      }
-    ],
-    "action": [
-      {
-        "name": "Rime Burst (Greystaff only)",
-        "entries": [
-          "The hag sends forth an icy blast in a 30-foot cone. Each creature in that area must make a DC 14 Constitution saving throw, taking 18 (4d8) cold damage on a failed save, or half as much damage on a successful one. The area becomes difficult terrain, and a creatue that starts its turn in it or enters the area for the first time on a turn must succeed on a DC 14 Dexterity saving throw or fall prone."
-        ]
-      },
-      {
-        "name": "Maddening Feast",
-        "entries": [
-          "<em>Melee Weapon Attack.</em> +6 to hit, reach 5ft., one incacitated or dead target. <em>Hit:</em> 12 (2d8 + 3) piercing damage and 36 (8d8) cold damage. Each creature of the hag's choice that can see it must succeed on a DC 14 Wisdom saving throw or be frightened for a minute. A frightened creature repeats this save at the end of each of its turns, ending the effect on a success."
-        ]
-      },
-      {
-        "name": "Curse of Paranoia",
-        "entries": [
-          "One frightened creature within 30 ft. must succeed on a DC 14 Charisma saving throw or be cursed. A cursed creature cannot target friendly creatures with spells. If the cursed creature is targeted with a spell by a friendly creature, it must succeed on a Wisdom saving throw or be unaffected by the spell."
-        ]
-      }
-    ],
-    "reaction": [
-      {
-        "name": "Feed on Greed",
-        "entries": [
-          "As a reaction to a creature within 60 ft. targeting itself with a spell, the bhuer hag changes the spell's target to itself."
         ]
       }
     ]
@@ -41746,103 +43373,6 @@
     ]
   },
   {
-    "name": "Green Hag",
-    "size": "Medium",
-    "type": { "fey": { "unseelie": { "hag": {} } } },
-    "alignment": ["C", "E"],
-    "ac": [{ "ac": 17, "from": ["natural armor"] }],
-    "hp": { "average": 82, "formula": "11d8 + 33" },
-    "speed": { "walk": 30, "swim": 30 },
-    "str": 18,
-    "dex": 12,
-    "con": 16,
-    "int": 13,
-    "wis": 16,
-    "cha": 14,
-    "skill": {
-      "deception": "+7",
-      "insight": "+6",
-      "perception": "+6",
-      "stealth": "+6"
-    },
-    "senses": ["darkvision 60 ft."],
-    "passive": 14,
-    "languages": ["Common", "Draconic", "Sylvan"],
-    "cr": 3,
-    "trait": [
-      {
-        "name": "Fey Magic Resistance",
-        "entries": [
-          "The hag has advantage on saving throws against spells and magical effects imposed by a creature that does not know its name."
-        ],
-        "sort": 0
-      },
-      {
-        "name": "Swampwalk",
-        "entries": [
-          "The hag is unaffected by difficult terrain caused by swampy terrain or vegetation."
-        ],
-        "sort": 1
-      },
-      {
-        "name": "Illusory Mimicry",
-        "entries": [
-          "The hag can mimic the voice or appearance of any animal or humanoid it has killed. A creature can discern the nature of these illusions with a successful DC 14 Wisdom (Insight) check."
-        ],
-        "sort": 2
-      },
-      {
-        "name": "Glimmer of Hope",
-        "entries": [
-          "Whenever one or more creatures the hag can see within 30 ft. succeed on a saving throw against a spell the hag controls, the hag gains 5 (1d10) temporary hit points."
-        ],
-        "sort": 3
-      },
-      {
-        "name": "Earthdrinker Coven",
-        "entries": [
-          "The earth within 10 miles of a coven of green hags gradually softens and becomes waterlogged over the course of a week. The roots of food crops begin to rot away, livestock sicken, and the area becomes difficult terrain."
-        ],
-        "sort": 4
-      }
-    ],
-    "action": [
-      {
-        "name": "Swampgift Claw",
-        "entries": [
-          "<em>Melee Weapon Attack.</em> +6 to hit, reach 5 ft., one target. <em>Hit:</em> 13 (2d8 + 4) slashing damage and the creature must succeed on a DC 13 Charisma saving throw or be cursed.",
-          "While cursed, a creature glows with a pale blue light, attracts biting insects, and swamp-dwelling creatures have advantage on attack rolls against the cursed creature."
-        ]
-      },
-      {
-        "name": "Hurl to Earth",
-        "entries": [
-          "One creature within 60 ft. must succeed on a DC 13 Charisma saving throw or be teleported 60 ft. in the air and knocked prone."
-        ]
-      },
-      {
-        "name": "Grasping Muck",
-        "entries": [
-          "One creature within 60 ft. must succeed on a DC 13 Strength saving throw or be restrained (escape DC 13) as it begins to sink into the earth. A prone creature has disadvantage on this saving throw."
-        ]
-      },
-      {
-        "name": "Stagnant Miasma (Recharge 5-6)",
-        "entries": [
-          "The ground in a 10 ft. radius within 60 ft. begins to bubble, exuding a cloud of toxic gas that remains for a minute, or until cleared with a strong breeze. A creature that starts its turn in the cloud must succeed on a DC 13 Constitution saving throw or take 13 (3d8) poison damage."
-        ]
-      }
-    ],
-    "reaction": [
-      {
-        "name": "Hope to Despair",
-        "entries": [
-          "When a creature that the hag can see within 30 ft. makes a saving throw against a spell the hag (or a member of her coven) cast, she may expend all temporary hit points from her Glimmer of Hope ability and subtract the number expended from the creature's saving throw."
-        ]
-      }
-    ]
-  },
-  {
     "name": "Green Slaad",
     "size": "Large",
     "type": { "aberration": { "slaadi": {} } },
@@ -55574,114 +57104,6 @@
     ]
   },
   {
-    "name": "Night Hag",
-    "size": "Medium",
-    "type": { "fey": { "unseelie": { "hag": {} } } },
-    "alignment": ["N", "E"],
-    "ac": [{ "ac": 17, "from": ["natural armor"] }],
-    "hp": { "average": 112, "formula": "15d8 + 45" },
-    "speed": { "walk": 30 },
-    "str": 18,
-    "dex": 12,
-    "con": 16,
-    "int": 13,
-    "wis": 16,
-    "cha": 14,
-    "skill": {
-      "arcana": "+3",
-      "deception": "+4",
-      "perception": "+4",
-      "stealth": "+3"
-    },
-    "senses": ["darksight 120 ft."],
-    "passive": 16,
-    "resist": [
-      "cold",
-      "fire",
-      "bludgeoning, piercing, and slashing damage from nonmagical sources"
-    ],
-    "conditionImmune": ["charmed"],
-    "languages": ["Abyssal", "Common", "Infernal", "Primordial"],
-    "cr": 5,
-    "trait": [
-      {
-        "name": "Magic Resistance",
-        "entries": [
-          "The hag has advantage on saving throws against spells and magical effects."
-        ],
-        "sort": 0
-      },
-      {
-        "name": "Illusory Mimicry",
-        "entries": [
-          "The hag can mimic the voice or appearance of any animal or humanoid it knows the name of. A creature can discern the nature of these illusions with a successful DC 14 Wisdom (Insight) check."
-        ],
-        "sort": 1
-      },
-      {
-        "name": "Debt Keeper",
-        "entries": [
-          "A creature that is indebted to the hag is psychically connected to it. The hag can telepathically communicate with it over any distance and can choose to perceive through its senses. Once per day, the hag can force an indebted creature to reroll an attack, ability check, or saving throw, taking the second result."
-        ],
-        "sort": 2
-      },
-      {
-        "name": "Soultaker Coven",
-        "entries": [
-          "Humanoid creatures within 100 miles of a coven of night hags feel drawn to the coven's location in times of desperation. While part of a coven, the hag's hellish portal does not close when a creature falls into it."
-        ],
-        "sort": 3
-      }
-    ],
-    "action": [
-      {
-        "name": "Multiattack",
-        "entries": ["The hag makes two melee attacks."]
-      },
-      {
-        "name": "Fiendish Claw",
-        "entries": [
-          "<em>Melee Weapon Attack.</em> +7 to hit, reach 5 ft., one target. <em>Hit:</em> 13 (2d8 + 4) slashing damage and the target is grappled (escape DC 15). While grappled in this way, the creature has disadvantage on Dexterity saving throws."
-        ]
-      },
-      {
-        "name": "Hellish Portal (Recharge 5-6)",
-        "entries": [
-          "The hag opens a rift to a hellish demplane, 10 ft. long and 5 ft. wide, on a surface within 60 ft. A creature standing in the rift's space when it appears or that enters it must succeed on a DC 14 Dexterity saving throw or fall prone in an unoccupied space adjacent to the rift. A creature that fails this save by 5 or more falls in. If one or more creatures fall into the rift, the rift closes.",
-          "A creature that falls into the rift takes 21 (6d6) psychic damage, 21 (6d6) fire damage, and ages 21 (6d6) years, and is incapacitated until the beginning of its next turn, when it reappears in the space it left. The aging Effect can be reversed with a Greater Restoration spell."
-        ]
-      },
-      {
-        "name": "Etherealness",
-        "entries": [
-          "The hag magically enters the Ethereal Plane from the Material Plane, or vice versa. To do so, the hag must have a heartstone in her possession."
-        ]
-      },
-      {
-        "name": "Nightmare Haunting (1/Day)",
-        "entries": [
-          "While on the Ethereal Plane, the hag magically touches a sleeping humanoid on the Material Plane, afflicting it with dreadful nightmares. If this contact persists for an hour, the creature must succeed on a DC 14 Wisdom saving throw or gain no benefit from its rest, and its hit point maximum is reduced by 5 (1d10).",
-          "If this effect reduces the target's hit point maximum to 0, the target dies, and if the target was indebted to the hag, its soul is trapped in the hag's soul bag. The reduction to the target's hit point maximum lasts until removed by the greater restoration spell or similar magic.",
-          "A creature that is wearing a silver protective talsiman, or one that has had a Protection From Good And Evil spell cast on it in the last 8 hours makes this save at advantage. A creature that succeeds on this saving throw by 5 or more awakes, dragging the hag into the waking world with it. The hag appears in an unoccupied space within 5 feet of the target, and cannot use its Etherealness ability for the next minute."
-        ]
-      }
-    ],
-    "reaction": [
-      {
-        "name": "Offer Bargain",
-        "entries": [
-          "As a reaction to a creature it can see  failing a saving throw, the hag grants it the ability to choose to succeed instead. A creature that does is Indebted to the hag."
-        ]
-      },
-      {
-        "name": "True Magic (1/Day)",
-        "entries": [
-          "As a reaction to a creature it can see wihthin 60 ft. casting a spell, the hag disrupts the magic. The spell fails, and the spell caster takes 5 (1d10) force damage per level of the spell and must succeed on a DC 14 Constitution saving throw or be stunned."
-        ]
-      }
-    ]
-  },
-  {
     "name": "Nightmare Beast",
     "size": "Gargantuan",
     "type": { "aberration": {} },
@@ -62808,85 +64230,6 @@
         "name": "Spear",
         "entries": [
           "<em>Melee or Ranged Weapon Attack.</em> +2 to hit, reach 5 ft. or range 20/60 ft., one target. <em>Hit:</em> 3 (1d6) piercing damage, or 4 (1d8) piercing damage if used with two hands to make a melee attack."
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Sea Hag",
-    "size": "Medium",
-    "type": { "fey": { "unseelie": { "hag": {} } } },
-    "alignment": ["C", "E"],
-    "ac": [{ "ac": 14, "from": ["natural armor"] }],
-    "hp": { "average": 105, "formula": "14d8 + 42" },
-    "speed": { "walk": 30, "swim": 40 },
-    "str": 16,
-    "dex": 13,
-    "con": 16,
-    "int": 12,
-    "wis": 12,
-    "cha": 13,
-    "skill": { "deception": "+3", "insight": "+3", "stealth": "+5" },
-    "senses": ["darkvision 60 ft."],
-    "passive": 11,
-    "languages": ["Aquan", "Common", "Jiganti"],
-    "cr": 2,
-    "trait": [
-      {
-        "name": "Fey Magic Resistance",
-        "entries": [
-          "The hag has advantage on saving throws against spells and magical effects imposed by a creature that does not know its name."
-        ],
-        "sort": 0
-      },
-      {
-        "name": "Elusive",
-        "entries": [
-          "The hag may Disengage or Hide as a Bonus Action while submerged in water."
-        ],
-        "sort": 1
-      },
-      {
-        "name": "Illusory Mimicry",
-        "entries": [
-          "The hag can perfectly mimic the voice or appearance of any animal or humanoid affected by its Steal Voice."
-        ],
-        "sort": 2
-      },
-      {
-        "name": "Shipbreaker Coven",
-        "entries": [
-          "The sea within 10 miles of a coven of sea hags is filled with dangerous riptides, jagged reefs, and vicious storms that raise with little warning. Creatures on a ship or shore have disadvantage on ability checks made to spot or assess these dangers."
-        ],
-        "sort": 3
-      }
-    ],
-    "action": [
-      {
-        "name": "Rotflesh Claw",
-        "entries": [
-          "<em>Melee Weapon Attack.</em> +5 to hit, reach 5 ft., one target. <em>Hit:</em> 12 (2d8 + 3) slashing damage and an illusory corruption begins to spread rapidly from the wound, giving the appearance of rotting, waterlogged flesh.",
-          "The creature must succeed on a DC 11 Wisdom saving throw or be frightened until the end of the hag's next turn."
-        ]
-      },
-      {
-        "name": "Stolen Spell (Coven Only)",
-        "entries": [
-          "The sea hag casts a spell of third level or below known by a creature affected by its steal voice, using the creature's spell slots."
-        ]
-      },
-      {
-        "name": "Steal Voice (Concentration, Recharge 5-6)",
-        "entries": [
-          "One creature within 30 ft. of the hag must succeed on a DC 11 Charisma saving throw or be unable to speak. If a creature fails this saving throw voluntarily, the hag does not require concentration to maintain the effect."
-        ]
-      }
-    ],
-    "reaction": [
-      {
-        "name": "Courage to Dread",
-        "entries": [
-          "As a reaction to a creature succeeding on a saving throw against its rotflesh claw, the hag makes the illusion real, dealing 9 (2d8) necrotic damage to the creature."
         ]
       }
     ]
@@ -126150,567 +127493,6 @@
         "name": "Take Flight",
         "entries": [
           "As a reaction to taking damage from a melee attack, the aarakocra moves up to half its fly speed without provoking attacks of opportunity."
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Grandmother Sea Hag",
-    "size": "Medium",
-    "type": { "fey": { "unseelie": { "hag": {} } } },
-    "alignment": ["C", "E"],
-    "ac": [{ "ac": 15, "from": ["natural armor"] }],
-    "hp": { "average": 178, "formula": "21d8 + 84" },
-    "speed": { "walk": 30, "swim": 40 },
-    "str": 19,
-    "dex": 15,
-    "con": 18,
-    "int": 15,
-    "wis": 13,
-    "cha": 18,
-    "skill": {
-      "deception": "+7",
-      "insight": "+4",
-      "perception": "+4",
-      "stealth": "+8"
-    },
-    "senses": ["darkvision 120 ft."],
-    "passive": 14,
-    "resist": [
-      "bludgeoning, piercing, and slashing damage from nonmagical sources"
-    ],
-    "languages": ["Aquan", "Common", "Jiganti"],
-    "cr": 7,
-    "trait": [
-      {
-        "name": "Fey Magic Resistance",
-        "entries": [
-          "The hag has advantage on saving throws against spells and magical effects imposed by a creature that does not know its name."
-        ],
-        "sort": 0
-      },
-      {
-        "name": "Elusive",
-        "entries": [
-          "The hag may Disengage or Hide as a Bonus Action while submerged in water."
-        ],
-        "sort": 1
-      },
-      {
-        "name": "Illusory Mimicry",
-        "entries": [
-          "The hag can perfectly mimic the voice or appearance of any animal or humanoid affected by its Steal Voice."
-        ],
-        "sort": 2
-      },
-      {
-        "name": "Shipbreaker Coven",
-        "entries": [
-          "The sea within 10 miles of a coven of sea hags is filled with dangerous riptides, jagged reefs, and vicious storms that raise with little warning. Creatures on a ship or shore have disadvantage on ability checks made to spot or assess these dangers."
-        ],
-        "sort": 3
-      }
-    ],
-    "action": [
-      {
-        "name": "Multiattack",
-        "entries": [
-          "The hag makes two attacks with her rotflesh claw, one of which she may replace with a use of her sargassum grasp."
-        ]
-      },
-      {
-        "name": "Rotflesh Claw",
-        "entries": [
-          "<em>Melee Weapon Attack.</em> +7 to hit, reach 5 ft., one target. <em>Hit:</em> 13 (2d8 + 4) slashing damage and an illusory corruption begins to spread rapidly from the wound, giving the appearance of rotting, waterlogged flesh.",
-          "The creature must succeed on a DC 15 Wisdom saving throw or be frightened until the end of the hag's next turn."
-        ]
-      },
-      {
-        "name": "Sargassum Grasp",
-        "entries": [
-          "One creature the hag can see within 30 ft. must succeed on a DC 15 Strength saving throw or be blinded and restrained (escape DC 15) as seaweed cocoons it. While restrained in this way, a creature sinks 15 ft. at the beginning of each of its turns.",
-          "The seaweed can also be attacked and destroyed (AC 10; HP 15; immunity to bludgeoning and psychic damage)."
-        ]
-      },
-      {
-        "name": "Stolen Spell",
-        "entries": [
-          "The sea hag casts a spell known by a creature affected by its steal voice, using the creature's spell slots."
-        ]
-      },
-      {
-        "name": "Steal Voice (Concentration)",
-        "entries": [
-          "One creature within 30 ft. of the hag must succeed on a DC 15 Charisma saving throw or be unable to speak. If a creature fails this saving throw voluntarily, the hag does not require concentration to maintain the effect."
-        ]
-      }
-    ],
-    "reaction": [
-      {
-        "name": "Courage to Dread",
-        "entries": [
-          "As a reaction to a creature succeeding on a saving throw against its rotflesh claw, the hag makes the illusion real, dealing 27 (6d8) necrotic damage to the creature. A creature reduced to 0 hit points by this damage immediately fails a death saving throw."
-        ]
-      },
-      {
-        "name": "Death Gaze (1/Day)",
-        "entries": [
-          "As a reaction to being reduced below 90 hit points, the hag attempts to send a creature into a delirious panic. The creature must make a DC 15 Wisdom saving throw. A frightened creature makes the initial saving throw at disadvatage.",
-          "A creature that fails this saving throw is frightened and stunned for the next minute, and repeats this saving throw at the end of each of its turns, ending the effect on a success. A creature that fails this saving throw by 5 or more drops to 0 hit points."
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Grandmother Night Hag",
-    "size": "Medium",
-    "type": { "fey": { "unseelie": { "hag": {} } } },
-    "alignment": ["N", "E"],
-    "ac": [{ "ac": 18, "from": ["natural armor"] }],
-    "hp": { "average": 231, "formula": "22d12 + 88" },
-    "speed": { "walk": 40 },
-    "str": 23,
-    "dex": 13,
-    "con": 19,
-    "int": 18,
-    "wis": 17,
-    "cha": 20,
-    "save": { "con": "+9", "wis": "+8", "cha": "+10" },
-    "skill": {
-      "arcana": "+9",
-      "deception": "+15",
-      "perception": "+9",
-      "stealth": "+6"
-    },
-    "senses": ["darksight 120 ft."],
-    "passive": 19,
-    "resist": [
-      "cold",
-      "fire",
-      "bludgeoning, piercing, and slashing damage from nonmagical sources"
-    ],
-    "conditionImmune": ["charmed", "exhaustion", "frightened", "poisoned"],
-    "languages": ["Abyssal", "Common", "Infernal", "Primordial"],
-    "cr": 13,
-    "trait": [
-      {
-        "name": "Magic Resistance",
-        "entries": [
-          "The hag has advantage on saving throws against spells and magical effects."
-        ],
-        "sort": 0
-      },
-      {
-        "name": "Illusory Mimicry",
-        "entries": [
-          "The hag can mimic the voice or appearance of any animal or humanoid it knows the name of. A creature can discern the nature of this illusion with a successful DC 18 Wisdom (Insight) check."
-        ],
-        "sort": 1
-      },
-      {
-        "name": "Debt Keeper",
-        "entries": [
-          "A creature that is indebted to the hag is psychically connected to it. The hag can telepathically communicate with it over any distance and can choose to perceive through its senses. Once per day, the hag can force an indebted creature to reroll an attack, ability check, or saving throw, taking the second result."
-        ],
-        "sort": 2
-      },
-      {
-        "name": "Soultaker Coven",
-        "entries": [
-          "Humanoid creatures within 100 miles of a coven of night hags feel drawn to the coven's location in times of desperation. While part of a coven, the hag's hellish portal does not close when a creature falls into it."
-        ],
-        "sort": 3
-      },
-      {
-        "name": "Soporific Gaze",
-        "entries": [
-          "When a creature that can see the hag's eyes starts its turn within 30 feet of the hag, the hag can force it to succeed on a DC 18 Wisdom saving throw or fall asleep until it takes any damage, or until another creature uses its action to wake it. A creature that succeeds on this saving throw is immune to the effect for the next 24 hours.",
-          "Unless surprised, a creature can avert its eyes to avoid the  saving throw at the start of its turn. If the creature does so, it can't see the hag until the start of its next turn, when it can avert its eyes again."
-        ],
-        "sort": 4
-      },
-      {
-        "name": "Legendary Soultaker (3/Day)",
-        "entries": [
-          "If the hag fails a saving throw, it can choose to release one of the souls it has trapped in its soul bag. If it does, it succeeds instead."
-        ],
-        "sort": 5
-      }
-    ],
-    "action": [
-      {
-        "name": "Multiattack",
-        "entries": ["The hag makes two melee attacks."]
-      },
-      {
-        "name": "Fiendish Claw",
-        "entries": [
-          "<em>Melee Weapon Attack.</em> +10 to hit, reach 5 ft., one target. <em>Hit:</em> 18 (3d8 + 5) slashing damage and the target is grappled (escape DC 18). While grappled in this way, the creature has disadvantage on Dexterity saving throws."
-        ]
-      },
-      {
-        "name": "Hellish Portal (Recharge 5-6)",
-        "entries": [
-          "The hag opens a rift to a hellish demplane, 10 ft. long and 5 ft. wide, on a surface within 60 ft. A creature standing in the rift's space when it appears or that enters it must succeed on a DC 14 Dextery saving throw or fall prone in an unoccupied space adjacent to the rift. A creature that fails this save by 5 or more falls in. If one or more creatures fall into the rift, the rift closes.",
-          "A creature that falls into the rift takes 31 (9d6) psychic damage, 31 (9d6) fire damage, and ages 31 (9d6) years, and is incapacitated until the beginning of its next turn, when it reappears in the space it left. The aging Effect can be reversed with a Greater Restoration spell."
-        ]
-      },
-      {
-        "name": "Etherealness",
-        "entries": [
-          "The hag magically enters the Ethereal Plane from the Material Plane, or vice versa."
-        ]
-      },
-      {
-        "name": "Nightmare Haunting (1/Day)",
-        "entries": [
-          "While on the Ethereal Plane, the hag magically touches a sleeping humanoid on the Material Plane, afflicting it with dreadful nightmares. If this contact persists for an hour, the creature must succeed on a DC 18 Wisdom saving throw or gain no benefit from its rest, and its hit point maximum is reduced by 10 (2d10).",
-          "If this effect reduces the target's hit point maximum to 0, the target dies, and if the target was indebted to the hag, its soul is trapped in the hag's soul bag. The reduction to the target's hit point maximum lasts until removed by the greater restoration spell or similar magic.",
-          "A creature that is wearing a silver protective talsiman, or one that has had a Protection From Good And Evil spell cast on it in the last 8 hours makes this save at advantage. A creature that succeeds on this saving throw by 5 or more awakes, dragging the hag into the waking world with it. The hag appears in an unoccupied space within 5 feet of the target, and cannot use its Etherealness ability for the next minute."
-        ]
-      }
-    ],
-    "reaction": [
-      {
-        "name": "Offer Bargain",
-        "entries": [
-          "As a reaction to a creature it can see  failing a saving throw, the hag grants it the ability to choose to succeed instead. A creature that does is Indebted to the hag."
-        ]
-      },
-      {
-        "name": "True Magic",
-        "entries": [
-          "As a reaction to a creature it can see wihthin 60 ft. casting a spell, the hag disrupts the magic. The spell fails, and the spell caster takes 5 (1d10) force damage per level of the spell and must succeed on a DC 18 Constitution saving throw or be stunned."
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Grandmother Green Hag",
-    "size": "Medium",
-    "type": { "fey": { "unseelie": { "hag": {} } } },
-    "alignment": ["C", "E"],
-    "ac": [{ "ac": 17, "from": ["natural armor"] }],
-    "hp": { "average": 133, "formula": "14d8 + 70" },
-    "speed": {
-      "walk": 30,
-      "climb": { "number": 30, "condition": "swim 30 ft." }
-    },
-    "str": 21,
-    "dex": 14,
-    "con": 21,
-    "int": 16,
-    "wis": 18,
-    "cha": 15,
-    "save": { "con": "+8", "wis": "+7", "cha": "+5" },
-    "skill": {
-      "arcana": "+6",
-      "deception": "+8",
-      "perception": "+7",
-      "stealth": "+5"
-    },
-    "senses": ["darkvision 60 ft."],
-    "passive": 14,
-    "resist": [
-      "bludgeoning, piercing, and slashing damage from nonmagical sources"
-    ],
-    "immune": ["poison"],
-    "languages": ["Common", "Draconic", "Sylvan"],
-    "cr": 7,
-    "trait": [
-      {
-        "name": "Fey Magic Resistance",
-        "entries": [
-          "The hag has advantage on saving throws against spells and magical effects imposed by a creature that does not know its name."
-        ],
-        "sort": 0
-      },
-      {
-        "name": "Swampwalk",
-        "entries": [
-          "The hag is unaffected by difficult terrain caused by swampy terrain or vegetation."
-        ],
-        "sort": 1
-      },
-      {
-        "name": "Illusory Mimicry",
-        "entries": [
-          "The hag can mimic the voice or appearance of any animal or humanoid it has killed. A creature can discern the nature of these illusions with a successful DC 16 Wisdom (Insight) check."
-        ],
-        "sort": 2
-      },
-      {
-        "name": "Glimmer of Hope",
-        "entries": [
-          "Whenever one or more creatures the hag can see within 30 ft. succeed on a saving throw against a spell the hag controls, the hag gains 11 (2d10) temporary hit points."
-        ],
-        "sort": 3
-      },
-      {
-        "name": "Earthdrinker Coven",
-        "entries": [
-          "The earth within 10 miles of a coven of green hags gradually softens and becomes waterlogged over the course of a week. The roots of food crops begin to rot away, livestock sicken, and the area becomes difficult terrain."
-        ],
-        "sort": 4
-      }
-    ],
-    "action": [
-      {
-        "name": "Multiattack",
-        "entries": [
-          "The hag makes two melee attacks, one of which she may replace with either her Hurl to Earth or her Grasping Muck."
-        ]
-      },
-      {
-        "name": "Swampgift Claw",
-        "entries": [
-          "<em>Melee Weapon Attack.</em> +6 to hit, reach 5 ft., one target. <em>Hit:</em> 18 (3d8 + 5) slashing damage and the creature must succeed on a DC 15 Charisma saving throw or be cursed.",
-          "While cursed, a creature glows with a pale blue light, attracts biting insects, and swamp-dwelling creatures have advantage on attack rolls against the cursed creature."
-        ]
-      },
-      {
-        "name": "Hurl to Earth",
-        "entries": [
-          "One creature within 60 ft. must succeed on a DC 15 Charisma saving throw or be teleported 60 ft. in the air and knocked prone."
-        ]
-      },
-      {
-        "name": "Grasping Muck",
-        "entries": [
-          "One creature within 60 ft. must succeed on a DC 15 Strength saving throw or be restrained (escape DC 15) as it begins to sink into the earth. A prone creature has disadvantage on this saving throw. A creature already affected by this ability is additionally blinded and unable to speak or breathe as it sinks fully beneath the surface."
-        ]
-      },
-      {
-        "name": "Stagnant Miasma (Recharge 5-6)",
-        "entries": [
-          "The ground in a 10 ft. radius within 60 ft. begins to bubble, exuding a cloud of toxic gas that remains for a minute, or until cleared with a strong breeze. A creature that starts its turn in the cloud must succeed on a DC 15 Constitution saving throw or take 22 (5d8) poison damage."
-        ]
-      },
-      {
-        "name": "Invisible Passage (Concentration)",
-        "entries": [
-          "The hag magically turns invisible until she attacks or casts a spell. While invisible, she leaves no physical evidence of her passage, so she can be tracked only by magic."
-        ]
-      }
-    ],
-    "reaction": [
-      {
-        "name": "Poisoned Cup",
-        "entries": [
-          "As a reaction to a creature she can see within 30 ft. receiving a source of magical healing, the hag fouls the magic. The creature receives no healing and instead takes an equal amount of necrotic damage."
-        ]
-      },
-      {
-        "name": "Hope to Despair",
-        "entries": [
-          "When a creature that the hag can see within 30 ft. makes a saving throw against a spell the hag (or a member of her coven) cast, she may expend all temporary hit points from her Glimmer of Hope ability and subtract the number expended from the creature's saving throw."
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Grandmother Bheur Hag",
-    "size": "Medium",
-    "type": { "fey": { "unseelie": { "hag": {} } } },
-    "alignment": ["C", "E"],
-    "ac": [{ "ac": 18, "from": ["natural armor"] }],
-    "hp": { "average": 231, "formula": "22d10 + 110" },
-    "speed": { "walk": 30 },
-    "str": 16,
-    "dex": 19,
-    "con": 21,
-    "int": 20,
-    "wis": 15,
-    "cha": 19,
-    "save": { "con": "+10", "wis": "+7", "cha": "+9" },
-    "skill": {
-      "nature": "+4",
-      "perception": "+4",
-      "stealth": "+6",
-      "survival": "+4"
-    },
-    "senses": ["darkvision 60 ft."],
-    "passive": 14,
-    "resist": [
-      "bludgeoning, piercing, and slashing damage from nonmagical sources"
-    ],
-    "immune": ["cold"],
-    "languages": ["Aquan", "Common", "Jotunise"],
-    "cr": 12,
-    "trait": [
-      {
-        "name": "Graystaff Magic",
-        "entries": [
-          "The hag carries a graystaff, a length of gray wood that is a focus for her inner power. She can ride the staff as if it were a broom of flying. If the staff is lost or destroyed, the hag cannot use its rime burst and must craft another, which takes a year and a day. Only a bheur hag can use a graystaff."
-        ],
-        "sort": 0
-      },
-      {
-        "name": "Ice Walk",
-        "entries": [
-          "The hag can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost her extra moment."
-        ],
-        "sort": 1
-      },
-      {
-        "name": "Sapping Cold",
-        "entries": [
-          "Each time a creature hits the bheur hag with a melee attack, it must expend one unexpended hit die. If it cannot, it must succeed on a DC 14 Wisdom saving throw or be frightened until the end its next turn."
-        ],
-        "sort": 2
-      },
-      {
-        "name": "Embrittle",
-        "entries": [
-          "On a roll of 1 with a melee attack agains the hag, a weapon that isn't named shatters in the wielder's hands, dealing 3 (1d6) slashing damage."
-        ],
-        "sort": 3
-      },
-      {
-        "name": "Wintergiver Coven",
-        "entries": [
-          "The area within 50 miles of a coven of bheur hags drops 1 degree every hour until it reaches 10 degrees below the lowest natural winter temperature of the area. Creatures in the area without cold resistance or immunity subtract 1d4 from the result of saving throws they make."
-        ],
-        "sort": 4
-      }
-    ],
-    "action": [
-      {
-        "name": "Multiattack",
-        "entries": [
-          "The hag uses its Rime Burst or Maddening Feast. Then, if one or more creatures within 30 ft. are frightened, it may use its Onset of Desperation or Curse of Paranoia."
-        ]
-      },
-      {
-        "name": "Rime Burst (Greystaff only)",
-        "entries": [
-          "The hag sends forth an icy blast in a 30-foot cone. Each creature in that area must make a DC 17 Constitution saving throw, taking 18 (4d8) cold damage on a failed save, or half as much damage on a successful one. The area becomes difficult terrain, and a creatue that starts its turn in it or enters the area for the first time on a turn must succeed on a DC 14 Dexterity saving throw or fall prone."
-        ]
-      },
-      {
-        "name": "Maddening Feast",
-        "entries": [
-          "<em>Melee Weapon Attack.</em> +9 to hit, reach 5ft., one incacitated or dead target. <em>Hit:</em> 20 (3d10 + 4) piercing damage and 36 (8d8) cold damage. Each creature of the hag's choice that can see it must succeed on a DC 17 Wisdom saving throw or be frightened for a minute. A frightened creature repeats this save at the end of each of its turns, ending the effect on a success."
-        ]
-      },
-      {
-        "name": "Onset of Desperation",
-        "entries": [
-          "One frightened creature within 30 ft. must succeed on a DC 17 Wisdom saving throw or be charmed by the hag for the same duration. While charmed in this way, the creature uses its action to feed on the nearest beast or humanoid corpse it can see within 30 ft., or to attack the nearest living humanoid or beast it can see if there are no corpses in range."
-        ]
-      },
-      {
-        "name": "Curse of Paranoia",
-        "entries": [
-          "Each frightened creature within 30 ft. must succeed on a DC 17 Charisma saving throw or be cursed. A cursed creature cannot target friendly creatures with spells. If the cursed creature is targeted with a spell by a friendly creature, it must succeed on a Wisdom saving throw or be unaffected by the spell."
-        ]
-      }
-    ],
-    "reaction": [
-      {
-        "name": "Feed on Greed",
-        "entries": [
-          "As a reaction to a creature within 60 ft. targeting itself with a spell, the bhuer hag changes the spell's target to itself."
-        ]
-      },
-      {
-        "name": "Chill the Weave",
-        "entries": [
-          "As a reaction to a creature within 60 ft targeting the hag with a spell, the hag forces the caster to expend an additional spell slot of the same or higher level. If it cannot, the hag chooses a new target for the spell."
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Grandmother Annis Hag",
-    "size": "Large",
-    "type": { "fey": { "unseelie": { "hag": {} } } },
-    "alignment": ["C", "E"],
-    "ac": [{ "ac": 18, "from": ["natural armor"] }],
-    "hp": { "average": 168, "formula": "16d12 + 64" },
-    "speed": { "walk": 50 },
-    "str": 25,
-    "dex": 12,
-    "con": 19,
-    "int": 15,
-    "wis": 16,
-    "cha": 17,
-    "save": { "con": "+8", "wis": "+7", "cha": "+7" },
-    "skill": { "deception": "+7", "perception": "+7", "stealth": "+5" },
-    "senses": ["darkvision 60 ft."],
-    "passive": 17,
-    "resist": ["piercing and slashing damage from nonmagical sources"],
-    "immune": ["cold"],
-    "languages": ["Common", "Jiganti", "Sylvan"],
-    "cr": 10,
-    "trait": [
-      {
-        "name": "Fey Magic Resistance",
-        "entries": [
-          "The hag has advantage on saving throws against spells and magical effects imposed by a creature that does not know its name."
-        ],
-        "sort": 0
-      },
-      {
-        "name": "Skinktaker Mimicry",
-        "entries": [
-          "The hag can mimic the voice or appearance of any humanoid it has skinned. A creature can discern the nature of these illusions with a successful DC 15 Wisdom (Insight) check."
-        ],
-        "sort": 1
-      },
-      {
-        "name": "Corruptor Coven",
-        "entries": [
-          "Children within 10 miles of a coven of annis hags are slowly incited to misbehave in ever-escalating ways, up to and including things like destruction of food stores, killing pets and livestock, arson, and even murder.",
-          "Additionally, a fog settles in the area that never lifts. Creatures other than the annis hag in the area are blind beyond a 30 ft. radius."
-        ],
-        "sort": 2
-      },
-      {
-        "name": "Eyes of Black",
-        "entries": [
-          "A creature the hag can see must spend 1 extra foot for every foot it moves away from the hag."
-        ],
-        "sort": 3
-      }
-    ],
-    "action": [
-      {
-        "name": "Multiattack",
-        "entries": [
-          "The annis makes three attacks: one with her teeth of iron and two with her corkscrew claws."
-        ]
-      },
-      {
-        "name": "Teeth of Iron",
-        "entries": [
-          "<em>Melee Weapon Attack.</em> +11 to hit, reach 5 ft., one target. <em>Hit:</em> 17 (3d6 + 7) slashing damage. This attack deals an additional 10 (3d6) damage against a prone creature."
-        ]
-      },
-      {
-        "name": "Corkscrew Claws",
-        "entries": [
-          "<em>Melee Weapon Attack.</em> +11 to hit, reach 5 ft., one target. <em>Hit:</em> 20 (3d8 + 7) slashing damage and the hag may grapple the target (escape DC 19). While the hag has a creature grappled in this way, it cannot use its multiattack."
-        ]
-      },
-      {
-        "name": "Crushing Hug",
-        "entries": [
-          "One creature grappled by the hag must make a DC 19 Constitution saving throw. On a failed save, the creature takes 65 (10d12) bludgeoning damage, falls prone, and cannot stand on its following turn. A creature that fails this save by 5 or more cannot stand until it completes a short or long rest. On a successful save, a creature takes half as much damage."
-        ]
-      }
-    ],
-    "reaction": [
-      {
-        "name": "Grisly Display",
-        "entries": [
-          "As a reaction when the hag kills a creature with a melee attack, the hag rips the creature's skin off in a single piece. Each creature that can see the display must succeed on a DC 15 Wisdom save or be frightened until the end of its next turn. While frightened in this way, a creature uses its movement and action to dash in a random direction."
-        ]
-      },
-      {
-        "name": "Swallow Magic",
-        "entries": [
-          "As a reaction to being targeted with a spell of fifth level or below, the hag snaps at the spell with her iron teeth, disrupting it. On her following turn, the annis hag's attacks are made at advantage and deal force damage, instead of any other type."
         ]
       }
     ]

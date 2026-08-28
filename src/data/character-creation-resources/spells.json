@@ -13509,6 +13509,42 @@
     ]
   },
   {
+    "name": "Briar Twist",
+    "school": "Transmutation",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a looped vine)",
+    "duration": "Instantaneous",
+    "description": [
+      "Vines slither towards a creature within range, wrapping around its legs and pulling it to the ground. The target must make a Dexterity saving throw. On a failed save, it takes 6d6 bludgeoning damage, is dragged up to 30 feet towards you, and is knocked prone."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 4th level or above, the spell's damage increases by 1d6 for each slot level above 3rd."
+    ],
+    "lists": ["Primal", "Elemental"],
+    "element": "Wood",
+    "ritual": 0
+  },
+  {
+    "name": "Cauldron Haze",
+    "school": "Transmutation",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "60 feet (10-foot radius)",
+    "components": "V, S, M (a small iron cauldron worth at least 10 gp)",
+    "duration": "1 round or 10 days",
+    "description": [
+      "Shimmering fumes vent from the ground in a 10-foot radius centered on a point within 60 feet, forcing each creature in the area to make a Constitution saving throw. On a failed save, a creature takes 3d8 poison damage, and suffers one of the following effects at random:",
+      "<ul><li>The creature is incapacitated and shape-shifted into a Tiny toad until the end of its next turn, or until it takes any damage.</li><li>The creature is blinded until the end of its next turn.</li><li>The creature is poisoned until the end of its next turn.</li><li>The creature rolls an effect on the Wild Mutations table, which lasts for 10 days.</li></ul>"
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th."
+    ],
+    "lists": ["Primal", "Occult"],
+    "ritual": 0
+  },
+  {
     "name": "Quagmire Coil",
     "school": "Conjuration",
     "level": 2,
@@ -14994,6 +15030,74 @@
         "type": "piercing"
       }
     ]
+  },
+  {
+    "name": "Sargassum Grasp",
+    "school": "Conjuration",
+    "level": 2,
+    "castingTime": "1 bonus action",
+    "range": "30 feet",
+    "components": "V, S, M (a clump of seaweed)",
+    "duration": "1 round",
+    "description": [
+      "A tangle of seaweed blooms to envelop a submerged creature within range, forcing it to make a Dexterity saving throw. On a failed save, the target is restrained until the end of its next turn and dragged up to 15 feet in a direction of your choice."
+    ],
+    "lists": ["Primal", "Elemental"],
+    "element": "Wood",
+    "ritual": 0,
+    "type": "save",
+    "save": "dex"
+  },
+  {
+    "name": "Bilebrine",
+    "school": "Conjuration",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a vial of foul water)",
+    "duration": "Instantaneous",
+    "description": [
+      "Foul, stinging brine surges over a creature within range, forcing it to make a Constitution saving throw, taking 5d8 acid damage plus 5d8 necrotic damage on a failed save, or half as much on a success.",
+      "A creature reduced to 0 hit points by this damage is infected with Merthirst."
+    ],
+    "lists": ["Primal", "Occult"],
+    "ritual": 0
+  },
+  {
+    "name": "Flesh to Ice",
+    "school": "Transmutation",
+    "level": 5,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a frozen finger)",
+    "duration": "Instantaneous",
+    "description": [
+      "Sapping cold fills the body of a creature you can see within range, forcing it to make a Constitution saving throw. On a failed save, the target takes 8d8 cold damage, or half as much damage on a success.",
+      "A creature reduced to 0 hit points by this damage freezes solid, becoming petrified until it takes any amount of fire damage."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th."
+    ],
+    "lists": ["Primal", "Arcane"],
+    "ritual": 0
+  },
+  {
+    "name": "Tempest Howl",
+    "school": "Conjuration",
+    "level": 8,
+    "castingTime": "1 action",
+    "range": "Self (100-foot radius)",
+    "components": "V, S, M (a icy weathervane)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You shriek forth a terrible blizzard in a 100-foot radius centered on yourself. Creatures other than you treat the area as difficult terrain and heavily obscured.",
+      "At the start of each of your turns while the spell lasts, each creature in the area of your choice takes 4d8 cold damage and is pushed 10 feet in a direction of your choice."
+    ],
+    "higherLevels": [
+      "When you cast this spell using a spell slot of 9th level, the damage increases by 1d8."
+    ],
+    "lists": ["Primal"],
+    "ritual": 0
   },
   {
     "name": "Invocation of the Black Hand",
@@ -22637,6 +22741,53 @@
     "save": "cha"
   },
   {
+    "name": "Mariner's Woe",
+    "school": "Transposition",
+    "curse": true,
+    "level": 8,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a cracked pearl)",
+    "duration": "Concentration, up to 1 hour",
+    "description": [
+      "You call upon the sea to reject a creature within range. The target must make a Charisma saving throw. On a failed save, it is cursed for the duration. While cursed in this way, a creature treats all water as difficult terrain, immediately sinks 25 feet whenever it starts its turn swimming, and can't breathe underwater by any means."
+    ],
+    "lists": ["Primal", "Occult"],
+    "ritual": 0,
+    "type": ["save"],
+    "save": "cha"
+  },
+  {
+    "name": "Bewitching Whispers",
+    "school": "Enchantment",
+    "level": 3,
+    "castingTime": "1 bonus action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": [
+      "You fill the mind of a creature you can see within range with slithering words, forcing it to make a Wisdom saving throw. On a failed save, it chooses one of the following effects:",
+      "<ul><li>The creature moves up to its speed under your control</li><li>The creature makes one attack under your control</li><li>The creature takes a non-attack action under your control</li></ul>"
+    ],
+    "lists": ["Melodic", "Occult"],
+    "ritual": 0
+  },
+  {
+    "name": "Wightling Wyrd",
+    "school": "Enchantment",
+    "level": 7,
+    "castingTime": "1 action",
+    "range": "Self (30-foot radius)",
+    "components": "V, S, M (a child's toy)",
+    "duration": "Concentration, up to 1 minute",
+    "description": [
+      "You weave a strange spell of days gone past. Each creature of your choice within 30 feet must make a Charisma saving throw.",
+      "On a failed save, a creature reverts to a childlike form. It becomes one size smaller, and its attacks and abilities deal minimum damage, instead of rolling. At the end of each of its turns, a creature can repeat its saving throw, ending the effect on itself on a success."
+    ],
+    "lists": ["Occult", "Primal"],
+    "ritual": 0
+  },
+  {
     "name": "Gyre Trap",
     "school": "Evocation",
     "level": 3,
@@ -25419,6 +25570,20 @@
     "save": "wis"
   },
   {
+    "name": "Corpsehatch",
+    "school": "Necromancy",
+    "level": 3,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a rotten egg)",
+    "duration": "Instantaneous",
+    "description": [
+      "One Medium or larger corpse you can see within 60 feet splits open, birthing forth a Swarm of Abyssal Chickens that acts on initiative count 0 and is hostile to all creatures."
+    ],
+    "lists": ["Occult"],
+    "ritual": 0
+  },
+  {
     "name": "Baleful Displacement",
     "school": "Transposition",
     "level": 7,
@@ -25440,6 +25605,24 @@
       "8": "60 feet",
       "9": "90 feet"
     }
+  },
+  {
+    "name": "Spoil Dreams",
+    "curse": true,
+    "school": "Enchantment",
+    "level": 7,
+    "castingTime": "1 bonus action",
+    "range": "Touch",
+    "components": "S",
+    "duration": "Until dispelled",
+    "description": [
+      "You touch one unconscious creature, forcing it to make a Charisma saving throw or become cursed.",
+      "While cursed in this way, whenever the creature completes a long rest, it must make a Wisdom saving throw. On a failed save, it gains no benefit from its rest and its hit point maximum is reduced by 1d10. A target that dies in this way has its soul imprisoned, and can't be resurrected unless you allow it.",
+      "If the target succeeds on this saving throw by 5 or more, it awakes and can drag you into the waking world with it, causing you to appear in an unoccupied space within 5 feet of it, and be unable to teleport for 1 minute.",
+      "A creature wearing a silver talisman, or one that has had a Protection from Good and Evil spell cast on it in the last 8 hours, makes this saving throw at advantage."
+    ],
+    "lists": ["Occult"],
+    "ritual": 0
   },
   {
     "name": "Blightning Strike",

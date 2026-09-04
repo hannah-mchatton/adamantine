@@ -5663,7 +5663,7 @@
       "17": ["Brutal Critical (17)"]
     },
     "extraCols": [
-      { "name": "Rages", "type": "uses", "feature": "Rage", "level": 1 },
+      { "name": "Rages", "type": "uses", "feature": "Rage", "useId": "1ED073F8-42CE-40DB-AC82-C9B79DC94792", "level": 1 },
       {
         "name": "Mastered Exploits",
         "type": "listed",
@@ -40992,6 +40992,7 @@
       {
         "name": "Adrenaline Rushes",
         "type": "uses",
+        "useId": "4E741AC0-21C4-4327-8D8C-330F7CF2FC8B",
         "feature": "Adrenaline Rush",
         "level": 1
       },
@@ -84798,6 +84799,7 @@
       {
         "name": "Mystic Song Uses",
         "type": "uses",
+        "useId": "D3E98992-1C42-495A-9668-D2E6DC6A3098",
         "feature": "Mystic Songs",
         "level": 2
       },

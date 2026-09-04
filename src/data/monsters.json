@@ -11931,123 +11931,6 @@
     ]
   },
   {
-    "name": "Arcanaloth",
-    "size": "Medium",
-    "type": { "fiend": { "yugoloth": { "greater": {} } } },
-    "alignment": ["N", "E"],
-    "ac": [{ "ac": 17, "from": ["natural armor"] }],
-    "hp": { "average": 104, "formula": "16d8 + 32" },
-    "speed": { "walk": 30, "fly": 30 },
-    "str": 17,
-    "dex": 12,
-    "con": 14,
-    "int": 20,
-    "wis": 16,
-    "cha": 17,
-    "save": { "dex": "+5", "int": "+9", "wis": "+7", "cha": "+7" },
-    "skill": {
-      "arcana": "+13",
-      "deception": "+9",
-      "insight": "+9",
-      "perception": "+7",
-      "persuasion": "+9"
-    },
-    "senses": ["truesight 120 ft."],
-    "passive": 17,
-    "resist": [
-      "cold",
-      "fire",
-      "lightning",
-      "bludgeoning, piercing, and slashing damage from nonmagical sources"
-    ],
-    "immune": ["acid", "poison"],
-    "conditionImmune": ["charmed", "poisoned"],
-    "languages": ["all", "telepathy 120 ft."],
-    "cr": 12,
-    "trait": [
-      {
-        "name": "Conniving Resistance",
-        "entries": [
-          "The arcanaloth has advantage on saving throws against spells and other magical effects.",
-          "When the arcanaloth succeeds on a saving throw against a spell or other magical effect, it can choose to fail. If it does so, it can end the spell's effect at any time (no action required)."
-        ],
-        "sort": 2
-      },
-      {
-        "name": "Venal Nature",
-        "entries": [
-          "The yugoloth is always willing to accept a bribe rather than fight. A yugoloth will usually accept a rate of the yugoloth's challenge rating times 25 gp, though it may accept less."
-        ],
-        "sort": 1
-      },
-      {
-        "name": "Spell Trader",
-        "entries": [
-          "The arcanaloth knows all wizard spells of 8th level or lower. If it fears it will lose a fight, it may offer to teach a creature with a spellbook one spell in exchange for mercy."
-        ],
-        "sort": 2
-      }
-    ],
-    "action": [
-      {
-        "name": "Multiattack",
-        "entries": [
-          "The arcanaloth uses its arcane insight once and its magic barrage twice. It may replace one use of its magic barrage with a use of its Steal Spell, if available."
-        ]
-      },
-      {
-        "name": "Arcane Insight",
-        "entries": [
-          "One creature within 60 ft. must make a DC 17 Charisma Saving Throw. On a failure, the Arcanaloth discovers what spells the target has prepared and what unexpended spell slots they have."
-        ]
-      },
-      {
-        "name": "Magic Barrage",
-        "entries": [
-          "The arcanaloth unleashes a swarm of magical missiles that strike a creature within 120 feet, dealing 27 (5d8 + 5) force damage. A creature may halve this damage with the Shield spell."
-        ]
-      },
-      {
-        "name": "Steal Spell (Recharge 5-6)",
-        "entries": [
-          "One creature within 60 feet must make a DC 17 Charisma save. On a failed save, the Arcanaloth casts a spell the creature has prepared, expending one of the creature's spell slots to do so. For the next minute, the creature cannot cast that spell."
-        ]
-      },
-      {
-        "name": "Claws",
-        "entries": [
-          "<em>Melee Weapon Attack.</em> +7 to hit, reach 5 ft., one target. <em>Hit:</em> 8 (2d4 + 3) slashing damage. The target must make a DC 14 Constitution saving throw, taking 28 (8d6) poison damage on a failed save, or half as much damage on a successful one."
-        ]
-      },
-      {
-        "name": "Invisibility (2nd level spell)",
-        "entries": [
-          "The Arcanaloth becomes invisible until it takes another action."
-        ]
-      }
-    ],
-    "reaction": [
-      {
-        "name": "Trickster's Escape",
-        "entries": [
-          "As a reaction to being targeted with an attack or spell, the Arcanaloth may force a small or medium creature within 60 feet to succeed on a DC 17 Charisma saving throw or switch places with the arcanaloth, becoming the new target."
-        ]
-      },
-      {
-        "name": "Shield (1st level spell)",
-        "entries": [
-          "As a reaction to being hit with an attack, the Arcanaloth increases its AC by 5, including against the triggering attack, until the beginning of its next turn."
-        ]
-      },
-      {
-        "name": "Counterspell (3rd level spell)",
-        "entries": [
-          "As a reaction to seeing a creature within 60 feet cast a spell, the yugoloth may attempt to disrupt it, making an Intelligence ability check with DC equal to 10+ the spells level. This check succeeds automatically if the spell is 3rd level or below."
-        ]
-      }
-    ]
-  },
-  {
     "name": "Archaic",
     "size": "Titanic",
     "type": { "celestial": {} },
@@ -25021,7 +24904,7 @@
         ]
       }
     ]
-  },
+  },  
   {
     "name": "Mezzoloth Rune-Veteran",
     "size": "Medium",
@@ -25044,7 +24927,7 @@
     "immune": ["acid", "poison"],
     "conditionImmune": ["poisoned"],
     "languages": ["Abyssal", "Infernal", "telepathy 60 ft."],
-    "cr": 5,
+    "cr": 9,
     "trait": [
       {
         "name": "Conniving Resistance",
@@ -58826,88 +58709,6 @@
         "name": "Blood Disgorge (Recharge 5-6)",
         "entries": [
           "The nosferatu vomits blood in a 15-foot cone. Each creature in that area must make a DC 16 Constitution saving throw. On a failed save, a creature takes 18 (4d8) necrotic damage, and it can't regain hit points for 1 minute. On a successful save, the creature takes half as much damage with no additional effects."
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Nycaloth",
-    "size": "Large",
-    "type": { "fiend": { "yugoloth": { "greater": {} } } },
-    "alignment": ["N", "E"],
-    "ac": [{ "ac": 18, "from": ["natural armor"] }],
-    "hp": { "average": 123, "formula": "13d10 + 52" },
-    "speed": { "walk": 40, "fly": 60 },
-    "str": 10,
-    "dex": 11,
-    "con": 19,
-    "int": 12,
-    "wis": 10,
-    "cha": 15,
-    "skill": { "intimidation": "+6", "perception": "+4", "stealth": "+4" },
-    "senses": ["blindsight 60 ft.", "darkvision 60 ft."],
-    "passive": 14,
-    "resist": [
-      "cold",
-      "fire",
-      "lightning",
-      "bludgeoning, piercing, and slashing damage from nonmagical sources"
-    ],
-    "immune": ["acid", "poison"],
-    "conditionImmune": ["poisoned"],
-    "languages": ["Abyssal", "Infernal", "telepathy 60 ft."],
-    "cr": 9,
-    "trait": [
-      {
-        "name": "Venal Nature",
-        "entries": [
-          "The yugoloth is always willing to accept a bribe rather than fight. A yugoloth will usually accept a rate of the yugoloth's challenge rating times 25 gp, though it may accept less."
-        ],
-        "sort": 0
-      },
-      {
-        "name": "Conniving Resistance",
-        "entries": [
-          "The nycaloth has advantage on saving throws against spells and other magical effects of 3rd level or lower.",
-          "When the nycaloth succeeds on a saving throw against a spell or other magical effect of 3rd level or lower, it can choose to fail. If it does so, it can end the spell's effect at any time (no action required)."
-        ],
-        "sort": 2
-      },
-      {
-        "name": "Magic Weapons",
-        "entries": ["The nycaloth's weapon attacks are magical."],
-        "sort": 2
-      }
-    ],
-    "action": [
-      {
-        "name": "Multiattack",
-        "entries": [
-          "The nycaloth makes a claw attack and uses its teleport, or it makes a greataxe attack and uses its invisibility."
-        ]
-      },
-      {
-        "name": "Greataxe",
-        "entries": [
-          "<em>Melee Weapon Attack.</em> +9 to hit, reach 5 ft., one target. <em>Hit:</em> 18 (2d12 + 5) slashing damage. If the target is a creature, it must succeed on a DC 16 Constitution saving throw or lose half its current HP. A creature that fails this save repeats it at the end of each of its turns, ending the effect on a success or losing half its current HP on a failure."
-        ]
-      },
-      {
-        "name": "Claw",
-        "entries": [
-          "<em>Melee Weapon Attack.</em> +9 to hit, reach 5 ft., one target. <em>Hit:</em> 12 (2d6 + 5) slashing damage and the target is grappled."
-        ]
-      },
-      {
-        "name": "Invisibility",
-        "entries": [
-          "The Nycaloth magically turns invisible until it attacks or until its concentration ends (as if concentrating on a spell)."
-        ]
-      },
-      {
-        "name": "Teleport",
-        "entries": [
-          "The nycaloth magically teleports, along with any creatures it is grappling, up to 60 feet to an unoccupied space it can see."
         ]
       }
     ]
@@ -135856,6 +135657,443 @@
         "name": "Brutal Charge (Cost 2 Actions)",
         "entries": [
           "Kerzit moves up to his speed in a straight line, and may move through the space of any Medium or smaller creature. A creature whose space Kerzit enters for the first time on a turn in this way must succeed on a DC 20 Dexterity saving throw or take 13 (3d8) bludgeoning damage and be pushed up to 15 feet away and knocked prone."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Arcanaloth Silktongue",
+    "size": "Medium",
+    "type": { "fiend": { "yugoloth": { "greater": {} } } },
+    "alignment": ["N", "E"],
+    "ac": [{ "ac": 17, "from": ["natural armor"] }],
+    "hp": { "average": 175, "formula": "27d8 + 54" },
+    "speed": { "walk": 30, "hover": 30 },
+    "str": 12,
+    "dex": 16,
+    "con": 14,
+    "int": 20,
+    "wis": 16,
+    "cha": 17,
+    "save": { "int": "+9", "wis": "+7", "cha": "+7" },
+    "skill": {
+      "arcana": "+9",
+      "deception": "+7",
+      "insight": "+7",
+      "perception": "+7"
+    },
+    "senses": ["truesight 120 ft."],
+    "passive": 17,
+    "vulnerable": ["cold"],
+    "immune": ["acid", "fire", "poison"],
+    "conditionImmune": ["charmed", "poisoned"],
+    "languages": ["all", "telepathy 120 ft."],
+    "cr": 12,
+    "trait": [
+      {
+        "name": "Conniving Resistance",
+        "entries": [
+          "The arcanaloth has advantage on saving throws against spells and other magical effects.",
+          "When the arcanaloth succeeds on a saving throw against a spell or other magical effect, it can choose to fail. If it does so, it can end the spell's effect at any time (no action required)."
+        ],
+        "sort": 2
+      },
+      {
+        "name": "Reactive",
+        "entries": [
+          "The arcanaloth can take two reactions each round in combat, but only once per turn."
+        ],
+        "sort": 0
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The arcanaloth makes three attacks with its Darting Bolt, one of which it can replace with its Steal Spell or Power Word Vanish."
+        ]
+      },
+      {
+        "name": "Toxic Claw",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +7 to hit, reach 5 ft., one target. <em>Hit:</em> 12 (2d8 + 3) slashing damage plus 7 (2d6) poison damage."
+        ]
+      },
+      {
+        "name": "Darting Bolt (3rd Level Spell)",
+        "entries": [
+          "<em>Ranged Spell Attack.</em> +9 to hit, range 40 ft., one target. <em>Hit:</em> 17 (5d6) force damage.",
+          "On a miss, the arcanaloth can make a second attack roll, choosing a different target within 10 feet of the first target."
+        ]
+      },
+      {
+        "name": "Steal Spell",
+        "entries": [
+          "The arcanaloth touches a creature, forcing it to make a DC 17 Charisma saving throw. On a failed save, the arcanaloth learns what spells the target has prepared, then can cast one of them, expending the target's resources to do so."
+        ]
+      },
+      {
+        "name": "Power Word: Vanish (3rd Level Spell)",
+        "entries": [
+          "The arcanaloth or one of its allies within 60 feet turns invisible until the start of the arcanaloth's next turn, then teleports to an unoccupied space within 60 feet. This invisibility ends early if the target takes any hostile action."
+        ]
+      },
+      {
+        "name": "Ensnare Soul",
+        "entries": [
+          "The arcanaloth touches a creature, forcing it to make a DC 17 Charisma saving throw. On a failed save, the target is banished into the arcanaloth's soul tome (save ends at end of turn) and the arcanaloth can't use this ability again for 1 hour.",
+          "After three failed saves, a creature stops repeating the saving throw, and the effect lasts until dispelled. The effect ends if the tome is destroyed (AC 22, 35 hit points, regains 35 hit points at the end of each of the arcanaloth's turns)"
+        ]
+      },
+      {
+        "name": "Scrollfire Plague (Recharge 5-6, 5th Level Spell)",
+        "entries": [
+          "Curling grey flames roil forth from the arcanaloth in a 60-foot cone, forcing each creature in the area to make a DC 17 Dexterity saving throw. On a failed save, a creature takes 33 (6d10) fire damage and begins burning (1d10), or half as much damage on a success.",
+          "Whenever a creature burning in this way casts a spell of 1st level or higher, it takes 5 (1d10) force damage per level of the spell."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Afterimage (1st Level Spell)",
+        "entries": [
+          "The arcanaloth cloaks itself in an illusory shimmer. Until the start of its next turn or until it takes any damage, attacks against it are made at disadvantage."
+        ]
+      },
+      {
+        "name": "Soul Recall",
+        "entries": [
+          "The arcanaloth summons a creatuer bound in its soul tome to an unoccupied space within 30 feet. The creature immediately takes an action under the arcanaloth's control, then returns to the tome."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Syncopate (2nd level spell)",
+        "entries": [
+          "When a creature the arcanaloth can see within 60 feet casts a spell, the arcanaloth can roll a d6. If the result is greater than the level of triggering spell, the spell fails and is wasted."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Arcanaloth Spellbinder",
+    "size": "Medium",
+    "type": { "fiend": { "yugoloth": { "greater": {} } } },
+    "alignment": ["N", "E"],
+    "ac": [{ "ac": 19, "from": ["natural armor"] }],
+    "hp": { "average": 375, "formula": "50d8 + 150" },
+    "speed": { "walk": 30, "hover": 30 },
+    "str": 12,
+    "dex": 18,
+    "con": 17,
+    "int": 23,
+    "wis": 16,
+    "cha": 21,
+    "save": { "con": "+9", "int": "+12", "wis": "+9", "cha": "+11" },
+    "skill": {
+      "arcana": "+12",
+      "deception": "+11",
+      "insight": "+15",
+      "perception": "+9"
+    },
+    "senses": ["truesight 120 ft."],
+    "passive": 19,
+    "vulnerable": ["cold"],
+    "immune": ["acid", "fire", "poison"],
+    "conditionImmune": ["charmed", "poisoned"],
+    "languages": ["all", "telepathy 120 ft."],
+    "cr": 20,
+    "trait": [
+      {
+        "name": "Conniving Resistance",
+        "entries": [
+          "The arcanaloth has advantage on saving throws against spells and other magical effects.",
+          "When the arcanaloth succeeds on a saving throw against a spell or other magical effect, it can choose to fail. If it does so, it can end the spell's effect at any time (no action required)."
+        ],
+        "sort": 2
+      },
+      {
+        "name": "Venal Purge",
+        "entries": [
+          "At the start of each of the arcanaloth's turns, it can end one spell affecting it.",
+          "The spell's caster can expend an extra spell slot of the spell's level to prevent this effect. If it does so, the arcanaloth gains temporary hit points equal to 5 times the spell's level."
+        ]
+      },
+      {
+        "name": "Reactive",
+        "entries": [
+          "The arcanaloth can take three reactions each round in combat, but only once per turn."
+        ],
+        "sort": 0
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The arcanaloth makes three attacks, one of which it can replace with a use of its Steal Spell, Power Word Vanish, or Dispossess."
+        ]
+      },
+      {
+        "name": "Toxic Claw",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +10 to hit, reach 5 ft., one target. <em>Hit:</em> 17 (3d8 + 4) slashing damage plus 14 (4d6) poison damage."
+        ]
+      },
+      {
+        "name": "Mirrorquill (6th Level Spell)",
+        "entries": [
+          "<em>Ranged Spell Attack.</em> +12 to hit, range 120 ft., one target. <em>Hit:</em> 27 (5d10) force damage, plus an extra 5 (1d10) psychic damage for each other creature the arcanaloth hit with an attack this turn."
+        ]
+      },
+      {
+        "name": "Steal Spell",
+        "entries": [
+          "The arcanaloth touches a creature, forcing it to make a DC 20 Charisma saving throw. On a failed save, the arcanaloth learns what spells the target has prepared, then can cast one of them, expending the target's resources to do so."
+        ]
+      },
+      {
+        "name": "Power Word: Vanish (3rd Level Spell)",
+        "entries": [
+          "The arcanaloth or one of its allies within 60 feet turns invisible until the start of the arcanaloth's next turn, then teleports to an unoccupied space within 60 feet. This invisibility ends early if the target takes any hostile action."
+        ]
+      },
+      {
+        "name": "Dispossess (4th Level Spell)",
+        "entries": [
+          "One creature the arcanaloth can see within 60 feet of it must make a DC 20 Charisma saving throw. On a failed save, a target becomes unattuned to one magic item of its choice that it is attuned to. If a creature fails its saving throw by 5 or more, it becomes unattuned to every magic item it is attuned to.",
+          "Each item that is affected by this spell teleports into the arcanaloth's space."
+        ]
+      },
+      {
+        "name": "Ensnare Soul",
+        "entries": [
+          "The arcanaloth touches a creature, forcing it to make a DC 20 Charisma saving throw. On a failed save, the target is banished into the arcanaloth's soul tome (save ends at end of turn) and the arcanaloth can't use this ability again for 1 hour.",
+          "After three failed saves, a creature stops repeating the saving throw, and the effect lasts until dispelled. The effect ends if the tome is destroyed (AC 22, 35 hit points, regains 35 hit points at the end of each of the arcanaloth's turns)"
+        ]
+      },
+      {
+        "name": "Scrollfire Plague (5th Level Spell)",
+        "entries": [
+          "Curling grey flames roil forth from the arcanaloth in a 60-foot cone, forcing each creature in the area to make a DC 20 Dexterity saving throw. On a failed save, a creature takes 33 (6d10) fire damage and begins burning (1d10), or half as much damage on a success.",
+          "Whenever a creature burning in this way casts a spell of 1st level or higher, it takes 5 (1d10) force damage per level of the spell."
+        ]
+      },
+      {
+        "name": "Devastation Cascade (Recharge 5-6, 8th Level Spell)",
+        "entries": [
+          "Six lightning bolts strike down in rapid sequence, striking targets within 300 feet. For each bolt directed at a target, it must make a DC 20 Dexterity saving throw, taking 29 (2d8 + 20) lightning damage on a failed save, or half as much on a success."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Afterimage (1st Level Spell)",
+        "entries": [
+          "The arcanaloth cloaks itself in an illusory shimmer. Until the start of its next turn or until it takes any damage, attacks against it are made at disadvantage."
+        ]
+      },
+      {
+        "name": "Soul Recall",
+        "entries": [
+          "The arcanaloth summons a creatuer bound in its soul tome to an unoccupied space within 30 feet. The creature immediately takes an action under the arcanaloth's control, then returns to the tome."
+        ]
+      }
+    ],
+    "reaction": [
+      {
+        "name": "Syncopate (2nd level spell)",
+        "entries": [
+          "When a creature the arcanaloth can see within 60 feet casts a spell, the arcanaloth can roll a d6. If the result is greater than the level of triggering spell, the spell fails and is wasted."
+        ]
+      },
+      {
+        "name": "Predictive Sway (1st Level Spell)",
+        "entries": [
+          "When the arcanaloth is hit by an attack, it can make an Intelligence saving throw with a DC equal to the triggering attack roll. On a success, the arcanaloth can move up to 5 feet, and the attack automatically misses."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Nycaloth Mercurion",
+    "size": "Large",
+    "type": { "fiend": { "yugoloth": { "greater": {} } } },
+    "alignment": ["N", "E"],
+    "ac": [{ "ac": 18, "from": ["natural armor"] }],
+    "hp": { "average": 152, "formula": "16d10 + 64" },
+    "speed": { "walk": 40, "fly": 60 },
+    "str": 20,
+    "dex": 11,
+    "con": 19,
+    "int": 16,
+    "wis": 18,
+    "cha": 15,
+    "save": { "str": "+9", "con": "+8", "wis": "+8" },
+    "skill": { "insight": "+4", "perception": "+8", "stealth": "+4" },
+    "senses": ["blindsight 60 ft.", "darkvision 60 ft."],
+    "passive": 18,
+    "vulnerable": ["cold"],
+    "immune": ["acid", "fire", "poison"],
+    "conditionImmune": ["poisoned"],
+    "languages": ["Abyssal", "Infernal", "telepathy 60 ft."],
+    "cr": 9,
+    "trait": [
+      {
+        "name": "Conniving Resistance",
+        "entries": [
+          "The nycaloth has advantage on saving throws against spells and other magical effects.",
+          "When the nycaloth succeeds on a saving throw against a spell or other magical effect, it can choose to fail. If it does so, it can end the spell's effect at any time (no action required)."
+        ],
+        "sort": 2
+      },
+      {
+        "name": "Eye in the Sky",
+        "entries": [
+          "The nycaloth's enemies within 60 feet of it have disadvantage on checks made to hide."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The nycaloth makes two attacks, each of which it can replace with a use of its Power Word: Strike or Zone of Conquest."
+        ]
+      },
+      {
+        "name": "Mercurial Greatspade",
+        "entries": [
+          "<em>Melee or Ranged Weapon Attack.</em> +9 to hit, reach 5 ft. or range 30/90 ft., one target. <em>Hit:</em> 18 (2d12 + 5) slashing damage plus 10 (3d6) force damage."
+        ]
+      },
+      {
+        "name": "Power Word: Strike (3rd Level Spell)",
+        "entries": [
+          "Up to two creatures the nycaloth can seee within 60 feet must each use their reaction to make an attack under the nycaloth's control."
+        ]
+      },
+      {
+        "name": "Zone of Conquest (4th Level Spell, Concentration)",
+        "entries": [
+          "A violent light blooms from the nycaloth in a 40-foot radius. Whenever a creature of its choice within the area deals damage with an attack or spell, it can change one of the damage dice to its maximum value after rolling."
+        ]
+      },
+      {
+        "name": "Puresilver Rain (Recharge 5-6, 4th Level Spell)",
+        "entries": [
+          "Gleaming darts crash down in a 20-foot radius, 100-foot tall cylinder within 300 feet, forcing each creature in the area to make a DC 16 Dexterity saving throw. On a failed save, a creature takes 16 (3d10) force damage plus 14 (4d6) poison damage, or half as much on a success.",
+          "Fiends and undead in the area lose any damage resistances or immunities until the end of the nycaloth's next turn, even if they succeed on their saving throw."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Nycaloth Fortunelord",
+    "size": "Large",
+    "type": { "fiend": { "yugoloth": { "greater": {} } } },
+    "alignment": ["N", "E"],
+    "ac": [{ "ac": 20, "from": ["natural armor"] }],
+    "hp": { "average": 357, "formula": "34d10 + 170" },
+    "speed": { "walk": 40, "fly": 60 },
+    "str": 23,
+    "dex": 12,
+    "con": 21,
+    "int": 17,
+    "wis": 20,
+    "cha": 17,
+    "save": { "str": "+13", "con": "+12", "wis": "+12" },
+    "skill": { "insight": "+12", "perception": "+12", "stealth": "+8" },
+    "senses": ["blindsight 60 ft.", "darkvision 60 ft."],
+    "passive": 22,
+    "vulnerable": ["cold"],
+    "immune": ["acid", "fire", "poison"],
+    "conditionImmune": ["poisoned"],
+    "languages": ["Abyssal", "Infernal", "telepathy 60 ft."],
+    "cr": 21,
+    "trait": [
+      {
+        "name": "Conniving Resistance",
+        "entries": [
+          "The nycaloth has advantage on saving throws against spells and other magical effects.",
+          "When the nycaloth succeeds on a saving throw against a spell or other magical effect, it can choose to fail. If it does so, it can end the spell's effect at any time (no action required)."
+        ],
+        "sort": 2
+      },
+      {
+        "name": "Eye in the Sky",
+        "entries": [
+          "The nycaloth's enemies within 60 feet of it have disadvantage on checks made to hide."
+        ]
+      },
+      {
+        "name": "Venal Purge",
+        "entries": [
+          "At the start of each of the arcanaloth's turns, it can end one spell affecting it.",
+          "The spell's caster can expend an extra spell slot of the spell's level to prevent this effect. If it does so, the arcanaloth gains temporary hit points equal to 5 times the spell's level."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The nycaloth makes two attacks, each of which it can replace with a use of its Power Word: Strike, Battlefog, or Zone of Conquest."
+        ]
+      },
+      {
+        "name": "Mercurial Scytheaxe",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +13 to hit, reach 5 ft., one target. <em>Hit:</em> 19 (3d8 + 6) slashing damage plus 14 (4d6) force damage.",
+          "If this attack reduces the target to 0 hit points, the nycaloth can immediately make an extra attack against a different target."
+        ]
+      },
+      {
+        "name": "Power Word: Strike (3rd Level Spell)",
+        "entries": [
+          "Up to two creatures the nycaloth can seee within 60 feet must each use their reaction to make an attack under the nycaloth's control."
+        ]
+      },
+      {
+        "name": "Battlefog (4th Level Spell, Concentration)",
+        "entries": [
+          "A confounding fog boils up in a 30-foot radius sphere within 150 feet. When the nycaloth casts this spells, and at the start of each of its turns while the spell lasts, the nycaloth and each creature of its choice within teh area can teleport to an unoccupied space in the area."
+        ]
+      },
+      {
+        "name": "Zone of Conquest (4th Level Spell, Concentration)",
+        "entries": [
+          "A violent light blooms from the nycaloth in a 40-foot radius. Whenever a creature of its choice within the area deals damage with an attack or spell, it can change one of the damage dice to its maximum value after rolling."
+        ]
+      },
+      {
+        "name": "Fiendrot Flood (Recharge 5-6, 6th Level Spell)",
+        "entries": [
+          "A wave of caustic ichor pours forth from the nycaloth in a 60-foot cone, forcing each creature in the area to make a DC 20 Constitution saving throw. On a failed save, a creature takes 18 (4d8) acid damage plus 22 (4d10) necrotic damage, or half as much on a success.",
+          "Fiends can't have advantage on this saving throw, and take an additional 22 (4d10) necrotic damage on a failed save."
+        ]
+      }
+    ],
+    "shortName": "the nycaloth",
+    "legendary": [
+      {
+        "name": "Flickering Assault",
+        "entries": [
+          "The nycaloth teleports to an unoccupied space within 30 feet, then can make an attack with its Mercurial Scytheaxe."
+        ]
+      },
+      {
+        "name": "Blightning Strike (3rd Level Spell)",
+        "entries": [
+          "One creature the nycaloth can see within 120 feet must succeed on a DC 20 Dexterity save or take 14 (4d6) lightning plus 11 (2d10) necrotic damage, or half as much on a success.",
+          "A creature reduced to 0 hit points by this damage is unaffected by the first source of healing it recives before the beginning of its next turn."
+        ]
+      },
+      {
+        "name": "Soul Hostage (3rd Level Spell)",
+        "entries": [
+          "The nycaloth forces one creature it can see within 60 feet to make a DC 20 Charisma saving throw or become cursed. Whenever the nycaloth takes damage, it can deal an equal amount of force damage to a creature cursed in this way, and then the curse ends on that creature."
         ]
       }
     ]

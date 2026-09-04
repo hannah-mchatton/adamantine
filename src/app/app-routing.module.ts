@@ -10,9 +10,6 @@ import {
   withComponentInputBinding,
 } from '@angular/router';
 import { BestiaryComponent } from 'src/components/bestiary/bestiary/bestiary.component';
-import { CharacterBuilderComponent } from 'src/components/characters/builder/character-builder/character-builder.component';
-import { CharactersComponent } from 'src/components/characters/characters/characters.component';
-import { CharacterSheetComponent } from 'src/components/characters/sheet/character-sheet/character-sheet.component';
 import { CraftingComponent } from 'src/components/crafting/crafting.component';
 import { DatabaseComponent } from 'src/components/database/database.component';
 import { BackgroundTabComponent } from 'src/components/database/tabs/background-tab/background-tab.component';
@@ -219,19 +216,6 @@ const routes: Routes = [
   {
     path: 'crafting',
     component: CraftingComponent,
-  },
-
-  {
-    path: 'characters',
-    component: CharactersComponent,
-  },
-  {
-    path: 'characters/:guid/builder',
-    component: CharacterBuilderComponent,
-  },
-  {
-    path: 'characters/:guid/sheet',
-    component: CharacterSheetComponent,
   },
 
   {

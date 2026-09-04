@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { DBService } from 'src/services/db.service';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +9,7 @@ import { DBService } from 'src/services/db.service';
 export class AppComponent {
   title = 'Adamantine';
 
-  constructor(private router: Router, private dbService: DBService) {
+  constructor(private router: Router) {
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
   }
 

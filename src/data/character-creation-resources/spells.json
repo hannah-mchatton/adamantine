@@ -33379,6 +33379,20 @@
     "element": "Fire"
   },
   {
+    "name": "Stygian Swell",
+    "school": "Conjuration",
+    "level": 6,
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M (a crystal vial of Styx water worth at least 25 gp)",
+    "duration": "Instantaneous",
+    "description": [
+      "Dark, frigid waters swirl around a creature witin range, sapping life and memory. The target must make a Constitution saving throw. On a failed save, the target takes 6d8 + 30 cold damage and its proificiency bonus is reduced by 1d4 until cured by Greater Restoration or similar magic. On a success, the target takes half as much damage."
+    ],
+    "ritual": 0,
+    "lists": ["Occult", "Primal"]
+  },
+  {
     "name": "Mage's Blind",
     "school": "Abjuration",
     "level": 3,

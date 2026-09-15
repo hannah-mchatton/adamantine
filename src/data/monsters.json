@@ -18070,7 +18070,7 @@
     ]
   },
   {
-    "name": "Canoloth",
+    "name": "Canoloth Planehound",
     "size": "Medium",
     "type": { "fiend": { "yugoloth": { "least": {} } } },
     "alignment": ["N", "E"],
@@ -18084,33 +18084,14 @@
     "wis": 17,
     "cha": 12,
     "skill": { "investigation": "+3", "perception": "+9" },
-    "senses": ["darkvision 60 ft.", "truesight 120 ft."],
+    "senses": ["truesight 120 ft."],
     "passive": 19,
-    "resist": [
-      "cold",
-      "fire",
-      "lightning",
-      "bludgeoning, piercing, and slashing damage from nonmagical sources"
-    ],
-    "immune": ["acid", "poison"],
+    "vulnerable": ["cold"],
+    "immune": ["acid", "fire", "poison"],
     "conditionImmune": ["poisoned", "surprised"],
     "languages": ["Abyssal", "Infernal", "telepathy 60 ft."],
     "cr": 8,
     "trait": [
-      {
-        "name": "Dimensional Lock",
-        "entries": [
-          "Other creatures can't teleport to or from a space within 60 feet of the canoloth. Any attempt to do so is wasted. Creatures in the area have resistance to Force damage."
-        ],
-        "sort": 0
-      },
-      {
-        "name": "Outsize Strength",
-        "entries": [
-          "While grappling, dragging, or being ridden by another creature, the canoloth is considered to be Large."
-        ],
-        "sort": 1
-      },
       {
         "name": "Conniving Resistance",
         "entries": [
@@ -18120,9 +18101,84 @@
         "sort": 2
       },
       {
+        "name": "Listless Languor",
+        "entries": [
+          "While it has no allies within 30 feet of it, the canoloth can't have disadvantage on attack rolls."
+        ],
+        "sort": 3
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": ["The canoloth makes two attacks."]
+      },
+      {
+        "name": "Crawlfang Bite",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +7 to hit, reach 5 ft., one target. <em>Hit:</em> 25 (6d6 + 4) piercing damage.",
+          "This attack is made at advantage against a grappled target."
+        ]
+      },
+      {
         "name": "Barbed Tongue",
         "entries": [
-          "A creature that starts its turn grappled by the canoloth takes 13 (2d12) piercing damage. The tongue can be attacked (AC 20; 10 hit points). Destroying the tongue deals no damage to the canoloth, which can extrude more tongue on its next turn."
+          "<em>Melee Weapon Attack.</em> +7 to hit, reach 30 ft., one target. <em>Hit:</em> 17 (2d12 + 4) piercing damage and the target is grappled (escape DC 15).",
+          "This grapple ends if the canoloth takes 10 or more slashing damage from a single source."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Dimensional Lock",
+        "entries": [
+          "Planar barriers thicken in a 60-foot radius around the canoloth. Until the start of its next turn, creatures within the area can't teleport out of it, and vice versa."
+        ]
+      },
+      {
+        "name": "Reel In",
+        "entries": [
+          "The canoloth forces a creature grappled by it to make a DC 15 Strength saving throw. On a failed save, the target takes 6 (1d12) piercing damage and is dragged up to 30 feet towards the canoloth."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Canoloth Sarcophage",
+    "size": "Large",
+    "type": { "fiend": { "yugoloth": { "least": {} } } },
+    "alignment": ["N", "E"],
+    "ac": [{ "ac": 19, "from": ["natural armor"] }],
+    "hp": { "average": 228, "formula": "24d10 + 96" },
+    "speed": { "walk": 50 },
+    "str": 21,
+    "dex": 10,
+    "con": 19,
+    "int": 7,
+    "wis": 20,
+    "cha": 12,
+    "save": { "str": "+9", "con": "+8", "wis": "+9" },
+    "skill": { "investigation": "+6", "perception": "+13" },
+    "senses": ["truesight 120 ft."],
+    "passive": 23,
+    "vulnerable": ["cold"],
+    "immune": ["acid", "fire", "poison"],
+    "conditionImmune": ["poisoned", "surprised"],
+    "languages": ["Abyssal", "Infernal", "telepathy 60 ft."],
+    "cr": 12,
+    "trait": [
+      {
+        "name": "Conniving Resistance",
+        "entries": [
+          "The canoloth has advantage on saving throws against spells and other magical effects.",
+          "When the canoloth succeeds on a saving throw against a spell or other magical effect, it can choose to fail. If it does so, it can end the spell's effect at any time (no action required)."
+        ],
+        "sort": 2
+      },
+      {
+        "name": "Listless Languor",
+        "entries": [
+          "While it has no allies within 30 feet of it, the canoloth can't have disadvantage on attack rolls."
         ],
         "sort": 3
       }
@@ -18131,27 +18187,111 @@
       {
         "name": "Multiattack",
         "entries": [
-          "The canoloth makes two attacks, one of which may be with its bite."
+          "The canoloth makes two attacks, one of which it can replace with a use of its Toothshard Gout, if available."
         ]
       },
       {
-        "name": "Bite",
+        "name": "Crawlfang Bite",
         "entries": [
-          "<em>Melee Weapon Attack.</em> +7 to hit, reach 5 ft., one target. <em>Hit:</em> 25 (6d6 + 4) piercing damage."
+          "<em>Melee Weapon Attack.</em> +9 to hit, reach 5 ft., one target. <em>Hit:</em> 33 (8d6 + 5) piercing damage.",
+          "This attack is made at advantage against a grappled target."
         ]
       },
       {
-        "name": "Tongue",
+        "name": "Barbed Tongue",
         "entries": [
-          "<em>Melee Weapon Attack.</em> +7 to hit, reach 30 ft., one target. <em>Hit:</em> 17 (2d12 + 4) piercing damage. If the target is Medium or smaller, it is grappled (escape DC 15), and is restrained until the grapple ends. The canoloth can grapple one target at a time with its tongue."
+          "<em>Melee Weapon Attack.</em> +9 to hit, reach 30 ft., one target. <em>Hit:</em> 24 (3d12 + 5) piercing damage and the target is grappled (escape DC 17).",
+          "This grapple ends if the canoloth takes 15 or more slashing damage from a single source."
+        ]
+      },
+      {
+        "name": "Toothshard Gout",
+        "entries": [
+          "The canoloth spews a stream of blood and broken teeth in a 60-foot lone, 5-foot wide line, forcing each creature in the area to make a DC 17 Strength saving throw. On a failed save, a creature takes 27 (5d10) piercing damage and is knocked prone, or half as much on a success.",
+          "The canoloth can only use this action if it is below half of its maximum hit points."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Dimensional Lock",
+        "entries": [
+          "Planar barriers thicken in a 60-foot radius around the canoloth. Until the start of its next turn, creatures within the area can't teleport out of it, and vice versa."
+        ]
+      },
+      {
+        "name": "Reel In",
+        "entries": [
+          "The canoloth forces a creature grappled by it to make a DC 17 Strength saving throw. On a failed save, the target takes 13 (2d12) piercing damage and is dragged up to 30 feet towards the canoloth."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Skereloth Waster",
+    "size": "Small",
+    "type": { "fiend": { "yugoloth": { "least": {} } } },
+    "alignment": ["N", "E"],
+    "ac": [{ "ac": 19, "from": ["natural armor"] }],
+    "hp": { "average": 44, "formula": "8d6 + 16" },
+    "speed": { "walk": 40, "climb": 20, "burrow": 20 },
+    "str": 11,
+    "dex": 16,
+    "con": 14,
+    "int": 5,
+    "wis": 8,
+    "cha": 11,
+    "skill": { "stealth": "+5" },
+    "senses": ["blindsight 60 ft."],
+    "passive": 9,
+    "vulnerable": ["cold"],
+    "immune": ["acid", "fire", "poison"],
+    "conditionImmune": ["poisoned", "surprised"],
+    "languages": ["Abyssal", "Infernal", "telepathy 60 ft."],
+    "cr": 3,
+    "trait": [
+      {
+        "name": "Conniving Resistance",
+        "entries": [
+          "The skereloth has advantage on saving throws against spells and other magical effects.",
+          "When the skereloth succeeds on a saving throw against a spell or other magical effect, it can choose to fail. If it does so, it can end the spell's effect at any time (no action required)."
+        ],
+        "sort": 2
+      },
+      {
+        "name": "Spell-Sponge",
+        "entries": [
+          "When a hostile creature within 120 feet of the skereloth casts a spell that could target a creature with this trait, it must do so. If the spell can only target a limited number of creatures, but multiple creatures with this trait are valid targets, the caster chooses which to target."
+        ],
+        "sort": 3
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The skereloth makes two attacks, then can use its Volatile Burst, if available."
+        ]
+      },
+      {
+        "name": "Skittering Claw",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +5 to hit, reach 5 ft., one target. <em>Hit:</em> 10 (2d6 + 3) slashing damage."
+        ]
+      },
+      {
+        "name": "Volatile Burst",
+        "entries": [
+          "The skereloth shudders and distends, as caustic fluids mix and boil within it. If the skereloth is alive at the start of its next turn, it explodes in a shower of acidic ichor, forcing creatures within 15 feet of it to make a DC 12 Constitution saving throw, taking 14 (4d6) acid damage on a failed save, or half as much on a success.",
+          "The skereloth can only use this action if it is below half of its maximum hit points."
         ]
       }
     ],
     "reaction": [
       {
-        "name": "Reel",
+        "name": "Pitiful Cringe",
         "entries": [
-          "As a reaction to a creature damaging its tongue or failing an attempt to escape its grapple, the canoloth may force a creature grappled by it to succeed on a DC 15 Strength saving throw or be knocked prone and pulled 30 feet towards the canoloth."
+          "When the skereloth is targeted by an attack, it can cower pitifully, falling prone. If the attack hits, the skereloth has resistance to any damage dealt by it."
         ]
       }
     ]
@@ -24816,6 +24956,420 @@
         "entries": [
           "The mezzoloth creates two 5-foot diameter spheres of magical darkness within 30 feet, then can teleport to an unoccupied space not illuminated by bright light within 30 feet.",
           "This darkness clears at the start of the mezzoloth's next turn, or if a creature within it takes or deals any damage."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Merrenoloth Trawler",
+    "size": "Medium",
+    "type": { "fiend": { "yugoloth": { "lesser": {} } } },
+    "alignment": ["N", "E"],
+    "ac": [13],
+    "hp": { "average": 78, "formula": "12d8 + 24" },
+    "speed": { "walk": 30, "swim": 30, "hover": 10 },
+    "str": 8,
+    "dex": 17,
+    "con": 14,
+    "int": 17,
+    "wis": 14,
+    "cha": 11,
+    "save": { "dex": "+5", "int": "+5" },
+    "skill": {
+      "nature": "+5",
+      "perception": "+4",
+      "society": "+5",
+      "survival": "+4"
+    },
+    "senses": ["blindsight 60 ft.", "darkvision 60 ft."],
+    "passive": 14,
+    "vulnerable": ["cold"],
+    "immune": ["acid", "fire", "poison"],
+    "conditionImmune": ["poisoned"],
+    "languages": ["Abyssal", "Infernal", "telepathy 60 ft."],
+    "cr": 3,
+    "trait": [
+      {
+        "name": "Conniving Resistance",
+        "entries": [
+          "The merrenoloth has advantage on saving throws against spells and other magical effects.",
+          "When the merrenoloth succeeds on a saving throw against a spell or other magical effect, it can choose to fail. If it does so, it can end the spell's effect at any time (no action required)."
+        ],
+        "sort": 2
+      },
+      {
+        "name": "Vessel-Anchored",
+        "entries": [
+          "While the merrenoloth is aboard its vessel, it can't be knocked prone or forcefully moved."
+        ],
+        "sort": 1
+      },
+      {
+        "name": "Mind Vault",
+        "entries": [
+          "The merrenoloth is immune to any magical effect that would modify or read its thoughts, or that would detect its presence or location."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Oar Swipe",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +5 to hit, reach 10 ft., one target. <em>Hit:</em> 10 (2d6 + 3) bludgeoning damage plus 11 (2d10) force damage and the target is pushed 5 feet away."
+        ]
+      },
+      {
+        "name": "Haunting Head (3rd Level Spell)",
+        "entries": [
+          "<em>Ranged Spell Attack.</em> +5 to hit, range 100 ft., one target. <em>Hit:</em> 22 (4d10) necrotic damage and a chattering spectral head accosts the target. Until the end of the merrenoloth's next turn or until the target fails a saving throw, it subtracts 1d4 from each attack roll and saving throw it makes."
+        ]
+      },
+      {
+        "name": "Ferryman's Flight (1/Day)",
+        "entries": [
+          "The merrenoloth disappears, along with its vessel and each creature onboard of its choice. At the start of the merrenoloth's next turn, each of the targets reappears in an unoccupied space within 400 feet of the merrenoloth's choice."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Afterimage (1st Level Spell)",
+        "entries": [
+          "The merrenoloth cloaks itself in an illusory shimmer. Until the start of its next turn or until it takes any damage, attacks against it are made at disadvantage."
+        ]
+      },
+      {
+        "name": "Glare of the Drowned",
+        "entries": [
+          "One creature the merrenoloth can see within 60 feet must make a DC 13 Wisdom saving throw. On a failed save, the target is frightened (save ends at end of turn). While frightened in this way, the target is considered choking."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Merrenoloth Psychopomp",
+    "size": "Medium",
+    "type": { "fiend": { "yugoloth": { "lesser": {} } } },
+    "alignment": ["N", "E"],
+    "ac": [{ "ac": 16, "from": ["natural armor"] }],
+    "hp": { "average": 195, "formula": "30d8 + 60" },
+    "speed": { "walk": 30, "swim": 30, "hover": 10 },
+    "str": 8,
+    "dex": 19,
+    "con": 14,
+    "int": 20,
+    "wis": 17,
+    "cha": 16,
+    "save": { "dex": "+8", "con": "+6", "int": "+9" },
+    "skill": {
+      "nature": "+9",
+      "perception": "+7",
+      "society": "+9",
+      "survival": "+7"
+    },
+    "senses": ["blindsight 60 ft.", "darkvision 60 ft."],
+    "passive": 17,
+    "vulnerable": ["cold"],
+    "immune": ["acid", "fire", "poison"],
+    "conditionImmune": ["poisoned"],
+    "languages": ["Abyssal", "Infernal", "telepathy 60 ft."],
+    "cr": 10,
+    "trait": [
+      {
+        "name": "Conniving Resistance",
+        "entries": [
+          "The merrenoloth has advantage on saving throws against spells and other magical effects.",
+          "When the merrenoloth succeeds on a saving throw against a spell or other magical effect, it can choose to fail. If it does so, it can end the spell's effect at any time (no action required)."
+        ],
+        "sort": 2
+      },
+      {
+        "name": "Vessel-Anchored",
+        "entries": [
+          "While the merrenoloth is aboard its vessel, it can't be knocked prone or forcefully moved."
+        ],
+        "sort": 1
+      },
+      {
+        "name": "Venal Purge",
+        "entries": [
+          "At the start of each of the merrenoloth's turns, it can end one spell affecting it.",
+          "The spell's caster can expend an extra spell slot of the spell's level to prevent this effect. If it does so, the merrenoloth gains temporary hit points equal to 5 times the spell's level."
+        ]
+      },
+      {
+        "name": "Mind Vault",
+        "entries": [
+          "The merrenoloth is immune to any magical effect that would modify or read its thoughts, or that would detect its presence or location."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Oar Swipe",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +8 to hit, reach 10 ft., one target. <em>Hit:</em> 11 (2d6 + 4) bludgeoning damage plus 11 (2d10) force damage and the target is pushed 5 feet away."
+        ]
+      },
+      {
+        "name": "Thought Scour (4th Level Spell)",
+        "entries": [
+          "<em>Melee Spell Attack.</em> +9 to hit, reach 10 ft., one target. <em>Hit:</em> 33 (6d10) nonlethal psychic damage and the target must make a DC 17 Intelligence saving throw. On a failed save, the target suffers one effect of the merrenoloth's choice:",
+          {
+            "type": "list",
+            "items": [
+              "Until the end of the merrenoloth's next turn, the target's proficiency bonus is reduced to 0",
+              "Until the end of the merrenoloth's next turn, the target treats all other creatures as hostile",
+              "The target loses the ability to cast one spell of the merrenoloth's choice until it finishes a short or long rest"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Haunting Head (4th Level Spell)",
+        "entries": [
+          "<em>Ranged Spell Attack.</em> +9 to hit, range 100 ft., one target. <em>Hit:</em> 27 (5d10) necrotic damage and a chattering spectral head accosts the target. Until the end of the merrenoloth's next turn or until the target fails a saving throw, it subtracts 1d4 from each attack roll and saving throw it makes."
+        ]
+      },
+      {
+        "name": "Stygian Swell (Recharge 5-6, 6th Level Spell)",
+        "entries": [
+          "Dark, frigid waters swirl around a creature witin 60 feet, sapping life and memory. The target must make a DC 17 Constitution saving throw. On a failed save, the target takes 57 (6d8 + 30) cold damage and its proificiency bonus is reduced by 2 (1d4) until cured by Greater Restoration or similar magic. On a success, the target takes half as much damage."
+        ]
+      },
+      {
+        "name": "Ferryman's Flight (1/Day)",
+        "entries": [
+          "The merrenoloth disappears, along with its vessel and each creature onboard of its choice. At the start of the merrenoloth's next turn, each of the targets reappears in an unoccupied space within 400 feet of the merrenoloth's choice."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Afterimage (1st Level Spell)",
+        "entries": [
+          "The merrenoloth cloaks itself in an illusory shimmer. Until the start of its next turn or until it takes any damage, attacks against it are made at disadvantage."
+        ]
+      },
+      {
+        "name": "Glare of the Drowned",
+        "entries": [
+          "One creature the merrenoloth can see within 60 feet must make a DC 17 Wisdom saving throw. On a failed save, the target is frightened (save ends at end of turn). While frightened in this way, the target is considered choking."
+        ]
+      },
+      {
+        "name": "Soul Lurch (1st Level Spell)",
+        "entries": [
+          "Each creature the merrenoloth dealt damage to this turn must make a DC 17 Strength saving throw. On a failed save, the target is pushed 10 feet in a direction of the merrenoloth's choice and knocked prone."
+        ]
+      }
+    ],
+    "shortName": "the merrenoloth",
+    "legendary": [
+      {
+        "name": "Plunge Ahead",
+        "entries": [
+          "The merrenoloth's vessel moves up to its speed. Until the end of the merrenoloth's next turn, its vessel is difficult terrain for other creatures."
+        ]
+      },
+      {
+        "name": "Purify Vessel",
+        "entries": [
+          "Each creature onboard the merrenoloth's vessel of its choice must make a DC 17 Wisdom saving throw, taking 11 (2d10) psychic damage on a failed save."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Hydroloth Siltmonger",
+    "size": "Medium",
+    "type": { "fiend": { "yugoloth": { "lesser": {} } } },
+    "alignment": ["N", "E"],
+    "ac": [{ "ac": 16, "from": ["natural armor"] }],
+    "hp": { "average": 135, "formula": "18d8 + 54" },
+    "speed": { "walk": 20, "swim": 40 },
+    "str": 17,
+    "dex": 21,
+    "con": 16,
+    "int": 19,
+    "wis": 10,
+    "cha": 14,
+    "skill": { "insight": "+4", "perception": "+4", "stealth": "+9" },
+    "senses": ["blindsight 60 ft.", "darkvision 60 ft."],
+    "passive": 14,
+    "vulnerable": ["cold"],
+    "immune": ["acid", "fire", "poison"],
+    "conditionImmune": ["poisoned"],
+    "languages": ["Abyssal", "Infernal", "telepathy 60 ft."],
+    "cr": 9,
+    "trait": [
+      {
+        "name": "Conniving Resistance",
+        "entries": [
+          "The hydroloth has advantage on saving throws against spells and other magical effects.",
+          "When the hydroloth succeeds on a saving throw against a spell or other magical effect, it can choose to fail. If it does so, it can end the spell's effect at any time (no action required)."
+        ],
+        "sort": 2
+      },
+      {
+        "name": "Mind Vault",
+        "entries": [
+          "The hydroloth is immune to any magical effect that would modify or read its thoughts, or that would detect its presence or location."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The hydroloth makes two attacks, one of which it can replace with a use of its Poison Plunge or Spew Terrors."
+        ]
+      },
+      {
+        "name": "Blotter Claw",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +9 to hit, reach 5 ft., one target. <em>Hit:</em> 14 (2d8 + 5) slashing damage and 14 (4d6) psychic damage and the target is grappled (escape DC 17)."
+        ]
+      },
+      {
+        "name": "Poison Plunge (4th Level Spell)",
+        "entries": [
+          "The hydroloth touches a solid, nonmagical surface, transforming a 15-foot cube of it into toxic sludge until the end of its next turn. Creatures can swim through the sludge as though it were water, have half cover while within the area, and take 14 (4d6) poison damage when they enter the area for the first time on a turn or start their turn there.",
+          "When the effect ends, the material returns to its original state and anything remaining within it is restrained (escape DC 16)."
+        ]
+      },
+      {
+        "name": "Spew Terrors",
+        "entries": [
+          "A flood of devoured fears gushes from the hydroloth's mouth, forcing each creature in a 30-foot cone to make a DC 16 Wisdom saving throw. On a failed save, a creature is frightened (save ends at end of turn).",
+          "While frightened in this way, a creature takes 7 (2d6) psychic damage for each creature within 30 feet of it at the start of each of its turns."
+        ]
+      },
+      {
+        "name": "Mind Heist (Concentration)",
+        "entries": [
+          "The hydroloth mentally probes a creature within 60 feet, forcing it to make a DC 16 Intelligence saving throw. On a failed save, the target takes 52 (8d12) psychic damage and is silenced (save ends at end of turn).",
+          "At the start of each of the affected creature's turns, its proficiency bonus is reduced by 1 until it completes a short or long rest, and the hydroloth learns one secret the target wishes to keep hidden."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Hydroloth Hollower",
+    "size": "Large",
+    "type": { "fiend": { "yugoloth": { "lesser": {} } } },
+    "alignment": ["N", "E"],
+    "ac": [{ "ac": 18, "from": ["natural armor"] }],
+    "hp": { "average": 247, "formula": "26d10 + 104" },
+    "speed": { "walk": 30, "swim": 40 },
+    "str": 19,
+    "dex": 21,
+    "con": 18,
+    "int": 21,
+    "wis": 13,
+    "cha": 17,
+    "save": { "dex": "+10", "con": "+9", "int": "+10", "wis": "+6" },
+    "skill": { "insight": "+6", "perception": "+6", "stealth": "+15" },
+    "senses": ["blindsight 60 ft.", "darkvision 60 ft."],
+    "passive": 16,
+    "vulnerable": ["cold"],
+    "immune": ["acid", "fire", "poison"],
+    "conditionImmune": ["poisoned"],
+    "languages": ["Abyssal", "Infernal", "telepathy 60 ft."],
+    "cr": 14,
+    "trait": [
+      {
+        "name": "Conniving Resistance",
+        "entries": [
+          "The hydroloth has advantage on saving throws against spells and other magical effects.",
+          "When the hydroloth succeeds on a saving throw against a spell or other magical effect, it can choose to fail. If it does so, it can end the spell's effect at any time (no action required)."
+        ],
+        "sort": 2
+      },
+      {
+        "name": "Mind Vault",
+        "entries": [
+          "The hydroloth is immune to any magical effect that would modify or read its thoughts, or that would detect its presence or location."
+        ]
+      }
+    ],
+    "action": [
+      {
+        "name": "Multiattack",
+        "entries": [
+          "The hydroloth makes two attacks, one of which it can replace with a use of its Poison Plunge or Spew Terrors."
+        ]
+      },
+      {
+        "name": "Blotter Claw",
+        "entries": [
+          "<em>Melee Weapon Attack.</em> +10 to hit, reach 5 ft., one target. <em>Hit:</em> 14 (2d8 + 5) slashing damage and 14 (4d6) psychic damage and the target is grappled (escape DC 18)."
+        ]
+      },
+      {
+        "name": "Poison Plunge (4th Level Spell)",
+        "entries": [
+          "The hydroloth touches a solid, nonmagical surface, transforming a 15-foot cube of it into toxic sludge until the end of its next turn. Creatures can swim through the sludge as though it were water, have half cover while within the area, and take 14 (4d6) poison damage when they enter the area for the first time on a turn or start their turn there.",
+          "When the effect ends, the material returns to its original state and anything remaining within it is restrained (escape DC 18)."
+        ]
+      },
+      {
+        "name": "Spew Terrors",
+        "entries": [
+          "A flood of devoured fears gushes from the hydroloth's mouth, forcing each creature in a 30-foot cone to make a DC 18 Wisdom saving throw. On a failed save, a creature is frightened (save ends at end of turn).",
+          "While frightened in this way, a creature takes 7 (2d6) psychic damage for each creature within 30 feet of it at the start of each of its turns."
+        ]
+      },
+      {
+        "name": "Mind Heist (Concentration)",
+        "entries": [
+          "The hydroloth mentally probes a creature within 60 feet, forcing it to make a DC 18 Intelligence saving throw. On a failed save, the target takes 52 (8d12) psychic damage and is silenced (save ends at end of turn).",
+          "At the start of each of the affected creature's turns, its proficiency bonus is reduced by 1 until it completes a short or long rest, and the hydroloth learns one secret the target wishes to keep hidden."
+        ]
+      },
+      {
+        "name": "Lava Geyser (Recharge 5-6, 5th Level Spell)",
+        "entries": [
+          "A torrent of lava spews up from the earth in a 60 foot high, 15 foot radius column, forcing each creature in the area to succeed on a DC 22 Dexterity saving throw or take 33 (6d10) fire damage and be knocked prone, or take half as much damage on a success.",
+          "For the next minute, a creature that ends its turn on the ground in the area or steps onto it for the first time on a turn must make the same saving throw."
+        ]
+      }
+    ],
+    "bonus": [
+      {
+        "name": "Divergent Dark (3rd Level Spell)",
+        "entries": [
+          "The hydroloth creates two 5-foot diameter spheres of magical darkness within 30 feet, then can teleport to an unoccupied space not illuminated by bright light within 30 feet.",
+          "This darkness clears at the start of the hydroloth's next turn, or if a creature within it takes or deals any damage."
+        ]
+      },
+      {
+        "name": "Pollute Memories",
+        "entries": [
+          "The hydroloth touches a creature with a proficiency bonus of 2 or lower, filling its mind with a muddled mix of incoherent stolen memories. The target must make a DC 18 Charisma saving throw or become cursed.",
+          "While cursed in this way, the target is dazed, can't recall its past, and can't distinguish friend from foe."
+        ]
+      }
+    ],
+    "shortName": "the hydroloth",
+    "legendary": [
+      {
+        "name": "Grime Dive",
+        "entries": [
+          "The hydroloth moves up to its speed. If it ends this movement submerged, it can then attempt to hide."
+        ]
+      },
+      {
+        "name": "Embrace Oblivion",
+        "entries": [
+          "Each creature affected by the hydroloth's Mind Heist must make a DC 18 Intelligence saving throw. On a failed save, a creature takes 14 (4d6) nonlethal psychic damage.",
+          "If a creature fails its saving throw by 5 or more, it also falls unconscious until it takes any damage or a creature wakes it as an action."
+        ]
+      },
+      {
+        "name": "Leaping Slash",
+        "entries": [
+          "The hydroloth leaps up to 20 feet, then makes an attack with advantage."
         ]
       }
     ]
@@ -48300,110 +48854,6 @@
     ]
   },
   {
-    "name": "Hydroloth",
-    "size": "Medium",
-    "type": { "fiend": { "yugoloth": { "lesser": {} } } },
-    "alignment": ["N", "E"],
-    "ac": [{ "ac": 15, "from": ["natural armor"] }],
-    "hp": { "average": 135, "formula": "18d8 + 54" },
-    "speed": { "walk": 20, "swim": 40 },
-    "str": 12,
-    "dex": 21,
-    "con": 16,
-    "int": 19,
-    "wis": 10,
-    "cha": 14,
-    "skill": { "insight": "+4", "perception": "+4" },
-    "senses": ["blindsight 60 ft.", "darkvision 60 ft."],
-    "passive": 14,
-    "resist": [
-      "cold",
-      "lightning",
-      "bludgeoning, piercing, and slashing damage from nonmagical sources"
-    ],
-    "immune": ["acid", "poison"],
-    "vulnerable": ["fire"],
-    "conditionImmune": ["poisoned"],
-    "languages": ["Abyssal", "Infernal", "telepathy 60 ft."],
-    "cr": 9,
-    "trait": [
-      {
-        "name": "Amphibious",
-        "entries": ["The hydroloth can breathe air and water."],
-        "sort": 0
-      },
-      {
-        "name": "Conniving Resistance",
-        "entries": [
-          "The hydroloth has advantage on saving throws against spells and other magical effects.",
-          "When the hydroloth succeeds on a saving throw against a spell or other magical effect, it can choose to fail. If it does so, it can end the spell's effect at any time (no action required)."
-        ],
-        "sort": 2
-      },
-      {
-        "name": "Adaptive Combat",
-        "entries": [
-          "The hydroloth treats its AC as 20 against attacks made by creatures affected by its Steal Memories."
-        ],
-        "sort": 2
-      },
-      {
-        "name": "Secure Memory",
-        "entries": [
-          "The hydroloth is immune to the waters of the River Styx as well as any effect that would steal or modify its memories or detect or read its thoughts."
-        ],
-        "sort": 3
-      },
-      {
-        "name": "Venal Nature",
-        "entries": [
-          "The yugoloth is always willing to accept a bribe rather than fight. A yugoloth will usually accept a rate of its challenge rating times 25 gp."
-        ],
-        "sort": 4
-      }
-    ],
-    "action": [
-      {
-        "name": "Multiattack",
-        "entries": [
-          "The hydroloth attacks twice with its claws and uses its Steal Memories, if available. It may replace either or both of its claw attacks with its Deepest Fears or Teleport abilities."
-        ]
-      },
-      {
-        "name": "Claws",
-        "entries": [
-          "<em>Melee Weapon Attack.</em> +9 to hit, reach 5 ft., one target. <em>Hit:</em> 14 (2d8 + 5) slashing damage and 14 (4d6) psychic damage."
-        ]
-      },
-      {
-        "name": "Deepest Fears",
-        "entries": [
-          "One creature affected by the hydroloth's Steal Memories has a manifestation of its deepest fears appear to it for the next minute. The creature must succeed on a DC 16 Intelligence saving throw or take 14 (4d6) Psychic damage and be frightened for the duration. A creature repeats this saving throw at the end of each of its turns, ending the effect on a success or taking 14 (4d6) psychic damage on a failure."
-        ]
-      },
-      {
-        "name": "Steal Memories (Recharge 5-6)",
-        "entries": [
-          "One creature the hydroloth can see within 60 feet of it must succeed on a DC 16 Intelligence saving throw or have its proficiency bonus reduced by 1 until it completes a long rest. A creature that has its proficiency bonus reduced to 0 in this way can't speak or cast spells."
-        ]
-      },
-      {
-        "name": "Teleport (3rd level spell)",
-        "entries": [
-          "The hydroloth magically teleports, along with any equipment it is wearing or carrying, up to 60 feet to an unoccupied space it can see."
-        ]
-      }
-    ],
-    "reaction": [
-      {
-        "name": "Shared Mind",
-        "entries": [
-          "As a reaction to failing an Intelligence or Wisdom saving throw, the hydroloth may force a creature within 60 feet that is affected by its Steal Memory to succeed on a DC 16 Intelligence saving throw or suffer the triggering saving throw's effects as well."
-        ]
-      }
-    ]
-  },
-  {
     "name": "Hyena",
     "srd": true,
     "basicRules": true,
@@ -54928,85 +55378,6 @@
         "name": "Spear",
         "entries": [
           "<em>Melee or Ranged Weapon Attack.</em> +2 to hit, reach 5 ft. or range 20/60 ft., one target. <em>Hit:</em> 3 (1d6) piercing damage, or 4 (1d8) piercing damage if used with two hands to make a melee attack."
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Merrenoloth",
-    "size": "Medium",
-    "type": { "fiend": { "yugoloth": { "lesser": {} } } },
-    "alignment": ["N", "E"],
-    "ac": [13],
-    "hp": { "average": 40, "formula": "9d8" },
-    "speed": { "walk": 30, "swim": 40 },
-    "str": 8,
-    "dex": 17,
-    "con": 10,
-    "int": 17,
-    "wis": 14,
-    "cha": 11,
-    "save": { "dex": "+5", "int": "+5" },
-    "skill": {
-      "history": "+5",
-      "nature": "+5",
-      "perception": "+4",
-      "survival": "+4"
-    },
-    "senses": ["blindsight 60 ft.", "darkvision 60 ft."],
-    "passive": 14,
-    "resist": [
-      "cold",
-      "fire",
-      "lightning",
-      "bludgeoning, piercing, and slashing damage from nonmagical sources"
-    ],
-    "immune": ["acid", "poison"],
-    "conditionImmune": ["poisoned"],
-    "languages": ["Abyssal", "Infernal", "telepathy 60 ft."],
-    "cr": 3,
-    "trait": [
-      {
-        "name": "Conniving Resistance",
-        "entries": [
-          "The merrenoloth has advantage on saving throws against spells and other magical effects.",
-          "When the merrenoloth succeeds on a saving throw against a spell or other magical effect, it can choose to fail. If it does so, it can end the spell's effect at any time (no action required)."
-        ],
-        "sort": 2
-      },
-      {
-        "name": "Venal Nature",
-        "entries": [
-          "The merrenoloth charges a rate of 100 gp per passenger for passage on its boat, or 1000 gp for a passenger that has wronged it or another merrenoloth."
-        ],
-        "sort": 1
-      }
-    ],
-    "action": [
-      {
-        "name": "Multiattack",
-        "entries": [
-          "The merrenoloth makes two attacks with its oar and uses its Fear Gaze."
-        ]
-      },
-      {
-        "name": "Oar",
-        "entries": [
-          "<em>Melee Weapon Attack.</em> +5 to hit, reach 10 ft., one target. <em>Hit:</em> 8 (2d4 + 3) bludgeoning damage and the target must succeed on a DC 13 Strength saving throw or be pushed 10 feet away."
-        ]
-      },
-      {
-        "name": "Drowning Gaze",
-        "entries": [
-          "The merrenoloth targets one creature it can see within 60 feet of it. The target must succeed on a DC 13 Wisdom saving throw or become frightened of the merrenoloth for 1 minute. While frightened in this way, a creature cannot swim or hold its breath. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
-        ]
-      }
-    ],
-    "reaction": [
-      {
-        "name": "Teleport",
-        "entries": [
-          "As a reaction to taking damage, the merrenoloth magically teleports, along with its boat and whichever occupants of the boat it chooses, up to 60 feet to an unoccupied space it can see."
         ]
       }
     ]
